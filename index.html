@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hassium Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #1a1a1a;
+            --accent-color: #d4af37;
+            --secondary-color: #f0f0f0;
+        }
+        .dark {
+            --bg-color: #1a1a1a;
+            --text-color: #ffffff;
+            --accent-color: #ffd700;
+            --secondary-color: #2a2a2a;
+        }
+        body, html {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background: var(--bg-color);
+            transition: background-color 0.3s ease, color 0.3s ease;
+            overflow-x: hidden;
+            height: 100%;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        header {
+            background: var(--secondary-color);
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        header a {
+            color: var(--text-color);
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        header li {
+            margin-left: 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        header .highlight {
+            color: var(--accent-color);
+        }
+        header a:hover {
+            color: var(--accent-color);
+        }
+        main {
+            height: 100vh;
+            overflow-y: scroll;
+            scroll-snap-type: y mandatory;
+        }
+        section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            scroll-snap-align: start;
+            position: relative;
+        }
+        .content {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            pointer-events: none;
+        }
+        section.active .content {
+            opacity: 1;
+            pointer-events: all;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: var(--accent-color);
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2em;
+            max-width: 600px;
+            margin: 0 auto 20px;
+        }
+        .graphs-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .graph {
+            width: 220px;
+            height: 170px;
+            background-color: var(--secondary-color);
+            border-radius: 10px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .graph-title {
+            font-size: 1em;
+            margin: 0;
+            text-align: left;
+        }
+        .graph-percentage {
+            font-size: 1.5em;
+            font-weight: bold;
+            text-align: right;
+        }
+        .graph svg {
+            width: 100%;
+            height: 100px;
+        }
+        #mode-toggle {
+            background: none;
+            border: none;
+            color: var(--text-color);
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+        .element-symbol {
+            font-size: 2em;
+            color: var(--accent-color);
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Hassium</span> Portfolio</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><button id="mode-toggle">🌓</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="content">
+                <div class="element-symbol">Hs</div>
+                <h1>Welcome to Hassium</h1>
+                <p>Innovative solutions for modern challenges, inspired by the rarity and value of element 108.</p>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="content">
+                <h2>About Us</h2>
+                <p>Like the element Hassium, we are rare and valuable in the world of technology and design. Our team brings unique expertise to every project, creating solutions as stable and impactful as our namesake.</p>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <div class="content">
+                <h2>Our Portfolio</h2>
+                <p>Explore our range of investments, each as carefully cultivated as the discovery of element 108.</p>
+                <div class="graphs-container">
+                    <div class="graph">
+                        <h3 class="graph-title">TechNova Inc.</h3>
+                        <svg viewBox="0 0 100 50" preserveAspectRatio="none">
+                            <path d="M0 45 L10 42 L20 40 L30 35 L40 30 L50 25 L60 20 L70 15 L80 10 L90 5 L100 0" stroke="var(--accent-color)" fill="none" stroke-width="2"/>
+                        </svg>
+                        <span class="graph-percentage" style="color: var(--accent-color);">+68%</span>
+                    </div>
+                    <div class="graph">
+                        <h3 class="graph-title">GreenEnergy Co.</h3>
+                        <svg viewBox="0 0 100 50" preserveAspectRatio="none">
+                            <path d="M0 40 L10 42 L20 38 L30 40 L40 35 L50 37 L60 32 L70 28 L80 25 L90 20 L100 15" stroke="var(--accent-color)" fill="none" stroke-width="2"/>
+                        </svg>
+                        <span class="graph-percentage" style="color: var(--accent-color);">+42%</span>
+                    </div>
+                    <div class="graph">
+                        <h3 class="graph-title">HealthTech Solutions</h3>
+                        <svg viewBox="0 0 100 50" preserveAspectRatio="none">
+                            <path d="M0 45 L10 43 L20 41 L30 40 L40 38 L50 35 L60 33 L70 30 L80 27 L90 25 L100 22" stroke="var(--accent-color)" fill="none" stroke-width="2"/>
+                        </svg>
+                        <span class="graph-percentage" style="color: var(--accent-color);">+31%</span>
+                    </div>
+                    <div class="graph">
+                        <h3 class="graph-title">Global Logistics Ltd.</h3>
+                        <svg viewBox="0 0 100 50" preserveAspectRatio="none">
+                            <path d="M0 20 L10 22 L20 25 L30 23 L40 26 L50 28 L60 30 L70 33 L80 35 L90 38 L100 40" stroke="#ff6b6b" fill="none" stroke-width="2"/>
+                        </svg>
+                        <span class="graph-percentage" style="color: #ff6b6b;">-12%</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="content">
+                <h2>Featured Projects</h2>
+                <p>Our projects, like the synthesis of Hassium, push the boundaries of what's possible:</p>
+                <p>
+                    • Project A: Revolutionizing data analytics<br>
+                    • Project B: Sustainable energy solutions<br>
+                    • Project C: AI-driven customer service platform
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const sections = document.querySelectorAll('section');
+            const navItems = document.querySelectorAll('header nav a');
+            const modeToggle = document.getElementById('mode-toggle');
+            const html = document.documentElement;
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.7
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        navItems.forEach(item => {
+                            if (item.getAttribute('href').slice(1) === entry.target.id) {
+                                item.style.color = 'var(--accent-color)';
+                            } else {
+                                item.style.color = 'var(--text-color)';
+                            }
+                        });
+                    } else {
+                        entry.target.classList.remove('active');
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+
+            modeToggle.addEventListener('click', () => {
+                html.classList.toggle('dark');
+            });
+        });
+    </script>
+</body>
+</html>
