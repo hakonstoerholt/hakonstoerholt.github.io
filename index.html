@@ -8,14 +8,14 @@
         :root {
             --bg-color: #f7f7f7;
             --text-color: #333333;
-            --accent-color: #ff5722;
-            --secondary-color: #eeeeee;
+            --accent-color: #4a90e2;
+            --secondary-color: #d3d3d3;
             --header-bg: rgba(255, 255, 255, 0.9);
         }
         .dark {
             --bg-color: #1a1a1a;
             --text-color: #ffffff;
-            --accent-color: #ff9800;
+            --accent-color: #6c757d;
             --secondary-color: #2a2a2a;
             --header-bg: rgba(26, 26, 26, 0.9);
         }
@@ -77,7 +77,7 @@
         }
         main {
             height: 100vh;
-            overflow-y: scroll;
+            overflow-y: auto;
             scroll-snap-type: y mandatory;
         }
         section {
@@ -93,13 +93,6 @@
         .content {
             max-width: 800px;
             width: 100%;
-            opacity: 0;
-            transition: opacity 0.5s ease-in-out;
-            pointer-events: none;
-        }
-        section.active .content {
-            opacity: 1;
-            pointer-events: all;
         }
         h1 {
             font-size: 2.5em;
@@ -149,28 +142,22 @@
         #mode-toggle {
             background: none;
             border: none;
-            color: var(--text-color);
-            font-size: 1.5em;
             cursor: pointer;
+            width: 24px;
+            height: 24px;
+        }
+        #mode-toggle svg {
+            width: 100%;
+            height: 100%;
+            fill: var(--text-color);
+        }
+        #mode-toggle:hover svg {
+            fill: var(--accent-color);
         }
         .element-symbol {
             font-size: 1.8em;
             color: var(--accent-color);
             margin-bottom: 8px;
-        }
-        textarea {
-            width: 100%;
-            height: 200px;
-            padding: 10px;
-            font-size: 1em;
-            color: var(--text-color);
-            background: var(--secondary-color);
-            border: none;
-            border-radius: 5px;
-            resize: none;
-        }
-        textarea:focus {
-            outline: 2px solid var(--accent-color);
         }
     </style>
 </head>
@@ -186,7 +173,16 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><button id="mode-toggle">🌓</button></li>
+                    <li>
+                        <button id="mode-toggle">
+                            <svg id="light-mode-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M12 4.5V3M12 21v-1.5M4.5 12H3m18 0h-1.5M7.757 7.757L6.343 6.343M17.657 17.657l-1.414-1.414M16.243 7.757l1.414-1.414M6.343 17.657l1.414-1.414M12 18.5A6.5 6.5 0 1118.5 12 6.507 6.507 0 0112 18.5z"/>
+                            </svg>
+                            <svg id="dark-mode-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="display:none;">
+                                <path d="M21.751 14.874a9.754 9.754 0 01-9.874 8.251 9.754 9.754 0 010-19.5 9.761 9.761 0 018.251 4.124 9.76 9.76 0 01-3.634 13.376 7.722 7.722 0 104.257-6.251z"/>
+                            </svg>
+                        </button>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -254,7 +250,6 @@
                     • Consectetur adipiscing elit<br>
                     • Vivamus lacinia odio vitae
                 </p>
-                <textarea placeholder="Enter your thoughts here..."></textarea>
             </div>
         </section>
     </main>
@@ -264,6 +259,8 @@
             const sections = document.querySelectorAll('section');
             const navItems = document.querySelectorAll('header nav a');
             const modeToggle = document.getElementById('mode-toggle');
+            const lightIcon = document.getElementById('light-mode-icon');
+            const darkIcon = document.getElementById('dark-mode-icon');
             const html = document.documentElement;
 
             const observerOptions = {
@@ -295,6 +292,13 @@
 
             modeToggle.addEventListener('click', () => {
                 html.classList.toggle('dark');
+                if (html.classList.contains('dark')) {
+                    lightIcon.style.display = 'none';
+                    darkIcon.style.display = 'block';
+                } else {
+                    lightIcon.style.display = 'block';
+                    darkIcon.style.display = 'none';
+                }
             });
         });
     </script>
