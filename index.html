@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hassium Portfolio</title>
+    <title>Hassium</title>
     <style>
         :root {
             --bg-color: #f7f7f7;
@@ -76,19 +76,16 @@
             color: var(--accent-color);
         }
         main {
-            height: 100vh;
             overflow-y: auto;
-            scroll-snap-type: y mandatory;
         }
         section {
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
-            scroll-snap-align: start;
-            position: relative;
             padding: 20px;
+            transition: opacity 0.3s ease-in-out;
         }
         .content {
             max-width: 800px;
@@ -165,7 +162,7 @@
     <header>
         <div class="container">
             <div id="branding">
-                <h1><span class="highlight">Hassium</span> Portfolio</h1>
+                <h1><span class="highlight">Hassium</h1>
             </div>
             <nav>
                 <ul>
@@ -210,28 +207,28 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula eros quis enim.</p>
                 <div class="graphs-container">
                     <div class="graph">
-                        <h3 class="graph-title">TechNova Inc.</h3>
+                        <h3 class="graph-title">Fundamental Trader</h3>
                         <svg viewBox="0 0 100 50" preserveAspectRatio="none">
                             <path d="M0 45 L10 42 L20 40 L30 35 L40 30 L50 25 L60 20 L70 15 L80 10 L90 5 L100 0" stroke="var(--accent-color)" fill="none" stroke-width="2"/>
                         </svg>
                         <span class="graph-percentage" style="color: var(--accent-color);">+68%</span>
                     </div>
                     <div class="graph">
-                        <h3 class="graph-title">GreenEnergy Co.</h3>
+                        <h3 class="graph-title">Technical Trader</h3>
                         <svg viewBox="0 0 100 50" preserveAspectRatio="none">
                             <path d="M0 40 L10 42 L20 38 L30 40 L40 35 L50 37 L60 32 L70 28 L80 25 L90 20 L100 15" stroke="var(--accent-color)" fill="none" stroke-width="2"/>
                         </svg>
                         <span class="graph-percentage" style="color: var(--accent-color);">+42%</span>
                     </div>
                     <div class="graph">
-                        <h3 class="graph-title">HealthTech Solutions</h3>
+                        <h3 class="graph-title">HFT BTC Contracts</h3>
                         <svg viewBox="0 0 100 50" preserveAspectRatio="none">
                             <path d="M0 45 L10 43 L20 41 L30 40 L40 38 L50 35 L60 33 L70 30 L80 27 L90 25 L100 22" stroke="var(--accent-color)" fill="none" stroke-width="2"/>
                         </svg>
                         <span class="graph-percentage" style="color: var(--accent-color);">+31%</span>
                     </div>
                     <div class="graph">
-                        <h3 class="graph-title">Global Logistics Ltd.</h3>
+                        <h3 class="graph-title">News Sentiment</h3>
                         <svg viewBox="0 0 100 50" preserveAspectRatio="none">
                             <path d="M0 20 L10 22 L20 25 L30 23 L40 26 L50 28 L60 30 L70 33 L80 35 L90 38 L100 40" stroke="#ff6b6b" fill="none" stroke-width="2"/>
                         </svg>
@@ -256,39 +253,10 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', (event) => {
-            const sections = document.querySelectorAll('section');
-            const navItems = document.querySelectorAll('header nav a');
             const modeToggle = document.getElementById('mode-toggle');
             const lightIcon = document.getElementById('light-mode-icon');
             const darkIcon = document.getElementById('dark-mode-icon');
             const html = document.documentElement;
-
-            const observerOptions = {
-                root: null,
-                rootMargin: '0px',
-                threshold: 0.7
-            };
-
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('active');
-                        navItems.forEach(item => {
-                            if (item.getAttribute('href').slice(1) === entry.target.id) {
-                                item.style.color = 'var(--accent-color)';
-                            } else {
-                                item.style.color = 'var(--text-color)';
-                            }
-                        });
-                    } else {
-                        entry.target.classList.remove('active');
-                    }
-                });
-            }, observerOptions);
-
-            sections.forEach(section => {
-                observer.observe(section);
-            });
 
             modeToggle.addEventListener('click', () => {
                 html.classList.toggle('dark');
