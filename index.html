@@ -21,6 +21,11 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
+        /* Apply smooth scrolling for anchor jumps */
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             background-color: white;
             color: var(--bi-dark-gray);
@@ -194,6 +199,12 @@
             margin-bottom: 5rem;
         }
 
+        /* Offset scroll target position to account for sticky nav height */
+        section[id] {
+          scroll-margin-top: 70px; /* Adjust this value as needed (e.g., 60px, 80px) */
+        }
+
+
         h1, h2, h3 {
             color: var(--bi-blue);
             margin-bottom: 1.5rem;
@@ -202,7 +213,7 @@
         h2 {
             font-size: 2.2rem;
             position: relative;
-            display: inline-block;
+            display: inline-block; /* Keep for the ::after */
         }
 
         h2::after {
@@ -229,7 +240,7 @@
         }
 
         .board-grid { /* Note: This class exists in CSS but isn't used in the Option 1 HTML layout */
-            display: flex;
+            display: flex; /* Or grid, depending on intended use */
             flex-wrap: wrap;
             justify-content: center;
             gap: 30px;
@@ -237,8 +248,8 @@
         }
 
         .board-member {
-            flex: 0 0 auto;
-            width: 300px;
+             /* flex: 0 0 auto; Removed, let grid handle sizing basis */
+            width: 300px; /* Grid items still need a width */
             background-color: var(--bi-light-gray);
             border-radius: 10px;
             overflow: hidden;
@@ -253,8 +264,8 @@
         /* President (featured) styling */
         .board-member.featured {
             width: 340px;
-            margin-left: auto;  /* Added for robust centering */
-            margin-right: auto; /* Added for robust centering */
+             /* margin-left: auto; Removed */
+             /* margin-right: auto; Removed */
         }
 
         .member-img {
@@ -297,30 +308,37 @@
             line-height: 1.5;
         }
 
-        /* Layout option styles */
+        /* Layout option styles using GRID */
         .board-row {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            /* display: flex; */
+            display: grid; /* USE GRID */
+            /* flex-wrap: wrap; */
+            justify-content: center; /* Center grid tracks */
+            justify-items: center; /* Center items in tracks */
             gap: 30px;
             margin-bottom: 30px;
             width: 100%;
+            /* Define implicit columns based on content or explicit if needed */
+            /* Example for 2 columns (might need adjustment based on exact desired wrap behaviour) */
+             /* grid-template-columns: repeat(auto-fit, minmax(300px, max-content)); */
+             /* Keeping it simpler: Let auto columns work with justify-content/items */
         }
 
         /* Special styles for featured row */
         .board-row.featured-row {
-            margin-bottom: 40px; /* More space after the president */
-            /* Note: margin: auto on the child centers it, justify-content on parent also works */
+            margin-bottom: 40px;
         }
 
         .board-row.featured-row:after {
             content: '';
-            display: block;
+            display: block; /* This is fine */
+            grid-column: 1 / -1; /* Make pseudo-element span all grid columns if needed, though margin auto should center it */
             width: 50%;
             height: 2px;
             background-color: var(--bi-light-gray);
-            margin: 10px auto 0; /* This margin centers the line itself */
+            margin: 10px auto 0; /* Centers the line itself */
         }
+
 
         /* Events Section */
         .events-grid {
@@ -358,7 +376,7 @@
 
         /* No Events Styling */
         .no-events-container {
-            display: flex;
+            display: flex; /* Flex is fine for this simple centering */
             justify-content: center;
             align-items: center;
             min-height: 250px;
@@ -400,7 +418,7 @@
 
         /* Contact Section - Email Only */
         .contact-info {
-            display: flex;
+            display: flex; /* Flex is fine here */
             flex-wrap: wrap;
             gap: 2rem;
             margin-top: 2rem;
@@ -503,6 +521,12 @@
                 max-width: none; /* Allow sponsor to take full width if needed */
             }
 
+             /* Adjust scroll margin for potentially different nav height in mobile */
+            section[id] {
+                 scroll-margin-top: 60px; /* Example: adjust if mobile nav height differs */
+            }
+
+
             h2 {
                 font-size: 1.8rem;
             }
@@ -511,13 +535,16 @@
                 flex-direction: column;
             }
 
+             .board-row {
+                /* Adjust grid gap or columns for mobile if needed */
+             }
+
             .board-member {
                 width: 280px; /* Adjusting responsive widths slightly */
             }
 
             .board-member.featured {
                 width: 320px; /* Ensure featured maintains appropriate size */
-                /* Auto margins already handle centering */
             }
         }
 
@@ -542,7 +569,6 @@
             .board-member.featured {
                 width: 90%;
                 max-width: 300px;
-                 /* Auto margins still handle centering */
             }
 
             .member-img {
@@ -651,9 +677,7 @@
                                 <p>4th year BBA student with a passion for renewable energy and sustainability. Leading our vision for a more sustainable future.</p>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="board-row">
+                    </div> <div class="board-row">
                         <div class="board-member">
                              <img src="/api/placeholder/300/200" alt="Marcus Holm, Vice President" class="member-img">
                             <div class="member-info">
@@ -671,9 +695,7 @@
                                 <p>3rd year Finance major with experience in budgeting.</p>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="board-row">
+                    </div> <div class="board-row">
                         <div class="board-member">
                              <img src="/api/placeholder/300/200" alt="Lukas Andersen, Event Manager" class="member-img">
                             <div class="member-info">
@@ -691,9 +713,7 @@
                                 <p>Digital Marketing specialist with a keen interest in green energy.</p>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </section>
+                    </div> </div> </section>
 
             <section id="events">
                 <h2>Upcoming Events</h2>
@@ -710,7 +730,7 @@
                         </div>
                     </div>
                 </div>
-                </section>
+            </section>
 
             <section id="contact">
                 <h2>Contact Us</h2>
@@ -765,6 +785,19 @@
                     mobileNav.classList.remove('active');
                     // Optional: Reset ARIA attribute if implemented
                     // hamburgerButton.setAttribute('aria-expanded', 'false');
+
+                    // Optional: Smooth scroll handling via JS if CSS method has issues
+                    // const targetId = link.getAttribute('href');
+                    // const targetElement = document.querySelector(targetId);
+                    // if (targetElement) {
+                    //    const navHeight = document.querySelector('nav.desktop-nav')?.offsetHeight || 70; // Estimate nav height
+                    //    const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navHeight;
+                    //
+                    //    window.scrollTo({
+                    //        top: targetPosition,
+                    //        behavior: 'smooth'
+                    //    });
+                    // }
                 });
             });
         });
