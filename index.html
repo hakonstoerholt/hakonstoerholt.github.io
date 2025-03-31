@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="no"> <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Energy and Commodities - BI Norwegian Business School</title>
+    <title>Energiutvalget - Handelshøyskolen BI</title>
+
+    <link rel="icon" type="image/png" href="icon.svg">
     <style>
         /* BI Norwegian Business School Colors */
         :root {
@@ -254,7 +255,6 @@
         /* President (featured) styling */
         .board-member.featured {
             width: 340px;
-            /* No auto margins needed here when parent row uses grid override */
         }
 
         .member-img {
@@ -309,9 +309,8 @@
 
         /* Special styles for featured row - OVERRIDE to GRID */
         .board-row.featured-row {
-            margin-bottom: 40px; /* Keep existing margin */
-            /* Override display just for this row */
-            display: grid;
+            margin-bottom: 40px;
+            display: grid;           /* Use Grid for this row only */
             justify-content: center; /* Center the single grid track */
         }
 
@@ -323,7 +322,8 @@
             height: 2px;
             background-color: var(--bi-light-gray);
             margin: 10px auto 0; /* Centers the line */
-            /* If using grid parent, might need grid-column: 1 / -1; if line behaves oddly */
+            /* grid-column needed if line doesn't center correctly */
+            /* grid-column: 1 / -1; */
         }
 
         /* Events Section */
@@ -492,14 +492,18 @@
                 text-align: center;
             }
 
+            /* --- MOBILE HEADER ALIGNMENT FIX --- */
             .logo-container {
                 margin-bottom: 1rem;
-                justify-content: center;
+                /* justify-content: center; Removed */
+                flex-direction: column; /* Stack logo and title */
+                align-items: center;    /* Center stacked items horizontally */
             }
 
             .title-container {
-                 align-items: center;
+                 align-items: center; /* Center H1/P text */
             }
+            /* --- END MOBILE HEADER ALIGNMENT FIX --- */
 
             .sponsor-container {
                 text-align: center;
@@ -574,25 +578,25 @@
     <header>
        <div class="header-container">
             <div class="logo-container">
-                <img src="images/energiutvalget-logo.png" alt="Energy and Commodities Logo" class="logo">
+                <img src="images/energiutvalget-logo.png" alt="Energiutvalget Logo" class="logo">
                 <div class="title-container">
-                    <h1>Energy and Commodities</h1>
-                    <p>BI Norwegian Business School</p>
+                    <h1>Energiutvalget</h1>
+                    <p>Handelshøyskolen BI</p>
                 </div>
             </div>
             <div class="sponsor-container">
-                <p class="sponsor-label">Sponsored by</p>
-                <img src="/api/placeholder/150/60" alt="Sponsor Logo" class="sponsor-logo">
+                 <p class="sponsor-label">Sponset av</p>
+                <img src="/api/placeholder/150/60" alt="Sponsorlogo" class="sponsor-logo">
             </div>
         </div>
     </header>
 
     <nav class="desktop-nav">
-        <ul>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#board">Board Members</a></li>
-            <li><a href="#events">Events</a></li>
-            <li><a href="#contact">Contact</a></li>
+         <ul>
+            <li><a href="#about">Om Oss</a></li>
+            <li><a href="#board">Styret</a></li>
+            <li><a href="#events">Arrangementer</a></li>
+            <li><a href="#contact">Kontakt</a></li>
         </ul>
     </nav>
     <button class="hamburger-menu" id="hamburgerButton">
@@ -601,43 +605,43 @@
         <span></span>
     </button>
     <nav class="mobile-nav" id="mobileNav">
-         <ul>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#board">Board Members</a></li>
-            <li><a href="#events">Events</a></li>
-            <li><a href="#contact">Contact</a></li>
+        <ul>
+            <li><a href="#about">Om Oss</a></li>
+            <li><a href="#board">Styret</a></li>
+            <li><a href="#events">Arrangementer</a></li>
+            <li><a href="#contact">Kontakt</a></li>
         </ul>
     </nav>
 
     <main>
         <div class="container">
             <section id="about">
-                <h2>About Energy and Commodities</h2>
-                <p>Energy and Commodities is a student society at BI Norwegian Business School dedicated to exploring the energy sector, sustainability, and future business opportunities within these fields. We organize events, workshops, and company visits to bridge the gap between academic knowledge and industry practice.</p>
-                <p>Our mission is to create awareness about energy-related challenges and innovations while providing our members with valuable connections to industry professionals and potential employers.</p>
+                <h2>Om Energiutvalget</h2>
+                <p>Energiutvalget er et studentutvalg ved Handelshøyskolen BI dedikert til å utforske energisektoren, bærekraft og fremtidige forretningsmuligheter innenfor disse feltene. Vi organiserer arrangementer, workshops og bedriftsbesøk for å bygge bro mellom akademisk kunnskap og bransjepraksis.</p>
+                <p>Vårt formål er å skape bevissthet rundt energirelaterte utfordringer og innovasjoner, samtidig som vi gir våre medlemmer verdifulle forbindelser til bransjefolk og potensielle arbeidsgivere.</p>
                 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin-top: 3rem;">
                     <div style="width: 100%; max-width: 550px; margin-bottom: 2rem;">
-                        <h3>Our Vision</h3>
-                        <p>To become the leading student organization for energy and sustainability in Norwegian business education, preparing the next generation of business leaders for the green transition.</p>
+                        <h3>Vår Visjon</h3>
+                        <p>Å bli det ledende studentutvalget for energi og bærekraft innen norsk økonomiutdanning, og forberede neste generasjon bedriftsledere for det grønne skiftet.</p>
                     </div>
                     <div style="width: 100%; max-width: 550px;">
-                        <h3>Our Values</h3>
+                        <h3>Våre Verdier</h3>
                         <ul style="list-style: none; margin-left: 0;">
                             <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
                                 <span style="position: absolute; left: 0; color: var(--bi-light-blue);">•</span>
-                                Sustainability and environmental responsibility
+                                Bærekraft og miljøansvar
                             </li>
                             <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
                                 <span style="position: absolute; left: 0; color: var(--bi-light-blue);">•</span>
-                                Innovation and forward-thinking
+                                Innovasjon og fremtidsrettet tenkning
                             </li>
                             <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
                                 <span style="position: absolute; left: 0; color: var(--bi-light-blue);">•</span>
-                                Collaboration across disciplines
+                                Tverrfaglig samarbeid
                             </li>
                             <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
                                 <span style="position: absolute; left: 0; color: var(--bi-light-blue);">•</span>
-                                Practical, industry-relevant learning
+                                Praktisk, bransjerelevant læring
                             </li>
                         </ul>
                     </div>
@@ -645,59 +649,59 @@
             </section>
 
             <section id="board">
-                <h2>Meet Our Board</h2>
+                 <h2>Møt Styret</h2>
                 <div class="board-container">
                     <div class="board-row featured-row">
                         <div class="board-member featured">
-                            <img src="/api/placeholder/340/220" alt="Emma Bergson, President" class="member-img">
+                             <img src="/api/placeholder/340/220" alt="Emma Bergson, Leder" class="member-img">
                             <div class="member-info">
                                 <h3 class="member-name">Emma Bergson</h3>
-                                <p class="member-role">President</p>
-                                <p>4th year BBA student with a passion for renewable energy and sustainability. Leading our vision for a more sustainable future.</p>
+                                <p class="member-role">Leder</p>
+                                <p>4. års BBA-student med lidenskap for fornybar energi og bærekraft. Leder vår visjon for en mer bærekraftig fremtid.</p>
                             </div>
                         </div>
                     </div> <div class="board-row">
                         <div class="board-member">
-                            <img src="/api/placeholder/300/200" alt="Marcus Holm, Vice President" class="member-img">
+                            <img src="/api/placeholder/300/200" alt="Marcus Holm, Nestleder" class="member-img">
                             <div class="member-info">
                                 <h3 class="member-name">Marcus Holm</h3>
-                                <p class="member-role">Vice President</p>
-                                <p>MSc in Business Analytics with focus on energy market trends.</p>
+                                <p class="member-role">Nestleder</p>
+                                <p>MSc i Business Analytics med fokus på trender i energimarkedet.</p>
                             </div>
                         </div>
                         <div class="board-member">
-                            <img src="/api/placeholder/300/200" alt="Sofia Lindberg, Treasurer" class="member-img">
+                            <img src="/api/placeholder/300/200" alt="Sofia Lindberg, Økonomiansvarlig" class="member-img">
                             <div class="member-info">
                                 <h3 class="member-name">Sofia Lindberg</h3>
-                                <p class="member-role">Treasurer</p>
-                                <p>3rd year Finance major with experience in budgeting.</p>
+                                <p class="member-role">Økonomiansvarlig</p>
+                                <p>3. års finansstudent med erfaring innen budsjettering.</p>
                             </div>
                         </div>
                     </div> <div class="board-row">
                         <div class="board-member">
-                            <img src="/api/placeholder/300/200" alt="Lukas Andersen, Event Manager" class="member-img">
+                             <img src="/api/placeholder/300/200" alt="Lukas Andersen, Arrangementsansvarlig" class="member-img">
                             <div class="member-info">
                                 <h3 class="member-name">Lukas Andersen</h3>
-                                <p class="member-role">Event Manager</p>
-                                <p>MSc in Strategy with experience in corporate event planning.</p>
+                                <p class="member-role">Arrangementsansvarlig</p>
+                                 <p>MSc i Strategi med erfaring fra planlegging av bedriftsarrangementer.</p>
                             </div>
                         </div>
                         <div class="board-member">
-                            <img src="/api/placeholder/300/200" alt="Nora Sandvik, Marketing Director" class="member-img">
+                            <img src="/api/placeholder/300/200" alt="Nora Sandvik, Markedsansvarlig" class="member-img">
                             <div class="member-info">
                                 <h3 class="member-name">Nora Sandvik</h3>
-                                <p class="member-role">Marketing Director</p>
-                                <p>Digital Marketing specialist with a keen interest in green energy.</p>
+                                <p class="member-role">Markedsansvarlig</p>
+                                <p>Digital markedsføringsspesialist med stor interesse for grønn energi.</p>
                             </div>
                         </div>
                     </div> </div> </section>
 
             <section id="events">
-                 <h2>Upcoming Events</h2>
+                 <h2>Kommende Arrangementer</h2>
                  <div class="no-events-container">
                      <div class="no-events-message">
-                         <h3>No current upcoming events</h3>
-                         <p>Check back soon for our exciting upcoming events or follow us on social media for the latest updates.</p>
+                         <h3>Ingen kommende arrangementer for øyeblikket</h3>
+                         <p>Kom snart tilbake for våre spennende kommende arrangementer, eller følg oss på sosiale medier for de siste oppdateringene.</p>
                          <div class="events-social">
                             <a href="https://www.facebook.com/bienergy" class="events-social-link" target="_blank" rel="noopener noreferrer">Facebook</a>
                             <span class="separator">•</span>
@@ -710,41 +714,41 @@
             </section>
 
             <section id="contact">
-                <h2>Contact Us</h2>
-                <p>Interested in joining Energy and Commodities or have questions about our activities? Feel free to reach out to us directly:</p>
+                 <h2>Kontakt Oss</h2>
+                <p>Interessert i å bli med i Energiutvalget eller har du spørsmål om våre aktiviteter? Ta gjerne kontakt med oss direkte:</p>
                 <div class="contact-info">
                     <div class="contact-card">
                         <div class="contact-icon">✉️</div>
-                        <h3 class="contact-title">General Inquiries</h3>
+                        <h3 class="contact-title">Generelle Henvendelser</h3>
                         <a href="mailto:contact@bienergy.no" class="email-link">contact@bienergy.no</a>
                     </div>
                     <div class="contact-card">
                         <div class="contact-icon">👥</div>
-                        <h3 class="contact-title">Membership</h3>
+                        <h3 class="contact-title">Medlemskap</h3>
                         <a href="mailto:join@bienergy.no" class="email-link">join@bienergy.no</a>
                     </div>
                     <div class="contact-card">
                         <div class="contact-icon">🤝</div>
-                        <h3 class="contact-title">Partnerships</h3>
+                        <h3 class="contact-title">Samarbeid</h3>
                         <a href="mailto:partnerships@bienergy.no" class="email-link">partnerships@bienergy.no</a>
                     </div>
                 </div>
             </section>
         </div></main> <footer>
         <div class="container">
-            <p>Energy and Commodities - BI Norwegian Business School</p>
-            <p>Nydalsveien 37, 0484 Oslo, Norway</p>
+            <p>Energiutvalget - Handelshøyskolen BI</p>
+            <p>Nydalsveien 37, 0484 Oslo, Norge</p>
             <div class="social-links">
                 <a href="https://www.facebook.com/bienergy" aria-label="Facebook" target="_blank" rel="noopener noreferrer">Facebook</a>
                 <a href="https://www.instagram.com/bienergy" aria-label="Instagram" target="_blank" rel="noopener noreferrer">Instagram</a>
                 <a href="https://www.linkedin.com/company/bienergy" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </div>
-            <p class="footer-text">© 2025 Energy and Commodities. All rights reserved.</p>
+            <p class="footer-text">© 2025 Energiutvalget. Alle rettigheter forbeholdt.</p>
         </div>
     </footer>
 
     <script>
-        // JS content
+        // JS content (no translation needed)
         document.addEventListener('DOMContentLoaded', function() {
             // Mobile menu functionality
             const hamburgerButton = document.getElementById('hamburgerButton');
