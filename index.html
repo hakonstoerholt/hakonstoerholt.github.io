@@ -220,151 +220,103 @@
             font-size: 1.1rem;
         }
 
-        /* Improved Board Member Slider */
-        .slider-container {
+        /* Static Board Layout CSS */
+        .board-container {
             width: 100%;
-            overflow: hidden;
-            position: relative;
-            margin-top: 2rem;
-            padding: 0 10px; /* Add padding to prevent slides from touching the edge */
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
         }
 
-        .slider {
+        .board-grid {
             display: flex;
-            transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-            cursor: grab;
-            scroll-snap-type: x mandatory;
-            -webkit-overflow-scrolling: touch;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 30px;
         }
 
-        .slider:active {
-            cursor: grabbing;
-        }
-
-        .slide {
-            /* Reduce width to show more of next/prev slides */
-            min-width: 280px;
-            width: 280px; /* Fixed width */
-            margin: 0 15px; /* Reduced margin for better spacing */
+        .board-member {
+            flex: 0 0 auto;
+            width: 300px;
             background-color: var(--bi-light-gray);
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s;
-            scroll-snap-align: center;
-            flex-shrink: 0;
         }
 
-        .slide:hover {
-            transform: translateY(-5px); /* Reduced animation distance */
+        .board-member:hover {
+            transform: translateY(-5px);
+        }
+
+        /* President (featured) styling */
+        .board-member.featured {
+            width: 340px;
         }
 
         .member-img {
             width: 100%;
-            height: 200px; /* Reduced from 250px */
+            height: 200px;
             object-fit: cover;
         }
 
+        .featured .member-img {
+            height: 220px;
+        }
+
         .member-info {
-            padding: 1rem; /* Reduced from 1.5rem */
+            padding: 1.2rem;
             text-align: center;
         }
 
         .member-name {
-            font-size: 1.2rem; /* Reduced from 1.4rem */
-            margin-bottom: 0.3rem; /* Reduced from 0.5rem */
+            font-size: 1.2rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .featured .member-name {
+            font-size: 1.4rem;
         }
 
         .member-role {
             color: var(--bi-light-blue);
             font-weight: 500;
-            margin-bottom: 0.5rem; /* Reduced from 1rem */
+            margin-bottom: 0.8rem;
             font-size: 0.9rem;
         }
 
+        .featured .member-role {
+            font-size: 1rem;
+        }
+
         .member-info p {
-            font-size: 0.85rem; /* Smaller text */
-            line-height: 1.4;
+            font-size: 0.9rem;
+            line-height: 1.5;
         }
 
-        /* Center-align the active slide */
-        .slider-wrapper {
-            position: relative;
+        /* Layout option styles */
+        .board-row {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
+            gap: 30px;
+            margin-bottom: 30px;
             width: 100%;
         }
 
-        /* Improved slider dots */
-        .slider-dots {
-            display: flex;
-            justify-content: center;
-            margin-top: 1.5rem;
+        /* Special styles for featured row */
+        .board-row.featured-row {
+            margin-bottom: 40px; /* More space after the president */
         }
 
-        .dot {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background-color: #ddd;
-            margin: 0 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .dot.active {
-            background-color: var(--bi-blue);
-        }
-
-        .slider-instructions {
-            text-align: center;
-            margin-top: 1rem;
-            font-size: 0.85rem;
-            color: var(--bi-dark-gray);
-            opacity: 0.8;
-        }
-
-        /* Better positioned navigation arrows */
-        .slider-nav {
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            z-index: 10;
-            pointer-events: none;
-            padding: 0 5px;
-        }
-
-        .nav-button {
-            background-color: rgba(255, 255, 255, 0.9);
-            border: none;
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-            transition: all 0.3s;
-            pointer-events: auto;
-            font-size: 16px;
-            font-weight: bold;
-        }
-
-        .nav-button:hover {
-            background-color: white;
-            transform: scale(1.1);
-        }
-
-        .prev-button {
-            margin-left: 5px;
-        }
-
-        .next-button {
-            margin-right: 5px;
+        .board-row.featured-row:after {
+            content: '';
+            display: block;
+            width: 50%;
+            height: 2px;
+            background-color: var(--bi-light-gray);
+            margin: 10px auto 0;
         }
 
         /* Events Section */
@@ -517,71 +469,6 @@
             opacity: 0.8;
         }
         
-        /* Sponsors Section Styles */
-        .sponsors-container {
-            margin-top: 2rem;
-        }
-        
-        .sponsor-tier {
-            margin-bottom: 3rem;
-        }
-        
-        .tier-title {
-            color: var(--bi-dark-blue);
-            font-size: 1.4rem;
-            margin-bottom: 1.5rem;
-            position: relative;
-            display: inline-block;
-        }
-        
-        .tier-title::after {
-            content: '';
-            position: absolute;
-            width: 50%;
-            height: 2px;
-            bottom: -5px;
-            left: 0;
-            background-color: var(--bi-light-blue);
-        }
-        
-        .sponsor-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2rem;
-            justify-content: center;
-        }
-        
-        .sponsor-card {
-            background-color: white;
-            border-radius: 10px;
-            padding: 1.5rem;
-            width: 250px;
-            height: 150px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        
-        .sponsor-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-        }
-        
-        .sponsor-logo {
-            max-width: 180px;
-            max-height: 80px;
-        }
-        
-        .sponsor-cta {
-            background-color: var(--bi-light-gray);
-            padding: 1.5rem;
-            border-radius: 10px;
-            text-align: center;
-            margin-top: 2rem;
-        }
-        
         /* Responsive adjustments */
         @media (max-width: 768px) {
             /* Hide desktop navigation and show mobile menu button */
@@ -607,39 +494,42 @@
                 margin-top: 1rem;
             }
             
-            .slide {
-                min-width: 260px;
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+            }
+            
+            .board-member {
+                width: 280px;
+            }
+            
+            .board-member.featured {
+                width: 320px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .board-member {
                 width: 260px;
-                margin: 0 10px;
+            }
+            
+            .board-member.featured {
+                width: 280px;
             }
             
             .member-img {
                 height: 180px;
             }
             
+            .featured .member-img {
+                height: 200px;
+            }
+            
             .member-info {
-                padding: 0.8rem;
-            }
-            
-            .nav-button {
-                width: 32px;
-                height: 32px;
-            }
-
-            h2 {
-                font-size: 1.8rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .slide {
-                min-width: 220px;
-                width: 220px;
-                margin: 0 8px;
-            }
-            
-            .member-img {
-                height: 160px;
+                padding: 1rem;
             }
         }
     </style>
@@ -722,51 +612,56 @@
             </div>
         </section>
 
+        <!-- OPTION 1: 1-2-2 LAYOUT -->
         <section id="board">
             <h2>Meet Our Board</h2>
-            <div class="slider-container">
-                <!-- Slider navigation buttons -->
-                <div class="slider-nav">
-                    <button class="nav-button prev-button" id="prevButton">&#10094;</button>
-                    <button class="nav-button next-button" id="nextButton">&#10095;</button>
-                </div>
-                
-                <div class="slider" id="boardSlider">
-                    <!-- Board members with placeholder images -->
-                    <div class="slide">
-                        <img src="/api/placeholder/280/200" alt="Board President" class="member-img">
+            <div class="board-container">
+                <!-- President Row -->
+                <div class="board-row featured-row">
+                    <div class="board-member featured">
+                        <img src="/api/placeholder/340/220" alt="Board President" class="member-img">
                         <div class="member-info">
                             <h3 class="member-name">Emma Bergson</h3>
                             <p class="member-role">President</p>
-                            <p>4th year BBA student with a passion for renewable energy and sustainability.</p>
+                            <p>4th year BBA student with a passion for renewable energy and sustainability. Leading our vision for a more sustainable future.</p>
                         </div>
                     </div>
-                    <div class="slide">
-                        <img src="/api/placeholder/280/200" alt="Vice President" class="member-img">
+                </div>
+                
+                <!-- Second Row (VP and Treasurer) -->
+                <div class="board-row">
+                    <div class="board-member">
+                        <img src="/api/placeholder/300/200" alt="Vice President" class="member-img">
                         <div class="member-info">
                             <h3 class="member-name">Marcus Holm</h3>
                             <p class="member-role">Vice President</p>
                             <p>MSc in Business Analytics with focus on energy market trends.</p>
                         </div>
                     </div>
-                    <div class="slide">
-                        <img src="/api/placeholder/280/200" alt="Treasurer" class="member-img">
+                    
+                    <div class="board-member">
+                        <img src="/api/placeholder/300/200" alt="Treasurer" class="member-img">
                         <div class="member-info">
                             <h3 class="member-name">Sofia Lindberg</h3>
                             <p class="member-role">Treasurer</p>
-                            <p>3rd year Finance major with experience in budgeting for student organizations.</p>
+                            <p>3rd year Finance major with experience in budgeting.</p>
                         </div>
                     </div>
-                    <div class="slide">
-                        <img src="/api/placeholder/280/200" alt="Event Manager" class="member-img">
+                </div>
+                
+                <!-- Third Row (Event Manager and Marketing) -->
+                <div class="board-row">
+                    <div class="board-member">
+                        <img src="/api/placeholder/300/200" alt="Event Manager" class="member-img">
                         <div class="member-info">
                             <h3 class="member-name">Lukas Andersen</h3>
                             <p class="member-role">Event Manager</p>
                             <p>MSc in Strategy with experience in corporate event planning.</p>
                         </div>
                     </div>
-                    <div class="slide">
-                        <img src="/api/placeholder/280/200" alt="Marketing Director" class="member-img">
+                    
+                    <div class="board-member">
+                        <img src="/api/placeholder/300/200" alt="Marketing Director" class="member-img">
                         <div class="member-info">
                             <h3 class="member-name">Nora Sandvik</h3>
                             <p class="member-role">Marketing Director</p>
@@ -774,10 +669,64 @@
                         </div>
                     </div>
                 </div>
-                <div class="slider-dots" id="sliderDots"></div>
-                <p class="slider-instructions">Swipe or use arrow buttons to view more board members</p>
             </div>
         </section>
+
+        <!-- OPTION 2: 2-3 LAYOUT (UNCOMMENT TO USE) 
+        <section id="board">
+            <h2>Meet Our Board</h2>
+            <div class="board-container">
+                <div class="board-row featured-row">
+                    <div class="board-member featured">
+                        <img src="/api/placeholder/340/220" alt="Board President" class="member-img">
+                        <div class="member-info">
+                            <h3 class="member-name">Emma Bergson</h3>
+                            <p class="member-role">President</p>
+                            <p>4th year BBA student with a passion for renewable energy and sustainability.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="board-member featured">
+                        <img src="/api/placeholder/340/220" alt="Vice President" class="member-img">
+                        <div class="member-info">
+                            <h3 class="member-name">Marcus Holm</h3>
+                            <p class="member-role">Vice President</p>
+                            <p>MSc in Business Analytics with focus on energy market trends.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="board-row">
+                    <div class="board-member">
+                        <img src="/api/placeholder/300/200" alt="Treasurer" class="member-img">
+                        <div class="member-info">
+                            <h3 class="member-name">Sofia Lindberg</h3>
+                            <p class="member-role">Treasurer</p>
+                            <p>3rd year Finance major with experience in budgeting.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="board-member">
+                        <img src="/api/placeholder/300/200" alt="Event Manager" class="member-img">
+                        <div class="member-info">
+                            <h3 class="member-name">Lukas Andersen</h3>
+                            <p class="member-role">Event Manager</p>
+                            <p>MSc in Strategy with experience in corporate event planning.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="board-member">
+                        <img src="/api/placeholder/300/200" alt="Marketing Director" class="member-img">
+                        <div class="member-info">
+                            <h3 class="member-name">Nora Sandvik</h3>
+                            <p class="member-role">Marketing Director</p>
+                            <p>Digital Marketing specialist with a keen interest in green energy.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        -->
 
         <section id="events">
             <h2>Upcoming Events</h2>
@@ -850,272 +799,6 @@
                     mobileNav.classList.remove('active');
                 });
             });
-            
-            // IMPROVED SLIDER FUNCTIONALITY
-            const slider = document.getElementById('boardSlider');
-            const slides = slider.querySelectorAll('.slide');
-            const dotsContainer = document.getElementById('sliderDots');
-            const prevButton = document.getElementById('prevButton');
-            const nextButton = document.getElementById('nextButton');
-            
-            // Initialize variables
-            let isDragging = false;
-            let startPos = 0;
-            let currentTranslate = 0;
-            let prevTranslate = 0;
-            let currentIndex = 0;
-            let animationID = 0;
-            let slideWidth = 0;
-            let sliderWidth = 0;
-            let slideInterval = 0; // Distance between slides
-            let centerOffset = 0;  // Offset to center the active slide
-            let startTime;
-            
-            // Function to calculate dimensions
-            function calculateDimensions() {
-                // Get the slide width including margins
-                const slideRect = slides[0].getBoundingClientRect();
-                slideWidth = slideRect.width;
-                
-                // Calculate the gap between slide centers (including margins)
-                const style = window.getComputedStyle(slides[0]);
-                const marginRight = parseInt(style.marginRight);
-                const marginLeft = parseInt(style.marginLeft);
-                slideInterval = slideWidth + marginRight + marginLeft;
-                
-                // Get container width
-                sliderWidth = slider.parentElement.clientWidth;
-                
-                // Calculate offset to center the slide
-                centerOffset = (sliderWidth - slideWidth) / 2;
-                
-                return {
-                    slideWidth,
-                    slideInterval,
-                    sliderWidth,
-                    centerOffset
-                };
-            }
-            
-            // Calculate initial dimensions
-            const dimensions = calculateDimensions();
-            slideWidth = dimensions.slideWidth;
-            slideInterval = dimensions.slideInterval;
-            sliderWidth = dimensions.sliderWidth;
-            centerOffset = dimensions.centerOffset;
-            
-            // Clone first and last slides for infinite loop effect
-            const firstSlideClone = slides[0].cloneNode(true);
-            const lastSlideClone = slides[slides.length - 1].cloneNode(true);
-            
-            slider.appendChild(firstSlideClone);
-            slider.insertBefore(lastSlideClone, slider.firstChild);
-            
-            // Create dots for navigation
-            slides.forEach((_, index) => {
-                const dot = document.createElement('div');
-                dot.classList.add('dot');
-                if (index === 0) dot.classList.add('active');
-                dot.addEventListener('click', () => moveToSlide(index));
-                dotsContainer.appendChild(dot);
-            });
-            
-            // Set initial position
-            // Position slider to show the first real slide centered
-            currentTranslate = -slideInterval + centerOffset;
-            prevTranslate = currentTranslate;
-            setSliderPosition();
-            
-            // Event listeners
-            prevButton.addEventListener('click', () => {
-                moveToSlide(currentIndex - 1);
-            });
-            
-            nextButton.addEventListener('click', () => {
-                moveToSlide(currentIndex + 1);
-            });
-            
-            // Touch events
-            slider.addEventListener('touchstart', dragStart, {passive: true});
-            slider.addEventListener('touchmove', drag, {passive: true});
-            slider.addEventListener('touchend', dragEnd);
-            
-            // Mouse events
-            slider.addEventListener('mousedown', dragStart);
-            slider.addEventListener('mousemove', drag);
-            slider.addEventListener('mouseup', dragEnd);
-            slider.addEventListener('mouseleave', dragEnd);
-            
-            // Prevent context menu
-            slider.addEventListener('contextmenu', e => e.preventDefault());
-            
-            function getPositionX(event) {
-                return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX;
-            }
-            
-            function dragStart(event) {
-                // Ignore right clicks
-                if (event.type === 'mousedown' && event.button !== 0) return;
-                
-                startPos = getPositionX(event);
-                isDragging = true;
-                
-                // Stop any ongoing animation
-                cancelAnimationFrame(animationID);
-                
-                // Add dragging class for styling
-                slider.classList.add('dragging');
-                
-                // Record starting time for velocity calculation
-                startTime = new Date().getTime();
-            }
-            
-            function drag(event) {
-                if (!isDragging) return;
-                
-                const currentPosition = getPositionX(event);
-                const diff = currentPosition - startPos;
-                
-                // Add resistance at edges for better UX
-                let newTranslate = prevTranslate + diff;
-                
-                // Slow down movement when exceeding boundaries
-                const minTranslate = -((slides.length + 1) * slideInterval) + centerOffset;
-                const maxTranslate = centerOffset;
-                
-                if (newTranslate > maxTranslate) {
-                    const overDrag = newTranslate - maxTranslate;
-                    newTranslate = maxTranslate + (overDrag * 0.3);
-                } else if (newTranslate < minTranslate) {
-                    const overDrag = minTranslate - newTranslate;
-                    newTranslate = minTranslate - (overDrag * 0.3);
-                }
-                
-                currentTranslate = newTranslate;
-                setSliderPosition();
-            }
-            
-            function dragEnd() {
-                if (!isDragging) return;
-                isDragging = false;
-                slider.classList.remove('dragging');
-                
-                // Calculate movement distance
-                const moveDistance = currentTranslate - prevTranslate;
-                const moveTime = new Date().getTime() - startTime;
-                const isFastSwipe = Math.abs(moveDistance) > 50 && moveTime < 250;
-                
-                // Determine slide change
-                if (isFastSwipe || Math.abs(moveDistance) > slideInterval * 0.25) {
-                    if (moveDistance < 0) {
-                        currentIndex++;
-                    } else if (moveDistance > 0) {
-                        currentIndex--;
-                    }
-                }
-                
-                // Always snap to nearest slide
-                moveToSlide(currentIndex);
-            }
-            
-            function animation() {
-                setSliderPosition();
-                if (isDragging) animationID = requestAnimationFrame(animation);
-            }
-            
-            function setSliderPosition() {
-                slider.style.transform = `translateX(${currentTranslate}px)`;
-            }
-            
-            function moveToSlide(index) {
-                const totalOriginalSlides = slides.length;
-                
-                // Update the active dot
-                const visualIndex = (index + totalOriginalSlides) % totalOriginalSlides;
-                document.querySelectorAll('.dot').forEach((dot, i) => {
-                    dot.classList.toggle('active', i === visualIndex);
-                });
-                
-                // Set current index and calculate translate position
-                currentIndex = index;
-                
-                // Position slides with proper centering
-                currentTranslate = -((index + 1) * slideInterval) + centerOffset;
-                prevTranslate = currentTranslate;
-                
-                // Apply smooth transition
-                slider.style.transition = 'transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
-                setSliderPosition();
-                
-                // Handle infinite loop logic
-                setTimeout(() => {
-                    // If past the last slide
-                    if (index >= totalOriginalSlides) {
-                        // Jump to first slide
-                        slider.style.transition = 'none';
-                        currentIndex = 0;
-                        currentTranslate = -slideInterval + centerOffset;
-                        prevTranslate = currentTranslate;
-                        setSliderPosition();
-                        
-                        // Restore transitions
-                        setTimeout(() => {
-                            slider.style.transition = 'transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
-                        }, 50);
-                    } 
-                    // If before the first slide
-                    else if (index < 0) {
-                        // Jump to last slide
-                        slider.style.transition = 'none';
-                        currentIndex = totalOriginalSlides - 1;
-                        currentTranslate = -(totalOriginalSlides * slideInterval) + centerOffset;
-                        prevTranslate = currentTranslate;
-                        setSliderPosition();
-                        
-                        // Restore transitions
-                        setTimeout(() => {
-                            slider.style.transition = 'transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
-                        }, 50);
-                    }
-                }, 500);
-            }
-            
-            // Handle window resize
-            window.addEventListener('resize', () => {
-                // Recalculate dimensions
-                const newDimensions = calculateDimensions();
-                
-                // Update globals
-                slideWidth = newDimensions.slideWidth;
-                slideInterval = newDimensions.slideInterval;
-                sliderWidth = newDimensions.sliderWidth;
-                centerOffset = newDimensions.centerOffset;
-                
-                // Disable transition during resize
-                slider.style.transition = 'none';
-                
-                // Reposition the slider
-                currentTranslate = -((currentIndex + 1) * slideInterval) + centerOffset;
-                prevTranslate = currentTranslate;
-                setSliderPosition();
-                
-                // Re-enable transition
-                setTimeout(() => {
-                    slider.style.transition = 'transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
-                }, 50);
-            });
-            
-            // Keyboard navigation
-            document.addEventListener('keydown', (e) => {
-                if (e.key === 'ArrowLeft') {
-                    moveToSlide(currentIndex - 1);
-                } else if (e.key === 'ArrowRight') {
-                    moveToSlide(currentIndex + 1);
-                }
-            });
-            
-            // Initialize animation frame
-            animationID = requestAnimationFrame(animation);
         });
     </script>
 </body>
