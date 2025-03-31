@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Energy and Commodities - BI Norwegian Business School</title>
     <style>
-        /* BI Norwegian Business School Colors - Updated with your logo color */
+        /* BI Norwegian Business School Colors */
         :root {
             --bi-blue: #0b2f57;
             --bi-light-blue: #1a4675;
@@ -59,11 +59,10 @@
             justify-content: center;
         }
         
-        /* Fixed the color here to make the title visible */
         .title-container h1 {
             margin-bottom: 0.2rem;
             font-size: 1.8rem;
-            color: white; /* Explicitly set to white to override the global style */
+            color: white;
         }
         
         .title-container p {
@@ -88,6 +87,7 @@
             max-width: 150px;
         }
 
+        /* Navigation styles */
         nav {
             background-color: white;
             padding: 1rem 0;
@@ -132,6 +132,58 @@
             width: 100%;
         }
 
+        /* Mobile menu styles */
+        .hamburger-menu {
+            display: none;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 30px;
+            height: 25px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            margin: 0 auto;
+        }
+
+        .hamburger-menu span {
+            width: 30px;
+            height: 3px;
+            background: var(--bi-dark-blue);
+            border-radius: 10px;
+            transition: all 0.3s linear;
+            position: relative;
+            transform-origin: 1px;
+        }
+
+        .mobile-nav {
+            display: none;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 1rem;
+            border-radius: 0 0 10px 10px;
+        }
+
+        .mobile-nav.active {
+            display: block;
+        }
+
+        .mobile-nav ul {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .mobile-nav ul li {
+            margin: 0.5rem 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        .mobile-nav ul li a {
+            display: block;
+            padding: 0.5rem 0;
+        }
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -168,7 +220,7 @@
             font-size: 1.1rem;
         }
 
-        /* Board Member Slider - Modern Touch/Swipe Version */
+        /* Improved Board Member Slider */
         .slider-container {
             width: 100%;
             overflow: hidden;
@@ -178,8 +230,11 @@
 
         .slider {
             display: flex;
-            transition: transform 0.5s ease;
+            transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
             cursor: grab;
+            /* Add snap scrolling for smoother experience */
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
         }
 
         .slider:active {
@@ -194,12 +249,9 @@
             overflow: hidden;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s;
-        }
-        
-        @media (max-width: 768px) {
-            .slide {
-                min-width: 85%;  /* Makes slides take most of screen width on mobile */
-            }
+            /* For snap scrolling */
+            scroll-snap-align: center;
+            flex-shrink: 0;
         }
 
         .slide:hover {
@@ -254,6 +306,45 @@
             font-size: 0.9rem;
             color: var(--bi-dark-gray);
             opacity: 0.8;
+        }
+
+        /* Slider Navigation Arrows */
+        .slider-nav {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+            pointer-events: none; /* Allows clicking through to slider */
+        }
+
+        .nav-button {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s;
+            pointer-events: auto; /* Re-enable pointer events */
+        }
+
+        .nav-button:hover {
+            background-color: white;
+        }
+
+        .prev-button {
+            margin-left: 10px;
+        }
+
+        .next-button {
+            margin-right: 10px;
         }
 
         /* Events Section */
@@ -474,14 +565,15 @@
             margin-top: 2rem;
         }
         
+        /* Mobile Responsive Styles */
         @media (max-width: 768px) {
-            nav ul {
-                flex-direction: column;
-                align-items: center;
+            /* Hide desktop navigation and show mobile menu button */
+            .desktop-nav {
+                display: none;
             }
-
-            nav ul li {
-                margin: 0.5rem 0;
+            
+            .hamburger-menu {
+                display: flex;
             }
             
             .header-container {
@@ -499,7 +591,11 @@
             }
             
             .slide {
-                min-width: 85%;
+                min-width: 85%;  /* Makes slides take most of screen width on mobile */
+            }
+
+            h2 {
+                font-size: 1.8rem;
             }
         }
     </style>
@@ -508,8 +604,7 @@
     <header>
         <div class="header-container">
             <div class="logo-container">
-                <!-- Updated the alt text to be more descriptive -->
-                <img src="images/energiutvalget-logo.png" alt="Energy and Commodities Logo" class="logo">
+                <img src="/api/placeholder/80/80" alt="Energy and Commodities Logo" class="logo">
                 <div class="title-container">
                     <h1>Energy and Commodities</h1>
                     <p>BI Norwegian Business School</p>
@@ -517,12 +612,28 @@
             </div>
             <div class="sponsor-container">
                 <p class="sponsor-label">Sponsored by</p>
-                <img src="images/sponsor-equinor.png" alt="Equinor" class="sponsor-logo">
+                <img src="/api/placeholder/150/60" alt="Equinor" class="sponsor-logo">
             </div>
         </div>
     </header>
 
-    <nav>
+    <!-- Desktop Navigation -->
+    <nav class="desktop-nav">
+        <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#board">Board Members</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <button class="hamburger-menu" id="hamburgerButton">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <nav class="mobile-nav" id="mobileNav">
         <ul>
             <li><a href="#about">About Us</a></li>
             <li><a href="#board">Board Members</a></li>
@@ -570,51 +681,57 @@
         <section id="board">
             <h2>Meet Our Board</h2>
             <div class="slider-container">
+                <!-- Added slider navigation buttons -->
+                <div class="slider-nav">
+                    <button class="nav-button prev-button" id="prevButton">&#10094;</button>
+                    <button class="nav-button next-button" id="nextButton">&#10095;</button>
+                </div>
+                
                 <div class="slider" id="boardSlider">
-                    <!-- Replace with actual board member information and photos -->
+                    <!-- Board members with placeholder images -->
                     <div class="slide">
-                        <img src="images/board-president.jpg" alt="Board President" class="member-img">
+                        <img src="/api/placeholder/300/250" alt="Board President" class="member-img">
                         <div class="member-info">
-                            <h3 class="member-name">Name Namesson</h3>
+                            <h3 class="member-name">Emma Bergson</h3>
                             <p class="member-role">President</p>
-                            <p>A brief description of the president, their background, and their vision for Energy and Commodities.</p>
+                            <p>4th year BBA student with a passion for renewable energy and sustainability. Leading our vision for a more sustainable future.</p>
                         </div>
                     </div>
                     <div class="slide">
-                        <img src="images/board-vp.jpg" alt="Vice President" class="member-img">
+                        <img src="/api/placeholder/300/250" alt="Vice President" class="member-img">
                         <div class="member-info">
-                            <h3 class="member-name">Name Namesson</h3>
+                            <h3 class="member-name">Marcus Holm</h3>
                             <p class="member-role">Vice President</p>
-                            <p>A brief description of the vice president, their background, and their responsibilities.</p>
+                            <p>MSc in Business Analytics with focus on energy market trends. Supporting our initiatives and coordinating board activities.</p>
                         </div>
                     </div>
                     <div class="slide">
-                        <img src="images/board-treasurer.jpg" alt="Treasurer" class="member-img">
+                        <img src="/api/placeholder/300/250" alt="Treasurer" class="member-img">
                         <div class="member-info">
-                            <h3 class="member-name">Name Namesson</h3>
+                            <h3 class="member-name">Sofia Lindberg</h3>
                             <p class="member-role">Treasurer</p>
-                            <p>A brief description of the treasurer, their background, and their responsibilities.</p>
+                            <p>3rd year Finance major with experience in budgeting for student organizations. Managing our finances with precision.</p>
                         </div>
                     </div>
                     <div class="slide">
-                        <img src="images/board-event.jpg" alt="Event Manager" class="member-img">
+                        <img src="/api/placeholder/300/250" alt="Event Manager" class="member-img">
                         <div class="member-info">
-                            <h3 class="member-name">Name Namesson</h3>
+                            <h3 class="member-name">Lukas Andersen</h3>
                             <p class="member-role">Event Manager</p>
-                            <p>A brief description of the event manager, their background, and their responsibilities.</p>
+                            <p>MSc in Strategy with experience in corporate event planning. Creating engaging opportunities for our members.</p>
                         </div>
                     </div>
                     <div class="slide">
-                        <img src="images/board-marketing.jpg" alt="Marketing Director" class="member-img">
+                        <img src="/api/placeholder/300/250" alt="Marketing Director" class="member-img">
                         <div class="member-info">
-                            <h3 class="member-name">Name Namesson</h3>
+                            <h3 class="member-name">Nora Sandvik</h3>
                             <p class="member-role">Marketing Director</p>
-                            <p>A brief description of the marketing director, their background, and their responsibilities.</p>
+                            <p>Digital Marketing specialist with a keen interest in green energy. Spreading awareness of our mission through creative campaigns.</p>
                         </div>
                     </div>
                 </div>
                 <div class="slider-dots" id="sliderDots"></div>
-                <p class="slider-instructions">Swipe or drag to view more board members</p>
+                <p class="slider-instructions">Swipe or use arrow buttons to view more board members</p>
             </div>
         </section>
 
@@ -662,13 +779,12 @@
     <footer>
         <div class="container">
             <p>Energy and Commodities - BI Norwegian Business School</p>
-            <p>Not currently associated with BISO</p>
+            <p>Official student organization at BI Oslo</p>
             <p>Nydalsveien 37, 0484 Oslo, Norway</p>
             <div class="social-links">
-                <!-- Add proper social media links -->
-                <a href="https://www.facebook.com/bienergy" aria-label="Facebook">FB</a>
-                <a href="https://www.instagram.com/bienergy" aria-label="Instagram">IG</a>
-                <a href="https://www.linkedin.com/company/bienergy" aria-label="LinkedIn">LI</a>
+                <a href="https://www.facebook.com/bienergy" aria-label="Facebook">Facebook</a>
+                <a href="https://www.instagram.com/bienergy" aria-label="Instagram">Instagram</a>
+                <a href="https://www.linkedin.com/company/bienergy" aria-label="LinkedIn">LinkedIn</a>
             </div>
             <p class="footer-text">© 2025 Energy and Commodities. All rights reserved.</p>
         </div>
@@ -676,9 +792,27 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu functionality
+            const hamburgerButton = document.getElementById('hamburgerButton');
+            const mobileNav = document.getElementById('mobileNav');
+            
+            hamburgerButton.addEventListener('click', function() {
+                mobileNav.classList.toggle('active');
+            });
+            
+            // Close mobile menu when a link is clicked
+            document.querySelectorAll('.mobile-nav a').forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileNav.classList.remove('active');
+                });
+            });
+            
+            // Improved slider functionality
             const slider = document.getElementById('boardSlider');
             const slides = slider.querySelectorAll('.slide');
             const dotsContainer = document.getElementById('sliderDots');
+            const prevButton = document.getElementById('prevButton');
+            const nextButton = document.getElementById('nextButton');
             
             let startX;
             let currentTranslate = 0;
@@ -686,6 +820,8 @@
             let isDragging = false;
             let currentIndex = 0;
             let animationID;
+            let startTime;
+            let isScrolling = false;
             
             // Clone first and last slides for infinite loop effect
             const firstSlideClone = slides[0].cloneNode(true);
@@ -705,44 +841,112 @@
             });
             
             // Adjust starting position to show first real slide
+            function getSlideWidth() {
+                // Account for margin-right (30px) in calculations
+                return slides[0].offsetWidth + 30;
+            }
+            
             const slideWidth = getSlideWidth();
             currentTranslate = -slideWidth;
             prevTranslate = -slideWidth;
             setSliderPosition();
             
-            // Touch events
-            slider.addEventListener('touchstart', touchStart);
-            slider.addEventListener('touchmove', touchMove);
+            // Add event listeners for navigation buttons
+            prevButton.addEventListener('click', () => {
+                moveToSlide(currentIndex - 1);
+            });
+            
+            nextButton.addEventListener('click', () => {
+                moveToSlide(currentIndex + 1);
+            });
+            
+            // Touch events with improved handling
+            slider.addEventListener('touchstart', touchStart, { passive: true });
+            slider.addEventListener('touchmove', touchMove, { passive: true });
             slider.addEventListener('touchend', touchEnd);
             
-            // Mouse events
-            slider.addEventListener('mousedown', touchStart);
-            slider.addEventListener('mousemove', touchMove);
-            slider.addEventListener('mouseup', touchEnd);
-            slider.addEventListener('mouseleave', touchEnd);
+            // Mouse events with improved handling
+            slider.addEventListener('mousedown', mouseStart);
+            slider.addEventListener('mousemove', mouseMove);
+            slider.addEventListener('mouseup', mouseEnd);
+            slider.addEventListener('mouseleave', mouseEnd);
             
             // Prevent context menu on right click
             slider.addEventListener('contextmenu', e => e.preventDefault());
-            
-            function getSlideWidth() {
-                // Account for margin-right (30px) in calculations
-                return slides[0].offsetWidth + 30;
-            }
             
             function getPositionX(event) {
                 return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX;
             }
             
             function touchStart(event) {
-                startX = getPositionX(event);
+                startTime = new Date();
+                startX = event.touches[0].clientX;
                 isDragging = true;
+                isScrolling = false;
                 animationID = requestAnimationFrame(animation);
             }
             
+            function mouseStart(event) {
+                // Only handle left mouse button
+                if (event.button !== 0) return;
+                
+                startTime = new Date();
+                startX = event.pageX;
+                isDragging = true;
+                isScrolling = false;
+                animationID = requestAnimationFrame(animation);
+                event.preventDefault(); // Prevent text selection while dragging
+            }
+            
             function touchMove(event) {
-                if (isDragging) {
-                    const currentX = getPositionX(event);
-                    currentTranslate = prevTranslate + currentX - startX;
+                if (!isDragging) return;
+                
+                const currentX = event.touches[0].clientX;
+                const diff = currentX - startX;
+                
+                // Determine if user is trying to scroll the page or slide the carousel
+                if (!isScrolling) {
+                    const touchY = event.touches[0].clientY;
+                    const diffY = Math.abs(touchY - event.touches[0].clientY);
+                    if (diffY > Math.abs(diff)) {
+                        // User is trying to scroll vertically
+                        isScrolling = true;
+                        isDragging = false;
+                        return;
+                    }
+                }
+                
+                // Apply a resistant effect for better control
+                const resistance = 0.8;
+                currentTranslate = prevTranslate + diff * resistance;
+                
+                // Prevent bouncing effect at the edges
+                const maxTranslate = 0;
+                const minTranslate = -(slideWidth * (slides.length + 1));
+                if (currentTranslate > maxTranslate) {
+                    currentTranslate = maxTranslate + (currentTranslate - maxTranslate) * 0.2;
+                } else if (currentTranslate < minTranslate) {
+                    currentTranslate = minTranslate + (currentTranslate - minTranslate) * 0.2;
+                }
+            }
+            
+            function mouseMove(event) {
+                if (!isDragging) return;
+                
+                const currentX = event.pageX;
+                const diff = currentX - startX;
+                
+                // Apply a resistant effect for better control
+                const resistance = 0.8;
+                currentTranslate = prevTranslate + diff * resistance;
+                
+                // Prevent bouncing effect at the edges
+                const maxTranslate = 0;
+                const minTranslate = -(slideWidth * (slides.length + 1));
+                if (currentTranslate > maxTranslate) {
+                    currentTranslate = maxTranslate + (currentTranslate - maxTranslate) * 0.2;
+                } else if (currentTranslate < minTranslate) {
+                    currentTranslate = minTranslate + (currentTranslate - minTranslate) * 0.2;
                 }
             }
             
@@ -751,15 +955,54 @@
                 isDragging = false;
                 
                 const moveBy = currentTranslate - prevTranslate;
+                const timeDiff = new Date() - startTime;
                 const slideWidth = getSlideWidth();
                 
-                // Determine if we should change slides based on movement
-                if (moveBy < -100) {
-                    currentIndex++;
+                // Handle swipe vs. tap/click
+                // If movement is small and quick, it's a swipe
+                if (Math.abs(moveBy) > 20 && timeDiff < 300) {
+                    if (moveBy < 0) {
+                        currentIndex++;
+                    } else {
+                        currentIndex--;
+                    }
+                }
+                // For slower/longer movements, require more distance
+                else if (Math.abs(moveBy) > slideWidth * 0.3) {
+                    if (moveBy < 0) {
+                        currentIndex++;
+                    } else {
+                        currentIndex--;
+                    }
                 }
                 
-                if (moveBy > 100) {
-                    currentIndex--;
+                moveToSlide(currentIndex);
+            }
+            
+            function mouseEnd() {
+                cancelAnimationFrame(animationID);
+                isDragging = false;
+                
+                const moveBy = currentTranslate - prevTranslate;
+                const timeDiff = new Date() - startTime;
+                const slideWidth = getSlideWidth();
+                
+                // Handle swipe vs. tap/click
+                // If movement is small and quick, it's a swipe
+                if (Math.abs(moveBy) > 20 && timeDiff < 300) {
+                    if (moveBy < 0) {
+                        currentIndex++;
+                    } else {
+                        currentIndex--;
+                    }
+                }
+                // For slower/longer movements, require more distance
+                else if (Math.abs(moveBy) > slideWidth * 0.3) {
+                    if (moveBy < 0) {
+                        currentIndex++;
+                    } else {
+                        currentIndex--;
+                    }
                 }
                 
                 moveToSlide(currentIndex);
@@ -791,6 +1034,8 @@
                 currentTranslate = -(slideWidth * (actualIndex + 1)); // +1 for the cloned slide at the beginning
                 prevTranslate = currentTranslate;
                 
+                // Apply smooth transition
+                slider.style.transition = 'transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
                 setSliderPosition();
                 
                 // Check if we need to jump to the opposite end after animation
@@ -806,7 +1051,7 @@
                         
                         // Re-enable transitions after the jump
                         setTimeout(() => {
-                            slider.style.transition = 'transform 0.5s ease';
+                            slider.style.transition = 'transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
                         }, 50);
                     }
                     // If we've moved before the first slide (now showing last clone)
@@ -820,7 +1065,7 @@
                         
                         // Re-enable transitions after the jump
                         setTimeout(() => {
-                            slider.style.transition = 'transform 0.5s ease';
+                            slider.style.transition = 'transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
                         }, 50);
                     }
                 }, 500);
@@ -828,10 +1073,27 @@
             
             // Handle window resize
             window.addEventListener('resize', () => {
+                // Disable transition during resize to prevent jumpy behavior
+                slider.style.transition = 'none';
+                
                 const slideWidth = getSlideWidth();
                 currentTranslate = -slideWidth * (currentIndex + 1);
                 prevTranslate = currentTranslate;
                 setSliderPosition();
+                
+                // Re-enable transition after a small delay
+                setTimeout(() => {
+                    slider.style.transition = 'transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
+                }, 50);
+            });
+            
+            // Add keyboard navigation
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowLeft') {
+                    moveToSlide(currentIndex - 1);
+                } else if (e.key === 'ArrowRight') {
+                    moveToSlide(currentIndex + 1);
+                }
             });
         });
     </script>
