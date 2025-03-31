@@ -226,13 +226,13 @@
             overflow: hidden;
             position: relative;
             margin-top: 2rem;
+            padding: 0 10px; /* Add padding to prevent slides from touching the edge */
         }
 
         .slider {
             display: flex;
             transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
             cursor: grab;
-            /* Add snap scrolling for smoother experience */
             scroll-snap-type: x mandatory;
             -webkit-overflow-scrolling: touch;
         }
@@ -242,53 +242,69 @@
         }
 
         .slide {
-            min-width: 300px;
-            margin-right: 30px;
+            /* Reduce width to show more of next/prev slides */
+            min-width: 280px;
+            width: 280px; /* Fixed width */
+            margin: 0 15px; /* Reduced margin for better spacing */
             background-color: var(--bi-light-gray);
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s;
-            /* For snap scrolling */
             scroll-snap-align: center;
             flex-shrink: 0;
         }
 
         .slide:hover {
-            transform: translateY(-10px);
+            transform: translateY(-5px); /* Reduced animation distance */
         }
 
         .member-img {
             width: 100%;
-            height: 250px;
+            height: 200px; /* Reduced from 250px */
             object-fit: cover;
         }
 
         .member-info {
-            padding: 1.5rem;
+            padding: 1rem; /* Reduced from 1.5rem */
             text-align: center;
         }
 
         .member-name {
-            font-size: 1.4rem;
-            margin-bottom: 0.5rem;
+            font-size: 1.2rem; /* Reduced from 1.4rem */
+            margin-bottom: 0.3rem; /* Reduced from 0.5rem */
         }
 
         .member-role {
             color: var(--bi-light-blue);
             font-weight: 500;
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem; /* Reduced from 1rem */
+            font-size: 0.9rem;
         }
 
+        .member-info p {
+            font-size: 0.85rem; /* Smaller text */
+            line-height: 1.4;
+        }
+
+        /* Center-align the active slide */
+        .slider-wrapper {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        /* Improved slider dots */
         .slider-dots {
             display: flex;
             justify-content: center;
-            margin-top: 2rem;
+            margin-top: 1.5rem;
         }
 
         .dot {
-            width: 12px;
-            height: 12px;
+            width: 10px;
+            height: 10px;
             border-radius: 50%;
             background-color: #ddd;
             margin: 0 5px;
@@ -299,16 +315,16 @@
         .dot.active {
             background-color: var(--bi-blue);
         }
-        
+
         .slider-instructions {
             text-align: center;
             margin-top: 1rem;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             color: var(--bi-dark-gray);
             opacity: 0.8;
         }
 
-        /* Slider Navigation Arrows */
+        /* Better positioned navigation arrows */
         .slider-nav {
             display: flex;
             justify-content: space-between;
@@ -317,34 +333,38 @@
             top: 50%;
             transform: translateY(-50%);
             z-index: 10;
-            pointer-events: none; /* Allows clicking through to slider */
+            pointer-events: none;
+            padding: 0 5px;
         }
 
         .nav-button {
-            background-color: rgba(255, 255, 255, 0.8);
+            background-color: rgba(255, 255, 255, 0.9);
             border: none;
-            width: 40px;
-            height: 40px;
+            width: 36px;
+            height: 36px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             cursor: pointer;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-            transition: background-color 0.3s;
-            pointer-events: auto; /* Re-enable pointer events */
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s;
+            pointer-events: auto;
+            font-size: 16px;
+            font-weight: bold;
         }
 
         .nav-button:hover {
             background-color: white;
+            transform: scale(1.1);
         }
 
         .prev-button {
-            margin-left: 10px;
+            margin-left: 5px;
         }
 
         .next-button {
-            margin-right: 10px;
+            margin-right: 5px;
         }
 
         /* Events Section */
@@ -480,13 +500,10 @@
         .social-links a {
             color: white;
             margin: 0 1rem;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
+            padding: 0.5rem;
+            border-radius: 5px;
             background-color: rgba(255, 255, 255, 0.1);
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            display: inline-block;
             transition: background-color 0.3s;
         }
 
@@ -565,7 +582,7 @@
             margin-top: 2rem;
         }
         
-        /* Mobile Responsive Styles */
+        /* Responsive adjustments */
         @media (max-width: 768px) {
             /* Hide desktop navigation and show mobile menu button */
             .desktop-nav {
@@ -591,11 +608,38 @@
             }
             
             .slide {
-                min-width: 85%;  /* Makes slides take most of screen width on mobile */
+                min-width: 260px;
+                width: 260px;
+                margin: 0 10px;
+            }
+            
+            .member-img {
+                height: 180px;
+            }
+            
+            .member-info {
+                padding: 0.8rem;
+            }
+            
+            .nav-button {
+                width: 32px;
+                height: 32px;
             }
 
             h2 {
                 font-size: 1.8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .slide {
+                min-width: 220px;
+                width: 220px;
+                margin: 0 8px;
+            }
+            
+            .member-img {
+                height: 160px;
             }
         }
     </style>
@@ -681,7 +725,7 @@
         <section id="board">
             <h2>Meet Our Board</h2>
             <div class="slider-container">
-                <!-- Added slider navigation buttons -->
+                <!-- Slider navigation buttons -->
                 <div class="slider-nav">
                     <button class="nav-button prev-button" id="prevButton">&#10094;</button>
                     <button class="nav-button next-button" id="nextButton">&#10095;</button>
@@ -690,43 +734,43 @@
                 <div class="slider" id="boardSlider">
                     <!-- Board members with placeholder images -->
                     <div class="slide">
-                        <img src="/api/placeholder/300/250" alt="Board President" class="member-img">
+                        <img src="/api/placeholder/280/200" alt="Board President" class="member-img">
                         <div class="member-info">
                             <h3 class="member-name">Emma Bergson</h3>
                             <p class="member-role">President</p>
-                            <p>4th year BBA student with a passion for renewable energy and sustainability. Leading our vision for a more sustainable future.</p>
+                            <p>4th year BBA student with a passion for renewable energy and sustainability.</p>
                         </div>
                     </div>
                     <div class="slide">
-                        <img src="/api/placeholder/300/250" alt="Vice President" class="member-img">
+                        <img src="/api/placeholder/280/200" alt="Vice President" class="member-img">
                         <div class="member-info">
                             <h3 class="member-name">Marcus Holm</h3>
                             <p class="member-role">Vice President</p>
-                            <p>MSc in Business Analytics with focus on energy market trends. Supporting our initiatives and coordinating board activities.</p>
+                            <p>MSc in Business Analytics with focus on energy market trends.</p>
                         </div>
                     </div>
                     <div class="slide">
-                        <img src="/api/placeholder/300/250" alt="Treasurer" class="member-img">
+                        <img src="/api/placeholder/280/200" alt="Treasurer" class="member-img">
                         <div class="member-info">
                             <h3 class="member-name">Sofia Lindberg</h3>
                             <p class="member-role">Treasurer</p>
-                            <p>3rd year Finance major with experience in budgeting for student organizations. Managing our finances with precision.</p>
+                            <p>3rd year Finance major with experience in budgeting for student organizations.</p>
                         </div>
                     </div>
                     <div class="slide">
-                        <img src="/api/placeholder/300/250" alt="Event Manager" class="member-img">
+                        <img src="/api/placeholder/280/200" alt="Event Manager" class="member-img">
                         <div class="member-info">
                             <h3 class="member-name">Lukas Andersen</h3>
                             <p class="member-role">Event Manager</p>
-                            <p>MSc in Strategy with experience in corporate event planning. Creating engaging opportunities for our members.</p>
+                            <p>MSc in Strategy with experience in corporate event planning.</p>
                         </div>
                     </div>
                     <div class="slide">
-                        <img src="/api/placeholder/300/250" alt="Marketing Director" class="member-img">
+                        <img src="/api/placeholder/280/200" alt="Marketing Director" class="member-img">
                         <div class="member-info">
                             <h3 class="member-name">Nora Sandvik</h3>
                             <p class="member-role">Marketing Director</p>
-                            <p>Digital Marketing specialist with a keen interest in green energy. Spreading awareness of our mission through creative campaigns.</p>
+                            <p>Digital Marketing specialist with a keen interest in green energy.</p>
                         </div>
                     </div>
                 </div>
@@ -807,31 +851,67 @@
                 });
             });
             
-            // Improved slider functionality
+            // IMPROVED SLIDER FUNCTIONALITY
             const slider = document.getElementById('boardSlider');
             const slides = slider.querySelectorAll('.slide');
             const dotsContainer = document.getElementById('sliderDots');
             const prevButton = document.getElementById('prevButton');
             const nextButton = document.getElementById('nextButton');
             
-            let startX;
+            // Initialize variables
+            let isDragging = false;
+            let startPos = 0;
             let currentTranslate = 0;
             let prevTranslate = 0;
-            let isDragging = false;
             let currentIndex = 0;
-            let animationID;
+            let animationID = 0;
+            let slideWidth = 0;
+            let sliderWidth = 0;
+            let slideInterval = 0; // Distance between slides
+            let centerOffset = 0;  // Offset to center the active slide
             let startTime;
-            let isScrolling = false;
+            
+            // Function to calculate dimensions
+            function calculateDimensions() {
+                // Get the slide width including margins
+                const slideRect = slides[0].getBoundingClientRect();
+                slideWidth = slideRect.width;
+                
+                // Calculate the gap between slide centers (including margins)
+                const style = window.getComputedStyle(slides[0]);
+                const marginRight = parseInt(style.marginRight);
+                const marginLeft = parseInt(style.marginLeft);
+                slideInterval = slideWidth + marginRight + marginLeft;
+                
+                // Get container width
+                sliderWidth = slider.parentElement.clientWidth;
+                
+                // Calculate offset to center the slide
+                centerOffset = (sliderWidth - slideWidth) / 2;
+                
+                return {
+                    slideWidth,
+                    slideInterval,
+                    sliderWidth,
+                    centerOffset
+                };
+            }
+            
+            // Calculate initial dimensions
+            const dimensions = calculateDimensions();
+            slideWidth = dimensions.slideWidth;
+            slideInterval = dimensions.slideInterval;
+            sliderWidth = dimensions.sliderWidth;
+            centerOffset = dimensions.centerOffset;
             
             // Clone first and last slides for infinite loop effect
             const firstSlideClone = slides[0].cloneNode(true);
             const lastSlideClone = slides[slides.length - 1].cloneNode(true);
             
-            // Add clones to slider
             slider.appendChild(firstSlideClone);
             slider.insertBefore(lastSlideClone, slider.firstChild);
             
-            // Create dots for navigation (one per original slide)
+            // Create dots for navigation
             slides.forEach((_, index) => {
                 const dot = document.createElement('div');
                 dot.classList.add('dot');
@@ -840,18 +920,13 @@
                 dotsContainer.appendChild(dot);
             });
             
-            // Adjust starting position to show first real slide
-            function getSlideWidth() {
-                // Account for margin-right (30px) in calculations
-                return slides[0].offsetWidth + 30;
-            }
-            
-            const slideWidth = getSlideWidth();
-            currentTranslate = -slideWidth;
-            prevTranslate = -slideWidth;
+            // Set initial position
+            // Position slider to show the first real slide centered
+            currentTranslate = -slideInterval + centerOffset;
+            prevTranslate = currentTranslate;
             setSliderPosition();
             
-            // Add event listeners for navigation buttons
+            // Event listeners
             prevButton.addEventListener('click', () => {
                 moveToSlide(currentIndex - 1);
             });
@@ -860,157 +935,92 @@
                 moveToSlide(currentIndex + 1);
             });
             
-            // Touch events with improved handling
-            slider.addEventListener('touchstart', touchStart, { passive: true });
-            slider.addEventListener('touchmove', touchMove, { passive: true });
-            slider.addEventListener('touchend', touchEnd);
+            // Touch events
+            slider.addEventListener('touchstart', dragStart, {passive: true});
+            slider.addEventListener('touchmove', drag, {passive: true});
+            slider.addEventListener('touchend', dragEnd);
             
-            // Mouse events with improved handling
-            slider.addEventListener('mousedown', mouseStart);
-            slider.addEventListener('mousemove', mouseMove);
-            slider.addEventListener('mouseup', mouseEnd);
-            slider.addEventListener('mouseleave', mouseEnd);
+            // Mouse events
+            slider.addEventListener('mousedown', dragStart);
+            slider.addEventListener('mousemove', drag);
+            slider.addEventListener('mouseup', dragEnd);
+            slider.addEventListener('mouseleave', dragEnd);
             
-            // Prevent context menu on right click
+            // Prevent context menu
             slider.addEventListener('contextmenu', e => e.preventDefault());
             
             function getPositionX(event) {
                 return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX;
             }
             
-            function touchStart(event) {
-                startTime = new Date();
-                startX = event.touches[0].clientX;
-                isDragging = true;
-                isScrolling = false;
-                animationID = requestAnimationFrame(animation);
-            }
-            
-            function mouseStart(event) {
-                // Only handle left mouse button
-                if (event.button !== 0) return;
+            function dragStart(event) {
+                // Ignore right clicks
+                if (event.type === 'mousedown' && event.button !== 0) return;
                 
-                startTime = new Date();
-                startX = event.pageX;
+                startPos = getPositionX(event);
                 isDragging = true;
-                isScrolling = false;
-                animationID = requestAnimationFrame(animation);
-                event.preventDefault(); // Prevent text selection while dragging
+                
+                // Stop any ongoing animation
+                cancelAnimationFrame(animationID);
+                
+                // Add dragging class for styling
+                slider.classList.add('dragging');
+                
+                // Record starting time for velocity calculation
+                startTime = new Date().getTime();
             }
             
-            function touchMove(event) {
+            function drag(event) {
                 if (!isDragging) return;
                 
-                const currentX = event.touches[0].clientX;
-                const diff = currentX - startX;
+                const currentPosition = getPositionX(event);
+                const diff = currentPosition - startPos;
                 
-                // Determine if user is trying to scroll the page or slide the carousel
-                if (!isScrolling) {
-                    const touchY = event.touches[0].clientY;
-                    const diffY = Math.abs(touchY - event.touches[0].clientY);
-                    if (diffY > Math.abs(diff)) {
-                        // User is trying to scroll vertically
-                        isScrolling = true;
-                        isDragging = false;
-                        return;
-                    }
+                // Add resistance at edges for better UX
+                let newTranslate = prevTranslate + diff;
+                
+                // Slow down movement when exceeding boundaries
+                const minTranslate = -((slides.length + 1) * slideInterval) + centerOffset;
+                const maxTranslate = centerOffset;
+                
+                if (newTranslate > maxTranslate) {
+                    const overDrag = newTranslate - maxTranslate;
+                    newTranslate = maxTranslate + (overDrag * 0.3);
+                } else if (newTranslate < minTranslate) {
+                    const overDrag = minTranslate - newTranslate;
+                    newTranslate = minTranslate - (overDrag * 0.3);
                 }
                 
-                // Apply a resistant effect for better control
-                const resistance = 0.8;
-                currentTranslate = prevTranslate + diff * resistance;
-                
-                // Prevent bouncing effect at the edges
-                const maxTranslate = 0;
-                const minTranslate = -(slideWidth * (slides.length + 1));
-                if (currentTranslate > maxTranslate) {
-                    currentTranslate = maxTranslate + (currentTranslate - maxTranslate) * 0.2;
-                } else if (currentTranslate < minTranslate) {
-                    currentTranslate = minTranslate + (currentTranslate - minTranslate) * 0.2;
-                }
+                currentTranslate = newTranslate;
+                setSliderPosition();
             }
             
-            function mouseMove(event) {
+            function dragEnd() {
                 if (!isDragging) return;
-                
-                const currentX = event.pageX;
-                const diff = currentX - startX;
-                
-                // Apply a resistant effect for better control
-                const resistance = 0.8;
-                currentTranslate = prevTranslate + diff * resistance;
-                
-                // Prevent bouncing effect at the edges
-                const maxTranslate = 0;
-                const minTranslate = -(slideWidth * (slides.length + 1));
-                if (currentTranslate > maxTranslate) {
-                    currentTranslate = maxTranslate + (currentTranslate - maxTranslate) * 0.2;
-                } else if (currentTranslate < minTranslate) {
-                    currentTranslate = minTranslate + (currentTranslate - minTranslate) * 0.2;
-                }
-            }
-            
-            function touchEnd() {
-                cancelAnimationFrame(animationID);
                 isDragging = false;
+                slider.classList.remove('dragging');
                 
-                const moveBy = currentTranslate - prevTranslate;
-                const timeDiff = new Date() - startTime;
-                const slideWidth = getSlideWidth();
+                // Calculate movement distance
+                const moveDistance = currentTranslate - prevTranslate;
+                const moveTime = new Date().getTime() - startTime;
+                const isFastSwipe = Math.abs(moveDistance) > 50 && moveTime < 250;
                 
-                // Handle swipe vs. tap/click
-                // If movement is small and quick, it's a swipe
-                if (Math.abs(moveBy) > 20 && timeDiff < 300) {
-                    if (moveBy < 0) {
+                // Determine slide change
+                if (isFastSwipe || Math.abs(moveDistance) > slideInterval * 0.25) {
+                    if (moveDistance < 0) {
                         currentIndex++;
-                    } else {
-                        currentIndex--;
-                    }
-                }
-                // For slower/longer movements, require more distance
-                else if (Math.abs(moveBy) > slideWidth * 0.3) {
-                    if (moveBy < 0) {
-                        currentIndex++;
-                    } else {
+                    } else if (moveDistance > 0) {
                         currentIndex--;
                     }
                 }
                 
-                moveToSlide(currentIndex);
-            }
-            
-            function mouseEnd() {
-                cancelAnimationFrame(animationID);
-                isDragging = false;
-                
-                const moveBy = currentTranslate - prevTranslate;
-                const timeDiff = new Date() - startTime;
-                const slideWidth = getSlideWidth();
-                
-                // Handle swipe vs. tap/click
-                // If movement is small and quick, it's a swipe
-                if (Math.abs(moveBy) > 20 && timeDiff < 300) {
-                    if (moveBy < 0) {
-                        currentIndex++;
-                    } else {
-                        currentIndex--;
-                    }
-                }
-                // For slower/longer movements, require more distance
-                else if (Math.abs(moveBy) > slideWidth * 0.3) {
-                    if (moveBy < 0) {
-                        currentIndex++;
-                    } else {
-                        currentIndex--;
-                    }
-                }
-                
+                // Always snap to nearest slide
                 moveToSlide(currentIndex);
             }
             
             function animation() {
                 setSliderPosition();
-                if (isDragging) requestAnimationFrame(animation);
+                if (isDragging) animationID = requestAnimationFrame(animation);
             }
             
             function setSliderPosition() {
@@ -1018,52 +1028,51 @@
             }
             
             function moveToSlide(index) {
-                const slideWidth = getSlideWidth();
                 const totalOriginalSlides = slides.length;
                 
-                // Handle looping
-                let actualIndex = index;
-                
-                // Update the active dot (normalize index for dot display)
+                // Update the active dot
                 const visualIndex = (index + totalOriginalSlides) % totalOriginalSlides;
                 document.querySelectorAll('.dot').forEach((dot, i) => {
                     dot.classList.toggle('active', i === visualIndex);
                 });
                 
-                currentIndex = actualIndex;
-                currentTranslate = -(slideWidth * (actualIndex + 1)); // +1 for the cloned slide at the beginning
+                // Set current index and calculate translate position
+                currentIndex = index;
+                
+                // Position slides with proper centering
+                currentTranslate = -((index + 1) * slideInterval) + centerOffset;
                 prevTranslate = currentTranslate;
                 
                 // Apply smooth transition
                 slider.style.transition = 'transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
                 setSliderPosition();
                 
-                // Check if we need to jump to the opposite end after animation
+                // Handle infinite loop logic
                 setTimeout(() => {
-                    // If we've moved past the last slide (now showing first clone)
-                    if (actualIndex >= totalOriginalSlides) {
-                        // Silently jump to the real first slide
+                    // If past the last slide
+                    if (index >= totalOriginalSlides) {
+                        // Jump to first slide
                         slider.style.transition = 'none';
                         currentIndex = 0;
-                        currentTranslate = -slideWidth;
-                        prevTranslate = -slideWidth;
+                        currentTranslate = -slideInterval + centerOffset;
+                        prevTranslate = currentTranslate;
                         setSliderPosition();
                         
-                        // Re-enable transitions after the jump
+                        // Restore transitions
                         setTimeout(() => {
                             slider.style.transition = 'transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
                         }, 50);
-                    }
-                    // If we've moved before the first slide (now showing last clone)
-                    else if (actualIndex < 0) {
-                        // Silently jump to the real last slide
+                    } 
+                    // If before the first slide
+                    else if (index < 0) {
+                        // Jump to last slide
                         slider.style.transition = 'none';
                         currentIndex = totalOriginalSlides - 1;
-                        currentTranslate = -slideWidth * (totalOriginalSlides);
-                        prevTranslate = -slideWidth * (totalOriginalSlides);
+                        currentTranslate = -(totalOriginalSlides * slideInterval) + centerOffset;
+                        prevTranslate = currentTranslate;
                         setSliderPosition();
                         
-                        // Re-enable transitions after the jump
+                        // Restore transitions
                         setTimeout(() => {
                             slider.style.transition = 'transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
                         }, 50);
@@ -1073,21 +1082,30 @@
             
             // Handle window resize
             window.addEventListener('resize', () => {
-                // Disable transition during resize to prevent jumpy behavior
+                // Recalculate dimensions
+                const newDimensions = calculateDimensions();
+                
+                // Update globals
+                slideWidth = newDimensions.slideWidth;
+                slideInterval = newDimensions.slideInterval;
+                sliderWidth = newDimensions.sliderWidth;
+                centerOffset = newDimensions.centerOffset;
+                
+                // Disable transition during resize
                 slider.style.transition = 'none';
                 
-                const slideWidth = getSlideWidth();
-                currentTranslate = -slideWidth * (currentIndex + 1);
+                // Reposition the slider
+                currentTranslate = -((currentIndex + 1) * slideInterval) + centerOffset;
                 prevTranslate = currentTranslate;
                 setSliderPosition();
                 
-                // Re-enable transition after a small delay
+                // Re-enable transition
                 setTimeout(() => {
                     slider.style.transition = 'transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
                 }, 50);
             });
             
-            // Add keyboard navigation
+            // Keyboard navigation
             document.addEventListener('keydown', (e) => {
                 if (e.key === 'ArrowLeft') {
                     moveToSlide(currentIndex - 1);
@@ -1095,6 +1113,9 @@
                     moveToSlide(currentIndex + 1);
                 }
             });
+            
+            // Initialize animation frame
+            animationID = requestAnimationFrame(animation);
         });
     </script>
 </body>
