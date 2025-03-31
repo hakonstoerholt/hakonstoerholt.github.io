@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BI Energy and Commodities - BI Norwegian Business School</title>
+    <title>Energy and Commodities - BI Norwegian Business School</title>
     <style>
         /* BI Norwegian Business School Colors - Updated with your logo color */
         :root {
@@ -49,11 +49,27 @@
 
         .logo {
             height: 80px;
-            margin-right: 1rem;
+            margin-right: 1.5rem;
         }
         
         .title-container {
             text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        /* Fixed the color here to make the title visible */
+        .title-container h1 {
+            margin-bottom: 0.2rem;
+            font-size: 1.8rem;
+            color: white; /* Explicitly set to white to override the global style */
+        }
+        
+        .title-container p {
+            margin-bottom: 0;
+            font-size: 1rem;
+            opacity: 0.9;
         }
         
         .sponsor-container {
@@ -457,7 +473,7 @@
             text-align: center;
             margin-top: 2rem;
         }
-
+        
         @media (max-width: 768px) {
             nav ul {
                 flex-direction: column;
@@ -492,9 +508,10 @@
     <header>
         <div class="header-container">
             <div class="logo-container">
-                <img src="images/energiutvalget-logo.png" alt="BI Energy and Commodities Logo" class="logo">
+                <!-- Updated the alt text to be more descriptive -->
+                <img src="images/energiutvalget-logo.png" alt="Energy and Commodities Logo" class="logo">
                 <div class="title-container">
-                    <h1>BI Energy and Commodities</h1>
+                    <h1>Energy and Commodities</h1>
                     <p>BI Norwegian Business School</p>
                 </div>
             </div>
@@ -516,8 +533,8 @@
 
     <div class="container">
         <section id="about">
-            <h2>About BI Energy and Commodities</h2>
-            <p>BI Energy and Commodities is a student society at BI Norwegian Business School dedicated to exploring the energy sector, sustainability, and future business opportunities within these fields. We organize events, workshops, and company visits to bridge the gap between academic knowledge and industry practice.</p>
+            <h2>About Energy and Commodities</h2>
+            <p>Energy and Commodities is a student society at BI Norwegian Business School dedicated to exploring the energy sector, sustainability, and future business opportunities within these fields. We organize events, workshops, and company visits to bridge the gap between academic knowledge and industry practice.</p>
             
             <p>Our mission is to create awareness about energy-related challenges and innovations while providing our members with valuable connections to industry professionals and potential employers.</p>
 
@@ -560,7 +577,7 @@
                         <div class="member-info">
                             <h3 class="member-name">Name Namesson</h3>
                             <p class="member-role">President</p>
-                            <p>A brief description of the president, their background, and their vision for Energiutvalget.</p>
+                            <p>A brief description of the president, their background, and their vision for Energy and Commodities.</p>
                         </div>
                     </div>
                     <div class="slide">
@@ -597,6 +614,7 @@
                     </div>
                 </div>
                 <div class="slider-dots" id="sliderDots"></div>
+                <p class="slider-instructions">Swipe or drag to view more board members</p>
             </div>
         </section>
 
@@ -619,7 +637,7 @@
 
         <section id="contact">
             <h2>Contact Us</h2>
-            <p>Interested in joining Energiutvalget or have questions about our activities? Feel free to reach out to us directly:</p>
+            <p>Interested in joining Energy and Commodities or have questions about our activities? Feel free to reach out to us directly:</p>
             
             <div class="contact-info">
                 <div class="contact-card">
@@ -643,7 +661,7 @@
 
     <footer>
         <div class="container">
-            <p>BI Energy and Commodities - BI Norwegian Business School</p>
+            <p>Energy and Commodities - BI Norwegian Business School</p>
             <p>Nydalsveien 37, 0484 Oslo, Norway</p>
             <div class="social-links">
                 <!-- Add proper social media links -->
@@ -651,7 +669,7 @@
                 <a href="https://www.instagram.com/bienergy" aria-label="Instagram">IG</a>
                 <a href="https://www.linkedin.com/company/bienergy" aria-label="LinkedIn">LI</a>
             </div>
-            <p class="footer-text">© 2025 BI Energy and Commodities. All rights reserved.</p>
+            <p class="footer-text">© 2025 Energy and Commodities. All rights reserved.</p>
         </div>
     </footer>
 
