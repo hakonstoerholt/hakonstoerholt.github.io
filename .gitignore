@@ -1,0 +1,11 @@
+# Ignore config file with API keys
+config.js
+
+# Ignore common system files
+.DS_Store
+Thumbs.db
+
+# Ignore editor files
+.vscode/
+.idea/
+*.swp

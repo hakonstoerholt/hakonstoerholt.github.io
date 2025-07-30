@@ -1,27 +1,47 @@
 <!DOCTYPE html>
-<html lang="no">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Energiutvalget - Handelshøyskolen BI</title>
-
-    <link rel="icon" type="image/png" href="images/energiutvalget-logo-ny.png">
+    <title>Hakon Storholt - Quantitative Finance & Risk Management</title>
+    <meta name="description" content="Quantitative Finance Professional specializing in Risk Management, Algorithmic Trading, and Quantum Computing applications in finance.">
+    <meta name="keywords" content="quantitative finance, risk management, algorithmic trading, quantum computing, portfolio optimization, derivatives pricing">
+    <meta name="author" content="Hakon Storholt">
+    
+    <!-- Open Graph / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hakonstoerholt.github.io/">
+    <meta property="og:title" content="Hakon Storholt - Quantitative Finance & Risk Management">
+    <meta property="og:description" content="Building next-generation financial systems with quantum computing and advanced analytics">
+    
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
-        /* BI Norwegian Business School Colors */
+        /* Professional Quantitative Finance Portfolio Styles */
         :root {
-            --bi-blue: #0b2f57;
-            --bi-light-blue: #1a4675;
-            --bi-dark-blue: #081f3a;
-            --bi-light-gray: #f2f2f2;
-            --bi-dark-gray: #333333;
+            --primary-navy: #1e3a8a;
+            --secondary-gold: #f59e0b;
+            --background-light: #f8fafc;
+            --background-gray: #f1f5f9;
+            --text-dark: #1f2937;
+            --text-medium: #4b5563;
+            --text-light: #6b7280;
+            --border-light: #e5e7eb;
+            --white: #ffffff;
+            --success-green: #10b981;
+            --accent-blue: #3b82f6;
         }
 
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         html {
@@ -29,435 +49,1154 @@
         }
 
         body {
-            background-color: white;
-            color: var(--bi-dark-gray);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--white);
         }
 
-        /* --- Language Switcher Basic Styles --- */
-        .lang-switcher {
-            text-align: center;
-            padding: 0.5rem 0;
-            background-color: var(--bi-light-gray); /* Light background */
-            border-bottom: 1px solid #ddd;
+        /* Header & Navigation */
+        .header {
+            background: linear-gradient(135deg, var(--primary-navy) 0%, #1e40af 100%);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(30, 58, 138, 0.1);
         }
 
-        .lang-button {
-            background: none;
-            border: none;
-            padding: 0.3rem 0.6rem;
-            cursor: pointer;
-            font-size: 0.9rem;
-            color: var(--bi-dark-blue);
-            border-radius: 4px;
-            transition: background-color 0.2s;
-        }
-
-        .lang-button:hover {
-            background-color: #e0e0e0;
-        }
-
-        .lang-button.active {
-            background-color: var(--bi-blue);
-            color: white;
-            font-weight: bold;
-        }
-        /* --- End Language Switcher Styles --- */
-
-
-        header {
-            background-color: var(--bi-blue);
-            color: white;
-            padding: 2rem 0;
-        }
-
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        .nav-container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 2rem;
-        }
-
-        .logo-container {
             display: flex;
+            justify-content: space-between;
             align-items: center;
+            height: 70px;
         }
 
         .logo {
-            height: 80px;
-            margin-right: 1.5rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--white);
+            text-decoration: none;
+            letter-spacing: -0.5px;
         }
 
-        .title-container {
-            text-align: left;
+        .nav-menu {
             display: flex;
-            flex-direction: column;
-            justify-content: center;
+            list-style: none;
+            gap: 2rem;
         }
 
-        .title-container h1 {
-            margin-bottom: 0.2rem;
-            font-size: 1.8rem;
-            color: white;
-        }
-
-        .title-container p {
-            margin-bottom: 0;
-            font-size: 1rem;
-            opacity: 0.9;
-        }
-
-        .sponsor-container {
-            text-align: right;
-            max-width: 200px;
-        }
-
-        .sponsor-label {
-            font-size: 0.9rem;
-            margin-bottom: 0.5rem;
-            opacity: 0.9;
-        }
-
-        .sponsor-logo {
-            max-height: 60px;
-            max-width: 150px;
-        }
-
-        /* Navigation styles */
-        nav {
-            background-color: white;
-            padding: 1rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        nav ul {
-            display: flex;
-            justify-content: center;
-            list-style-type: none;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        nav ul li {
-            margin: 0 1.5rem;
-        }
-
-        nav ul li a {
-            color: var(--bi-dark-blue);
+        .nav-link {
+            color: var(--white);
             text-decoration: none;
             font-weight: 500;
-            transition: color 0.3s;
+            transition: all 0.3s ease;
+            padding: 0.5rem 0;
             position: relative;
         }
 
-        nav ul li a::after {
+        .nav-link::after {
             content: '';
             position: absolute;
+            bottom: 0;
+            left: 0;
             width: 0;
             height: 2px;
-            bottom: -5px;
-            left: 0;
-            background-color: var(--bi-blue);
-            transition: width 0.3s;
+            background: var(--secondary-gold);
+            transition: width 0.3s ease;
         }
 
-        nav ul li a:hover::after {
+        .nav-link:hover::after {
             width: 100%;
         }
 
-        /* Mobile menu styles */
-        .hamburger-menu {
+        .mobile-menu-toggle {
             display: none;
-            flex-direction: column;
-            justify-content: space-around;
-            width: 30px;
-            height: 25px;
-            background: transparent;
+            background: none;
             border: none;
+            color: var(--white);
+            font-size: 1.5rem;
             cursor: pointer;
-            padding: 0;
-            margin: 0 auto;
         }
 
-        .hamburger-menu span {
-            width: 30px;
-            height: 3px;
-            background: var(--bi-dark-blue);
-            border-radius: 10px;
-            transition: all 0.3s linear;
-            position: relative;
-            transform-origin: 1px;
-        }
-
-        .mobile-nav {
-            display: none;
-            background-color: white;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            padding: 1rem;
-            border-radius: 0 0 10px 10px;
-        }
-
-        .mobile-nav.active {
-            display: block;
-        }
-
-        .mobile-nav ul {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .mobile-nav ul li {
-            margin: 0.5rem 0;
-            width: 100%;
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-navy) 0%, #1e40af 100%);
+            color: var(--white);
+            padding: 120px 0 80px;
             text-align: center;
+            position: relative;
+            overflow: hidden;
         }
 
-        .mobile-nav ul li a {
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="a" cx="50%" cy="50%"><stop offset="0%" stop-color="%23ffffff" stop-opacity="0.1"/><stop offset="100%" stop-color="%23ffffff" stop-opacity="0"/></radialGradient></defs><circle cx="500" cy="500" r="400" fill="url(%23a)"/></svg>') center/cover;
+            opacity: 0.1;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-image {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            margin: 0 auto 2rem;
+            border: 4px solid var(--secondary-gold);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
             display: block;
-            padding: 0.5rem 0;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            letter-spacing: -1px;
+        }
+
+        .hero-tagline {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--secondary-gold);
+            font-weight: 500;
+        }
+
+        .hero-description {
+            font-size: 1.2rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.875rem 2rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary {
+            background: var(--secondary-gold);
+            color: var(--primary-navy);
+        }
+
+        .btn-primary:hover {
+            background: #d97706;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(245, 158, 11, 0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--white);
+            border-color: var(--white);
+        }
+
+        .btn-secondary:hover {
+            background: var(--white);
+            color: var(--primary-navy);
+            transform: translateY(-2px);
+        }
+
+        /* Sections */
+        .section {
+            padding: 80px 0;
         }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 3rem 2rem;
+            padding: 0 2rem;
         }
 
-        section {
-            margin-bottom: 5rem;
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
         }
 
-        /* Offset scroll target position to account for sticky nav height */
-        section[id] {
-          /* Adjust value maybe needed if language switcher adds height */
-          scroll-margin-top: 80px; /* Increased slightly */
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-navy);
+            margin-bottom: 1rem;
         }
 
-        h1, h2, h3 {
-            color: var(--bi-blue);
-            margin-bottom: 1.5rem;
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-medium);
+            max-width: 600px;
+            margin: 0 auto;
         }
 
-        h2 {
-            font-size: 2.2rem;
+        /* Projects Grid */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .project-card {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border: 1px solid var(--border-light);
+            transition: all 0.3s ease;
             position: relative;
-            display: inline-block;
+            overflow: hidden;
         }
 
-        h2::after {
+        .project-card::before {
             content: '';
             position: absolute;
-            width: 50%;
-            height: 3px;
-            bottom: -10px;
+            top: 0;
             left: 0;
-            background-color: var(--bi-light-blue);
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-navy), var(--secondary-gold));
         }
 
-        p {
-            margin-bottom: 1.5rem;
-            font-size: 1.1rem;
-        }
-
-        /* --- Board Layout CSS (Hybrid Flex/Grid) --- */
-        .board-container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 15px;
-        }
-        .board-member {
-            width: 300px;
-            background-color: var(--bi-light-gray);
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-        .board-member:hover {
+        .project-card:hover {
             transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
         }
-        .board-member.featured {
-            width: 340px;
+
+        .project-card.featured {
+            grid-column: span 2;
+            background: linear-gradient(135deg, var(--background-light) 0%, var(--white) 100%);
         }
-        .member-img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
+
+        .project-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
         }
-        .featured .member-img {
-            height: 220px;
+
+        .project-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--primary-navy);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.5rem;
         }
-        .member-info {
-            padding: 1.2rem;
-            text-align: center;
+
+        .project-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary-navy);
         }
-        .member-name {
-            font-size: 1.2rem;
-            margin-bottom: 0.3rem;
+
+        .project-status {
+            background: var(--secondary-gold);
+            color: var(--primary-navy);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-left: auto;
         }
-        .featured .member-name {
-            font-size: 1.4rem;
+
+        .project-description {
+            color: var(--text-medium);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
         }
-        .member-role {
-            color: var(--bi-light-blue);
-            font-weight: 500;
-            margin-bottom: 0.8rem;
-            font-size: 0.9rem;
-        }
-        .featured .member-role {
-            font-size: 1rem;
-        }
-        .member-info p {
-            font-size: 0.9rem;
-            line-height: 1.5;
-        }
-        .board-row {
+
+        .project-tech {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
-            gap: 30px;
-            margin-bottom: 30px;
-            width: 100%;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
         }
-        .board-row.featured-row {
-            margin-bottom: 40px;
+
+        .tech-tag {
+            background: var(--background-gray);
+            color: var(--text-dark);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .project-link {
+            color: var(--primary-navy);
+            text-decoration: none;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .project-link:hover {
+            color: var(--secondary-gold);
+        }
+
+        /* Skills Section */
+        .skills-grid {
             display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .skill-category {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border: 1px solid var(--border-light);
+        }
+
+        .skill-category h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--primary-navy);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .skill-list {
+            list-style: none;
+        }
+
+        .skill-item {
+            padding: 0.5rem 0;
+            color: var(--text-medium);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .skill-level {
+            font-size: 0.875rem;
+            color: var(--secondary-gold);
+            font-weight: 600;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: var(--background-light);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .contact-card {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border: 1px solid var(--border-light);
+            transition: transform 0.3s ease;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-3px);
+        }
+
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--primary-navy);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
             justify-content: center;
+            color: var(--white);
+            font-size: 1.5rem;
+            margin: 0 auto 1rem;
         }
-        .board-row.featured-row:after {
-            content: '';
-            display: block;
-            width: 50%;
-            height: 2px;
-            background-color: var(--bi-light-gray);
-            margin: 10px auto 0;
+
+        .contact-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--primary-navy);
+            margin-bottom: 0.5rem;
         }
-        /* --- End Board Layout CSS --- */
 
+        .contact-link {
+            color: var(--text-medium);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
 
-        /* --- Events Section --- */
-        /* ... (styles remain the same) ... */
-        .events-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 2rem; }
-        .event-card { border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); transition: transform 0.3s; }
-        .event-card:hover { transform: translateY(-10px); }
-        .event-img { width: 100%; height: 200px; object-fit: cover; }
-        .event-content { padding: 1.5rem; }
-        .event-date { color: var(--bi-light-blue); font-weight: bold; margin-bottom: 0.5rem; }
-        .no-events-container { display: flex; justify-content: center; align-items: center; min-height: 250px; background-color: var(--bi-light-gray); border-radius: 10px; padding: 2rem; }
-        .no-events-message { text-align: center; max-width: 600px; }
-        .no-events-message h3 { color: var(--bi-dark-blue); margin-bottom: 1rem; }
-        .events-social { margin-top: 1.5rem; }
-        .events-social-link { color: var(--bi-light-blue); text-decoration: none; transition: color 0.3s; }
-        .events-social-link:hover { color: var(--bi-blue); text-decoration: underline; }
-        .separator { margin: 0 0.5rem; color: var(--bi-dark-gray); opacity: 0.5; }
-        /* --- End Events Section --- */
+        .contact-link:hover {
+            color: var(--secondary-gold);
+        }
 
+        /* Footer */
+        .footer {
+            background: var(--primary-navy);
+            color: var(--white);
+            padding: 3rem 0;
+            text-align: center;
+        }
 
-        /* --- Contact Section --- */
-        /* ... (styles remain the same) ... */
-        .contact-info { display: flex; flex-wrap: wrap; gap: 2rem; margin-top: 2rem; }
-        .contact-card { flex: 1; min-width: 250px; background-color: var(--bi-light-gray); padding: 2rem; border-radius: 10px; text-align: center; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); }
-        .contact-icon { font-size: 2rem; color: var(--bi-blue); margin-bottom: 1rem; }
-        .contact-title { margin-bottom: 1rem; color: var(--bi-dark-blue); }
-        .email-link { color: var(--bi-light-blue); text-decoration: none; transition: color 0.3s; }
-        .email-link:hover { color: var(--bi-blue); text-decoration: underline; }
-        /* --- End Contact Section --- */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
 
+        .social-link {
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            text-decoration: none;
+            font-size: 1.25rem;
+            transition: all 0.3s ease;
+        }
 
-        /* --- Footer --- */
-        /* ... (styles remain the same) ... */
-         footer { background-color: var(--bi-dark-blue); color: white; text-align: center; padding: 3rem 0; margin-top: 3rem; }
-        .social-links { display: flex; justify-content: center; margin: 1.5rem 0; }
-        .social-links a { color: white; margin: 0 1rem; padding: 0.5rem; border-radius: 5px; background-color: rgba(255, 255, 255, 0.1); display: inline-block; transition: background-color 0.3s; }
-        .social-links a:hover { background-color: rgba(255, 255, 255, 0.2); }
-        .footer-text { max-width: 600px; margin: 0 auto; opacity: 0.8; }
-        /* --- End Footer --- */
+        .social-link:hover {
+            background: var(--secondary-gold);
+            color: var(--primary-navy);
+            transform: translateY(-3px);
+        }
 
-        /* --- Responsive adjustments --- */
+        /* Responsive Design */
         @media (max-width: 768px) {
-            .desktop-nav { display: none; }
-            .hamburger-menu { display: flex; }
-            .header-container { flex-direction: column; text-align: center; }
-            /* Mobile Header Alignment Fix */
-            .logo-container { margin-bottom: 1rem; flex-direction: column; align-items: center; }
-            .title-container { align-items: center; font-size: 1.6rem; }
-            /* End Mobile Header Alignment Fix */
-            .sponsor-container { text-align: center; margin-top: 1rem; max-width: none; }
-            /* Adjust scroll margin for potentially different nav/switcher height */
-            section[id] { scroll-margin-top: 70px; /* May need adjustment */ }
-            h2 { font-size: 1.8rem; }
-            .contact-info { flex-direction: column; }
-            .board-member { width: 280px; }
-            .board-member.featured { width: 320px; }
+            .nav-menu {
+                display: none;
+            }
+
+            .mobile-menu-toggle {
+                display: block;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-tagline {
+                font-size: 1.25rem;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .project-card.featured {
+                grid-column: span 1;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+
+            /* About section mobile styles */
+            #about div[style*="grid-template-columns"] {
+                display: block !important;
+            }
+
+            #about div[style*="grid-template-columns"] > div {
+                margin-bottom: 2rem;
+            }
         }
 
-        @media (max-width: 480px) {
-             .header-container { padding: 0 1rem; }
-            .container { padding: 2rem 1rem; }
-             h2 { font-size: 1.6rem; }
-            .board-member { width: 90%; max-width: 280px; }
-            .board-member.featured { width: 90%; max-width: 300px; }
-            .member-img { height: 180px; }
-            .featured .member-img { height: 200px; }
-            .member-info { padding: 1rem; }
-             .contact-card { min-width: unset; }
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
-        /* --- End Responsive adjustments --- */
 
+        .fade-in {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        /* Code blocks */
+        .code-block {
+            background: var(--text-dark);
+            color: var(--background-light);
+            padding: 1rem;
+            border-radius: 8px;
+            font-family: 'Fira Code', monospace;
+            font-size: 0.875rem;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
     </style>
 </head>
 <body>
-    <header>
-       <div class="header-container">
-            <div class="logo-container">
-                <img src="images/energiutvalget-logo-ny.png" alt="Energiutvalget Logo" class="logo">
-                <div class="title-container">
-                    <h1 data-key="mainTitle">Energiutvalget</h1>
-                    <p data-key="mainSubtitle">Handelshøyskolen BI</p>
-                </div>
-            </div>
-            <div class="sponsor-container">
-                 <p class="sponsor-label" data-key="sponsorLabel">Sponset av</p>
-                <img src="/api/placeholder/150/60" alt="Sponsorlogo" class="sponsor-logo">
-            </div>
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#home" class="logo">Hakon Storholt</a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </header>
 
-    <div class="lang-switcher">
-       <button type="button" class="lang-button active" data-lang="no">Norsk</button> |
-       <button type="button" class="lang-button" data-lang="en">English</button>
-    </div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img src="images/hakon-profile.jpg" alt="Hakon Storholt" class="hero-image">
+            <h1>Hakon Storholt</h1>
+            <div class="hero-tagline">Quantitative Finance • Risk Management • Algorithmic Trading</div>
+            <p class="hero-description">Building next-generation financial systems with quantum computing and advanced analytics</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-code"></i>
+                    View Projects
+                </a>
+                <a href="/resume.pdf" class="btn btn-secondary" target="_blank">
+                    <i class="fas fa-download"></i>
+                    Download Resume
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="fas fa-envelope"></i>
+                    Contact Me
+                </a>
+            </div>
+        </div>
+    </section>
 
-    <nav class="desktop-nav">
-        <ul>
-            <li><a href="#about" data-key="navAbout">Om Oss</a></li>
-            <li><a href="#board" data-key="navBoard">Styret</a></li>
-            <li><a href="#events" data-key="navEvents">Arrangementer</a></li>
-            <li><a href="#contact" data-key="navContact">Kontakt</a></li>
-        </ul>
-    </nav>
-    <button class="hamburger-menu" id="hamburgerButton">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
-    <nav class="mobile-nav" id="mobileNav">
-         <ul>
-             <li><a href="#about" data-key="navAboutMobile">Om Oss</a></li>
-            <li><a href="#board" data-key="navBoardMobile">Styret</a></li>
-            <li><a href="#events" data-key="navEventsMobile">Arrangementer</a></li>
-            <li><a href="#contact" data-key="navContactMobile">Kontakt</a></li>
-        </ul>
-    </nav>
-
-    <main>
+    <!-- Featured Projects Section -->
+    <section id="projects" class="section">
         <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Enterprise-grade financial systems and cutting-edge quantitative research</p>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Cerberus Risk Engine - Flagship Project -->
+                <div class="project-card featured">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div>
+                            <h3 class="project-title">Cerberus Risk Engine</h3>
+                            <span class="project-status">Flagship Project</span>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Next-generation proprietary risk management system for real-time portfolio risk assessment. 
+                        Production-ready enterprise infrastructure with CI/CD pipeline, designed for institutional-grade portfolios.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python 3.11+</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">TimescaleDB</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Streamlit</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i>
+                            View Code
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quantum Exotic Option Valuation -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-atom"></i>
+                        </div>
+                        <div>
+                            <h3 class="project-title">Quantum Option Pricing</h3>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Quantum computing applications for complex derivatives pricing using VQE algorithms and QAOA. 
+                        Cutting-edge fintech research demonstrating quantum advantage in finance.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Qiskit</span>
+                        <span class="tech-tag">VQE</span>
+                        <span class="tech-tag">QAOA</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i>
+                            View Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Polymarket Arbitrage Bot -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div>
+                            <h3 class="project-title">Polymarket Arbitrage Bot</h3>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Automated arbitrage detection and execution system with real-time probability calculations. 
+                        Live trading bot demonstrating market microstructure understanding.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Binance API</span>
+                        <span class="tech-tag">Real-time Data</span>
+                        <span class="tech-tag">Automation</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i>
+                            View Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Option Pricing Model -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div>
+                            <h3 class="project-title">Option Pricing Engine</h3>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Comprehensive derivatives pricing application with real-time market data integration. 
+                        Production web application featuring Greeks calculation and portfolio management.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">Alpaca API</span>
+                        <span class="tech-tag">Black-Scholes</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i>
+                            View Code
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Portfolio Optimization -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <div>
+                            <h3 class="project-title">Portfolio Rebalancing</h3>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Advanced portfolio optimization using modern portfolio theory with Markowitz optimization, 
+                        risk-return analysis, and automated rebalancing algorithms.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">NumPy</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">Optimization</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i>
+                            View Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Credit Risk Quantum Project -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div>
+                            <h3 class="project-title">Quantum Credit Risk</h3>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Quantum machine learning for advanced credit risk assessment with next-generation risk modeling 
+                        and regulatory compliance focus.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Quantum ML</span>
+                        <span class="tech-tag">Risk Modeling</span>
+                        <span class="tech-tag">Statistics</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i>
+                            View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <p class="section-subtitle">Advanced expertise in quantitative finance and cutting-edge technology</p>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>
+                        <i class="fas fa-code"></i>
+                        Programming Languages
+                    </h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <span>Python</span>
+                            <span class="skill-level">Advanced</span>
+                        </li>
+                        <li class="skill-item">
+                            <span>R</span>
+                            <span class="skill-level">Advanced</span>
+                        </li>
+                        <li class="skill-item">
+                            <span>C++</span>
+                            <span class="skill-level">Intermediate</span>
+                        </li>
+                        <li class="skill-item">
+                            <span>JavaScript</span>
+                            <span class="skill-level">Intermediate</span>
+                        </li>
+                        <li class="skill-item">
+                            <span>SQL</span>
+                            <span class="skill-level">Advanced</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>
+                        <i class="fas fa-chart-line"></i>
+                        Quantitative Finance
+                    </h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <span>Risk Management</span>
+                            <span class="skill-level">Expert</span>
+                        </li>
+                        <li class="skill-item">
+                            <span>Derivatives Pricing</span>
+                            <span class="skill-level">Advanced</span>
+                        </li>
+                        <li class="skill-item">
+                            <span>Portfolio Theory</span>
+                            <span class="skill-level">Advanced</span>
+                        </li>
+                        <li class="skill-item">
+                            <span>Algorithmic Trading</span>
+                            <span class="skill-level">Advanced</span>
+                        </li>
+                        <li class="skill-item">
+                            <span>Stochastic Calculus</span>
+                            <span class="skill-level">Advanced</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>
+                        <i class="fas fa-cogs"></i>
+                        Technology Stack
+                    </h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <span>FastAPI & Flask</span>
+                            <span class="skill-level">Advanced</span>
+                        </li>
+                        <li class="skill-item">
+                            <span>PostgreSQL & TimescaleDB</span>
+                            <span class="skill-level">Advanced</span>
+                        </li>
+                        <li class="skill-item">
+                            <span>Docker & CI/CD</span>
+                            <span class="skill-level">Intermediate</span>
+                        </li>
+                        <li class="skill-item">
+                            <span>Pandas & NumPy</span>
+                            <span class="skill-level">Expert</span>
+                        </li>
+                        <li class="skill-item">
+                            <span>Streamlit & Jupyter</span>
+                            <span class="skill-level">Advanced</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>
+                        <i class="fas fa-atom"></i>
+                        Quantum Computing
+                    </h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <span>Qiskit & Classiq</span>
+                            <span class="skill-level">Intermediate</span>
+                        </li>
+                        <li class="skill-item">
+                            <span>VQE & QAOA</span>
+                            <span class="skill-level">Intermediate</span>
+                        </li>
+                        <li class="skill-item">
+                            <span>Quantum ML</span>
+                            <span class="skill-level">Beginner</span>
+                        </li>
+                        <li class="skill-item">
+                            <span>Portfolio Optimization</span>
+                            <span class="skill-level">Intermediate</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>
+                        <i class="fas fa-database"></i>
+                        Financial Tools
+                    </h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <span>Bloomberg Terminal</span>
+                            <span class="skill-level">Intermediate</span>
+                        </li>
+                        <li class="skill-item">
+                            <span>Polygon.io API</span>
+                            <span class="skill-level">Advanced</span>
+                        </li>
+                        <li class="skill-item">
+                            <span>Alpaca Trading</span>
+                            <span class="skill-level">Advanced</span>
+                        </li>
+                        <li class="skill-item">
+                            <span>Binance APIs</span>
+                            <span class="skill-level">Intermediate</span>
+                        </li>
+                        <li class="skill-item">
+                            <span>Risk Systems</span>
+                            <span class="skill-level">Expert</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>
+                        <i class="fas fa-calculator"></i>
+                        Mathematical Methods
+                    </h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <span>GARCH Models</span>
+                            <span class="skill-level">Advanced</span>
+                        </li>
+                        <li class="skill-item">
+                            <span>Monte Carlo</span>
+                            <span class="skill-level">Advanced</span>
+                        </li>
+                        <li class="skill-item">
+                            <span>Time Series Analysis</span>
+                            <span class="skill-level">Advanced</span>
+                        </li>
+                        <li class="skill-item">
+                            <span>Factor Models</span>
+                            <span class="skill-level">Advanced</span>
+                        </li>
+                        <li class="skill-item">
+                            <span>VaR & CVaR</span>
+                            <span class="skill-level">Expert</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Passionate about quantitative finance and innovative financial technology</p>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;">
+                <div>
+                    <h3 style="color: var(--primary-navy); margin-bottom: 1.5rem; font-size: 1.5rem;">Professional Focus</h3>
+                    <p style="margin-bottom: 1.5rem; color: var(--text-medium); line-height: 1.7;">
+                        I specialize in developing enterprise-grade financial systems with a focus on risk management, 
+                        algorithmic trading, and quantum computing applications. My work bridges the gap between 
+                        cutting-edge academic research and practical financial industry applications.
+                    </p>
+                    <p style="margin-bottom: 1.5rem; color: var(--text-medium); line-height: 1.7;">
+                        Currently developing <strong>Cerberus Risk Engine</strong>, a next-generation risk management 
+                        system designed for institutional-grade portfolios, featuring real-time analytics and 
+                        modular architecture for enterprise scalability.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 style="color: var(--primary-navy); margin-bottom: 1.5rem; font-size: 1.5rem;">Research Interests</h3>
+                    <ul style="list-style: none; margin: 0; padding: 0;">
+                        <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative; color: var(--text-medium);">
+                            <span style="position: absolute; left: 0; color: var(--secondary-gold); font-weight: bold;">•</span>
+                            Quantum computing applications in finance
+                        </li>
+                        <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative; color: var(--text-medium);">
+                            <span style="position: absolute; left: 0; color: var(--secondary-gold); font-weight: bold;">•</span>
+                            High-frequency trading strategies
+                        </li>
+                        <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative; color: var(--text-medium);">
+                            <span style="position: absolute; left: 0; color: var(--secondary-gold); font-weight: bold;">•</span>
+                            Alternative data in quantitative models
+                        </li>
+                        <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative; color: var(--text-medium);">
+                            <span style="position: absolute; left: 0; color: var(--secondary-gold); font-weight: bold;">•</span>
+                            ESG integration in portfolio optimization
+                        </li>
+                        <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative; color: var(--text-medium);">
+                            <span style="position: absolute; left: 0; color: var(--secondary-gold); font-weight: bold;">•</span>
+                            Cryptocurrency and DeFi risk modeling
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div style="margin-top: 3rem; text-align: center;">
+                <h3 style="color: var(--primary-navy); margin-bottom: 2rem; font-size: 1.5rem;">Career Objectives</h3>
+                <p style="max-width: 800px; margin: 0 auto; color: var(--text-medium); line-height: 1.7; font-size: 1.1rem;">
+                    Seeking opportunities in quantitative analysis, risk management, and algorithmic trading where I can 
+                    apply my expertise in building enterprise-grade financial systems and drive innovation in financial technology. 
+                    Particularly interested in roles at hedge funds, investment banks, trading firms, and fintech companies 
+                    that value cutting-edge research and practical implementation.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's discuss opportunities in quantitative finance and financial technology</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 class="contact-title">Email</h3>
+                    <a href="mailto:hakon.storholt@example.com" class="contact-link">hakon.storholt@example.com</a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <h3 class="contact-title">LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/hakonstorholt" class="contact-link" target="_blank">linkedin.com/in/hakonstorholt</a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3 class="contact-title">GitHub</h3>
+                    <a href="https://github.com/hakonstorholt" class="contact-link" target="_blank">github.com/hakonstorholt</a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3 class="contact-title">Phone</h3>
+                    <a href="tel:+1234567890" class="contact-link">+1 (234) 567-890</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/hakonstorholt" class="social-link" aria-label="GitHub" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/hakonstorholt" class="social-link" aria-label="LinkedIn" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:hakon.storholt@example.com" class="social-link" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="/resume.pdf" class="social-link" aria-label="Resume" target="_blank">
+                    <i class="fas fa-file-pdf"></i>
+                </a>
+            </div>
+            <p style="margin-bottom: 1rem; opacity: 0.9;">Hakon Storholt</p>
+            <p style="opacity: 0.7;">Quantitative Finance • Risk Management • Algorithmic Trading</p>
+            <p style="opacity: 0.6; margin-top: 1rem;">© 2025 Hakon Storholt. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Modern Portfolio JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu functionality
+            const mobileToggle = document.querySelector('.mobile-menu-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            if (mobileToggle) {
+                mobileToggle.addEventListener('click', function() {
+                    navMenu.classList.toggle('active');
+                });
+            }
+
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Add scroll effect to navigation
+            const header = document.querySelector('.header');
+            let lastScrollTop = 0;
+
+            window.addEventListener('scroll', function() {
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                
+                if (scrollTop > 100) {
+                    header.style.background = 'rgba(30, 58, 138, 0.95)';
+                    header.style.backdropFilter = 'blur(10px)';
+                } else {
+                    header.style.background = 'linear-gradient(135deg, var(--primary-navy) 0%, #1e40af 100%)';
+                    header.style.backdropFilter = 'none';
+                }
+                
+                lastScrollTop = scrollTop;
+            });
+
+            // Add animation to project cards on scroll
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in');
+                    }
+                });
+            }, observerOptions);
+
+            // Observe project cards and skill categories
+            document.querySelectorAll('.project-card, .skill-category').forEach(card => {
+                observer.observe(card);
+            });
+        });
+    </script>
+</body>
+</html>
             <section id="about">
                  <h2 data-key="aboutTitle">Om Energiutvalget</h2>
                  <p data-key="aboutP1">Energiutvalget er et studentutvalg ved Handelshøyskolen BI dedikert til å utforske energisektoren, bærekraft og fremtidige forretningsmuligheter innenfor disse feltene. Vi organiserer arrangementer, workshops og bedriftsbesøk for å bygge bro mellom akademisk kunnskap og bransjepraksis.</p>
@@ -545,22 +1284,35 @@
 
             <section id="events">
                  <h2 data-key="eventsTitle">Kommende Arrangementer</h2>
-                 <div class="no-events-container">
-                     <div class="no-events-message">
-                         <h3 data-key="noEventsTitle">Ingen kommende arrangementer for øyeblikket</h3>
-                         <p data-key="noEventsP">Kom snart tilbake for våre spennende kommende arrangementer, eller følg oss på sosiale medier for de siste oppdateringene.</p>
-                         <div class="events-social">
-                            <a href="https://www.facebook.com/bienergy" class="events-social-link" target="_blank" rel="noopener noreferrer">Facebook</a>
-                            <span class="separator">•</span>
-                            <a href="https://www.instagram.com/bienergy" class="events-social-link" target="_blank" rel="noopener noreferrer">Instagram</a>
-                            <span class="separator">•</span>
-                            <a href="https://www.linkedin.com/company/bienergy" class="events-social-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                        </div>
+                 <div class="events-grid">
+                     <div class="event-card">
+                         <img src="images/new-logo.png" alt="Nord Pool Visit" class="event-img">
+                         <div class="event-content">
+                             <p class="event-date" data-key="eventDate_nordpool">3. april 2025</p>
+                             <h3 data-key="eventTitle_nordpool">Besøk hos Nord Pool</h3>
+                             <p data-key="eventDesc_nordpool">Bli med på vårt spennende besøk hos Nord Pool i Oslo, hvor vi får innsikt i hvordan det nordiske kraftmarkedet fungerer. Vi får en eksklusiv omvisning og møter fageksperter som forklarer prismekanismer, markedsdynamikk og fremtidsutsikter for europeisk energihandel.</p>
+                             <p><strong data-key="eventLocation">Sted:</strong> Nord Pool Hovedkontor, Oslo</p>
+                             <p><strong data-key="eventTime">Tid:</strong> 12:00 - 14:00</p>
+                             <p><strong data-key="eventSignup">Påmelding:</strong> <a href="mailto:events@bienergy.no" class="email-link">events@bienergy.no</a></p>
+                         </div>
                      </div>
                  </div>
             </section>
 
-            <section id="contact">
+            <section id="commodity-prices">
+            <h2 data-key="pricesTitle">Energi- og Råvarepriser</h2>
+            <p data-key="pricesDescription">Oppdaterte priser på utvalgte energi- og råvaremarkeder.</p>
+            
+            <div class="prices-container">
+                <div class="price-grid" id="commodityPrices">
+                    <!-- Prices will be loaded here via JavaScript -->
+                    <div class="loading-message" data-key="loadingPrices">Laster inn priser...</div>
+                </div>
+                <div id="apiStatus" class="api-status"></div>
+            </div>
+        </section>
+
+        <section id="contact">
                  <h2 data-key="contactTitle">Kontakt Oss</h2>
                  <p data-key="contactP">Interessert i å bli med i Energiutvalget eller har du spørsmål om våre aktiviteter? Ta gjerne kontakt med oss direkte:</p>
                 <div class="contact-info">
@@ -639,6 +1391,18 @@
                 eventsTitle: "Kommende Arrangementer",
                 noEventsTitle: "Ingen kommende arrangementer for øyeblikket",
                 noEventsP: "Kom snart tilbake for våre spennende kommende arrangementer, eller følg oss på sosiale medier for de siste oppdateringene.",
+                eventDate_nordpool: "3. april 2025",
+                eventTitle_nordpool: "Besøk hos Nord Pool",
+                eventDesc_nordpool: "Bli med på vårt spennende besøk hos Nord Pool i Oslo, hvor vi får innsikt i hvordan det nordiske kraftmarkedet fungerer. Vi får en eksklusiv omvisning og møter fageksperter som forklarer prismekanismer, markedsdynamikk og fremtidsutsikter for europeisk energihandel.",
+                eventLocation: "Sted:",
+                eventTime: "Tid:",
+                eventSignup: "Påmelding:",
+                // Commodity Prices Section
+                pricesTitle: "Energi- og Råvarepriser",
+                pricesDescription: "Oppdaterte priser på utvalgte energi- og råvaremarkeder.",
+                loadingPrices: "Laster inn priser...",
+                lastUpdated: "Sist oppdatert:",
+                priceChange: "Endring:",
                 // Contact Section
                 contactTitle: "Kontakt Oss",
                 contactP: "Interessert i å bli med i Energiutvalget eller har du spørsmål om våre aktiviteter? Ta gjerne kontakt med oss direkte:",
@@ -685,17 +1449,29 @@
                 desc_lukas: "MSc in Strategy with experience in corporate event planning.",
                 role_marketing: "Marketing Director",
                 desc_nora: "Digital Marketing specialist with a keen interest in green energy.",
-                 // Events Section
+                // Events Section
                 eventsTitle: "Upcoming Events",
                 noEventsTitle: "No current upcoming events",
                 noEventsP: "Check back soon for our exciting upcoming events or follow us on social media for the latest updates.",
+                eventDate_nordpool: "April 3, 2025",
+                eventTitle_nordpool: "Visit to Nord Pool",
+                eventDesc_nordpool: "Join us for an exciting visit to Nord Pool in Oslo, where we'll gain insights into how the Nordic power market operates. We'll receive an exclusive tour and meet with industry experts who will explain pricing mechanisms, market dynamics, and future prospects for European energy trading.",
+                eventLocation: "Location:",
+                eventTime: "Time:",
+                eventSignup: "Registration:",
+                // Commodity Prices Section
+                pricesTitle: "Energy & Commodity Prices",
+                pricesDescription: "Updated prices on selected energy and commodity markets.",
+                loadingPrices: "Loading prices...",
+                lastUpdated: "Last updated:",
+                priceChange: "Change:",
                 // Contact Section
                 contactTitle: "Contact Us",
                 contactP: "Interested in joining Energy & Commodities or have questions about our activities? Feel free to reach out to us directly:",
                 contactInquiries: "General Inquiries",
                 contactMembership: "Membership",
                 contactPartnerships: "Partnerships",
-                 // Footer
+                // Footer
                 footerOrgName: "Energy & Commodities - BI Norwegian Business School",
                 footerCopyright: "© 2025 Energy & Commodities. All rights reserved."
             }
@@ -766,8 +1542,415 @@
             setLanguage(currentLang);
             // --- End Language Switcher Logic ---
 
+            // --- Commodity Prices Logic ---
+            fetchCommodityPrices();
+            // --- End Commodity Prices Logic ---
         });
          // --- End I18N Script ---
+
+        // --- Commodity Prices Functionality ---
+        // Define the commodities we want to display - only using crude oil for testing
+        const commodities = [
+            { symbol: 'WTI', name: 'Crude Oil Brent', icon: '🛢️', unit: 'USD/bbl' },
+            { symbol: 'NATURAL_GAS', name: 'Natural Gas', icon: '🔥', unit: 'USD/MMBtu' },
+            { symbol: 'ALUMINUM', name: 'Aluminium', icon: '🏭', unit: 'USD/t' },
+            { symbol: 'COPPER', name: 'Copper', icon: '🔌', unit: 'USD/t' },
+            { symbol: 'WHEAT', name: 'Wheat', icon: '🌾', unit: 'USD/bu' },
+            { symbol: 'CORN', name: 'Corn', icon: '🌽', unit: 'USD/bu' }
+        ];
+
+        // Cache duration in milliseconds
+        const CACHE_DURATION = 180 * 60 * 1000; // 3 hours
+        // Fetch real commodity prices from Alpha Vantage API
+
+        async function fetchCommodityPrices() {
+            const pricesContainer = document.getElementById('commodityPrices');
+            const apiStatusContainer = document.getElementById('apiStatus');
+            
+            try {
+                // Check if config.js is loaded and API key is available
+                if (typeof API_CONFIG === 'undefined' || !API_CONFIG.ALPHA_VANTAGE_KEY) {
+                    throw new Error('API key not found. Make sure config.js is properly set up.');
+                }
+                
+                // Try to get cached data first
+                const cachedData = getCachedPriceData();
+                
+                if (cachedData && !isCacheExpired(cachedData.timestamp)) {
+                    // Cache is still valid, use the cached data
+                    console.log('Using cached commodity price data');
+                    displayCommodityPrices(cachedData.prices, cachedData.timestamp);
+                } else {
+                    // Cache is expired or doesn't exist, fetch new data
+                    console.log('Fetching fresh commodity price data from API');
+                    
+                    // Show loading message
+                    pricesContainer.innerHTML = '<div class="loading-message" data-key="loadingPrices">Loading prices...</div>';
+                    
+                    // Fetch real data from Alpha Vantage
+                    const realPrices = await fetchRealCommodityPrices();
+                    
+                    // Cache the new data with current timestamp
+                    const timestamp = new Date().getTime();
+                    cachePriceData(realPrices, timestamp);
+                    
+                    // Display the newly fetched data
+                    displayCommodityPrices(realPrices, timestamp);
+                }
+                
+            } catch (error) {
+                console.error('Error fetching commodity prices:', error);
+                
+                // Try to use cached data even if it's expired in case of API error
+                const cachedData = getCachedPriceData();
+                if (cachedData) {
+                    console.log('Using cached data due to API error');
+                    displayCommodityPrices(cachedData.prices, cachedData.timestamp, true);
+                } else {
+                    // If no cached data exists, fall back to mock data
+                    pricesContainer.innerHTML = `<div class="error-message">Error loading prices: ${error.message}. Falling back to mock data.</div>`;
+                    
+                    setTimeout(() => {
+                        displayMockPrices();
+                    }, 2000);
+                }
+                
+                // Display API status message
+                apiStatusContainer.innerHTML = `<div class="api-status-message">API Status: ${error.message}</div>`;
+            }
+        }
+
+        // Cache the price data in localStorage
+        function cachePriceData(prices, timestamp) {
+            try {
+                const cacheData = {
+                    prices: prices,
+                    timestamp: timestamp
+                };
+                localStorage.setItem('commodityPricesCache', JSON.stringify(cacheData));
+                console.log('Commodity price data cached successfully');
+            } catch (error) {
+                console.warn('Failed to cache commodity price data:', error);
+            }
+        }
+
+        // Get cached price data from localStorage
+        function getCachedPriceData() {
+            try {
+                const cacheData = localStorage.getItem('commodityPricesCache');
+                if (cacheData) {
+                    return JSON.parse(cacheData);
+                }
+                return null;
+            } catch (error) {
+                console.warn('Failed to retrieve cached commodity price data:', error);
+                return null;
+            }
+        }
+
+        // Check if cache is expired (older than CACHE_DURATION)
+        function isCacheExpired(timestamp) {
+            const now = new Date().getTime();
+            return now - timestamp > CACHE_DURATION;
+        }
+
+        // Display commodity prices with the given data
+        function displayCommodityPrices(prices, timestamp, isExpiredCache = false) {
+            const pricesContainer = document.getElementById('commodityPrices');
+            
+            // Clear loading or error message
+            pricesContainer.innerHTML = '';
+            
+            // Render each commodity card
+            prices.forEach(commodity => {
+                const priceChange = parseFloat(commodity.change);
+                const priceChangeClass = priceChange >= 0 ? 'price-up' : 'price-down';
+                const priceChangeIcon = priceChange >= 0 ? '▲' : '▼';
+                
+                const commodityCard = document.createElement('div');
+                commodityCard.className = 'commodity-card';
+                commodityCard.innerHTML = `
+                    <div class="commodity-name">${commodity.icon} ${commodity.name}</div>
+                    <div class="commodity-price">${commodity.price} ${commodity.unit}</div>
+                    <div class="price-change ${priceChangeClass}">
+                        ${priceChangeIcon} ${Math.abs(priceChange).toFixed(2)} (${Math.abs(commodity.changePercent).toFixed(2)}%)
+                    </div>
+                    ${isExpiredCache ? '<div class="cached-notice" style="font-size: 0.8rem; margin-top: 0.5rem; opacity: 0.7;">(Cached Data)</div>' : ''}
+                `;
+                
+                pricesContainer.appendChild(commodityCard);
+            });
+            
+            // Add last updated info
+            const lastUpdatedDiv = document.createElement('div');
+            lastUpdatedDiv.className = 'price-last-updated';
+            const lastUpdated = new Date(timestamp);
+            const currentLang = document.documentElement.lang || 'no';
+            const lastUpdatedText = translations[currentLang].lastUpdated || 'Last updated:';
+            
+            let updateText = `${lastUpdatedText} ${lastUpdated.toLocaleString()}`;
+            if (isExpiredCache) {
+                updateText += ' (Using cached data - will refresh when API is available)';
+            }
+            
+            lastUpdatedDiv.textContent = updateText;
+            pricesContainer.appendChild(lastUpdatedDiv);
+            
+            // Add refresh button if cache is older than 1 hour
+            if (isCacheExpired(timestamp)) {
+                const refreshButton = document.createElement('button');
+                refreshButton.className = 'refresh-button';
+                refreshButton.style.cssText = 'margin-top: 1rem; padding: 0.5rem 1rem; background-color: var(--bi-blue); color: white; border: none; border-radius: 5px; cursor: pointer; display: block; margin-left: auto;';
+                refreshButton.textContent = 'Refresh Prices';
+                refreshButton.onclick = fetchCommodityPrices;
+                pricesContainer.appendChild(refreshButton);
+            }
+        }
+
+        // Fallback function to display mock data
+        function displayMockPrices() {
+            const pricesContainer = document.getElementById('commodityPrices');
+            const mockPrices = generateMockPrices();
+            
+            // Clear any error message
+            pricesContainer.innerHTML = '';
+            
+            // Render each commodity card
+            mockPrices.forEach(commodity => {
+                const priceChange = parseFloat(commodity.change);
+                const priceChangeClass = priceChange >= 0 ? 'price-up' : 'price-down';
+                const priceChangeIcon = priceChange >= 0 ? '▲' : '▼';
+                
+                const commodityCard = document.createElement('div');
+                commodityCard.className = 'commodity-card';
+                commodityCard.innerHTML = `
+                    <div class="commodity-name">${commodity.icon} ${commodity.name}</div>
+                    <div class="commodity-price">${commodity.price} ${commodity.unit}</div>
+                    <div class="price-change ${priceChangeClass}">
+                        ${priceChangeIcon} ${Math.abs(priceChange).toFixed(2)} (${Math.abs(commodity.changePercent).toFixed(2)}%)
+                    </div>
+                    <div class="mock-data-notice" style="font-size: 0.8rem; margin-top: 0.5rem; opacity: 0.7;">(Mock Data)</div>
+                `;
+                
+                pricesContainer.appendChild(commodityCard);
+            });
+            
+            // Add last updated info
+            const lastUpdatedDiv = document.createElement('div');
+            lastUpdatedDiv.className = 'price-last-updated';
+            const lastUpdated = new Date();
+            const currentLang = document.documentElement.lang || 'no';
+            const lastUpdatedText = translations[currentLang].lastUpdated || 'Last updated:';
+            lastUpdatedDiv.textContent = `${lastUpdatedText} ${lastUpdated.toLocaleString()} (Mock Data)`;
+            pricesContainer.appendChild(lastUpdatedDiv);
+        }
+
+        // Real implementation using Alpha Vantage API
+        async function fetchRealCommodityPrices() {
+            try {
+                // Get API key from config.js
+                const apiKey = API_CONFIG.ALPHA_VANTAGE_KEY;
+                
+                // Array to store all promises for parallel API calls
+                const commodityPromises = [];
+                
+                // Create URLs for each commodity and push the fetch promises into array
+                commodities.forEach(commodity => {
+                    const url = `https://www.alphavantage.co/query?function=${commodity.symbol}&interval=monthly&apikey=${apiKey}`;
+                    commodityPromises.push(
+                        fetch(url)
+                            .then(response => {
+                                if (!response.ok) {
+                                    throw new Error(`HTTP error: ${response.status} - ${response.statusText}`);
+                                }
+                                return response.json();
+                            })
+                    );
+                });
+                
+                // Wait for all API calls to complete
+                const results = await Promise.allSettled(commodityPromises);
+                
+                // Process the results
+                const processedPrices = [];
+                
+                results.forEach((result, index) => {
+                    // Skip failed API calls
+                    if (result.status === 'rejected') {
+                        console.warn(`Failed to fetch data for ${commodities[index].name}:`, result.reason);
+                        return;
+                    }
+                    
+                    const data = result.value;
+                    
+                    // Check for API limit message
+                    if (data['Note']) {
+                        console.warn(`API limit reached for ${commodities[index].name}: ${data['Note']}`);
+                        return;
+                    }
+                    
+                    // Check for error message
+                    if (data['Error Message']) {
+                        console.warn(`API error for ${commodities[index].name}: ${data['Error Message']}`);
+                        return;
+                    }
+                    
+                    // Check if we have valid data
+                    if (!data.data || data.data.length < 2) {
+                        console.warn(`Invalid or empty data received for ${commodities[index].name}`);
+                        return;
+                    }
+                    
+                    // Get latest and previous data points
+                    const latestData = data.data[0];
+                    const previousData = data.data[1];
+                    
+                    const currentPrice = parseFloat(latestData.value);
+                    const previousPrice = parseFloat(previousData.value);
+                    const change = currentPrice - previousPrice;
+                    const changePercent = (change / previousPrice) * 100;
+                    
+                    // Add processed data to our array
+                    processedPrices.push({
+                        ...commodities[index],
+                        price: currentPrice.toFixed(2),
+                        change: change.toFixed(2),
+                        changePercent: changePercent
+                    });
+                });
+                
+                // If we didn't get any valid prices, throw an error
+                if (processedPrices.length === 0) {
+                    throw new Error('Could not retrieve any valid commodity prices');
+                }
+                
+                // If we didn't get all prices, generate mock data for the missing ones
+                if (processedPrices.length < commodities.length) {
+                    console.log(`Only got ${processedPrices.length} out of ${commodities.length} commodity prices, filling in the rest with mock data`);
+                    
+                    const existingSymbols = processedPrices.map(price => price.symbol);
+                    
+                    commodities.forEach(commodity => {
+                        if (!existingSymbols.includes(commodity.symbol)) {
+                            // Add mock data for this missing commodity
+                            const mockPrice = generateMockPriceForCommodity(commodity);
+                            processedPrices.push(mockPrice);
+                        }
+                    });
+                }
+                
+                return processedPrices;
+                
+            } catch (error) {
+                console.error('Error fetching commodity prices:', error);
+                throw error;
+            }
+        }
+
+        // Generate mock data for a single commodity
+        function generateMockPriceForCommodity(commodity) {
+            // Generate random price based on typical ranges for the commodity
+            let basePrice, priceChange;
+            
+            switch(commodity.symbol) {
+                case 'WTI':
+                    basePrice = 80 + Math.random() * 10;
+                    priceChange = (Math.random() * 4) - 2; // Range from -2 to +2
+                    break;
+                case 'NATURAL_GAS':
+                    basePrice = 2 + Math.random() * 1;
+                    priceChange = (Math.random() * 0.4) - 0.2; // Range from -0.2 to +0.2
+                    break;
+                case 'ALUMINUM':
+                    basePrice = 2200 + Math.random() * 200;
+                    priceChange = (Math.random() * 100) - 50; // Range from -50 to +50
+                    break;
+                case 'COPPER':
+                    basePrice = 8000 + Math.random() * 500;
+                    priceChange = (Math.random() * 200) - 100; // Range from -100 to +100
+                    break;
+                case 'WHEAT':
+                    basePrice = 6 + Math.random() * 1;
+                    priceChange = (Math.random() * 0.5) - 0.25; // Range from -0.25 to +0.25
+                    break;
+                case 'CORN':
+                    basePrice = 4 + Math.random() * 1;
+                    priceChange = (Math.random() * 0.3) - 0.15; // Range from -0.15 to +0.15
+                    break;
+                default:
+                    basePrice = 100;
+                    priceChange = 0;
+            }
+            
+            // Calculate percentages
+            const changePercent = (priceChange / basePrice) * 100;
+            
+            return {
+                ...commodity,
+                price: basePrice.toFixed(2),
+                change: priceChange.toFixed(2),
+                changePercent: changePercent
+            };
+        }
+
+        // Generate mock data for demonstration/fallback
+        function generateMockPrices() {
+            return commodities.map(commodity => {
+                // Generate random price based on typical ranges for each commodity
+                let basePrice, priceChange;
+                
+                switch(commodity.symbol) {
+                    case 'WTI':
+                        basePrice = 80 + Math.random() * 10;
+                        priceChange = (Math.random() * 4) - 2; // Range from -2 to +2
+                        break;
+                    case 'NATURAL_GAS':
+                        basePrice = 2 + Math.random() * 1;
+                        priceChange = (Math.random() * 0.4) - 0.2; // Range from -0.2 to +0.2
+                        break;
+                    case 'ALUMINUM':
+                        basePrice = 2200 + Math.random() * 200;
+                        priceChange = (Math.random() * 100) - 50; // Range from -50 to +50
+                        break;
+                    case 'COPPER':
+                        basePrice = 8000 + Math.random() * 500;
+                        priceChange = (Math.random() * 200) - 100; // Range from -100 to +100
+                        break;
+                    case 'WHEAT':
+                        basePrice = 6 + Math.random() * 1;
+                        priceChange = (Math.random() * 0.5) - 0.25; // Range from -0.25 to +0.25
+                        break;
+                    case 'CORN':
+                        basePrice = 4 + Math.random() * 1;
+                        priceChange = (Math.random() * 0.3) - 0.15; // Range from -0.15 to +0.15
+                        break;
+                    default:
+                        basePrice = 100;
+                        priceChange = 0;
+                }
+                
+                // Calculate percentages
+                const changePercent = (priceChange / basePrice) * 100;
+                
+                return {
+                    ...commodity,
+                    price: basePrice.toFixed(2),
+                    change: priceChange.toFixed(2),
+                    changePercent: changePercent
+                };
+            });
+            
+            // Add a notice in the API status area
+            const apiStatusContainer = document.getElementById('apiStatus');
+            apiStatusContainer.innerHTML = `
+                <div class="api-status-message">
+                    Note: Displaying mock data since Alpha Vantage API could not be reached.
+                    <ul style="margin-top: 0.5rem; font-size: 0.85rem;">
+                        <li>Free API keys are limited to 25 requests per day</li>
+                        <li>Check browser console for detailed error messages</li>
+                    </ul>
+                </div>`;
+        }
     </script>
 </body>
 </html>
