@@ -423,6 +423,46 @@
             color: var(--soft-white);
         }
 
+        /* Predictions Section */
+        .predictions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .prediction-card {
+            background: var(--card-dark);
+            border-radius: 4px;
+            padding: 2.5rem;
+            border: 1px solid var(--border-subtle);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .prediction-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--electric-blue);
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+
+        .prediction-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--electric-blue);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .prediction-card:hover::before {
+            transform: scaleX(1);
+        }
+
         /* Skills Section */
         .skills-grid {
             display: grid;
@@ -666,6 +706,52 @@
             margin: 1.5rem 0;
             border: 1px solid var(--border-subtle);
         }
+
+        /* Predictions List */
+        .predictions-list {
+            margin-top: 1.5rem;
+            margin-bottom: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .prediction-item {
+            display: grid;
+            grid-template-columns: 120px 1fr 50px;
+            align-items: center;
+            gap: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .driver-name {
+            font-weight: 500;
+            color: var(--soft-white);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .probability-bar-container {
+            width: 100%;
+            background-color: var(--dark-grey);
+            border-radius: 2px;
+            height: 8px;
+            overflow: hidden;
+        }
+
+        .probability-bar {
+            height: 100%;
+            background-color: var(--electric-blue);
+            border-radius: 2px;
+            transition: width 0.5s ease-in-out;
+        }
+
+        .probability-value {
+            font-weight: 600;
+            color: var(--electric-blue);
+            text-align: right;
+        }
     </style>
 </head>
 <body>
@@ -677,6 +763,7 @@
                 <ul class="nav-menu">
                     <li><a href="#projects" class="nav-link">Projects</a></li>
                     <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#predictions" class="nav-link">Predictions</a></li>
                     <li><a href="#about" class="nav-link">About</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
@@ -895,6 +982,92 @@
                         <a href="#" class="project-link">
                             <i class="fab fa-github"></i>
                             View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Predictions Section -->
+    <section id="predictions" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sports Predictions</h2>
+                <p class="section-subtitle">Applying quantitative models to predict outcomes in sports.</p>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- F1 Predictions -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-flag-checkered"></i>
+                        </div>
+                        <div>
+                            <h3 class="project-title">Formula 1</h3>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Top 3 predictions for the championship, based on my proprietary model.
+                    </p>
+                    <div class="predictions-list">
+                        <div class="prediction-item">
+                            <span class="driver-name">Oscar Piastri</span>
+                            <div class="probability-bar-container">
+                                <div class="probability-bar" style="width: 71%;"></div>
+                            </div>
+                            <span class="probability-value">71%</span>
+                        </div>
+                        <div class="prediction-item">
+                            <span class="driver-name">Lando Norris</span>
+                            <div class="probability-bar-container">
+                                <div class="probability-bar" style="width: 20%;"></div>
+                            </div>
+                            <span class="probability-value">20%</span>
+                        </div>
+                        <div class="prediction-item">
+                            <span class="driver-name">Max Verstappen</span>
+                            <div class="probability-bar-container">
+                                <div class="probability-bar" style="width: 9%;"></div>
+                            </div>
+                            <span class="probability-value">9%</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Machine Learning</span>
+                        <span class="tech-tag">Statistical Analysis</span>
+                        <span class="tech-tag">In Development</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i>
+                            View Models
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Football Predictions -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-futbol"></i>
+                        </div>
+                        <div>
+                            <h3 class="project-title">Football (Soccer)</h3>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Expanding the prediction framework to football. This involves developing models to predict match results, league standings, and player performance metrics.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Coming Soon</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link" style="color: var(--cool-grey); cursor: not-allowed;">
+                            <i class="fab fa-github"></i>
+                            Coming Soon
                         </a>
                     </div>
                 </div>
