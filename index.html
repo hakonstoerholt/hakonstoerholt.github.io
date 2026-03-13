@@ -25,18 +25,21 @@
     <style>
         :root {
             --white: #ffffff;
-            --off-white: #fafafa;
-            --light-grey: #f3f4f6;
-            --border: #e5e7eb;
-            --border-hover: #d1d5db;
-            --text-primary: #111827;
-            --text-secondary: #4b5563;
-            --text-muted: #9ca3af;
+            --off-white: #f8fafc;
+            --light-grey: #f1f5f9;
+            --border: #e2e8f0;
+            --border-hover: #cbd5e1;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-muted: #94a3b8;
             --accent: #2563eb;
             --accent-light: #dbeafe;
             --accent-dark: #1d4ed8;
+            --accent-gradient: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+            --warm-accent: #f59e0b;
+            --success: #10b981;
             --card-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
-            --card-shadow-hover: 0 10px 25px rgba(0,0,0,0.08), 0 4px 10px rgba(0,0,0,0.04);
+            --card-shadow-hover: 0 20px 40px rgba(37,99,235,0.1), 0 8px 16px rgba(0,0,0,0.06);
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -111,33 +114,62 @@
 
         /* ---- HERO ---- */
         .hero {
-            padding: 140px 0 80px;
+            padding: 160px 0 100px;
             text-align: center;
-            background: var(--white);
-            border-bottom: 1px solid var(--border);
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 40%, #1e3a5f 100%);
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(37,99,235,0.15) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -10%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(124,58,237,0.1) 0%, transparent 70%);
+            pointer-events: none;
         }
         .hero-content {
             max-width: 700px;
             margin: 0 auto;
             padding: 0 2rem;
+            position: relative;
+            z-index: 1;
         }
         .hero h1 {
-            font-size: 3rem;
+            font-size: 3.25rem;
             font-weight: 700;
             margin-bottom: 1rem;
-            color: var(--text-primary);
+            color: var(--white);
+            background: linear-gradient(135deg, #ffffff 0%, #94a3b8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
         .hero-tagline {
-            font-size: 1rem;
-            color: var(--text-secondary);
+            font-size: 1.0625rem;
+            color: #cbd5e1;
             font-weight: 400;
             margin-bottom: 1rem;
             letter-spacing: 0.02em;
+            line-height: 1.7;
         }
         .hero-location {
             font-size: 0.875rem;
-            color: var(--text-muted);
-            margin-bottom: 2rem;
+            color: #64748b;
+            margin-bottom: 2.5rem;
         }
         .hero-links {
             display: flex;
@@ -146,7 +178,7 @@
             flex-wrap: wrap;
         }
         .hero-link {
-            color: var(--text-secondary);
+            color: #94a3b8;
             text-decoration: none;
             font-size: 0.8125rem;
             font-weight: 500;
@@ -154,8 +186,15 @@
             align-items: center;
             gap: 0.4rem;
             transition: color 0.2s;
+            padding: 0.5rem 1rem;
+            border: 1px solid rgba(148,163,184,0.2);
+            border-radius: 6px;
         }
-        .hero-link:hover { color: var(--accent); }
+        .hero-link:hover {
+            color: var(--white);
+            border-color: rgba(255,255,255,0.3);
+            background: rgba(255,255,255,0.05);
+        }
 
         /* ---- SECTIONS ---- */
         .section {
@@ -173,6 +212,21 @@
             font-weight: 700;
             color: var(--text-primary);
             margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        .section-title .section-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 6px;
+            background: var(--accent-gradient);
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8125rem;
+            flex-shrink: 0;
         }
         .section-subtitle {
             font-size: 0.9375rem;
@@ -275,11 +329,27 @@
             padding: 1.75rem;
             transition: all 0.3s ease;
             position: relative;
+            overflow: hidden;
+        }
+        .project-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--accent-gradient);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s ease;
         }
         .project-card:hover {
             border-color: var(--border-hover);
             box-shadow: var(--card-shadow-hover);
-            transform: translateY(-2px);
+            transform: translateY(-3px);
+        }
+        .project-card:hover::before {
+            transform: scaleX(1);
         }
         .project-card h3 {
             font-size: 1.0625rem;
@@ -309,11 +379,11 @@
             letter-spacing: 0.04em;
         }
         .project-card .project-icon {
-            width: 36px;
-            height: 36px;
-            border-radius: 6px;
-            background: var(--accent-light);
-            color: var(--accent);
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            background: var(--accent-gradient);
+            color: var(--white);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -335,7 +405,8 @@
             letter-spacing: 0.06em;
             margin-bottom: 0.75rem;
             padding-bottom: 0.5rem;
-            border-bottom: 2px solid var(--accent);
+            border-bottom: 2px solid transparent;
+            border-image: var(--accent-gradient) 1;
             display: inline-block;
         }
         .skill-group ul {
@@ -474,6 +545,58 @@
             margin-top: 1rem;
         }
 
+        /* F1 team color bars */
+        .team-color-dot {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            margin-right: 0.375rem;
+            vertical-align: middle;
+        }
+
+        /* Race status badge */
+        .race-status {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.375rem;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.6875rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            background: var(--accent-light);
+            color: var(--accent);
+            margin-bottom: 1.25rem;
+        }
+        .race-status .pulse {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--accent);
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+
+        /* Points badge on prediction items */
+        .points-badge {
+            font-size: 0.625rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            background: var(--light-grey);
+            padding: 0.125rem 0.5rem;
+            border-radius: 10px;
+            margin-left: 0.5rem;
+        }
+        .points-badge.has-points {
+            color: var(--accent-dark);
+            background: var(--accent-light);
+        }
+
         /* ---- CONTACT ---- */
         .contact-row {
             display: flex;
@@ -501,28 +624,38 @@
 
         /* ---- FOOTER ---- */
         .footer {
-            background: var(--off-white);
-            border-top: 1px solid var(--border);
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
             padding: 3rem 0;
             text-align: center;
         }
         .footer p {
             font-size: 0.8125rem;
-            color: var(--text-muted);
+            color: #64748b;
         }
         .footer-links {
             display: flex;
             justify-content: center;
-            gap: 1.5rem;
+            gap: 1rem;
             margin-bottom: 1rem;
         }
         .footer-link {
-            color: var(--text-muted);
+            color: #64748b;
             text-decoration: none;
             font-size: 1rem;
-            transition: color 0.2s;
+            transition: all 0.2s;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            border: 1px solid rgba(100,116,139,0.2);
         }
-        .footer-link:hover { color: var(--accent); }
+        .footer-link:hover {
+            color: var(--white);
+            background: rgba(255,255,255,0.05);
+            border-color: rgba(255,255,255,0.2);
+        }
 
         /* ---- ANIMATIONS ---- */
         .animate-in {
@@ -550,7 +683,7 @@
             }
             .mobile-menu-toggle { display: block; }
             .hero h1 { font-size: 2.25rem; }
-            .hero { padding: 120px 0 60px; }
+            .hero { padding: 130px 0 70px; }
             .section { padding: 60px 0; }
             .timeline-item, .experience-item {
                 grid-template-columns: 1fr;
@@ -604,7 +737,7 @@
     <!-- About -->
     <section id="about" class="section">
         <div class="container">
-            <h2 class="section-title">About</h2>
+            <h2 class="section-title"><span class="section-icon"><i class="fas fa-user"></i></span>About</h2>
             <p class="section-subtitle" style="margin-bottom: 1.5rem;">Professional summary</p>
             <p class="summary-text animate-in">
                 Master in Finance student at BI Norwegian Business School with strong quantitative skills and hands-on experience in financial analysis, valuation, and portfolio management. Keen interest in banking and financial markets, with a strong foundation in Python, derivatives, and data-driven decision-making. Passionate about applying quantitative methods and technology to solve real-world financial problems.
@@ -615,7 +748,7 @@
     <!-- Education -->
     <section id="education" class="section" style="background: var(--off-white);">
         <div class="container">
-            <h2 class="section-title">Education</h2>
+            <h2 class="section-title"><span class="section-icon"><i class="fas fa-graduation-cap"></i></span>Education</h2>
             <p class="section-subtitle">Academic background</p>
             <div class="timeline">
                 <div class="timeline-item animate-in">
@@ -654,7 +787,7 @@
     <!-- Projects -->
     <section id="projects" class="section">
         <div class="container">
-            <h2 class="section-title">Selected Projects</h2>
+            <h2 class="section-title"><span class="section-icon"><i class="fas fa-code"></i></span>Selected Projects</h2>
             <p class="section-subtitle">Personal and academic work in quantitative finance and technology</p>
             <div class="projects-grid">
                 <div class="project-card animate-in">
@@ -774,7 +907,7 @@
     <!-- Experience -->
     <section id="experience" class="section" style="background: var(--off-white);">
         <div class="container">
-            <h2 class="section-title">Experience</h2>
+            <h2 class="section-title"><span class="section-icon"><i class="fas fa-briefcase"></i></span>Experience</h2>
             <p class="section-subtitle">Professional background</p>
             <div class="timeline">
                 <div class="experience-item animate-in">
@@ -816,7 +949,7 @@
     <!-- Skills -->
     <section id="skills" class="section">
         <div class="container">
-            <h2 class="section-title">Skills & Tools</h2>
+            <h2 class="section-title"><span class="section-icon"><i class="fas fa-wrench"></i></span>Skills & Tools</h2>
             <p class="section-subtitle">Technical and domain expertise</p>
             <div class="skills-columns">
                 <div class="skill-group animate-in">
@@ -866,171 +999,48 @@
     <!-- F1 Predictions -->
     <section id="predictions" class="section" style="background: var(--off-white);">
         <div class="container">
-            <h2 class="section-title"><i class="fas fa-flag-checkered" style="color: var(--accent); margin-right: 0.5rem;"></i>2026 F1 World Championship Predictions</h2>
+            <h2 class="section-title"><span class="section-icon"><i class="fas fa-flag-checkered"></i></span>2026 F1 World Championship Predictions</h2>
             <p class="section-subtitle">Pre-season forecast using a composite rating model</p>
 
             <div class="predictions-container">
-                <!-- Predictions Card -->
-                <div class="predictions-card animate-in">
+                <!-- Predictions Card (loaded from predictions.json) -->
+                <div class="predictions-card animate-in" id="predictions-card">
                     <h3>Drivers' Championship</h3>
                     <div class="card-subtitle">Win probability &mdash; pre-season 2026</div>
-
-                    <div class="prediction-item">
-                        <span class="prediction-rank top-1">1</span>
-                        <div>
-                            <div class="prediction-info">
-                                <span class="driver-name">Max Verstappen</span>
-                                <div class="team-name">Red Bull Racing</div>
-                            </div>
-                            <div class="prediction-bar-wrap">
-                                <div class="probability-bar-bg">
-                                    <div class="probability-bar-fill" data-width="26"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <span class="probability-value">26%</span>
+                    <div id="predictions-list">
+                        <p style="color: var(--text-muted); font-size: 0.8125rem;">Loading predictions...</p>
                     </div>
-
-                    <div class="prediction-item">
-                        <span class="prediction-rank top-2">2</span>
-                        <div>
-                            <div class="prediction-info">
-                                <span class="driver-name">Charles Leclerc</span>
-                                <div class="team-name">Scuderia Ferrari</div>
-                            </div>
-                            <div class="prediction-bar-wrap">
-                                <div class="probability-bar-bg">
-                                    <div class="probability-bar-fill" data-width="21"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <span class="probability-value">21%</span>
-                    </div>
-
-                    <div class="prediction-item">
-                        <span class="prediction-rank top-3">3</span>
-                        <div>
-                            <div class="prediction-info">
-                                <span class="driver-name">Lando Norris</span>
-                                <div class="team-name">McLaren</div>
-                            </div>
-                            <div class="prediction-bar-wrap">
-                                <div class="probability-bar-bg">
-                                    <div class="probability-bar-fill" data-width="19"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <span class="probability-value">19%</span>
-                    </div>
-
-                    <div class="prediction-item">
-                        <span class="prediction-rank">4</span>
-                        <div>
-                            <div class="prediction-info">
-                                <span class="driver-name">Lewis Hamilton</span>
-                                <div class="team-name">Scuderia Ferrari</div>
-                            </div>
-                            <div class="prediction-bar-wrap">
-                                <div class="probability-bar-bg">
-                                    <div class="probability-bar-fill" data-width="13"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <span class="probability-value">13%</span>
-                    </div>
-
-                    <div class="prediction-item">
-                        <span class="prediction-rank">5</span>
-                        <div>
-                            <div class="prediction-info">
-                                <span class="driver-name">Oscar Piastri</span>
-                                <div class="team-name">McLaren</div>
-                            </div>
-                            <div class="prediction-bar-wrap">
-                                <div class="probability-bar-bg">
-                                    <div class="probability-bar-fill" data-width="9"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <span class="probability-value">9%</span>
-                    </div>
-
-                    <div class="prediction-item">
-                        <span class="prediction-rank">6</span>
-                        <div>
-                            <div class="prediction-info">
-                                <span class="driver-name">George Russell</span>
-                                <div class="team-name">Mercedes</div>
-                            </div>
-                            <div class="prediction-bar-wrap">
-                                <div class="probability-bar-bg">
-                                    <div class="probability-bar-fill" data-width="7"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <span class="probability-value">7%</span>
-                    </div>
-
-                    <div class="prediction-item">
-                        <span class="prediction-rank">7</span>
-                        <div>
-                            <div class="prediction-info">
-                                <span class="driver-name">Andrea Kimi Antonelli</span>
-                                <div class="team-name">Mercedes</div>
-                            </div>
-                            <div class="prediction-bar-wrap">
-                                <div class="probability-bar-bg">
-                                    <div class="probability-bar-fill" data-width="3"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <span class="probability-value">3%</span>
-                    </div>
-
-                    <div class="prediction-item">
-                        <span class="prediction-rank">8</span>
-                        <div>
-                            <div class="prediction-info">
-                                <span class="driver-name">Field</span>
-                                <div class="team-name">Other drivers</div>
-                            </div>
-                            <div class="prediction-bar-wrap">
-                                <div class="probability-bar-bg">
-                                    <div class="probability-bar-fill" data-width="2"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <span class="probability-value">2%</span>
-                    </div>
-
-                    <div class="last-updated">Pre-season 2026 &mdash; updated March 13, 2026</div>
+                    <div class="last-updated" id="predictions-updated"></div>
                 </div>
 
                 <!-- Methodology Card -->
                 <div class="methodology-box animate-in">
                     <h3>Methodology</h3>
                     <p>
-                        These probabilities are derived from a <strong>composite rating model</strong> that weights several factors
-                        to produce a pre-season championship win probability for each driver. The 2026 season introduces
-                        major regulation changes&mdash;a new power unit formula splitting power roughly 50/50 between ICE and
-                        electric motor, plus significant aerodynamic changes&mdash;which add substantial uncertainty.
+                        A <strong>Python-based composite rating model with Bayesian updating</strong> from actual race results.
+                        The 2026 season introduces major regulation changes&mdash;a new 50/50 ICE/electric power unit and new aero&mdash;so
+                        pre-season priors carry significant uncertainty that gets resolved as races are completed.
                     </p>
-                    <p><strong>Model inputs:</strong></p>
+                    <p><strong>Pre-season prior (5 factors):</strong></p>
                     <ul class="factor-list">
-                        <li><strong>Driver quality rating</strong> &mdash; Elo-style score based on head-to-head teammate performance and results over the past 3 seasons</li>
-                        <li><strong>Team regulation-change adaptability</strong> &mdash; Historical performance in the first year of major rule changes (2009, 2014, 2017, 2022), weighted by team continuity</li>
-                        <li><strong>Power unit manufacturer strength</strong> &mdash; Assessment of each PU maker's investment and readiness for the new formula (Ferrari, Mercedes, Red Bull Powertrains, Renault, Honda/Aston Martin)</li>
-                        <li><strong>Team trajectory</strong> &mdash; Resource allocation, recent hiring, and development momentum heading into the new regulation cycle</li>
-                        <li><strong>Regulation uncertainty discount</strong> &mdash; A flattening factor that compresses probabilities toward uniform, reflecting the inherent unpredictability of major rule resets</li>
+                        <li><strong>2025 WDC points (25%)</strong> &mdash; Final championship standings, normalized. Source: formula1.com</li>
+                        <li><strong>Testing pace (20%)</strong> &mdash; Fastest lap per driver, Bahrain Test 2. Source: the-race.com</li>
+                        <li><strong>Team reliability (10%)</strong> &mdash; Total pre-season km completed (proxy for car maturity). Source: the-race.com</li>
+                        <li><strong>Reg-change adaptability (20%)</strong> &mdash; Historical constructor performance in the first year of major rule changes (2009, 2014, 2017, 2022)</li>
+                        <li><strong>Team trajectory (25%)</strong> &mdash; Blend of 2025 constructor strength (40%) and testing pace (60%)</li>
+                    </ul>
+                    <p><strong>Bayesian update from race results:</strong></p>
+                    <ul class="factor-list">
+                        <li><strong>Race evidence</strong> &mdash; Points scored, average finishing position, and reliability (DNF rate) across completed 2026 races</li>
+                        <li><strong>Dynamic weighting</strong> &mdash; Race data weight scales with &radic;(races/24). After 1 race: ~15%. After 12: ~52%. After 24: ~73%</li>
                     </ul>
                     <p>
-                        The model gives Verstappen the slight edge on raw driver quality, but Ferrari's strong
-                        historical performance in regulation-change years combined with their 2025 competitiveness
-                        makes Leclerc a close second. The regulation uncertainty discount means no driver exceeds ~26%,
-                        reflecting genuine pre-season unknowns.
+                        Prior scores use <strong>softmax</strong> (temp=0.15) with a 35% <strong>regulation uncertainty discount</strong>
+                        compressing toward uniform. Race evidence is blended via weighted average. After Round 1, Russell's
+                        Australia win pushes him from 3rd to 1st. As the season progresses, the prior fades and results dominate.
                     </p>
                     <p style="font-style: italic; color: var(--text-muted); font-size: 0.75rem;">
-                        This is a personal analytical exercise, not financial advice. Probabilities are subjective model outputs.
+                        Personal analytical project. Source code and data in the repository. Re-run <code>python f1_model/predict_2026.py</code> after each race to update.
                     </p>
                 </div>
             </div>
@@ -1040,7 +1050,7 @@
     <!-- Contact -->
     <section id="contact" class="section">
         <div class="container">
-            <h2 class="section-title">Contact</h2>
+            <h2 class="section-title"><span class="section-icon"><i class="fas fa-envelope"></i></span>Contact</h2>
             <p class="section-subtitle" style="margin-bottom: 2rem;">Get in touch</p>
             <div class="contact-row animate-in">
                 <div class="contact-item">
@@ -1105,7 +1115,6 @@
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('visible');
-                        // Animate probability bars when they come into view
                         entry.target.querySelectorAll('.probability-bar-fill').forEach(bar => {
                             const w = bar.getAttribute('data-width');
                             if (w) bar.style.width = w + '%';
@@ -1116,18 +1125,101 @@
 
             document.querySelectorAll('.animate-in').forEach(el => observer.observe(el));
 
-            // Also animate bars that aren't inside .animate-in
-            const barObserver = new IntersectionObserver(entries => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const w = entry.target.getAttribute('data-width');
-                        if (w) entry.target.style.width = w + '%';
-                    }
-                });
-            }, { threshold: 0.1 });
-
-            document.querySelectorAll('.probability-bar-fill').forEach(bar => barObserver.observe(bar));
+            // Load F1 predictions from JSON
+            loadPredictions();
         });
+
+        // F1 team colors
+        const TEAM_COLORS = {
+            'Mercedes': '#27f4d2',
+            'Ferrari': '#e8002d',
+            'Red Bull': '#3671c6',
+            'McLaren': '#ff8000',
+            'Aston Martin': '#229971',
+            'Alpine': '#ff87bc',
+            'Williams': '#64c4ff',
+            'Racing Bulls': '#6692ff',
+            'Haas': '#b6babd',
+            'Audi': '#ff0000',
+            'Cadillac': '#1d1d1b',
+        };
+
+        async function loadPredictions() {
+            const container = document.getElementById('predictions-list');
+            const updatedEl = document.getElementById('predictions-updated');
+
+            try {
+                const resp = await fetch('predictions.json');
+                if (!resp.ok) throw new Error('Failed to load');
+                const data = await resp.json();
+
+                // Race status indicator
+                const races = data.races_completed || 0;
+                const total = data.total_races || 24;
+                const raceWeight = data.race_evidence_weight || 0;
+
+                let statusHtml = `<div class="race-status"><span class="pulse"></span>${races}/${total} races \u2014 prior ${Math.round((1-raceWeight)*100)}% / race data ${Math.round(raceWeight*100)}%</div>`;
+
+                // Show top 10 drivers, group rest as "Field"
+                const top = data.predictions.slice(0, 10);
+                const rest = data.predictions.slice(10);
+                const fieldProb = rest.reduce((s, d) => s + d.probability, 0);
+                const fieldPts = rest.reduce((s, d) => s + (d.points_2026 || 0), 0);
+                const maxProb = top[0].probability;
+
+                let html = statusHtml;
+                top.forEach((d, i) => {
+                    const rankClass = i === 0 ? 'top-1' : i === 1 ? 'top-2' : i === 2 ? 'top-3' : '';
+                    const barWidth = (d.probability / maxProb) * 85;
+                    const color = TEAM_COLORS[d.team] || '#94a3b8';
+                    const pts = d.points_2026 || 0;
+                    html += renderPredictionItem(d.rank, rankClass, d.driver, d.team, barWidth, d.probability, color, pts);
+                });
+
+                // Field row
+                const fieldBar = (fieldProb / maxProb) * 85;
+                html += renderPredictionItem('...', '', 'Field', `${rest.length} other drivers`, fieldBar, Math.round(fieldProb * 10) / 10, '#94a3b8', fieldPts);
+
+                container.innerHTML = html;
+                updatedEl.textContent = 'Updated ' + data.last_updated + ' \u2014 model v' + data.model_version;
+
+                // Observe new bars for scroll animation
+                const barObserver = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const w = entry.target.getAttribute('data-width');
+                            if (w) entry.target.style.width = w + '%';
+                        }
+                    });
+                }, { threshold: 0.1 });
+                container.querySelectorAll('.probability-bar-fill').forEach(bar => barObserver.observe(bar));
+
+            } catch (e) {
+                container.innerHTML = '<p style="color: var(--text-muted); font-size: 0.8125rem;">Could not load predictions.</p>';
+            }
+        }
+
+        function renderPredictionItem(rank, rankClass, driver, team, barWidth, prob, teamColor, pts) {
+            const ptsBadge = pts > 0
+                ? `<span class="points-badge has-points">${pts} pts</span>`
+                : '';
+            return `
+                <div class="prediction-item">
+                    <span class="prediction-rank ${rankClass}">${rank}</span>
+                    <div>
+                        <div class="prediction-info">
+                            <span class="driver-name"><span class="team-color-dot" style="background:${teamColor}"></span>${driver}${ptsBadge}</span>
+                            <div class="team-name">${team}</div>
+                        </div>
+                        <div class="prediction-bar-wrap">
+                            <div class="probability-bar-bg">
+                                <div class="probability-bar-fill" data-width="${barWidth.toFixed(1)}" style="background:${teamColor}"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="probability-value">${prob}%</span>
+                </div>`;
+        }
     </script>
 </body>
 </html>

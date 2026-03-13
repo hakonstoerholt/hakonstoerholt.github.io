@@ -1,7 +1,13 @@
 {
   "permissions": {
     "allow": [
-      "WebSearch"
+      "WebSearch",
+      "WebFetch(domain:www.crash.net)",
+      "WebFetch(domain:www.the-race.com)",
+      "WebFetch(domain:www.formula1.com)",
+      "WebFetch(domain:www.total-motorsport.com)",
+      "WebFetch(domain:en.wikipedia.org)",
+      "WebFetch(domain:racingnews365.com)"
     ]
   }
 }
