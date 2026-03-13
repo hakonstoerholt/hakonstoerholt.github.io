@@ -413,10 +413,7 @@
 
         /* ---- F1 PREDICTIONS ---- */
         .predictions-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            align-items: start;
+            max-width: 600px;
         }
         .predictions-card {
             background: var(--off-white);
@@ -1003,37 +1000,6 @@
                     <div class="last-updated" id="predictions-updated"></div>
                 </div>
 
-                <!-- Methodology Card -->
-                <div class="methodology-box animate-in">
-                    <h3>Methodology</h3>
-                    <p>
-                        A <strong>Python-based composite rating model with Bayesian updating</strong> from actual race results.
-                        The 2026 season introduces major regulation changes&mdash;a new 50/50 ICE/electric power unit and new aero&mdash;so
-                        pre-season priors carry significant uncertainty that gets resolved as races are completed.
-                    </p>
-                    <p><strong>Pre-season prior (5 factors):</strong></p>
-                    <ul class="factor-list">
-                        <li><strong>2025 WDC points (12%)</strong> &mdash; Final championship standings, normalized. Weighted low due to radical regulation changes. Source: formula1.com</li>
-                        <li><strong>Testing pace (25%)</strong> &mdash; Fastest lap per driver, Bahrain Test 2. Source: the-race.com</li>
-                        <li><strong>Team reliability (10%)</strong> &mdash; Total pre-season km completed (proxy for car maturity). Source: the-race.com</li>
-                        <li><strong>Reg-change adaptability (25%)</strong> &mdash; Historical constructor performance in the first year of major rule changes (2009, 2014, 2017, 2022)</li>
-                        <li><strong>Team trajectory (28%)</strong> &mdash; Blend of 2025 constructor strength (40%) and testing pace (60%)</li>
-                    </ul>
-                    <p><strong>Bayesian update from race results:</strong></p>
-                    <ul class="factor-list">
-                        <li><strong>Race evidence</strong> &mdash; Points scored, average finishing position, and reliability (DNF rate) across completed 2026 races</li>
-                        <li><strong>Dynamic weighting</strong> &mdash; Race data weight scales with &radic;(races/24). After 1 race: ~15%. After 12: ~52%. After 24: ~73%</li>
-                    </ul>
-                    <p>
-                        Prior scores use <strong>softmax</strong> (temp=0.22) with a <strong>decaying regulation uncertainty discount</strong>
-                        (starts at 42%, approaches 0% by season end) compressing toward uniform. Race evidence is blended via weighted average
-                        with adaptive softmax temperature. After Round 1, Russell's Australia win pushes him to 1st. As the season progresses,
-                        the prior fades and results dominate.
-                    </p>
-                    <p style="font-style: italic; color: var(--text-muted); font-size: 0.75rem;">
-                        Personal analytical project. Source code and data in the repository. Re-run <code>python f1_model/predict_2026.py</code> after each race to update.
-                    </p>
-                </div>
             </div>
         </div>
     </section>
