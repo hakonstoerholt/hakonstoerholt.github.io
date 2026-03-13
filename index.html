@@ -33,13 +33,13 @@
             --text-secondary: #475569;
             --text-muted: #94a3b8;
             --accent: #2563eb;
-            --accent-light: #dbeafe;
+            --accent-light: #eff6ff;
             --accent-dark: #1d4ed8;
-            --accent-gradient: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+            --accent-gradient: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
             --warm-accent: #f59e0b;
             --success: #10b981;
             --card-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
-            --card-shadow-hover: 0 20px 40px rgba(37,99,235,0.1), 0 8px 16px rgba(0,0,0,0.06);
+            --card-shadow-hover: 0 12px 24px rgba(0, 0, 0, 0.06), 0 4px 8px rgba(0, 0, 0, 0.04);
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -116,7 +116,7 @@
         .hero {
             padding: 160px 0 100px;
             text-align: center;
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 40%, #1e3a5f 100%);
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
             color: var(--white);
             position: relative;
             overflow: hidden;
@@ -138,7 +138,7 @@
             left: -10%;
             width: 400px;
             height: 400px;
-            background: radial-gradient(circle, rgba(124,58,237,0.1) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(30,64,175,0.1) 0%, transparent 70%);
             pointer-events: none;
         }
         .hero-content {
@@ -152,11 +152,7 @@
             font-size: 3.25rem;
             font-weight: 700;
             margin-bottom: 1rem;
-            color: var(--white);
-            background: linear-gradient(135deg, #ffffff 0%, #94a3b8 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            color: #ffffff;
         }
         .hero-tagline {
             font-size: 1.0625rem;
@@ -198,35 +194,31 @@
 
         /* ---- SECTIONS ---- */
         .section {
-            padding: 80px 0;
-            border-bottom: 1px solid var(--border);
+            padding: 100px 0;
+            border-bottom: none;
         }
-        .section:last-of-type { border-bottom: none; }
         .container {
             max-width: 1100px;
             margin: 0 auto;
             padding: 0 2rem;
         }
         .section-title {
-            font-size: 1.5rem;
+            font-size: 1.75rem;
             font-weight: 700;
             color: var(--text-primary);
             margin-bottom: 0.5rem;
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
+            position: relative;
+            padding-left: 1rem;
         }
-        .section-title .section-icon {
-            width: 32px;
-            height: 32px;
-            border-radius: 6px;
-            background: var(--accent-gradient);
-            color: var(--white);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.8125rem;
-            flex-shrink: 0;
+        .section-title::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.15em;
+            bottom: 0.15em;
+            width: 3px;
+            background: var(--accent);
+            border-radius: 2px;
         }
         .section-subtitle {
             font-size: 0.9375rem;
@@ -346,7 +338,7 @@
         .project-card:hover {
             border-color: var(--border-hover);
             box-shadow: var(--card-shadow-hover);
-            transform: translateY(-3px);
+            transform: translateY(-2px);
         }
         .project-card:hover::before {
             transform: scaleX(1);
@@ -369,14 +361,14 @@
             gap: 0.5rem;
         }
         .tag {
-            font-size: 0.6875rem;
+            font-size: 0.75rem;
             font-weight: 500;
-            color: var(--accent);
-            background: var(--accent-light);
-            padding: 0.25rem 0.625rem;
-            border-radius: 4px;
-            text-transform: uppercase;
-            letter-spacing: 0.04em;
+            color: var(--text-secondary);
+            background: var(--light-grey);
+            padding: 0.25rem 0.75rem;
+            border-radius: 100px;
+            text-transform: none;
+            letter-spacing: normal;
         }
         .project-card .project-icon {
             width: 40px;
@@ -705,13 +697,11 @@
             <a href="#" class="logo">Håkon J. Størholt</a>
             <nav>
                 <ul class="nav-menu">
-                    <li><a href="#about" class="nav-link">About</a></li>
                     <li><a href="#education" class="nav-link">Education</a></li>
                     <li><a href="#projects" class="nav-link">Projects</a></li>
-                    <li><a href="#experience" class="nav-link">Experience</a></li>
                     <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
                     <li><a href="#predictions" class="nav-link">F1 Predictions</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
             <button class="mobile-menu-toggle" aria-label="Toggle menu">
@@ -737,18 +727,18 @@
     <!-- About -->
     <section id="about" class="section">
         <div class="container">
-            <h2 class="section-title"><span class="section-icon"><i class="fas fa-user"></i></span>About</h2>
+            <h2 class="section-title">About</h2>
             <p class="section-subtitle" style="margin-bottom: 1.5rem;">Professional summary</p>
             <p class="summary-text animate-in">
-                Master in Finance student at BI Norwegian Business School with strong quantitative skills and hands-on experience in financial analysis, valuation, and portfolio management. Keen interest in banking and financial markets, with a strong foundation in Python, derivatives, and data-driven decision-making. Passionate about applying quantitative methods and technology to solve real-world financial problems.
+                I combine financial theory with computational tools to understand markets. My work spans derivatives pricing, portfolio optimization, and machine learning for financial applications — from building risk engines to exploring quantum computing for option pricing. Currently completing my MSc Finance thesis at BI Norwegian Business School on the relationship between passive investing growth and active management alpha.
             </p>
         </div>
     </section>
 
     <!-- Education -->
-    <section id="education" class="section" style="background: var(--off-white);">
+    <section id="education" class="section">
         <div class="container">
-            <h2 class="section-title"><span class="section-icon"><i class="fas fa-graduation-cap"></i></span>Education</h2>
+            <h2 class="section-title">Education</h2>
             <p class="section-subtitle">Academic background</p>
             <div class="timeline">
                 <div class="timeline-item animate-in">
@@ -787,7 +777,7 @@
     <!-- Projects -->
     <section id="projects" class="section">
         <div class="container">
-            <h2 class="section-title"><span class="section-icon"><i class="fas fa-code"></i></span>Selected Projects</h2>
+            <h2 class="section-title">Selected Projects</h2>
             <p class="section-subtitle">Personal and academic work in quantitative finance and technology</p>
             <div class="projects-grid">
                 <div class="project-card animate-in">
@@ -904,52 +894,10 @@
         </div>
     </section>
 
-    <!-- Experience -->
-    <section id="experience" class="section" style="background: var(--off-white);">
-        <div class="container">
-            <h2 class="section-title"><span class="section-icon"><i class="fas fa-briefcase"></i></span>Experience</h2>
-            <p class="section-subtitle">Professional background</p>
-            <div class="timeline">
-                <div class="experience-item animate-in">
-                    <div class="timeline-date">Dec 2019 &ndash; Apr 2021</div>
-                    <div class="experience-content">
-                        <h3>Freelance IT Consultant</h3>
-                        <div class="company">Self-employed &mdash; Norway</div>
-                        <ul>
-                            <li>Delivered web development and IT support for local businesses</li>
-                            <li>Managed projects independently and meeting client requirements end-to-end</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="experience-item animate-in">
-                    <div class="timeline-date">Jun 2021 &ndash; Jun 2022</div>
-                    <div class="experience-content">
-                        <h3>Bartender</h3>
-                        <div class="company">URO p&aring; Haugar AS &mdash; T&oslash;nsberg, Norway</div>
-                        <ul>
-                            <li>Worked in a high-paced environment, strengthening teamwork, communication, and customer service</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="experience-item animate-in">
-                    <div class="timeline-date">Sep 2018 &ndash; Aug 2020</div>
-                    <div class="experience-content">
-                        <h3>Retail Assistant</h3>
-                        <div class="company">Shell &mdash; N&oslash;tter&oslash;y, Norway</div>
-                        <ul>
-                            <li>Supported daily operations in a customer-facing environment</li>
-                            <li>Developed strong teamwork, reliability, and problem-solving skills</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Skills -->
     <section id="skills" class="section">
         <div class="container">
-            <h2 class="section-title"><span class="section-icon"><i class="fas fa-wrench"></i></span>Skills & Tools</h2>
+            <h2 class="section-title">Skills & Tools</h2>
             <p class="section-subtitle">Technical and domain expertise</p>
             <div class="skills-columns">
                 <div class="skill-group animate-in">
@@ -996,10 +944,52 @@
         </div>
     </section>
 
-    <!-- F1 Predictions -->
-    <section id="predictions" class="section" style="background: var(--off-white);">
+    <!-- Experience -->
+    <section id="experience" class="section">
         <div class="container">
-            <h2 class="section-title"><span class="section-icon"><i class="fas fa-flag-checkered"></i></span>2026 F1 World Championship Predictions</h2>
+            <h2 class="section-title">Experience</h2>
+            <p class="section-subtitle">Professional background</p>
+            <div class="timeline">
+                <div class="experience-item animate-in">
+                    <div class="timeline-date">Dec 2019 &ndash; Apr 2021</div>
+                    <div class="experience-content">
+                        <h3>Freelance IT Consultant</h3>
+                        <div class="company">Self-employed &mdash; Norway</div>
+                        <ul>
+                            <li>Delivered web development and IT support for local businesses</li>
+                            <li>Managed projects independently and meeting client requirements end-to-end</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="experience-item animate-in">
+                    <div class="timeline-date">Jun 2021 &ndash; Jun 2022</div>
+                    <div class="experience-content">
+                        <h3>Bartender</h3>
+                        <div class="company">URO p&aring; Haugar AS &mdash; T&oslash;nsberg, Norway</div>
+                        <ul>
+                            <li>Worked in a high-paced environment, strengthening teamwork, communication, and customer service</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="experience-item animate-in">
+                    <div class="timeline-date">Sep 2018 &ndash; Aug 2020</div>
+                    <div class="experience-content">
+                        <h3>Retail Assistant</h3>
+                        <div class="company">Shell &mdash; N&oslash;tter&oslash;y, Norway</div>
+                        <ul>
+                            <li>Supported daily operations in a customer-facing environment</li>
+                            <li>Developed strong teamwork, reliability, and problem-solving skills</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- F1 Predictions -->
+    <section id="predictions" class="section">
+        <div class="container">
+            <h2 class="section-title">2026 F1 World Championship Predictions</h2>
             <p class="section-subtitle">Pre-season forecast using a composite rating model</p>
 
             <div class="predictions-container">
@@ -1023,11 +1013,11 @@
                     </p>
                     <p><strong>Pre-season prior (5 factors):</strong></p>
                     <ul class="factor-list">
-                        <li><strong>2025 WDC points (25%)</strong> &mdash; Final championship standings, normalized. Source: formula1.com</li>
-                        <li><strong>Testing pace (20%)</strong> &mdash; Fastest lap per driver, Bahrain Test 2. Source: the-race.com</li>
+                        <li><strong>2025 WDC points (12%)</strong> &mdash; Final championship standings, normalized. Weighted low due to radical regulation changes. Source: formula1.com</li>
+                        <li><strong>Testing pace (25%)</strong> &mdash; Fastest lap per driver, Bahrain Test 2. Source: the-race.com</li>
                         <li><strong>Team reliability (10%)</strong> &mdash; Total pre-season km completed (proxy for car maturity). Source: the-race.com</li>
-                        <li><strong>Reg-change adaptability (20%)</strong> &mdash; Historical constructor performance in the first year of major rule changes (2009, 2014, 2017, 2022)</li>
-                        <li><strong>Team trajectory (25%)</strong> &mdash; Blend of 2025 constructor strength (40%) and testing pace (60%)</li>
+                        <li><strong>Reg-change adaptability (25%)</strong> &mdash; Historical constructor performance in the first year of major rule changes (2009, 2014, 2017, 2022)</li>
+                        <li><strong>Team trajectory (28%)</strong> &mdash; Blend of 2025 constructor strength (40%) and testing pace (60%)</li>
                     </ul>
                     <p><strong>Bayesian update from race results:</strong></p>
                     <ul class="factor-list">
@@ -1035,9 +1025,10 @@
                         <li><strong>Dynamic weighting</strong> &mdash; Race data weight scales with &radic;(races/24). After 1 race: ~15%. After 12: ~52%. After 24: ~73%</li>
                     </ul>
                     <p>
-                        Prior scores use <strong>softmax</strong> (temp=0.15) with a 35% <strong>regulation uncertainty discount</strong>
-                        compressing toward uniform. Race evidence is blended via weighted average. After Round 1, Russell's
-                        Australia win pushes him from 3rd to 1st. As the season progresses, the prior fades and results dominate.
+                        Prior scores use <strong>softmax</strong> (temp=0.22) with a <strong>decaying regulation uncertainty discount</strong>
+                        (starts at 42%, approaches 0% by season end) compressing toward uniform. Race evidence is blended via weighted average
+                        with adaptive softmax temperature. After Round 1, Russell's Australia win pushes him to 1st. As the season progresses,
+                        the prior fades and results dominate.
                     </p>
                     <p style="font-style: italic; color: var(--text-muted); font-size: 0.75rem;">
                         Personal analytical project. Source code and data in the repository. Re-run <code>python f1_model/predict_2026.py</code> after each race to update.
@@ -1050,7 +1041,7 @@
     <!-- Contact -->
     <section id="contact" class="section">
         <div class="container">
-            <h2 class="section-title"><span class="section-icon"><i class="fas fa-envelope"></i></span>Contact</h2>
+            <h2 class="section-title">Contact</h2>
             <p class="section-subtitle" style="margin-bottom: 2rem;">Get in touch</p>
             <div class="contact-row animate-in">
                 <div class="contact-item">

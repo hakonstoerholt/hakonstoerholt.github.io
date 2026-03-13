@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "model_version": "2.0",
+  "model_version": "2.1",
   "last_updated": "2026-03-13",
   "races_completed": 1,
   "total_races": 24,
@@ -15,26 +15,26 @@
     "2026 race results: 1 race(s) completed (formula1.com)"
   ],
   "model_weights_prior": {
-    "season_2025_form": 0.25,
-    "testing_pace": 0.2,
+    "season_2025_form": 0.12,
+    "testing_pace": 0.25,
     "team_reliability": 0.1,
-    "reg_change_adaptability": 0.2,
-    "team_trajectory": 0.25
+    "reg_change_adaptability": 0.25,
+    "team_trajectory": 0.28
   },
-  "regulation_uncertainty_discount": 0.35,
+  "regulation_uncertainty_discount": 0.403,
   "predictions": [
     {
       "rank": 1,
       "driver": "George Russell",
       "team": "Mercedes",
-      "probability": 18.5,
+      "probability": 11.3,
       "points_2026": 25,
       "best_finish_2026": 1,
       "components": {
         "season_2025": 0.754,
         "testing_pace": 0.735,
         "team_reliability": 1.0,
-        "reg_adaptability": 0.8,
+        "reg_adaptability": 0.73,
         "team_trajectory": 0.692,
         "race_2026_score": 1.0
       }
@@ -43,7 +43,7 @@
       "rank": 2,
       "driver": "Lando Norris",
       "team": "McLaren",
-      "probability": 12.6,
+      "probability": 8.6,
       "points_2026": 10,
       "best_finish_2026": 5,
       "components": {
@@ -52,14 +52,46 @@
         "team_reliability": 0.894,
         "reg_adaptability": 0.55,
         "team_trajectory": 0.885,
-        "race_2026_score": 0.595
+        "race_2026_score": 0.592
       }
     },
     {
       "rank": 3,
+      "driver": "Charles Leclerc",
+      "team": "Ferrari",
+      "probability": 8.6,
+      "points_2026": 15,
+      "best_finish_2026": 3,
+      "components": {
+        "season_2025": 0.572,
+        "testing_pace": 1.0,
+        "team_reliability": 0.975,
+        "reg_adaptability": 0.63,
+        "team_trajectory": 0.698,
+        "race_2026_score": 0.736
+      }
+    },
+    {
+      "rank": 4,
+      "driver": "Kimi Antonelli",
+      "team": "Mercedes",
+      "probability": 8.3,
+      "points_2026": 18,
+      "best_finish_2026": 2,
+      "components": {
+        "season_2025": 0.355,
+        "testing_pace": 0.822,
+        "team_reliability": 1.0,
+        "reg_adaptability": 0.73,
+        "team_trajectory": 0.692,
+        "race_2026_score": 0.82
+      }
+    },
+    {
+      "rank": 5,
       "driver": "Oscar Piastri",
       "team": "McLaren",
-      "probability": 11.8,
+      "probability": 7.7,
       "points_2026": 0,
       "best_finish_2026": null,
       "components": {
@@ -72,10 +104,10 @@
       }
     },
     {
-      "rank": 4,
+      "rank": 6,
       "driver": "Max Verstappen",
       "team": "Red Bull",
-      "probability": 8.4,
+      "probability": 6.7,
       "points_2026": 8,
       "best_finish_2026": 6,
       "components": {
@@ -84,78 +116,30 @@
         "team_reliability": 0.72,
         "reg_adaptability": 0.7,
         "team_trajectory": 0.603,
-        "race_2026_score": 0.535
-      }
-    },
-    {
-      "rank": 5,
-      "driver": "Charles Leclerc",
-      "team": "Ferrari",
-      "probability": 8.2,
-      "points_2026": 15,
-      "best_finish_2026": 3,
-      "components": {
-        "season_2025": 0.572,
-        "testing_pace": 1.0,
-        "team_reliability": 0.975,
-        "reg_adaptability": 0.6,
-        "team_trajectory": 0.698,
-        "race_2026_score": 0.737
-      }
-    },
-    {
-      "rank": 6,
-      "driver": "Kimi Antonelli",
-      "team": "Mercedes",
-      "probability": 7.7,
-      "points_2026": 18,
-      "best_finish_2026": 2,
-      "components": {
-        "season_2025": 0.355,
-        "testing_pace": 0.822,
-        "team_reliability": 1.0,
-        "reg_adaptability": 0.8,
-        "team_trajectory": 0.692,
-        "race_2026_score": 0.821
+        "race_2026_score": 0.532
       }
     },
     {
       "rank": 7,
       "driver": "Lewis Hamilton",
       "team": "Ferrari",
-      "probability": 4.6,
+      "probability": 6.1,
       "points_2026": 12,
       "best_finish_2026": 4,
       "components": {
         "season_2025": 0.369,
         "testing_pace": 0.688,
         "team_reliability": 0.975,
-        "reg_adaptability": 0.6,
+        "reg_adaptability": 0.63,
         "team_trajectory": 0.698,
-        "race_2026_score": 0.654
+        "race_2026_score": 0.652
       }
     },
     {
       "rank": 8,
-      "driver": "Isack Hadjar",
-      "team": "Red Bull",
-      "probability": 2.5,
-      "points_2026": 0,
-      "best_finish_2026": null,
-      "components": {
-        "season_2025": 0.121,
-        "testing_pace": 0.501,
-        "team_reliability": 0.72,
-        "reg_adaptability": 0.7,
-        "team_trajectory": 0.603,
-        "race_2026_score": 0.011
-      }
-    },
-    {
-      "rank": 9,
       "driver": "Oliver Bearman",
       "team": "Haas",
-      "probability": 2.4,
+      "probability": 3.8,
       "points_2026": 6,
       "best_finish_2026": 7,
       "components": {
@@ -164,30 +148,30 @@
         "team_reliability": 0.976,
         "reg_adaptability": 0.5,
         "team_trajectory": 0.393,
-        "race_2026_score": 0.476
+        "race_2026_score": 0.473
+      }
+    },
+    {
+      "rank": 9,
+      "driver": "Isack Hadjar",
+      "team": "Red Bull",
+      "probability": 3.7,
+      "points_2026": 0,
+      "best_finish_2026": null,
+      "components": {
+        "season_2025": 0.121,
+        "testing_pace": 0.501,
+        "team_reliability": 0.72,
+        "reg_adaptability": 0.7,
+        "team_trajectory": 0.603,
+        "race_2026_score": 0.0
       }
     },
     {
       "rank": 10,
-      "driver": "Esteban Ocon",
-      "team": "Haas",
-      "probability": 2.1,
-      "points_2026": 0,
-      "best_finish_2026": 11,
-      "components": {
-        "season_2025": 0.09,
-        "testing_pace": 0.514,
-        "team_reliability": 0.976,
-        "reg_adaptability": 0.5,
-        "team_trajectory": 0.393,
-        "race_2026_score": 0.286
-      }
-    },
-    {
-      "rank": 11,
       "driver": "Pierre Gasly",
       "team": "Alpine",
-      "probability": 2.1,
+      "probability": 3.3,
       "points_2026": 1,
       "best_finish_2026": 10,
       "components": {
@@ -196,14 +180,30 @@
         "team_reliability": 0.779,
         "reg_adaptability": 0.45,
         "team_trajectory": 0.396,
-        "race_2026_score": 0.322
+        "race_2026_score": 0.317
+      }
+    },
+    {
+      "rank": 11,
+      "driver": "Esteban Ocon",
+      "team": "Haas",
+      "probability": 3.2,
+      "points_2026": 0,
+      "best_finish_2026": 11,
+      "components": {
+        "season_2025": 0.09,
+        "testing_pace": 0.514,
+        "team_reliability": 0.976,
+        "reg_adaptability": 0.5,
+        "team_trajectory": 0.393,
+        "race_2026_score": 0.281
       }
     },
     {
       "rank": 12,
       "driver": "Franco Colapinto",
       "team": "Alpine",
-      "probability": 1.9,
+      "probability": 3.1,
       "points_2026": 0,
       "best_finish_2026": 12,
       "components": {
@@ -212,14 +212,30 @@
         "team_reliability": 0.779,
         "reg_adaptability": 0.45,
         "team_trajectory": 0.396,
-        "race_2026_score": 0.275
+        "race_2026_score": 0.269
       }
     },
     {
       "rank": 13,
+      "driver": "Arvid Lindblad",
+      "team": "Racing Bulls",
+      "probability": 3.1,
+      "points_2026": 4,
+      "best_finish_2026": 8,
+      "components": {
+        "season_2025": 0.0,
+        "testing_pace": 0.525,
+        "team_reliability": 0.82,
+        "reg_adaptability": 0.45,
+        "team_trajectory": 0.308,
+        "race_2026_score": 0.413
+      }
+    },
+    {
+      "rank": 14,
       "driver": "Gabriel Bortoleto",
       "team": "Audi",
-      "probability": 1.9,
+      "probability": 3.0,
       "points_2026": 2,
       "best_finish_2026": 9,
       "components": {
@@ -228,14 +244,30 @@
         "team_reliability": 0.699,
         "reg_adaptability": 0.35,
         "team_trajectory": 0.386,
-        "race_2026_score": 0.357
+        "race_2026_score": 0.353
       }
     },
     {
-      "rank": 14,
+      "rank": 15,
+      "driver": "Liam Lawson",
+      "team": "Racing Bulls",
+      "probability": 2.8,
+      "points_2026": 0,
+      "best_finish_2026": 14,
+      "components": {
+        "season_2025": 0.09,
+        "testing_pace": 0.441,
+        "team_reliability": 0.82,
+        "reg_adaptability": 0.45,
+        "team_trajectory": 0.308,
+        "race_2026_score": 0.245
+      }
+    },
+    {
+      "rank": 16,
       "driver": "Nico Hulkenberg",
       "team": "Audi",
-      "probability": 1.9,
+      "probability": 2.8,
       "points_2026": 0,
       "best_finish_2026": null,
       "components": {
@@ -248,42 +280,10 @@
       }
     },
     {
-      "rank": 15,
-      "driver": "Arvid Lindblad",
-      "team": "Racing Bulls",
-      "probability": 1.9,
-      "points_2026": 4,
-      "best_finish_2026": 8,
-      "components": {
-        "season_2025": 0.0,
-        "testing_pace": 0.525,
-        "team_reliability": 0.82,
-        "reg_adaptability": 0.45,
-        "team_trajectory": 0.308,
-        "race_2026_score": 0.416
-      }
-    },
-    {
-      "rank": 16,
-      "driver": "Liam Lawson",
-      "team": "Racing Bulls",
-      "probability": 1.8,
-      "points_2026": 0,
-      "best_finish_2026": 14,
-      "components": {
-        "season_2025": 0.09,
-        "testing_pace": 0.441,
-        "team_reliability": 0.82,
-        "reg_adaptability": 0.45,
-        "team_trajectory": 0.308,
-        "race_2026_score": 0.252
-      }
-    },
-    {
       "rank": 17,
       "driver": "Carlos Sainz",
       "team": "Williams",
-      "probability": 1.8,
+      "probability": 2.7,
       "points_2026": 0,
       "best_finish_2026": 13,
       "components": {
@@ -292,14 +292,14 @@
         "team_reliability": 0.53,
         "reg_adaptability": 0.35,
         "team_trajectory": 0.341,
-        "race_2026_score": 0.264
+        "race_2026_score": 0.257
       }
     },
     {
       "rank": 18,
       "driver": "Alexander Albon",
       "team": "Williams",
-      "probability": 1.8,
+      "probability": 2.6,
       "points_2026": 0,
       "best_finish_2026": 15,
       "components": {
@@ -308,14 +308,14 @@
         "team_reliability": 0.53,
         "reg_adaptability": 0.35,
         "team_trajectory": 0.341,
-        "race_2026_score": 0.241
+        "race_2026_score": 0.233
       }
     },
     {
       "rank": 19,
       "driver": "Sergio Perez",
       "team": "Cadillac",
-      "probability": 1.5,
+      "probability": 2.2,
       "points_2026": 0,
       "best_finish_2026": 17,
       "components": {
@@ -324,30 +324,14 @@
         "team_reliability": 0.447,
         "reg_adaptability": 0.3,
         "team_trajectory": 0.159,
-        "race_2026_score": 0.218
+        "race_2026_score": 0.21
       }
     },
     {
       "rank": 20,
-      "driver": "Valtteri Bottas",
-      "team": "Cadillac",
-      "probability": 1.5,
-      "points_2026": 0,
-      "best_finish_2026": null,
-      "components": {
-        "season_2025": 0.0,
-        "testing_pace": 0.274,
-        "team_reliability": 0.447,
-        "reg_adaptability": 0.3,
-        "team_trajectory": 0.159,
-        "race_2026_score": 0.011
-      }
-    },
-    {
-      "rank": 21,
       "driver": "Lance Stroll",
       "team": "Aston Martin",
-      "probability": 1.5,
+      "probability": 2.1,
       "points_2026": 0,
       "best_finish_2026": 16,
       "components": {
@@ -356,14 +340,30 @@
         "team_reliability": 0.0,
         "reg_adaptability": 0.45,
         "team_trajectory": 0.08,
-        "race_2026_score": 0.23
+        "race_2026_score": 0.221
+      }
+    },
+    {
+      "rank": 21,
+      "driver": "Valtteri Bottas",
+      "team": "Cadillac",
+      "probability": 2.1,
+      "points_2026": 0,
+      "best_finish_2026": null,
+      "components": {
+        "season_2025": 0.0,
+        "testing_pace": 0.274,
+        "team_reliability": 0.447,
+        "reg_adaptability": 0.3,
+        "team_trajectory": 0.159,
+        "race_2026_score": 0.0
       }
     },
     {
       "rank": 22,
       "driver": "Fernando Alonso",
       "team": "Aston Martin",
-      "probability": 1.5,
+      "probability": 2.0,
       "points_2026": 0,
       "best_finish_2026": null,
       "components": {
@@ -372,7 +372,7 @@
         "team_reliability": 0.0,
         "reg_adaptability": 0.45,
         "team_trajectory": 0.08,
-        "race_2026_score": 0.011
+        "race_2026_score": 0.0
       }
     }
   ]
