@@ -1,0 +1,211 @@
+\documentclass[10pt, letterpaper]{article}
+
+% Packages:
+\usepackage[
+    ignoreheadfoot,
+    top=1.3cm, bottom=1.3cm, left=1.3cm, right=1.3cm,
+    footskip=0.8cm
+]{geometry}
+
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage[dvipsnames]{xcolor}
+\definecolor{primaryColor}{RGB}{0, 0, 0}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage{amsmath}
+\usepackage[
+    pdftitle={Håkon Julius Størholt's CV},
+    pdfauthor={Håkon Julius Størholt},
+    colorlinks=true,
+    urlcolor=primaryColor
+]{hyperref}
+\usepackage{paracol}
+\usepackage{ifthen}
+\usepackage{needspace}
+\usepackage{charter}
+
+% Settings:
+\raggedright
+\pagestyle{empty}
+\setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+\setlength{\columnsep}{0.25cm}
+
+\titleformat{\section}{\needspace{4\baselineskip}\bfseries\normalsize}{}{0pt}{}[\vspace{1pt}\titlerule]
+\titlespacing{\section}{-1pt}{0.3 cm}{0.2 cm}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$}
+\newenvironment{highlights}{
+    \begin{itemize}[
+        topsep=0.1 cm, parsep=0.1 cm, partopsep=0pt,
+        itemsep=0.05 cm, % A little space between bullet points
+        leftmargin=0 cm
+    ]
+}{
+    \end{itemize}
+}
+
+\newenvironment{onecolentry}{\par\addvspace{0.1cm}}{\par\addvspace{0.1cm}}
+
+\newenvironment{twocolentry}[2][]{
+    \def\secondColumn{#2}
+    \setcolumnwidth{\fill, 4.5 cm}
+    \begin{paracol}{2}
+}{
+    \switchcolumn \raggedleft \secondColumn
+    \end{paracol}
+}
+
+\newenvironment{header}{
+    \centering\linespread{1.2}
+}{
+    \par
+}
+
+\begin{document}
+    \begin{header}
+        \fontsize{25 pt}{25 pt}\selectfont Håkon Julius Størholt
+
+        \vspace{5 pt}
+
+        \normalsize
+        \faMapMarker* \kern 2pt Oslo, Norway \kern 4pt | \kern 4pt
+        \href{mailto:hakonstoerholt@gmail.com}{\faEnvelope \kern 2pt hakonstoerholt@gmail.com} \kern 4pt | \kern 4pt
+        \href{tel:+47 938 11 817}{\faPhone \kern 2pt +47 938 11 817} \\
+        \href{https://hakonstoerholt.github.io}{\faGlobe \kern 2pt hakonstoerholt.github.io} \kern 4pt | \kern 4pt
+        \href{https://linkedin.com/in/hakonstoerholt}{\faLinkedin \kern 2pt linkedin.com/in/hakonstoerholt} \kern 4pt | \kern 4pt
+        \href{https://github.com/hakonstoerholt}{\faGithub \kern 2pt github.com/hakonstoerholt}
+    \end{header}
+
+    \vspace{-0.1cm} % Reduce space after header
+
+\section{Professional Summary}
+\begin{onecolentry}
+    Master in Finance student with strong quantitative skills and hands-on experience in financial analysis, valuation, and portfolio management. Keen interest in banking and financial markets, with a strong foundation in Python, derivatives, and data-driven decision-making.
+\end{onecolentry}
+
+\section{Education}
+\begin{twocolentry}{2024 -- 2026 (Expected)}
+    \textbf{MSc in Finance}, BI Norwegian School of Management -- Oslo, Norway
+\end{twocolentry}
+\begin{onecolentry}
+\begin{highlights}
+    \setlength\itemindent{2em} % adjust indentation
+    \item \textbf{Leadership:} \textit{Class Deputy}
+    \item \textbf{Relevant Coursework:} Derivatives, Financial Risk Management, Asset Management
+\end{highlights}
+
+\end{onecolentry}
+
+\vspace{0.2 cm}
+
+\begin{twocolentry}{Summer 2025}
+    \textbf{Summer School in Quantum Computing in Financial Services} -- Singapore Management University
+\end{twocolentry}
+
+\vspace{0.2 cm}
+
+\begin{twocolentry}{2021 -- 2024}
+    \textbf{Bachelor in Business Management}, University of South-Eastern Norway -- Horten, Norway
+\end{twocolentry}
+\begin{onecolentry}
+    \begin{highlights}
+    \setlength\itemindent{2em}
+        \item \textbf{Thesis:} Machine Learning for Norwegian Real Estate Market Predictions
+    \end{highlights}
+\end{onecolentry}
+
+\section{Selected Projects}
+\begin{onecolentry}
+    \textbf{Options Trading Strategies}
+\end{onecolentry}
+\begin{onecolentry}
+    \begin{highlights}
+    \setlength\itemindent{2em}
+        \item Designed Python-based tools for analyzing and backtesting systematic options strategies. 
+        \item Applied concepts of delta, implied volatility, and liquidity to identify opportunities. 
+        \item Focused on risk management through diversification and defined-loss structures. 
+    \end{highlights}
+\end{onecolentry}
+
+\vspace{0.2 cm}
+
+\begin{onecolentry}
+    \textbf{Market Prediction with Machine Learning}
+\end{onecolentry}
+\begin{onecolentry}
+    \begin{highlights}
+    \setlength\itemindent{2em}
+        \item Built a PyTorch model (LSTM) to explore predictive signals from OHLCV data. 
+        \item Tested model insights through simulated trading and performance evaluation. 
+    \end{highlights}
+\end{onecolentry}
+
+\vspace{0.2 cm}
+
+\begin{onecolentry}
+    \textbf{Portfolio Optimization}
+\end{onecolentry}
+\begin{onecolentry}
+    \begin{highlights}
+    \setlength\itemindent{2em}
+        \item Applied Modern Portfolio Theory to construct diversified portfolios using Python.
+        \item Compared risk-adjusted returns against market benchmarks.
+    \end{highlights}
+\end{onecolentry}
+
+\section{Professional Experience}
+\begin{twocolentry}{Sep 2018 -- Aug 2020}
+    \textbf{Retail Assistant}, Shell -- Nøtterøy, Norway
+\end{twocolentry}
+\begin{onecolentry}
+    \begin{highlights}
+    \setlength\itemindent{2em}
+        \item Supported daily operations in a customer-facing environment. 
+        \item Developed strong teamwork, reliability, and problem-solving skills. 
+    \end{highlights}
+\end{onecolentry}
+
+\vspace{0.2 cm}
+
+\begin{twocolentry}{Dec 2019 -- Apr 2021}
+    \textbf{Freelance IT Consultant} -- Norway
+\end{twocolentry}
+\begin{onecolentry}
+    \begin{highlights}
+    \setlength\itemindent{2em}
+        \item Delivered small-scale web development and IT support for local businesses. 
+        \item Gained practical experience managing projects independently and meeting client needs. 
+    \end{highlights}
+\end{onecolentry}
+
+\vspace{0.2 cm}
+
+\begin{twocolentry}{Jun 2021 -- Jun 2022}
+    \textbf{Bartender}, URO på Haugar AS -- Tønsberg, Norway
+\end{twocolentry}
+\begin{onecolentry}
+    \begin{highlights}
+    \setlength\itemindent{2em}
+        \item Worked in a high-paced environment, strengthening teamwork, communication, and customer service. 
+    \end{highlights}
+\end{onecolentry}
+
+
+\section{Skills}
+\begin{onecolentry}
+    \textbf{Markets \& Trading:} Options Trading, Equities, Risk Management, Technical Analysis, Market Structure
+\end{onecolentry}
+\begin{onecolentry}
+    \textbf{Programming \& Data:} Python, SQL, Git/GitHub, Data Visualization, Machine Learning (PyTorch, Scikit-learn)
+\end{onecolentry}
+\begin{onecolentry}
+    \textbf{Commercial \& Analytical:} Portfolio Optimization, Sharpe Ratio Maximization, Macro-Fundamental Analysis
+\end{onecolentry}
+\begin{onecolentry}
+    \textbf{APIs \& Platforms:} Interactive Brokers (IBKR) API, Bloomberg Terminal, Morningstar, WRDS
+\end{onecolentry}
+
+\end{document}

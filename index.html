@@ -3,61 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Håkon Julius Størholt - Quantitative Finance & Risk Management</title>
-    <meta name="description" content="Quantitative Finance Professional specializing in Risk Management, Algorithmic Trading, and Quantum Computing applications in finance.">
-    <meta name="keywords" content="quantitative finance, risk management, algorithmic trading, quantum computing, portfolio optimization, derivatives pricing">
+    <title>Håkon Julius Størholt</title>
+    <meta name="description" content="MSc Finance candidate at BI Norwegian Business School. Quantitative finance, derivatives, and data-driven decision-making.">
+    <meta name="keywords" content="finance, quantitative analysis, derivatives, portfolio optimization, machine learning, python">
     <meta name="author" content="Håkon Julius Størholt">
 
     <!-- Open Graph / LinkedIn -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://hakonstoerholt.github.io/">
-    <meta property="og:title" content="Håkon Julius Størholt - Quantitative Finance & Risk Management">
-    <meta property="og:description" content="Building next-generation financial systems with quantum computing and advanced analytics">
-    
+    <meta property="og:title" content="Håkon Julius Størholt">
+    <meta property="og:description" content="MSc Finance | Quantitative Analysis | Derivatives & Risk">
+
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome for icons -->
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
-        /* Minimalist Dark Portfolio Styles */
         :root {
-            --charcoal: #1a1a1a;
-            --matte-black: #0d0d0d;
-            --gunmetal: #2c3e50;
-            --slate: #334155;
-            --electric-blue: #0ea5e9;
-            --crimson: #dc2626;
-            --muted-gold: #d4af37;
-            --soft-white: #f5f5f5;
-            --cool-grey: #9ca3af;
-            --dark-grey: #374151;
-            --border-subtle: #374151;
-            --card-dark: #1f1f1f;
+            --white: #ffffff;
+            --off-white: #fafafa;
+            --light-grey: #f3f4f6;
+            --border: #e5e7eb;
+            --border-hover: #d1d5db;
+            --text-primary: #111827;
+            --text-secondary: #4b5563;
+            --text-muted: #9ca3af;
+            --accent: #2563eb;
+            --accent-light: #dbeafe;
+            --accent-dark: #1d4ed8;
+            --card-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+            --card-shadow-hover: 0 10px 25px rgba(0,0,0,0.08), 0 4px 10px rgba(0,0,0,0.04);
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
 
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             line-height: 1.6;
-            color: var(--soft-white);
-            background: var(--matte-black);
+            color: var(--text-primary);
+            background: var(--white);
             font-weight: 400;
+            -webkit-font-smoothing: antialiased;
         }
 
-        /* Typography */
         h1, h2, h3, h4, h5, h6 {
             font-family: 'Space Grotesk', 'Inter', sans-serif;
             font-weight: 600;
@@ -65,1250 +58,1010 @@
             letter-spacing: -0.025em;
         }
 
-        /* Header & Navigation */
+        /* ---- NAV ---- */
         .header {
-            background: rgba(13, 13, 13, 0.95);
+            background: rgba(255,255,255,0.92);
             backdrop-filter: blur(20px);
-            border-bottom: 1px solid var(--border-subtle);
+            border-bottom: 1px solid var(--border);
             position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
+            top: 0; left: 0; right: 0;
             z-index: 1000;
         }
-
         .nav-container {
-            max-width: 1400px;
+            max-width: 1100px;
             margin: 0 auto;
             padding: 0 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            height: 64px;
+            height: 60px;
         }
-
         .logo {
-            font-size: 1.75rem;
-            font-weight: 700;
-            color: var(--soft-white);
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--text-primary);
             text-decoration: none;
-            letter-spacing: -0.05em;
             font-family: 'Space Grotesk', sans-serif;
+            letter-spacing: -0.03em;
         }
-
         .nav-menu {
             display: flex;
             list-style: none;
-            gap: 3rem;
+            gap: 2.5rem;
         }
-
         .nav-link {
-            color: var(--cool-grey);
+            color: var(--text-secondary);
             text-decoration: none;
             font-weight: 500;
-            font-size: 0.875rem;
+            font-size: 0.8125rem;
             text-transform: uppercase;
-            letter-spacing: 0.05em;
-            transition: all 0.3s ease;
-            padding: 0.5rem 0;
-            position: relative;
+            letter-spacing: 0.06em;
+            transition: color 0.2s;
+            padding: 0.25rem 0;
         }
-
-        .nav-link:hover {
-            color: var(--electric-blue);
-        }
-
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            bottom: -2px;
-            left: 0;
-            width: 0;
-            height: 1px;
-            background: var(--electric-blue);
-            transition: width 0.3s ease;
-        }
-
-        .nav-link:hover::after {
-            width: 100%;
-        }
-
+        .nav-link:hover { color: var(--accent); }
         .mobile-menu-toggle {
             display: none;
             background: none;
             border: none;
-            color: var(--soft-white);
+            color: var(--text-primary);
             font-size: 1.25rem;
             cursor: pointer;
         }
 
-        /* Hero Section */
+        /* ---- HERO ---- */
         .hero {
-            background: linear-gradient(135deg, var(--matte-black) 0%, var(--charcoal) 100%);
-            color: var(--soft-white);
-            padding: 120px 0 100px;
+            padding: 140px 0 80px;
             text-align: center;
-            position: relative;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            background: var(--white);
+            border-bottom: 1px solid var(--border);
         }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: radial-gradient(circle at 50% 50%, rgba(14, 165, 233, 0.05) 0%, transparent 70%);
-            pointer-events: none;
-        }
-
         .hero-content {
-            max-width: 900px;
+            max-width: 700px;
             margin: 0 auto;
             padding: 0 2rem;
-            position: relative;
-            z-index: 2;
         }
-
-        .hero-image {
-            width: 140px;
-            height: 140px;
-            border-radius: 50%;
-            margin: 0 auto 3rem;
-            border: 2px solid var(--electric-blue);
-            display: block;
-            object-fit: cover;
-        }
-
         .hero h1 {
-            font-size: 4rem;
+            font-size: 3rem;
             font-weight: 700;
-            margin-bottom: 1.5rem;
-            letter-spacing: -0.02em;
-            font-family: 'Space Grotesk', sans-serif;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
         }
-
         .hero-tagline {
-            font-size: 1.25rem;
+            font-size: 1rem;
+            color: var(--text-secondary);
+            font-weight: 400;
+            margin-bottom: 1rem;
+            letter-spacing: 0.02em;
+        }
+        .hero-location {
+            font-size: 0.875rem;
+            color: var(--text-muted);
             margin-bottom: 2rem;
-            color: var(--electric-blue);
-            font-weight: 500;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
         }
-
-        .hero-description {
-            font-size: 1.125rem;
-            margin-bottom: 3rem;
-            color: var(--cool-grey);
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-            line-height: 1.7;
-        }
-
-        .cta-buttons {
+        .hero-links {
             display: flex;
-            gap: 1.5rem;
+            gap: 1.25rem;
             justify-content: center;
             flex-wrap: wrap;
         }
-
-        .btn {
-            padding: 0.875rem 2rem;
-            border-radius: 2px;
+        .hero-link {
+            color: var(--text-secondary);
             text-decoration: none;
-            font-weight: 600;
-            font-size: 0.875rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            transition: all 0.3s ease;
-            border: 1px solid transparent;
-            cursor: pointer;
-            display: inline-flex;
+            font-size: 0.8125rem;
+            font-weight: 500;
+            display: flex;
             align-items: center;
-            gap: 0.5rem;
-            min-width: 160px;
-            justify-content: center;
+            gap: 0.4rem;
+            transition: color 0.2s;
         }
+        .hero-link:hover { color: var(--accent); }
 
-        .btn-primary {
-            background: var(--electric-blue);
-            color: var(--matte-black);
-            border-color: var(--electric-blue);
-        }
-
-        .btn-primary:hover {
-            background: transparent;
-            color: var(--electric-blue);
-            transform: translateY(-2px);
-        }
-
-        .btn-secondary {
-            background: transparent;
-            color: var(--soft-white);
-            border-color: var(--border-subtle);
-        }
-
-        .btn-secondary:hover {
-            background: var(--soft-white);
-            color: var(--matte-black);
-            border-color: var(--soft-white);
-            transform: translateY(-2px);
-        }
-
-        /* Sections */
+        /* ---- SECTIONS ---- */
         .section {
-            padding: 100px 0;
+            padding: 80px 0;
+            border-bottom: 1px solid var(--border);
         }
-
+        .section:last-of-type { border-bottom: none; }
         .container {
-            max-width: 1400px;
+            max-width: 1100px;
             margin: 0 auto;
             padding: 0 2rem;
         }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: 5rem;
-        }
-
         .section-title {
-            font-size: 2.75rem;
+            font-size: 1.5rem;
             font-weight: 700;
-            color: var(--soft-white);
-            margin-bottom: 1.5rem;
-            font-family: 'Space Grotesk', sans-serif;
-            letter-spacing: -0.02em;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+        .section-subtitle {
+            font-size: 0.9375rem;
+            color: var(--text-secondary);
+            margin-bottom: 3rem;
+            max-width: 600px;
         }
 
-        .section-subtitle {
-            font-size: 1.125rem;
-            color: var(--cool-grey);
-            max-width: 600px;
-            margin: 0 auto;
+        /* ---- ABOUT / SUMMARY ---- */
+        .summary-text {
+            font-size: 1.0625rem;
+            color: var(--text-secondary);
+            line-height: 1.75;
+            max-width: 750px;
+        }
+
+        /* ---- EDUCATION ---- */
+        .timeline { display: flex; flex-direction: column; gap: 2rem; }
+        .timeline-item {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 2rem;
+            align-items: start;
+        }
+        .timeline-date {
+            font-size: 0.8125rem;
+            color: var(--text-muted);
+            font-weight: 500;
+            padding-top: 0.15rem;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+        .timeline-content h3 {
+            font-size: 1.0625rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+            color: var(--text-primary);
+        }
+        .timeline-content .institution {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+        .timeline-content .detail {
+            font-size: 0.8125rem;
+            color: var(--text-muted);
             line-height: 1.6;
         }
 
-        /* Projects Grid */
+        /* ---- EXPERIENCE ---- */
+        .experience-item {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 2rem;
+            align-items: start;
+        }
+        .experience-content h3 {
+            font-size: 1.0625rem;
+            font-weight: 600;
+            margin-bottom: 0.125rem;
+        }
+        .experience-content .company {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+        .experience-content ul {
+            list-style: none;
+            padding: 0;
+        }
+        .experience-content li {
+            font-size: 0.8125rem;
+            color: var(--text-muted);
+            padding-left: 1rem;
+            position: relative;
+            margin-bottom: 0.25rem;
+            line-height: 1.6;
+        }
+        .experience-content li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.55rem;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: var(--text-muted);
+        }
+
+        /* ---- PROJECTS ---- */
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: 2rem;
-            margin-top: 4rem;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 1.5rem;
         }
-
         .project-card {
-            background: var(--card-dark);
-            border-radius: 4px;
-            padding: 2.5rem;
-            border: 1px solid var(--border-subtle);
-            transition: all 0.4s ease;
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.75rem;
+            transition: all 0.3s ease;
             position: relative;
-            overflow: hidden;
         }
-
-        .project-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 2px;
-            background: var(--electric-blue);
-            transform: scaleX(0);
-            transition: transform 0.4s ease;
-        }
-
         .project-card:hover {
-            transform: translateY(-4px);
-            border-color: var(--electric-blue);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: var(--border-hover);
+            box-shadow: var(--card-shadow-hover);
+            transform: translateY(-2px);
         }
-
-        .project-card:hover::before {
-            transform: scaleX(1);
-        }
-
-        .project-card.featured {
-            grid-column: span 2;
-            background: linear-gradient(135deg, var(--card-dark) 0%, var(--charcoal) 100%);
-        }
-
-        .project-header {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .project-icon {
-            width: 48px;
-            height: 48px;
-            background: var(--electric-blue);
-            border-radius: 2px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--matte-black);
-            font-size: 1.25rem;
-        }
-
-        .project-title {
-            font-size: 1.5rem;
+        .project-card h3 {
+            font-size: 1.0625rem;
             font-weight: 600;
-            color: var(--soft-white);
-            font-family: 'Space Grotesk', sans-serif;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
         }
-
-        .project-status {
-            background: var(--electric-blue);
-            color: var(--matte-black);
-            padding: 0.25rem 0.75rem;
-            border-radius: 2px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            margin-left: auto;
+        .project-card p {
+            font-size: 0.8125rem;
+            color: var(--text-secondary);
+            line-height: 1.65;
+            margin-bottom: 1.25rem;
         }
-
-        .project-description {
-            color: var(--cool-grey);
-            margin-bottom: 2rem;
-            line-height: 1.7;
-        }
-
-        .project-tech {
+        .project-tags {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.75rem;
-            margin-bottom: 2rem;
-        }
-
-        .tech-tag {
-            background: var(--dark-grey);
-            color: var(--soft-white);
-            padding: 0.375rem 0.875rem;
-            border-radius: 2px;
-            font-size: 0.8rem;
-            font-weight: 500;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-
-        .project-links {
-            display: flex;
-            gap: 1.5rem;
-        }
-
-        .project-link {
-            color: var(--electric-blue);
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.875rem;
-            display: flex;
-            align-items: center;
             gap: 0.5rem;
-            transition: color 0.3s ease;
+        }
+        .tag {
+            font-size: 0.6875rem;
+            font-weight: 500;
+            color: var(--accent);
+            background: var(--accent-light);
+            padding: 0.25rem 0.625rem;
+            border-radius: 4px;
             text-transform: uppercase;
-            letter-spacing: 0.05em;
+            letter-spacing: 0.04em;
         }
-
-        .project-link:hover {
-            color: var(--soft-white);
-        }
-
-        /* Predictions Section */
-        .predictions-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: 2rem;
-            margin-top: 4rem;
-        }
-
-        .prediction-card {
-            background: var(--card-dark);
-            border-radius: 4px;
-            padding: 2.5rem;
-            border: 1px solid var(--border-subtle);
-            transition: all 0.4s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .prediction-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 2px;
-            background: var(--electric-blue);
-            transform: scaleX(0);
-            transition: transform 0.4s ease;
-        }
-
-        .prediction-card:hover {
-            transform: translateY(-4px);
-            border-color: var(--electric-blue);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-        }
-
-        .prediction-card:hover::before {
-            transform: scaleX(1);
-        }
-
-        /* Skills Section */
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 2rem;
-            margin-top: 4rem;
-        }
-
-        .skill-category {
-            background: var(--card-dark);
-            border-radius: 4px;
-            padding: 2.5rem;
-            border: 1px solid var(--border-subtle);
-            transition: all 0.4s ease;
-        }
-
-        .skill-category:hover {
-            transform: translateY(-2px);
-            border-color: var(--electric-blue);
-        }
-
-        .skill-category h3 {
-            font-size: 1.25rem;
-            font-weight: 600;
-            color: var(--soft-white);
-            margin-bottom: 1.5rem;
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            font-family: 'Space Grotesk', sans-serif;
-        }
-
-        .skill-category h3 i {
-            color: var(--electric-blue);
-        }
-
-        .skill-list {
-            list-style: none;
-        }
-
-        .skill-item {
-            padding: 0.75rem 0;
-            color: var(--cool-grey);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid var(--border-subtle);
-        }
-
-        .skill-item:last-child {
-            border-bottom: none;
-        }
-
-        .skill-level {
-            font-size: 0.8rem;
-            color: var(--electric-blue);
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-
-        /* Contact Section */
-        .contact {
-            background: var(--charcoal);
-        }
-
-        .contact-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            margin-top: 4rem;
-        }
-
-        .contact-card {
-            background: var(--card-dark);
-            border-radius: 4px;
-            padding: 2.5rem;
-            text-align: center;
-            border: 1px solid var(--border-subtle);
-            transition: all 0.4s ease;
-        }
-
-        .contact-card:hover {
-            transform: translateY(-3px);
-            border-color: var(--electric-blue);
-        }
-
-        .contact-icon {
-            width: 56px;
-            height: 56px;
-            background: var(--electric-blue);
-            border-radius: 2px;
+        .project-card .project-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 6px;
+            background: var(--accent-light);
+            color: var(--accent);
             display: flex;
             align-items: center;
             justify-content: center;
-            color: var(--matte-black);
-            font-size: 1.25rem;
-            margin: 0 auto 1.5rem;
-        }
-
-        .contact-title {
-            font-size: 1.125rem;
-            font-weight: 600;
-            color: var(--soft-white);
-            margin-bottom: 0.75rem;
-            font-family: 'Space Grotesk', sans-serif;
-        }
-
-        .contact-link {
-            color: var(--cool-grey);
-            text-decoration: none;
-            transition: color 0.3s ease;
-            font-size: 0.9rem;
-        }
-
-        .contact-link:hover {
-            color: var(--electric-blue);
-        }
-
-        /* Footer */
-        .footer {
-            background: var(--matte-black);
-            color: var(--soft-white);
-            padding: 4rem 0;
-            text-align: center;
-            border-top: 1px solid var(--border-subtle);
-        }
-
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            margin-bottom: 2rem;
-        }
-
-        .social-link {
-            width: 48px;
-            height: 48px;
-            background: var(--card-dark);
-            border: 1px solid var(--border-subtle);
-            border-radius: 2px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--cool-grey);
-            text-decoration: none;
-            font-size: 1.125rem;
-            transition: all 0.3s ease;
-        }
-
-        .social-link:hover {
-            background: var(--electric-blue);
-            color: var(--matte-black);
-            border-color: var(--electric-blue);
-            transform: translateY(-2px);
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .nav-menu {
-                display: none;
-            }
-
-            .mobile-menu-toggle {
-                display: block;
-            }
-
-            .hero h1 {
-                font-size: 2.75rem;
-            }
-
-            .hero-tagline {
-                font-size: 1rem;
-            }
-
-            .section-title {
-                font-size: 2.25rem;
-            }
-
-            .projects-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .project-card.featured {
-                grid-column: span 1;
-            }
-
-            .cta-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .btn {
-                width: 100%;
-                max-width: 280px;
-            }
-
-            /* About section mobile styles */
-            #about div[style*="grid-template-columns"] {
-                display: block !important;
-            }
-
-            #about div[style*="grid-template-columns"] > div {
-                margin-bottom: 2rem;
-            }
-
-            .container {
-                padding: 0 1.5rem;
-            }
-
-            .section {
-                padding: 60px 0;
-            }
-        }
-
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .fade-in {
-            animation: fadeInUp 0.6s ease-out;
-        }
-
-        /* Code blocks */
-        .code-block {
-            background: var(--matte-black);
-            color: var(--soft-white);
-            padding: 1.5rem;
-            border-radius: 4px;
-            font-family: 'Fira Code', monospace;
             font-size: 0.875rem;
-            overflow-x: auto;
-            margin: 1.5rem 0;
-            border: 1px solid var(--border-subtle);
+            margin-bottom: 1rem;
         }
 
-        /* Predictions List */
-        .predictions-list {
-            margin-top: 1.5rem;
-            margin-bottom: 2rem;
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
+        /* ---- SKILLS ---- */
+        .skills-columns {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 2.5rem;
+        }
+        .skill-group h3 {
+            font-size: 0.8125rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent);
+            display: inline-block;
+        }
+        .skill-group ul {
+            list-style: none;
+            padding: 0;
+        }
+        .skill-group li {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            padding: 0.35rem 0;
         }
 
+        /* ---- F1 PREDICTIONS ---- */
+        .predictions-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+        .predictions-card {
+            background: var(--off-white);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 2rem;
+        }
+        .predictions-card h3 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+        .predictions-card .card-subtitle {
+            font-size: 0.8125rem;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+        }
         .prediction-item {
             display: grid;
-            grid-template-columns: 120px 1fr 50px;
+            grid-template-columns: 32px 1fr 50px;
             align-items: center;
-            gap: 1rem;
-            font-size: 0.9rem;
+            gap: 0.75rem;
+            padding: 0.625rem 0;
+            border-bottom: 1px solid var(--border);
         }
-
-        .driver-name {
-            font-weight: 500;
-            color: var(--soft-white);
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
+        .prediction-item:last-child { border-bottom: none; }
+        .prediction-rank {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            text-align: center;
         }
-
-        .probability-bar-container {
-            width: 100%;
-            background-color: var(--dark-grey);
-            border-radius: 2px;
-            height: 8px;
-            overflow: hidden;
-        }
-
-        .probability-bar {
-            height: 100%;
-            background-color: var(--electric-blue);
-            border-radius: 2px;
-            transition: width 0.5s ease-in-out;
-        }
-
-        .probability-value {
+        .prediction-rank.top-1 { color: #d97706; }
+        .prediction-rank.top-2 { color: #6b7280; }
+        .prediction-rank.top-3 { color: #92400e; }
+        .prediction-info .driver-name {
+            font-size: 0.875rem;
             font-weight: 600;
-            color: var(--electric-blue);
+            color: var(--text-primary);
+        }
+        .prediction-info .team-name {
+            font-size: 0.6875rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+        .prediction-bar-wrap {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+        .probability-bar-bg {
+            width: 100%;
+            background: var(--border);
+            border-radius: 3px;
+            height: 6px;
+            overflow: hidden;
+        }
+        .probability-bar-fill {
+            height: 100%;
+            background: var(--accent);
+            border-radius: 3px;
+            transition: width 1s cubic-bezier(0.25,0.46,0.45,0.94);
+            width: 0;
+        }
+        .probability-value {
+            font-size: 0.8125rem;
+            font-weight: 700;
+            color: var(--accent);
             text-align: right;
         }
-
+        .methodology-box {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 2rem;
+        }
+        .methodology-box h3 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        .methodology-box p {
+            font-size: 0.8125rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 1rem;
+        }
+        .methodology-box p:last-child { margin-bottom: 0; }
+        .factor-list {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0;
+        }
+        .factor-list li {
+            font-size: 0.8125rem;
+            color: var(--text-secondary);
+            padding: 0.375rem 0 0.375rem 1.25rem;
+            position: relative;
+        }
+        .factor-list li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.7rem;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--accent);
+        }
+        .factor-list li strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
         .last-updated {
-            margin-top: 0.5rem;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin-top: 1rem;
+        }
+
+        /* ---- CONTACT ---- */
+        .contact-row {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.625rem;
+        }
+        .contact-item i {
+            color: var(--text-muted);
             font-size: 0.875rem;
-            color: var(--cool-grey);
+            width: 20px;
+            text-align: center;
+        }
+        .contact-item a, .contact-item span {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.875rem;
+            transition: color 0.2s;
+        }
+        .contact-item a:hover { color: var(--accent); }
+
+        /* ---- FOOTER ---- */
+        .footer {
+            background: var(--off-white);
+            border-top: 1px solid var(--border);
+            padding: 3rem 0;
+            text-align: center;
+        }
+        .footer p {
+            font-size: 0.8125rem;
+            color: var(--text-muted);
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .footer-link {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.2s;
+        }
+        .footer-link:hover { color: var(--accent); }
+
+        /* ---- ANIMATIONS ---- */
+        .animate-in {
+            opacity: 0;
+            transform: translateY(16px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        .animate-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ---- RESPONSIVE ---- */
+        @media (max-width: 768px) {
+            .nav-menu { display: none; }
+            .nav-menu.active {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 60px; left: 0; right: 0;
+                background: var(--white);
+                border-bottom: 1px solid var(--border);
+                padding: 1rem 2rem;
+                gap: 1rem;
+            }
+            .mobile-menu-toggle { display: block; }
+            .hero h1 { font-size: 2.25rem; }
+            .hero { padding: 120px 0 60px; }
+            .section { padding: 60px 0; }
+            .timeline-item, .experience-item {
+                grid-template-columns: 1fr;
+                gap: 0.25rem;
+            }
+            .timeline-date { padding-top: 0; }
+            .projects-grid { grid-template-columns: 1fr; }
+            .predictions-container { grid-template-columns: 1fr; }
+            .skills-columns { grid-template-columns: 1fr 1fr; }
+            .hero-links { flex-direction: column; align-items: center; }
+            .contact-row { flex-direction: column; gap: 1rem; }
         }
     </style>
 </head>
 <body>
-    <!-- Navigation Header -->
+    <!-- Nav -->
     <header class="header">
         <div class="nav-container">
-            <a href="#home" class="logo">H</a>
+            <a href="#" class="logo">Håkon J. Størholt</a>
             <nav>
                 <ul class="nav-menu">
-                    <li><a href="#projects" class="nav-link">Projects</a></li>
-                    <li><a href="#skills" class="nav-link">Skills</a></li>
-                    <li><a href="#predictions" class="nav-link">Predictions</a></li>
                     <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#predictions" class="nav-link">F1 Predictions</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
-            <button class="mobile-menu-toggle">
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
+    <!-- Hero -->
+    <section class="hero">
         <div class="hero-content">
-            <img src="images/hakon-profile.jpg" alt="Håkon Julius Størholt" class="hero-image">
             <h1>Håkon Julius Størholt</h1>
-            <div class="hero-tagline">Quantitative Finance • Risk Management • Algorithmic Trading</div>
-            <p class="hero-description">Building next-generation financial systems with quantum computing and advanced analytics</p>
-            <div class="cta-buttons">
-                <a href="#projects" class="btn btn-primary">
-                    <i class="fas fa-code"></i>
-                    View Projects
-                </a>
-                <a href="/resume.pdf" class="btn btn-secondary" target="_blank">
-                    <i class="fas fa-download"></i>
-                    Download Resume
-                </a>
-                <a href="#contact" class="btn btn-secondary">
-                    <i class="fas fa-envelope"></i>
-                    Contact Me
-                </a>
+            <p class="hero-tagline">MSc Finance candidate with strong quantitative skills and hands-on experience in financial analysis, valuation, and portfolio management.</p>
+            <p class="hero-location"><i class="fas fa-map-marker-alt"></i> Oslo, Norway</p>
+            <div class="hero-links">
+                <a href="mailto:hakonstoerholt@gmail.com" class="hero-link"><i class="fas fa-envelope"></i> hakonstoerholt@gmail.com</a>
+                <a href="https://linkedin.com/in/hakonstoerholt" class="hero-link" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/hakonstoerholt" class="hero-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
             </div>
         </div>
     </section>
 
-    <!-- Featured Projects Section -->
-    <section id="projects" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Featured Projects</h2>
-                <p class="section-subtitle">Enterprise-grade financial systems and cutting-edge quantitative research</p>
-            </div>
-            
-            <div class="projects-grid">
-                <!-- Cerberus Risk Engine - Flagship Project -->
-                <div class="project-card featured">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <div>
-                            <h3 class="project-title">Cerberus Risk Engine</h3>
-                            <span class="project-status">Flagship Project</span>
-                        </div>
-                    </div>
-                    <p class="project-description">
-                        Next-generation proprietary risk management system for real-time portfolio risk assessment. 
-                        Production-ready enterprise infrastructure with CI/CD pipeline, designed for institutional-grade portfolios.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python 3.11+</span>
-                        <span class="tech-tag">FastAPI</span>
-                        <span class="tech-tag">PostgreSQL</span>
-                        <span class="tech-tag">TimescaleDB</span>
-                        <span class="tech-tag">Docker</span>
-                        <span class="tech-tag">Streamlit</span>
-                    </div>
-                </div>
-
-                <!-- Quantum Exotic Option Valuation -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-atom"></i>
-                        </div>
-                        <div>
-                            <h3 class="project-title">Quantum Option Pricing</h3>
-                        </div>
-                    </div>
-                    <p class="project-description">
-                        Quantum computing applications for complex derivatives pricing using VQE algorithms and QAOA. 
-                        Cutting-edge fintech research demonstrating quantum advantage in finance.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Qiskit</span>
-                        <span class="tech-tag">VQE</span>
-                        <span class="tech-tag">QAOA</span>
-                    </div>
-                </div>
-
-                <!-- Polymarket Arbitrage Bot -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-robot"></i>
-                        </div>
-                        <div>
-                            <h3 class="project-title">Polymarket Arbitrage Bot</h3>
-                        </div>
-                    </div>
-                    <p class="project-description">
-                        Automated arbitrage detection and execution system with real-time probability calculations. 
-                        Live trading bot demonstrating market microstructure understanding.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Binance API</span>
-                        <span class="tech-tag">Real-time Data</span>
-                        <span class="tech-tag">Automation</span>
-                    </div>
-                </div>
-
-                <!-- Option Pricing Model -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <div>
-                            <h3 class="project-title">Option Pricing Engine</h3>
-                        </div>
-                    </div>
-                    <p class="project-description">
-                        Comprehensive derivatives pricing application with real-time market data integration. 
-                        Production web application featuring Greeks calculation and portfolio management.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Flask</span>
-                        <span class="tech-tag">Alpaca API</span>
-                        <span class="tech-tag">Black-Scholes</span>
-                    </div>
-                </div>
-
-                <!-- Portfolio Optimization -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-balance-scale"></i>
-                        </div>
-                        <div>
-                            <h3 class="project-title">Portfolio Rebalancing</h3>
-                        </div>
-                    </div>
-                    <p class="project-description">
-                        Advanced portfolio optimization using modern portfolio theory with Markowitz optimization, 
-                        risk-return analysis, and automated rebalancing algorithms.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">NumPy</span>
-                        <span class="tech-tag">Pandas</span>
-                        <span class="tech-tag">Optimization</span>
-                    </div>
-                </div>
-
-                <!-- Credit Risk Quantum Project -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-brain"></i>
-                        </div>
-                        <div>
-                            <h3 class="project-title">Quantum Credit Risk</h3>
-                        </div>
-                    </div>
-                    <p class="project-description">
-                        Quantum machine learning for advanced credit risk assessment with next-generation risk modeling 
-                        and regulatory compliance focus.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Quantum ML</span>
-                        <span class="tech-tag">Risk Modeling</span>
-                        <span class="tech-tag">Statistics</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Predictions Section -->
-    <section id="predictions" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Sports Predictions</h2>
-                <p class="section-subtitle">Applying quantitative models to predict outcomes in sports.</p>
-                <p class="last-updated">Last updated: October 29, 2025</p>
-            </div>
-            
-            <div class="projects-grid">
-                <!-- F1 Predictions -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-flag-checkered"></i>
-                        </div>
-                        <div>
-                            <h3 class="project-title">Formula 1</h3>
-                        </div>
-                    </div>
-                    <p class="project-description">
-                        Top 3 predictions for the championship, based on my proprietary model. <small>(post Qatar)</small>
-                    </p>
-                    <div class="predictions-list">
-                        <div class="prediction-item">
-                            <span class="driver-name">Lando Norris</span>
-                            <div class="probability-bar-container">
-                                <div class="probability-bar" style="width: 73.4%;"></div>
-                            </div>
-                            <span class="probability-value">73.4%</span>
-                        </div>
-                        <div class="prediction-item">
-                            <span class="driver-name">Max Verstappen</span>
-                            <div class="probability-bar-container">
-                                <div class="probability-bar" style="width: 16.9%;"></div>
-                            </div>
-                            <span class="probability-value">16.9%</span>
-                        </div>
-                        <div class="prediction-item">
-                            <span class="driver-name">Oscar Piastri</span>
-                            <div class="probability-bar-container">
-                                <div class="probability-bar" style="width: 9.7%;"></div>
-                            </div>
-                            <span class="probability-value">9.7%</span>
-                        </div>
-                    </div>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Machine Learning</span>
-                        <span class="tech-tag">Statistical Analysis</span>
-                        <span class="tech-tag">In Development</span>
-                    </div>
-                </div>
-
-                <!-- Football Predictions -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-futbol"></i>
-                        </div>
-                        <div>
-                            <h3 class="project-title">Football (Soccer)</h3>
-                        </div>
-                    </div>
-                    <p class="project-description">
-                        Expanding the prediction framework to football. This involves developing models to predict match results, league standings, and player performance metrics.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Coming Soon</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Skills & Technologies</h2>
-                <p class="section-subtitle">Advanced expertise in quantitative finance and cutting-edge technology</p>
-            </div>
-            
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>
-                        <i class="fas fa-code"></i>
-                        Programming Languages
-                    </h3>
-                    <ul class="skill-list">
-                        <li class="skill-item">
-                            <span>Python</span>
-                            <span class="skill-level">Advanced</span>
-                        </li>
-                        <li class="skill-item">
-                            <span>R</span>
-                            <span class="skill-level">Advanced</span>
-                        </li>
-                        <li class="skill-item">
-                            <span>C++</span>
-                            <span class="skill-level">Intermediate</span>
-                        </li>
-                        <li class="skill-item">
-                            <span>JavaScript</span>
-                            <span class="skill-level">Intermediate</span>
-                        </li>
-                        <li class="skill-item">
-                            <span>SQL</span>
-                            <span class="skill-level">Advanced</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="skill-category">
-                    <h3>
-                        <i class="fas fa-chart-line"></i>
-                        Quantitative Finance
-                    </h3>
-                    <ul class="skill-list">
-                        <li class="skill-item">
-                            <span>Risk Management</span>
-                            <span class="skill-level">Expert</span>
-                        </li>
-                        <li class="skill-item">
-                            <span>Derivatives Pricing</span>
-                            <span class="skill-level">Advanced</span>
-                        </li>
-                        <li class="skill-item">
-                            <span>Portfolio Theory</span>
-                            <span class="skill-level">Advanced</span>
-                        </li>
-                        <li class="skill-item">
-                            <span>Algorithmic Trading</span>
-                            <span class="skill-level">Advanced</span>
-                        </li>
-                        <li class="skill-item">
-                            <span>Stochastic Calculus</span>
-                            <span class="skill-level">Advanced</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="skill-category">
-                    <h3>
-                        <i class="fas fa-cogs"></i>
-                        Technology Stack
-                    </h3>
-                    <ul class="skill-list">
-                        <li class="skill-item">
-                            <span>FastAPI & Flask</span>
-                            <span class="skill-level">Advanced</span>
-                        </li>
-                        <li class="skill-item">
-                            <span>PostgreSQL & TimescaleDB</span>
-                            <span class="skill-level">Advanced</span>
-                        </li>
-                        <li class="skill-item">
-                            <span>Docker & CI/CD</span>
-                            <span class="skill-level">Intermediate</span>
-                        </li>
-                        <li class="skill-item">
-                            <span>Pandas & NumPy</span>
-                            <span class="skill-level">Expert</span>
-                        </li>
-                        <li class="skill-item">
-                            <span>Streamlit & Jupyter</span>
-                            <span class="skill-level">Advanced</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="skill-category">
-                    <h3>
-                        <i class="fas fa-atom"></i>
-                        Quantum Computing
-                    </h3>
-                    <ul class="skill-list">
-                        <li class="skill-item">
-                            <span>Qiskit & Classiq</span>
-                            <span class="skill-level">Intermediate</span>
-                        </li>
-                        <li class="skill-item">
-                            <span>VQE & QAOA</span>
-                            <span class="skill-level">Intermediate</span>
-                        </li>
-                        <li class="skill-item">
-                            <span>Quantum ML</span>
-                            <span class="skill-level">Beginner</span>
-                        </li>
-                        <li class="skill-item">
-                            <span>Portfolio Optimization</span>
-                            <span class="skill-level">Intermediate</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="skill-category">
-                    <h3>
-                        <i class="fas fa-database"></i>
-                        Financial Tools
-                    </h3>
-                    <ul class="skill-list">
-                        <li class="skill-item">
-                            <span>Bloomberg Terminal</span>
-                            <span class="skill-level">Intermediate</span>
-                        </li>
-                        <li class="skill-item">
-                            <span>Polygon.io API</span>
-                            <span class="skill-level">Advanced</span>
-                        </li>
-                        <li class="skill-item">
-                            <span>Alpaca Trading</span>
-                            <span class="skill-level">Advanced</span>
-                        </li>
-                        <li class="skill-item">
-                            <span>Binance APIs</span>
-                            <span class="skill-level">Intermediate</span>
-                        </li>
-                        <li class="skill-item">
-                            <span>Risk Systems</span>
-                            <span class="skill-level">Expert</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="skill-category">
-                    <h3>
-                        <i class="fas fa-calculator"></i>
-                        Mathematical Methods
-                    </h3>
-                    <ul class="skill-list">
-                        <li class="skill-item">
-                            <span>GARCH Models</span>
-                            <span class="skill-level">Advanced</span>
-                        </li>
-                        <li class="skill-item">
-                            <span>Monte Carlo</span>
-                            <span class="skill-level">Advanced</span>
-                        </li>
-                        <li class="skill-item">
-                            <span>Time Series Analysis</span>
-                            <span class="skill-level">Advanced</span>
-                        </li>
-                        <li class="skill-item">
-                            <span>Factor Models</span>
-                            <span class="skill-level">Advanced</span>
-                        </li>
-                        <li class="skill-item">
-                            <span>VaR & CVaR</span>
-                            <span class="skill-level">Expert</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
+    <!-- About -->
     <section id="about" class="section">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">About Me</h2>
-                <p class="section-subtitle">Passionate about quantitative finance and innovative financial technology</p>
-            </div>
-            
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;">
-                <div>
-                    <h3 style="color: var(--soft-white); margin-bottom: 1.5rem; font-size: 1.5rem; font-family: 'Space Grotesk', sans-serif;">Professional Focus</h3>
-                    <p style="margin-bottom: 1.5rem; color: var(--cool-grey); line-height: 1.7;">
-                        I specialize in developing enterprise-grade financial systems with a focus on risk management, 
-                        algorithmic trading, and quantum computing applications. My work bridges the gap between 
-                        cutting-edge academic research and practical financial industry applications.
-                    </p>
-                    <p style="margin-bottom: 1.5rem; color: var(--cool-grey); line-height: 1.7;">
-                        Currently developing <strong style="color: var(--electric-blue);">Cerberus Risk Engine</strong>, a next-generation risk management 
-                        system designed for institutional-grade portfolios, featuring real-time analytics and 
-                        modular architecture for enterprise scalability.
-                    </p>
+            <h2 class="section-title">About</h2>
+            <p class="section-subtitle" style="margin-bottom: 1.5rem;">Professional summary</p>
+            <p class="summary-text animate-in">
+                Master in Finance student at BI Norwegian Business School with strong quantitative skills and hands-on experience in financial analysis, valuation, and portfolio management. Keen interest in banking and financial markets, with a strong foundation in Python, derivatives, and data-driven decision-making. Passionate about applying quantitative methods and technology to solve real-world financial problems.
+            </p>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section" style="background: var(--off-white);">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <p class="section-subtitle">Academic background</p>
+            <div class="timeline">
+                <div class="timeline-item animate-in">
+                    <div class="timeline-date">2024 &ndash; 2026</div>
+                    <div class="timeline-content">
+                        <h3>MSc in Finance</h3>
+                        <div class="institution">BI Norwegian Business School &mdash; Oslo, Norway</div>
+                        <div class="detail">
+                            <strong>Thesis:</strong> The Association Between Passive Investing and Active Management Alpha: Evidence from U.S. Mutual Funds<br>
+                            <strong>Leadership:</strong> Class Deputy<br>
+                            <strong>Relevant Coursework:</strong> Derivatives, Financial Risk Management, Asset Management
+                        </div>
+                    </div>
                 </div>
-                
-                <div>
-                    <h3 style="color: var(--soft-white); margin-bottom: 1.5rem; font-size: 1.5rem; font-family: 'Space Grotesk', sans-serif;">Research Interests</h3>
-                    <ul style="list-style: none; margin: 0; padding: 0;">
-                        <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative; color: var(--cool-grey);">
-                            <span style="position: absolute; left: 0; color: var(--electric-blue); font-weight: bold;">•</span>
-                            Quantum computing applications in finance
-                        </li>
-                        <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative; color: var(--cool-grey);">
-                            <span style="position: absolute; left: 0; color: var(--electric-blue); font-weight: bold;">•</span>
-                            High-frequency trading strategies
-                        </li>
-                        <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative; color: var(--cool-grey);">
-                            <span style="position: absolute; left: 0; color: var(--electric-blue); font-weight: bold;">•</span>
-                            Alternative data in quantitative models
-                        </li>
-                        <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative; color: var(--cool-grey);">
-                            <span style="position: absolute; left: 0; color: var(--electric-blue); font-weight: bold;">•</span>
-                            ESG integration in portfolio optimization
-                        </li>
-                        <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative; color: var(--cool-grey);">
-                            <span style="position: absolute; left: 0; color: var(--electric-blue); font-weight: bold;">•</span>
-                            Cryptocurrency and DeFi risk modeling
-                        </li>
-                    </ul>
+                <div class="timeline-item animate-in">
+                    <div class="timeline-date">Summer 2025</div>
+                    <div class="timeline-content">
+                        <h3>Summer School in Quantum Computing in Financial Services</h3>
+                        <div class="institution">Singapore Management University</div>
+                    </div>
                 </div>
-            </div>
-            
-            <div style="margin-top: 3rem; text-align: center;">
-                <h3 style="color: var(--soft-white); margin-bottom: 2rem; font-size: 1.5rem; font-family: 'Space Grotesk', sans-serif;">Career Objectives</h3>
-                <p style="max-width: 800px; margin: 0 auto; color: var(--cool-grey); line-height: 1.7; font-size: 1.1rem;">
-                    Seeking opportunities in quantitative analysis, risk management, and algorithmic trading where I can 
-                    apply my expertise in building enterprise-grade financial systems and drive innovation in financial technology. 
-                    Particularly interested in roles at hedge funds, investment banks, trading firms, and fintech companies 
-                    that value cutting-edge research and practical implementation.
-                </p>
+                <div class="timeline-item animate-in">
+                    <div class="timeline-date">2021 &ndash; 2024</div>
+                    <div class="timeline-content">
+                        <h3>Bachelor in Business Management</h3>
+                        <div class="institution">University of South-Eastern Norway &mdash; Horten, Norway</div>
+                        <div class="detail">
+                            <strong>Thesis:</strong> Machine Learning for Norwegian Real Estate Market Predictions
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section contact">
+    <!-- Projects -->
+    <section id="projects" class="section">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="section-subtitle">Let's discuss opportunities in quantitative finance and financial technology</p>
+            <h2 class="section-title">Selected Projects</h2>
+            <p class="section-subtitle">Personal and academic work in quantitative finance and technology</p>
+            <div class="projects-grid">
+                <div class="project-card animate-in">
+                    <div class="project-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>Master's Thesis: Passive Investing & Active Alpha</h3>
+                    <p>Examines whether the growth of passive investing (from ~6% to 51% of U.S. mutual fund AUM, 1996&ndash;2025) is associated with changes in aggregate active manager alpha. Uses ~29,800 active and ~3,700 passive funds from Morningstar Direct with CAPM, Fama&ndash;French 3- and 5-factor models. Documents a specification pitfall in fee-spread controls, finds no robust linear association between passive share and alpha under multifactor models, and provides exploratory evidence of stress-conditional effects on alpha during periods of high passive concentration.</p>
+                    <div class="project-tags">
+                        <span class="tag">Empirical Finance</span>
+                        <span class="tag">Grossman&ndash;Stiglitz</span>
+                        <span class="tag">Fama&ndash;French</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Econometrics</span>
+                        <span class="tag">Morningstar Direct</span>
+                    </div>
+                </div>
+
+                <div class="project-card animate-in">
+                    <div class="project-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Cerberus Risk Engine</h3>
+                    <p>Proprietary risk management system for real-time portfolio risk assessment. Production-ready enterprise infrastructure with CI/CD pipeline, designed for institutional-grade portfolios.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">Streamlit</span>
+                    </div>
+                </div>
+
+                <div class="project-card animate-in">
+                    <div class="project-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Options Trading Strategies</h3>
+                    <p>Python-based tools for analyzing and backtesting systematic options strategies. Applied delta, implied volatility, and liquidity analysis with risk management through diversification and defined-loss structures.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Black-Scholes</span>
+                        <span class="tag">Greeks</span>
+                        <span class="tag">Backtesting</span>
+                    </div>
+                </div>
+
+                <div class="project-card animate-in">
+                    <div class="project-icon"><i class="fas fa-brain"></i></div>
+                    <h3>Market Prediction with ML</h3>
+                    <p>Built a PyTorch LSTM model to explore predictive signals from OHLCV data. Tested model insights through simulated trading and performance evaluation.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">LSTM</span>
+                        <span class="tag">Time Series</span>
+                    </div>
+                </div>
+
+                <div class="project-card animate-in">
+                    <div class="project-icon"><i class="fas fa-balance-scale"></i></div>
+                    <h3>Portfolio Optimization</h3>
+                    <p>Applied Modern Portfolio Theory to construct diversified portfolios using Python. Compared risk-adjusted returns against market benchmarks using Markowitz optimization.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">NumPy</span>
+                        <span class="tag">Optimization</span>
+                        <span class="tag">MPT</span>
+                    </div>
+                </div>
+
+                <div class="project-card animate-in">
+                    <div class="project-icon"><i class="fas fa-atom"></i></div>
+                    <h3>Quantum Option Pricing</h3>
+                    <p>Quantum computing applications for complex derivatives pricing using VQE and QAOA algorithms. Research into quantum advantage in financial computation.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Qiskit</span>
+                        <span class="tag">VQE</span>
+                        <span class="tag">QAOA</span>
+                    </div>
+                </div>
+
+                <div class="project-card animate-in">
+                    <div class="project-icon"><i class="fas fa-robot"></i></div>
+                    <h3>Polymarket Arbitrage Bot</h3>
+                    <p>Automated arbitrage detection and execution system for prediction markets with real-time probability calculations and live trading.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">APIs</span>
+                        <span class="tag">Real-time</span>
+                        <span class="tag">Automation</span>
+                    </div>
+                </div>
+
+                <div class="project-card animate-in">
+                    <div class="project-icon"><i class="fas fa-home"></i></div>
+                    <h3>Real Estate ML Predictions</h3>
+                    <p>Bachelor thesis project using machine learning to predict Norwegian real estate market trends. Feature engineering with economic indicators and property-level data.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Scikit-learn</span>
+                        <span class="tag">Pandas</span>
+                        <span class="tag">Research</span>
+                    </div>
+                </div>
+
+                <div class="project-card animate-in">
+                    <div class="project-icon"><i class="fas fa-chart-area"></i></div>
+                    <h3>Option Pricing Engine</h3>
+                    <p>Web application for derivatives pricing with real-time market data integration. Features Greeks calculation, volatility surface visualization, and portfolio tracking.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">Alpaca API</span>
+                        <span class="tag">Black-Scholes</span>
+                    </div>
+                </div>
             </div>
-            
-            <div class="contact-grid">
-                <div class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope"></i>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section" style="background: var(--off-white);">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <p class="section-subtitle">Professional background</p>
+            <div class="timeline">
+                <div class="experience-item animate-in">
+                    <div class="timeline-date">Dec 2019 &ndash; Apr 2021</div>
+                    <div class="experience-content">
+                        <h3>Freelance IT Consultant</h3>
+                        <div class="company">Self-employed &mdash; Norway</div>
+                        <ul>
+                            <li>Delivered web development and IT support for local businesses</li>
+                            <li>Managed projects independently and meeting client requirements end-to-end</li>
+                        </ul>
                     </div>
-                    <h3 class="contact-title">Email</h3>
-                    <a href="mailto:hakonstoerholt@gmail.com" class="contact-link">hakonstoerholt@gmail.com</a>
                 </div>
-                
-                <div class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fab fa-linkedin"></i>
+                <div class="experience-item animate-in">
+                    <div class="timeline-date">Jun 2021 &ndash; Jun 2022</div>
+                    <div class="experience-content">
+                        <h3>Bartender</h3>
+                        <div class="company">URO p&aring; Haugar AS &mdash; T&oslash;nsberg, Norway</div>
+                        <ul>
+                            <li>Worked in a high-paced environment, strengthening teamwork, communication, and customer service</li>
+                        </ul>
                     </div>
-                    <h3 class="contact-title">LinkedIn</h3>
-                    <a href="https://www.linkedin.com/in/hakonstorholt" class="contact-link" target="_blank">linkedin.com/in/hakonstorholt</a>
                 </div>
-                
-                <div class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fab fa-github"></i>
+                <div class="experience-item animate-in">
+                    <div class="timeline-date">Sep 2018 &ndash; Aug 2020</div>
+                    <div class="experience-content">
+                        <h3>Retail Assistant</h3>
+                        <div class="company">Shell &mdash; N&oslash;tter&oslash;y, Norway</div>
+                        <ul>
+                            <li>Supported daily operations in a customer-facing environment</li>
+                            <li>Developed strong teamwork, reliability, and problem-solving skills</li>
+                        </ul>
                     </div>
-                    <h3 class="contact-title">GitHub</h3>
-                    <a href="https://github.com/hakonstorholt" class="contact-link" target="_blank">github.com/hakonstorholt</a>
                 </div>
-                
-                <div class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fas fa-phone"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Skills & Tools</h2>
+            <p class="section-subtitle">Technical and domain expertise</p>
+            <div class="skills-columns">
+                <div class="skill-group animate-in">
+                    <h3>Markets & Trading</h3>
+                    <ul>
+                        <li>Options Trading</li>
+                        <li>Equities & Derivatives</li>
+                        <li>Risk Management</li>
+                        <li>Technical Analysis</li>
+                        <li>Market Structure</li>
+                    </ul>
+                </div>
+                <div class="skill-group animate-in">
+                    <h3>Programming & Data</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>R</li>
+                        <li>Git / GitHub</li>
+                        <li>Machine Learning (PyTorch, Scikit-learn)</li>
+                    </ul>
+                </div>
+                <div class="skill-group animate-in">
+                    <h3>Quantitative Methods</h3>
+                    <ul>
+                        <li>Portfolio Optimization</li>
+                        <li>Monte Carlo Simulation</li>
+                        <li>GARCH / Time Series</li>
+                        <li>VaR & CVaR</li>
+                        <li>Stochastic Calculus</li>
+                    </ul>
+                </div>
+                <div class="skill-group animate-in">
+                    <h3>Platforms & APIs</h3>
+                    <ul>
+                        <li>IBKR API</li>
+                        <li>Bloomberg Terminal</li>
+                        <li>Morningstar</li>
+                        <li>WRDS</li>
+                        <li>Polygon.io / Alpaca</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- F1 Predictions -->
+    <section id="predictions" class="section" style="background: var(--off-white);">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-flag-checkered" style="color: var(--accent); margin-right: 0.5rem;"></i>2026 F1 World Championship Predictions</h2>
+            <p class="section-subtitle">Pre-season forecast using a composite rating model</p>
+
+            <div class="predictions-container">
+                <!-- Predictions Card -->
+                <div class="predictions-card animate-in">
+                    <h3>Drivers' Championship</h3>
+                    <div class="card-subtitle">Win probability &mdash; pre-season 2026</div>
+
+                    <div class="prediction-item">
+                        <span class="prediction-rank top-1">1</span>
+                        <div>
+                            <div class="prediction-info">
+                                <span class="driver-name">Max Verstappen</span>
+                                <div class="team-name">Red Bull Racing</div>
+                            </div>
+                            <div class="prediction-bar-wrap">
+                                <div class="probability-bar-bg">
+                                    <div class="probability-bar-fill" data-width="26"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="probability-value">26%</span>
                     </div>
-                    <h3 class="contact-title">Phone</h3>
-                    <a href="tel:+4712345678" class="contact-link">+47 123 45 678</a>
+
+                    <div class="prediction-item">
+                        <span class="prediction-rank top-2">2</span>
+                        <div>
+                            <div class="prediction-info">
+                                <span class="driver-name">Charles Leclerc</span>
+                                <div class="team-name">Scuderia Ferrari</div>
+                            </div>
+                            <div class="prediction-bar-wrap">
+                                <div class="probability-bar-bg">
+                                    <div class="probability-bar-fill" data-width="21"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="probability-value">21%</span>
+                    </div>
+
+                    <div class="prediction-item">
+                        <span class="prediction-rank top-3">3</span>
+                        <div>
+                            <div class="prediction-info">
+                                <span class="driver-name">Lando Norris</span>
+                                <div class="team-name">McLaren</div>
+                            </div>
+                            <div class="prediction-bar-wrap">
+                                <div class="probability-bar-bg">
+                                    <div class="probability-bar-fill" data-width="19"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="probability-value">19%</span>
+                    </div>
+
+                    <div class="prediction-item">
+                        <span class="prediction-rank">4</span>
+                        <div>
+                            <div class="prediction-info">
+                                <span class="driver-name">Lewis Hamilton</span>
+                                <div class="team-name">Scuderia Ferrari</div>
+                            </div>
+                            <div class="prediction-bar-wrap">
+                                <div class="probability-bar-bg">
+                                    <div class="probability-bar-fill" data-width="13"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="probability-value">13%</span>
+                    </div>
+
+                    <div class="prediction-item">
+                        <span class="prediction-rank">5</span>
+                        <div>
+                            <div class="prediction-info">
+                                <span class="driver-name">Oscar Piastri</span>
+                                <div class="team-name">McLaren</div>
+                            </div>
+                            <div class="prediction-bar-wrap">
+                                <div class="probability-bar-bg">
+                                    <div class="probability-bar-fill" data-width="9"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="probability-value">9%</span>
+                    </div>
+
+                    <div class="prediction-item">
+                        <span class="prediction-rank">6</span>
+                        <div>
+                            <div class="prediction-info">
+                                <span class="driver-name">George Russell</span>
+                                <div class="team-name">Mercedes</div>
+                            </div>
+                            <div class="prediction-bar-wrap">
+                                <div class="probability-bar-bg">
+                                    <div class="probability-bar-fill" data-width="7"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="probability-value">7%</span>
+                    </div>
+
+                    <div class="prediction-item">
+                        <span class="prediction-rank">7</span>
+                        <div>
+                            <div class="prediction-info">
+                                <span class="driver-name">Andrea Kimi Antonelli</span>
+                                <div class="team-name">Mercedes</div>
+                            </div>
+                            <div class="prediction-bar-wrap">
+                                <div class="probability-bar-bg">
+                                    <div class="probability-bar-fill" data-width="3"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="probability-value">3%</span>
+                    </div>
+
+                    <div class="prediction-item">
+                        <span class="prediction-rank">8</span>
+                        <div>
+                            <div class="prediction-info">
+                                <span class="driver-name">Field</span>
+                                <div class="team-name">Other drivers</div>
+                            </div>
+                            <div class="prediction-bar-wrap">
+                                <div class="probability-bar-bg">
+                                    <div class="probability-bar-fill" data-width="2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="probability-value">2%</span>
+                    </div>
+
+                    <div class="last-updated">Pre-season 2026 &mdash; updated March 13, 2026</div>
+                </div>
+
+                <!-- Methodology Card -->
+                <div class="methodology-box animate-in">
+                    <h3>Methodology</h3>
+                    <p>
+                        These probabilities are derived from a <strong>composite rating model</strong> that weights several factors
+                        to produce a pre-season championship win probability for each driver. The 2026 season introduces
+                        major regulation changes&mdash;a new power unit formula splitting power roughly 50/50 between ICE and
+                        electric motor, plus significant aerodynamic changes&mdash;which add substantial uncertainty.
+                    </p>
+                    <p><strong>Model inputs:</strong></p>
+                    <ul class="factor-list">
+                        <li><strong>Driver quality rating</strong> &mdash; Elo-style score based on head-to-head teammate performance and results over the past 3 seasons</li>
+                        <li><strong>Team regulation-change adaptability</strong> &mdash; Historical performance in the first year of major rule changes (2009, 2014, 2017, 2022), weighted by team continuity</li>
+                        <li><strong>Power unit manufacturer strength</strong> &mdash; Assessment of each PU maker's investment and readiness for the new formula (Ferrari, Mercedes, Red Bull Powertrains, Renault, Honda/Aston Martin)</li>
+                        <li><strong>Team trajectory</strong> &mdash; Resource allocation, recent hiring, and development momentum heading into the new regulation cycle</li>
+                        <li><strong>Regulation uncertainty discount</strong> &mdash; A flattening factor that compresses probabilities toward uniform, reflecting the inherent unpredictability of major rule resets</li>
+                    </ul>
+                    <p>
+                        The model gives Verstappen the slight edge on raw driver quality, but Ferrari's strong
+                        historical performance in regulation-change years combined with their 2025 competitiveness
+                        makes Leclerc a close second. The regulation uncertainty discount means no driver exceeds ~26%,
+                        reflecting genuine pre-season unknowns.
+                    </p>
+                    <p style="font-style: italic; color: var(--text-muted); font-size: 0.75rem;">
+                        This is a personal analytical exercise, not financial advice. Probabilities are subjective model outputs.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <p class="section-subtitle" style="margin-bottom: 2rem;">Get in touch</p>
+            <div class="contact-row animate-in">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:hakonstoerholt@gmail.com">hakonstoerholt@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+4793811817">+47 938 11 817</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <a href="https://linkedin.com/in/hakonstoerholt" target="_blank">linkedin.com/in/hakonstoerholt</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <a href="https://github.com/hakonstoerholt" target="_blank">github.com/hakonstoerholt</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-globe"></i>
+                    <a href="https://hakonstoerholt.github.io">hakonstoerholt.github.io</a>
                 </div>
             </div>
         </div>
@@ -1317,89 +1070,64 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="social-links">
-                <a href="https://github.com/hakonstorholt" class="social-link" aria-label="GitHub" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/hakonstorholt" class="social-link" aria-label="LinkedIn" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="mailto:hakonstoerholt@gmail.com" class="social-link" aria-label="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
-                <a href="/resume.pdf" class="social-link" aria-label="Resume" target="_blank">
-                    <i class="fas fa-file-pdf"></i>
-                </a>
+            <div class="footer-links">
+                <a href="https://github.com/hakonstoerholt" class="footer-link" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/hakonstoerholt" class="footer-link" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:hakonstoerholt@gmail.com" class="footer-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
             </div>
-            <p style="margin-bottom: 1rem; opacity: 0.9; font-family: 'Space Grotesk', sans-serif; font-weight: 500;">Håkon Julius Størholt</p>
-            <p style="opacity: 0.7; color: var(--cool-grey); text-transform: uppercase; font-size: 0.875rem; letter-spacing: 0.05em;">Quantitative Finance • Risk Management • Algorithmic Trading</p>
-            <p style="opacity: 0.6; margin-top: 1.5rem; color: var(--cool-grey); font-size: 0.8rem;">© 2025 Håkon Julius Størholt. All rights reserved.</p>
+            <p>&copy; 2026 Håkon Julius Størholt</p>
         </div>
     </footer>
 
     <script>
-        // Modern Portfolio JavaScript
         document.addEventListener('DOMContentLoaded', function() {
-            // Mobile menu functionality
-            const mobileToggle = document.querySelector('.mobile-menu-toggle');
-            const navMenu = document.querySelector('.nav-menu');
-            
-            if (mobileToggle) {
-                mobileToggle.addEventListener('click', function() {
-                    navMenu.classList.toggle('active');
-                });
+            // Mobile menu
+            const toggle = document.querySelector('.mobile-menu-toggle');
+            const menu = document.querySelector('.nav-menu');
+            if (toggle) {
+                toggle.addEventListener('click', () => menu.classList.toggle('active'));
             }
 
-            // Smooth scrolling for navigation links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
+            // Smooth scroll
+            document.querySelectorAll('a[href^="#"]').forEach(a => {
+                a.addEventListener('click', function(e) {
                     e.preventDefault();
                     const target = document.querySelector(this.getAttribute('href'));
                     if (target) {
-                        target.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        menu.classList.remove('active');
+                    }
+                });
+            });
+
+            // Scroll animations
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        // Animate probability bars when they come into view
+                        entry.target.querySelectorAll('.probability-bar-fill').forEach(bar => {
+                            const w = bar.getAttribute('data-width');
+                            if (w) bar.style.width = w + '%';
                         });
                     }
                 });
-            });
+            }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 
-            // Add scroll effect to navigation
-            const header = document.querySelector('.header');
-            let lastScrollTop = 0;
+            document.querySelectorAll('.animate-in').forEach(el => observer.observe(el));
 
-            window.addEventListener('scroll', function() {
-                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-                
-                if (scrollTop > 100) {
-                    header.style.background = 'rgba(30, 58, 138, 0.95)';
-                    header.style.backdropFilter = 'blur(10px)';
-                } else {
-                    header.style.background = 'linear-gradient(135deg, var(--primary-navy) 0%, #1e40af 100%)';
-                    header.style.backdropFilter = 'none';
-                }
-                
-                lastScrollTop = scrollTop;
-            });
-
-            // Add animation to project cards on scroll
-            const observerOptions = {
-                threshold: 0.1,
-                rootMargin: '0px 0px -50px 0px'
-            };
-
-            const observer = new IntersectionObserver(function(entries) {
+            // Also animate bars that aren't inside .animate-in
+            const barObserver = new IntersectionObserver(entries => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
-                        entry.target.classList.add('fade-in');
+                        const w = entry.target.getAttribute('data-width');
+                        if (w) entry.target.style.width = w + '%';
                     }
                 });
-            }, observerOptions);
+            }, { threshold: 0.1 });
 
-            // Observe project cards and skill categories
-            document.querySelectorAll('.project-card, .skill-category').forEach(card => {
-                observer.observe(card);
-            });
+            document.querySelectorAll('.probability-bar-fill').forEach(bar => barObserver.observe(bar));
         });
     </script>
 </body>
+</html>
