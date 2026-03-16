@@ -25,18 +25,17 @@
     <style>
         :root {
             --white: #ffffff;
-            --off-white: #f8fafc;
-            --light-grey: #f1f5f9;
-            --border: #e2e8f0;
-            --border-hover: #cbd5e1;
-            --text-primary: #0f172a;
-            --text-secondary: #475569;
-            --text-muted: #94a3b8;
-            --accent: #2563eb;
-            --accent-light: #eff6ff;
-            --accent-dark: #1d4ed8;
-            --accent-gradient: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
-            --warm-accent: #f59e0b;
+            --off-white: #fbf7f0;
+            --light-grey: #f3ece0;
+            --border: #e7dccb;
+            --border-hover: #d8c6ae;
+            --text-primary: #2d241b;
+            --text-muted: #9a8674;
+            --accent: #a15b34;
+            --accent-light: #f8ebdf;
+            --accent-dark: #804424;
+            --accent-gradient: linear-gradient(135deg, #a15b34 0%, #7f3f25 100%);
+            --warm-accent: #c18433;
             --success: #10b981;
             --card-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
             --card-shadow-hover: 0 12px 24px rgba(0, 0, 0, 0.06), 0 4px 8px rgba(0, 0, 0, 0.04);
@@ -49,7 +48,7 @@
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             line-height: 1.6;
             color: var(--text-primary);
-            background: var(--white);
+            background: radial-gradient(circle at 15% 0%, #fff8ef 0%, #ffffff 45%);
             font-weight: 400;
             -webkit-font-smoothing: antialiased;
         }
@@ -116,7 +115,7 @@
         .hero {
             padding: 160px 0 100px;
             text-align: center;
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            background: linear-gradient(135deg, #2f251d 0%, #4a3424 50%, #3a2a1e 100%);
             color: var(--white);
             position: relative;
             overflow: hidden;
@@ -124,72 +123,91 @@
         .hero::before {
             content: '';
             position: absolute;
-            top: -50%;
-            right: -20%;
-            width: 600px;
-            height: 600px;
-            background: radial-gradient(circle, rgba(37,99,235,0.15) 0%, transparent 70%);
+            inset: 0;
+            background:
+                radial-gradient(ellipse 80% 60% at 20% 40%, rgba(161,91,52,0.18) 0%, transparent 70%),
+                radial-gradient(ellipse 60% 80% at 80% 30%, rgba(193,132,51,0.12) 0%, transparent 70%);
+            animation: heroShift 20s ease-in-out infinite alternate;
             pointer-events: none;
         }
         .hero::after {
             content: '';
             position: absolute;
-            bottom: -30%;
-            left: -10%;
-            width: 400px;
-            height: 400px;
-            background: radial-gradient(circle, rgba(30,64,175,0.1) 0%, transparent 70%);
+            inset: 0;
+            background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+            background-size: 256px 256px;
             pointer-events: none;
+            opacity: 0.5;
+        }
+        @keyframes heroShift {
+            0% { transform: scale(1) translate(0, 0); }
+            100% { transform: scale(1.05) translate(-2%, 1%); }
         }
         .hero-content {
             max-width: 700px;
             margin: 0 auto;
             padding: 0 2rem;
             position: relative;
-            z-index: 1;
+            z-index: 2;
         }
         .hero h1 {
             font-size: 3.25rem;
             font-weight: 700;
             margin-bottom: 1rem;
             color: #ffffff;
+            animation: heroFadeUp 0.8s ease-out both;
         }
         .hero-tagline {
             font-size: 1.0625rem;
-            color: #cbd5e1;
+            color: #e7d9cb;
             font-weight: 400;
             margin-bottom: 1rem;
             letter-spacing: 0.02em;
             line-height: 1.7;
+            animation: heroFadeUp 0.8s ease-out 0.15s both;
         }
         .hero-location {
             font-size: 0.875rem;
-            color: #64748b;
+            color: #bda792;
             margin-bottom: 2.5rem;
+            animation: heroFadeUp 0.8s ease-out 0.3s both;
         }
         .hero-links {
             display: flex;
             gap: 1.25rem;
             justify-content: center;
             flex-wrap: wrap;
+            animation: heroFadeUp 0.8s ease-out 0.45s both;
         }
         .hero-link {
-            color: #94a3b8;
+            color: #dcc8b2;
             text-decoration: none;
             font-size: 0.8125rem;
             font-weight: 500;
             display: flex;
             align-items: center;
             gap: 0.4rem;
-            transition: color 0.2s;
+            transition: color 0.2s, border-color 0.2s, background 0.2s;
             padding: 0.5rem 1rem;
-            border: 1px solid rgba(148,163,184,0.2);
+            border: 1px solid rgba(231,217,203,0.25);
             border-radius: 6px;
         }
         .hero-link:hover {
             color: var(--white);
-            border-color: rgba(255,255,255,0.3);
+            border-color: rgba(255,255,255,0.45);
             background: rgba(255,255,255,0.05);
+        }
+        #hero-canvas {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            pointer-events: none;
+        }
+        @keyframes heroFadeUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         /* ---- SECTIONS ---- */
@@ -413,13 +431,17 @@
 
         /* ---- F1 PREDICTIONS ---- */
         .predictions-container {
-            max-width: 600px;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+            gap: 1.25rem;
+            align-items: start;
         }
         .predictions-card {
             background: var(--off-white);
             border: 1px solid var(--border);
             border-radius: 8px;
             padding: 2rem;
+            height: 100%;
         }
         .predictions-card h3 {
             font-size: 1.125rem;
@@ -586,6 +608,51 @@
             background: var(--accent-light);
         }
 
+        .telemetry-callout {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+            line-height: 1.6;
+            border-left: 2px solid var(--warm-accent);
+            padding-left: 0.75rem;
+        }
+        .telemetry-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.65rem;
+        }
+        .telemetry-item {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 0.75rem;
+            padding: 0.55rem 0;
+            border-bottom: 1px dashed var(--border);
+        }
+        .telemetry-item:last-child { border-bottom: none; }
+        .telemetry-item .driver {
+            font-size: 0.84rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+        .telemetry-item .meta {
+            font-size: 0.72rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .telemetry-item .value {
+            font-size: 0.84rem;
+            font-weight: 700;
+            color: var(--accent-dark);
+            text-align: right;
+        }
+        .telemetry-mini {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            margin-top: 0.9rem;
+            line-height: 1.6;
+        }
+
         /* ---- CONTACT ---- */
         .contact-row {
             display: flex;
@@ -685,6 +752,22 @@
             .hero-links { flex-direction: column; align-items: center; }
             .contact-row { flex-direction: column; gap: 1rem; }
         }
+
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            .animate-in,
+            .race-status .pulse,
+            .hero::before,
+            .hero h1,
+            .hero-tagline,
+            .hero-location,
+            .hero-links,
+            .probability-bar-fill {
+                animation: none !important;
+                transition: none !important;
+            }
+            .hero h1, .hero-tagline, .hero-location, .hero-links { opacity: 1; }
+        }
     </style>
 </head>
 <body>
@@ -709,6 +792,7 @@
 
     <!-- Hero -->
     <section class="hero">
+        <canvas id="hero-canvas" aria-hidden="true"></canvas>
         <div class="hero-content">
             <h1>Håkon Julius Størholt</h1>
             <p class="hero-tagline">MSc Finance candidate with strong quantitative skills and hands-on experience in financial analysis, valuation, and portfolio management.</p>
@@ -721,411 +805,7 @@
         </div>
     </section>
 
-    <!-- Featured Projects Section -->
-    <section id="projects" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Featured Projects</h2>
-                <p class="section-subtitle">Enterprise-grade financial systems and cutting-edge quantitative research</p>
-            </div>
-            
-            <div class="projects-grid">
-                <!-- Cerberus Risk Engine - Flagship Project -->
-                <div class="project-card featured">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <div>
-                            <h3 class="project-title">Cerberus Risk Engine</h3>
-                            <span class="project-status">Flagship Project</span>
-                        </div>
-                    </div>
-                    <p class="project-description">
-                        Next-generation proprietary risk management system for real-time portfolio risk assessment. 
-                        Production-ready enterprise infrastructure with CI/CD pipeline, designed for institutional-grade portfolios.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python 3.11+</span>
-                        <span class="tech-tag">FastAPI</span>
-                        <span class="tech-tag">PostgreSQL</span>
-                        <span class="tech-tag">TimescaleDB</span>
-                        <span class="tech-tag">Docker</span>
-                        <span class="tech-tag">Streamlit</span>
-                    </div>
-                </div>
-
-                <!-- Quantum Exotic Option Valuation -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-atom"></i>
-                        </div>
-                        <div>
-                            <h3 class="project-title">Quantum Option Pricing</h3>
-                        </div>
-                    </div>
-                    <p class="project-description">
-                        Quantum computing applications for complex derivatives pricing using VQE algorithms and QAOA. 
-                        Cutting-edge fintech research demonstrating quantum advantage in finance.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Qiskit</span>
-                        <span class="tech-tag">VQE</span>
-                        <span class="tech-tag">QAOA</span>
-                    </div>
-                </div>
-
-                <!-- Polymarket Arbitrage Bot -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-robot"></i>
-                        </div>
-                        <div>
-                            <h3 class="project-title">The "Irrational" Market Simulator</h3>
-                        </div>
-                    </div>
-                    <p class="project-description">
-                        Automated arbitrage detection and execution system with real-time probability calculations. 
-                        Live trading bot demonstrating market microstructure understanding.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Binance API</span>
-                        <span class="tech-tag">Real-time Data</span>
-                        <span class="tech-tag">Automation</span>
-                    </div>
-                </div>
-
-                <!-- Option Pricing Model -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <div>
-                            <h3 class="project-title">Option Pricing Engine</h3>
-                        </div>
-                    </div>
-                    <p class="project-description">
-                        Comprehensive derivatives pricing application with real-time market data integration. 
-                        Production web application featuring Greeks calculation and portfolio management.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Flask</span>
-                        <span class="tech-tag">Alpaca API</span>
-                        <span class="tech-tag">Black-Scholes</span>
-                    </div>
-                </div>
-
-                <!-- Portfolio Optimization -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-balance-scale"></i>
-                        </div>
-                        <div>
-                            <h3 class="project-title">Portfolio Rebalancing</h3>
-                        </div>
-                    </div>
-                    <p class="project-description">
-                        Advanced portfolio optimization using modern portfolio theory with Markowitz optimization, 
-                        risk-return analysis, and automated rebalancing algorithms.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">NumPy</span>
-                        <span class="tech-tag">Pandas</span>
-                        <span class="tech-tag">Optimization</span>
-                    </div>
-                </div>
-
-                <!-- Credit Risk Quantum Project -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-brain"></i>
-                        </div>
-                        <div>
-                            <h3 class="project-title">Quantum Credit Risk</h3>
-                        </div>
-                    </div>
-                    <p class="project-description">
-                        Quantum machine learning for advanced credit risk assessment with next-generation risk modeling 
-                        and regulatory compliance focus.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Quantum ML</span>
-                        <span class="tech-tag">Risk Modeling</span>
-                        <span class="tech-tag">Statistics</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Predictions Section -->
-    <section id="predictions" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Sports Predictions</h2>
-                <p class="section-subtitle">Applying quantitative models to predict outcomes in sports.</p>
-                <p class="last-updated">Last updated: October 29, 2025</p>
-            </div>
-            
-            <div class="projects-grid">
-                <!-- F1 Predictions -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-flag-checkered"></i>
-                        </div>
-                        <div>
-                            <h3 class="project-title">Formula 1</h3>
-                        </div>
-                    </div>
-                    <p class="project-description">
-                        Top 3 predictions for the championship, based on my proprietary model. <small>(post Qatar)</small>
-                    </p>
-                    <div class="predictions-list">
-                        <div class="prediction-item">
-                            <span class="driver-name">Lando Norris</span>
-                            <div class="probability-bar-container">
-                                <div class="probability-bar" style="width: 73.4%;"></div>
-                            </div>
-                            <span class="probability-value">73.4%</span>
-                        </div>
-                        <div class="prediction-item">
-                            <span class="driver-name">Max Verstappen</span>
-                            <div class="probability-bar-container">
-                                <div class="probability-bar" style="width: 16.9%;"></div>
-                            </div>
-                            <span class="probability-value">16.9%</span>
-                        </div>
-                        <div class="prediction-item">
-                            <span class="driver-name">Oscar Piastri</span>
-                            <div class="probability-bar-container">
-                                <div class="probability-bar" style="width: 9.7%;"></div>
-                            </div>
-                            <span class="probability-value">9.7%</span>
-                        </div>
-                    </div>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Machine Learning</span>
-                        <span class="tech-tag">Statistical Analysis</span>
-                        <span class="tech-tag">In Development</span>
-                    </div>
-                </div>
-
-                <!-- Football Predictions -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-futbol"></i>
-                        </div>
-                        <div>
-                            <h3 class="project-title">Football (Soccer)</h3>
-                        </div>
-                    </div>
-                    <p class="project-description">
-                        Expanding the prediction framework to football. This involves developing models to predict match results, league standings, and player performance metrics.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Coming Soon</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Skills & Technologies</h2>
-                <p class="section-subtitle">Advanced expertise in quantitative finance and cutting-edge technology</p>
-            </div>
-            
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>
-                        <i class="fas fa-code"></i>
-                        Programming Languages
-                    </h3>
-                    <ul class="skill-list">
-                        <li class="skill-item">
-                            <span>Python</span>
-                            <span class="skill-level">Advanced</span>
-                        </li>
-                        <li class="skill-item">
-                            <span>R</span>
-                            <span class="skill-level">Advanced</span>
-                        </li>
-                        <li class="skill-item">
-                            <span>C++</span>
-                            <span class="skill-level">Intermediate</span>
-                        </li>
-                        <li class="skill-item">
-                            <span>JavaScript</span>
-                            <span class="skill-level">Intermediate</span>
-                        </li>
-                        <li class="skill-item">
-                            <span>Rust</span>
-                            <span class="skill-level">Beginner</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="skill-category">
-                    <h3>
-                        <i class="fas fa-chart-line"></i>
-                        Quantitative Finance
-                    </h3>
-                    <ul class="skill-list">
-                        <li class="skill-item">
-                            <span>Risk Management</span>
-                            <span class="skill-level">Expert</span>
-                        </li>
-                        <li class="skill-item">
-                            <span>Derivatives Pricing</span>
-                            <span class="skill-level">Advanced</span>
-                        </li>
-                        <li class="skill-item">
-                            <span>Portfolio Theory</span>
-                            <span class="skill-level">Advanced</span>
-                        </li>
-                        <li class="skill-item">
-                            <span>Algorithmic Trading</span>
-                            <span class="skill-level">Advanced</span>
-                        </li>
-                        <li class="skill-item">
-                            <span>Stochastic Calculus</span>
-                            <span class="skill-level">Advanced</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="skill-category">
-                    <h3>
-                        <i class="fas fa-cogs"></i>
-                        Technology Stack
-                    </h3>
-                    <ul class="skill-list">
-                        <li class="skill-item">
-                            <span>FastAPI & Flask</span>
-                            <span class="skill-level">Advanced</span>
-                        </li>
-                        <li class="skill-item">
-                            <span>PostgreSQL & TimescaleDB</span>
-                            <span class="skill-level">Advanced</span>
-                        </li>
-                        <li class="skill-item">
-                            <span>Docker & CI/CD</span>
-                            <span class="skill-level">Intermediate</span>
-                        </li>
-                        <li class="skill-item">
-                            <span>Pandas & NumPy</span>
-                            <span class="skill-level">Expert</span>
-                        </li>
-                        <li class="skill-item">
-                            <span>Streamlit & Jupyter</span>
-                            <span class="skill-level">Advanced</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="skill-category">
-                    <h3>
-                        <i class="fas fa-atom"></i>
-                        Quantum Computing
-                    </h3>
-                    <ul class="skill-list">
-                        <li class="skill-item">
-                            <span>Qiskit & Classiq</span>
-                            <span class="skill-level">Intermediate</span>
-                        </li>
-                        <li class="skill-item">
-                            <span>VQE & QAOA</span>
-                            <span class="skill-level">Intermediate</span>
-                        </li>
-                        <li class="skill-item">
-                            <span>Quantum ML</span>
-                            <span class="skill-level">Beginner</span>
-                        </li>
-                        <li class="skill-item">
-                            <span>Portfolio Optimization</span>
-                            <span class="skill-level">Intermediate</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="skill-category">
-                    <h3>
-                        <i class="fas fa-database"></i>
-                        Financial Tools
-                    </h3>
-                    <ul class="skill-list">
-                        <li class="skill-item">
-                            <span>Bloomberg Terminal</span>
-                            <span class="skill-level">Intermediate</span>
-                        </li>
-                        <li class="skill-item">
-                            <span>Polygon.io API</span>
-                            <span class="skill-level">Advanced</span>
-                        </li>
-                        <li class="skill-item">
-                            <span>Alpaca Trading</span>
-                            <span class="skill-level">Advanced</span>
-                        </li>
-                        <li class="skill-item">
-                            <span>Binance APIs</span>
-                            <span class="skill-level">Intermediate</span>
-                        </li>
-                        <li class="skill-item">
-                            <span>Risk Systems</span>
-                            <span class="skill-level">Expert</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="skill-category">
-                    <h3>
-                        <i class="fas fa-calculator"></i>
-                        Mathematical Methods
-                    </h3>
-                    <ul class="skill-list">
-                        <li class="skill-item">
-                            <span>GARCH Models</span>
-                            <span class="skill-level">Advanced</span>
-                        </li>
-                        <li class="skill-item">
-                            <span>Monte Carlo</span>
-                            <span class="skill-level">Advanced</span>
-                        </li>
-                        <li class="skill-item">
-                            <span>Time Series Analysis</span>
-                            <span class="skill-level">Advanced</span>
-                        </li>
-                        <li class="skill-item">
-                            <span>Factor Models</span>
-                            <span class="skill-level">Advanced</span>
-                        </li>
-                        <li class="skill-item">
-                            <span>VaR & CVaR</span>
-                            <span class="skill-level">Expert</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
+    <!-- About -->
     <section id="about" class="section">
         <div class="container">
             <h2 class="section-title">About</h2>
@@ -1391,17 +1071,27 @@
     <section id="predictions" class="section">
         <div class="container">
             <h2 class="section-title">2026 F1 World Championship Predictions</h2>
-            <p class="section-subtitle">Pre-season forecast using a composite rating model</p>
+            <p class="section-subtitle">Season winner probabilities and next-race winner signal using form + telemetry-style pace proxies</p>
 
             <div class="predictions-container">
                 <!-- Predictions Card (loaded from predictions.json) -->
                 <div class="predictions-card animate-in" id="predictions-card">
                     <h3>Drivers' Championship</h3>
-                    <div class="card-subtitle">Win probability &mdash; pre-season 2026</div>
+                    <div class="card-subtitle" id="season-subtitle">Win probability &mdash; season outlook</div>
                     <div id="predictions-list">
                         <p style="color: var(--text-muted); font-size: 0.8125rem;">Loading predictions...</p>
                     </div>
                     <div class="last-updated" id="predictions-updated"></div>
+                </div>
+
+                <div class="predictions-card animate-in" id="next-race-card">
+                    <h3 id="next-race-title">Next Race Winner Signal</h3>
+                    <div class="card-subtitle" id="next-race-subtitle">Telemetry-weighted one-race projection</div>
+                    <div class="telemetry-callout" id="telemetry-callout">
+                        Loading next-race signal...
+                    </div>
+                    <div class="telemetry-list" id="next-race-list"></div>
+                    <div class="telemetry-mini" id="next-race-meta"></div>
                 </div>
 
             </div>
@@ -1449,6 +1139,111 @@
             <p>&copy; 2026 Håkon Julius Størholt</p>
         </div>
     </footer>
+
+    <script>
+        // ---- Hero particle network ----
+        (function() {
+            const canvas = document.getElementById('hero-canvas');
+            if (!canvas || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+            const ctx = canvas.getContext('2d');
+            let w, h, particles, animId;
+            const COUNT = 60;
+            const CONNECT_DIST = 140;
+            const SPEED = 0.3;
+
+            function resize() {
+                const hero = canvas.parentElement;
+                const dpr = Math.min(window.devicePixelRatio || 1, 2);
+                w = hero.offsetWidth;
+                h = hero.offsetHeight;
+                canvas.width = w * dpr;
+                canvas.height = h * dpr;
+                canvas.style.width = w + 'px';
+                canvas.style.height = h + 'px';
+                ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+            }
+
+            function init() {
+                resize();
+                particles = [];
+                for (let i = 0; i < COUNT; i++) {
+                    particles.push({
+                        x: Math.random() * w,
+                        y: Math.random() * h,
+                        vx: (Math.random() - 0.5) * SPEED,
+                        vy: (Math.random() - 0.5) * SPEED,
+                        r: Math.random() * 1.5 + 0.5,
+                        o: Math.random() * 0.4 + 0.15,
+                    });
+                }
+            }
+
+            function draw() {
+                ctx.clearRect(0, 0, w, h);
+                // connections
+                for (let i = 0; i < particles.length; i++) {
+                    for (let j = i + 1; j < particles.length; j++) {
+                        const dx = particles[i].x - particles[j].x;
+                        const dy = particles[i].y - particles[j].y;
+                        const dist = Math.sqrt(dx * dx + dy * dy);
+                        if (dist < CONNECT_DIST) {
+                            const alpha = (1 - dist / CONNECT_DIST) * 0.12;
+                            ctx.strokeStyle = 'rgba(220,200,178,' + alpha + ')';
+                            ctx.lineWidth = 0.5;
+                            ctx.beginPath();
+                            ctx.moveTo(particles[i].x, particles[i].y);
+                            ctx.lineTo(particles[j].x, particles[j].y);
+                            ctx.stroke();
+                        }
+                    }
+                }
+                // particles
+                for (const p of particles) {
+                    ctx.beginPath();
+                    ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+                    ctx.fillStyle = 'rgba(220,200,178,' + p.o + ')';
+                    ctx.fill();
+                }
+            }
+
+            function update() {
+                for (const p of particles) {
+                    p.x += p.vx;
+                    p.y += p.vy;
+                    if (p.x < -10) p.x = w + 10;
+                    if (p.x > w + 10) p.x = -10;
+                    if (p.y < -10) p.y = h + 10;
+                    if (p.y > h + 10) p.y = -10;
+                }
+            }
+
+            function loop() {
+                update();
+                draw();
+                animId = requestAnimationFrame(loop);
+            }
+
+            init();
+            loop();
+
+            let resizeTimer;
+            window.addEventListener('resize', function() {
+                clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(function() { resize(); }, 200);
+            });
+
+            // Pause when hero is off-screen
+            const heroObs = new IntersectionObserver(function(entries) {
+                if (entries[0].isIntersecting) {
+                    if (!animId) loop();
+                } else {
+                    cancelAnimationFrame(animId);
+                    animId = null;
+                }
+            }, { threshold: 0 });
+            heroObs.observe(canvas.parentElement);
+        })();
+    </script>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -1508,11 +1303,19 @@
         async function loadPredictions() {
             const container = document.getElementById('predictions-list');
             const updatedEl = document.getElementById('predictions-updated');
+            const seasonSubtitleEl = document.getElementById('season-subtitle');
+            const nextRaceTitleEl = document.getElementById('next-race-title');
+            const nextRaceSubtitleEl = document.getElementById('next-race-subtitle');
+            const nextRaceCalloutEl = document.getElementById('telemetry-callout');
+            const nextRaceListEl = document.getElementById('next-race-list');
+            const nextRaceMetaEl = document.getElementById('next-race-meta');
 
             try {
                 const resp = await fetch('predictions.json');
                 if (!resp.ok) throw new Error('Failed to load');
                 const data = await resp.json();
+
+                seasonSubtitleEl.textContent = `Win probability — ${data.season} season outlook`;
 
                 // Race status indicator
                 const races = data.races_completed || 0;
@@ -1544,6 +1347,14 @@
                 container.innerHTML = html;
                 updatedEl.textContent = 'Updated ' + data.last_updated + ' \u2014 model v' + data.model_version;
 
+                renderNextRacePrediction(data.next_race_prediction, {
+                    titleEl: nextRaceTitleEl,
+                    subtitleEl: nextRaceSubtitleEl,
+                    calloutEl: nextRaceCalloutEl,
+                    listEl: nextRaceListEl,
+                    metaEl: nextRaceMetaEl,
+                });
+
                 // Observe new bars for scroll animation
                 const barObserver = new IntersectionObserver(entries => {
                     entries.forEach(entry => {
@@ -1557,7 +1368,47 @@
 
             } catch (e) {
                 container.innerHTML = '<p style="color: var(--text-muted); font-size: 0.8125rem;">Could not load predictions.</p>';
+                nextRaceListEl.innerHTML = '';
+                nextRaceCalloutEl.textContent = 'Could not load next-race winner signal.';
+                nextRaceMetaEl.textContent = '';
             }
+        }
+
+        function renderNextRacePrediction(nextRaceData, elements) {
+            const { titleEl, subtitleEl, calloutEl, listEl, metaEl } = elements;
+
+            if (!nextRaceData || !Array.isArray(nextRaceData.winner_probabilities) || nextRaceData.winner_probabilities.length === 0) {
+                calloutEl.textContent = 'Next-race dataset not available yet.';
+                listEl.innerHTML = '';
+                metaEl.textContent = '';
+                return;
+            }
+
+            const raceName = nextRaceData.race_name || 'Upcoming Grand Prix';
+            const round = nextRaceData.round ? `Round ${nextRaceData.round}` : 'Upcoming round';
+            titleEl.textContent = `${raceName} Winner Signal`;
+            subtitleEl.textContent = `${round} — one-race probability snapshot`;
+            calloutEl.textContent = nextRaceData.basis || 'Blended model using current form and telemetry-style pace proxies.';
+
+            const topDrivers = nextRaceData.winner_probabilities.slice(0, 5);
+            listEl.innerHTML = topDrivers.map((d, i) => {
+                const teamColor = TEAM_COLORS[d.team] || '#9a8674';
+                const rank = i + 1;
+                const pace = d.one_lap_pace_delta || 'n/a';
+                const deg = d.long_run_deg || 'n/a';
+                return `
+                    <div class="telemetry-item">
+                        <div>
+                            <div class="driver"><span class="team-color-dot" style="background:${teamColor}"></span>${rank}. ${d.driver}</div>
+                            <div class="meta">${d.team} · Pace ${pace} · Deg ${deg}</div>
+                        </div>
+                        <div class="value">${d.probability}%</div>
+                    </div>`;
+            }).join('');
+
+            const freshness = nextRaceData.data_freshness ? `Data: ${nextRaceData.data_freshness}` : '';
+            const updated = nextRaceData.updated || '';
+            metaEl.textContent = [freshness, updated].filter(Boolean).join(' · ');
         }
 
         function renderPredictionItem(rank, rankClass, driver, team, barWidth, prob, teamColor, pts) {

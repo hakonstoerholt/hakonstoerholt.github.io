@@ -14,6 +14,57 @@
     "Historical regulation-change adaptability (compiled from F1 records)",
     "2026 race results: 1 race(s) completed (formula1.com)"
   ],
+  "next_race_prediction": {
+    "race_name": "Saudi Arabian Grand Prix",
+    "round": 2,
+    "updated": "Updated 2026-03-16",
+    "basis": "One-race winner signal combining current season form, telemetry-style pace proxies, tire degradation profile, and clean-air probability.",
+    "data_freshness": "Proxy telemetry blend (official timing + historical sector behavior)",
+    "winner_probabilities": [
+      {
+        "driver": "Charles Leclerc",
+        "team": "Ferrari",
+        "probability": 18.4,
+        "one_lap_pace_delta": "+0.00s",
+        "long_run_deg": "Low"
+      },
+      {
+        "driver": "George Russell",
+        "team": "Mercedes",
+        "probability": 17.1,
+        "one_lap_pace_delta": "+0.05s",
+        "long_run_deg": "Low"
+      },
+      {
+        "driver": "Kimi Antonelli",
+        "team": "Mercedes",
+        "probability": 13.9,
+        "one_lap_pace_delta": "+0.09s",
+        "long_run_deg": "Medium"
+      },
+      {
+        "driver": "Lando Norris",
+        "team": "McLaren",
+        "probability": 13.3,
+        "one_lap_pace_delta": "+0.11s",
+        "long_run_deg": "Medium"
+      },
+      {
+        "driver": "Max Verstappen",
+        "team": "Red Bull",
+        "probability": 11.8,
+        "one_lap_pace_delta": "+0.14s",
+        "long_run_deg": "Medium"
+      },
+      {
+        "driver": "Lewis Hamilton",
+        "team": "Ferrari",
+        "probability": 8.2,
+        "one_lap_pace_delta": "+0.20s",
+        "long_run_deg": "Medium"
+      }
+    ]
+  },
   "model_weights_prior": {
     "season_2025_form": 0.12,
     "testing_pace": 0.25,

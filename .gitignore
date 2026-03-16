@@ -1,14 +1,18 @@
-# Ignore config file with API keys
-config.js
-
-# Ignore common system files
+# System files
 .DS_Store
 Thumbs.db
 
-# Ignore editor files
+# Editor / IDE
 .vscode/
 .idea/
 *.swp
+*.code-workspace
+
+# Claude Code
+.claude/
+
+# API keys
+config.js
 
 # F1 prediction model (source only, output is predictions.json)
 f1_model/
@@ -17,3 +21,6 @@ f1_model/
 main.tex
 CV.tex
 references.bib
+
+# Scripts (symbol generator, etc.)
+scripts/
