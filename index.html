@@ -14,7 +14,7 @@
     <meta property="og:title" content="Håkon Julius Størholt">
     <meta property="og:description" content="MSc Finance | Quantitative Analysis | Derivatives & Risk">
 
-    <link rel="icon" type="image/svg+xml" href="images/hjs-symbol.svg">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
@@ -42,6 +42,23 @@
             --card-shadow-hover: 0 12px 24px rgba(0, 0, 0, 0.06), 0 4px 8px rgba(0, 0, 0, 0.04);
         }
 
+        [data-theme="dark"] {
+            --white: #1a1a1a;
+            --off-white: #222222;
+            --light-grey: #2a2a2a;
+            --border: #3a3a3a;
+            --border-hover: #4a4a4a;
+            --text-primary: #e8e0d8;
+            --text-secondary: #b8a898;
+            --text-muted: #8a7a6a;
+            --accent: #d4834a;
+            --accent-light: #2e2218;
+            --accent-dark: #e89860;
+            --accent-gradient: linear-gradient(135deg, #d4834a 0%, #a15b34 100%);
+            --card-shadow: 0 1px 3px rgba(0,0,0,0.2), 0 1px 2px rgba(0,0,0,0.15);
+            --card-shadow-hover: 0 12px 24px rgba(0,0,0,0.25), 0 4px 8px rgba(0,0,0,0.2);
+        }
+
         * { margin: 0; padding: 0; box-sizing: border-box; }
         html { scroll-behavior: smooth; }
 
@@ -52,6 +69,10 @@
             background: radial-gradient(circle at 15% 0%, #fff8ef 0%, #ffffff 45%);
             font-weight: 400;
             -webkit-font-smoothing: antialiased;
+            transition: background 0.3s, color 0.3s;
+        }
+        [data-theme="dark"] body {
+            background: radial-gradient(circle at 15% 0%, #1f1a14 0%, #141414 45%);
         }
 
         h1, h2, h3, h4, h5, h6 {
@@ -59,6 +80,18 @@
             font-weight: 600;
             line-height: 1.2;
             letter-spacing: -0.025em;
+        }
+
+        /* ---- SCROLL PROGRESS ---- */
+        .scroll-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 2px;
+            background: var(--accent-gradient);
+            z-index: 1001;
+            width: 0%;
+            transition: width 0.05s linear;
         }
 
         /* ---- NAV ---- */
@@ -69,6 +102,10 @@
             position: fixed;
             top: 0; left: 0; right: 0;
             z-index: 1000;
+            transition: background 0.3s;
+        }
+        [data-theme="dark"] .header {
+            background: rgba(20,20,20,0.92);
         }
         .nav-container {
             max-width: 1100px;
@@ -118,6 +155,32 @@
             color: var(--text-primary);
             font-size: 1.25rem;
             cursor: pointer;
+        }
+        .nav-controls {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .nav-btn {
+            background: none;
+            border: 1px solid var(--border);
+            color: var(--text-secondary);
+            width: 34px;
+            height: 34px;
+            border-radius: 8px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8125rem;
+            transition: all 0.2s;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+        }
+        .nav-btn:hover {
+            color: var(--accent);
+            border-color: var(--accent);
+            background: var(--accent-light);
         }
 
         /* ---- HERO ---- */
@@ -346,9 +409,10 @@
             border: 1px solid var(--border);
             border-radius: 8px;
             padding: 1.75rem;
-            transition: all 0.3s ease;
+            transition: border-color 0.3s, box-shadow 0.3s, transform 0.15s ease-out;
             position: relative;
             overflow: hidden;
+            will-change: transform;
         }
         .project-card::before {
             content: '';
@@ -365,7 +429,6 @@
         .project-card:hover {
             border-color: var(--border-hover);
             box-shadow: var(--card-shadow-hover);
-            transform: translateY(-2px);
         }
         .project-card:hover::before {
             transform: scaleX(1);
@@ -733,6 +796,23 @@
             transform: translateY(0);
         }
 
+        /* ---- 3D CARD TILT ---- */
+        .project-card {
+            transform-style: preserve-3d;
+            perspective: 800px;
+        }
+        .project-card .project-icon,
+        .project-card h3,
+        .project-card p,
+        .project-card .project-tags {
+            transform: translateZ(20px);
+        }
+
+        /* ---- DARK MODE: mobile menu ---- */
+        [data-theme="dark"] .nav-menu.active {
+            background: var(--white);
+        }
+
         /* ---- RESPONSIVE ---- */
         @media (max-width: 768px) {
             .nav-menu { display: none; }
@@ -747,6 +827,7 @@
                 gap: 1rem;
             }
             .mobile-menu-toggle { display: block; }
+            .logo-text { display: none; }
             .hero h1 { font-size: 2.25rem; }
             .hero { padding: 130px 0 70px; }
             .section { padding: 60px 0; }
@@ -780,22 +861,28 @@
     </style>
 </head>
 <body>
+    <!-- Scroll progress -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
     <!-- Nav -->
     <header class="header">
         <div class="nav-container">
-            <a href="#" class="logo"><img src="images/hjs-symbol.svg" alt="" class="logo-icon">Håkon J. Størholt</a>
+            <a href="#" class="logo"><img src="images/hjs-symbol.svg" alt="" class="logo-icon"><span class="logo-text">Håkon J. Størholt</span></a>
             <nav>
                 <ul class="nav-menu">
                     <li><a href="#education" class="nav-link">Education</a></li>
                     <li><a href="#projects" class="nav-link">Projects</a></li>
                     <li><a href="#skills" class="nav-link">Skills</a></li>
                     <li><a href="#experience" class="nav-link">Experience</a></li>
-                    <li><a href="#predictions" class="nav-link">F1 Predictions</a></li>
+                    <li><a href="#predictions" class="nav-link">F1</a></li>
                 </ul>
             </nav>
-            <button class="mobile-menu-toggle" aria-label="Toggle menu">
-                <i class="fas fa-bars"></i>
-            </button>
+            <div class="nav-controls">
+                <button class="nav-btn" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode"><i class="fas fa-moon"></i></button>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
         </div>
     </header>
 
@@ -1150,7 +1237,7 @@
     </footer>
 
     <script>
-        // ---- Hero particle network ----
+        // ---- Hero particle network (mouse-reactive) ----
         (function() {
             const canvas = document.getElementById('hero-canvas');
             if (!canvas || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
@@ -1158,7 +1245,19 @@
             let w, h, particles, animId;
             const COUNT = 60;
             const CONNECT_DIST = 140;
+            const MOUSE_DIST = 180;
             const SPEED = 0.3;
+            let mouse = { x: -9999, y: -9999 };
+
+            canvas.parentElement.addEventListener('mousemove', function(e) {
+                const rect = canvas.getBoundingClientRect();
+                mouse.x = e.clientX - rect.left;
+                mouse.y = e.clientY - rect.top;
+            });
+            canvas.parentElement.addEventListener('mouseleave', function() {
+                mouse.x = -9999;
+                mouse.y = -9999;
+            });
 
             function resize() {
                 const hero = canvas.parentElement;
@@ -1189,7 +1288,7 @@
 
             function draw() {
                 ctx.clearRect(0, 0, w, h);
-                // connections
+                // connections between particles
                 for (let i = 0; i < particles.length; i++) {
                     for (let j = i + 1; j < particles.length; j++) {
                         const dx = particles[i].x - particles[j].x;
@@ -1206,17 +1305,56 @@
                         }
                     }
                 }
+                // connections to mouse
+                for (const p of particles) {
+                    const dx = p.x - mouse.x;
+                    const dy = p.y - mouse.y;
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+                    if (dist < MOUSE_DIST) {
+                        const alpha = (1 - dist / MOUSE_DIST) * 0.25;
+                        ctx.strokeStyle = 'rgba(212,131,74,' + alpha + ')';
+                        ctx.lineWidth = 0.8;
+                        ctx.beginPath();
+                        ctx.moveTo(p.x, p.y);
+                        ctx.lineTo(mouse.x, mouse.y);
+                        ctx.stroke();
+                    }
+                }
                 // particles
                 for (const p of particles) {
+                    const dx = p.x - mouse.x;
+                    const dy = p.y - mouse.y;
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+                    const glow = dist < MOUSE_DIST ? 1 + (1 - dist / MOUSE_DIST) * 2 : 1;
                     ctx.beginPath();
-                    ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-                    ctx.fillStyle = 'rgba(220,200,178,' + p.o + ')';
+                    ctx.arc(p.x, p.y, p.r * glow, 0, Math.PI * 2);
+                    ctx.fillStyle = dist < MOUSE_DIST
+                        ? 'rgba(212,131,74,' + (p.o + 0.3) + ')'
+                        : 'rgba(220,200,178,' + p.o + ')';
                     ctx.fill();
                 }
             }
 
             function update() {
                 for (const p of particles) {
+                    // Gentle repel from mouse
+                    const dx = p.x - mouse.x;
+                    const dy = p.y - mouse.y;
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+                    if (dist < MOUSE_DIST && dist > 0) {
+                        const force = (1 - dist / MOUSE_DIST) * 0.15;
+                        p.vx += (dx / dist) * force;
+                        p.vy += (dy / dist) * force;
+                    }
+                    // Dampen velocity
+                    p.vx *= 0.99;
+                    p.vy *= 0.99;
+                    // Clamp speed
+                    const spd = Math.sqrt(p.vx * p.vx + p.vy * p.vy);
+                    if (spd > 1.5) { p.vx *= 1.5 / spd; p.vy *= 1.5 / spd; }
+                    // Ensure minimum speed
+                    if (spd < 0.1) { p.vx += (Math.random() - 0.5) * 0.1; p.vy += (Math.random() - 0.5) * 0.1; }
+
                     p.x += p.vx;
                     p.y += p.vy;
                     if (p.x < -10) p.x = w + 10;
@@ -1241,7 +1379,6 @@
                 resizeTimer = setTimeout(function() { resize(); }, 200);
             });
 
-            // Pause when hero is off-screen
             const heroObs = new IntersectionObserver(function(entries) {
                 if (entries[0].isIntersecting) {
                     if (!animId) loop();
@@ -1255,7 +1392,27 @@
     </script>
 
     <script>
+        // ---- Dark mode ----
+        function applyTheme(theme) {
+            document.documentElement.setAttribute('data-theme', theme);
+            localStorage.setItem('hjs-theme', theme);
+            const btn = document.getElementById('theme-toggle');
+            if (btn) btn.innerHTML = theme === 'dark'
+                ? '<i class="fas fa-sun"></i>'
+                : '<i class="fas fa-moon"></i>';
+        }
+
         document.addEventListener('DOMContentLoaded', function() {
+            // Init theme
+            const savedTheme = localStorage.getItem('hjs-theme') ||
+                (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            applyTheme(savedTheme);
+
+            // Theme toggle
+            document.getElementById('theme-toggle').addEventListener('click', function() {
+                applyTheme(document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+            });
+
             // Mobile menu
             const toggle = document.querySelector('.mobile-menu-toggle');
             const menu = document.querySelector('.nav-menu');
@@ -1275,6 +1432,14 @@
                 });
             });
 
+            // Scroll progress bar
+            const progressBar = document.getElementById('scroll-progress');
+            window.addEventListener('scroll', function() {
+                const scrollTop = window.scrollY;
+                const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+                progressBar.style.width = (scrollTop / docHeight * 100) + '%';
+            }, { passive: true });
+
             // Scroll animations
             const observer = new IntersectionObserver(entries => {
                 entries.forEach(entry => {
@@ -1289,6 +1454,23 @@
             }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 
             document.querySelectorAll('.animate-in').forEach(el => observer.observe(el));
+
+            // ---- 3D card tilt ----
+            document.querySelectorAll('.project-card').forEach(card => {
+                card.addEventListener('mousemove', function(e) {
+                    const rect = card.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+                    const centerX = rect.width / 2;
+                    const centerY = rect.height / 2;
+                    const rotateX = ((y - centerY) / centerY) * -6;
+                    const rotateY = ((x - centerX) / centerX) * 6;
+                    card.style.transform = `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-2px)`;
+                });
+                card.addEventListener('mouseleave', function() {
+                    card.style.transform = '';
+                });
+            });
 
             // Load F1 predictions from JSON
             loadPredictions();
@@ -1306,7 +1488,7 @@
             'Racing Bulls': '#6692ff',
             'Haas': '#b6babd',
             'Audi': '#ff0000',
-            'Cadillac': '#1d1d1b',
+            'Cadillac': '#6b6b6b',
         };
 
         async function loadPredictions() {
@@ -1328,10 +1510,8 @@
 
                 // Race status indicator
                 const races = data.races_completed || 0;
-                const total = data.total_races || 24;
-                const raceWeight = data.race_evidence_weight || 0;
 
-                let statusHtml = `<div class="race-status"><span class="pulse"></span>${races}/${total} races \u2014 prior ${Math.round((1-raceWeight)*100)}% / race data ${Math.round(raceWeight*100)}%</div>`;
+                let statusHtml = `<div class="race-status"><span class="pulse"></span>${races} race${races !== 1 ? 's' : ''} completed</div>`;
 
                 // Show top 10 drivers, group rest as "Field"
                 const top = data.predictions.slice(0, 10);
@@ -1354,7 +1534,7 @@
                 html += renderPredictionItem('...', '', 'Field', `${rest.length} other drivers`, fieldBar, Math.round(fieldProb * 10) / 10, '#94a3b8', fieldPts);
 
                 container.innerHTML = html;
-                updatedEl.textContent = 'Updated ' + data.last_updated + ' \u2014 model v' + data.model_version;
+                updatedEl.textContent = 'Updated ' + data.last_updated;
 
                 renderNextRacePrediction(data.next_race_prediction, {
                     titleEl: nextRaceTitleEl,
@@ -1415,9 +1595,8 @@
                     </div>`;
             }).join('');
 
-            const freshness = nextRaceData.data_freshness ? `Data: ${nextRaceData.data_freshness}` : '';
             const updated = nextRaceData.updated || '';
-            metaEl.textContent = [freshness, updated].filter(Boolean).join(' · ');
+            metaEl.textContent = updated;
         }
 
         function renderPredictionItem(rank, rankClass, driver, team, barWidth, prob, teamColor, pts) {
