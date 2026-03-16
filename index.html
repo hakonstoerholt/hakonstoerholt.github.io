@@ -3,61 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Håkon Julius Størholt - Quantitative Finance & Risk Management</title>
-    <meta name="description" content="Quantitative Finance Professional specializing in Risk Management, Algorithmic Trading, and Quantum Computing applications in finance.">
-    <meta name="keywords" content="quantitative finance, risk management, algorithmic trading, quantum computing, portfolio optimization, derivatives pricing">
+    <title>Håkon Julius Størholt</title>
+    <meta name="description" content="MSc Finance candidate at BI Norwegian Business School. Quantitative finance, derivatives, and data-driven decision-making.">
+    <meta name="keywords" content="finance, quantitative analysis, derivatives, portfolio optimization, machine learning, python">
     <meta name="author" content="Håkon Julius Størholt">
 
     <!-- Open Graph / LinkedIn -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://hakonstoerholt.github.io/">
-    <meta property="og:title" content="Håkon Julius Størholt - Quantitative Finance & Risk Management">
-    <meta property="og:description" content="Building next-generation financial systems with quantum computing and advanced analytics">
-    
+    <meta property="og:title" content="Håkon Julius Størholt">
+    <meta property="og:description" content="MSc Finance | Quantitative Analysis | Derivatives & Risk">
+
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome for icons -->
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
-        /* Minimalist Dark Portfolio Styles */
         :root {
-            --charcoal: #1a1a1a;
-            --matte-black: #0d0d0d;
-            --gunmetal: #2c3e50;
-            --slate: #334155;
-            --electric-blue: #0ea5e9;
-            --crimson: #dc2626;
-            --muted-gold: #d4af37;
-            --soft-white: #f5f5f5;
-            --cool-grey: #9ca3af;
-            --dark-grey: #374151;
-            --border-subtle: #374151;
-            --card-dark: #1f1f1f;
+            --white: #ffffff;
+            --off-white: #f8fafc;
+            --light-grey: #f1f5f9;
+            --border: #e2e8f0;
+            --border-hover: #cbd5e1;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-muted: #94a3b8;
+            --accent: #2563eb;
+            --accent-light: #eff6ff;
+            --accent-dark: #1d4ed8;
+            --accent-gradient: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+            --warm-accent: #f59e0b;
+            --success: #10b981;
+            --card-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+            --card-shadow-hover: 0 12px 24px rgba(0, 0, 0, 0.06), 0 4px 8px rgba(0, 0, 0, 0.04);
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
 
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             line-height: 1.6;
-            color: var(--soft-white);
-            background: var(--matte-black);
+            color: var(--text-primary);
+            background: var(--white);
             font-weight: 400;
+            -webkit-font-smoothing: antialiased;
         }
 
-        /* Typography */
         h1, h2, h3, h4, h5, h6 {
             font-family: 'Space Grotesk', 'Inter', sans-serif;
             font-weight: 600;
@@ -65,741 +61,662 @@
             letter-spacing: -0.025em;
         }
 
-        /* Header & Navigation */
+        /* ---- NAV ---- */
         .header {
-            background: rgba(13, 13, 13, 0.95);
+            background: rgba(255,255,255,0.92);
             backdrop-filter: blur(20px);
-            border-bottom: 1px solid var(--border-subtle);
+            border-bottom: 1px solid var(--border);
             position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
+            top: 0; left: 0; right: 0;
             z-index: 1000;
         }
-
         .nav-container {
-            max-width: 1400px;
+            max-width: 1100px;
             margin: 0 auto;
             padding: 0 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            height: 64px;
+            height: 60px;
         }
-
         .logo {
-            font-size: 1.75rem;
-            font-weight: 700;
-            color: var(--soft-white);
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--text-primary);
             text-decoration: none;
-            letter-spacing: -0.05em;
             font-family: 'Space Grotesk', sans-serif;
+            letter-spacing: -0.03em;
         }
-
         .nav-menu {
             display: flex;
             list-style: none;
-            gap: 3rem;
+            gap: 2.5rem;
         }
-
         .nav-link {
-            color: var(--cool-grey);
+            color: var(--text-secondary);
             text-decoration: none;
             font-weight: 500;
-            font-size: 0.875rem;
+            font-size: 0.8125rem;
             text-transform: uppercase;
-            letter-spacing: 0.05em;
-            transition: all 0.3s ease;
-            padding: 0.5rem 0;
-            position: relative;
+            letter-spacing: 0.06em;
+            transition: color 0.2s;
+            padding: 0.25rem 0;
         }
-
-        .nav-link:hover {
-            color: var(--electric-blue);
-        }
-
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            bottom: -2px;
-            left: 0;
-            width: 0;
-            height: 1px;
-            background: var(--electric-blue);
-            transition: width 0.3s ease;
-        }
-
-        .nav-link:hover::after {
-            width: 100%;
-        }
-
+        .nav-link:hover { color: var(--accent); }
         .mobile-menu-toggle {
             display: none;
             background: none;
             border: none;
-            color: var(--soft-white);
+            color: var(--text-primary);
             font-size: 1.25rem;
             cursor: pointer;
         }
 
-        /* Hero Section */
+        /* ---- HERO ---- */
         .hero {
-            background: linear-gradient(135deg, var(--matte-black) 0%, var(--charcoal) 100%);
-            color: var(--soft-white);
-            padding: 120px 0 100px;
+            padding: 160px 0 100px;
             text-align: center;
-            position: relative;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: radial-gradient(circle at 50% 50%, rgba(14, 165, 233, 0.05) 0%, transparent 70%);
-            pointer-events: none;
-        }
-
-        .hero-content {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 0 2rem;
-            position: relative;
-            z-index: 2;
-        }
-
-        .hero-image {
-            width: 140px;
-            height: 140px;
-            border-radius: 50%;
-            margin: 0 auto 3rem;
-            border: 2px solid var(--electric-blue);
-            display: block;
-            object-fit: cover;
-        }
-
-        .hero h1 {
-            font-size: 4rem;
-            font-weight: 700;
-            margin-bottom: 1.5rem;
-            letter-spacing: -0.02em;
-            font-family: 'Space Grotesk', sans-serif;
-        }
-
-        .hero-tagline {
-            font-size: 1.25rem;
-            margin-bottom: 2rem;
-            color: var(--electric-blue);
-            font-weight: 500;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-        }
-
-        .hero-description {
-            font-size: 1.125rem;
-            margin-bottom: 3rem;
-            color: var(--cool-grey);
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-            line-height: 1.7;
-        }
-
-        .cta-buttons {
-            display: flex;
-            gap: 1.5rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .btn {
-            padding: 0.875rem 2rem;
-            border-radius: 2px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.875rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            transition: all 0.3s ease;
-            border: 1px solid transparent;
-            cursor: pointer;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            min-width: 160px;
-            justify-content: center;
-        }
-
-        .btn-primary {
-            background: var(--electric-blue);
-            color: var(--matte-black);
-            border-color: var(--electric-blue);
-        }
-
-        .btn-primary:hover {
-            background: transparent;
-            color: var(--electric-blue);
-            transform: translateY(-2px);
-        }
-
-        .btn-secondary {
-            background: transparent;
-            color: var(--soft-white);
-            border-color: var(--border-subtle);
-        }
-
-        .btn-secondary:hover {
-            background: var(--soft-white);
-            color: var(--matte-black);
-            border-color: var(--soft-white);
-            transform: translateY(-2px);
-        }
-
-        /* Sections */
-        .section {
-            padding: 100px 0;
-        }
-
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: 5rem;
-        }
-
-        .section-title {
-            font-size: 2.75rem;
-            font-weight: 700;
-            color: var(--soft-white);
-            margin-bottom: 1.5rem;
-            font-family: 'Space Grotesk', sans-serif;
-            letter-spacing: -0.02em;
-        }
-
-        .section-subtitle {
-            font-size: 1.125rem;
-            color: var(--cool-grey);
-            max-width: 600px;
-            margin: 0 auto;
-            line-height: 1.6;
-        }
-
-        /* Projects Grid */
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: 2rem;
-            margin-top: 4rem;
-        }
-
-        .project-card {
-            background: var(--card-dark);
-            border-radius: 4px;
-            padding: 2.5rem;
-            border: 1px solid var(--border-subtle);
-            transition: all 0.4s ease;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: var(--white);
             position: relative;
             overflow: hidden;
         }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(37,99,235,0.15) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -10%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(30,64,175,0.1) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        .hero-content {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 1;
+        }
+        .hero h1 {
+            font-size: 3.25rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #ffffff;
+        }
+        .hero-tagline {
+            font-size: 1.0625rem;
+            color: #cbd5e1;
+            font-weight: 400;
+            margin-bottom: 1rem;
+            letter-spacing: 0.02em;
+            line-height: 1.7;
+        }
+        .hero-location {
+            font-size: 0.875rem;
+            color: #64748b;
+            margin-bottom: 2.5rem;
+        }
+        .hero-links {
+            display: flex;
+            gap: 1.25rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .hero-link {
+            color: #94a3b8;
+            text-decoration: none;
+            font-size: 0.8125rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            transition: color 0.2s;
+            padding: 0.5rem 1rem;
+            border: 1px solid rgba(148,163,184,0.2);
+            border-radius: 6px;
+        }
+        .hero-link:hover {
+            color: var(--white);
+            border-color: rgba(255,255,255,0.3);
+            background: rgba(255,255,255,0.05);
+        }
 
+        /* ---- SECTIONS ---- */
+        .section {
+            padding: 100px 0;
+            border-bottom: none;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        .section-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+            position: relative;
+            padding-left: 1rem;
+        }
+        .section-title::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.15em;
+            bottom: 0.15em;
+            width: 3px;
+            background: var(--accent);
+            border-radius: 2px;
+        }
+        .section-subtitle {
+            font-size: 0.9375rem;
+            color: var(--text-secondary);
+            margin-bottom: 3rem;
+            max-width: 600px;
+        }
+
+        /* ---- ABOUT / SUMMARY ---- */
+        .summary-text {
+            font-size: 1.0625rem;
+            color: var(--text-secondary);
+            line-height: 1.75;
+            max-width: 750px;
+        }
+
+        /* ---- EDUCATION ---- */
+        .timeline { display: flex; flex-direction: column; gap: 2rem; }
+        .timeline-item {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 2rem;
+            align-items: start;
+        }
+        .timeline-date {
+            font-size: 0.8125rem;
+            color: var(--text-muted);
+            font-weight: 500;
+            padding-top: 0.15rem;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+        .timeline-content h3 {
+            font-size: 1.0625rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+            color: var(--text-primary);
+        }
+        .timeline-content .institution {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+        .timeline-content .detail {
+            font-size: 0.8125rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        /* ---- EXPERIENCE ---- */
+        .experience-item {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 2rem;
+            align-items: start;
+        }
+        .experience-content h3 {
+            font-size: 1.0625rem;
+            font-weight: 600;
+            margin-bottom: 0.125rem;
+        }
+        .experience-content .company {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+        .experience-content ul {
+            list-style: none;
+            padding: 0;
+        }
+        .experience-content li {
+            font-size: 0.8125rem;
+            color: var(--text-muted);
+            padding-left: 1rem;
+            position: relative;
+            margin-bottom: 0.25rem;
+            line-height: 1.6;
+        }
+        .experience-content li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.55rem;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: var(--text-muted);
+        }
+
+        /* ---- PROJECTS ---- */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 1.5rem;
+        }
+        .project-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.75rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
         .project-card::before {
             content: '';
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
-            height: 2px;
-            background: var(--electric-blue);
+            height: 3px;
+            background: var(--accent-gradient);
             transform: scaleX(0);
+            transform-origin: left;
             transition: transform 0.4s ease;
         }
-
         .project-card:hover {
-            transform: translateY(-4px);
-            border-color: var(--electric-blue);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: var(--border-hover);
+            box-shadow: var(--card-shadow-hover);
+            transform: translateY(-2px);
         }
-
         .project-card:hover::before {
             transform: scaleX(1);
         }
-
-        .project-card.featured {
-            grid-column: span 2;
-            background: linear-gradient(135deg, var(--card-dark) 0%, var(--charcoal) 100%);
-        }
-
-        .project-header {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .project-icon {
-            width: 48px;
-            height: 48px;
-            background: var(--electric-blue);
-            border-radius: 2px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--matte-black);
-            font-size: 1.25rem;
-        }
-
-        .project-title {
-            font-size: 1.5rem;
+        .project-card h3 {
+            font-size: 1.0625rem;
             font-weight: 600;
-            color: var(--soft-white);
-            font-family: 'Space Grotesk', sans-serif;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
         }
-
-        .project-status {
-            background: var(--electric-blue);
-            color: var(--matte-black);
-            padding: 0.25rem 0.75rem;
-            border-radius: 2px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            margin-left: auto;
+        .project-card p {
+            font-size: 0.8125rem;
+            color: var(--text-secondary);
+            line-height: 1.65;
+            margin-bottom: 1.25rem;
         }
-
-        .project-description {
-            color: var(--cool-grey);
-            margin-bottom: 2rem;
-            line-height: 1.7;
-        }
-
-        .project-tech {
+        .project-tags {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.75rem;
-            margin-bottom: 2rem;
-        }
-
-        .tech-tag {
-            background: var(--dark-grey);
-            color: var(--soft-white);
-            padding: 0.375rem 0.875rem;
-            border-radius: 2px;
-            font-size: 0.8rem;
-            font-weight: 500;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-
-        .project-links {
-            display: flex;
-            gap: 1.5rem;
-        }
-
-        .project-link {
-            color: var(--electric-blue);
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.875rem;
-            display: flex;
-            align-items: center;
             gap: 0.5rem;
-            transition: color 0.3s ease;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
         }
-
-        .project-link:hover {
-            color: var(--soft-white);
+        .tag {
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            background: var(--light-grey);
+            padding: 0.25rem 0.75rem;
+            border-radius: 100px;
+            text-transform: none;
+            letter-spacing: normal;
         }
-
-        /* Predictions Section */
-        .predictions-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: 2rem;
-            margin-top: 4rem;
-        }
-
-        .prediction-card {
-            background: var(--card-dark);
-            border-radius: 4px;
-            padding: 2.5rem;
-            border: 1px solid var(--border-subtle);
-            transition: all 0.4s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .prediction-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 2px;
-            background: var(--electric-blue);
-            transform: scaleX(0);
-            transition: transform 0.4s ease;
-        }
-
-        .prediction-card:hover {
-            transform: translateY(-4px);
-            border-color: var(--electric-blue);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-        }
-
-        .prediction-card:hover::before {
-            transform: scaleX(1);
-        }
-
-        /* Skills Section */
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 2rem;
-            margin-top: 4rem;
-        }
-
-        .skill-category {
-            background: var(--card-dark);
-            border-radius: 4px;
-            padding: 2.5rem;
-            border: 1px solid var(--border-subtle);
-            transition: all 0.4s ease;
-        }
-
-        .skill-category:hover {
-            transform: translateY(-2px);
-            border-color: var(--electric-blue);
-        }
-
-        .skill-category h3 {
-            font-size: 1.25rem;
-            font-weight: 600;
-            color: var(--soft-white);
-            margin-bottom: 1.5rem;
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            font-family: 'Space Grotesk', sans-serif;
-        }
-
-        .skill-category h3 i {
-            color: var(--electric-blue);
-        }
-
-        .skill-list {
-            list-style: none;
-        }
-
-        .skill-item {
-            padding: 0.75rem 0;
-            color: var(--cool-grey);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid var(--border-subtle);
-        }
-
-        .skill-item:last-child {
-            border-bottom: none;
-        }
-
-        .skill-level {
-            font-size: 0.8rem;
-            color: var(--electric-blue);
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-
-        /* Contact Section */
-        .contact {
-            background: var(--charcoal);
-        }
-
-        .contact-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            margin-top: 4rem;
-        }
-
-        .contact-card {
-            background: var(--card-dark);
-            border-radius: 4px;
-            padding: 2.5rem;
-            text-align: center;
-            border: 1px solid var(--border-subtle);
-            transition: all 0.4s ease;
-        }
-
-        .contact-card:hover {
-            transform: translateY(-3px);
-            border-color: var(--electric-blue);
-        }
-
-        .contact-icon {
-            width: 56px;
-            height: 56px;
-            background: var(--electric-blue);
-            border-radius: 2px;
+        .project-card .project-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            background: var(--accent-gradient);
+            color: var(--white);
             display: flex;
             align-items: center;
             justify-content: center;
-            color: var(--matte-black);
-            font-size: 1.25rem;
-            margin: 0 auto 1.5rem;
-        }
-
-        .contact-title {
-            font-size: 1.125rem;
-            font-weight: 600;
-            color: var(--soft-white);
-            margin-bottom: 0.75rem;
-            font-family: 'Space Grotesk', sans-serif;
-        }
-
-        .contact-link {
-            color: var(--cool-grey);
-            text-decoration: none;
-            transition: color 0.3s ease;
-            font-size: 0.9rem;
-        }
-
-        .contact-link:hover {
-            color: var(--electric-blue);
-        }
-
-        /* Footer */
-        .footer {
-            background: var(--matte-black);
-            color: var(--soft-white);
-            padding: 4rem 0;
-            text-align: center;
-            border-top: 1px solid var(--border-subtle);
-        }
-
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            margin-bottom: 2rem;
-        }
-
-        .social-link {
-            width: 48px;
-            height: 48px;
-            background: var(--card-dark);
-            border: 1px solid var(--border-subtle);
-            border-radius: 2px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--cool-grey);
-            text-decoration: none;
-            font-size: 1.125rem;
-            transition: all 0.3s ease;
-        }
-
-        .social-link:hover {
-            background: var(--electric-blue);
-            color: var(--matte-black);
-            border-color: var(--electric-blue);
-            transform: translateY(-2px);
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .nav-menu {
-                display: none;
-            }
-
-            .mobile-menu-toggle {
-                display: block;
-            }
-
-            .hero h1 {
-                font-size: 2.75rem;
-            }
-
-            .hero-tagline {
-                font-size: 1rem;
-            }
-
-            .section-title {
-                font-size: 2.25rem;
-            }
-
-            .projects-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .project-card.featured {
-                grid-column: span 1;
-            }
-
-            .cta-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .btn {
-                width: 100%;
-                max-width: 280px;
-            }
-
-            /* About section mobile styles */
-            #about div[style*="grid-template-columns"] {
-                display: block !important;
-            }
-
-            #about div[style*="grid-template-columns"] > div {
-                margin-bottom: 2rem;
-            }
-
-            .container {
-                padding: 0 1.5rem;
-            }
-
-            .section {
-                padding: 60px 0;
-            }
-        }
-
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .fade-in {
-            animation: fadeInUp 0.6s ease-out;
-        }
-
-        /* Code blocks */
-        .code-block {
-            background: var(--matte-black);
-            color: var(--soft-white);
-            padding: 1.5rem;
-            border-radius: 4px;
-            font-family: 'Fira Code', monospace;
             font-size: 0.875rem;
-            overflow-x: auto;
-            margin: 1.5rem 0;
-            border: 1px solid var(--border-subtle);
+            margin-bottom: 1rem;
         }
 
-        /* Predictions List */
-        .predictions-list {
-            margin-top: 1.5rem;
-            margin-bottom: 2rem;
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
+        /* ---- SKILLS ---- */
+        .skills-columns {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 2.5rem;
+        }
+        .skill-group h3 {
+            font-size: 0.8125rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid transparent;
+            border-image: var(--accent-gradient) 1;
+            display: inline-block;
+        }
+        .skill-group ul {
+            list-style: none;
+            padding: 0;
+        }
+        .skill-group li {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            padding: 0.35rem 0;
         }
 
+        /* ---- F1 PREDICTIONS ---- */
+        .predictions-container {
+            max-width: 600px;
+        }
+        .predictions-card {
+            background: var(--off-white);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 2rem;
+        }
+        .predictions-card h3 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+        .predictions-card .card-subtitle {
+            font-size: 0.8125rem;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+        }
         .prediction-item {
             display: grid;
-            grid-template-columns: 120px 1fr 50px;
+            grid-template-columns: 32px 1fr 50px;
             align-items: center;
-            gap: 1rem;
-            font-size: 0.9rem;
+            gap: 0.75rem;
+            padding: 0.625rem 0;
+            border-bottom: 1px solid var(--border);
         }
-
-        .driver-name {
-            font-weight: 500;
-            color: var(--soft-white);
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
+        .prediction-item:last-child { border-bottom: none; }
+        .prediction-rank {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            text-align: center;
         }
-
-        .probability-bar-container {
-            width: 100%;
-            background-color: var(--dark-grey);
-            border-radius: 2px;
-            height: 8px;
-            overflow: hidden;
-        }
-
-        .probability-bar {
-            height: 100%;
-            background-color: var(--electric-blue);
-            border-radius: 2px;
-            transition: width 0.5s ease-in-out;
-        }
-
-        .probability-value {
+        .prediction-rank.top-1 { color: #d97706; }
+        .prediction-rank.top-2 { color: #6b7280; }
+        .prediction-rank.top-3 { color: #92400e; }
+        .prediction-info .driver-name {
+            font-size: 0.875rem;
             font-weight: 600;
-            color: var(--electric-blue);
+            color: var(--text-primary);
+        }
+        .prediction-info .team-name {
+            font-size: 0.6875rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+        .prediction-bar-wrap {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+        .probability-bar-bg {
+            width: 100%;
+            background: var(--border);
+            border-radius: 3px;
+            height: 6px;
+            overflow: hidden;
+        }
+        .probability-bar-fill {
+            height: 100%;
+            background: var(--accent);
+            border-radius: 3px;
+            transition: width 1s cubic-bezier(0.25,0.46,0.45,0.94);
+            width: 0;
+        }
+        .probability-value {
+            font-size: 0.8125rem;
+            font-weight: 700;
+            color: var(--accent);
             text-align: right;
         }
-
+        .methodology-box {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 2rem;
+        }
+        .methodology-box h3 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        .methodology-box p {
+            font-size: 0.8125rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 1rem;
+        }
+        .methodology-box p:last-child { margin-bottom: 0; }
+        .factor-list {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0;
+        }
+        .factor-list li {
+            font-size: 0.8125rem;
+            color: var(--text-secondary);
+            padding: 0.375rem 0 0.375rem 1.25rem;
+            position: relative;
+        }
+        .factor-list li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.7rem;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--accent);
+        }
+        .factor-list li strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
         .last-updated {
-            margin-top: 0.5rem;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin-top: 1rem;
+        }
+
+        /* F1 team color bars */
+        .team-color-dot {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            margin-right: 0.375rem;
+            vertical-align: middle;
+        }
+
+        /* Race status badge */
+        .race-status {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.375rem;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.6875rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            background: var(--accent-light);
+            color: var(--accent);
+            margin-bottom: 1.25rem;
+        }
+        .race-status .pulse {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--accent);
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+
+        /* Points badge on prediction items */
+        .points-badge {
+            font-size: 0.625rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            background: var(--light-grey);
+            padding: 0.125rem 0.5rem;
+            border-radius: 10px;
+            margin-left: 0.5rem;
+        }
+        .points-badge.has-points {
+            color: var(--accent-dark);
+            background: var(--accent-light);
+        }
+
+        /* ---- CONTACT ---- */
+        .contact-row {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.625rem;
+        }
+        .contact-item i {
+            color: var(--text-muted);
             font-size: 0.875rem;
-            color: var(--cool-grey);
+            width: 20px;
+            text-align: center;
+        }
+        .contact-item a, .contact-item span {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.875rem;
+            transition: color 0.2s;
+        }
+        .contact-item a:hover { color: var(--accent); }
+
+        /* ---- FOOTER ---- */
+        .footer {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            padding: 3rem 0;
+            text-align: center;
+        }
+        .footer p {
+            font-size: 0.8125rem;
+            color: #64748b;
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        .footer-link {
+            color: #64748b;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: all 0.2s;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            border: 1px solid rgba(100,116,139,0.2);
+        }
+        .footer-link:hover {
+            color: var(--white);
+            background: rgba(255,255,255,0.05);
+            border-color: rgba(255,255,255,0.2);
+        }
+
+        /* ---- ANIMATIONS ---- */
+        .animate-in {
+            opacity: 0;
+            transform: translateY(16px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        .animate-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ---- RESPONSIVE ---- */
+        @media (max-width: 768px) {
+            .nav-menu { display: none; }
+            .nav-menu.active {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 60px; left: 0; right: 0;
+                background: var(--white);
+                border-bottom: 1px solid var(--border);
+                padding: 1rem 2rem;
+                gap: 1rem;
+            }
+            .mobile-menu-toggle { display: block; }
+            .hero h1 { font-size: 2.25rem; }
+            .hero { padding: 130px 0 70px; }
+            .section { padding: 60px 0; }
+            .timeline-item, .experience-item {
+                grid-template-columns: 1fr;
+                gap: 0.25rem;
+            }
+            .timeline-date { padding-top: 0; }
+            .projects-grid { grid-template-columns: 1fr; }
+            .predictions-container { grid-template-columns: 1fr; }
+            .skills-columns { grid-template-columns: 1fr 1fr; }
+            .hero-links { flex-direction: column; align-items: center; }
+            .contact-row { flex-direction: column; gap: 1rem; }
         }
     </style>
 </head>
 <body>
-    <!-- Navigation Header -->
+    <!-- Nav -->
     <header class="header">
         <div class="nav-container">
-            <a href="#home" class="logo">H</a>
+            <a href="#" class="logo">Håkon J. Størholt</a>
             <nav>
                 <ul class="nav-menu">
+                    <li><a href="#education" class="nav-link">Education</a></li>
                     <li><a href="#projects" class="nav-link">Projects</a></li>
                     <li><a href="#skills" class="nav-link">Skills</a></li>
-                    <li><a href="#predictions" class="nav-link">Predictions</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#predictions" class="nav-link">F1 Predictions</a></li>
                 </ul>
             </nav>
-            <button class="mobile-menu-toggle">
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
+    <!-- Hero -->
+    <section class="hero">
         <div class="hero-content">
-            <img src="images/hakon-profile.jpg" alt="Håkon Julius Størholt" class="hero-image">
             <h1>Håkon Julius Størholt</h1>
-            <div class="hero-tagline">Quantitative Finance • Risk Management • Algorithmic Trading</div>
-            <p class="hero-description">Building next-generation financial systems with quantum computing and advanced analytics</p>
-            <div class="cta-buttons">
-                <a href="#projects" class="btn btn-primary">
-                    <i class="fas fa-code"></i>
-                    View Projects
-                </a>
-                <a href="/resume.pdf" class="btn btn-secondary" target="_blank">
-                    <i class="fas fa-download"></i>
-                    Download Resume
-                </a>
-                <a href="#contact" class="btn btn-secondary">
-                    <i class="fas fa-envelope"></i>
-                    Contact Me
-                </a>
+            <p class="hero-tagline">MSc Finance candidate with strong quantitative skills and hands-on experience in financial analysis, valuation, and portfolio management.</p>
+            <p class="hero-location"><i class="fas fa-map-marker-alt"></i> Oslo, Norway</p>
+            <div class="hero-links">
+                <a href="mailto:hakonstoerholt@gmail.com" class="hero-link"><i class="fas fa-envelope"></i> hakonstoerholt@gmail.com</a>
+                <a href="https://linkedin.com/in/hakonstoerholt" class="hero-link" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/hakonstoerholt" class="hero-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
             </div>
         </div>
     </section>
@@ -1211,104 +1128,311 @@
     <!-- About Section -->
     <section id="about" class="section">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">About Me</h2>
-                <p class="section-subtitle">Passionate about quantitative finance and innovative financial technology</p>
-            </div>
-            
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;">
-                <div>
-                    <h3 style="color: var(--soft-white); margin-bottom: 1.5rem; font-size: 1.5rem; font-family: 'Space Grotesk', sans-serif;">Professional Focus</h3>
-                    <p style="margin-bottom: 1.5rem; color: var(--cool-grey); line-height: 1.7;">
-                        I specialize in developing enterprise-grade financial systems with a focus on risk management, 
-                        algorithmic trading, and quantum computing applications. My work bridges the gap between 
-                        cutting-edge academic research and practical financial industry applications.
-                    </p>
-                    <p style="margin-bottom: 1.5rem; color: var(--cool-grey); line-height: 1.7;">
-                        Currently developing <strong style="color: var(--electric-blue);">Cerberus Risk Engine</strong>, a next-generation risk management 
-                        system designed for institutional-grade portfolios, featuring real-time analytics and 
-                        modular architecture for enterprise scalability.
-                    </p>
+            <h2 class="section-title">About</h2>
+            <p class="section-subtitle" style="margin-bottom: 1.5rem;">Professional summary</p>
+            <p class="summary-text animate-in">
+                I combine financial theory with computational tools to understand markets. My work spans derivatives pricing, portfolio optimization, and machine learning for financial applications — from building risk engines to exploring quantum computing for option pricing. Currently completing my MSc Finance thesis at BI Norwegian Business School on the relationship between passive investing growth and active management alpha.
+            </p>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <p class="section-subtitle">Academic background</p>
+            <div class="timeline">
+                <div class="timeline-item animate-in">
+                    <div class="timeline-date">2024 &ndash; 2026</div>
+                    <div class="timeline-content">
+                        <h3>MSc in Finance</h3>
+                        <div class="institution">BI Norwegian Business School &mdash; Oslo, Norway</div>
+                        <div class="detail">
+                            <strong>Thesis:</strong> The Association Between Passive Investing and Active Management Alpha: Evidence from U.S. Mutual Funds<br>
+                            <strong>Leadership:</strong> Class Deputy<br>
+                            <strong>Relevant Coursework:</strong> Derivatives, Financial Risk Management, Asset Management
+                        </div>
+                    </div>
                 </div>
-                
-                <div>
-                    <h3 style="color: var(--soft-white); margin-bottom: 1.5rem; font-size: 1.5rem; font-family: 'Space Grotesk', sans-serif;">Research Interests</h3>
-                    <ul style="list-style: none; margin: 0; padding: 0;">
-                        <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative; color: var(--cool-grey);">
-                            <span style="position: absolute; left: 0; color: var(--electric-blue); font-weight: bold;">•</span>
-                            Quantum computing applications in finance
-                        </li>
-                        <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative; color: var(--cool-grey);">
-                            <span style="position: absolute; left: 0; color: var(--electric-blue); font-weight: bold;">•</span>
-                            High-frequency trading strategies
-                        </li>
-                        <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative; color: var(--cool-grey);">
-                            <span style="position: absolute; left: 0; color: var(--electric-blue); font-weight: bold;">•</span>
-                            Alternative data in quantitative models
-                        </li>
-                        <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative; color: var(--cool-grey);">
-                            <span style="position: absolute; left: 0; color: var(--electric-blue); font-weight: bold;">•</span>
-                            ESG integration in portfolio optimization
-                        </li>
-                        <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative; color: var(--cool-grey);">
-                            <span style="position: absolute; left: 0; color: var(--electric-blue); font-weight: bold;">•</span>
-                            Cryptocurrency and DeFi risk modeling
-                        </li>
-                    </ul>
+                <div class="timeline-item animate-in">
+                    <div class="timeline-date">Summer 2025</div>
+                    <div class="timeline-content">
+                        <h3>Summer School in Quantum Computing in Financial Services</h3>
+                        <div class="institution">Singapore Management University</div>
+                    </div>
                 </div>
-            </div>
-            
-            <div style="margin-top: 3rem; text-align: center;">
-                <h3 style="color: var(--soft-white); margin-bottom: 2rem; font-size: 1.5rem; font-family: 'Space Grotesk', sans-serif;">Career Objectives</h3>
-                <p style="max-width: 800px; margin: 0 auto; color: var(--cool-grey); line-height: 1.7; font-size: 1.1rem;">
-                    Seeking opportunities in quantitative analysis, risk management, and algorithmic trading where I can 
-                    apply my expertise in building enterprise-grade financial systems and drive innovation in financial technology. 
-                    Particularly interested in roles at hedge funds, investment banks, trading firms, and fintech companies 
-                    that value cutting-edge research and practical implementation.
-                </p>
+                <div class="timeline-item animate-in">
+                    <div class="timeline-date">2021 &ndash; 2024</div>
+                    <div class="timeline-content">
+                        <h3>Bachelor in Business Management</h3>
+                        <div class="institution">University of South-Eastern Norway &mdash; Horten, Norway</div>
+                        <div class="detail">
+                            <strong>Thesis:</strong> Machine Learning for Norwegian Real Estate Market Predictions
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section contact">
+    <!-- Projects -->
+    <section id="projects" class="section">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="section-subtitle">Let's discuss opportunities in quantitative finance and financial technology</p>
+            <h2 class="section-title">Selected Projects</h2>
+            <p class="section-subtitle">Personal and academic work in quantitative finance and technology</p>
+            <div class="projects-grid">
+                <div class="project-card animate-in">
+                    <div class="project-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>Master's Thesis: Passive Investing & Active Alpha</h3>
+                    <p>Examines whether the growth of passive investing (from ~6% to 51% of U.S. mutual fund AUM, 1996&ndash;2025) is associated with changes in aggregate active manager alpha. Uses ~29,800 active and ~3,700 passive funds from Morningstar Direct with CAPM, Fama&ndash;French 3- and 5-factor models. Documents a specification pitfall in fee-spread controls, finds no robust linear association between passive share and alpha under multifactor models, and provides exploratory evidence of stress-conditional effects on alpha during periods of high passive concentration.</p>
+                    <div class="project-tags">
+                        <span class="tag">Empirical Finance</span>
+                        <span class="tag">Grossman&ndash;Stiglitz</span>
+                        <span class="tag">Fama&ndash;French</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Econometrics</span>
+                        <span class="tag">Morningstar Direct</span>
+                    </div>
+                </div>
+
+                <div class="project-card animate-in">
+                    <div class="project-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Cerberus Risk Engine</h3>
+                    <p>Proprietary risk management system for real-time portfolio risk assessment. Production-ready enterprise infrastructure with CI/CD pipeline, designed for institutional-grade portfolios.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">Streamlit</span>
+                    </div>
+                </div>
+
+                <div class="project-card animate-in">
+                    <div class="project-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Options Trading Strategies</h3>
+                    <p>Python-based tools for analyzing and backtesting systematic options strategies. Applied delta, implied volatility, and liquidity analysis with risk management through diversification and defined-loss structures.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Black-Scholes</span>
+                        <span class="tag">Greeks</span>
+                        <span class="tag">Backtesting</span>
+                    </div>
+                </div>
+
+                <div class="project-card animate-in">
+                    <div class="project-icon"><i class="fas fa-brain"></i></div>
+                    <h3>Market Prediction with ML</h3>
+                    <p>Built a PyTorch LSTM model to explore predictive signals from OHLCV data. Tested model insights through simulated trading and performance evaluation.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">LSTM</span>
+                        <span class="tag">Time Series</span>
+                    </div>
+                </div>
+
+                <div class="project-card animate-in">
+                    <div class="project-icon"><i class="fas fa-balance-scale"></i></div>
+                    <h3>Portfolio Optimization</h3>
+                    <p>Applied Modern Portfolio Theory to construct diversified portfolios using Python. Compared risk-adjusted returns against market benchmarks using Markowitz optimization.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">NumPy</span>
+                        <span class="tag">Optimization</span>
+                        <span class="tag">MPT</span>
+                    </div>
+                </div>
+
+                <div class="project-card animate-in">
+                    <div class="project-icon"><i class="fas fa-atom"></i></div>
+                    <h3>Quantum Option Pricing</h3>
+                    <p>Quantum computing applications for complex derivatives pricing using VQE and QAOA algorithms. Research into quantum advantage in financial computation.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Qiskit</span>
+                        <span class="tag">VQE</span>
+                        <span class="tag">QAOA</span>
+                    </div>
+                </div>
+
+                <div class="project-card animate-in">
+                    <div class="project-icon"><i class="fas fa-robot"></i></div>
+                    <h3>Polymarket Arbitrage Bot</h3>
+                    <p>Automated arbitrage detection and execution system for prediction markets with real-time probability calculations and live trading.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">APIs</span>
+                        <span class="tag">Real-time</span>
+                        <span class="tag">Automation</span>
+                    </div>
+                </div>
+
+                <div class="project-card animate-in">
+                    <div class="project-icon"><i class="fas fa-home"></i></div>
+                    <h3>Real Estate ML Predictions</h3>
+                    <p>Bachelor thesis project using machine learning to predict Norwegian real estate market trends. Feature engineering with economic indicators and property-level data.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Scikit-learn</span>
+                        <span class="tag">Pandas</span>
+                        <span class="tag">Research</span>
+                    </div>
+                </div>
+
+                <div class="project-card animate-in">
+                    <div class="project-icon"><i class="fas fa-chart-area"></i></div>
+                    <h3>Option Pricing Engine</h3>
+                    <p>Web application for derivatives pricing with real-time market data integration. Features Greeks calculation, volatility surface visualization, and portfolio tracking.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">Alpaca API</span>
+                        <span class="tag">Black-Scholes</span>
+                    </div>
+                </div>
             </div>
-            
-            <div class="contact-grid">
-                <div class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <h3 class="contact-title">Email</h3>
-                    <a href="mailto:hakonstoerholt@gmail.com" class="contact-link">hakonstoerholt@gmail.com</a>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Skills & Tools</h2>
+            <p class="section-subtitle">Technical and domain expertise</p>
+            <div class="skills-columns">
+                <div class="skill-group animate-in">
+                    <h3>Markets & Trading</h3>
+                    <ul>
+                        <li>Options Trading</li>
+                        <li>Equities & Derivatives</li>
+                        <li>Risk Management</li>
+                        <li>Technical Analysis</li>
+                        <li>Market Structure</li>
+                    </ul>
                 </div>
-                
-                <div class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fab fa-linkedin"></i>
-                    </div>
-                    <h3 class="contact-title">LinkedIn</h3>
-                    <a href="https://www.linkedin.com/in/hakonstorholt" class="contact-link" target="_blank">linkedin.com/in/hakonstorholt</a>
+                <div class="skill-group animate-in">
+                    <h3>Programming & Data</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>R</li>
+                        <li>Git / GitHub</li>
+                        <li>Machine Learning (PyTorch, Scikit-learn)</li>
+                    </ul>
                 </div>
-                
-                <div class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fab fa-github"></i>
-                    </div>
-                    <h3 class="contact-title">GitHub</h3>
-                    <a href="https://github.com/hakonstorholt" class="contact-link" target="_blank">github.com/hakonstorholt</a>
+                <div class="skill-group animate-in">
+                    <h3>Quantitative Methods</h3>
+                    <ul>
+                        <li>Portfolio Optimization</li>
+                        <li>Monte Carlo Simulation</li>
+                        <li>GARCH / Time Series</li>
+                        <li>VaR & CVaR</li>
+                        <li>Stochastic Calculus</li>
+                    </ul>
                 </div>
-                
-                <div class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fas fa-phone"></i>
+                <div class="skill-group animate-in">
+                    <h3>Platforms & APIs</h3>
+                    <ul>
+                        <li>IBKR API</li>
+                        <li>Bloomberg Terminal</li>
+                        <li>Morningstar</li>
+                        <li>WRDS</li>
+                        <li>Polygon.io / Alpaca</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <p class="section-subtitle">Professional background</p>
+            <div class="timeline">
+                <div class="experience-item animate-in">
+                    <div class="timeline-date">Dec 2019 &ndash; Apr 2021</div>
+                    <div class="experience-content">
+                        <h3>Freelance IT Consultant</h3>
+                        <div class="company">Self-employed &mdash; Norway</div>
+                        <ul>
+                            <li>Delivered web development and IT support for local businesses</li>
+                            <li>Managed projects independently and meeting client requirements end-to-end</li>
+                        </ul>
                     </div>
-                    <h3 class="contact-title">Phone</h3>
-                    <a href="tel:+4712345678" class="contact-link">+47 123 45 678</a>
+                </div>
+                <div class="experience-item animate-in">
+                    <div class="timeline-date">Jun 2021 &ndash; Jun 2022</div>
+                    <div class="experience-content">
+                        <h3>Bartender</h3>
+                        <div class="company">URO p&aring; Haugar AS &mdash; T&oslash;nsberg, Norway</div>
+                        <ul>
+                            <li>Worked in a high-paced environment, strengthening teamwork, communication, and customer service</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="experience-item animate-in">
+                    <div class="timeline-date">Sep 2018 &ndash; Aug 2020</div>
+                    <div class="experience-content">
+                        <h3>Retail Assistant</h3>
+                        <div class="company">Shell &mdash; N&oslash;tter&oslash;y, Norway</div>
+                        <ul>
+                            <li>Supported daily operations in a customer-facing environment</li>
+                            <li>Developed strong teamwork, reliability, and problem-solving skills</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- F1 Predictions -->
+    <section id="predictions" class="section">
+        <div class="container">
+            <h2 class="section-title">2026 F1 World Championship Predictions</h2>
+            <p class="section-subtitle">Pre-season forecast using a composite rating model</p>
+
+            <div class="predictions-container">
+                <!-- Predictions Card (loaded from predictions.json) -->
+                <div class="predictions-card animate-in" id="predictions-card">
+                    <h3>Drivers' Championship</h3>
+                    <div class="card-subtitle">Win probability &mdash; pre-season 2026</div>
+                    <div id="predictions-list">
+                        <p style="color: var(--text-muted); font-size: 0.8125rem;">Loading predictions...</p>
+                    </div>
+                    <div class="last-updated" id="predictions-updated"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <p class="section-subtitle" style="margin-bottom: 2rem;">Get in touch</p>
+            <div class="contact-row animate-in">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:hakonstoerholt@gmail.com">hakonstoerholt@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+4793811817">+47 938 11 817</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <a href="https://linkedin.com/in/hakonstoerholt" target="_blank">linkedin.com/in/hakonstoerholt</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <a href="https://github.com/hakonstoerholt" target="_blank">github.com/hakonstoerholt</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-globe"></i>
+                    <a href="https://hakonstoerholt.github.io">hakonstoerholt.github.io</a>
                 </div>
             </div>
         </div>
@@ -1317,89 +1441,146 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="social-links">
-                <a href="https://github.com/hakonstorholt" class="social-link" aria-label="GitHub" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/hakonstorholt" class="social-link" aria-label="LinkedIn" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="mailto:hakonstoerholt@gmail.com" class="social-link" aria-label="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
-                <a href="/resume.pdf" class="social-link" aria-label="Resume" target="_blank">
-                    <i class="fas fa-file-pdf"></i>
-                </a>
+            <div class="footer-links">
+                <a href="https://github.com/hakonstoerholt" class="footer-link" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/hakonstoerholt" class="footer-link" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:hakonstoerholt@gmail.com" class="footer-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
             </div>
-            <p style="margin-bottom: 1rem; opacity: 0.9; font-family: 'Space Grotesk', sans-serif; font-weight: 500;">Håkon Julius Størholt</p>
-            <p style="opacity: 0.7; color: var(--cool-grey); text-transform: uppercase; font-size: 0.875rem; letter-spacing: 0.05em;">Quantitative Finance • Risk Management • Algorithmic Trading</p>
-            <p style="opacity: 0.6; margin-top: 1.5rem; color: var(--cool-grey); font-size: 0.8rem;">© 2025 Håkon Julius Størholt. All rights reserved.</p>
+            <p>&copy; 2026 Håkon Julius Størholt</p>
         </div>
     </footer>
 
     <script>
-        // Modern Portfolio JavaScript
         document.addEventListener('DOMContentLoaded', function() {
-            // Mobile menu functionality
-            const mobileToggle = document.querySelector('.mobile-menu-toggle');
-            const navMenu = document.querySelector('.nav-menu');
-            
-            if (mobileToggle) {
-                mobileToggle.addEventListener('click', function() {
-                    navMenu.classList.toggle('active');
-                });
+            // Mobile menu
+            const toggle = document.querySelector('.mobile-menu-toggle');
+            const menu = document.querySelector('.nav-menu');
+            if (toggle) {
+                toggle.addEventListener('click', () => menu.classList.toggle('active'));
             }
 
-            // Smooth scrolling for navigation links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
+            // Smooth scroll
+            document.querySelectorAll('a[href^="#"]').forEach(a => {
+                a.addEventListener('click', function(e) {
                     e.preventDefault();
                     const target = document.querySelector(this.getAttribute('href'));
                     if (target) {
-                        target.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        menu.classList.remove('active');
+                    }
+                });
+            });
+
+            // Scroll animations
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        entry.target.querySelectorAll('.probability-bar-fill').forEach(bar => {
+                            const w = bar.getAttribute('data-width');
+                            if (w) bar.style.width = w + '%';
                         });
                     }
                 });
-            });
+            }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 
-            // Add scroll effect to navigation
-            const header = document.querySelector('.header');
-            let lastScrollTop = 0;
+            document.querySelectorAll('.animate-in').forEach(el => observer.observe(el));
 
-            window.addEventListener('scroll', function() {
-                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-                
-                if (scrollTop > 100) {
-                    header.style.background = 'rgba(30, 58, 138, 0.95)';
-                    header.style.backdropFilter = 'blur(10px)';
-                } else {
-                    header.style.background = 'linear-gradient(135deg, var(--primary-navy) 0%, #1e40af 100%)';
-                    header.style.backdropFilter = 'none';
-                }
-                
-                lastScrollTop = scrollTop;
-            });
-
-            // Add animation to project cards on scroll
-            const observerOptions = {
-                threshold: 0.1,
-                rootMargin: '0px 0px -50px 0px'
-            };
-
-            const observer = new IntersectionObserver(function(entries) {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('fade-in');
-                    }
-                });
-            }, observerOptions);
-
-            // Observe project cards and skill categories
-            document.querySelectorAll('.project-card, .skill-category').forEach(card => {
-                observer.observe(card);
-            });
+            // Load F1 predictions from JSON
+            loadPredictions();
         });
+
+        // F1 team colors
+        const TEAM_COLORS = {
+            'Mercedes': '#27f4d2',
+            'Ferrari': '#e8002d',
+            'Red Bull': '#3671c6',
+            'McLaren': '#ff8000',
+            'Aston Martin': '#229971',
+            'Alpine': '#ff87bc',
+            'Williams': '#64c4ff',
+            'Racing Bulls': '#6692ff',
+            'Haas': '#b6babd',
+            'Audi': '#ff0000',
+            'Cadillac': '#1d1d1b',
+        };
+
+        async function loadPredictions() {
+            const container = document.getElementById('predictions-list');
+            const updatedEl = document.getElementById('predictions-updated');
+
+            try {
+                const resp = await fetch('predictions.json');
+                if (!resp.ok) throw new Error('Failed to load');
+                const data = await resp.json();
+
+                // Race status indicator
+                const races = data.races_completed || 0;
+                const total = data.total_races || 24;
+                const raceWeight = data.race_evidence_weight || 0;
+
+                let statusHtml = `<div class="race-status"><span class="pulse"></span>${races}/${total} races \u2014 prior ${Math.round((1-raceWeight)*100)}% / race data ${Math.round(raceWeight*100)}%</div>`;
+
+                // Show top 10 drivers, group rest as "Field"
+                const top = data.predictions.slice(0, 10);
+                const rest = data.predictions.slice(10);
+                const fieldProb = rest.reduce((s, d) => s + d.probability, 0);
+                const fieldPts = rest.reduce((s, d) => s + (d.points_2026 || 0), 0);
+                const maxProb = top[0].probability;
+
+                let html = statusHtml;
+                top.forEach((d, i) => {
+                    const rankClass = i === 0 ? 'top-1' : i === 1 ? 'top-2' : i === 2 ? 'top-3' : '';
+                    const barWidth = (d.probability / maxProb) * 85;
+                    const color = TEAM_COLORS[d.team] || '#94a3b8';
+                    const pts = d.points_2026 || 0;
+                    html += renderPredictionItem(d.rank, rankClass, d.driver, d.team, barWidth, d.probability, color, pts);
+                });
+
+                // Field row
+                const fieldBar = (fieldProb / maxProb) * 85;
+                html += renderPredictionItem('...', '', 'Field', `${rest.length} other drivers`, fieldBar, Math.round(fieldProb * 10) / 10, '#94a3b8', fieldPts);
+
+                container.innerHTML = html;
+                updatedEl.textContent = 'Updated ' + data.last_updated + ' \u2014 model v' + data.model_version;
+
+                // Observe new bars for scroll animation
+                const barObserver = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const w = entry.target.getAttribute('data-width');
+                            if (w) entry.target.style.width = w + '%';
+                        }
+                    });
+                }, { threshold: 0.1 });
+                container.querySelectorAll('.probability-bar-fill').forEach(bar => barObserver.observe(bar));
+
+            } catch (e) {
+                container.innerHTML = '<p style="color: var(--text-muted); font-size: 0.8125rem;">Could not load predictions.</p>';
+            }
+        }
+
+        function renderPredictionItem(rank, rankClass, driver, team, barWidth, prob, teamColor, pts) {
+            const ptsBadge = pts > 0
+                ? `<span class="points-badge has-points">${pts} pts</span>`
+                : '';
+            return `
+                <div class="prediction-item">
+                    <span class="prediction-rank ${rankClass}">${rank}</span>
+                    <div>
+                        <div class="prediction-info">
+                            <span class="driver-name"><span class="team-color-dot" style="background:${teamColor}"></span>${driver}${ptsBadge}</span>
+                            <div class="team-name">${team}</div>
+                        </div>
+                        <div class="prediction-bar-wrap">
+                            <div class="probability-bar-bg">
+                                <div class="probability-bar-fill" data-width="${barWidth.toFixed(1)}" style="background:${teamColor}"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="probability-value">${prob}%</span>
+                </div>`;
+        }
     </script>
 </body>
+</html>

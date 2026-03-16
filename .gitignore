@@ -9,3 +9,11 @@ Thumbs.db
 .vscode/
 .idea/
 *.swp
+
+# F1 prediction model (source only, output is predictions.json)
+f1_model/
+
+# Thesis and CV files (keep local only)
+main.tex
+CV.tex
+references.bib
