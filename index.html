@@ -858,6 +858,77 @@
             }
             .hero h1, .hero-tagline, .hero-location, .hero-links { opacity: 1; }
         }
+
+        /* ---- Easter Eggs (Hassium) ---- */
+        .hs-hold-ring {
+            position: fixed;
+            pointer-events: none;
+            z-index: 100;
+            width: 48px;
+            height: 48px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .hs-hold-ring.active { opacity: 1; }
+        .hs-hold-ring circle {
+            fill: none;
+            stroke: var(--accent);
+            stroke-width: 2.5;
+            stroke-linecap: round;
+        }
+        .hs-synthesis-flash {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: radial-gradient(circle, rgba(232,168,109,0.5) 0%, transparent 60%);
+            opacity: 0;
+            pointer-events: none;
+            z-index: 0;
+        }
+        .hs-decay-card {
+            position: fixed;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%) scale(0.85);
+            background: rgba(20, 16, 12, 0.94);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1.5px solid rgba(212, 131, 74, 0.3);
+            border-radius: 14px;
+            padding: 28px 40px;
+            z-index: 10000;
+            text-align: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.5s, transform 0.5s;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .hs-decay-card.visible {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+        .hs-decay-card .hs-number {
+            font-family: 'Fira Code', monospace;
+            font-size: 0.8rem;
+            color: var(--accent);
+            letter-spacing: 0.15em;
+        }
+        .hs-decay-card .hs-symbol {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #e8a86d;
+            line-height: 1.15;
+        }
+        .hs-decay-card .hs-name {
+            font-size: 1rem;
+            color: rgba(255,255,255,0.75);
+            margin-bottom: 10px;
+        }
+        .hs-decay-card .hs-detail {
+            font-family: 'Fira Code', monospace;
+            font-size: 0.65rem;
+            color: rgba(255,255,255,0.35);
+            line-height: 1.7;
+        }
     </style>
 </head>
 <body>
@@ -889,6 +960,7 @@
     <!-- Hero -->
     <section class="hero">
         <canvas id="hero-canvas" aria-hidden="true"></canvas>
+        <div class="hs-synthesis-flash" id="synthesis-flash"></div>
         <div class="hero-content">
             <h1>Håkon Julius Størholt</h1>
             <p class="hero-tagline">MSc Finance candidate with strong quantitative skills and hands-on experience in financial analysis, valuation, and portfolio management.</p>
@@ -1236,6 +1308,14 @@
         </div>
     </footer>
 
+    <!-- Easter egg: Hassium element card -->
+    <div class="hs-decay-card" id="hs-decay-card">
+        <div class="hs-number">108</div>
+        <div class="hs-symbol">Hs</div>
+        <div class="hs-name">Hassium</div>
+        <div class="hs-detail">[269] · t½ ≈ 16 s<br>You've witnessed radioactive decay</div>
+    </div>
+
     <script>
         // ---- Hero particle network (mouse-reactive) ----
         (function() {
@@ -1243,11 +1323,19 @@
             if (!canvas || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
             const ctx = canvas.getContext('2d');
             let w, h, particles, animId;
-            const COUNT = 60;
+            const COUNT = 108;
             const CONNECT_DIST = 140;
             const MOUSE_DIST = 180;
             const SPEED = 0.3;
             let mouse = { x: -9999, y: -9999 };
+
+            // Easter egg state
+            let spdClamp = 1.5, dampening = 0.99;
+            let easterEggActive = false;
+            let decayActive = false, decayStartTime = 0, decayParticles = [];
+            const DECAY_DURATION = 4500;
+            let synthActive = false, synthStartTime = 0, synthPhase = 0, synthTargets = [];
+            let synthLayout = {};
 
             canvas.parentElement.addEventListener('mousemove', function(e) {
                 const rect = canvas.getBoundingClientRect();
@@ -1347,11 +1435,11 @@
                         p.vy += (dy / dist) * force;
                     }
                     // Dampen velocity
-                    p.vx *= 0.99;
-                    p.vy *= 0.99;
+                    p.vx *= dampening;
+                    p.vy *= dampening;
                     // Clamp speed
                     const spd = Math.sqrt(p.vx * p.vx + p.vy * p.vy);
-                    if (spd > 1.5) { p.vx *= 1.5 / spd; p.vy *= 1.5 / spd; }
+                    if (spd > spdClamp) { p.vx *= spdClamp / spd; p.vy *= spdClamp / spd; }
                     // Ensure minimum speed
                     if (spd < 0.1) { p.vx += (Math.random() - 0.5) * 0.1; p.vy += (Math.random() - 0.5) * 0.1; }
 
@@ -1364,14 +1452,369 @@
                 }
             }
 
+            // ---- Easter Egg: Hassium ----
+            function getTextTargets(text, cx, cy, fontSize, maxCount) {
+                maxCount = maxCount || COUNT;
+                var off = document.createElement('canvas');
+                var octx = off.getContext('2d');
+                var cw = 300, ch = 150;
+                off.width = cw; off.height = ch;
+                octx.font = '700 ' + fontSize + 'px "Space Grotesk", sans-serif';
+                octx.fillStyle = '#fff';
+                octx.textAlign = 'center';
+                octx.textBaseline = 'middle';
+                octx.fillText(text, cw / 2, ch / 2);
+                var img = octx.getImageData(0, 0, cw, ch);
+                var pts = [], step;
+                for (step = 4; step >= 2; step--) {
+                    pts = [];
+                    for (var y = 0; y < ch; y += step) {
+                        for (var x = 0; x < cw; x += step) {
+                            if (img.data[(y * cw + x) * 4 + 3] > 128) {
+                                pts.push({ x: cx + (x - cw / 2), y: cy + (y - ch / 2) });
+                            }
+                        }
+                    }
+                    if (pts.length >= maxCount) break;
+                }
+                for (var i = pts.length - 1; i > 0; i--) {
+                    var j = Math.floor(Math.random() * (i + 1));
+                    var tmp = pts[i]; pts[i] = pts[j]; pts[j] = tmp;
+                }
+                return pts.slice(0, maxCount);
+            }
+
+            function triggerDecay() {
+                if (easterEggActive) return;
+                easterEggActive = true;
+                decayActive = true;
+                decayStartTime = performance.now();
+                spdClamp = 8;
+                dampening = 0.996;
+                var cx = w / 2, cy = h / 2;
+                decayParticles = [];
+                for (var i = 0; i < 100; i++) {
+                    var angle = Math.random() * Math.PI * 2;
+                    var speed = 2 + Math.random() * 5;
+                    decayParticles.push({
+                        x: cx + (Math.random() - 0.5) * 30,
+                        y: cy + (Math.random() - 0.5) * 30,
+                        vx: Math.cos(angle) * speed,
+                        vy: Math.sin(angle) * speed,
+                        r: Math.random() * 2 + 0.5,
+                        o: 0.5 + Math.random() * 0.5,
+                    });
+                }
+                for (var k = 0; k < particles.length; k++) {
+                    var dx = particles[k].x - cx, dy = particles[k].y - cy;
+                    var dist = Math.sqrt(dx * dx + dy * dy) || 1;
+                    particles[k].vx += (dx / dist) * (3 + Math.random() * 2);
+                    particles[k].vy += (dy / dist) * (3 + Math.random() * 2);
+                }
+                setTimeout(function() {
+                    var card = document.getElementById('hs-decay-card');
+                    if (card) card.classList.add('visible');
+                    setTimeout(function() { if (card) card.classList.remove('visible'); }, 3500);
+                }, 600);
+            }
+
+            function assignNearest(group, targets, prop) {
+                var avail = targets.slice();
+                for (var i = 0; i < group.length; i++) {
+                    var p = group[i];
+                    p[prop] = null;
+                    if (avail.length > 0) {
+                        var minD = Infinity, minI = 0;
+                        for (var j = 0; j < avail.length; j++) {
+                            var dx = p.x - avail[j].x, dy = p.y - avail[j].y;
+                            var d = dx * dx + dy * dy;
+                            if (d < minD) { minD = d; minI = j; }
+                        }
+                        p[prop] = avail.splice(minI, 1)[0];
+                    }
+                }
+            }
+
+            function triggerSynthesis() {
+                if (easterEggActive) return;
+                easterEggActive = true;
+                synthActive = true;
+                synthStartTime = performance.now();
+                synthPhase = 1;
+
+                var cx = w / 2, cy = h / 2;
+                var fontSize = Math.min(h * 0.45, w * 0.18, 120);
+                var smallFont = Math.min(h * 0.28, w * 0.09, 60);
+                var leftX = cx - w * 0.25;
+                var rightX = cx + w * 0.25;
+
+                synthLayout = { leftX: leftX, rightX: rightX, smallFont: smallFont, fontSize: fontSize };
+
+                // Save positions and split into groups
+                var leftGroup = [], rightGroup = [];
+                for (var i = 0; i < particles.length; i++) {
+                    var p = particles[i];
+                    p.origX = p.x; p.origY = p.y;
+                    p.origVx = p.vx; p.origVy = p.vy;
+                    p.feTarget = null; p.pbTarget = null; p.synthTarget = null;
+                    if (p.x < cx) leftGroup.push(p);
+                    else rightGroup.push(p);
+                }
+
+                // Generate all target sets
+                synthTargets = getTextTargets('Hs', cx, cy, fontSize, COUNT);
+                var feTargets = getTextTargets('Fe', leftX, cy, smallFont, leftGroup.length);
+                var pbTargets = getTextTargets('Pb', rightX, cy, smallFont, rightGroup.length);
+
+                assignNearest(leftGroup, feTargets, 'feTarget');
+                assignNearest(rightGroup, pbTargets, 'pbTarget');
+                assignNearest(particles, synthTargets, 'synthTarget');
+
+                var flash = document.getElementById('synthesis-flash');
+                if (flash) flash.style.opacity = '0';
+            }
+
+            function updateSynthesis() {
+                var elapsed = performance.now() - synthStartTime;
+                var cx = w / 2, cy = h / 2;
+                var i, p, t, ease;
+
+                if (elapsed < 1200) {
+                    // Phase 1: slowly converge to Fe/Pb text positions
+                    t = elapsed / 1200;
+                    ease = t * t * (3 - 2 * t);
+                    for (i = 0; i < particles.length; i++) {
+                        p = particles[i];
+                        var target = p.feTarget || p.pbTarget;
+                        if (target) {
+                            p.x = p.origX + (target.x - p.origX) * ease;
+                            p.y = p.origY + (target.y - p.origY) * ease;
+                        } else {
+                            var side = p.origX < cx ? -1 : 1;
+                            p.x = p.origX + (cx + side * w * 0.25 - p.origX) * ease;
+                            p.y = p.origY + (cy - p.origY) * ease * 0.3;
+                        }
+                    }
+                } else if (elapsed < 2400) {
+                    // Phase 2: hold Fe/Pb with gentle float
+                    for (i = 0; i < particles.length; i++) {
+                        p = particles[i];
+                        var target = p.feTarget || p.pbTarget;
+                        if (target) {
+                            var fx = Math.sin(elapsed * 0.002 + p.origX) * 1.5;
+                            var fy = Math.cos(elapsed * 0.0015 + p.origY) * 1.5;
+                            p.x += (target.x + fx - p.x) * 0.08;
+                            p.y += (target.y + fy - p.y) * 0.08;
+                        }
+                    }
+                } else if (elapsed < 3200) {
+                    // Phase 3: rush toward center / Hs targets
+                    t = (elapsed - 2400) / 800;
+                    ease = t * t;
+                    for (i = 0; i < particles.length; i++) {
+                        p = particles[i];
+                        var from = p.feTarget || p.pbTarget || { x: p.x, y: p.y };
+                        var to = p.synthTarget || { x: cx, y: cy };
+                        p.x = from.x + (to.x - from.x) * ease;
+                        p.y = from.y + (to.y - from.y) * ease;
+                    }
+                } else if (elapsed < 3500) {
+                    // Phase 4: impact flash + settle into Hs
+                    var flash = document.getElementById('synthesis-flash');
+                    var flashI = Math.max(0, 1 - (elapsed - 3200) / 300);
+                    if (flash) flash.style.opacity = String(flashI);
+                    for (i = 0; i < particles.length; i++) {
+                        p = particles[i];
+                        if (p.synthTarget) {
+                            p.x += (p.synthTarget.x - p.x) * 0.15;
+                            p.y += (p.synthTarget.y - p.y) * 0.15;
+                        }
+                    }
+                } else if (elapsed < 5500) {
+                    // Phase 5: hold "Hs" with gentle float
+                    for (i = 0; i < particles.length; i++) {
+                        p = particles[i];
+                        if (p.synthTarget) {
+                            var fx = Math.sin(elapsed * 0.002 + p.origX) * 1.5;
+                            var fy = Math.cos(elapsed * 0.0015 + p.origY) * 1.5;
+                            p.x += (p.synthTarget.x + fx - p.x) * 0.08;
+                            p.y += (p.synthTarget.y + fy - p.y) * 0.08;
+                        }
+                    }
+                } else if (elapsed < 6800) {
+                    // Phase 6: scatter to spread positions
+                    if (synthPhase !== 6) {
+                        synthPhase = 6;
+                        for (i = 0; i < particles.length; i++) {
+                            particles[i].scatterX = Math.random() * w;
+                            particles[i].scatterY = Math.random() * h;
+                        }
+                    }
+                    for (i = 0; i < particles.length; i++) {
+                        p = particles[i];
+                        p.x += (p.scatterX - p.x) * 0.04;
+                        p.y += (p.scatterY - p.y) * 0.04;
+                    }
+                } else {
+                    // Done
+                    synthActive = false;
+                    easterEggActive = false;
+                    for (i = 0; i < particles.length; i++) {
+                        particles[i].synthTarget = null;
+                        particles[i].feTarget = null;
+                        particles[i].pbTarget = null;
+                        particles[i].vx = (Math.random() - 0.5) * SPEED;
+                        particles[i].vy = (Math.random() - 0.5) * SPEED;
+                    }
+                    var fl = document.getElementById('synthesis-flash');
+                    if (fl) fl.style.opacity = '0';
+                }
+            }
+
+            function updateDecay() {
+                if (!decayActive) return;
+                var elapsed = performance.now() - decayStartTime;
+                var fadeStart = DECAY_DURATION * 0.5;
+                for (var i = decayParticles.length - 1; i >= 0; i--) {
+                    var dp = decayParticles[i];
+                    dp.vx *= 0.985;
+                    dp.vy *= 0.985;
+                    dp.x += dp.vx;
+                    dp.y += dp.vy;
+                    if (elapsed > fadeStart) {
+                        dp.o *= 0.97;
+                        if (dp.o < 0.01) { decayParticles.splice(i, 1); }
+                    }
+                }
+                if (elapsed > 800) {
+                    var t = Math.min((elapsed - 800) / 2500, 1);
+                    spdClamp = 1.5 + (8 - 1.5) * (1 - t);
+                    dampening = 0.99 + (0.996 - 0.99) * (1 - t);
+                }
+                if (elapsed >= DECAY_DURATION) {
+                    decayActive = false;
+                    decayParticles = [];
+                    spdClamp = 1.5;
+                    dampening = 0.99;
+                    easterEggActive = false;
+                }
+            }
+
+            function drawEasterEggOverlay() {
+                if (decayActive) {
+                    for (var i = 0; i < decayParticles.length; i++) {
+                        for (var j = i + 1; j < Math.min(decayParticles.length, i + 30); j++) {
+                            var dx = decayParticles[i].x - decayParticles[j].x;
+                            var dy = decayParticles[i].y - decayParticles[j].y;
+                            var dist = Math.sqrt(dx * dx + dy * dy);
+                            if (dist < 70) {
+                                var alpha = (1 - dist / 70) * 0.15 * Math.min(decayParticles[i].o, decayParticles[j].o);
+                                ctx.strokeStyle = 'rgba(232,168,109,' + alpha + ')';
+                                ctx.lineWidth = 0.5;
+                                ctx.beginPath();
+                                ctx.moveTo(decayParticles[i].x, decayParticles[i].y);
+                                ctx.lineTo(decayParticles[j].x, decayParticles[j].y);
+                                ctx.stroke();
+                            }
+                        }
+                    }
+                    for (var k = 0; k < decayParticles.length; k++) {
+                        var dp = decayParticles[k];
+                        ctx.beginPath();
+                        ctx.arc(dp.x, dp.y, dp.r, 0, Math.PI * 2);
+                        ctx.fillStyle = 'rgba(232,168,109,' + dp.o + ')';
+                        ctx.fill();
+                    }
+                }
+                if (synthActive) {
+                    var elapsed = performance.now() - synthStartTime;
+                    var lo = synthLayout;
+
+                    // Draw "Fe" and "Pb" text glow (phases 1-3)
+                    if (elapsed > 800 && elapsed < 3000) {
+                        var ta = elapsed < 1200 ? (elapsed - 800) / 400 :
+                                 elapsed > 2600 ? (3000 - elapsed) / 400 : 1;
+                        ctx.save();
+                        ctx.font = '700 ' + (lo.smallFont || 60) + 'px "Space Grotesk", sans-serif';
+                        ctx.textAlign = 'center';
+                        ctx.textBaseline = 'middle';
+                        // Outer glow pass
+                        ctx.shadowColor = 'rgba(232,168,109,' + (0.7 * ta) + ')';
+                        ctx.shadowBlur = 35;
+                        ctx.fillStyle = 'rgba(232,168,109,' + (0.35 * ta) + ')';
+                        ctx.fillText('Fe', lo.leftX || w * 0.25, h / 2);
+                        ctx.fillText('Pb', lo.rightX || w * 0.75, h / 2);
+                        // Second pass for sharper core
+                        ctx.shadowBlur = 8;
+                        ctx.fillStyle = 'rgba(255,225,190,' + (0.4 * ta) + ')';
+                        ctx.fillText('Fe', lo.leftX || w * 0.25, h / 2);
+                        ctx.fillText('Pb', lo.rightX || w * 0.75, h / 2);
+                        ctx.restore();
+                    }
+
+                    // Draw "Hs" text glow (phases 4-6)
+                    if (elapsed > 3300 && elapsed < 6000) {
+                        var tha = elapsed < 3700 ? (elapsed - 3300) / 400 :
+                                  elapsed > 5600 ? (6000 - elapsed) / 400 : 1;
+                        ctx.save();
+                        ctx.font = '700 ' + (lo.fontSize || 120) + 'px "Space Grotesk", sans-serif';
+                        ctx.textAlign = 'center';
+                        ctx.textBaseline = 'middle';
+                        // Outer glow pass
+                        ctx.shadowColor = 'rgba(232,168,109,' + (0.8 * tha) + ')';
+                        ctx.shadowBlur = 45;
+                        ctx.fillStyle = 'rgba(232,168,109,' + (0.4 * tha) + ')';
+                        ctx.fillText('Hs', w / 2, h / 2);
+                        // Second pass for sharper core
+                        ctx.shadowBlur = 10;
+                        ctx.fillStyle = 'rgba(255,225,190,' + (0.45 * tha) + ')';
+                        ctx.fillText('Hs', w / 2, h / 2);
+                        ctx.restore();
+                    }
+
+                    // Radial glow during Hs hold
+                    if (elapsed > 3200 && elapsed < 5500) {
+                        var intensity = elapsed < 3600 ? (elapsed - 3200) / 400 :
+                                        elapsed > 5100 ? (5500 - elapsed) / 400 : 1;
+                        var grad = ctx.createRadialGradient(w/2, h/2, 10, w/2, h/2, Math.min(w, h) * 0.35);
+                        grad.addColorStop(0, 'rgba(232,168,109,' + (0.07 * intensity) + ')');
+                        grad.addColorStop(1, 'rgba(232,168,109,0)');
+                        ctx.fillStyle = grad;
+                        ctx.fillRect(0, 0, w, h);
+                    }
+
+                    // Golden particle glow during Hs hold
+                    if (elapsed > 3400 && elapsed < 5800) {
+                        var gi = elapsed < 3800 ? (elapsed - 3400) / 400 :
+                                 elapsed > 5400 ? (5800 - elapsed) / 400 : 1;
+                        for (var m = 0; m < particles.length; m++) {
+                            if (particles[m].synthTarget) {
+                                ctx.beginPath();
+                                ctx.arc(particles[m].x, particles[m].y, particles[m].r * 2, 0, Math.PI * 2);
+                                ctx.fillStyle = 'rgba(232,168,109,' + (0.25 * gi) + ')';
+                                ctx.fill();
+                            }
+                        }
+                    }
+                }
+            }
+
             function loop() {
-                update();
+                if (synthActive) updateSynthesis();
+                else update();
+                updateDecay();
                 draw();
+                drawEasterEggOverlay();
                 animId = requestAnimationFrame(loop);
             }
 
             init();
             loop();
+
+            // Expose easter egg triggers
+            window._triggerDecay = triggerDecay;
+            window._triggerSynthesis = triggerSynthesis;
+            window._isEasterEggActive = function() { return easterEggActive; };
 
             let resizeTimer;
             window.addEventListener('resize', function() {
@@ -1470,6 +1913,77 @@
                 card.addEventListener('mouseleave', function() {
                     card.style.transform = '';
                 });
+            });
+
+            // ---- Easter egg: hold Hs logo 16s → decay ----
+            (function() {
+                var logo = document.querySelector('.logo');
+                var logoIcon = document.querySelector('.logo-icon');
+                if (!logo || !logoIcon) return;
+
+                var ring = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+                ring.classList.add('hs-hold-ring');
+                ring.setAttribute('viewBox', '0 0 48 48');
+                ring.innerHTML = '<circle cx="24" cy="24" r="21" stroke-dasharray="132" stroke-dashoffset="132" transform="rotate(-90 24 24)"/>';
+                document.body.appendChild(ring);
+
+                var circle = ring.querySelector('circle');
+                var CIRC = 2 * Math.PI * 21;
+                var holdStart = 0, holdAnimId = null, holdDelayId = null, holdWasActive = false;
+
+                function posRing() {
+                    var r = logoIcon.getBoundingClientRect();
+                    ring.style.left = (r.left + r.width / 2 - 24) + 'px';
+                    ring.style.top = (r.top + r.height / 2 - 24) + 'px';
+                }
+
+                function tickRing() {
+                    var progress = Math.min((performance.now() - holdStart) / 16000, 1);
+                    circle.setAttribute('stroke-dashoffset', String(CIRC * (1 - progress)));
+                    posRing();
+                    if (progress >= 1) {
+                        stopHold();
+                        if (window._triggerDecay) window._triggerDecay();
+                    } else {
+                        holdAnimId = requestAnimationFrame(tickRing);
+                    }
+                }
+
+                function startHold(e) {
+                    if (window._isEasterEggActive && window._isEasterEggActive()) return;
+                    holdWasActive = false;
+                    holdDelayId = setTimeout(function() {
+                        holdWasActive = true;
+                        holdStart = performance.now();
+                        ring.classList.add('active');
+                        posRing();
+                        tickRing();
+                    }, 300);
+                }
+
+                function stopHold() {
+                    if (holdDelayId) { clearTimeout(holdDelayId); holdDelayId = null; }
+                    if (holdAnimId) { cancelAnimationFrame(holdAnimId); holdAnimId = null; }
+                    ring.classList.remove('active');
+                    circle.setAttribute('stroke-dashoffset', String(CIRC));
+                }
+
+                logo.addEventListener('mousedown', startHold);
+                logo.addEventListener('mouseup', stopHold);
+                logo.addEventListener('mouseleave', stopHold);
+                logo.addEventListener('touchstart', startHold, { passive: true });
+                logo.addEventListener('touchend', stopHold);
+                logo.addEventListener('touchcancel', stopHold);
+                logo.addEventListener('click', function(e) {
+                    if (holdWasActive) { e.preventDefault(); holdWasActive = false; }
+                });
+            })();
+
+            // ---- Easter egg: double-click hero → synthesis ----
+            document.querySelector('.hero').addEventListener('dblclick', function(e) {
+                e.preventDefault();
+                if (window.getSelection) window.getSelection().removeAllRanges();
+                if (window._triggerSynthesis) window._triggerSynthesis();
             });
 
             // Load F1 predictions from JSON
