@@ -148,6 +148,16 @@
       "actual_winner": "Lando Norris",
       "verdict": "hit",
       "note": "McLaren long-run pace from FP1 plus quali gap."
+    },
+    {
+      "race_name": "Miami Grand Prix",
+      "round": 4,
+      "season": 2026,
+      "predicted_winner": "Lando Norris",
+      "predicted_prob": 38.2,
+      "actual_winner": "Kimi Antonelli",
+      "verdict": "miss",
+      "note": "Beautiful race from Kimi Antonelli, taking his third victory this season. Overweighted Norris."
     }
   ],
   "season": {
