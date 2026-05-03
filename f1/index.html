@@ -142,17 +142,24 @@
             loadPredictions();
         });
 
+        // Top-down F1 car silhouette, viewBox 64x28 (~2.3:1 like real F1 length:width).
+        // currentColor inherits the team color from .champ-car style.
         const F1_CAR_SVG = `
             <svg class="f1-car-svg" viewBox="0 0 64 28" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
-                <rect x="0" y="9" width="4" height="10" rx="0.5" fill="currentColor"/>
-                <rect x="4" y="0" width="11" height="6" rx="1" fill="#1a1a1a"/>
-                <rect x="4" y="22" width="11" height="6" rx="1" fill="#1a1a1a"/>
-                <path d="M4 7 L15 7 L15 5 L34 5 L42 9 L52 10 L52 18 L42 19 L34 23 L15 23 L15 21 L4 21 Z" fill="currentColor"/>
-                <ellipse cx="24" cy="14" rx="4" ry="2.6" fill="#0e0e0e" opacity="0.6"/>
-                <rect x="38" y="0" width="11" height="6" rx="1" fill="#1a1a1a"/>
-                <rect x="38" y="22" width="11" height="6" rx="1" fill="#1a1a1a"/>
-                <path d="M52 11 L58 12 L58 16 L52 17 Z" fill="currentColor"/>
-                <rect x="56" y="3" width="4" height="22" rx="0.5" fill="currentColor"/>
+                <rect x="0" y="3" width="3" height="22" rx="0.6" fill="currentColor"/>
+                <rect x="0.6" y="2" width="1.8" height="1" rx="0.3" fill="currentColor" opacity="0.7"/>
+                <rect x="0.6" y="25" width="1.8" height="1" rx="0.3" fill="currentColor" opacity="0.7"/>
+                <path d="M3 12 L14 13 L14 15 L3 16 Z" fill="currentColor"/>
+                <rect x="11" y="1" width="9" height="5" rx="1.4" fill="#1a1a1a"/>
+                <rect x="11" y="22" width="9" height="5" rx="1.4" fill="#1a1a1a"/>
+                <path d="M14 9 L42 8 L46 11 L46 17 L42 20 L14 19 Z" fill="currentColor"/>
+                <ellipse cx="25" cy="14" rx="3.8" ry="2.3" fill="#0e0e0e" opacity="0.55"/>
+                <path d="M22 12.4 Q25 10.6 28 12.4" stroke="#0e0e0e" stroke-width="0.5" fill="none" opacity="0.6"/>
+                <rect x="38" y="1" width="10" height="5" rx="1.4" fill="#1a1a1a"/>
+                <rect x="38" y="22" width="10" height="5" rx="1.4" fill="#1a1a1a"/>
+                <path d="M46 12 L58 13 L58 15 L46 16 Z" fill="currentColor"/>
+                <rect x="58" y="5" width="3" height="18" rx="0.5" fill="currentColor"/>
+                <rect x="61" y="4" width="1.5" height="20" rx="0.3" fill="currentColor" opacity="0.85"/>
             </svg>
         `;
 
