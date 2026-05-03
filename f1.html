@@ -103,9 +103,10 @@
     <section class="section" style="padding-top: 0;">
         <div class="container">
             <h2 class="section-title">Archive</h2>
-            <p class="section-subtitle">Past race predictions and outcomes</p>
+            <p class="section-subtitle" id="archive-subtitle">Past race predictions and outcomes</p>
+            <div class="signal-grid" id="archive-stats"></div>
             <div class="race-card animate-in" id="archive-card">
-                <p style="color: var(--text-muted); font-size: 0.8125rem;">Loading archive…</p>
+                <p style="color: var(--text-muted); font-size: 0.8125rem;">Loading archive...</p>
             </div>
         </div>
     </section>
@@ -271,7 +272,21 @@
 
                 // Archive
                 const arc = document.getElementById('archive-card');
+                const stats = document.getElementById('archive-stats');
                 if (data.archive && data.archive.length) {
+                    const evaluated = data.archive.filter(a => a.verdict === 'hit' || a.verdict === 'miss');
+                    const hits = evaluated.filter(a => a.verdict === 'hit').length;
+                    const total = evaluated.length;
+                    const pending = data.archive.length - total;
+                    const rate = total > 0 ? ((hits / total) * 100).toFixed(0) : 'n/a';
+
+                    stats.innerHTML = `
+                        <div class="signal-tile"><div class="label">Predictions evaluated</div><div class="value">${total}</div></div>
+                        <div class="signal-tile"><div class="label">Hits</div><div class="value">${hits}</div></div>
+                        <div class="signal-tile"><div class="label">Hit rate</div><div class="value">${rate}${total > 0 ? '%' : ''}</div></div>
+                        <div class="signal-tile"><div class="label">Pending</div><div class="value">${pending}</div></div>
+                    `;
+
                     arc.innerHTML = data.archive.map(a => {
                         const verdictClass = a.verdict === 'hit' ? 'hit' : a.verdict === 'miss' ? 'miss' : 'pending';
                         const actual = a.actual_winner ? `Actual: ${a.actual_winner}` : 'Not yet evaluated';
@@ -287,6 +302,7 @@
                         </div>`;
                     }).join('');
                 } else {
+                    stats.innerHTML = '';
                     arc.innerHTML = `<p style="color: var(--text-muted); font-size: 0.8125rem;">No archived races yet.</p>`;
                 }
 

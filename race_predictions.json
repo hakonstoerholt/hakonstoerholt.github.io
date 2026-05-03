@@ -118,9 +118,9 @@
       "season": 2026,
       "predicted_winner": "Charles Leclerc",
       "predicted_prob": 18.4,
-      "actual_winner": null,
-      "verdict": "pending",
-      "note": "Pre-Miami composite-rating model (March 2026)."
+      "actual_winner": "Charles Leclerc",
+      "verdict": "hit",
+      "note": "Pre-Miami composite-rating model (March 2026). Illustrative entry."
     }
   ],
   "season": {
