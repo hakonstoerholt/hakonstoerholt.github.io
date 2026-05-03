@@ -1,0 +1,51 @@
+{
+  "current_race": {
+    "race_name": "Miami Grand Prix",
+    "round": 4,
+    "season": 2026,
+    "circuit": "Miami International Autodrome",
+    "race_date_utc": "2026-05-03T17:00:00Z",
+    "weekend_format": "sprint_qualifying",
+    "weather": {
+      "air_temp_c": 34,
+      "track_temp_c": 51,
+      "humidity_pct": 29,
+      "rain": false,
+      "wind_ms": 3.8
+    },
+    "model_version": "race-pace-v1",
+    "data_sources": [
+      "FastF1 Sprint Qualifying / Sprint / Qualifying",
+      "30,000-sample Monte Carlo over race-trim pace + grid penalty"
+    ],
+    "winner_probabilities": [
+      { "driver": "Lando Norris",      "team": "McLaren",         "team_color": "#FF8000", "grid": 4, "quali_gap_s": 0.385, "race_pace_s": 92.104, "win_prob": 38.2, "podium_prob": 79.7 },
+      { "driver": "Kimi Antonelli",    "team": "Mercedes",        "team_color": "#27F4D2", "grid": 1, "quali_gap_s": 0.000, "race_pace_s": 92.392, "win_prob": 22.1, "podium_prob": 54.2 },
+      { "driver": "Charles Leclerc",   "team": "Ferrari",         "team_color": "#E80020", "grid": 3, "quali_gap_s": 0.345, "race_pace_s": 92.298, "win_prob": 18.7, "podium_prob": 59.6 },
+      { "driver": "Max Verstappen",    "team": "Red Bull Racing", "team_color": "#3671C6", "grid": 2, "quali_gap_s": 0.166, "race_pace_s": 92.432, "win_prob": 13.1, "podium_prob": 44.8 },
+      { "driver": "Oscar Piastri",     "team": "McLaren",         "team_color": "#FF8000", "grid": 7, "quali_gap_s": 0.702, "race_pace_s": 92.319, "win_prob":  4.7, "podium_prob": 35.2 },
+      { "driver": "George Russell",    "team": "Mercedes",        "team_color": "#27F4D2", "grid": 5, "quali_gap_s": 0.399, "race_pace_s": 92.555, "win_prob":  1.7, "podium_prob": 17.7 },
+      { "driver": "Lewis Hamilton",    "team": "Ferrari",         "team_color": "#E80020", "grid": 6, "quali_gap_s": 0.521, "race_pace_s": 92.786, "win_prob":  1.4, "podium_prob":  8.5 }
+    ],
+    "key_signals": [
+      { "label": "Sprint winner",       "value": "Norris" },
+      { "label": "Fastest race-trim",   "value": "Norris (-0.19s vs LEC)" },
+      { "label": "Pole",                "value": "Antonelli (1:27.798)" },
+      { "label": "Track temp",          "value": "51°C — high deg" }
+    ],
+    "verdict": "Norris is the model pick. He won yesterday's Sprint and has the fastest race-trim pace by ~0.2 s/lap over Leclerc. Starting P4 is a real but manageable handicap — even under aggressive overtaking-difficulty assumptions (tested 0–2.5 s/grid-spot) he stays the favourite at 33–40%. Antonelli has track position but his Sprint pace dropped him to 4th-fastest under heat. Hedge: Leclerc for podium.",
+    "methodology": "We pull all FP/Sprint/Qualifying data via FastF1, estimate clean-air race-trim pace from yesterday's Sprint (best 60% of laps, no in/out/SC), then run 30,000 Monte Carlo race simulations. Each driver's per-lap time is sampled around their measured pace with observed variance plus a race-noise term. Track position is modelled as a per-grid-spot time penalty plus a dirty-air cost when faster cars sit behind slower ones (Miami is a hard-to-overtake circuit). Team-tier DNF rates are applied. Win probability = share of simulations won."
+  },
+  "archive": [
+    {
+      "race_name": "Saudi Arabian Grand Prix",
+      "round": 2,
+      "season": 2026,
+      "predicted_winner": "Charles Leclerc",
+      "predicted_prob": 18.4,
+      "actual_winner": null,
+      "verdict": "pending",
+      "note": "Pre-Miami composite-rating model (March 2026)."
+    }
+  ]
+}

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Race Predictions — Håkon J. Størholt</title>
+    <meta name="description" content="Telemetry-driven Formula 1 race winner predictions using FastF1 data and Monte Carlo simulation.">
+    <meta name="author" content="Håkon Julius Størholt">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hakonstoerholt.github.io/f1.html">
+    <meta property="og:title" content="F1 Race Predictions — Håkon J. Størholt">
+    <meta property="og:description" content="Telemetry-driven Formula 1 race winner predictions using FastF1 + Monte Carlo.">
+
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo"><img src="images/hjs-symbol.svg" alt="" class="logo-icon"><span class="logo-text">Håkon J. Størholt</span></a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html#education" class="nav-link">Education</a></li>
+                    <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+                    <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+                    <li><a href="index.html#experience" class="nav-link">Experience</a></li>
+                    <li><a href="f1.html" class="nav-link active">F1</a></li>
+                </ul>
+            </nav>
+            <div class="nav-controls">
+                <button class="nav-btn" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode"><i class="fas fa-moon"></i></button>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="f1-hero-mini">
+        <div class="hero-content">
+            <h1 id="hero-title">F1 Race Winner Predictions</h1>
+            <p class="subtitle" id="hero-subtitle">Telemetry-driven Monte Carlo on this weekend's race</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title" id="race-title">Loading…</h2>
+            <p class="section-subtitle" id="race-subtitle">&nbsp;</p>
+
+            <div class="signal-grid" id="signal-grid"></div>
+
+            <div class="race-grid-2">
+                <div class="race-card animate-in">
+                    <div class="race-status"><span class="pulse"></span><span id="race-badge">Race weekend</span></div>
+                    <h3>Win probability</h3>
+                    <div class="sub" id="win-sub">Monte Carlo distribution of race winners</div>
+                    <div id="win-list">
+                        <p style="color: var(--text-muted); font-size: 0.8125rem;">Loading…</p>
+                    </div>
+                    <div class="last-updated" id="last-updated"></div>
+                </div>
+
+                <div class="methodology-box animate-in">
+                    <h3>How we got here</h3>
+                    <p id="verdict-text">Loading…</p>
+                    <ul class="factor-list" id="factor-list"></ul>
+                    <p id="method-text" style="margin-top: 0.5rem;"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <h2 class="section-title">Visual</h2>
+            <p class="section-subtitle">Win probability distribution</p>
+            <div class="race-card animate-in" style="text-align: center;">
+                <img src="images/miami_2026_winprob.png" alt="Miami GP 2026 win probability chart" style="max-width: 100%; height: auto; border-radius: 6px;">
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <h2 class="section-title">Archive</h2>
+            <p class="section-subtitle">Past race predictions and outcomes</p>
+            <div class="race-card animate-in" id="archive-card">
+                <p style="color: var(--text-muted); font-size: 0.8125rem;">Loading archive…</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="https://github.com/hakonstoerholt" class="footer-link" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/hakonstoerholt" class="footer-link" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:hakonstoerholt@gmail.com" class="footer-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>&copy; 2026 Håkon Julius Størholt</p>
+        </div>
+    </footer>
+
+    <script>
+        // Theme toggle (shared with index.html via localStorage key)
+        function applyTheme(theme) {
+            document.documentElement.setAttribute('data-theme', theme);
+            localStorage.setItem('hjs-theme', theme);
+            const btn = document.getElementById('theme-toggle');
+            if (btn) btn.innerHTML = theme === 'dark' ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedTheme = localStorage.getItem('hjs-theme') ||
+                (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            applyTheme(savedTheme);
+
+            document.getElementById('theme-toggle').addEventListener('click', function() {
+                applyTheme(document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+            });
+
+            const toggle = document.querySelector('.mobile-menu-toggle');
+            const menu = document.querySelector('.nav-menu');
+            if (toggle) toggle.addEventListener('click', () => menu.classList.toggle('active'));
+
+            // Scroll progress
+            const progress = document.getElementById('scroll-progress');
+            window.addEventListener('scroll', () => {
+                const h = document.documentElement;
+                const pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+                progress.style.width = pct + '%';
+            });
+
+            // Animate-in observer
+            const obs = new IntersectionObserver(es => {
+                es.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+            }, { threshold: 0.1 });
+            document.querySelectorAll('.animate-in').forEach(el => obs.observe(el));
+
+            loadPredictions();
+        });
+
+        async function loadPredictions() {
+            try {
+                const r = await fetch('race_predictions.json?v=' + Date.now());
+                const data = await r.json();
+                const cur = data.current_race;
+
+                document.getElementById('hero-title').textContent = `${cur.race_name} ${cur.season}`;
+                document.getElementById('hero-subtitle').textContent =
+                    `Round ${cur.round} • ${cur.circuit}`;
+                document.getElementById('race-title').textContent = `Winner Probabilities — ${cur.race_name}`;
+                document.getElementById('race-subtitle').textContent =
+                    `${new Date(cur.race_date_utc).toLocaleString(undefined, {weekday:'long', month:'long', day:'numeric', hour:'2-digit', minute:'2-digit', timeZoneName:'short'})}`;
+                document.getElementById('race-badge').textContent =
+                    `Round ${cur.round} · ${cur.season} season`;
+                document.getElementById('verdict-text').textContent = cur.verdict;
+                document.getElementById('method-text').textContent = cur.methodology;
+
+                // Signals
+                const sg = document.getElementById('signal-grid');
+                sg.innerHTML = cur.key_signals.map(s =>
+                    `<div class="signal-tile"><div class="label">${s.label}</div><div class="value">${s.value}</div></div>`
+                ).join('');
+
+                // Factor list
+                const fl = document.getElementById('factor-list');
+                fl.innerHTML = [
+                    `<li><strong>Sprint pace</strong> — clean-laps mean from yesterday's Sprint, best-60% filter</li>`,
+                    `<li><strong>Grid position</strong> — Sunday qualifying with track-position penalty</li>`,
+                    `<li><strong>Per-lap noise</strong> — sampled around observed driver variance</li>`,
+                    `<li><strong>Dirty-air cost</strong> — extra time when faster cars sit behind slower ones</li>`,
+                    `<li><strong>DNF rates</strong> — team-tier reliability priors</li>`,
+                ].join('');
+
+                // Win probability list
+                const list = document.getElementById('win-list');
+                const max = Math.max(...cur.winner_probabilities.map(p => p.win_prob));
+                list.innerHTML = cur.winner_probabilities.map((p, i) => {
+                    const widthPct = (p.win_prob / max) * 100;
+                    return `
+                    <div class="win-row">
+                      <div class="pos">${i + 1}</div>
+                      <div class="who">
+                        <div class="name"><span class="team-color-dot" style="background:${p.team_color}"></span>${p.driver}</div>
+                        <div class="team">${p.team} · Grid P${p.grid} · pace ${p.race_pace_s.toFixed(2)}s</div>
+                      </div>
+                      <div class="barwrap">
+                        <div class="bg"><div class="fill" style="background:${p.team_color};"></div></div>
+                        <div class="pct">${p.win_prob.toFixed(1)}%</div>
+                      </div>
+                    </div>`;
+                }).join('');
+
+                // Animate bars in after paint
+                requestAnimationFrame(() => {
+                    document.querySelectorAll('.win-row .fill').forEach((el, i) => {
+                        el.style.width = ((cur.winner_probabilities[i].win_prob / max) * 100) + '%';
+                    });
+                });
+
+                document.getElementById('last-updated').textContent =
+                    `Sources: ${cur.data_sources.join(' · ')}`;
+                document.getElementById('win-sub').textContent =
+                    `Track ${cur.weather.track_temp_c}°C · Air ${cur.weather.air_temp_c}°C · ${cur.weather.rain ? 'Rain expected' : 'Dry'}`;
+
+                // Archive
+                const arc = document.getElementById('archive-card');
+                if (data.archive && data.archive.length) {
+                    arc.innerHTML = data.archive.map(a => {
+                        const verdictClass = a.verdict === 'hit' ? 'hit' : a.verdict === 'miss' ? 'miss' : 'pending';
+                        const actual = a.actual_winner ? `Actual: ${a.actual_winner}` : 'Not yet evaluated';
+                        return `
+                        <div class="archive-row">
+                          <div>
+                            <div class="race-name">${a.race_name}</div>
+                            <div class="meta">Round ${a.round} · ${a.season} · ${a.note || ''}</div>
+                          </div>
+                          <div class="meta">Pred: <strong>${a.predicted_winner}</strong> @ ${a.predicted_prob}%</div>
+                          <div class="meta">${actual}</div>
+                          <div class="verdict ${verdictClass}">${a.verdict}</div>
+                        </div>`;
+                    }).join('');
+                } else {
+                    arc.innerHTML = `<p style="color: var(--text-muted); font-size: 0.8125rem;">No archived races yet.</p>`;
+                }
+
+            } catch (err) {
+                console.error(err);
+                document.getElementById('win-list').innerHTML =
+                    `<p style="color: var(--text-muted); font-size: 0.8125rem;">Could not load predictions: ${err.message}</p>`;
+            }
+        }
+    </script>
+</body>
+</html>
