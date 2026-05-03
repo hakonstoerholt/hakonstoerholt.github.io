@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F1 Race Predictions — Håkon J. Størholt</title>
+    <title>F1 Race Predictions | Håkon J. Størholt</title>
     <meta name="description" content="Telemetry-driven Formula 1 race winner predictions using FastF1 data and Monte Carlo simulation.">
     <meta name="author" content="Håkon Julius Størholt">
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://hakonstoerholt.github.io/f1.html">
-    <meta property="og:title" content="F1 Race Predictions — Håkon J. Størholt">
+    <meta property="og:title" content="F1 Race Predictions | Håkon J. Størholt">
     <meta property="og:description" content="Telemetry-driven Formula 1 race winner predictions using FastF1 + Monte Carlo.">
 
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
@@ -73,6 +73,19 @@
                     <ul class="factor-list" id="factor-list"></ul>
                     <p id="method-text" style="margin-top: 0.5rem;"></p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <h2 class="section-title">Drivers' Championship</h2>
+            <p class="section-subtitle" id="champ-subtitle">Loading season outlook...</p>
+            <div class="race-card animate-in">
+                <div id="champ-list">
+                    <p style="color: var(--text-muted); font-size: 0.8125rem;">Loading...</p>
+                </div>
+                <div class="last-updated" id="champ-meta"></div>
             </div>
         </div>
     </section>
@@ -156,7 +169,7 @@
                 document.getElementById('hero-title').textContent = `${cur.race_name} ${cur.season}`;
                 document.getElementById('hero-subtitle').textContent =
                     `Round ${cur.round} • ${cur.circuit}`;
-                document.getElementById('race-title').textContent = `Winner Probabilities — ${cur.race_name}`;
+                document.getElementById('race-title').textContent = `Winner Probabilities · ${cur.race_name}`;
                 document.getElementById('race-subtitle').textContent =
                     `${new Date(cur.race_date_utc).toLocaleString(undefined, {weekday:'long', month:'long', day:'numeric', hour:'2-digit', minute:'2-digit', timeZoneName:'short'})}`;
                 document.getElementById('race-badge').textContent =
@@ -173,11 +186,11 @@
                 // Factor list
                 const fl = document.getElementById('factor-list');
                 fl.innerHTML = [
-                    `<li><strong>Sprint pace</strong> — clean-laps mean from yesterday's Sprint, best-60% filter</li>`,
-                    `<li><strong>Grid position</strong> — Sunday qualifying with track-position penalty</li>`,
-                    `<li><strong>Per-lap noise</strong> — sampled around observed driver variance</li>`,
-                    `<li><strong>Dirty-air cost</strong> — extra time when faster cars sit behind slower ones</li>`,
-                    `<li><strong>DNF rates</strong> — team-tier reliability priors</li>`,
+                    `<li><strong>Sprint pace.</strong> Clean-laps mean from yesterday's Sprint, best-60% filter.</li>`,
+                    `<li><strong>Grid position.</strong> Sunday qualifying with track-position penalty.</li>`,
+                    `<li><strong>Per-lap noise.</strong> Sampled around observed driver variance.</li>`,
+                    `<li><strong>Dirty-air cost.</strong> Extra time when faster cars sit behind slower ones.</li>`,
+                    `<li><strong>DNF rates.</strong> Team-tier reliability priors.</li>`,
                 ].join('');
 
                 // Win probability list
@@ -208,6 +221,51 @@
 
                 document.getElementById('last-updated').textContent =
                     `Sources: ${cur.data_sources.join(' · ')}`;
+
+                // Championship section
+                if (data.season) {
+                    const sn = data.season;
+                    document.getElementById('champ-subtitle').textContent =
+                        `${sn.races_completed} of ${sn.races_completed + sn.remaining_races} races completed · updated ${sn.last_updated}`;
+                    const top = sn.predictions.slice(0, 10);
+                    const rest = sn.predictions.slice(10);
+                    const restProb = rest.reduce((s, p) => s + p.champ_prob_pct, 0);
+                    const restPts = rest.reduce((s, p) => s + p.points_now, 0);
+                    const maxProb = Math.max(top[0].champ_prob_pct, 1);
+
+                    const renderChampRow = (rank, name, team, color, pts, mean, prob) => {
+                        const pct = (prob / maxProb) * 100;
+                        return `
+                        <div class="win-row">
+                          <div class="pos">${rank}</div>
+                          <div class="who">
+                            <div class="name"><span class="team-color-dot" style="background:${color}"></span>${name}</div>
+                            <div class="team">${team} · ${pts} pts now · ${mean} projected</div>
+                          </div>
+                          <div class="barwrap">
+                            <div class="bg"><div class="fill" data-target="${pct}" style="background:${color};"></div></div>
+                            <div class="pct">${prob.toFixed(prob < 1 ? 2 : 1)}%</div>
+                          </div>
+                        </div>`;
+                    };
+
+                    let html = top.map((p, i) => renderChampRow(
+                        i + 1, p.driver, p.team, p.team_color, p.points_now, p.mean_final, p.champ_prob_pct
+                    )).join('');
+                    if (rest.length) {
+                        html += renderChampRow('...', `Field (${rest.length} drivers)`, 'Combined', '#94a3b8', restPts, '', restProb);
+                    }
+                    document.getElementById('champ-list').innerHTML = html;
+                    document.getElementById('champ-meta').textContent =
+                        `Model: ${sn.model}`;
+
+                    requestAnimationFrame(() => {
+                        document.querySelectorAll('#champ-list .fill').forEach(el => {
+                            el.style.width = el.getAttribute('data-target') + '%';
+                        });
+                    });
+                }
+
                 document.getElementById('win-sub').textContent =
                     `Track ${cur.weather.track_temp_c}°C · Air ${cur.weather.air_temp_c}°C · ${cur.weather.rain ? 'Rain expected' : 'Dry'}`;
 
