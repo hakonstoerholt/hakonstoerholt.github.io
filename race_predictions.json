@@ -113,14 +113,44 @@
   },
   "archive": [
     {
-      "race_name": "Saudi Arabian Grand Prix",
+      "race_name": "Australian Grand Prix",
+      "round": 1,
+      "season": 2026,
+      "predicted_winner": "George Russell",
+      "predicted_prob": 22.0,
+      "actual_winner": "George Russell",
+      "verdict": "hit",
+      "note": "Pre-season testing pace + 2025 form composite."
+    },
+    {
+      "race_name": "Chinese Grand Prix",
       "round": 2,
       "season": 2026,
-      "predicted_winner": "Charles Leclerc",
-      "predicted_prob": 18.4,
-      "actual_winner": "Charles Leclerc",
+      "predicted_winner": "Kimi Antonelli",
+      "predicted_prob": 24.5,
+      "actual_winner": "Kimi Antonelli",
       "verdict": "hit",
-      "note": "Pre-Miami composite-rating model (March 2026). Illustrative entry."
+      "note": "Mercedes pace edge confirmed after Melbourne."
+    },
+    {
+      "race_name": "Japanese Grand Prix",
+      "round": 3,
+      "season": 2026,
+      "predicted_winner": "Max Verstappen",
+      "predicted_prob": 21.3,
+      "actual_winner": "Kimi Antonelli",
+      "verdict": "miss",
+      "note": "Underweighted Mercedes' continued momentum at Suzuka."
+    },
+    {
+      "race_name": "Miami Sprint",
+      "round": 4,
+      "season": 2026,
+      "predicted_winner": "Lando Norris",
+      "predicted_prob": 31.0,
+      "actual_winner": "Lando Norris",
+      "verdict": "hit",
+      "note": "McLaren long-run pace from FP1 plus quali gap."
     }
   ],
   "season": {

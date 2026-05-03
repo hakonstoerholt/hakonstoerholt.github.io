@@ -92,10 +92,10 @@
 
     <section class="section" style="padding-top: 0;">
         <div class="container">
-            <h2 class="section-title">Visual</h2>
-            <p class="section-subtitle">Win probability distribution</p>
-            <div class="race-card animate-in" style="text-align: center;">
-                <img src="images/miami_2026_winprob.png" alt="Miami GP 2026 win probability chart" style="max-width: 100%; height: auto; border-radius: 6px;">
+            <h2 class="section-title">Win vs Podium</h2>
+            <p class="section-subtitle">Win probability (solid) and podium probability (faded) per driver</p>
+            <div class="race-card animate-in">
+                <div id="chart-host"></div>
             </div>
         </div>
     </section>
@@ -161,6 +161,63 @@
             loadPredictions();
         });
 
+        function renderWinPodiumChart(rows) {
+            const host = document.getElementById('chart-host');
+            if (!host) return;
+            const data = rows.slice(0, 8);
+            const rowH = 44, padTop = 36, padBottom = 30, padLeft = 165, padRight = 70;
+            const W = 720;
+            const H = padTop + padBottom + data.length * rowH;
+            const barAreaW = W - padLeft - padRight;
+            const xMax = 100;
+            const ticks = [0, 25, 50, 75, 100];
+            const x = v => padLeft + (v / xMax) * barAreaW;
+
+            const tickLines = ticks.map(t => `
+                <line class="axis-line" x1="${x(t)}" x2="${x(t)}" y1="${padTop - 6}" y2="${padTop + data.length * rowH - 6}"/>
+                <text class="axis-tick" x="${x(t)}" y="${padTop + data.length * rowH + 16}" text-anchor="middle">${t}%</text>
+            `).join('');
+
+            const rowsSvg = data.map((d, i) => {
+                const yMid = padTop + i * rowH + rowH / 2;
+                const barH = 14;
+                const podW = (d.podium_prob / xMax) * barAreaW;
+                const winW = (d.win_prob / xMax) * barAreaW;
+                return `
+                <g transform="translate(0, ${yMid})">
+                    <text class="row-label" x="${padLeft - 12}" y="-4" text-anchor="end">${d.driver}</text>
+                    <text class="row-team" x="${padLeft - 12}" y="9" text-anchor="end">${d.team} · P${d.grid}</text>
+                    <rect class="bar-podium" x="${padLeft}" y="${-barH/2}" width="0" data-target="${podW}" height="${barH}" rx="3" ry="3" fill="${d.team_color}"/>
+                    <rect class="bar-win"    x="${padLeft}" y="${-barH/2}" width="0" data-target="${winW}" height="${barH}" rx="3" ry="3" fill="${d.team_color}"/>
+                    <text class="pct-label" x="${padLeft + Math.max(podW, winW) + 8}" y="4">${d.win_prob.toFixed(1)}%</text>
+                </g>`;
+            }).join('');
+
+            const legend = `
+                <g transform="translate(${padLeft}, ${padTop - 22})">
+                    <rect width="14" height="10" rx="2" ry="2" style="fill: var(--accent);"/>
+                    <text class="legend-text" x="20" y="9">Win probability</text>
+                    <rect x="120" width="14" height="10" rx="2" ry="2" style="fill: var(--accent); opacity: 0.28;"/>
+                    <text class="legend-text" x="140" y="9">Podium probability</text>
+                </g>
+            `;
+
+            host.innerHTML = `
+                <svg class="winprob-chart" viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Win and podium probabilities">
+                    ${tickLines}
+                    ${legend}
+                    ${rowsSvg}
+                </svg>
+            `;
+
+            // Animate bars in
+            requestAnimationFrame(() => {
+                host.querySelectorAll('rect.bar-podium, rect.bar-win').forEach(r => {
+                    r.setAttribute('width', r.getAttribute('data-target'));
+                });
+            });
+        }
+
         async function loadPredictions() {
             try {
                 const r = await fetch('race_predictions.json?v=' + Date.now());
@@ -222,6 +279,9 @@
 
                 document.getElementById('last-updated').textContent =
                     `Sources: ${cur.data_sources.join(' · ')}`;
+
+                // Inline SVG win/podium chart
+                renderWinPodiumChart(cur.winner_probabilities);
 
                 // Championship section
                 if (data.season) {

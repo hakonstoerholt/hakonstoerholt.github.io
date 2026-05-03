@@ -1065,3 +1065,45 @@ h1, h2, h3, h4, h5, h6 {
 .archive-row .verdict.hit { background: rgba(16,185,129,0.15); color: #059669; }
 .archive-row .verdict.miss { background: rgba(220,38,38,0.12); color: #b91c1c; }
 .archive-row .verdict.pending { background: var(--accent-light); color: var(--accent); }
+
+/* ---- Inline SVG win/podium chart ---- */
+.winprob-chart {
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+}
+.winprob-chart .row-label {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    fill: var(--text-primary);
+}
+.winprob-chart .row-team {
+    font-size: 0.6875rem;
+    fill: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+.winprob-chart .axis-tick {
+    font-size: 0.6875rem;
+    fill: var(--text-muted);
+}
+.winprob-chart .axis-line {
+    stroke: var(--border);
+    stroke-width: 1;
+    stroke-dasharray: 2 3;
+}
+.winprob-chart .bar-podium {
+    opacity: 0.28;
+    transition: width 1.1s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+.winprob-chart .bar-win {
+    transition: width 1s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+.winprob-chart .pct-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    fill: var(--text-primary);
+}
+.winprob-chart .legend-text {
+    font-size: 0.75rem;
+    fill: var(--text-secondary);
+}
