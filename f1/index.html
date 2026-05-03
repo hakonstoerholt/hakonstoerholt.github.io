@@ -56,23 +56,14 @@
 
             <div class="signal-grid" id="signal-grid"></div>
 
-            <div class="race-grid-2">
-                <div class="race-card animate-in">
-                    <div class="race-status"><span class="pulse"></span><span id="race-badge">Race weekend</span></div>
-                    <h3>Win probability</h3>
-                    <div class="sub" id="win-sub">Monte Carlo distribution of race winners</div>
-                    <div id="win-list">
-                        <p style="color: var(--text-muted); font-size: 0.8125rem;">Loading…</p>
-                    </div>
-                    <div class="last-updated" id="last-updated"></div>
+            <div class="race-card animate-in">
+                <div class="race-status"><span class="pulse"></span><span id="race-badge">Race weekend</span></div>
+                <h3>Win probability</h3>
+                <div class="sub" id="win-sub">Monte Carlo distribution of race winners</div>
+                <div id="win-list">
+                    <p style="color: var(--text-muted); font-size: 0.8125rem;">Loading...</p>
                 </div>
-
-                <div class="methodology-box animate-in">
-                    <h3>How we got here</h3>
-                    <p id="verdict-text">Loading…</p>
-                    <ul class="factor-list" id="factor-list"></ul>
-                    <p id="method-text" style="margin-top: 0.5rem;"></p>
-                </div>
+                <div class="last-updated" id="last-updated"></div>
             </div>
         </div>
     </section>
@@ -151,62 +142,19 @@
             loadPredictions();
         });
 
-        function renderWinPodiumChart(rows) {
-            const host = document.getElementById('chart-host');
-            if (!host) return;
-            const data = rows.slice(0, 8);
-            const rowH = 44, padTop = 36, padBottom = 30, padLeft = 165, padRight = 70;
-            const W = 720;
-            const H = padTop + padBottom + data.length * rowH;
-            const barAreaW = W - padLeft - padRight;
-            const xMax = 100;
-            const ticks = [0, 25, 50, 75, 100];
-            const x = v => padLeft + (v / xMax) * barAreaW;
-
-            const tickLines = ticks.map(t => `
-                <line class="axis-line" x1="${x(t)}" x2="${x(t)}" y1="${padTop - 6}" y2="${padTop + data.length * rowH - 6}"/>
-                <text class="axis-tick" x="${x(t)}" y="${padTop + data.length * rowH + 16}" text-anchor="middle">${t}%</text>
-            `).join('');
-
-            const rowsSvg = data.map((d, i) => {
-                const yMid = padTop + i * rowH + rowH / 2;
-                const barH = 14;
-                const podW = (d.podium_prob / xMax) * barAreaW;
-                const winW = (d.win_prob / xMax) * barAreaW;
-                return `
-                <g transform="translate(0, ${yMid})">
-                    <text class="row-label" x="${padLeft - 12}" y="-4" text-anchor="end">${d.driver}</text>
-                    <text class="row-team" x="${padLeft - 12}" y="9" text-anchor="end">${d.team} · P${d.grid}</text>
-                    <rect class="bar-podium" x="${padLeft}" y="${-barH/2}" width="0" data-target="${podW}" height="${barH}" rx="3" ry="3" fill="${d.team_color}"/>
-                    <rect class="bar-win"    x="${padLeft}" y="${-barH/2}" width="0" data-target="${winW}" height="${barH}" rx="3" ry="3" fill="${d.team_color}"/>
-                    <text class="pct-label" x="${padLeft + Math.max(podW, winW) + 8}" y="4">${d.win_prob.toFixed(1)}%</text>
-                </g>`;
-            }).join('');
-
-            const legend = `
-                <g transform="translate(${padLeft}, ${padTop - 22})">
-                    <rect width="14" height="10" rx="2" ry="2" style="fill: var(--accent);"/>
-                    <text class="legend-text" x="20" y="9">Win probability</text>
-                    <rect x="120" width="14" height="10" rx="2" ry="2" style="fill: var(--accent); opacity: 0.28;"/>
-                    <text class="legend-text" x="140" y="9">Podium probability</text>
-                </g>
-            `;
-
-            host.innerHTML = `
-                <svg class="winprob-chart" viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Win and podium probabilities">
-                    ${tickLines}
-                    ${legend}
-                    ${rowsSvg}
-                </svg>
-            `;
-
-            // Animate bars in
-            requestAnimationFrame(() => {
-                host.querySelectorAll('rect.bar-podium, rect.bar-win').forEach(r => {
-                    r.setAttribute('width', r.getAttribute('data-target'));
-                });
-            });
-        }
+        const F1_CAR_SVG = `
+            <svg class="f1-car-svg" viewBox="0 0 64 28" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+                <rect x="0" y="9" width="4" height="10" rx="0.5" fill="currentColor"/>
+                <rect x="4" y="0" width="11" height="6" rx="1" fill="#1a1a1a"/>
+                <rect x="4" y="22" width="11" height="6" rx="1" fill="#1a1a1a"/>
+                <path d="M4 7 L15 7 L15 5 L34 5 L42 9 L52 10 L52 18 L42 19 L34 23 L15 23 L15 21 L4 21 Z" fill="currentColor"/>
+                <ellipse cx="24" cy="14" rx="4" ry="2.6" fill="#0e0e0e" opacity="0.6"/>
+                <rect x="38" y="0" width="11" height="6" rx="1" fill="#1a1a1a"/>
+                <rect x="38" y="22" width="11" height="6" rx="1" fill="#1a1a1a"/>
+                <path d="M52 11 L58 12 L58 16 L52 17 Z" fill="currentColor"/>
+                <rect x="56" y="3" width="4" height="22" rx="0.5" fill="currentColor"/>
+            </svg>
+        `;
 
         async function loadPredictions() {
             try {
@@ -222,24 +170,12 @@
                     `${new Date(cur.race_date_utc).toLocaleString(undefined, {weekday:'long', month:'long', day:'numeric', hour:'2-digit', minute:'2-digit', timeZoneName:'short'})}`;
                 document.getElementById('race-badge').textContent =
                     `Round ${cur.round} · ${cur.season} season`;
-                document.getElementById('verdict-text').textContent = cur.verdict;
-                document.getElementById('method-text').textContent = cur.methodology;
 
                 // Signals
                 const sg = document.getElementById('signal-grid');
                 sg.innerHTML = cur.key_signals.map(s =>
                     `<div class="signal-tile"><div class="label">${s.label}</div><div class="value">${s.value}</div></div>`
                 ).join('');
-
-                // Factor list
-                const fl = document.getElementById('factor-list');
-                fl.innerHTML = [
-                    `<li><strong>Sprint pace.</strong> Clean-laps mean from yesterday's Sprint, best-60% filter.</li>`,
-                    `<li><strong>Grid position.</strong> Sunday qualifying with track-position penalty.</li>`,
-                    `<li><strong>Per-lap noise.</strong> Sampled around observed driver variance.</li>`,
-                    `<li><strong>Dirty-air cost.</strong> Extra time when faster cars sit behind slower ones.</li>`,
-                    `<li><strong>DNF rates.</strong> Team-tier reliability priors.</li>`,
-                ].join('');
 
                 // Win probability list
                 const list = document.getElementById('win-list');
@@ -270,9 +206,6 @@
                 document.getElementById('last-updated').textContent =
                     `Sources: ${cur.data_sources.join(' · ')}`;
 
-                // Inline SVG win/podium chart
-                renderWinPodiumChart(cur.winner_probabilities);
-
                 // Championship section
                 if (data.season) {
                     const sn = data.season;
@@ -284,35 +217,39 @@
                     const restPts = rest.reduce((s, p) => s + p.points_now, 0);
                     const maxProb = Math.max(top[0].champ_prob_pct, 1);
 
-                    const renderChampRow = (rank, name, team, color, pts, mean, prob) => {
-                        const pct = (prob / maxProb) * 100;
+                    // Track scaled to leader probability so the field is readable
+                    const trackMax = Math.max(top[0].champ_prob_pct, 1);
+
+                    const renderTrackRow = (rank, name, team, color, pts, prob) => {
+                        const pos = Math.min(99.5, (prob / trackMax) * 96 + 1);
                         return `
-                        <div class="win-row">
-                          <div class="pos">${rank}</div>
-                          <div class="who">
-                            <div class="name"><span class="team-color-dot" style="background:${color}"></span>${name}</div>
-                            <div class="team">${team} · ${pts} pts now · ${mean} projected</div>
+                        <div class="champ-row">
+                          <div class="champ-rank">${rank}</div>
+                          <div class="champ-info">
+                            <div class="champ-name">${name}</div>
+                            <div class="champ-team">${team}${pts !== '' ? ' · ' + pts + ' pts' : ''}</div>
                           </div>
-                          <div class="barwrap">
-                            <div class="bg"><div class="fill" data-target="${pct}" style="background:${color};"></div></div>
-                            <div class="pct">${prob.toFixed(prob < 1 ? 2 : 1)}%</div>
+                          <div class="champ-track">
+                            <div class="champ-track-finish"></div>
+                            <div class="champ-car" data-target="${pos}" style="left: 0%; color: ${color};">${F1_CAR_SVG}</div>
                           </div>
+                          <div class="champ-pct">${prob.toFixed(prob < 1 ? 2 : 1)}%</div>
                         </div>`;
                     };
 
-                    let html = top.map((p, i) => renderChampRow(
-                        i + 1, p.driver, p.team, p.team_color, p.points_now, p.mean_final, p.champ_prob_pct
+                    let html = top.map((p, i) => renderTrackRow(
+                        i + 1, p.driver, p.team, p.team_color, p.points_now, p.champ_prob_pct
                     )).join('');
                     if (rest.length) {
-                        html += renderChampRow('...', `Field (${rest.length} drivers)`, 'Combined', '#94a3b8', restPts, '', restProb);
+                        html += renderTrackRow('+', `Field`, `${rest.length} other drivers`, '#94a3b8', restPts, restProb);
                     }
                     document.getElementById('champ-list').innerHTML = html;
                     document.getElementById('champ-meta').textContent =
-                        `Model: ${sn.model}`;
+                        `Track scaled to leader. ${sn.model}`;
 
                     requestAnimationFrame(() => {
-                        document.querySelectorAll('#champ-list .fill').forEach(el => {
-                            el.style.width = el.getAttribute('data-target') + '%';
+                        document.querySelectorAll('#champ-list .champ-car').forEach(el => {
+                            el.style.left = el.getAttribute('data-target') + '%';
                         });
                     });
                 }

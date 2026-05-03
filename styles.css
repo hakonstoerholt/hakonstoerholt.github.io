@@ -1066,44 +1066,94 @@ h1, h2, h3, h4, h5, h6 {
 .archive-row .verdict.miss { background: rgba(220,38,38,0.12); color: #b91c1c; }
 .archive-row .verdict.pending { background: var(--accent-light); color: var(--accent); }
 
-/* ---- Inline SVG win/podium chart ---- */
-.winprob-chart {
-    width: 100%;
-    font-family: 'Inter', sans-serif;
+/* ---- Championship: car on a track ---- */
+.champ-row {
+    display: grid;
+    grid-template-columns: 28px minmax(120px, 1fr) minmax(200px, 2.4fr) 56px;
+    align-items: center;
+    gap: 0.85rem;
+    padding: 0.65rem 0;
+    border-bottom: 1px solid var(--border);
 }
-.winprob-chart .row-label {
+.champ-row:last-child { border-bottom: none; }
+.champ-rank {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-align: center;
+}
+.champ-info .champ-name {
     font-size: 0.8125rem;
     font-weight: 600;
-    fill: var(--text-primary);
+    color: var(--text-primary);
+    line-height: 1.3;
 }
-.winprob-chart .row-team {
+.champ-info .champ-team {
     font-size: 0.6875rem;
-    fill: var(--text-muted);
+    color: var(--text-muted);
     text-transform: uppercase;
     letter-spacing: 0.04em;
 }
-.winprob-chart .axis-tick {
-    font-size: 0.6875rem;
-    fill: var(--text-muted);
+.champ-track {
+    position: relative;
+    height: 22px;
+    background: linear-gradient(to right, var(--border) 0%, var(--border) 100%);
+    background-size: 100% 1px;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-.winprob-chart .axis-line {
-    stroke: var(--border);
-    stroke-width: 1;
-    stroke-dasharray: 2 3;
+.champ-track::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-top: 1px dashed var(--border);
+    top: 50%;
 }
-.winprob-chart .bar-podium {
-    opacity: 0.28;
-    transition: width 1.1s cubic-bezier(0.25,0.46,0.45,0.94);
+.champ-track-finish {
+    position: absolute;
+    right: 0;
+    top: -2px;
+    bottom: -2px;
+    width: 6px;
+    background-image: repeating-linear-gradient(
+        45deg,
+        var(--text-muted) 0 3px,
+        transparent 3px 6px
+    );
+    opacity: 0.55;
 }
-.winprob-chart .bar-win {
-    transition: width 1s cubic-bezier(0.25,0.46,0.45,0.94);
+.champ-car {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 36px;
+    height: 16px;
+    transition: left 1.4s cubic-bezier(0.34, 1.2, 0.5, 1);
+    will-change: left;
 }
-.winprob-chart .pct-label {
-    font-size: 0.75rem;
+.champ-car .f1-car-svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    filter: drop-shadow(0 1px 2px rgba(0,0,0,0.25));
+}
+.champ-pct {
+    font-size: 0.8125rem;
     font-weight: 700;
-    fill: var(--text-primary);
+    color: var(--accent);
+    text-align: right;
+    font-variant-numeric: tabular-nums;
 }
-.winprob-chart .legend-text {
-    font-size: 0.75rem;
-    fill: var(--text-secondary);
+@media (max-width: 640px) {
+    .champ-row {
+        grid-template-columns: 22px 1fr 52px;
+        grid-template-areas:
+            "rank info pct"
+            ".    track track";
+        row-gap: 0.4rem;
+    }
+    .champ-rank { grid-area: rank; }
+    .champ-info { grid-area: info; }
+    .champ-track { grid-area: track; }
+    .champ-pct  { grid-area: pct; }
 }
