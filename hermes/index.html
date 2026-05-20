@@ -29,6 +29,7 @@ body {
 }
 button, input, select, textarea { font: inherit; color: inherit; }
 a { color: var(--accent); }
+[hidden] { display: none !important; }   /* must override #id { display: grid } */
 
 #lock-screen { min-height: 100vh; display: grid; place-items: center; padding: 2rem; }
 .lock-card {
