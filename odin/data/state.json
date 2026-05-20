@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-05-20T18:02:15.896903+00:00",
+  "generated_at": "2026-05-20T19:48:34.470586+00:00",
   "regime": {
-    "regime": "Calm",
-    "alarm": false,
-    "headline": "Calm \u2014 no stress alarm. The macro / yield-curve picture leads at +0.1\u03c3, and the topology trigger sits 1.6\u03c3 away. Fragility Low; full exposure (1\u00d7).",
-    "as_of": "2026-05-18",
+    "regime": "Unknown",
+    "alarm": null,
+    "headline": "The regime engine isn't trained yet \u2014 there is no walk-forward threshold model on disk. Run scripts/refresh_heimdall.py to build it; until then there is no stress signal.",
+    "as_of": "2026-05-20",
     "degraded": false
   },
   "company": {
     "ticker": "NVDA",
-    "last": 220.77999877929688,
-    "change_pct": 0.6106436032548013,
-    "as_of": "2026-05-12"
+    "last": 223.49000549316406,
+    "change_pct": 1.305473403220403,
+    "as_of": "2026-05-20"
   }
 }
