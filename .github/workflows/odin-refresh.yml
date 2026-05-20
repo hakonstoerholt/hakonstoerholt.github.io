@@ -66,7 +66,9 @@ jobs:
         working-directory: odin
         run: |
           python -m pip install --upgrade pip
-          pip install -e ".[tda]"
+          # pyarrow isn't declared in pyproject (works locally via a separate
+          # install) but yggdrasil writes parquet — pin it here for CI.
+          pip install -e ".[tda]" pyarrow
 
       - name: Restore data cache
         uses: actions/cache@v4
