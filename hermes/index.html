@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>hermes</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600&family=Fira+Code:wght@400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0a0e1a;
+  --surface: #131825;
+  --surface-2: #1a2030;
+  --border: #2a3142;
+  --text: #e1e7ff;
+  --muted: #8b95ad;
+  --accent: #6996ff;
+  --good: #5ac394;
+  --warn: #e0b154;
+  --bad: #e07585;
+  --gold: #f0c674;
+  --font: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--bg); color: var(--text);
+  font: 15px/1.5 var(--font);
+}
+button, input, select, textarea { font: inherit; color: inherit; }
+a { color: var(--accent); }
+
+#lock-screen { min-height: 100vh; display: grid; place-items: center; padding: 2rem; }
+.lock-card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+  padding: 2rem; width: min(420px, 100%);
+}
+.lock-card h1 {
+  margin: 0 0 1.4rem; font: 600 1.6rem/1.2 'Space Grotesk', var(--font);
+  letter-spacing: -0.02em;
+}
+.lock-card label {
+  display: block; margin-bottom: 1rem; color: var(--muted); font-size: 0.82rem;
+  text-transform: uppercase; letter-spacing: 0.05em;
+}
+.lock-card input {
+  display: block; width: 100%; padding: 0.7rem 0.9rem; margin-top: 0.4rem;
+  background: var(--bg); border: 1px solid var(--border); border-radius: 8px;
+  color: var(--text); text-transform: none; letter-spacing: normal;
+}
+.lock-card input:focus { outline: none; border-color: var(--accent); }
+.lock-card button {
+  display: block; width: 100%; padding: 0.8rem; margin-top: 0.6rem;
+  background: var(--accent); border: none; border-radius: 8px;
+  color: #0a0e1a; font-weight: 600; cursor: pointer;
+}
+.lock-card button:hover { filter: brightness(1.08); }
+.lock-card .error {
+  color: var(--bad); margin-top: 0.9rem; font-size: 0.85rem; min-height: 1.2em;
+}
+.lock-card .hint {
+  color: var(--muted); margin-top: 0.5rem; font-size: 0.78rem;
+}
+
+#app { padding: 1.4rem 1.6rem 4rem; max-width: 1400px; margin: 0 auto; }
+header {
+  display: flex; justify-content: space-between; align-items: flex-start;
+  margin-bottom: 1.4rem; gap: 1rem; flex-wrap: wrap;
+}
+header h1 {
+  margin: 0; font: 600 1.4rem/1.2 'Space Grotesk', var(--font);
+  letter-spacing: -0.02em;
+}
+header .meta { color: var(--muted); font-size: 0.82rem; margin-top: 0.2rem; }
+header .controls { display: flex; gap: 0.5rem; }
+header button {
+  background: var(--surface); border: 1px solid var(--border); color: var(--text);
+  padding: 0.45rem 0.8rem; border-radius: 6px; cursor: pointer; font-size: 0.85rem;
+}
+header button:hover { border-color: var(--accent); color: var(--accent); }
+
+.filters {
+  display: flex; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: wrap;
+}
+.filters select, .filters input[type=search] {
+  background: var(--surface); border: 1px solid var(--border); color: var(--text);
+  padding: 0.45rem 0.7rem; border-radius: 6px;
+}
+.filters select { min-width: 8rem; }
+.filters input[type=search] { min-width: 18rem; flex: 1; }
+.filters input[type=search]:focus, .filters select:focus { outline: none; border-color: var(--accent); }
+
+#job-list { display: flex; flex-direction: column; gap: 0.5rem; }
+.job {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+  padding: 0.85rem 1rem;
+  display: grid; grid-template-columns: 64px 1fr auto; gap: 1rem;
+  align-items: start;
+}
+.job.expanded { background: var(--surface-2); }
+.job .score {
+  font: 600 1.25rem/1 'Space Grotesk', var(--font);
+  text-align: center; padding: 0.55rem 0.4rem; border-radius: 8px; min-height: 2.4rem;
+  display: grid; place-items: center;
+}
+.score.tier-high { background: rgba(90, 195, 148, 0.12); color: var(--good); }
+.score.tier-mid { background: rgba(224, 177, 84, 0.12); color: var(--warn); }
+.score.tier-low { background: rgba(224, 117, 133, 0.12); color: var(--bad); }
+.job .main { min-width: 0; }
+.job .title { font-weight: 600; margin: 0 0 0.18rem; font-size: 0.98rem; line-height: 1.3; }
+.job .title a { color: var(--text); text-decoration: none; }
+.job .title a:hover { color: var(--accent); }
+.job .subline { color: var(--muted); font-size: 0.86rem; }
+.job .pills { display: flex; gap: 0.35rem; margin-top: 0.45rem; flex-wrap: wrap; }
+.pill {
+  padding: 0.12rem 0.55rem; border-radius: 4px; font-size: 0.72rem;
+  background: var(--bg); border: 1px solid var(--border); color: var(--muted);
+}
+.pill.src-finn { background: rgba(105, 150, 255, 0.08); color: var(--accent); border-color: rgba(105, 150, 255, 0.3); }
+.pill.src-linkedin { background: rgba(105, 150, 255, 0.08); color: #6996ff; border-color: rgba(105, 150, 255, 0.3); }
+.pill.src-indeed { background: rgba(224, 177, 84, 0.08); color: var(--warn); border-color: rgba(224, 177, 84, 0.3); }
+.pill.expired { color: var(--bad); border-color: rgba(224, 117, 133, 0.4); background: rgba(224, 117, 133, 0.06); }
+.pill.due-soon { color: var(--warn); border-color: rgba(224, 177, 84, 0.4); background: rgba(224, 177, 84, 0.06); }
+.job .toggle-expand {
+  background: none; border: none; color: var(--muted); cursor: pointer;
+  padding: 0.3rem 0 0; font-size: 0.78rem;
+}
+.job .toggle-expand:hover { color: var(--accent); }
+.job .expand-row { grid-column: 2 / -1; margin-top: 0.6rem; display: none; }
+.job.expanded .expand-row { display: block; }
+.job .breakdown {
+  color: var(--muted); font-size: 0.78rem;
+  font-family: 'Fira Code', monospace; line-height: 1.6; margin-bottom: 0.5rem;
+}
+.job .notes {
+  width: 100%; min-height: 4.5em;
+  background: var(--bg); border: 1px solid var(--border); color: var(--text);
+  border-radius: 6px; padding: 0.5rem; resize: vertical; font-family: var(--font);
+}
+.job .notes:focus { outline: none; border-color: var(--accent); }
+.job .actions { display: flex; flex-direction: column; gap: 0.4rem; align-items: flex-end; }
+.job .actions select {
+  background: var(--bg); border: 1px solid var(--border); color: var(--text);
+  padding: 0.25rem 0.4rem; border-radius: 4px; font-size: 0.8rem;
+}
+.job .star {
+  background: none; border: none; cursor: pointer; font-size: 1.2rem;
+  color: var(--muted); padding: 0 0.2rem;
+}
+.job .star.on { color: var(--gold); }
+
+#status-bar {
+  position: fixed; bottom: 1rem; right: 1rem;
+  background: var(--surface); border: 1px solid var(--border); border-radius: 6px;
+  padding: 0.45rem 0.85rem; font-size: 0.8rem; color: var(--muted);
+  opacity: 0; transition: opacity 0.2s; pointer-events: none;
+}
+#status-bar.show { opacity: 1; }
+#status-bar.err { color: var(--bad); border-color: rgba(224, 117, 133, 0.4); }
+
+.empty { text-align: center; color: var(--muted); padding: 3rem; }
+
+@media (max-width: 640px) {
+  #app { padding: 1rem; }
+  .job { grid-template-columns: 50px 1fr; }
+  .job .actions { grid-column: 2; flex-direction: row; align-items: center; }
+  .filters input[type=search] { min-width: 100%; }
+}
+</style>
+</head>
+<body>
+
+<div id="lock-screen">
+  <form id="unlock-form" class="lock-card">
+    <h1>hermes</h1>
+    <label>Password
+      <input id="unlock-pwd" type="password" autocomplete="off" required autofocus>
+    </label>
+    <label>GitHub PAT (gist scope)
+      <input id="unlock-pat" type="password" autocomplete="off">
+    </label>
+    <button type="submit">Unlock</button>
+    <div id="unlock-err" class="error"></div>
+    <div class="hint">PAT is remembered on this device. Use "forget device" inside to clear it.</div>
+  </form>
+</div>
+
+<div id="app" hidden>
+  <header>
+    <div>
+      <h1>hermes</h1>
+      <div id="meta" class="meta"></div>
+    </div>
+    <div class="controls">
+      <button id="refresh" title="re-fetch from Gist">↻ refresh</button>
+      <button id="forget" title="clear PAT from this device">forget device</button>
+    </div>
+  </header>
+
+  <div class="filters">
+    <select id="f-source"><option value="">all sources</option></select>
+    <select id="f-status">
+      <option value="open">open (not applied / rejected)</option>
+      <option value="">all statuses</option>
+      <option value="new">new</option>
+      <option value="interested">interested</option>
+      <option value="applied">applied</option>
+      <option value="rejected">rejected</option>
+      <option value="starred">starred only</option>
+    </select>
+    <select id="f-sort">
+      <option value="score">sort: score</option>
+      <option value="posted">sort: posted date</option>
+      <option value="added">sort: added</option>
+      <option value="expires">sort: expires soonest</option>
+    </select>
+    <input id="f-search" type="search" placeholder="search title / company / location…">
+  </div>
+
+  <div id="job-list"></div>
+</div>
+
+<div id="status-bar"></div>
+
+<script>
+const GIST_ID = "b8b09220b047d0f890e50b811a0f07f2";
+const GIST_FILENAME = "hermes.enc.json";
+const GIST_API = "https://api.github.com";
+
+const state = { payload: null, password: null, pat: null, savePending: null };
+const $ = sel => document.querySelector(sel);
+
+// ── crypto helpers (must match hermes/gist.py exactly) ────────────────
+function bytes(s) { return new TextEncoder().encode(s); }
+function fromBytes(b) { return new TextDecoder().decode(b); }
+function b64ToBytes(s) {
+  const bin = atob(s); const u = new Uint8Array(bin.length);
+  for (let i = 0; i < bin.length; i++) u[i] = bin.charCodeAt(i);
+  return u;
+}
+function bytesToB64(u) {
+  let s = '';
+  for (let i = 0; i < u.length; i++) s += String.fromCharCode(u[i]);
+  return btoa(s);
+}
+async function deriveKey(password, salt) {
+  const km = await crypto.subtle.importKey('raw', bytes(password), 'PBKDF2', false, ['deriveKey']);
+  return crypto.subtle.deriveKey(
+    { name: 'PBKDF2', salt, iterations: 250000, hash: 'SHA-256' },
+    km, { name: 'AES-GCM', length: 256 }, false, ['encrypt', 'decrypt']
+  );
+}
+async function decryptBlob(password, blob) {
+  const salt = b64ToBytes(blob.salt);
+  const iv = b64ToBytes(blob.iv);
+  const ct = b64ToBytes(blob.ct);
+  const key = await deriveKey(password, salt);
+  const pt = await crypto.subtle.decrypt({ name: 'AES-GCM', iv }, key, ct);
+  return JSON.parse(fromBytes(new Uint8Array(pt)));
+}
+async function encryptPayload(password, payload) {
+  const salt = crypto.getRandomValues(new Uint8Array(16));
+  const iv = crypto.getRandomValues(new Uint8Array(12));
+  const key = await deriveKey(password, salt);
+  const ct = await crypto.subtle.encrypt(
+    { name: 'AES-GCM', iv }, key, bytes(JSON.stringify(payload))
+  );
+  return {
+    v: 1, salt: bytesToB64(salt), iv: bytesToB64(iv),
+    ct: bytesToB64(new Uint8Array(ct)),
+  };
+}
+
+// ── Gist API ──────────────────────────────────────────────────────────
+async function gistGet(pat) {
+  const r = await fetch(`${GIST_API}/gists/${GIST_ID}`, {
+    headers: { Authorization: `Bearer ${pat}`, Accept: 'application/vnd.github+json' },
+  });
+  if (!r.ok) throw new Error(`Gist GET ${r.status} ${r.statusText}`);
+  const j = await r.json();
+  const file = j.files && j.files[GIST_FILENAME];
+  if (!file) throw new Error(`file ${GIST_FILENAME} not in Gist`);
+  if (file.truncated) {
+    const raw = await fetch(file.raw_url);
+    return JSON.parse(await raw.text());
+  }
+  return JSON.parse(file.content);
+}
+async function gistPatch(pat, blob) {
+  const r = await fetch(`${GIST_API}/gists/${GIST_ID}`, {
+    method: 'PATCH',
+    headers: {
+      Authorization: `Bearer ${pat}`,
+      Accept: 'application/vnd.github+json',
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ files: { [GIST_FILENAME]: { content: JSON.stringify(blob) } } }),
+  });
+  if (!r.ok) throw new Error(`Gist PATCH ${r.status} ${r.statusText}`);
+}
+
+// ── unlock + save ─────────────────────────────────────────────────────
+async function unlock() {
+  const pwdInput = $('#unlock-pwd');
+  const patInput = $('#unlock-pat');
+  const errBox = $('#unlock-err');
+  errBox.textContent = '';
+  const password = pwdInput.value;
+  let pat = (patInput.value || '').trim() || localStorage.getItem('hermes_pat') || '';
+  if (!password) { errBox.textContent = 'password required'; return; }
+  if (!pat) { errBox.textContent = 'PAT required (first unlock on this device)'; return; }
+  try {
+    const fetched = await gistGet(pat);
+    let payload;
+    if (fetched && fetched.v === 1 && fetched.salt) {
+      payload = await decryptBlob(password, fetched);
+    } else {
+      // Placeholder Gist ({} or similar). Start with empty payload.
+      payload = { jobs: [], updatedAt: null, lastScrape: null };
+    }
+    localStorage.setItem('hermes_pat', pat);
+    state.password = password; state.pat = pat; state.payload = payload;
+    $('#lock-screen').hidden = true;
+    $('#app').hidden = false;
+    render();
+  } catch (e) {
+    console.error(e);
+    errBox.textContent = `unlock failed: ${e.message}`;
+  }
+}
+
+function scheduleSave() {
+  if (state.savePending) clearTimeout(state.savePending);
+  setStatus('saving in 2s…', false);
+  state.savePending = setTimeout(saveNow, 2000);
+}
+async function saveNow() {
+  state.savePending = null;
+  try {
+    state.payload.updatedAt = new Date().toISOString();
+    const blob = await encryptPayload(state.password, state.payload);
+    await gistPatch(state.pat, blob);
+    setStatus('saved ' + new Date().toLocaleTimeString(), false);
+  } catch (e) {
+    console.error(e);
+    setStatus(`save failed: ${e.message}`, true);
+  }
+}
+function setStatus(msg, isErr) {
+  const bar = $('#status-bar');
+  bar.textContent = msg;
+  bar.classList.toggle('err', !!isErr);
+  bar.classList.add('show');
+  clearTimeout(setStatus._t);
+  setStatus._t = setTimeout(() => bar.classList.remove('show'), 4000);
+}
+
+// ── filter + render ───────────────────────────────────────────────────
+function getFiltered() {
+  const src = $('#f-source').value;
+  const stat = $('#f-status').value;
+  const sort = $('#f-sort').value;
+  const search = $('#f-search').value.toLowerCase();
+  let jobs = (state.payload.jobs || []).slice();
+  jobs = jobs.filter(j => {
+    if (src && j.source !== src) return false;
+    if (stat === 'open' && (j.status === 'applied' || j.status === 'rejected')) return false;
+    if (stat === 'starred') { if (!j.starred) return false; }
+    else if (stat && stat !== 'open' && j.status !== stat) return false;
+    if (search) {
+      const hay = `${j.role || ''} ${j.company || ''} ${j.location || ''}`.toLowerCase();
+      if (!hay.includes(search)) return false;
+    }
+    return true;
+  });
+  if (sort === 'score') jobs.sort((a, b) => (b.score || 0) - (a.score || 0));
+  else if (sort === 'posted') jobs.sort((a, b) => (b.posted_at || '').localeCompare(a.posted_at || ''));
+  else if (sort === 'added') jobs.sort((a, b) => (b.added || '').localeCompare(a.added || ''));
+  else if (sort === 'expires') jobs.sort((a, b) => (a.expires_at || '9999').localeCompare(b.expires_at || '9999'));
+  return jobs;
+}
+function daysUntil(iso) {
+  if (!iso) return null;
+  const d = new Date(iso);
+  if (isNaN(d)) return null;
+  return Math.ceil((d - new Date()) / (1000 * 60 * 60 * 24));
+}
+function esc(s) {
+  return String(s == null ? '' : s).replace(/[&<>"']/g,
+    c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
+}
+
+function render() {
+  const ls = state.payload.lastScrape;
+  $('#meta').textContent = ls
+    ? `last scrape ${new Date(ls.at).toLocaleString()} · +${ls.newCount} new from ${ls.scrapedTotal} scraped · ${(state.payload.jobs || []).length} total`
+    : `${(state.payload.jobs || []).length} jobs (no lastScrape yet)`;
+  // populate source dropdown once
+  const srcSel = $('#f-source');
+  const sources = [...new Set((state.payload.jobs || []).map(j => j.source).filter(Boolean))].sort();
+  const have = new Set(Array.from(srcSel.options).map(o => o.value));
+  sources.forEach(s => { if (!have.has(s)) srcSel.add(new Option(s, s)); });
+  const list = $('#job-list');
+  const jobs = getFiltered();
+  list.innerHTML = '';
+  if (!jobs.length) {
+    list.innerHTML = '<div class="empty">No jobs match.</div>';
+    return;
+  }
+  for (const j of jobs) list.appendChild(jobNode(j));
+}
+
+function jobNode(j) {
+  const el = document.createElement('div');
+  el.className = 'job';
+  if (j.starred) el.style.borderColor = 'rgba(240, 198, 116, 0.4)';
+  const days = daysUntil(j.expires_at);
+  const expiryPill = j.expires_at
+    ? (days < 0 ? `<span class="pill expired">expired ${-days}d ago</span>`
+      : days <= 3 ? `<span class="pill due-soon">${days}d left</span>`
+      : `<span class="pill">expires in ${days}d</span>`)
+    : '';
+  const breakdown = Object.entries(j.scoreBreakdown || {})
+    .map(([k, v]) => `${esc(k)} +${v}`).join('   ');
+  const tier = j.score >= 70 ? 'tier-high' : j.score >= 40 ? 'tier-mid' : 'tier-low';
+  el.innerHTML = `
+    <div class="score ${tier}">${j.score || 0}</div>
+    <div class="main">
+      <h3 class="title"><a href="${esc(j.url)}" target="_blank" rel="noopener">${esc(j.role)}</a></h3>
+      <div class="subline">${esc(j.company)}${j.location ? ' · ' + esc(j.location) : ''}</div>
+      <div class="pills">
+        <span class="pill src-${esc(j.source)}">${esc(j.source)}</span>
+        ${j.posted_at ? `<span class="pill">posted ${esc(j.posted_at)}</span>` : ''}
+        ${expiryPill}
+        ${j.seniority ? `<span class="pill">${esc(j.seniority)}</span>` : ''}
+      </div>
+      <button type="button" class="toggle-expand">details / notes ▾</button>
+      <div class="expand-row">
+        ${breakdown ? `<div class="breakdown">${breakdown}</div>` : ''}
+        <textarea class="notes" placeholder="notes…">${esc(j.notes)}</textarea>
+      </div>
+    </div>
+    <div class="actions">
+      <button type="button" class="star ${j.starred ? 'on' : ''}" title="star">${j.starred ? '★' : '☆'}</button>
+      <select class="status">
+        <option value="new" ${j.status==='new'?'selected':''}>new</option>
+        <option value="interested" ${j.status==='interested'?'selected':''}>interested</option>
+        <option value="applied" ${j.status==='applied'?'selected':''}>applied</option>
+        <option value="rejected" ${j.status==='rejected'?'selected':''}>rejected</option>
+      </select>
+    </div>
+  `;
+  el.querySelector('.toggle-expand').addEventListener('click', e => {
+    el.classList.toggle('expanded');
+    e.target.textContent = el.classList.contains('expanded') ? 'details / notes ▴' : 'details / notes ▾';
+  });
+  el.querySelector('.star').addEventListener('click', () => {
+    j.starred = !j.starred;
+    const btn = el.querySelector('.star');
+    btn.classList.toggle('on', j.starred);
+    btn.textContent = j.starred ? '★' : '☆';
+    el.style.borderColor = j.starred ? 'rgba(240, 198, 116, 0.4)' : '';
+    scheduleSave();
+  });
+  el.querySelector('.status').addEventListener('change', e => {
+    j.status = e.target.value;
+    j.statusUpdated = new Date().toISOString();
+    scheduleSave();
+  });
+  el.querySelector('.notes').addEventListener('input', e => {
+    j.notes = e.target.value;
+    scheduleSave();
+  });
+  return el;
+}
+
+// ── init ──────────────────────────────────────────────────────────────
+window.addEventListener('DOMContentLoaded', () => {
+  const saved = localStorage.getItem('hermes_pat');
+  if (saved) {
+    $('#unlock-pat').value = saved;
+    $('#unlock-pat').placeholder = '(remembered)';
+  }
+  $('#unlock-form').addEventListener('submit', e => { e.preventDefault(); unlock(); });
+  ['#f-source', '#f-status', '#f-sort'].forEach(s => $(s).addEventListener('change', render));
+  $('#f-search').addEventListener('input', render);
+  $('#refresh').addEventListener('click', async () => {
+    try {
+      const blob = await gistGet(state.pat);
+      if (blob && blob.v === 1 && blob.salt) {
+        state.payload = await decryptBlob(state.password, blob);
+      }
+      render();
+      setStatus('refreshed', false);
+    } catch (e) {
+      console.error(e);
+      setStatus(`refresh failed: ${e.message}`, true);
+    }
+  });
+  $('#forget').addEventListener('click', () => {
+    if (!confirm('Clear PAT from this device? You will need to paste it again next time.')) return;
+    localStorage.removeItem('hermes_pat');
+    location.reload();
+  });
+});
+</script>
+
+</body>
+</html>
