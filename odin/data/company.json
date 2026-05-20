@@ -14,9 +14,9 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 5407716671488.0,
-    "pe": 45.565308,
-    "forward_pe": 19.232824,
+    "market_cap": 5412560568320.0,
+    "pe": 45.60612,
+    "forward_pe": 19.250051,
     "dividend_yield": 0.02,
     "beta": 2.244,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company. The company operates through two segments, Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. The company sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants worldwide. It has a collaboration with Tech Mahindra Limited to develop artificial intelligence powered telco network operations reasoning agent. The company has a strategic partnership with Lumentum Holdings Inc. to develop optics technologies for AI and data centers. It also has a strategic partnership with Nebius Group N.V. to develop and deploy hyperscale cloud for the artificial intelligence market; and has a strategic partnership with IREN Limited to accelerate deployment of up to 5 gigawatts of infrastructure. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
@@ -2045,67 +2045,67 @@
   },
   "implied_move": {
     "expiry": "2026-05-22",
-    "move_pct": 5.704953101533655,
-    "straddle": 12.75
+    "move_pct": 5.895118204918111,
+    "straddle": 13.175
   },
   "options": {
     "expiry": "2026-05-22",
     "atm_strike": 222.5,
-    "call_iv": 0.7741721801757813,
-    "put_iv": 0.8071308349609375,
-    "atm_iv": 0.7906515075683593,
+    "call_iv": 0.8190936059570311,
+    "put_iv": 0.8122577368164061,
+    "atm_iv": 0.8156756713867186,
     "days_to_expiry": 2
   },
   "consensus": null,
   "news": [
     {
+      "title": "Dow Jones Futures Fall After Strong Nvidia Earnings; SpaceX Files For Huge IPO",
+      "publisher": "Investor's Business Daily",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-nvidia-earnings-stocks-rally-oil-prices-iran-deal-hopes/?src=A00220&yptr=yahoo",
+      "published": "2026-05-20T22:15:36+00:00"
+    },
+    {
+      "title": "Nvidia says it will see $20 billion in CPU sales this year",
+      "publisher": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/news/nvidia-says-it-will-see-20-billion-in-cpu-sales-this-year-221129958.html",
+      "published": "2026-05-20T22:11:29+00:00"
+    },
+    {
+      "title": "Why Bloom Energy Stock Bounced 8% Higher Today",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/05/20/why-bloom-energy-stock-bounced-8-higher-today/",
+      "published": "2026-05-20T22:11:21+00:00"
+    },
+    {
+      "title": "Nvidia Beats Q1 Estimates. Stock Slips.",
+      "publisher": "Investor's Business Daily",
+      "url": "https://www.investors.com/news/technology/nvidia-stock-nvda-fiscal-q1-2027-earnings/?src=A00220&yptr=yahoo",
+      "published": "2026-05-20T22:07:21+00:00"
+    },
+    {
+      "title": "Nvidia posts another record quarter, reveals $43 billion of holdings in startups",
+      "publisher": "TechCrunch",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-posts-another-record-quarter-220351977.html",
+      "published": "2026-05-20T22:03:51+00:00"
+    },
+    {
+      "title": "Nvidia Q1 earnings: AI infrastructure outlook 'remains intact'",
+      "publisher": "Yahoo Finance Video",
+      "url": "https://finance.yahoo.com/video/nvidia-q1-earnings-ai-infrastructure-outlook-remains-intact-210025902.html",
+      "published": "2026-05-20T21:00:25+00:00"
+    },
+    {
+      "title": "Nvidia exceeds Q1 estimates alongside strong revenue outlook",
+      "publisher": "Yahoo Finance Video",
+      "url": "https://finance.yahoo.com/video/nvidia-exceeds-q1-estimates-alongside-strong-revenue-outlook-203720089.html",
+      "published": "2026-05-20T20:37:20+00:00"
+    },
+    {
       "title": "Target's Turnaround Is Finally Here. So Why Is the Stock Down?",
       "publisher": "Motley Fool",
       "url": "https://www.fool.com/investing/2026/05/20/targets-turnaround-is-finally-here-so-why-is-the-s/",
       "published": "2026-05-20T19:36:36+00:00"
-    },
-    {
-      "title": "IVV Beat VOO by 10 Basis Points Last Year and Securities Lending Is the Reason Most Investors Miss",
-      "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/05/20/ivv-beat-voo-by-10-basis-points-last-year-and-securities-lending-is-the-reason-most-investors-miss/",
-      "published": "2026-05-20T19:30:16+00:00"
-    },
-    {
-      "title": "NVIDIA Could 10X Sales If It Weren\u2019t for This One Bottleneck",
-      "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/05/20/nvidia-could-10x-sales-if-it-werent-for-this-one-bottleneck/",
-      "published": "2026-05-20T19:26:08+00:00"
-    },
-    {
-      "title": "DRAM Has Nearly Doubled Since Its April Launch and After Following the AI Memory Shortage Daily These 3 Semiconductor ETFs Keep Rising in My Research",
-      "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/05/20/dram-has-nearly-doubled-since-its-april-launch-and-after-following-the-ai-memory-shortage-daily-these-3-semiconductor-etfs-keep-rising-in-my-research/",
-      "published": "2026-05-20T19:22:13+00:00"
-    },
-    {
-      "title": "Bond yields, oil fall amid hopes for Iran deal; stocks up with Nvidia results ahead",
-      "publisher": "Reuters",
-      "url": "https://finance.yahoo.com/news/asian-stocks-fall-4th-day-020854458.html",
-      "published": "2026-05-20T19:14:52+00:00"
-    },
-    {
-      "title": "Stock Market Today: Dow Gains 600 Points; Fed Panel Sees Possible Rate Hike (Live Coverage)",
-      "publisher": "Investor's Business Daily",
-      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-fed-minutes-nvidia-earnings-nvda-stock-2/?src=A00220&yptr=yahoo",
-      "published": "2026-05-20T19:10:20+00:00"
-    },
-    {
-      "title": "Everything to know about Nvidia's autonomous driving business",
-      "publisher": "Yahoo Finance Video",
-      "url": "https://finance.yahoo.com/video/everything-to-know-about-nvidias-autonomous-driving-business-181859500.html",
-      "published": "2026-05-20T18:18:59+00:00"
-    },
-    {
-      "title": "Investors might be penalizing Nvidia for not boosting cash returns like its Big Tech peers",
-      "publisher": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/markets/article/investors-might-be-penalizing-nvidia-for-not-boosting-cash-returns-like-its-big-tech-peers-122358951.html",
-      "published": "2026-05-20T12:23:58+00:00"
     }
   ],
-  "generated_at": "2026-05-20T19:58:05.679383+00:00"
+  "generated_at": "2026-05-20T22:31:20.123277+00:00"
 }

@@ -7,19 +7,19 @@
   "degraded": false,
   "headline": "Calm \u2014 no stress alarm. The macro / yield-curve picture leads at +0.1\u03c3, and the topology trigger sits 1.6\u03c3 away. Fragility Low; full exposure (1\u00d7).",
   "scores": {
-    "heimdall_max": 0.07121746379746155,
-    "heimdall_mean": -0.6524849169350299,
-    "p_turbulent": 0.0011651746959590403,
+    "heimdall_max": 0.07686148274387505,
+    "heimdall_mean": -0.6615650060143496,
+    "p_turbulent": 0.001172640155600541,
     "h0": 0.1229430699604563,
     "h1": 0.0013575265184044,
     "h1_z": -0.7143231691899973,
     "sub_topology_sticky": 0.5147662593480831
   },
   "sub_z": {
-    "vol": -0.5044578470780148,
-    "credit": -1.4429515407022162,
-    "macro": 0.07121746379746155,
-    "trend": -0.6719094915023824,
+    "vol": -0.5109988389042727,
+    "credit": -1.4825589922505535,
+    "macro": 0.07686148274387505,
+    "trend": -0.6768055124707992,
     "topology": -0.7143231691899973
   },
   "thresholds": {
@@ -4579,8 +4579,8 @@
     {
       "date": "2026-05-20",
       "alarm": false,
-      "sticky": 0.07121746379746155,
-      "spx": 7429.990234375
+      "sticky": 0.07686148274387505,
+      "spx": 7432.97021484375
     }
   ],
   "freshness": {
@@ -4617,20 +4617,20 @@
         "missing": false
       },
       "baa10y": {
-        "last": "2026-05-18",
-        "age_days": 2,
+        "last": "2026-05-19",
+        "age_days": 1,
         "stale": false,
         "missing": false
       },
       "aaa10y": {
-        "last": "2026-05-18",
-        "age_days": 2,
+        "last": "2026-05-19",
+        "age_days": 1,
         "stale": false,
         "missing": false
       },
       "t10y2y": {
-        "last": "2026-05-19",
-        "age_days": 1,
+        "last": "2026-05-20",
+        "age_days": 0,
         "stale": false,
         "missing": false
       },
@@ -4655,5 +4655,5 @@
     },
     "degraded": false
   },
-  "generated_at": "2026-05-20T19:58:05.389281+00:00"
+  "generated_at": "2026-05-20T22:31:19.874340+00:00"
 }
