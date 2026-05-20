@@ -28,8 +28,8 @@ name: Odin refresh
 
 on:
   workflow_dispatch:
-  # schedule:
-  #   - cron: "0 22 * * *"   # 22:00 UTC daily
+  schedule:
+    - cron: "0 22 * * *"   # 22:00 UTC daily (post-US-close)
 
 permissions:
   contents: write
@@ -90,7 +90,11 @@ jobs:
           python scripts/refresh_prices.py  --tickers NVDA,SPY || true
           python scripts/refresh_news.py    --tickers NVDA     || true
           python scripts/refresh_options.py --tickers NVDA     || true
-          python scripts/refresh_heimdall.py --data-only        || true
+          # Full retrain (not --data-only) so the walk-forward threshold
+          # table lands on disk. With actions/cache the topology layers
+          # are restored from the previous run, so this is slow only on
+          # the first run.
+          python scripts/refresh_heimdall.py --refresh          || true
 
       - name: Build static JSON
         working-directory: odin
