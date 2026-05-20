@@ -1,0 +1,111 @@
+# Nightly Odin → static-site refresh.
+#
+# Architecture
+# ------------
+# This workflow lives in the public site repo (hakonstoerholt.github.io).
+# It checks out the private odin repo into a sibling path, runs Odin's
+# scripts/build_site.py (which knows how to read the data cache and emit
+# the three JSON files), then commits the regenerated JSON into the site
+# repo. The site repo never carries any analysis-layer code.
+#
+# Required secrets (set under: site repo → Settings → Secrets → Actions)
+# -----------------------------------------------------------------------
+# - ODIN_REPO_TOKEN   PAT with `repo` scope, used to check out the private
+#                     `hakonstoerholt/odin` repo. Create one at:
+#                     github.com/settings/tokens (classic) or
+#                     github.com/settings/tokens?type=beta (fine-grained,
+#                     restricted to the odin repo with Contents: read).
+# - FRED_API_KEY      Heimdall's macro pull (T10Y2Y, BAA10Y, AAA10Y, NFCI).
+#                     Free at https://fred.stlouisfed.org/docs/api/api_key.html
+#
+# First run
+# ---------
+# Trigger manually from Actions → Odin refresh → Run workflow. Confirm the
+# JSON commit lands on main. Then uncomment the `schedule:` block below to
+# enable nightly runs at 22:00 UTC (≈ post-US-close).
+
+name: Odin refresh
+
+on:
+  workflow_dispatch:
+  # schedule:
+  #   - cron: "0 22 * * *"   # 22:00 UTC daily
+
+permissions:
+  contents: write
+
+concurrency:
+  group: odin-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Checkout site repo
+        uses: actions/checkout@v4
+        with:
+          path: site
+
+      - name: Checkout private odin repo
+        uses: actions/checkout@v4
+        with:
+          repository: hakonstoerholt/odin
+          token: ${{ secrets.ODIN_REPO_TOKEN }}
+          path: odin
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: odin/pyproject.toml
+
+      - name: Install odin
+        working-directory: odin
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[huginn,tda]"
+
+      - name: Restore data cache
+        uses: actions/cache@v4
+        with:
+          path: odin/data/cache
+          key: odin-cache-${{ github.run_id }}
+          restore-keys: |
+            odin-cache-
+
+      - name: Refresh inputs (NVDA + Heimdall macro)
+        working-directory: odin
+        env:
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+          SEC_USER_AGENT: "Odin Prototype Bot (hakonstoerholt@gmail.com)"
+        run: |
+          # Each refresh is best-effort; the exporter falls back to whatever
+          # the cache holds, so a transient yfinance hiccup never breaks the
+          # static build.
+          python scripts/refresh_prices.py  --tickers NVDA,SPY || true
+          python scripts/refresh_news.py    --tickers NVDA     || true
+          python scripts/refresh_options.py --tickers NVDA     || true
+          python scripts/refresh_heimdall.py --data-only        || true
+
+      - name: Build static JSON
+        working-directory: odin
+        env:
+          SITE_OUT: ${{ github.workspace }}/site/odin/data
+        run: |
+          python scripts/build_site.py
+
+      - name: Commit JSON if changed
+        working-directory: site
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add odin/data/*.json
+          if git diff --cached --quiet; then
+            echo "No JSON changes — nothing to commit."
+          else
+            git commit -m "odin: nightly data refresh ($(date -u +%Y-%m-%d))"
+            git push
+          fi

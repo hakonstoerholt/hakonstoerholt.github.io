@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NVDA · Odin CO</title>
+    <meta name="description" content="NVDA — single-ticker deep dive. Chart, fundamentals, options, earnings, analyst consensus, news.">
+
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=Cormorant+Garamond:wght@500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/odin/odin.css">
+</head>
+<body class="odin-page">
+    <div class="odin-app">
+
+        <header class="odin-top">
+            <a class="brand" href="/odin/">
+                <span class="mark">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2 L12 22 M5 9 L19 9 M5 15 L19 15"/>
+                    </svg>
+                </span>
+                <span class="brand-block">
+                    <span class="wordmark">ODIN<span class="dot">.</span></span>
+                    <span class="tag">terminal · prototype</span>
+                </span>
+            </a>
+            <div class="odin-cmd" aria-hidden="true">
+                <span class="rune">›</span>
+                <span class="ticker-chip" id="cmd-ticker">NVDA</span>
+                <span class="go">CO</span>
+                <input type="text" placeholder="ticker / panel / command  — read-only demo" disabled>
+                <span class="demo-note">demo · static</span>
+                <span class="kbd">⌘K</span>
+            </div>
+            <div class="right">
+                <span class="chip"><span class="lbl">MKT</span><span id="market-state" class="v muted">—</span></span>
+                <span class="chip"><span class="lbl">UTC</span><span id="odin-clock">—</span></span>
+                <a class="back" href="/" title="Back to hassium.no">← hassium.no</a>
+            </div>
+        </header>
+
+        <nav class="odin-nav">
+            <a class="odin-nav-item" href="/odin/"><span class="rune">⌂</span><span>Home</span><span class="code">HOME</span></a>
+            <a class="odin-nav-item" href="/odin/regime/"><span class="rune">∿</span><span>Regime</span><span class="code">REG</span></a>
+            <a class="odin-nav-item active" href="/odin/company/"><span class="rune">◊</span><span>Company</span><span class="code">CO</span></a>
+            <span class="odin-nav-item disabled"><span class="rune">∑</span><span>Backtest</span><span class="code">BT</span></span>
+            <span class="odin-nav-item disabled"><span class="rune">⌬</span><span>News</span><span class="code">MUN</span></span>
+            <span class="odin-nav-spacer"></span>
+            <span class="odin-nav-end">
+                <span>yfinance · cached</span>
+                <span class="sep">·</span>
+                <span id="co-asof-end">—</span>
+            </span>
+        </nav>
+
+        <main class="odin-main">
+            <div class="panel-h">
+                <div class="title">
+                    <span class="display" id="co-name">NVDA</span>
+                    <span class="sub">CO · single-ticker · NVDA</span>
+                </div>
+                <div class="actions">
+                    <span class="act" id="co-asof-act">— as of —</span>
+                </div>
+            </div>
+
+            <!-- Price strip -->
+            <section class="reg-strip">
+                <div class="cell"><span class="lbl">Last</span><span class="v" id="px-last">—</span></div>
+                <div class="cell"><span class="lbl">Day</span><span class="v" id="px-day">—</span></div>
+                <div class="cell"><span class="lbl">YTD</span><span class="v" id="px-ytd">—</span></div>
+                <div class="cell"><span class="lbl">52W High</span><span class="v" id="px-hi">—</span></div>
+                <div class="cell"><span class="lbl">52W Low</span><span class="v" id="px-lo">—</span></div>
+                <div class="cell"><span class="lbl">Currency</span><span class="v" id="px-ccy">—</span></div>
+            </section>
+
+            <!-- Main grid: chart left, snapshot right -->
+            <section class="co-grid">
+                <div class="odin-chart">
+                    <div class="odin-chart-head">
+                        <span id="chart-title">Price · 1Y close</span>
+                        <span class="sub" id="chart-window">1Y · daily</span>
+                    </div>
+                    <div id="co-chart-wrap"></div>
+                </div>
+
+                <div class="co-tile">
+                    <div class="co-tile-h"><span class="lbl">Snapshot</span><span class="sub">yfinance fundamentals</span></div>
+                    <div class="co-summary" id="co-summary">Loading…</div>
+                    <table class="kv-table">
+                        <tr><td class="k">Sector</td><td class="v" id="sn-sector">—</td></tr>
+                        <tr><td class="k">Industry</td><td class="v" id="sn-industry">—</td></tr>
+                        <tr><td class="k">Market cap</td><td class="v" id="sn-cap">—</td></tr>
+                        <tr><td class="k">P/E (trailing)</td><td class="v" id="sn-pe">—</td></tr>
+                        <tr><td class="k">P/E (forward)</td><td class="v" id="sn-fpe">—</td></tr>
+                        <tr><td class="k">Beta</td><td class="v" id="sn-beta">—</td></tr>
+                        <tr><td class="k">Div yield</td><td class="v" id="sn-div">—</td></tr>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Tiles row 2: options / earnings / consensus -->
+            <section class="co-tiles" style="margin-top: var(--pad);">
+                <div class="co-tile">
+                    <div class="co-tile-h"><span class="lbl">Options · ATM IV</span><span class="sub" id="opt-expiry">next expiry</span></div>
+                    <div class="co-big" id="opt-iv">—</div>
+                    <table class="kv-table">
+                        <tr><td class="k">ATM strike</td><td class="v" id="opt-strike">—</td></tr>
+                        <tr><td class="k">Call IV</td><td class="v" id="opt-civ">—</td></tr>
+                        <tr><td class="k">Put IV</td><td class="v" id="opt-piv">—</td></tr>
+                        <tr><td class="k">DTE</td><td class="v" id="opt-dte">—</td></tr>
+                    </table>
+                </div>
+
+                <div class="co-tile">
+                    <div class="co-tile-h"><span class="lbl">Implied move</span><span class="sub">next-expiry straddle</span></div>
+                    <div class="co-big" id="im-move">—</div>
+                    <table class="kv-table">
+                        <tr><td class="k">Next earnings</td><td class="v" id="er-next">—</td></tr>
+                        <tr><td class="k">Expiry</td><td class="v" id="im-expiry">—</td></tr>
+                        <tr><td class="k">Straddle ($)</td><td class="v" id="im-straddle">—</td></tr>
+                    </table>
+                </div>
+
+                <div class="co-tile">
+                    <div class="co-tile-h"><span class="lbl">Earnings history</span><span class="sub">est vs actual</span></div>
+                    <table class="earn-table" id="er-table">
+                        <thead><tr><th>Date</th><th>Est</th><th>Act</th><th>Surprise</th></tr></thead>
+                        <tbody><tr><td colspan="4" style="text-align:center;color:var(--fg-4)">—</td></tr></tbody>
+                    </table>
+                </div>
+
+                <div class="co-tile">
+                    <div class="co-tile-h"><span class="lbl">Analyst consensus</span><span class="sub" id="cs-asof">—</span></div>
+                    <div class="consensus-bar" id="cs-bar">
+                        <div class="seg-buy" style="width: 0%"></div>
+                        <div class="seg-hold" style="width: 0%"></div>
+                        <div class="seg-sell" style="width: 0%"></div>
+                    </div>
+                    <div class="consensus-legend">
+                        <span id="cs-buy">Buy —</span>
+                        <span id="cs-hold">Hold —</span>
+                        <span id="cs-sell">Sell —</span>
+                    </div>
+                    <table class="kv-table">
+                        <tr><td class="k">Price target (mean)</td><td class="v" id="cs-pt">—</td></tr>
+                        <tr><td class="k">Range</td><td class="v" id="cs-range">—</td></tr>
+                    </table>
+                </div>
+            </section>
+
+            <!-- News -->
+            <div class="branch">
+                <span class="rune">⌬</span>
+                <span class="label">Recent news</span>
+                <span class="line"></span>
+                <span class="count" id="news-count">—</span>
+            </div>
+            <section id="news-list">
+                <div class="odin-loading">Loading news…</div>
+            </section>
+
+            <div class="odin-foot">
+                Company panel · yfinance cache · Muninn news archive · <span id="footer-generated">—</span><br>
+                <a href="/odin/">← back to ODIN home</a>
+            </div>
+        </main>
+
+        <footer class="odin-status">
+            <div class="item"><span class="lbl">Symbol</span><span class="v" id="bot-symbol">NVDA</span></div>
+            <div class="item"><span class="lbl">Last</span><span class="v" id="bot-last">—</span></div>
+            <div class="item"><span class="lbl">Δ</span><span class="v" id="bot-chg">—</span></div>
+            <div class="spacer"></div>
+            <div class="item"><span class="runes">ᚦ ᚱ ᛟ ᚹ ᛁ</span></div>
+            <div class="spacer"></div>
+            <div class="item"><span class="lbl">Mode</span><span class="v">static demo</span></div>
+        </footer>
+    </div>
+
+    <script src="/odin/odin.js"></script>
+    <script>
+    function buildPriceChart(candles) {
+      if (!candles || candles.length === 0) return `<div class="odin-loading">No price history available.</div>`;
+      const W = 720;
+      const H = 260;
+      const pad = { t: 10, r: 24, b: 22, l: 50 };
+      const innerW = W - pad.l - pad.r;
+      const innerH = H - pad.t - pad.b;
+
+      const n = candles.length;
+      const xs = i => pad.l + (i / Math.max(1, n - 1)) * innerW;
+
+      const closes = candles.map(c => c.c);
+      let yMin = Math.min(...closes);
+      let yMax = Math.max(...closes);
+      const p = (yMax - yMin) * 0.06 || 1;
+      yMin -= p; yMax += p;
+      const ys = v => pad.t + (1 - (v - yMin) / (yMax - yMin)) * innerH;
+
+      const line = candles.map((c, i) => `${i === 0 ? "M" : "L"}${xs(i).toFixed(1)},${ys(c.c).toFixed(1)}`).join(" ");
+      const area = `M${xs(0).toFixed(1)},${ys(candles[0].c).toFixed(1)} ` +
+                   candles.map((c, i) => `L${xs(i).toFixed(1)},${ys(c.c).toFixed(1)}`).join(" ") +
+                   ` L${xs(n - 1).toFixed(1)},${(pad.t + innerH).toFixed(1)} L${xs(0).toFixed(1)},${(pad.t + innerH).toFixed(1)} Z`;
+
+      // X ticks at first / ~1/3 / ~2/3 / last
+      const xTicks = [0, Math.floor(n * 0.33), Math.floor(n * 0.66), n - 1].map(i => ({
+        x: xs(i), label: candles[i].t.slice(0, 7),
+      }));
+      const yTicks = [yMin, (yMin + yMax) / 2, yMax].map(v => ({
+        y: ys(v), label: v.toFixed(0),
+      }));
+
+      const grid = yTicks.map(t => `<line x1="${pad.l}" x2="${W - pad.r}" y1="${t.y}" y2="${t.y}"/>`).join("");
+      return `
+        <svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none">
+          <g class="grid">${grid}</g>
+          <path class="price-area" d="${area}"/>
+          <path class="price-line" d="${line}"/>
+          <g class="axis">
+            ${xTicks.map(t => `<text x="${t.x}" y="${H - 6}" text-anchor="middle">${t.label}</text>`).join("")}
+            ${yTicks.map(t => `<text x="${pad.l - 8}" y="${(t.y + 3).toFixed(1)}" text-anchor="end">${t.label}</text>`).join("")}
+          </g>
+        </svg>`;
+    }
+
+    function renderEarnings(history) {
+      const tbody = document.querySelector("#er-table tbody");
+      if (!history || history.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="4" style="text-align:center;color:var(--fg-4)">No history</td></tr>`;
+        return;
+      }
+      tbody.innerHTML = history.slice(-4).map(r => {
+        const surp = r.surprise_pct;
+        const cls = surp === null || surp === undefined ? "" : surp >= 0 ? "pos" : "neg";
+        const surpTxt = surp === null || surp === undefined ? "—" : fmtPct(surp, 1);
+        return `
+          <tr>
+            <td>${escapeHTML(r.date)}</td>
+            <td>${r.estimate !== null && r.estimate !== undefined ? fmtNum(r.estimate, 2) : "—"}</td>
+            <td>${r.actual !== null && r.actual !== undefined ? fmtNum(r.actual, 2) : "—"}</td>
+            <td class="${cls}">${surpTxt}</td>
+          </tr>`;
+      }).join("");
+    }
+
+    function renderConsensus(cs) {
+      if (!cs) return;
+      const buy  = (cs.strong_buy || 0) + (cs.buy || 0);
+      const hold = cs.hold || 0;
+      const sell = (cs.sell || 0) + (cs.strong_sell || 0);
+      const tot  = buy + hold + sell;
+      if (!tot) return;
+      const bar = document.getElementById("cs-bar");
+      bar.children[0].style.width = (buy / tot * 100) + "%";
+      bar.children[1].style.width = (hold / tot * 100) + "%";
+      bar.children[2].style.width = (sell / tot * 100) + "%";
+      document.getElementById("cs-buy").textContent  = `Buy ${buy}`;
+      document.getElementById("cs-hold").textContent = `Hold ${hold}`;
+      document.getElementById("cs-sell").textContent = `Sell ${sell}`;
+      document.getElementById("cs-pt").textContent   = cs.price_target_mean ? "$" + fmtNum(cs.price_target_mean, 2) : "—";
+      document.getElementById("cs-range").textContent =
+        (cs.price_target_low && cs.price_target_high)
+          ? `$${fmtNum(cs.price_target_low, 0)} – $${fmtNum(cs.price_target_high, 0)}`
+          : "—";
+      document.getElementById("cs-asof").textContent = cs.as_of || "—";
+    }
+
+    function renderNews(items) {
+      const host = document.getElementById("news-list");
+      document.getElementById("news-count").textContent = `${items ? items.length : 0} headlines`;
+      if (!items || !items.length) {
+        host.innerHTML = `<div class="odin-loading">No recent news in cache.</div>`;
+        return;
+      }
+      host.innerHTML = items.map(it => `
+        <div class="mun-item">
+          <div class="meta">
+            <span class="age">${fmtAge(it.published)}</span>
+            <span class="pub">${escapeHTML(it.publisher || "—")}</span>
+          </div>
+          <div>
+            ${it.url
+              ? `<a class="title" href="${escapeHTML(it.url)}" target="_blank" rel="noopener">${escapeHTML(it.title || "—")}</a>`
+              : `<span class="title">${escapeHTML(it.title || "—")}</span>`}
+          </div>
+        </div>`).join("");
+    }
+
+    (async function () {
+        try {
+            const data = await loadJSON("/odin/data/company.json");
+            const tk = data.ticker || "NVDA";
+
+            document.title = `${tk} · Odin CO`;
+            document.getElementById("co-name").textContent = `${tk} · ${data.name || tk}`;
+            document.getElementById("cmd-ticker").textContent = tk;
+            document.getElementById("co-asof-act").textContent = "as of " + (data.as_of || "—");
+            document.getElementById("co-asof-end").textContent = data.as_of || "—";
+            document.getElementById("bot-symbol").textContent = tk;
+
+            // Price strip
+            const px = data.price || {};
+            document.getElementById("px-last").textContent = px.last ? "$" + fmtNum(px.last, 2) : "—";
+            const dayEl = document.getElementById("px-day");
+            dayEl.textContent = fmtPct(px.change_pct);
+            dayEl.className = "v " + ((px.change_pct ?? 0) >= 0 ? "calm" : "risk");
+            const ytdEl = document.getElementById("px-ytd");
+            ytdEl.textContent = fmtPct(px.ytd_pct);
+            ytdEl.className = "v " + ((px.ytd_pct ?? 0) >= 0 ? "calm" : "risk");
+            document.getElementById("px-hi").textContent = px.high_52w ? "$" + fmtNum(px.high_52w, 2) : "—";
+            document.getElementById("px-lo").textContent = px.low_52w  ? "$" + fmtNum(px.low_52w, 2)  : "—";
+            document.getElementById("px-ccy").textContent = px.currency || "USD";
+
+            // Status bar
+            document.getElementById("bot-last").textContent = px.last ? "$" + fmtNum(px.last, 2) : "—";
+            const botChg = document.getElementById("bot-chg");
+            botChg.textContent = fmtPct(px.change_pct);
+            botChg.className = "v " + ((px.change_pct ?? 0) >= 0 ? "moss" : "down");
+
+            // Chart
+            document.getElementById("co-chart-wrap").innerHTML = buildPriceChart(data.candles || []);
+
+            // Snapshot
+            const s = data.snapshot || {};
+            document.getElementById("sn-sector").textContent   = s.sector || "—";
+            document.getElementById("sn-industry").textContent = s.industry || "—";
+            document.getElementById("sn-cap").textContent      = s.market_cap ? "$" + fmtCompactUSD(s.market_cap) : "—";
+            document.getElementById("sn-pe").textContent       = s.pe ? fmtNum(s.pe, 1) : "—";
+            document.getElementById("sn-fpe").textContent      = s.forward_pe ? fmtNum(s.forward_pe, 1) : "—";
+            document.getElementById("sn-beta").textContent     = s.beta ? fmtNum(s.beta, 2) : "—";
+            document.getElementById("sn-div").textContent      = s.dividend_yield ? fmtPct(s.dividend_yield * 100, 2) : "—";
+            const summary = s.summary
+                ? (s.summary.length > 280 ? s.summary.slice(0, 277) + "…" : s.summary)
+                : "No business summary on file.";
+            document.getElementById("co-summary").textContent = summary;
+
+            // Options
+            const opt = data.options || {};
+            if (opt.atm_iv !== null && opt.atm_iv !== undefined) {
+                document.getElementById("opt-iv").textContent = fmtPct(opt.atm_iv * 100, 1);
+                document.getElementById("opt-iv").className = "co-big up";
+            }
+            document.getElementById("opt-expiry").textContent  = opt.expiry || "—";
+            document.getElementById("opt-strike").textContent  = opt.atm_strike ? "$" + fmtNum(opt.atm_strike, 2) : "—";
+            document.getElementById("opt-civ").textContent     = opt.call_iv ? fmtPct(opt.call_iv * 100, 1) : "—";
+            document.getElementById("opt-piv").textContent     = opt.put_iv  ? fmtPct(opt.put_iv  * 100, 1) : "—";
+            document.getElementById("opt-dte").textContent     = opt.days_to_expiry !== undefined ? opt.days_to_expiry + "d" : "—";
+
+            // Implied move
+            const im = data.implied_move || {};
+            const er = data.earnings || {};
+            document.getElementById("im-move").textContent = im.move_pct ? "±" + fmtNum(im.move_pct, 1) + "%" : "—";
+            document.getElementById("im-expiry").textContent   = im.expiry || "—";
+            document.getElementById("im-straddle").textContent = im.straddle ? "$" + fmtNum(im.straddle, 2) : "—";
+            document.getElementById("er-next").textContent     = (er.next && er.next.date) ? er.next.date : "—";
+
+            // Earnings table
+            renderEarnings(er.history || []);
+
+            // Consensus
+            renderConsensus(data.consensus);
+
+            // News
+            renderNews(data.news || []);
+
+            // Footer
+            document.getElementById("footer-generated").textContent =
+                "Last refresh: " + (data.generated_at ? new Date(data.generated_at).toUTCString() : "n/a");
+
+        } catch (err) {
+            console.error(err);
+            document.querySelector(".odin-main").insertAdjacentHTML(
+                "afterbegin",
+                `<div class="odin-loading">Could not load company.json — exporter has not been run yet.</div>`
+            );
+        }
+    })();
+    </script>
+</body>
+</html>

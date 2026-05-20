@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin · Terminal prototype</title>
+    <meta name="description" content="Odin — a Bloomberg-style quant terminal. Regime engine, factor research, news synthesis. Static prototype of the live tool.">
+    <meta name="author" content="Håkon Julius Størholt">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hassium.no/odin/">
+    <meta property="og:title" content="Odin · Terminal prototype">
+    <meta property="og:description" content="A Bloomberg-style quant terminal. Regime engine, factor research, news synthesis.">
+
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=Cormorant+Garamond:wght@500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/odin/odin.css">
+</head>
+<body class="odin-page">
+    <div class="odin-app">
+
+        <!-- Top bar -->
+        <header class="odin-top">
+            <a class="brand" href="/odin/">
+                <span class="mark">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2 L12 22 M5 9 L19 9 M5 15 L19 15"/>
+                    </svg>
+                </span>
+                <span class="brand-block">
+                    <span class="wordmark">ODIN<span class="dot">.</span></span>
+                    <span class="tag">terminal · prototype</span>
+                </span>
+            </a>
+
+            <div class="odin-cmd" aria-hidden="true">
+                <span class="rune">›</span>
+                <span class="ticker-chip">NVDA</span>
+                <span class="go">CO</span>
+                <input type="text" placeholder="ticker / panel / command  — read-only demo" disabled>
+                <span class="demo-note">demo · static</span>
+                <span class="kbd">⌘K</span>
+            </div>
+
+            <div class="right">
+                <span class="chip"><span class="lbl">MKT</span><span id="market-state" class="v muted">—</span></span>
+                <span class="chip"><span class="lbl">UTC</span><span id="odin-clock">—</span></span>
+                <a class="back" href="/" title="Back to hassium.no">← hassium.no</a>
+            </div>
+        </header>
+
+        <!-- Nav strip -->
+        <nav class="odin-nav">
+            <a class="odin-nav-item active" href="/odin/">
+                <span class="rune">⌂</span>
+                <span>Home</span>
+                <span class="code">HOME</span>
+            </a>
+            <a class="odin-nav-item" href="/odin/regime/">
+                <span class="rune">∿</span>
+                <span>Regime</span>
+                <span class="code">REG</span>
+            </a>
+            <a class="odin-nav-item" href="/odin/company/">
+                <span class="rune">◊</span>
+                <span>Company</span>
+                <span class="code">CO</span>
+            </a>
+            <span class="odin-nav-item disabled">
+                <span class="rune">∑</span>
+                <span>Backtest</span>
+                <span class="code">BT</span>
+            </span>
+            <span class="odin-nav-item disabled">
+                <span class="rune">⌬</span>
+                <span>News</span>
+                <span class="code">MUN</span>
+            </span>
+            <span class="odin-nav-item disabled">
+                <span class="rune">◐</span>
+                <span>Portfolio</span>
+                <span class="code">MJD</span>
+            </span>
+            <span class="odin-nav-spacer"></span>
+            <span class="odin-nav-end">
+                <span>v3.2</span>
+                <span class="sep">·</span>
+                <span>5L stress engine</span>
+            </span>
+        </nav>
+
+        <!-- Main -->
+        <main class="odin-main">
+            <div class="panel-h">
+                <div class="title">
+                    <span class="display">Home</span>
+                    <span class="sub">HOME · synthesis layer</span>
+                </div>
+                <div class="actions">
+                    <a class="act" href="/odin/regime/">Open REG →</a>
+                    <a class="act" href="/odin/company/">Open CO →</a>
+                </div>
+            </div>
+
+            <section class="home-hero">
+                <div class="home-orb-wrap" id="home-orb">
+                    <div class="orb orb--unknown"><div class="orb-core"></div></div>
+                    <div class="orb-regime" id="home-regime">—</div>
+                </div>
+
+                <div class="home-headline">
+                    <div class="lbl">Today's market regime</div>
+                    <div class="body" id="home-headline-body">Loading regime…</div>
+                </div>
+
+                <div class="home-subz" id="home-subz">
+                    <!-- filled by JS -->
+                </div>
+            </section>
+
+            <div class="branch">
+                <span class="rune">⌘</span>
+                <span class="label">Modules</span>
+                <span class="line"></span>
+                <span class="count">3 live · 3 pending</span>
+            </div>
+
+            <section class="home-spokes">
+                <a class="home-spoke" href="/odin/regime/">
+                    <span class="rune">∿</span>
+                    <span class="name">Heimdall · Regime</span>
+                    <span class="code">REG</span>
+                    <span class="blurb">5-layer stress engine — sticky topology alarm + cross-asset agreement. Daily SPX readout.</span>
+                </a>
+                <a class="home-spoke" href="/odin/company/">
+                    <span class="rune">◊</span>
+                    <span class="name">Company · NVDA</span>
+                    <span class="code">CO</span>
+                    <span class="blurb">Single-ticker deep dive: chart, fundamentals, options/IV, earnings, analyst consensus, news.</span>
+                </a>
+                <span class="home-spoke disabled">
+                    <span class="rune">∑</span>
+                    <span class="name">Mimir · Factors</span>
+                    <span class="code">BT</span>
+                    <span class="blurb">Quant kernel — factor → universe rank → backtest → risk decomposition. (Demo locked.)</span>
+                </span>
+                <span class="home-spoke disabled">
+                    <span class="rune">⌬</span>
+                    <span class="name">Muninn · News</span>
+                    <span class="code">MUN</span>
+                    <span class="blurb">Per-ticker news archive accreting daily. Synthesis layer for Huginn. (Demo locked.)</span>
+                </span>
+                <span class="home-spoke disabled">
+                    <span class="rune">◐</span>
+                    <span class="name">Mjǫðr · Portfolio</span>
+                    <span class="code">MJD</span>
+                    <span class="blurb">Live holdings, manual entry. P&amp;L vs cost basis. (Demo locked.)</span>
+                </span>
+                <span class="home-spoke disabled">
+                    <span class="rune">✦</span>
+                    <span class="name">Huginn · Agent</span>
+                    <span class="code">HGN</span>
+                    <span class="blurb">Anthropic-powered analyst that panels can call. "Explain this drawdown." (Demo locked.)</span>
+                </span>
+            </section>
+
+            <div class="branch">
+                <span class="rune">⌥</span>
+                <span class="label">Featured ticker · NVDA</span>
+                <span class="line"></span>
+                <a class="count" href="/odin/company/">CO →</a>
+            </div>
+
+            <section class="reg-strip" id="featured-strip">
+                <div class="cell"><span class="lbl">Last</span><span class="v" id="fz-last">—</span></div>
+                <div class="cell"><span class="lbl">Chg</span><span class="v" id="fz-chg">—</span></div>
+                <div class="cell"><span class="lbl">As of</span><span class="v" id="fz-asof">—</span></div>
+                <div class="cell"><span class="lbl">52W Hi</span><span class="v" id="fz-hi">—</span></div>
+                <div class="cell"><span class="lbl">52W Lo</span><span class="v" id="fz-lo">—</span></div>
+                <div class="cell"><span class="lbl">Sector</span><span class="v" id="fz-sec">—</span></div>
+            </section>
+
+            <div class="odin-foot">
+                Prototype — a small slice of the live <a href="/">Odin</a> terminal. Data refreshes nightly · <span id="footer-generated">—</span><br>
+                Source code is private; this site renders pre-computed JSON. <a href="/#projects">Back to projects →</a>
+            </div>
+        </main>
+
+        <!-- Status bar -->
+        <footer class="odin-status">
+            <div class="item"><span class="lbl">Engine</span><span class="v">heimdall-3.2</span></div>
+            <div class="item"><span class="lbl">Regime</span><span class="v muted" id="status-regime">—</span></div>
+            <div class="item"><span class="lbl">As of</span><span class="v" id="status-asof">—</span></div>
+            <div class="spacer"></div>
+            <div class="item"><span class="runes">ᚦ ᚱ ᛟ ᚹ ᛁ</span></div>
+            <div class="spacer"></div>
+            <div class="item"><span class="lbl">Mode</span><span class="v">static demo</span></div>
+        </footer>
+    </div>
+
+    <script src="/odin/odin.js"></script>
+    <script>
+    (async function () {
+        try {
+            const data = await loadJSON("/odin/data/state.json");
+            const rgm = data.regime || {};
+            const co  = data.company || {};
+
+            // Orb + regime word
+            const orb = document.querySelector("#home-orb .orb");
+            const meta = regimeMeta(rgm.regime);
+            orb.className = "orb orb--" + meta.orb;
+            document.getElementById("home-regime").textContent = rgm.regime || "Unknown";
+            document.getElementById("home-headline-body").textContent =
+                rgm.headline || "Regime is initialising — check back after the next refresh.";
+
+            // Status bar
+            const sr = document.getElementById("status-regime");
+            sr.textContent = rgm.regime || "—";
+            sr.classList.remove("muted");
+            sr.classList.add(meta.tone);
+            document.getElementById("status-asof").textContent = rgm.as_of || "—";
+
+            // Featured ticker strip (NVDA)
+            document.getElementById("fz-last").textContent = co.last !== undefined && co.last !== null ? "$" + fmtNum(co.last, 2) : "—";
+            const chgEl = document.getElementById("fz-chg");
+            chgEl.textContent = fmtPct(co.change_pct);
+            chgEl.classList.add((co.change_pct ?? 0) >= 0 ? "calm" : "risk");
+            document.getElementById("fz-asof").textContent = co.as_of || "—";
+
+            // Pull a couple more featured stats from the company bundle if available.
+            try {
+                const full = await loadJSON("/odin/data/company.json");
+                document.getElementById("fz-hi").textContent = full.price ? "$" + fmtNum(full.price.high_52w, 2) : "—";
+                document.getElementById("fz-lo").textContent = full.price ? "$" + fmtNum(full.price.low_52w, 2) : "—";
+                document.getElementById("fz-sec").textContent = full.snapshot ? (full.snapshot.sector || "—") : "—";
+            } catch (e) { /* optional */ }
+
+            // Footer timestamp
+            document.getElementById("footer-generated").textContent = "Last refresh: " + (data.generated_at ? new Date(data.generated_at).toUTCString() : "n/a");
+
+            // Sub-z cells: try to read from regime.json for the home page.
+            try {
+                const reg = await loadJSON("/odin/data/regime.json");
+                const sub = reg.sub_z || {};
+                const labels = [
+                    { key: "vol",      label: "Vol" },
+                    { key: "credit",   label: "Credit" },
+                    { key: "macro",    label: "Macro" },
+                    { key: "trend",    label: "Trend" },
+                    { key: "topology", label: "Topology" },
+                ];
+                const host = document.getElementById("home-subz");
+                host.innerHTML = labels.map(({key, label}) => {
+                    const v = sub[key];
+                    let cls = "na";
+                    let txt = "—";
+                    if (v !== null && v !== undefined && !Number.isNaN(v)) {
+                        txt = fmtNum(v, 2);
+                        if (v >= 2)        cls = "hot";
+                        else if (v >= 1)   cls = "warm";
+                        else if (v <= -1)  cls = "cool";
+                        else               cls = "";
+                    }
+                    return `<div class="home-subz-cell">
+                        <span class="lbl">${label}</span>
+                        <span class="v ${cls}">${txt}</span>
+                    </div>`;
+                }).join("");
+            } catch (e) { /* optional */ }
+
+        } catch (err) {
+            console.error(err);
+            document.getElementById("home-headline-body").textContent =
+                "Could not load state.json — exporter has not been run yet.";
+        }
+    })();
+    </script>
+</body>
+</html>

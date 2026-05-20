@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regime · Odin REG</title>
+    <meta name="description" content="Heimdall — daily market regime readout. 5-layer SPX stress engine with sticky-topology alarm.">
+
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=Cormorant+Garamond:wght@500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/odin/odin.css">
+</head>
+<body class="odin-page">
+    <div class="odin-app">
+
+        <header class="odin-top">
+            <a class="brand" href="/odin/">
+                <span class="mark">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2 L12 22 M5 9 L19 9 M5 15 L19 15"/>
+                    </svg>
+                </span>
+                <span class="brand-block">
+                    <span class="wordmark">ODIN<span class="dot">.</span></span>
+                    <span class="tag">terminal · prototype</span>
+                </span>
+            </a>
+            <div class="odin-cmd" aria-hidden="true">
+                <span class="rune">›</span>
+                <span class="ticker-chip">^GSPC</span>
+                <span class="go">REG</span>
+                <input type="text" placeholder="ticker / panel / command  — read-only demo" disabled>
+                <span class="demo-note">demo · static</span>
+                <span class="kbd">⌘K</span>
+            </div>
+            <div class="right">
+                <span class="chip"><span class="lbl">MKT</span><span id="market-state" class="v muted">—</span></span>
+                <span class="chip"><span class="lbl">UTC</span><span id="odin-clock">—</span></span>
+                <a class="back" href="/" title="Back to hassium.no">← hassium.no</a>
+            </div>
+        </header>
+
+        <nav class="odin-nav">
+            <a class="odin-nav-item" href="/odin/">
+                <span class="rune">⌂</span><span>Home</span><span class="code">HOME</span>
+            </a>
+            <a class="odin-nav-item active" href="/odin/regime/">
+                <span class="rune">∿</span><span>Regime</span><span class="code">REG</span>
+            </a>
+            <a class="odin-nav-item" href="/odin/company/">
+                <span class="rune">◊</span><span>Company</span><span class="code">CO</span>
+            </a>
+            <span class="odin-nav-item disabled"><span class="rune">∑</span><span>Backtest</span><span class="code">BT</span></span>
+            <span class="odin-nav-item disabled"><span class="rune">⌬</span><span>News</span><span class="code">MUN</span></span>
+            <span class="odin-nav-spacer"></span>
+            <span class="odin-nav-end">
+                <span id="reg-model">heimdall-3.2</span>
+                <span class="sep">·</span>
+                <span>walk-forward tuned</span>
+            </span>
+        </nav>
+
+        <main class="odin-main">
+            <div class="panel-h">
+                <div class="title">
+                    <span class="display">Regime</span>
+                    <span class="sub">REG · Heimdall · SPX</span>
+                </div>
+                <div class="actions">
+                    <span class="act" id="reg-asof-act">— as of —</span>
+                </div>
+            </div>
+
+            <!-- Headline -->
+            <section class="reg-headline reg-unknown" id="reg-headline">
+                <div class="reg-hl-top">
+                    <span class="reg-status unknown" id="reg-status">—</span>
+                    <span class="reg-hl-label">Today's read</span>
+                </div>
+                <div class="reg-hl-body" id="reg-headline-body">Loading…</div>
+            </section>
+
+            <!-- Strip -->
+            <section class="reg-strip" id="reg-strip" style="margin-top: var(--pad);">
+                <div class="cell"><span class="lbl">Alarm</span><span class="v" id="rg-alarm">—</span></div>
+                <div class="cell"><span class="lbl">Regime</span><span class="v" id="rg-regime">—</span></div>
+                <div class="cell"><span class="lbl">Fragility</span><span class="v" id="rg-frag">—</span></div>
+                <div class="cell"><span class="lbl">Hit rate</span><span class="v" id="rg-hit">—</span></div>
+                <div class="cell"><span class="lbl">Events</span><span class="v" id="rg-events">—</span></div>
+                <div class="cell"><span class="lbl">Cross-asset</span><span class="v" id="rg-cross">—</span></div>
+            </section>
+
+            <!-- Grid: chart + sub-z bars -->
+            <section class="reg-grid">
+                <div class="odin-chart">
+                    <div class="odin-chart-head">
+                        <span>SPX · sticky-topology stress · alarm fires</span>
+                        <span class="sub" id="chart-window-lbl">3y</span>
+                    </div>
+                    <div id="reg-chart-wrap"></div>
+                    <div class="odin-chart-legend">
+                        <span class="lg"><span class="swatch" style="background: var(--fg-3);"></span> SPX close</span>
+                        <span class="lg"><span class="swatch" style="background: var(--ember); height: 6px;"></span> Topology stress (z)</span>
+                        <span class="lg"><span class="swatch" style="background: color-mix(in oklch, var(--blood) 22%, transparent); height: 6px;"></span> Alarm fired</span>
+                    </div>
+                </div>
+
+                <div class="reg-card">
+                    <div class="reg-card-h">
+                        <span>Typed sub-composites</span>
+                        <span class="sub">z-score</span>
+                    </div>
+                    <div id="reg-subz-host">
+                        <!-- bars filled by JS -->
+                    </div>
+                    <div class="reg-foot">
+                        The alarm is driven by sticky topology only. Vol / credit / macro / trend
+                        set the fragility tier (broad-stress context). Bars are walk-forward
+                        z-scores; the center line is the long-run mean.
+                    </div>
+                </div>
+            </section>
+
+            <!-- Track record + freshness -->
+            <section class="reg-grid">
+                <div class="reg-card">
+                    <div class="reg-card-h">
+                        <span>Walk-forward track record</span>
+                        <span class="sub">out-of-sample</span>
+                    </div>
+                    <div class="reg-track-row"><span class="t-lbl">Hit rate</span><span class="t-val" id="tr-hit">—</span></div>
+                    <div class="reg-track-row"><span class="t-lbl">False-fire rate</span><span class="t-val" id="tr-ff">—</span></div>
+                    <div class="reg-track-row"><span class="t-lbl">Events observed</span><span class="t-val" id="tr-events">—</span></div>
+                    <div class="reg-track-row"><span class="t-lbl">Threshold</span><span class="t-val" id="tr-thresh">—</span></div>
+                    <div class="reg-foot">
+                        The signal has a thin out-of-sample track record. Treat the alarm as
+                        a sizing input, not a certainty.
+                    </div>
+                </div>
+
+                <div class="reg-card">
+                    <div class="reg-card-h">
+                        <span>Data freshness</span>
+                        <span class="sub">per-input</span>
+                    </div>
+                    <table class="kv-table" id="fresh-table">
+                        <tr><td class="k">SPX</td><td class="v" id="fr-spx">—</td></tr>
+                        <tr><td class="k">VIX</td><td class="v" id="fr-vix">—</td></tr>
+                        <tr><td class="k">HYG (credit)</td><td class="v" id="fr-hyg">—</td></tr>
+                        <tr><td class="k">10y / 2y curve</td><td class="v" id="fr-curve">—</td></tr>
+                        <tr><td class="k">NFCI</td><td class="v" id="fr-nfci">—</td></tr>
+                        <tr><td class="k">Topology</td><td class="v" id="fr-topo">—</td></tr>
+                    </table>
+                </div>
+            </section>
+
+            <div class="odin-foot">
+                Heimdall · <a href="https://github.com/hakonstoerholt" target="_blank">source private</a> · static JSON refreshed nightly · <span id="footer-generated">—</span>
+            </div>
+        </main>
+
+        <footer class="odin-status">
+            <div class="item"><span class="lbl">Engine</span><span class="v" id="bot-engine">heimdall-3.2</span></div>
+            <div class="item"><span class="lbl">Regime</span><span class="v" id="bot-regime">—</span></div>
+            <div class="item"><span class="lbl">Alarm</span><span class="v" id="bot-alarm">—</span></div>
+            <div class="spacer"></div>
+            <div class="item"><span class="runes">ᚦ ᚱ ᛟ ᚹ ᛁ</span></div>
+            <div class="spacer"></div>
+            <div class="item"><span class="lbl">Mode</span><span class="v">static demo</span></div>
+        </footer>
+    </div>
+
+    <script src="/odin/odin.js"></script>
+    <script>
+    function regimeClass(word) {
+      switch (word) {
+        case "Calm": return "calm";
+        case "Watch": return "watch";
+        case "Risk-Off": return "risk-off";
+        case "Crisis": return "crisis";
+        default: return "unknown";
+      }
+    }
+
+    function buildSubzBars(sub_z) {
+      const order = [
+        { key: "topology", label: "Topology", group: "Alarm channel" },
+        { key: "vol",      label: "Volatility", group: "Fragility context" },
+        { key: "credit",   label: "Credit",     group: "Fragility context" },
+        { key: "macro",    label: "Macro",      group: "Fragility context" },
+        { key: "trend",    label: "Trend",      group: "Fragility context" },
+      ];
+      const MAX = 3.0; // visual cap for the bar
+      let html = "";
+      let lastGroup = null;
+      for (const { key, label, group } of order) {
+        if (group !== lastGroup) {
+          html += `<div class="reg-subz-group">${escapeHTML(group)}</div>`;
+          lastGroup = group;
+        }
+        const v = sub_z[key];
+        let fillStyle = "width: 0;";
+        let cls = "";
+        let txt = "—";
+        if (v !== null && v !== undefined && !Number.isNaN(v)) {
+          const clamped = Math.max(-MAX, Math.min(MAX, v));
+          const half = 50; // each half of the track is 50%
+          const pct = (Math.abs(clamped) / MAX) * half;
+          // Position from center
+          if (clamped >= 0) {
+            fillStyle = `left: 50%; width: ${pct}%;`;
+          } else {
+            fillStyle = `right: 50%; width: ${pct}%;`;
+          }
+          if      (clamped >= 1.5) cls = "risk";
+          else if (clamped >= 0.5) cls = "warn";
+          else                      cls = "calm";
+          txt = (clamped >= 0 ? "+" : "") + clamped.toFixed(2);
+        }
+        html += `
+          <div class="reg-bar-row">
+            <span class="dim">${escapeHTML(label)}</span>
+            <span class="track"><span class="fill ${cls}" style="${fillStyle}"></span></span>
+            <span class="val">${txt}</span>
+          </div>`;
+      }
+      return html;
+    }
+
+    function buildChart(history) {
+      if (!history || history.length === 0) {
+        return `<div class="odin-loading">No history series available.</div>`;
+      }
+      const W = 720;
+      const H = 240;
+      const pad = { t: 10, r: 30, b: 22, l: 36 };
+      const innerW = W - pad.l - pad.r;
+      const innerH = H - pad.t - pad.b;
+
+      // Filter to entries that at least have a SPX value.
+      const rows = history.filter(r => r.spx !== null && r.spx !== undefined && !Number.isNaN(r.spx));
+      if (!rows.length) return `<div class="odin-loading">No SPX series available.</div>`;
+
+      const n = rows.length;
+      const xs = i => pad.l + (i / Math.max(1, n - 1)) * innerW;
+
+      // SPX scaling.
+      const spxVals = rows.map(r => r.spx);
+      let spxMin = Math.min(...spxVals);
+      let spxMax = Math.max(...spxVals);
+      const spxPad = (spxMax - spxMin) * 0.05 || 1;
+      spxMin -= spxPad; spxMax += spxPad;
+      const ySpx = v => pad.t + (1 - (v - spxMin) / (spxMax - spxMin)) * innerH;
+
+      // Sticky topology scaling — show separately, smaller band at bottom 1/3.
+      const stickyVals = rows.map(r => (r.sticky === null || r.sticky === undefined) ? 0 : r.sticky);
+      const stickyAbs = Math.max(...stickyVals.map(Math.abs), 1);
+      const stickyBandTop = pad.t + innerH * 0.65;
+      const stickyBandBot = pad.t + innerH;
+      const yStick = v => stickyBandTop + (1 - (v + stickyAbs) / (2 * stickyAbs)) * (stickyBandBot - stickyBandTop);
+
+      // Alarm bands.
+      let alarmBands = "";
+      let bandStart = null;
+      for (let i = 0; i < n; i++) {
+        const a = rows[i].alarm === true;
+        if (a && bandStart === null) bandStart = i;
+        if ((!a || i === n - 1) && bandStart !== null) {
+          const x0 = xs(bandStart);
+          const x1 = xs(a ? i : Math.max(bandStart, i - 1));
+          alarmBands += `<rect class="alarm-band" x="${x0}" y="${pad.t}" width="${Math.max(2, x1 - x0)}" height="${innerH}"/>`;
+          bandStart = null;
+        }
+      }
+
+      // SPX path.
+      const spxPath = rows.map((r, i) => `${i === 0 ? "M" : "L"}${xs(i).toFixed(1)},${ySpx(r.spx).toFixed(1)}`).join(" ");
+      // Sticky path.
+      const stickPath = rows.map((r, i) => {
+        const v = (r.sticky === null || r.sticky === undefined) ? 0 : r.sticky;
+        return `${i === 0 ? "M" : "L"}${xs(i).toFixed(1)},${yStick(v).toFixed(1)}`;
+      }).join(" ");
+
+      // X ticks — first, ~33%, ~66%, last.
+      const xTicks = [0, Math.floor(n * 0.33), Math.floor(n * 0.66), n - 1].map(i => ({
+        x: xs(i),
+        label: rows[i].date.slice(0, 7),
+      }));
+      // Y ticks for SPX.
+      const yTicks = [spxMin, (spxMin + spxMax) / 2, spxMax].map(v => ({
+        y: ySpx(v),
+        label: Math.round(v),
+      }));
+
+      const grid = yTicks.map(t => `<line x1="${pad.l}" x2="${W - pad.r}" y1="${t.y}" y2="${t.y}"/>`).join("");
+      const axisLabels = `
+        ${xTicks.map(t => `<text x="${t.x}" y="${H - 6}" text-anchor="middle">${t.label}</text>`).join("")}
+        ${yTicks.map(t => `<text x="${pad.l - 6}" y="${(t.y + 3).toFixed(1)}" text-anchor="end">${t.label}</text>`).join("")}
+      `;
+
+      return `
+        <svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none">
+          <g class="grid">${grid}</g>
+          ${alarmBands}
+          <path class="spx-line" d="${spxPath}"/>
+          <path class="price-line" d="${stickPath}" style="opacity:0.85"/>
+          <line x1="${pad.l}" x2="${W - pad.r}" y1="${(stickyBandTop + (stickyBandBot - stickyBandTop) / 2).toFixed(1)}" y2="${(stickyBandTop + (stickyBandBot - stickyBandTop) / 2).toFixed(1)}" stroke="var(--line-soft)" stroke-dasharray="3 3"/>
+          <g class="axis">${axisLabels}</g>
+        </svg>`;
+    }
+
+    (async function () {
+        try {
+            const data = await loadJSON("/odin/data/regime.json");
+            const word = data.regime || "Unknown";
+            const cls = regimeClass(word);
+
+            // Headline
+            const head = document.getElementById("reg-headline");
+            head.className = "reg-headline reg-" + cls;
+            const status = document.getElementById("reg-status");
+            status.textContent = word.toUpperCase();
+            status.className = "reg-status " + cls;
+            document.getElementById("reg-headline-body").textContent = data.headline || "—";
+            document.getElementById("reg-asof-act").textContent = "as of " + (data.as_of || "—");
+
+            // Strip
+            const alarm = data.alarm;
+            const alarmEl = document.getElementById("rg-alarm");
+            if (alarm === true)       { alarmEl.textContent = "FIRED";    alarmEl.className = "v risk-off"; }
+            else if (alarm === false) { alarmEl.textContent = "Quiet";    alarmEl.className = "v calm"; }
+            else                       { alarmEl.textContent = "Suppressed"; alarmEl.className = "v muted"; }
+
+            const rg = document.getElementById("rg-regime");
+            rg.textContent = word;
+            rg.className = "v " + cls;
+
+            const frag = data.frag_tier;
+            const fragEl = document.getElementById("rg-frag");
+            fragEl.textContent = frag || "—";
+            if (frag === "High")      fragEl.className = "v risk-off";
+            else if (frag === "Mid")  fragEl.className = "v watch";
+            else if (frag === "Low")  fragEl.className = "v calm";
+            else                      fragEl.className = "v muted";
+
+            const sq = data.signal_quality || {};
+            const hr = sq.hit_rate;
+            document.getElementById("rg-hit").textContent = (hr !== null && hr !== undefined) ? fmtPct(hr * 100, 0) : "—";
+            const ev = sq.event_count;
+            document.getElementById("rg-events").textContent = (ev !== null && ev !== undefined) ? fmtInt(ev) : "—";
+
+            // Cross-asset agreement count.
+            const ca = data.cross_asset || {};
+            const aCount = ca.agreement_count;
+            const aMax   = ca.assets_count || ca.assets || 5;
+            const crossEl = document.getElementById("rg-cross");
+            if (aCount === null || aCount === undefined) {
+                crossEl.textContent = "—"; crossEl.className = "v muted";
+            } else {
+                crossEl.textContent = `${aCount} / ${aMax}`;
+                if      (aCount >= 3) crossEl.className = "v risk-off";
+                else if (aCount >= 1) crossEl.className = "v watch";
+                else                  crossEl.className = "v calm";
+            }
+
+            // Sub-z bars
+            document.getElementById("reg-subz-host").innerHTML = buildSubzBars(data.sub_z || {});
+
+            // Chart
+            document.getElementById("reg-chart-wrap").innerHTML = buildChart(data.history || []);
+
+            // Walk-forward track record
+            document.getElementById("tr-hit").textContent = (hr !== null && hr !== undefined) ? fmtPct(hr * 100, 0) : "—";
+            const ff = sq.false_fire_rate;
+            document.getElementById("tr-ff").textContent = (ff !== null && ff !== undefined) ? fmtPct(ff * 100, 0) : "—";
+            document.getElementById("tr-events").textContent = (ev !== null && ev !== undefined) ? fmtInt(ev) : "—";
+            const thr = (data.thresholds || {}).alarm_sticky_topo;
+            document.getElementById("tr-thresh").textContent = (thr !== null && thr !== undefined) ? "z ≥ " + fmtNum(thr, 2) : "—";
+
+            // Freshness
+            const fr = (data.freshness || {}).per_input || {};
+            const fmtFresh = info => {
+                if (!info) return "—";
+                const stale = info.stale ? " · STALE" : "";
+                const age = info.age_days !== undefined && info.age_days !== null ? `${info.age_days}d ago` : "—";
+                return `${info.last || "—"} (${age})${stale}`;
+            };
+            document.getElementById("fr-spx").textContent   = fmtFresh(fr.spx);
+            document.getElementById("fr-vix").textContent   = fmtFresh(fr.vix);
+            document.getElementById("fr-hyg").textContent   = fmtFresh(fr.hyg);
+            document.getElementById("fr-curve").textContent = fmtFresh(fr.t10y2y);
+            document.getElementById("fr-nfci").textContent  = fmtFresh(fr.nfci);
+            document.getElementById("fr-topo").textContent  = fmtFresh(fr.sub_topology);
+
+            // Footer + status bar
+            document.getElementById("footer-generated").textContent =
+                "Last refresh: " + (data.generated_at ? new Date(data.generated_at).toUTCString() : "n/a");
+            document.getElementById("bot-regime").textContent = word;
+            document.getElementById("bot-regime").className = "v " + cls;
+            document.getElementById("bot-alarm").textContent = alarm === true ? "FIRED" : alarm === false ? "Quiet" : "—";
+            document.getElementById("bot-engine").textContent = data.model_version || "heimdall-3.2";
+
+        } catch (err) {
+            console.error(err);
+            document.getElementById("reg-headline-body").textContent =
+                "Could not load regime.json — exporter has not been run yet.";
+        }
+    })();
+    </script>
+</body>
+</html>
