@@ -1,41 +1,41 @@
 {
   "as_of": "2026-05-20",
   "model_version": "heimdall-3.2",
-  "regime": "Unknown",
-  "alarm": null,
+  "regime": "Calm",
+  "alarm": false,
   "frag_tier": "Low",
   "degraded": false,
-  "headline": "The regime engine isn't trained yet \u2014 there is no walk-forward threshold model on disk. Run scripts/refresh_heimdall.py to build it; until then there is no stress signal.",
+  "headline": "Calm \u2014 no stress alarm. The macro / yield-curve picture leads at +0.1\u03c3, and the topology trigger sits 1.6\u03c3 away. Fragility Low; full exposure (1\u00d7).",
   "scores": {
     "heimdall_max": 0.07121746379746155,
-    "heimdall_mean": -0.6515972813218049,
-    "p_turbulent": 0.0011627920392524506,
+    "heimdall_mean": -0.6524849169350299,
+    "p_turbulent": 0.0011651746959590403,
     "h0": 0.1229430699604563,
     "h1": 0.0013575265184044,
     "h1_z": -0.7143231691899973,
     "sub_topology_sticky": 0.5147662593480831
   },
   "sub_z": {
-    "vol": -0.501406771150791,
-    "credit": -1.4432074132940118,
+    "vol": -0.5044578470780148,
+    "credit": -1.4429515407022162,
     "macro": 0.07121746379746155,
-    "trend": -0.6702665167716857,
+    "trend": -0.6719094915023824,
     "topology": -0.7143231691899973
   },
   "thresholds": {
-    "alarm_sticky_topo": null
+    "alarm_sticky_topo": 2.1
   },
   "signal_quality": {
-    "hit_rate": null,
-    "false_fire_rate": null,
-    "event_count": null,
-    "years_observed": null
+    "hit_rate": 0.6923076923076923,
+    "false_fire_rate": 0.1651432519414686,
+    "event_count": 13,
+    "years_observed": 28
   },
   "cross_asset": {
     "agreement_count": 0,
     "assets_count": 5,
     "label": "Isolated",
-    "alarm": null,
+    "alarm": false,
     "assets": {
       "equities": {
         "label": "Equities",
@@ -4580,7 +4580,7 @@
       "date": "2026-05-20",
       "alarm": false,
       "sticky": 0.07121746379746155,
-      "spx": 7428.990234375
+      "spx": 7429.990234375
     }
   ],
   "freshness": {
@@ -4655,5 +4655,5 @@
     },
     "degraded": false
   },
-  "generated_at": "2026-05-20T19:48:34.079605+00:00"
+  "generated_at": "2026-05-20T19:58:05.389281+00:00"
 }

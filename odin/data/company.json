@@ -14,9 +14,9 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 5410622799872.0,
-    "pe": 45.589794,
-    "forward_pe": 19.24316,
+    "market_cap": 5407716671488.0,
+    "pe": 45.565308,
+    "forward_pe": 19.232824,
     "dividend_yield": 0.02,
     "beta": 2.244,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company. The company operates through two segments, Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. The company sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants worldwide. It has a collaboration with Tech Mahindra Limited to develop artificial intelligence powered telco network operations reasoning agent. The company has a strategic partnership with Lumentum Holdings Inc. to develop optics technologies for AI and data centers. It also has a strategic partnership with Nebius Group N.V. to develop and deploy hyperscale cloud for the artificial intelligence market; and has a strategic partnership with IREN Limited to accelerate deployment of up to 5 gigawatts of infrastructure. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
@@ -2045,15 +2045,15 @@
   },
   "implied_move": {
     "expiry": "2026-05-22",
-    "move_pct": 5.660208371325549,
-    "straddle": 12.65
+    "move_pct": 5.704953101533655,
+    "straddle": 12.75
   },
   "options": {
     "expiry": "2026-05-22",
     "atm_strike": 222.5,
-    "call_iv": 0.7387721435546875,
-    "put_iv": 0.8276384423828124,
-    "atm_iv": 0.7832052929687499,
+    "call_iv": 0.7741721801757813,
+    "put_iv": 0.8071308349609375,
+    "atm_iv": 0.7906515075683593,
     "days_to_expiry": 2
   },
   "consensus": null,
@@ -2107,5 +2107,5 @@
       "published": "2026-05-20T12:23:58+00:00"
     }
   ],
-  "generated_at": "2026-05-20T19:48:34.467829+00:00"
+  "generated_at": "2026-05-20T19:58:05.679383+00:00"
 }
