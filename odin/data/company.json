@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-05-21",
+  "as_of": "2026-05-22",
   "price": {
-    "last": 219.50999450683594,
-    "prev_close": 223.49000549316406,
-    "change_pct": -1.7808451780855439,
-    "ytd_pct": 16.23510056256734,
+    "last": 215.3300018310547,
+    "prev_close": 219.50999450683594,
+    "change_pct": -1.904237975665879,
+    "ytd_pct": 14.02170763660151,
     "high_52w": 236.5399932861328,
     "low_52w": 129.16000366210938,
     "currency": "USD"
@@ -14,22 +14,14 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 5316647321600.0,
-    "pe": 33.61562,
-    "forward_pe": 18.846476,
+    "market_cap": 5215507972096.0,
+    "pe": 33.026073,
+    "forward_pe": 17.027882,
     "dividend_yield": 0.02,
     "beta": 2.244,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company. The company operates through two segments, Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. The company sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants worldwide. It has a collaboration with Tech Mahindra Limited to develop artificial intelligence powered telco network operations reasoning agent. The company has a strategic partnership with Lumentum Holdings Inc. to develop optics technologies for AI and data centers. It also has a strategic partnership with Nebius Group N.V. to develop and deploy hyperscale cloud for the artificial intelligence market; and has a strategic partnership with IREN Limited to accelerate deployment of up to 5 gigawatts of infrastructure. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-05-21",
-      "o": 133.05999755859375,
-      "h": 137.39999389648438,
-      "l": 130.58999633789062,
-      "c": 131.8000030517578,
-      "v": 270608700
-    },
     {
       "t": "2025-05-22",
       "o": 132.22999572753906,
@@ -2037,6 +2029,14 @@
       "l": 217.92999267578125,
       "c": 219.50999450683594,
       "v": 200994166
+    },
+    {
+      "t": "2026-05-22",
+      "o": 220.9040069580078,
+      "h": 221.00999450683594,
+      "l": 214.86000061035156,
+      "c": 215.3300018310547,
+      "v": 166941160
     }
   ],
   "earnings": {
@@ -2044,68 +2044,68 @@
     "history": []
   },
   "implied_move": {
-    "expiry": "2026-05-22",
-    "move_pct": 2.0477427508932937,
-    "straddle": 4.495
+    "expiry": "2026-05-26",
+    "move_pct": 2.094459648748107,
+    "straddle": 4.51
   },
   "options": {
-    "expiry": "2026-05-22",
-    "atm_strike": 220.0,
-    "call_iv": 0.35547519531249994,
-    "put_iv": 0.3415593188476562,
-    "atm_iv": 0.3485172570800781,
-    "days_to_expiry": 1
+    "expiry": "2026-05-26",
+    "atm_strike": 215.0,
+    "call_iv": 0.22412885253906245,
+    "put_iv": 0.22901161621093752,
+    "atm_iv": 0.22657023437499998,
+    "days_to_expiry": 4
   },
   "consensus": null,
   "news": [
     {
-      "title": "Bank of America resets Nvidia stock price target after earnings",
-      "publisher": "TheStreet",
-      "url": "https://www.thestreet.com/investing/stocks/bank-of-america-resets-nvidia-stock-price-target-after-earnings",
-      "published": "2026-05-21T22:17:00+00:00"
-    },
-    {
-      "title": "Dow Jones Sets Closing High As Oil Prices Fall; Amazon, Credo Lead AI Stocks In Buy Areas",
-      "publisher": "Investor's Business Daily",
-      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-oil-prices-amazon-credo-ai-stocks-buy/?src=A00220&yptr=yahoo",
-      "published": "2026-05-21T22:14:18+00:00"
-    },
-    {
-      "title": "CONY\u2019s Dreamy Yield Hides a Track Record That Should Concern Long Term Holders",
-      "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/05/21/conys-dreamy-yield-hides-a-track-record-that-should-concern-long-term-holders/",
-      "published": "2026-05-21T21:25:40+00:00"
-    },
-    {
-      "title": "Stock Market Today, May 21: Markets Edge Upwards Again on Iran Peace Hopes",
+      "title": "Is Relay Therapeutics a Buy After Promising Trial Results?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/coverage/stock-market-today/2026/05/21/stock-market-today-may-21-markets-edge-upwards-again-on-iran-peace-hopes/",
-      "published": "2026-05-21T21:21:14+00:00"
+      "url": "https://www.fool.com/investing/2026/05/22/is-relay-therapeutics-a-buy-after-promising-trial/",
+      "published": "2026-05-22T21:50:00+00:00"
     },
     {
-      "title": "Trading Day: IPO, IPO, it's off to work we go",
-      "publisher": "Reuters",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/trading-day-ipo-ipo-off-210405064.html",
-      "published": "2026-05-21T21:04:05+00:00"
+      "title": "Here Are 7 Important Things Investors Learned from SpaceX's S-1 Filing",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/05/22/here-are-x-important-things-investors-learned-from/",
+      "published": "2026-05-22T21:40:00+00:00"
     },
     {
-      "title": "NVIDIA confirms AI boom, but Iran fears are clouding market",
-      "publisher": "TheStreet",
-      "url": "https://www.thestreet.com/markets/nvidia-confirms-ai-boom-but-iran-fears-are-clouding-market",
-      "published": "2026-05-21T21:03:00+00:00"
+      "title": "1 Artificial Intelligence (AI) Stock to Buy After Its Post-Earnings Sell-Off",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/05/22/artificial-intelligence-ai-stock-buy-sell-off-anet/",
+      "published": "2026-05-22T21:28:00+00:00"
     },
     {
-      "title": "These Stocks Are Today\u2019s Movers: Nvidia, IBM, Rigetti, Nebius, Bloom Energy, Applied Digital, Intuit, D-Wave, Spotify, and More",
+      "title": "Weekly Wrap: Bitcoin Treads Water As Stocks Rally",
+      "publisher": "CryptoProwl",
+      "url": "https://www.cryptoprowl.com/releases/weekly-wrap-bitcoin-treads-water-as-stocks-rally-5639",
+      "published": "2026-05-22T21:20:00+00:00"
+    },
+    {
+      "title": "The Gates Foundation Sold All of Its Remaining Microsoft Stock. Should Investors Be Worried?",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/05/22/the-gates-foundation-sold-msft-stock/",
+      "published": "2026-05-22T21:11:00+00:00"
+    },
+    {
+      "title": "The Best Stocks to Invest $5,000 In Right Now",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/05/22/the-best-stocks-to-invest-5000-in-right-now/",
+      "published": "2026-05-22T20:41:00+00:00"
+    },
+    {
+      "title": "Dell Stock Surges Ahead Of AI-Driven Fiscal Q1 Report",
+      "publisher": "Investor's Business Daily",
+      "url": "https://www.investors.com/news/technology/dell-stock-surges-ai-driven-fiscal-q1-report/?src=A00220&yptr=yahoo",
+      "published": "2026-05-22T20:37:07+00:00"
+    },
+    {
+      "title": "Nvidia Stock Gets Even Cheaper With Each Earnings Beat",
       "publisher": "Barrons.com",
-      "url": "https://www.barrons.com/articles/stock-movers-ccaca172?siteid=yhoof2&yptr=yahoo",
-      "published": "2026-05-21T21:02:00+00:00"
-    },
-    {
-      "title": "Why Nvidia's stock is mispriced, and Wall Street is underestimating its earnings power",
-      "publisher": "Yahoo Finance Video",
-      "url": "https://finance.yahoo.com/video/why-nvidias-stock-mispriced-wall-203609805.html",
-      "published": "2026-05-21T20:36:09+00:00"
+      "url": "https://www.barrons.com/articles/nvidia-stock-price-earnings-valuation-cheap-b4d4cf2f?siteid=yhoof2&yptr=yahoo",
+      "published": "2026-05-22T20:36:00+00:00"
     }
   ],
-  "generated_at": "2026-05-21T22:29:36.660776+00:00"
+  "generated_at": "2026-05-22T22:22:24.978380+00:00"
 }
