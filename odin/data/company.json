@@ -2051,61 +2051,61 @@
   "options": {
     "expiry": "2026-05-26",
     "atm_strike": 215.0,
-    "call_iv": 0.22412885253906245,
-    "put_iv": 0.22901161621093752,
-    "atm_iv": 0.22657023437499998,
-    "days_to_expiry": 4
+    "call_iv": 0.25049577636718745,
+    "put_iv": 0.2561109545898438,
+    "atm_iv": 0.2533033654785156,
+    "days_to_expiry": 3
   },
   "consensus": null,
   "news": [
     {
-      "title": "Is Relay Therapeutics a Buy After Promising Trial Results?",
+      "title": "1 Spectacular Growth Stock to Buy Before It Soars by as Much as 124%, According to Wall Street",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/05/22/is-relay-therapeutics-a-buy-after-promising-trial/",
-      "published": "2026-05-22T21:50:00+00:00"
+      "url": "https://www.fool.com/investing/2026/05/23/growth-stock-buy-before-soars-sea-limited/",
+      "published": "2026-05-23T21:50:00+00:00"
     },
     {
-      "title": "Here Are 7 Important Things Investors Learned from SpaceX's S-1 Filing",
+      "title": "Target Just Posted Its First Sales Growth in 5 Quarters. So Why Did the Stock Drop Anyway?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/05/22/here-are-x-important-things-investors-learned-from/",
-      "published": "2026-05-22T21:40:00+00:00"
+      "url": "https://www.fool.com/investing/2026/05/23/target-just-posted-its-first-sales-growth-in-5-qua/",
+      "published": "2026-05-23T21:26:00+00:00"
     },
     {
-      "title": "1 Artificial Intelligence (AI) Stock to Buy After Its Post-Earnings Sell-Off",
+      "title": "GlobalFoundries (GFS) Launches Dedicated Quantum Technology Solutions Unit",
+      "publisher": "Insider Monkey",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/globalfoundries-gfs-launches-dedicated-quantum-200944118.html",
+      "published": "2026-05-23T21:15:44+00:00"
+    },
+    {
+      "title": "1 Unstoppable Cryptocurrency to Buy Before It Soars 930%, According to Cathie Wood's Ark Invest",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/05/22/artificial-intelligence-ai-stock-buy-sell-off-anet/",
-      "published": "2026-05-22T21:28:00+00:00"
+      "url": "https://www.fool.com/investing/2026/05/23/1-cryptocurrency-to-buy-soars-930-cathie-woods-ark/",
+      "published": "2026-05-23T21:11:00+00:00"
     },
     {
-      "title": "Weekly Wrap: Bitcoin Treads Water As Stocks Rally",
-      "publisher": "CryptoProwl",
-      "url": "https://www.cryptoprowl.com/releases/weekly-wrap-bitcoin-treads-water-as-stocks-rally-5639",
-      "published": "2026-05-22T21:20:00+00:00"
-    },
-    {
-      "title": "The Gates Foundation Sold All of Its Remaining Microsoft Stock. Should Investors Be Worried?",
+      "title": "Despite Its Recent Partnership with Apple, MP Materials Stock Is Down. Here's Why.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/05/22/the-gates-foundation-sold-msft-stock/",
-      "published": "2026-05-22T21:11:00+00:00"
+      "url": "https://www.fool.com/investing/2026/05/23/despite-its-recent-partnership-with-apple-mp-mater/",
+      "published": "2026-05-23T21:05:00+00:00"
     },
     {
-      "title": "The Best Stocks to Invest $5,000 In Right Now",
+      "title": "JPMorgan resets Nvidia stock price target after earnings",
+      "publisher": "TheStreet",
+      "url": "https://www.thestreet.com/investing/stocks/jpmorgan-resets-nvidia-stock-price-target-after-earnings",
+      "published": "2026-05-23T21:03:00+00:00"
+    },
+    {
+      "title": "Billionaire Philippe Laffont Trimmed 8 of His Fund's Top 10 Positions Last Quarter. Here's What the Other 2 Have in Common.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/05/22/the-best-stocks-to-invest-5000-in-right-now/",
-      "published": "2026-05-22T20:41:00+00:00"
+      "url": "https://www.fool.com/investing/2026/05/23/billionaire-philippe-laffont-trimmed-8-of-his-fund/",
+      "published": "2026-05-23T20:20:00+00:00"
     },
     {
-      "title": "Dell Stock Surges Ahead Of AI-Driven Fiscal Q1 Report",
-      "publisher": "Investor's Business Daily",
-      "url": "https://www.investors.com/news/technology/dell-stock-surges-ai-driven-fiscal-q1-report/?src=A00220&yptr=yahoo",
-      "published": "2026-05-22T20:37:07+00:00"
-    },
-    {
-      "title": "Nvidia Stock Gets Even Cheaper With Each Earnings Beat",
-      "publisher": "Barrons.com",
-      "url": "https://www.barrons.com/articles/nvidia-stock-price-earnings-valuation-cheap-b4d4cf2f?siteid=yhoof2&yptr=yahoo",
-      "published": "2026-05-22T20:36:00+00:00"
+      "title": "Flex Pitches AI Data Center Spin-Off as Power and Cooling Growth Accelerates",
+      "publisher": "MarketBeat",
+      "url": "https://www.marketbeat.com/instant-alerts/flex-pitches-ai-data-center-spin-off-as-power-and-cooling-growth-accelerates-2026-05-23/?utm_source=yahoofinance&utm_medium=yahoofinance",
+      "published": "2026-05-23T20:02:15+00:00"
     }
   ],
-  "generated_at": "2026-05-22T22:22:24.978380+00:00"
+  "generated_at": "2026-05-23T22:18:06.516366+00:00"
 }
