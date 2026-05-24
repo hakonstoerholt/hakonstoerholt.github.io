@@ -178,6 +178,16 @@
       "actual_winner": "Kimi Antonelli",
       "verdict": "miss",
       "note": "Beautiful race from Kimi Antonelli, taking his third victory this season. Overweighted Norris."
+    },
+    {
+      "race_name": "Canadian Grand Prix",
+      "round": 5,
+      "season": 2026,
+      "predicted_winner": "Kimi Antonelli",
+      "predicted_prob": 41.8,
+      "actual_winner": "Kimi Antonelli",
+      "verdict": "hit",
+      "note": "Mercedes front-row pace held; sprint long-runs called it."
     }
   ],
   "season": {
