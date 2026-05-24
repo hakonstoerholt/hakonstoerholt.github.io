@@ -2036,7 +2036,7 @@
       "h": 221.00999450683594,
       "l": 214.86000061035156,
       "c": 215.3300018310547,
-      "v": 166941160
+      "v": 169275710
     }
   ],
   "earnings": {
@@ -2051,61 +2051,61 @@
   "options": {
     "expiry": "2026-05-26",
     "atm_strike": 215.0,
-    "call_iv": 0.25049577636718745,
-    "put_iv": 0.2561109545898438,
-    "atm_iv": 0.2533033654785156,
-    "days_to_expiry": 3
+    "call_iv": 0.2893137475585937,
+    "put_iv": 0.29566134033203123,
+    "atm_iv": 0.29248754394531246,
+    "days_to_expiry": 2
   },
   "consensus": null,
   "news": [
     {
-      "title": "1 Spectacular Growth Stock to Buy Before It Soars by as Much as 124%, According to Wall Street",
+      "title": "The Best Stocks to Buy Right Now: Nvidia vs. AMD vs. Broadcom",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/05/23/growth-stock-buy-before-soars-sea-limited/",
-      "published": "2026-05-23T21:50:00+00:00"
+      "url": "https://www.fool.com/investing/2026/05/24/the-best-stocks-to-buy-right-now-nvidia-vs-amd-vs/",
+      "published": "2026-05-24T21:50:00+00:00"
     },
     {
-      "title": "Target Just Posted Its First Sales Growth in 5 Quarters. So Why Did the Stock Drop Anyway?",
+      "title": "This Billionaire Dumped Cloud Stocks for These New AI Stocks. Should Investors Follow Suit?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/05/23/target-just-posted-its-first-sales-growth-in-5-qua/",
-      "published": "2026-05-23T21:26:00+00:00"
+      "url": "https://www.fool.com/investing/2026/05/24/this-billionaire-dumped-his-cloud-stocks-for-these/",
+      "published": "2026-05-24T21:38:00+00:00"
     },
     {
-      "title": "GlobalFoundries (GFS) Launches Dedicated Quantum Technology Solutions Unit",
-      "publisher": "Insider Monkey",
-      "url": "https://finance.yahoo.com/sectors/technology/articles/globalfoundries-gfs-launches-dedicated-quantum-200944118.html",
-      "published": "2026-05-23T21:15:44+00:00"
-    },
-    {
-      "title": "1 Unstoppable Cryptocurrency to Buy Before It Soars 930%, According to Cathie Wood's Ark Invest",
+      "title": "Google Just Shared Bad News for Nvidia, and Even Worse News For CoreWeave and Nebius",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/05/23/1-cryptocurrency-to-buy-soars-930-cathie-woods-ark/",
-      "published": "2026-05-23T21:11:00+00:00"
+      "url": "https://www.fool.com/investing/2026/05/24/google-just-shared-bad-news-for-nvidia-and-even-wo/",
+      "published": "2026-05-24T21:20:00+00:00"
     },
     {
-      "title": "Despite Its Recent Partnership with Apple, MP Materials Stock Is Down. Here's Why.",
+      "title": "China Against Everybody: The New Geopolitics of Rare Earth Elements",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/05/24/from-missiles-to-iphones-the-real-alloys-ceo-explains-why-chinas-grip-is-tighter-than-opecs-ever-was/",
+      "published": "2026-05-24T21:01:32+00:00"
+    },
+    {
+      "title": "\u2018He Knows the Flaws Because He Knows the Man\u2019: Why Elon Musk\u2019s OpenAI Attack Is Really About xAI",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/05/24/he-knows-the-flaws-because-he-knows-the-man-why-elon-musks-openai-attack-is-really-about-xai/",
+      "published": "2026-05-24T20:47:22+00:00"
+    },
+    {
+      "title": "The 2022 Bitcoin Pattern Is Back \u2014 and the Second Drop Was Worse Than the First",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/05/24/the-2022-bitcoin-pattern-is-back-and-the-second-drop-was-worse-than-the-first/",
+      "published": "2026-05-24T20:37:07+00:00"
+    },
+    {
+      "title": "Walmart Stock Fell After Its Earnings Beat. Is the Post-Earnings Dip a Buying Opportunity?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/05/23/despite-its-recent-partnership-with-apple-mp-mater/",
-      "published": "2026-05-23T21:05:00+00:00"
+      "url": "https://www.fool.com/investing/2026/05/24/walmart-stock-fell-after-its-earnings-beat-is-the/",
+      "published": "2026-05-24T20:23:00+00:00"
     },
     {
-      "title": "JPMorgan resets Nvidia stock price target after earnings",
-      "publisher": "TheStreet",
-      "url": "https://www.thestreet.com/investing/stocks/jpmorgan-resets-nvidia-stock-price-target-after-earnings",
-      "published": "2026-05-23T21:03:00+00:00"
-    },
-    {
-      "title": "Billionaire Philippe Laffont Trimmed 8 of His Fund's Top 10 Positions Last Quarter. Here's What the Other 2 Have in Common.",
+      "title": "Missed the First AI Wave? These 3 Stocks Are Still Genius Picks.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/05/23/billionaire-philippe-laffont-trimmed-8-of-his-fund/",
-      "published": "2026-05-23T20:20:00+00:00"
-    },
-    {
-      "title": "Flex Pitches AI Data Center Spin-Off as Power and Cooling Growth Accelerates",
-      "publisher": "MarketBeat",
-      "url": "https://www.marketbeat.com/instant-alerts/flex-pitches-ai-data-center-spin-off-as-power-and-cooling-growth-accelerates-2026-05-23/?utm_source=yahoofinance&utm_medium=yahoofinance",
-      "published": "2026-05-23T20:02:15+00:00"
+      "url": "https://www.fool.com/investing/2026/05/24/missed-the-first-ai-wave-these-3-stocks-are-still/",
+      "published": "2026-05-24T19:01:00+00:00"
     }
   ],
-  "generated_at": "2026-05-23T22:18:06.516366+00:00"
+  "generated_at": "2026-05-24T22:19:38.633134+00:00"
 }
