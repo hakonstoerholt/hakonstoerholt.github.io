@@ -2051,61 +2051,61 @@
   "options": {
     "expiry": "2026-05-26",
     "atm_strike": 215.0,
-    "call_iv": 0.2893137475585937,
-    "put_iv": 0.29566134033203123,
-    "atm_iv": 0.29248754394531246,
-    "days_to_expiry": 2
+    "call_iv": 0.35425450439453116,
+    "put_iv": 0.362311064453125,
+    "atm_iv": 0.3582827844238281,
+    "days_to_expiry": 1
   },
   "consensus": null,
   "news": [
     {
-      "title": "The Best Stocks to Buy Right Now: Nvidia vs. AMD vs. Broadcom",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/05/24/the-best-stocks-to-buy-right-now-nvidia-vs-amd-vs/",
-      "published": "2026-05-24T21:50:00+00:00"
+      "title": "Intel CEO Touts Balance Sheet Progress, Foundry Gains and AI CPU Demand",
+      "publisher": "MarketBeat",
+      "url": "https://www.marketbeat.com/instant-alerts/intel-ceo-touts-balance-sheet-progress-foundry-gains-and-ai-cpu-demand-2026-05-25/?utm_source=yahoofinance&utm_medium=yahoofinance",
+      "published": "2026-05-25T21:03:04+00:00"
     },
     {
-      "title": "This Billionaire Dumped Cloud Stocks for These New AI Stocks. Should Investors Follow Suit?",
+      "title": "Got $3,000? I Think This AI Stock Could Turn It Into $20,000 by the End of the Decade.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/05/24/this-billionaire-dumped-his-cloud-stocks-for-these/",
-      "published": "2026-05-24T21:38:00+00:00"
+      "url": "https://www.fool.com/investing/2026/05/25/got-3000-i-think-this-ai-stock-could-turn-it-into/",
+      "published": "2026-05-25T20:52:00+00:00"
     },
     {
-      "title": "Google Just Shared Bad News for Nvidia, and Even Worse News For CoreWeave and Nebius",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/05/24/google-just-shared-bad-news-for-nvidia-and-even-wo/",
-      "published": "2026-05-24T21:20:00+00:00"
-    },
-    {
-      "title": "China Against Everybody: The New Geopolitics of Rare Earth Elements",
+      "title": "Kevin Warsh Inherits a Fed That Wall Street Has Almost Stopped Talking About",
       "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/05/24/from-missiles-to-iphones-the-real-alloys-ceo-explains-why-chinas-grip-is-tighter-than-opecs-ever-was/",
-      "published": "2026-05-24T21:01:32+00:00"
+      "url": "https://247wallst.com/investing/2026/05/25/kevin-warsh-inherits-a-fed-that-wall-street-has-almost-stopped-talking-about/",
+      "published": "2026-05-25T20:50:31+00:00"
     },
     {
-      "title": "\u2018He Knows the Flaws Because He Knows the Man\u2019: Why Elon Musk\u2019s OpenAI Attack Is Really About xAI",
+      "title": "The Anatomy of a Disconnect: How $4.35 Trillion in Corporate Profits Cleared the Way for Record Highs",
       "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/05/24/he-knows-the-flaws-because-he-knows-the-man-why-elon-musks-openai-attack-is-really-about-xai/",
-      "published": "2026-05-24T20:47:22+00:00"
+      "url": "https://247wallst.com/investing/2026/05/25/the-anatomy-of-a-disconnect-how-4-35-trillion-in-corporate-profits-cleared-the-way-for-record-highs/",
+      "published": "2026-05-25T20:42:28+00:00"
     },
     {
-      "title": "The 2022 Bitcoin Pattern Is Back \u2014 and the Second Drop Was Worse Than the First",
-      "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/05/24/the-2022-bitcoin-pattern-is-back-and-the-second-drop-was-worse-than-the-first/",
-      "published": "2026-05-24T20:37:07+00:00"
-    },
-    {
-      "title": "Walmart Stock Fell After Its Earnings Beat. Is the Post-Earnings Dip a Buying Opportunity?",
+      "title": "2 Dividend Stocks to Hold for the Next 5 Years",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/05/24/walmart-stock-fell-after-its-earnings-beat-is-the/",
-      "published": "2026-05-24T20:23:00+00:00"
+      "url": "https://www.fool.com/investing/2026/05/25/2-dividend-stocks-to-hold-for-the-next-5-years/",
+      "published": "2026-05-25T20:31:00+00:00"
     },
     {
-      "title": "Missed the First AI Wave? These 3 Stocks Are Still Genius Picks.",
+      "title": "Billionaire Bill Ackman Just Made a Massive Bet on Microsoft. Here's Why.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/05/24/missed-the-first-ai-wave-these-3-stocks-are-still/",
-      "published": "2026-05-24T19:01:00+00:00"
+      "url": "https://www.fool.com/investing/2026/05/25/billionaire-bill-ackman-just-made-a-massive-bet-on/",
+      "published": "2026-05-25T20:18:00+00:00"
+    },
+    {
+      "title": "Why Did Nvidia Raise Its Dividend by 2,400%?",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/05/25/why-did-nvidia-raise-its-dividend-by-2400/",
+      "published": "2026-05-25T19:51:00+00:00"
+    },
+    {
+      "title": "Trump's 25% cut on Nvidia chips sold to China backfired \u2014 Beijing won't approve a single H200 purchase, costs Huang $30B",
+      "publisher": "Moneywise",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/trumps-25-cut-nvidia-chips-194500691.html",
+      "published": "2026-05-25T19:45:00+00:00"
     }
   ],
-  "generated_at": "2026-05-24T22:19:38.633134+00:00"
+  "generated_at": "2026-05-25T22:24:04.155419+00:00"
 }
