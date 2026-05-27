@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-05-26",
+  "as_of": "2026-05-27",
   "price": {
-    "last": 214.86000061035156,
-    "prev_close": 215.3300018310547,
-    "change_pct": -0.21827019769956602,
-    "ytd_pct": 13.77283222992267,
+    "last": 212.60000610351562,
+    "prev_close": 214.86000061035156,
+    "change_pct": -1.0518451551782437,
+    "ytd_pct": 12.576118206203146,
     "high_52w": 236.5399932861328,
     "low_52w": 132.9199981689453,
     "currency": "USD"
@@ -14,10 +14,10 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 5204124106752.0,
-    "pe": 32.953987,
-    "forward_pe": 16.990715,
-    "dividend_yield": 0.02,
+    "market_cap": 5149384769536.0,
+    "pe": 32.557426,
+    "forward_pe": 16.812,
+    "dividend_yield": 0.47,
     "beta": 2.244,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company. The company operates through two segments, Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. The company sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants worldwide. It has a collaboration with Tech Mahindra Limited to develop artificial intelligence powered telco network operations reasoning agent. The company has a strategic partnership with Lumentum Holdings Inc. to develop optics technologies for AI and data centers. It also has a strategic partnership with Nebius Group N.V. to develop and deploy hyperscale cloud for the artificial intelligence market; and has a strategic partnership with IREN Limited to accelerate deployment of up to 5 gigawatts of infrastructure. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
@@ -2029,6 +2029,14 @@
       "l": 212.0,
       "c": 214.86000061035156,
       "v": 182422520
+    },
+    {
+      "t": "2026-05-27",
+      "o": 214.1199951171875,
+      "h": 214.13999938964844,
+      "l": 208.77999877929688,
+      "c": 212.60000610351562,
+      "v": 161326568
     }
   ],
   "earnings": {
@@ -2036,68 +2044,68 @@
     "history": []
   },
   "implied_move": {
-    "expiry": "2026-05-27",
-    "move_pct": 1.5614818907518713,
-    "straddle": 3.355
+    "expiry": "2026-05-29",
+    "move_pct": 2.2859830011640025,
+    "straddle": 4.859999999999999
   },
   "options": {
-    "expiry": "2026-05-27",
-    "atm_strike": 215.0,
-    "call_iv": 0.264655791015625,
-    "put_iv": 0.26758544921875,
-    "atm_iv": 0.2661206201171875,
-    "days_to_expiry": 1
+    "expiry": "2026-05-29",
+    "atm_strike": 212.5,
+    "call_iv": 0.3276434423828125,
+    "put_iv": 0.3107979077148437,
+    "atm_iv": 0.3192206750488281,
+    "days_to_expiry": 2
   },
   "consensus": null,
   "news": [
     {
-      "title": "60 Thoughts as I Turn 60",
+      "title": "Why PDD Holdings Stock Got Slammed Today",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/05/26/60-thoughts-as-i-turn-60/",
-      "published": "2026-05-26T22:22:39+00:00"
+      "url": "https://www.fool.com/investing/2026/05/27/why-pdd-holdings-stock-got-slammed-today/",
+      "published": "2026-05-27T22:17:50+00:00"
     },
     {
-      "title": "Why Qualcomm (QCOM) Stock Is Up Today",
-      "publisher": "StockStory",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/why-qualcomm-qcom-stock-today-220728104.html",
-      "published": "2026-05-26T22:07:28+00:00"
-    },
-    {
-      "title": "SOXL Lost 90 Percent in 2022 While Semiconductors Themselves Fell 35 Percent, And the Daily Reset Math Hasn\u2019t Changed",
-      "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/05/26/soxl-lost-90-percent-in-2022-while-semiconductors-themselves-fell-35-percent-and-the-daily-reset-math-hasnt-changed/",
-      "published": "2026-05-26T22:00:16+00:00"
-    },
-    {
-      "title": "This Potato Tycoon Knew About Micron Before You Did",
-      "publisher": "The Wall Street Journal",
-      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-05-26-2026/card/this-potato-tycoon-knew-about-micron-before-you-did-utwUHMX0s26AhAy0i0VU?siteid=yhoof2&yptr=yahoo",
-      "published": "2026-05-26T22:00:02+00:00"
-    },
-    {
-      "title": "Allegro MicroSystems and Penguin Solutions Stocks Trade Up, What You Need To Know",
-      "publisher": "StockStory",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/allegro-microsystems-penguin-solutions-stocks-215928481.html",
-      "published": "2026-05-26T21:59:28+00:00"
-    },
-    {
-      "title": "Here's Who Shouldn't Invest in SpaceX",
+      "title": "Bond Yields Are Spiking Higher. Should Stock Investors Worry?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/05/26/heres-who-shouldnt-invest-in-spacex/",
-      "published": "2026-05-26T21:57:00+00:00"
+      "url": "https://www.fool.com/investing/2026/05/27/bond-yields-are-spiking-higher-should-stock-invest/",
+      "published": "2026-05-27T22:13:00+00:00"
     },
     {
-      "title": "Nvidia CEO has blunt message on AI layoffs in 2026",
-      "publisher": "TheStreet",
-      "url": "https://www.thestreet.com/employment/nvidias-ceo-has-a-blunt-message-on-ai-and-layoffs-in-2026-jensen-huang-layoffs-employments-jobs",
-      "published": "2026-05-26T21:17:00+00:00"
+      "title": "Marvell Technology Q1 Earnings Call Highlights",
+      "publisher": "MarketBeat",
+      "url": "https://www.marketbeat.com/instant-alerts/marvell-technology-q1-earnings-call-highlights-2026-05-27/?utm_source=yahoofinance&utm_medium=yahoofinance",
+      "published": "2026-05-27T22:09:22+00:00"
     },
     {
-      "title": "Why Honeywell Stock Topped the Market on Tuesday",
+      "title": "Why Bath & Body Works Stock Rallied Today",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/05/26/why-honeywell-stock-topped-the-market-on-tuesday/",
-      "published": "2026-05-26T21:02:32+00:00"
+      "url": "https://www.fool.com/investing/2026/05/27/why-bath-body-works-stock-is-up-today/",
+      "published": "2026-05-27T21:53:42+00:00"
+    },
+    {
+      "title": "This is Why NVIDIA Corporation (NVDA) Is a Buzzing AI Semiconductor Stock to Buy",
+      "publisher": "Insider Monkey",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/why-nvidia-corporation-nvda-buzzing-215035145.html",
+      "published": "2026-05-27T21:50:35+00:00"
+    },
+    {
+      "title": "The Stock Market Is Flashing a Rare Warning Signal. Here's What History Says Happens Next.",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/05/27/the-stock-market-is-flashing-a-rare-warning-signal/",
+      "published": "2026-05-27T21:35:00+00:00"
+    },
+    {
+      "title": "Tesla Stock Gets Wall Street Upgrade on Robotaxi Potential",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/05/27/tesla-stock-gets-wall-street-upgrade-on-robotaxi-p/",
+      "published": "2026-05-27T21:28:00+00:00"
+    },
+    {
+      "title": "SK Hynix and Micron lead AI boom, join trillion-dollar club",
+      "publisher": "Yahoo Finance Video",
+      "url": "https://finance.yahoo.com/video/sk-hynix-and-micron-lead-ai-boom-join-trillion-dollar-club-203420020.html",
+      "published": "2026-05-27T20:34:20+00:00"
     }
   ],
-  "generated_at": "2026-05-26T22:30:25.079525+00:00"
+  "generated_at": "2026-05-27T22:33:03.444820+00:00"
 }
