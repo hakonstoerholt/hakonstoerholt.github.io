@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-05-27",
+  "as_of": "2026-05-28",
   "price": {
-    "last": 212.60000610351562,
-    "prev_close": 214.86000061035156,
-    "change_pct": -1.0518451551782437,
-    "ytd_pct": 12.576118206203146,
+    "last": 214.25,
+    "prev_close": 212.60000610351562,
+    "change_pct": 0.7761024690098095,
+    "ytd_pct": 13.449824239116893,
     "high_52w": 236.5399932861328,
     "low_52w": 132.9199981689453,
     "currency": "USD"
@@ -14,22 +14,14 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 5149384769536.0,
-    "pe": 32.557426,
-    "forward_pe": 16.812,
+    "market_cap": 5189349146624.0,
+    "pe": 32.810104,
+    "forward_pe": 16.926723,
     "dividend_yield": 0.47,
     "beta": 2.244,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company. The company operates through two segments, Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. The company sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants worldwide. It has a collaboration with Tech Mahindra Limited to develop artificial intelligence powered telco network operations reasoning agent. The company has a strategic partnership with Lumentum Holdings Inc. to develop optics technologies for AI and data centers. It also has a strategic partnership with Nebius Group N.V. to develop and deploy hyperscale cloud for the artificial intelligence market; and has a strategic partnership with IREN Limited to accelerate deployment of up to 5 gigawatts of infrastructure. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-05-27",
-      "o": 134.14999389648438,
-      "h": 135.66000366210938,
-      "l": 133.30999755859375,
-      "c": 135.5,
-      "v": 192953600
-    },
     {
       "t": "2025-05-28",
       "o": 136.02999877929688,
@@ -2037,6 +2029,14 @@
       "l": 208.77999877929688,
       "c": 212.60000610351562,
       "v": 161326568
+    },
+    {
+      "t": "2026-05-28",
+      "o": 211.27499389648438,
+      "h": 215.51910400390625,
+      "l": 211.2220001220703,
+      "c": 214.25,
+      "v": 141557394
     }
   ],
   "earnings": {
@@ -2045,67 +2045,67 @@
   },
   "implied_move": {
     "expiry": "2026-05-29",
-    "move_pct": 2.2859830011640025,
-    "straddle": 4.859999999999999
+    "move_pct": 1.5845974329054842,
+    "straddle": 3.395
   },
   "options": {
     "expiry": "2026-05-29",
-    "atm_strike": 212.5,
-    "call_iv": 0.3276434423828125,
-    "put_iv": 0.3107979077148437,
-    "atm_iv": 0.3192206750488281,
-    "days_to_expiry": 2
+    "atm_strike": 215.0,
+    "call_iv": 0.27295648925781246,
+    "put_iv": 0.2600171655273438,
+    "atm_iv": 0.2664868273925781,
+    "days_to_expiry": 1
   },
   "consensus": null,
   "news": [
     {
-      "title": "Why PDD Holdings Stock Got Slammed Today",
+      "title": "Stock market today: Dow, S&P 500, Nasdaq futures edge up as Wall Street braces for US-Iran update",
+      "publisher": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-futures-edge-up-as-wall-street-braces-for-us-iran-update-222720596.html",
+      "published": "2026-05-28T22:27:20+00:00"
+    },
+    {
+      "title": "Wiwynn Warns AI Supply Crunch Could Last Until 2027-2028",
+      "publisher": "GuruFocus.com",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/wiwynn-warns-ai-supply-crunch-221449458.html",
+      "published": "2026-05-28T22:14:49+00:00"
+    },
+    {
+      "title": "MUU Becomes the Fourth Single-Stock ETF to Cross $5 Billion",
+      "publisher": "etf.com",
+      "url": "http://www.etf.com/sections/features/muu-becomes-fourth-single-stock-etf-cross-5-billion?utm_source=yahoo-finance&utm_medium=rss&utm_campaign=yahoo-finance-rss",
+      "published": "2026-05-28T21:58:08+00:00"
+    },
+    {
+      "title": "Which Top 10 Crypto Has The Weakest 2026 Outlook?",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/05/28/which-top-10-crypto-has-the-weakest-2026-outlook/",
+      "published": "2026-05-28T21:55:36+00:00"
+    },
+    {
+      "title": "Inflation Just Spiked to the Highest Level in Almost 3 Years in the First Report Under New Fed Chair Kevin Warsh. But There Was Some Good News",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/05/27/why-pdd-holdings-stock-got-slammed-today/",
-      "published": "2026-05-27T22:17:50+00:00"
+      "url": "https://www.fool.com/investing/2026/05/28/inflation-just-spiked-to-the-highest-level-in-almost-3-years-in-the-first-report-under-new-fed-chair-kevin-warsh-but-there-was-some-good-news/",
+      "published": "2026-05-28T21:53:42+00:00"
     },
     {
-      "title": "Bond Yields Are Spiking Higher. Should Stock Investors Worry?",
+      "title": "The AI Memory Shortage Is Just Getting Started and These 3 ETFs Own Every Layer of the Supply Chain",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/05/28/the-ai-memory-shortage-is-just-getting-started-and-these-3-etfs-own-every-layer-of-the-supply-chain/",
+      "published": "2026-05-28T21:48:09+00:00"
+    },
+    {
+      "title": "U.S. Exceptionalism May Have Peaked, According to Fidelity. Here's One Global ETF Worth Looking At.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/05/27/bond-yields-are-spiking-higher-should-stock-invest/",
-      "published": "2026-05-27T22:13:00+00:00"
+      "url": "https://www.fool.com/investing/2026/05/28/us-exceptionalism-may-have-peaked-global-etf/",
+      "published": "2026-05-28T21:20:00+00:00"
     },
     {
-      "title": "Marvell Technology Q1 Earnings Call Highlights",
-      "publisher": "MarketBeat",
-      "url": "https://www.marketbeat.com/instant-alerts/marvell-technology-q1-earnings-call-highlights-2026-05-27/?utm_source=yahoofinance&utm_medium=yahoofinance",
-      "published": "2026-05-27T22:09:22+00:00"
-    },
-    {
-      "title": "Why Bath & Body Works Stock Rallied Today",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/05/27/why-bath-body-works-stock-is-up-today/",
-      "published": "2026-05-27T21:53:42+00:00"
-    },
-    {
-      "title": "This is Why NVIDIA Corporation (NVDA) Is a Buzzing AI Semiconductor Stock to Buy",
-      "publisher": "Insider Monkey",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/why-nvidia-corporation-nvda-buzzing-215035145.html",
-      "published": "2026-05-27T21:50:35+00:00"
-    },
-    {
-      "title": "The Stock Market Is Flashing a Rare Warning Signal. Here's What History Says Happens Next.",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/05/27/the-stock-market-is-flashing-a-rare-warning-signal/",
-      "published": "2026-05-27T21:35:00+00:00"
-    },
-    {
-      "title": "Tesla Stock Gets Wall Street Upgrade on Robotaxi Potential",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/05/27/tesla-stock-gets-wall-street-upgrade-on-robotaxi-p/",
-      "published": "2026-05-27T21:28:00+00:00"
-    },
-    {
-      "title": "SK Hynix and Micron lead AI boom, join trillion-dollar club",
-      "publisher": "Yahoo Finance Video",
-      "url": "https://finance.yahoo.com/video/sk-hynix-and-micron-lead-ai-boom-join-trillion-dollar-club-203420020.html",
-      "published": "2026-05-27T20:34:20+00:00"
+      "title": "Synopsys Was the Worst S&P 500 Stock Thursday Despite Earnings Beat With AI and Merger in Focus",
+      "publisher": "Barrons.com",
+      "url": "https://www.barrons.com/articles/synopsys-earnings-stock-price-4a6dab34?siteid=yhoof2&yptr=yahoo",
+      "published": "2026-05-28T21:12:00+00:00"
     }
   ],
-  "generated_at": "2026-05-27T22:33:03.444820+00:00"
+  "generated_at": "2026-05-28T22:33:32.346701+00:00"
 }
