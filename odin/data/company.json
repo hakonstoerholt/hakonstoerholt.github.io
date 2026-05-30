@@ -15,7 +15,7 @@
     "sector": "Technology",
     "industry": "Semiconductors",
     "market_cap": 5114022068224.0,
-    "pe": 32.333843,
+    "pe": 32.383434,
     "forward_pe": 16.681019,
     "dividend_yield": 0.47,
     "beta": 2.244,
@@ -2051,61 +2051,61 @@
   "options": {
     "expiry": "2026-06-01",
     "atm_strike": 210.0,
-    "call_iv": 0.334967587890625,
-    "put_iv": 0.2876047802734374,
-    "atm_iv": 0.3112861840820312,
-    "days_to_expiry": 3
+    "call_iv": 0.38672488281249995,
+    "put_iv": 0.3320379296875,
+    "atm_iv": 0.35938140625,
+    "days_to_expiry": 2
   },
   "consensus": null,
   "news": [
     {
-      "title": "What $1,000 in Bitcoin, Ethereum, And XRP Five Years Ago Is Worth Today",
+      "title": "Time to Diversify Internationally?",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/05/30/time-to-diversify-internationally/",
+      "published": "2026-05-30T22:04:43+00:00"
+    },
+    {
+      "title": "Warren Buffett Successor Greg Abel Made 3 Big Purchases Last Quarter, and They're All Exceptional Performers",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/05/30/warren-buffett-successor-greg-abel-made-3-big-purc/",
+      "published": "2026-05-30T21:50:00+00:00"
+    },
+    {
+      "title": "Datadog Share Value Has More Than Doubled As Investors Recognize a Growing Market Opportunity",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/05/30/datadog-share-price-doubled-invest-growth/",
+      "published": "2026-05-30T21:48:00+00:00"
+    },
+    {
+      "title": "The 1 Metric That Tells Me This Tech Stock Is About to Rip Higher -- and It Just Flashed",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/05/30/the-1-metric-that-tells-me-this-tech-stock-is-abou/",
+      "published": "2026-05-30T21:43:00+00:00"
+    },
+    {
+      "title": "3 Stocks to Buy With Less Than $20",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/05/30/3-stocks-to-buy-with-less-than-20/",
+      "published": "2026-05-30T21:35:00+00:00"
+    },
+    {
+      "title": "Thriving in the Age of Overwhelm",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/05/30/thriving-in-the-age-of-overwhelm/",
+      "published": "2026-05-30T21:33:08+00:00"
+    },
+    {
+      "title": "Why This Fund Dumped $35 Million of UiPath Even as Revenue Grew 17%",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/coverage/filings/2026/05/30/why-this-fund-dumped-usd35-million-of-uipath-even-as-revenue-grew-17/",
+      "published": "2026-05-30T21:30:00+00:00"
+    },
+    {
+      "title": "QQQ\u2019s Hidden Risk: Why the Fund\u2019s Top 5 Holdings Move Together",
       "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/05/29/what-1000-in-bitcoin-ethereum-and-xrp-five-years-ago-is-worth-today/",
-      "published": "2026-05-29T22:11:18+00:00"
-    },
-    {
-      "title": "Why POET Technologies Stock Keeps Falling",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/05/29/why-poet-technologies-stock-keeps-falling/",
-      "published": "2026-05-29T21:56:03+00:00"
-    },
-    {
-      "title": "Amazon is Cutting Even More Jobs, Following the Mass Layoffs in January. Can It Maintain Its Cloud Dominance as Employees Exit?",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/05/29/amazon-is-cutting-even-more-jobs-following-the-mas/",
-      "published": "2026-05-29T21:50:00+00:00"
-    },
-    {
-      "title": "Nvidia Dropped a Cryptic Clue About Its Next Big Move Ahead of GTC Event",
-      "publisher": "Barrons.com",
-      "url": "https://www.barrons.com/articles/nvidia-chips-microsoft-pcs-gtc-3b516c98?siteid=yhoof2&yptr=yahoo",
-      "published": "2026-05-29T21:24:00+00:00"
-    },
-    {
-      "title": "These 2 Tech Titans Just Declared Dividend Raises. Should You Buy One or Both?",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/05/29/these-2-tech-titans-just-declared-dividend-raises/",
-      "published": "2026-05-29T21:20:00+00:00"
-    },
-    {
-      "title": "2 Tech ETFs for Nearly Every Corner of the Digital Economy: From Semiconductors to Robotics",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/05/29/2-tech-etfs-for-nearly-every-corner-of-the-digital/",
-      "published": "2026-05-29T20:52:00+00:00"
-    },
-    {
-      "title": "Brookfield Corporation or Brookfield Asset Management: Which One Is the Smarter Buy?",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/05/29/brookfield-corporation-or-brookfield-asset-managem/",
-      "published": "2026-05-29T20:50:00+00:00"
-    },
-    {
-      "title": "Nvidia, AMD, & other chip names in focus at Computex 2026",
-      "publisher": "Yahoo Finance Video",
-      "url": "https://finance.yahoo.com/video/nvidia-amd-other-chip-names-202249085.html",
-      "published": "2026-05-29T20:22:49+00:00"
+      "url": "https://247wallst.com/investing/2026/05/30/qqqs-hidden-risk-why-the-funds-top-5-holdings-move-together/",
+      "published": "2026-05-30T21:18:26+00:00"
     }
   ],
-  "generated_at": "2026-05-29T22:32:38.791127+00:00"
+  "generated_at": "2026-05-30T22:21:26.952239+00:00"
 }
