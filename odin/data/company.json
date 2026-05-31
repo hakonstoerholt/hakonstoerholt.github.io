@@ -2036,7 +2036,7 @@
       "h": 217.85989379882812,
       "l": 211.1300048828125,
       "c": 211.13999938964844,
-      "v": 230465710
+      "v": 289410623
     }
   ],
   "earnings": {
@@ -2051,61 +2051,61 @@
   "options": {
     "expiry": "2026-06-01",
     "atm_strike": 210.0,
-    "call_iv": 0.38672488281249995,
-    "put_iv": 0.3320379296875,
-    "atm_iv": 0.35938140625,
-    "days_to_expiry": 2
+    "call_iv": 0.47363807617187503,
+    "put_iv": 0.4067442138671875,
+    "atm_iv": 0.44019114501953127,
+    "days_to_expiry": 1
   },
   "consensus": null,
   "news": [
     {
-      "title": "Time to Diversify Internationally?",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/05/30/time-to-diversify-internationally/",
-      "published": "2026-05-30T22:04:43+00:00"
+      "title": "Dow Jones Futures Fall As Trump Makes This Iran Move; Nvidia, Tesla Lead 5 Titans Near Buy Points",
+      "publisher": "Investor's Business Daily",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-iran-hopes-nvidia-tesla-stocks-near-buy-points/?src=A00220&yptr=yahoo",
+      "published": "2026-05-31T22:07:19+00:00"
     },
     {
-      "title": "Warren Buffett Successor Greg Abel Made 3 Big Purchases Last Quarter, and They're All Exceptional Performers",
+      "title": "Why the Vanguard Consumer Staples Index Fund ETF (VDC) Could Be the Smartest Pre-Summer Addition to Your Portfolio",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/05/30/warren-buffett-successor-greg-abel-made-3-big-purc/",
-      "published": "2026-05-30T21:50:00+00:00"
+      "url": "https://www.fool.com/investing/2026/05/31/why-vanguard-consumer-staples-index-fund-etf-vdc/",
+      "published": "2026-05-31T22:00:00+00:00"
     },
     {
-      "title": "Datadog Share Value Has More Than Doubled As Investors Recognize a Growing Market Opportunity",
+      "title": "Why Redwire Stock Skyrocketed This Week",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/05/30/datadog-share-price-doubled-invest-growth/",
-      "published": "2026-05-30T21:48:00+00:00"
+      "url": "https://www.fool.com/investing/2026/05/31/why-redwire-stock-skyrocketed-this-week/",
+      "published": "2026-05-31T21:38:20+00:00"
     },
     {
-      "title": "The 1 Metric That Tells Me This Tech Stock Is About to Rip Higher -- and It Just Flashed",
+      "title": "Why Annaly Capital's Hedging Strategy Could Be the Key to the Next 12 Months",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/05/30/the-1-metric-that-tells-me-this-tech-stock-is-abou/",
-      "published": "2026-05-30T21:43:00+00:00"
+      "url": "https://www.fool.com/investing/2026/05/31/why-annaly-capitals-hedging-strategy-could-be-the/",
+      "published": "2026-05-31T21:35:00+00:00"
     },
     {
-      "title": "3 Stocks to Buy With Less Than $20",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/05/30/3-stocks-to-buy-with-less-than-20/",
-      "published": "2026-05-30T21:35:00+00:00"
+      "title": "Taiwan Semiconductor Manufacturing (TSM): Leopold Aschenbrenner Takes Bearish View",
+      "publisher": "Insider Monkey",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/taiwan-semiconductor-manufacturing-tsm-leopold-212817394.html",
+      "published": "2026-05-31T21:28:17+00:00"
     },
     {
-      "title": "Thriving in the Age of Overwhelm",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/05/30/thriving-in-the-age-of-overwhelm/",
-      "published": "2026-05-30T21:33:08+00:00"
+      "title": "Micron Technology (MU): Leopold Aschenbrenner Unveils Bearish Bet",
+      "publisher": "Insider Monkey",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/micron-technology-mu-leopold-aschenbrenner-212624827.html",
+      "published": "2026-05-31T21:26:24+00:00"
     },
     {
-      "title": "Why This Fund Dumped $35 Million of UiPath Even as Revenue Grew 17%",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/coverage/filings/2026/05/30/why-this-fund-dumped-usd35-million-of-uipath-even-as-revenue-grew-17/",
-      "published": "2026-05-30T21:30:00+00:00"
+      "title": "Advanced Micro Devices Inc. (AMD): Leopold Aschenbrenner Has a Bearish View on This Chip Stock",
+      "publisher": "Insider Monkey",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/advanced-micro-devices-inc-amd-212355475.html",
+      "published": "2026-05-31T21:23:55+00:00"
     },
     {
-      "title": "QQQ\u2019s Hidden Risk: Why the Fund\u2019s Top 5 Holdings Move Together",
-      "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/05/30/qqqs-hidden-risk-why-the-funds-top-5-holdings-move-together/",
-      "published": "2026-05-30T21:18:26+00:00"
+      "title": "NVIDIA Corporation (NVDA): Leopold Aschenbrenner Is Betting Against This AI Giant",
+      "publisher": "Insider Monkey",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-corporation-nvda-leopold-aschenbrenner-212121469.html",
+      "published": "2026-05-31T21:21:21+00:00"
     }
   ],
-  "generated_at": "2026-05-30T22:21:26.952239+00:00"
+  "generated_at": "2026-05-31T22:21:13.946359+00:00"
 }
