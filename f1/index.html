@@ -30,6 +30,7 @@
                     <li><a href="/#projects" class="nav-link">Projects</a></li>
                     <li><a href="/#skills" class="nav-link">Skills</a></li>
                     <li><a href="/#experience" class="nav-link">Experience</a></li>
+                    <li><a href="/odin/" class="nav-link">Odin</a></li>
                     <li><a href="/f1/" class="nav-link active">F1</a></li>
                 </ul>
             </nav>
@@ -44,8 +45,11 @@
 
     <section class="f1-hero-mini">
         <div class="hero-content">
+            <p class="f1-eyebrow" id="race-eyebrow"></p>
             <h1 id="hero-title">F1 Race Winner Predictions</h1>
             <p class="subtitle" id="hero-subtitle">Telemetry-driven Monte Carlo on this weekend's race</p>
+            <div class="circuit-map" id="circuit-map" aria-hidden="true"></div>
+            <p class="circuit-map-caption" id="circuit-map-caption"></p>
         </div>
     </section>
 
@@ -163,15 +167,73 @@
             </svg>
         `;
 
+        // Map a race name to a circuit slug (the SVG filename baked by
+        // scripts/odin/generate-circuits.mjs). Substring match keeps it robust
+        // to "Grand Prix" vs "Sprint" and minor naming changes from the nightly
+        // refresh. Circuits without a keyword (e.g. Madrid) get no map.
+        const CIRCUIT_SLUGS = [
+            ['australian', 'melbourne'], ['chinese', 'shanghai'], ['japanese', 'suzuka'],
+            ['bahrain', 'bahrain'], ['saudi', 'jeddah'], ['miami', 'miami'],
+            ['emilia', 'imola'], ['monaco', 'monaco'], ['canadian', 'montreal'],
+            ['spanish', 'catalunya'], ['austrian', 'spielberg'], ['british', 'silverstone'],
+            ['belgian', 'spa'], ['hungarian', 'hungaroring'], ['dutch', 'zandvoort'],
+            ['italian', 'monza'], ['azerbaijan', 'baku'], ['singapore', 'singapore'],
+            ['united states', 'cota'], ['mexic', 'mexico'], ['brazil', 'interlagos'],
+            ['são paulo', 'interlagos'], ['sao paulo', 'interlagos'], ['las vegas', 'lasvegas'],
+            ['qatar', 'lusail'], ['abu dhabi', 'yasmarina'],
+        ];
+
+        function circuitSlug(raceName) {
+            const n = (raceName || '').toLowerCase();
+            const hit = CIRCUIT_SLUGS.find(([kw]) => n.includes(kw));
+            return hit ? hit[1] : null;
+        }
+
+        // Inline the current race's circuit outline into the hero. The SVG uses
+        // stroke="currentColor", so CSS colors it. Missing file → no map shown.
+        async function loadCircuitMap(raceName, circuitLabel) {
+            const mount = document.getElementById('circuit-map');
+            const caption = document.getElementById('circuit-map-caption');
+            if (!mount) return;
+            const clear = () => { mount.innerHTML = ''; if (caption) caption.textContent = ''; };
+            const slug = circuitSlug(raceName);
+            if (!slug) { clear(); return; }
+            try {
+                const res = await fetch(`/f1/assets/circuits/${slug}.svg`);
+                if (!res.ok) throw new Error(res.status);
+                mount.innerHTML = await res.text();
+                if (caption) caption.textContent = circuitLabel || '';
+            } catch {
+                clear();
+            }
+        }
+
+        // Adaptive "Next up" eyebrow from the race date. race_predictions.json is
+        // updated by hand, so the date may be upcoming or already past — phrase
+        // it honestly either way rather than always claiming "Next up".
+        function raceEyebrow(raceDateUtc) {
+            if (!raceDateUtc) return '';
+            const race = new Date(raceDateUtc);
+            if (isNaN(race)) return '';
+            const startOfDay = d => new Date(d.getFullYear(), d.getMonth(), d.getDate());
+            const days = Math.round((startOfDay(race) - startOfDay(new Date())) / 86400000);
+            if (days > 1) return `Next up · in ${days} days`;
+            if (days === 1) return 'Next up · tomorrow';
+            if (days === 0) return 'Race day';
+            return 'Latest round';
+        }
+
         async function loadPredictions() {
             try {
                 const r = await fetch('/race_predictions.json?v=' + Date.now());
                 const data = await r.json();
                 const cur = data.current_race;
 
+                document.getElementById('race-eyebrow').textContent = raceEyebrow(cur.race_date_utc);
                 document.getElementById('hero-title').textContent = `${cur.race_name} ${cur.season}`;
                 document.getElementById('hero-subtitle').textContent =
                     `Round ${cur.round} • ${cur.circuit}`;
+                loadCircuitMap(cur.race_name, cur.circuit);
                 document.getElementById('race-title').textContent = `Winner Probabilities · ${cur.race_name}`;
                 document.getElementById('race-subtitle').textContent =
                     `${new Date(cur.race_date_utc).toLocaleString(undefined, {weekday:'long', month:'long', day:'numeric', hour:'2-digit', minute:'2-digit', timeZoneName:'short'})}`;

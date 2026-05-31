@@ -924,6 +924,21 @@ h1, h2, h3, h4, h5, h6 {
         radial-gradient(ellipse 60% 80% at 80% 30%, rgba(193,132,51,0.12) 0%, transparent 70%);
     pointer-events: none;
 }
+.f1-eyebrow {
+    position: relative;
+    z-index: 2;
+    margin: 0 0 0.75rem;
+    min-height: 0.85rem;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #e89860;
+}
+.f1-eyebrow:empty {
+    margin: 0;
+}
 .f1-hero-mini h1 {
     font-size: 2.25rem;
     color: #ffffff;
@@ -937,6 +952,43 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     z-index: 2;
 }
+
+/* Circuit map — outline of the current race's track, swaps per race.
+   The baked SVGs stroke with currentColor, so this color drives the line. */
+.circuit-map {
+    position: relative;
+    z-index: 2;
+    margin: 2rem auto 0;
+    max-width: 240px;
+    color: #dcc8b2;
+    line-height: 0;
+}
+.circuit-map svg {
+    width: 100%;
+    height: auto;
+    display: block;
+    overflow: visible;
+    filter: drop-shadow(0 6px 18px rgba(212, 131, 74, 0.3));
+    animation: circuit-draw 0.8s ease both;
+}
+@keyframes circuit-draw {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+.circuit-map-caption {
+    position: relative;
+    z-index: 2;
+    margin: 0.85rem auto 0;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #dcc8b2;
+}
+@media (prefers-reduced-motion: reduce) {
+    .circuit-map svg { animation: none; }
+}
+
 .race-grid-2 {
     display: grid;
     grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
