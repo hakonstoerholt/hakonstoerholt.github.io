@@ -1,43 +1,27 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-05-29",
+  "as_of": "2026-06-01",
   "price": {
-    "last": 211.13999938964844,
-    "prev_close": 214.25,
-    "change_pct": -1.4515755474219683,
-    "ytd_pct": 11.803014331868678,
+    "last": 224.36000061035156,
+    "prev_close": 211.13999938964844,
+    "change_pct": 6.261249056985307,
+    "ytd_pct": 18.803279512403947,
     "high_52w": 236.5399932861328,
-    "low_52w": 132.9199981689453,
+    "low_52w": 135.39999389648438,
     "currency": "USD"
   },
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 5114022068224.0,
-    "pe": 32.383434,
-    "forward_pe": 16.681019,
+    "market_cap": 5434223624192.0,
+    "pe": 34.41104,
+    "forward_pe": 17.725458,
     "dividend_yield": 0.47,
     "beta": 2.244,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company. The company operates through two segments, Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. The company sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants worldwide. It has a collaboration with Tech Mahindra Limited to develop artificial intelligence powered telco network operations reasoning agent. The company has a strategic partnership with Lumentum Holdings Inc. to develop optics technologies for AI and data centers. It also has a strategic partnership with Nebius Group N.V. to develop and deploy hyperscale cloud for the artificial intelligence market; and has a strategic partnership with IREN Limited to accelerate deployment of up to 5 gigawatts of infrastructure. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-05-29",
-      "o": 142.25,
-      "h": 143.49000549316406,
-      "l": 137.91000366210938,
-      "c": 139.19000244140625,
-      "v": 369241900
-    },
-    {
-      "t": "2025-05-30",
-      "o": 138.72000122070312,
-      "h": 139.6199951171875,
-      "l": 132.9199981689453,
-      "c": 135.1300048828125,
-      "v": 333170900
-    },
     {
       "t": "2025-06-02",
       "o": 135.49000549316406,
@@ -2037,6 +2021,14 @@
       "l": 211.1300048828125,
       "c": 211.13999938964844,
       "v": 289410623
+    },
+    {
+      "t": "2026-06-01",
+      "o": 215.77999877929688,
+      "h": 224.8699951171875,
+      "l": 215.6999969482422,
+      "c": 224.36000061035156,
+      "v": 197229540
     }
   ],
   "earnings": {
@@ -2044,68 +2036,68 @@
     "history": []
   },
   "implied_move": {
-    "expiry": "2026-06-01",
-    "move_pct": 2.5385999883936647,
-    "straddle": 5.359999999999999
+    "expiry": "2026-06-03",
+    "move_pct": 2.9862720546323955,
+    "straddle": 6.7
   },
   "options": {
-    "expiry": "2026-06-01",
-    "atm_strike": 210.0,
-    "call_iv": 0.47363807617187503,
-    "put_iv": 0.4067442138671875,
-    "atm_iv": 0.44019114501953127,
-    "days_to_expiry": 1
+    "expiry": "2026-06-03",
+    "atm_strike": 225.0,
+    "call_iv": 0.41968353759765625,
+    "put_iv": 0.41480077392578124,
+    "atm_iv": 0.41724215576171875,
+    "days_to_expiry": 2
   },
   "consensus": null,
   "news": [
     {
-      "title": "Dow Jones Futures Fall As Trump Makes This Iran Move; Nvidia, Tesla Lead 5 Titans Near Buy Points",
+      "title": "Nvidia's Jensen Huang Just Announced Something Big",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/06/01/nvidias-jensen-huang-just-announced-something-big/",
+      "published": "2026-06-01T22:30:00+00:00"
+    },
+    {
+      "title": "Dow Jones Futures: Broadcom, Micron, Nvidia, Sandisk, Tesla Are Big Movers; AI Stock Credo Plunges On Earnings",
       "publisher": "Investor's Business Daily",
-      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-iran-hopes-nvidia-tesla-stocks-near-buy-points/?src=A00220&yptr=yahoo",
-      "published": "2026-05-31T22:07:19+00:00"
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-sp500-nasdaq-micron-nvidia-sandisk-credo/?src=A00220&yptr=yahoo",
+      "published": "2026-06-01T22:16:20+00:00"
     },
     {
-      "title": "Why the Vanguard Consumer Staples Index Fund ETF (VDC) Could Be the Smartest Pre-Summer Addition to Your Portfolio",
+      "title": "Why Rocket Lab Stock Plummeted Today",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/05/31/why-vanguard-consumer-staples-index-fund-etf-vdc/",
-      "published": "2026-05-31T22:00:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/01/why-rocket-lab-stock-plummeted-today/",
+      "published": "2026-06-01T22:13:39+00:00"
     },
     {
-      "title": "Why Redwire Stock Skyrocketed This Week",
+      "title": "AI Trade Gets a Fresh Boost\u2014Heard on the Street Recap",
+      "publisher": "The Wall Street Journal",
+      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-06-01-2026/card/ai-trade-gets-a-fresh-boost-heard-on-the-street-recap-RrQRNToolqULwiJ9vZiy?siteid=yhoof2&yptr=yahoo",
+      "published": "2026-06-01T22:12:00+00:00"
+    },
+    {
+      "title": "The Company Behind Claude Just Filed for an IPO. Is It Worth Buying?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/05/31/why-redwire-stock-skyrocketed-this-week/",
-      "published": "2026-05-31T21:38:20+00:00"
+      "url": "https://www.fool.com/investing/2026/06/01/the-company-behind-claude-just-filed-for-an-ipo-is-it-worth-buying/",
+      "published": "2026-06-01T21:52:55+00:00"
     },
     {
-      "title": "Why Annaly Capital's Hedging Strategy Could Be the Key to the Next 12 Months",
+      "title": "Better Dividend Growth Stock to Buy: CVS Health or UnitedHealth Group?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/05/31/why-annaly-capitals-hedging-strategy-could-be-the/",
-      "published": "2026-05-31T21:35:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/01/better-dividend-growth-stock-to-buy-cvs-health-or/",
+      "published": "2026-06-01T21:50:00+00:00"
     },
     {
-      "title": "Taiwan Semiconductor Manufacturing (TSM): Leopold Aschenbrenner Takes Bearish View",
-      "publisher": "Insider Monkey",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/taiwan-semiconductor-manufacturing-tsm-leopold-212817394.html",
-      "published": "2026-05-31T21:28:17+00:00"
+      "title": "Nvidia partners with Microsoft on new RTX Spark laptops",
+      "publisher": "Yahoo Finance Video",
+      "url": "https://finance.yahoo.com/video/nvidia-partners-microsoft-rtx-spark-181807437.html",
+      "published": "2026-06-01T18:18:07+00:00"
     },
     {
-      "title": "Micron Technology (MU): Leopold Aschenbrenner Unveils Bearish Bet",
-      "publisher": "Insider Monkey",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/micron-technology-mu-leopold-aschenbrenner-212624827.html",
-      "published": "2026-05-31T21:26:24+00:00"
-    },
-    {
-      "title": "Advanced Micro Devices Inc. (AMD): Leopold Aschenbrenner Has a Bearish View on This Chip Stock",
-      "publisher": "Insider Monkey",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/advanced-micro-devices-inc-amd-212355475.html",
-      "published": "2026-05-31T21:23:55+00:00"
-    },
-    {
-      "title": "NVIDIA Corporation (NVDA): Leopold Aschenbrenner Is Betting Against This AI Giant",
-      "publisher": "Insider Monkey",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-corporation-nvda-leopold-aschenbrenner-212121469.html",
-      "published": "2026-05-31T21:21:21+00:00"
+      "title": "Strategy sells $2.5M in bitcoin, Berkshire to acquire Taylor Morrison",
+      "publisher": "Yahoo Finance Video",
+      "url": "https://finance.yahoo.com/video/strategy-sells-2-5m-bitcoin-144943493.html",
+      "published": "2026-06-01T14:49:43+00:00"
     }
   ],
-  "generated_at": "2026-05-31T22:21:13.946359+00:00"
+  "generated_at": "2026-06-01T22:45:47.714003+00:00"
 }
