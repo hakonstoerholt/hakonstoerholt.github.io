@@ -1,35 +1,27 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-06-02",
+  "as_of": "2026-06-03",
   "price": {
-    "last": 222.82000732421875,
-    "prev_close": 224.36000061035156,
-    "change_pct": -0.6863938678656645,
-    "ytd_pct": 17.987821087007493,
+    "last": 214.75,
+    "prev_close": 222.82000732421875,
+    "change_pct": -3.621760640406191,
+    "ytd_pct": 13.71458462240538,
     "high_52w": 236.5399932861328,
-    "low_52w": 135.39999389648438,
+    "low_52w": 137.9499969482422,
     "currency": "USD"
   },
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 5396923154432.0,
-    "pe": 34.122513,
-    "forward_pe": 17.603792,
+    "market_cap": 5201459675136.0,
+    "pe": 32.886677,
+    "forward_pe": 17.002884,
     "dividend_yield": 0.45,
     "beta": 2.244,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company. The company operates through two segments, Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. The company sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants worldwide. It has a collaboration with Tech Mahindra Limited to develop artificial intelligence powered telco network operations reasoning agent. The company has a strategic partnership with Lumentum Holdings Inc. to develop optics technologies for AI and data centers. It also has a strategic partnership with Nebius Group N.V. to develop and deploy hyperscale cloud for the artificial intelligence market; and has a strategic partnership with IREN Limited to accelerate deployment of up to 5 gigawatts of infrastructure. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-06-02",
-      "o": 135.49000549316406,
-      "h": 138.1199951171875,
-      "l": 135.39999389648438,
-      "c": 137.3800048828125,
-      "v": 197663100
-    },
     {
       "t": "2025-06-03",
       "o": 138.77999877929688,
@@ -2037,6 +2029,14 @@
       "l": 221.35000610351562,
       "c": 222.82000732421875,
       "v": 164860193
+    },
+    {
+      "t": "2026-06-03",
+      "o": 221.68499755859375,
+      "h": 222.82000732421875,
+      "l": 214.50999450683594,
+      "c": 214.75,
+      "v": 150147825
     }
   ],
   "earnings": {
@@ -2044,68 +2044,68 @@
     "history": []
   },
   "implied_move": {
-    "expiry": "2026-06-03",
-    "move_pct": 1.7817071490458087,
-    "straddle": 3.97
+    "expiry": "2026-06-05",
+    "move_pct": 2.6053550640279393,
+    "straddle": 5.595
   },
   "options": {
-    "expiry": "2026-06-03",
-    "atm_strike": 222.5,
-    "call_iv": 0.30811238769531246,
-    "put_iv": 0.3020089331054688,
-    "atm_iv": 0.3050606604003906,
-    "days_to_expiry": 1
+    "expiry": "2026-06-05",
+    "atm_strike": 215.0,
+    "call_iv": 0.3569400244140625,
+    "put_iv": 0.37622694091796877,
+    "atm_iv": 0.3665834826660156,
+    "days_to_expiry": 2
   },
   "consensus": null,
   "news": [
     {
-      "title": "SpaceX Valuation Could Put Company in Top Seven by Market Cap",
-      "publisher": "The Wall Street Journal",
-      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-06-02-2026/card/spacex-valuation-could-put-company-in-top-seven-by-market-cap-4L5cPJB6wsFRIAlDaOWt?siteid=yhoof2&yptr=yahoo",
-      "published": "2026-06-02T22:30:04+00:00"
+      "title": "Dow Jones Futures: Broadcom, CrowdStrike Dive On Earnings; SpaceX IPO Price Target Set",
+      "publisher": "Investor's Business Daily",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-broadcom-crowdstrike-earnings-spacex-ipo-price-target/?src=A00220&yptr=yahoo",
+      "published": "2026-06-03T22:34:18+00:00"
     },
     {
-      "title": "The SpaceX IPO Is History in the Making: Is It a Day-1 Buy or a \"Wait-and-See\" Story?",
+      "title": "Why Meta Platforms Stock Crushed the Market Today",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/02/spacex-ipo-history-making-buy-wait-see/",
-      "published": "2026-06-02T22:28:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/03/why-meta-platforms-stock-crushed-the-market-today/",
+      "published": "2026-06-03T22:31:08+00:00"
     },
     {
-      "title": "Why Coherent (COHR) Stock Is Up Today",
-      "publisher": "StockStory",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/why-coherent-cohr-stock-today-222123296.html",
-      "published": "2026-06-02T22:21:23+00:00"
+      "title": "Most Income Investors Have Never Heard of These 3 ETFs Paying Over 10 Percent Monthly",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/06/03/most-income-investors-have-never-heard-of-these-3-etfs-paying-over-10-percent-monthly/",
+      "published": "2026-06-03T22:27:26+00:00"
     },
     {
-      "title": "Australia's Megaport secures four new AI infrastructure contracts, to raise $594 million",
-      "publisher": "Reuters",
-      "url": "https://finance.yahoo.com/sectors/technology/articles/australias-megaport-secures-four-ai-221757083.html",
-      "published": "2026-06-02T22:17:57+00:00"
+      "title": "Canopy Growth Just Made a Big Acquisition: Game-Changer -- or Another Misstep?",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/06/03/canopy-growth-just-made-a-big-acquisition-game-cha/",
+      "published": "2026-06-03T22:20:00+00:00"
     },
     {
-      "title": "Bank of America resets Nvidia stock forecast after key event",
-      "publisher": "TheStreet",
-      "url": "https://www.thestreet.com/investing/stocks/bank-of-america-reiterates-buy-rating-nvidia-stock-forecast",
-      "published": "2026-06-02T22:17:00+00:00"
+      "title": "Broadcom's AI Revenue Just Soared 143%. So Why Is the Stock Falling?",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/06/03/broadcom-s-ai-revenue-just-soared-143-so-why-is-the-stock-falling/",
+      "published": "2026-06-03T22:07:30+00:00"
     },
     {
-      "title": "Why Lam Research (LRCX) Stock Is Trading Up Today",
-      "publisher": "StockStory",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/why-lam-research-lrcx-stock-221323968.html",
-      "published": "2026-06-02T22:13:23+00:00"
+      "title": "Where Will Nike Stock Be in 5 Years?",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/06/03/where-will-stock-stock-be-in-5-years/",
+      "published": "2026-06-03T21:45:00+00:00"
     },
     {
-      "title": "Portfolio manager explains why Sanmina Corp. is a good buy",
-      "publisher": "Yahoo Finance Video",
-      "url": "https://finance.yahoo.com/video/portfolio-manager-explains-why-sanmina-204642372.html",
-      "published": "2026-06-02T20:46:42+00:00"
+      "title": "Stock Market Today, June 3: Markets End Winning Streak on Middle East Escalation Fears",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/coverage/stock-market-today/2026/06/03/stock-market-today-june-3-markets-end-winning-streak-on-middle-east-escalation-fears/",
+      "published": "2026-06-03T21:36:15+00:00"
     },
     {
-      "title": "Jensen Huang explains why Marvell is the next trillion-dollar company",
-      "publisher": "Yahoo Finance Video",
-      "url": "https://finance.yahoo.com/video/jensen-huang-explains-why-marvell-165703864.html",
-      "published": "2026-06-02T16:57:03+00:00"
+      "title": "This Stock Is Up 1,000% Over the Past Year. Is There More Upside Ahead?",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/06/03/this-stock-is-up-1000-over-the-past-year-is-there/",
+      "published": "2026-06-03T21:35:00+00:00"
     }
   ],
-  "generated_at": "2026-06-02T22:42:36.345607+00:00"
+  "generated_at": "2026-06-03T22:43:51.516134+00:00"
 }
