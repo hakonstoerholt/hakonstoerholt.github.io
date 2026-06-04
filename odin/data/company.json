@@ -1,35 +1,27 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-06-03",
+  "as_of": "2026-06-04",
   "price": {
-    "last": 214.75,
-    "prev_close": 222.82000732421875,
-    "change_pct": -3.621760640406191,
-    "ytd_pct": 13.71458462240538,
+    "last": 218.66000366210938,
+    "prev_close": 214.75,
+    "change_pct": 1.8207234747889878,
+    "ytd_pct": 15.78501275888431,
     "high_52w": 236.5399932861328,
-    "low_52w": 137.9499969482422,
+    "low_52w": 138.8300018310547,
     "currency": "USD"
   },
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 5201459675136.0,
-    "pe": 32.886677,
-    "forward_pe": 17.002884,
-    "dividend_yield": 0.45,
+    "market_cap": 5296163913728.0,
+    "pe": 33.48545,
+    "forward_pe": 17.275133,
+    "dividend_yield": 0.47,
     "beta": 2.244,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company. The company operates through two segments, Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. The company sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants worldwide. It has a collaboration with Tech Mahindra Limited to develop artificial intelligence powered telco network operations reasoning agent. The company has a strategic partnership with Lumentum Holdings Inc. to develop optics technologies for AI and data centers. It also has a strategic partnership with Nebius Group N.V. to develop and deploy hyperscale cloud for the artificial intelligence market; and has a strategic partnership with IREN Limited to accelerate deployment of up to 5 gigawatts of infrastructure. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-06-03",
-      "o": 138.77999877929688,
-      "h": 142.0,
-      "l": 137.9499969482422,
-      "c": 141.22000122070312,
-      "v": 225578800
-    },
     {
       "t": "2025-06-04",
       "o": 142.19000244140625,
@@ -2037,6 +2029,14 @@
       "l": 214.50999450683594,
       "c": 214.75,
       "v": 150147825
+    },
+    {
+      "t": "2026-06-04",
+      "o": 213.90499877929688,
+      "h": 221.60000610351562,
+      "l": 210.97000122070312,
+      "c": 218.66000366210938,
+      "v": 167707274
     }
   ],
   "earnings": {
@@ -2045,67 +2045,67 @@
   },
   "implied_move": {
     "expiry": "2026-06-05",
-    "move_pct": 2.6053550640279393,
-    "straddle": 5.595
+    "move_pct": 1.625811735324703,
+    "straddle": 3.5549999999999997
   },
   "options": {
     "expiry": "2026-06-05",
-    "atm_strike": 215.0,
-    "call_iv": 0.3569400244140625,
-    "put_iv": 0.37622694091796877,
-    "atm_iv": 0.3665834826660156,
-    "days_to_expiry": 2
+    "atm_strike": 217.5,
+    "call_iv": 0.27637442382812494,
+    "put_iv": 0.26197027099609377,
+    "atm_iv": 0.2691723474121094,
+    "days_to_expiry": 1
   },
   "consensus": null,
   "news": [
     {
-      "title": "Dow Jones Futures: Broadcom, CrowdStrike Dive On Earnings; SpaceX IPO Price Target Set",
-      "publisher": "Investor's Business Daily",
-      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-broadcom-crowdstrike-earnings-spacex-ipo-price-target/?src=A00220&yptr=yahoo",
-      "published": "2026-06-03T22:34:18+00:00"
-    },
-    {
-      "title": "Why Meta Platforms Stock Crushed the Market Today",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/03/why-meta-platforms-stock-crushed-the-market-today/",
-      "published": "2026-06-03T22:31:08+00:00"
-    },
-    {
-      "title": "Most Income Investors Have Never Heard of These 3 ETFs Paying Over 10 Percent Monthly",
+      "title": "Crypto Crash Today: Why Bitcoin, Ethereum, XRP, and Solana Are All Down Double Digits",
       "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/06/03/most-income-investors-have-never-heard-of-these-3-etfs-paying-over-10-percent-monthly/",
-      "published": "2026-06-03T22:27:26+00:00"
+      "url": "https://247wallst.com/investing/2026/06/04/crypto-crash-today-why-bitcoin-ethereum-xrp-and-solana-are-all-down-double-digits/",
+      "published": "2026-06-04T22:20:02+00:00"
     },
     {
-      "title": "Canopy Growth Just Made a Big Acquisition: Game-Changer -- or Another Misstep?",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/03/canopy-growth-just-made-a-big-acquisition-game-cha/",
-      "published": "2026-06-03T22:20:00+00:00"
+      "title": "CrowdStrike (CRWD) Is Up 7.2% After Profit Beat, Guidance Hike And AI Hire - Has The Bull Case Changed?",
+      "publisher": "Simply Wall St.",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/crowdstrike-crwd-7-2-profit-221201463.html",
+      "published": "2026-06-04T22:12:01+00:00"
     },
     {
-      "title": "Broadcom's AI Revenue Just Soared 143%. So Why Is the Stock Falling?",
+      "title": "Is the Schwab U.S. Dividend Equity ETF the Right Buy Right Now?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/03/broadcom-s-ai-revenue-just-soared-143-so-why-is-the-stock-falling/",
-      "published": "2026-06-03T22:07:30+00:00"
+      "url": "https://www.fool.com/investing/2026/06/04/is-schwab-us-dividend-equity-etf-schd-buy-now/",
+      "published": "2026-06-04T22:07:00+00:00"
     },
     {
-      "title": "Where Will Nike Stock Be in 5 Years?",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/03/where-will-stock-stock-be-in-5-years/",
-      "published": "2026-06-03T21:45:00+00:00"
+      "title": "Morgan Stanley makes bold new call on Micron stock",
+      "publisher": "TheStreet",
+      "url": "https://www.thestreet.com/investing/stocks/morgan-stanley-raises-price-target-on-micron-stock",
+      "published": "2026-06-04T22:07:00+00:00"
     },
     {
-      "title": "Stock Market Today, June 3: Markets End Winning Streak on Middle East Escalation Fears",
+      "title": "3 Magnificent Artificial Intelligence (AI) Stocks to Buy and Hold for the Next Decade",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/coverage/stock-market-today/2026/06/03/stock-market-today-june-3-markets-end-winning-streak-on-middle-east-escalation-fears/",
-      "published": "2026-06-03T21:36:15+00:00"
+      "url": "https://www.fool.com/investing/2026/06/04/3-magnificent-artificial-intelligence-ai-stocks-to/",
+      "published": "2026-06-04T21:37:00+00:00"
     },
     {
-      "title": "This Stock Is Up 1,000% Over the Past Year. Is There More Upside Ahead?",
+      "title": "This Chip Stock Made a Comeback After Broadcom Earnings",
+      "publisher": "The Wall Street Journal",
+      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-06-04-2026/card/chip-stocks-slide-after-broadcom-earnings-yIHjFm9DoKsa1MqIeBHS?siteid=yhoof2&yptr=yahoo",
+      "published": "2026-06-04T21:29:52+00:00"
+    },
+    {
+      "title": "Stock Market Today, June 4: Broadcom Shares Plunge After AI Outlook Misses High Investor Expectations",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/03/this-stock-is-up-1000-over-the-past-year-is-there/",
-      "published": "2026-06-03T21:35:00+00:00"
+      "url": "https://www.fool.com/coverage/stock-market-today/2026/06/04/stock-market-today-june-4-broadcom-shares-plunge-after-ai-outlook-misses-high-investor-expectations/",
+      "published": "2026-06-04T21:23:39+00:00"
+    },
+    {
+      "title": "Broadcom's sell-off just entered megacap history",
+      "publisher": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/article/broadcoms-sell-off-just-entered-megacap-history-163942663.html",
+      "published": "2026-06-04T16:39:42+00:00"
     }
   ],
-  "generated_at": "2026-06-03T22:43:51.516134+00:00"
+  "generated_at": "2026-06-04T22:30:47.096627+00:00"
 }
