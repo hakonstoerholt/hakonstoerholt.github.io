@@ -15,9 +15,9 @@
     "sector": "Technology",
     "industry": "Semiconductors",
     "market_cap": 4967727366144.0,
-    "pe": 31.360857,
+    "pe": 31.457056,
     "forward_pe": 16.172209,
-    "dividend_yield": 0.46,
+    "dividend_yield": 0.49,
     "beta": 2.202,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company. The company operates through two segments, Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. The company sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants worldwide. It has a collaboration with Tech Mahindra Limited to develop artificial intelligence powered telco network operations reasoning agent. The company has a strategic partnership with Lumentum Holdings Inc. to develop optics technologies for AI and data centers. It also has a strategic partnership with Nebius Group N.V. to develop and deploy hyperscale cloud for the artificial intelligence market; and has a strategic partnership with IREN Limited to accelerate deployment of up to 5 gigawatts of infrastructure. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
@@ -2051,61 +2051,61 @@
   "options": {
     "expiry": "2026-06-08",
     "atm_strike": 205.0,
-    "call_iv": 0.3210517114257812,
-    "put_iv": 0.31055376953124997,
-    "atm_iv": 0.3158027404785156,
-    "days_to_expiry": 3
+    "call_iv": 0.37085590087890624,
+    "put_iv": 0.35864899169921877,
+    "atm_iv": 0.3647524462890625,
+    "days_to_expiry": 2
   },
   "consensus": null,
   "news": [
     {
-      "title": "Stock Market Today, June 5: Broadcom Falls as Strong AI Results Fail to Lift Guidance",
+      "title": "Nvidia\u2019s Next Big Growth Lever?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/coverage/stock-market-today/2026/06/05/stock-market-today-june-5-broadcom-falls-as-strong-ai-results-fail-to-lift-guidance/",
-      "published": "2026-06-05T21:59:42+00:00"
+      "url": "https://www.fool.com/investing/2026/06/06/nvidias-next-big-growth-lever/",
+      "published": "2026-06-06T22:16:59+00:00"
     },
     {
-      "title": "VinFast (VFS), Autobrains, NVIDIA (NVDA) Partner for Level 4 Autonomous Driving in Southeast Asia",
-      "publisher": "Insider Monkey",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/vinfast-vfs-autobrains-nvidia-nvda-215636422.html",
-      "published": "2026-06-05T21:56:36+00:00"
-    },
-    {
-      "title": "Why Molina Healthcare Stock Cruised to a Nearly 10% Gain This Week",
+      "title": "The AI Build-Out Is Just Getting Started",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/05/why-molina-healthcare-stock-cruised-to-a-nearly-10/",
-      "published": "2026-06-05T21:55:26+00:00"
+      "url": "https://www.fool.com/investing/2026/06/06/the-ai-buildout-is-just-getting-started/",
+      "published": "2026-06-06T21:57:18+00:00"
     },
     {
-      "title": "Marvell Stock Was Just Added to S&P 500. Here\u2019s Who Else Was Included and Bumped.",
-      "publisher": "Barrons.com",
-      "url": "https://www.barrons.com/articles/marvell-stock-added-sp-500-293d3230?siteid=yhoof2&yptr=yahoo",
-      "published": "2026-06-05T21:54:00+00:00"
-    },
-    {
-      "title": "Nebius Stock Is Up 170% in 2026, and Leopold Aschenbrenner Just Bought a 5.6% Stake. Here's Why",
+      "title": "Are These 3 Energy Stocks About to Soar as Driving Season Kicks Off in the United States?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/05/nebius-stock-is-up-170-in-2026-and-leopold-aschenb/",
-      "published": "2026-06-05T21:50:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/06/are-these-3-energy-stocks-about-to-soar-as-driving/",
+      "published": "2026-06-06T21:35:00+00:00"
     },
     {
-      "title": "Prediction: This Will Be the Next Supercycle After AI Memory. 1 Stock to Buy Now Before It Surges Another 100%.",
+      "title": "Dell's AI Factory Is Booming With a Backlog of $51 Billion, But Will It Lift Margins?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/05/predict-next-supercycle-ai-memory-buy-stock/",
-      "published": "2026-06-05T21:49:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/06/dells-ai-factory-is-booming-with-a-huge-backlog/",
+      "published": "2026-06-06T21:31:00+00:00"
     },
     {
-      "title": "Trillion-Dollar Techs Lose a Trillion \u2014 Heard on the Street Recap",
-      "publisher": "The Wall Street Journal",
-      "url": "https://www.wsj.com/livecoverage/may-jobs-report-stock-market-06-05-2026/card/trillion-dollar-techs-lose-a-trillion-heard-on-the-street-recap-luthESrmsfFcmMewsb9N?siteid=yhoof2&yptr=yahoo",
-      "published": "2026-06-05T21:45:36+00:00"
+      "title": "$10,000 in FNGU Became $8,392 in One Session as Tech Leverage Cut Both Ways",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/06/06/10000-in-fngu-became-8392-in-one-session-as-tech-leverage-cut-both-ways/",
+      "published": "2026-06-06T21:15:16+00:00"
     },
     {
-      "title": "Meta Wants AI Agents to Become Its Next Ad Business",
-      "publisher": "Moby",
-      "url": "https://app.moby.co/home/news/news-meta-wants-ai-agents-to-become-its-next-ad-business?utm_source=yahoo_finance&utm_medium=rss",
-      "published": "2026-06-05T21:44:15+00:00"
+      "title": "Is Salesforce or ServiceNow a Better Stock to Buy Right Now?",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/06/06/is-salesforce-or-servicenow-a-better-stock-to-buy/",
+      "published": "2026-06-06T21:11:00+00:00"
+    },
+    {
+      "title": "The Conundrum of Investing in AI Today",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/06/06/the-conundrum-of-investing-in-ai-today/",
+      "published": "2026-06-06T21:07:37+00:00"
+    },
+    {
+      "title": "Nvidia CEO Jensen Huang Says This Is the Next Trillion-Dollar AI Chip Stock. Is He Right?",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/06/06/nvidia-ceo-jensen-huang-trillion-ai-chip-stock/",
+      "published": "2026-06-06T20:57:00+00:00"
     }
   ],
-  "generated_at": "2026-06-05T22:26:52.245317+00:00"
+  "generated_at": "2026-06-06T22:23:18.723691+00:00"
 }
