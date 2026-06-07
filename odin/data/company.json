@@ -2036,7 +2036,7 @@
       "h": 214.8699951171875,
       "l": 204.33999633789062,
       "c": 205.10000610351562,
-      "v": 215650478
+      "v": 219655531
     }
   ],
   "earnings": {
@@ -2051,61 +2051,61 @@
   "options": {
     "expiry": "2026-06-08",
     "atm_strike": 205.0,
-    "call_iv": 0.37085590087890624,
-    "put_iv": 0.35864899169921877,
-    "atm_iv": 0.3647524462890625,
-    "days_to_expiry": 2
+    "call_iv": 0.454107021484375,
+    "put_iv": 0.43921459228515625,
+    "atm_iv": 0.4466608068847656,
+    "days_to_expiry": 1
   },
   "consensus": null,
   "news": [
     {
-      "title": "Nvidia\u2019s Next Big Growth Lever?",
+      "title": "Is Visa Stock a Smart Way to Invest in the Cashless Economy?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/06/nvidias-next-big-growth-lever/",
-      "published": "2026-06-06T22:16:59+00:00"
+      "url": "https://www.fool.com/investing/2026/06/07/visa-stock-smart-way-invest-in-cashless-economy/",
+      "published": "2026-06-07T22:04:00+00:00"
     },
     {
-      "title": "The AI Build-Out Is Just Getting Started",
+      "title": "3 Reasons to Buy SpaceX Stock at Its IPO -- and 2 Reasons to Wait",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/06/the-ai-buildout-is-just-getting-started/",
-      "published": "2026-06-06T21:57:18+00:00"
+      "url": "https://www.fool.com/investing/2026/06/07/reasons-to-buy-spacex-stock-ipo-reason-wait/",
+      "published": "2026-06-07T21:35:00+00:00"
     },
     {
-      "title": "Are These 3 Energy Stocks About to Soar as Driving Season Kicks Off in the United States?",
+      "title": "Here's the 1 Crypto I'd Buy if I Could Only Pick 1",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/06/are-these-3-energy-stocks-about-to-soar-as-driving/",
-      "published": "2026-06-06T21:35:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/07/heres-the-1-crypto-id-buy-if-i-could-only-pick-1/",
+      "published": "2026-06-07T21:27:00+00:00"
     },
     {
-      "title": "Dell's AI Factory Is Booming With a Backlog of $51 Billion, But Will It Lift Margins?",
+      "title": "Micron's Stock Is Up Over 270% This Year. Here's How It Can Still Double in 2026.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/06/dells-ai-factory-is-booming-with-a-huge-backlog/",
-      "published": "2026-06-06T21:31:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/07/microns-stock-is-up-over-270-this-year/",
+      "published": "2026-06-07T20:31:00+00:00"
     },
     {
-      "title": "$10,000 in FNGU Became $8,392 in One Session as Tech Leverage Cut Both Ways",
-      "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/06/06/10000-in-fngu-became-8392-in-one-session-as-tech-leverage-cut-both-ways/",
-      "published": "2026-06-06T21:15:16+00:00"
+      "title": "Which Big 3 Cloud Computing Stock Is the Best Buy Now?",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/06/07/which-big-3-cloud-computing-stock-is-the-best-buy/",
+      "published": "2026-06-07T20:29:00+00:00"
     },
     {
-      "title": "Is Salesforce or ServiceNow a Better Stock to Buy Right Now?",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/06/is-salesforce-or-servicenow-a-better-stock-to-buy/",
-      "published": "2026-06-06T21:11:00+00:00"
+      "title": "TSMC Nvidia AI Partnership Puts Factory Efficiency And Valuation In Focus",
+      "publisher": "Simply Wall St.",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/tsmc-nvidia-ai-partnership-puts-200726215.html",
+      "published": "2026-06-07T20:07:26+00:00"
     },
     {
-      "title": "The Conundrum of Investing in AI Today",
+      "title": "Did Anthropic and Google Just Give Investors 2.2 Billion Reasons to Buy the SpaceX IPO?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/06/the-conundrum-of-investing-in-ai-today/",
-      "published": "2026-06-06T21:07:37+00:00"
+      "url": "https://www.fool.com/investing/2026/06/07/did-anthropic-and-google-just-give-investors-22-billion-reasons-to-buy-the-spacex-ipo/",
+      "published": "2026-06-07T19:58:43+00:00"
     },
     {
-      "title": "Nvidia CEO Jensen Huang Says This Is the Next Trillion-Dollar AI Chip Stock. Is He Right?",
+      "title": "Why Microsoft Distancing Itself From OpenAI Is a Good Thing for Investors",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/06/nvidia-ceo-jensen-huang-trillion-ai-chip-stock/",
-      "published": "2026-06-06T20:57:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/07/why-microsoft-distancing-from-openai-is-good/",
+      "published": "2026-06-07T19:31:00+00:00"
     }
   ],
-  "generated_at": "2026-06-06T22:23:18.723691+00:00"
+  "generated_at": "2026-06-07T22:23:46.407351+00:00"
 }
