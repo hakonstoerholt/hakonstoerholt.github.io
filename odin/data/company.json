@@ -1,43 +1,27 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-06-05",
+  "as_of": "2026-06-08",
   "price": {
-    "last": 205.10000610351562,
-    "prev_close": 218.66000366210938,
-    "change_pct": -6.2014073591381225,
-    "ytd_pct": 8.604712456875841,
+    "last": 208.63999938964844,
+    "prev_close": 205.10000610351562,
+    "change_pct": 1.7259839984335112,
+    "ytd_pct": 10.479212415426243,
     "high_52w": 236.5399932861328,
-    "low_52w": 138.8300018310547,
+    "low_52w": 140.85000610351562,
     "currency": "USD"
   },
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 4967727366144.0,
-    "pe": 31.457056,
-    "forward_pe": 16.172209,
+    "market_cap": 5053469425664.0,
+    "pe": 32.0,
+    "forward_pe": 16.45134,
     "dividend_yield": 0.49,
     "beta": 2.202,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company. The company operates through two segments, Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. The company sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants worldwide. It has a collaboration with Tech Mahindra Limited to develop artificial intelligence powered telco network operations reasoning agent. The company has a strategic partnership with Lumentum Holdings Inc. to develop optics technologies for AI and data centers. It also has a strategic partnership with Nebius Group N.V. to develop and deploy hyperscale cloud for the artificial intelligence market; and has a strategic partnership with IREN Limited to accelerate deployment of up to 5 gigawatts of infrastructure. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-06-05",
-      "o": 142.1699981689453,
-      "h": 144.0,
-      "l": 138.8300018310547,
-      "c": 139.99000549316406,
-      "v": 231397900
-    },
-    {
-      "t": "2025-06-06",
-      "o": 142.50999450683594,
-      "h": 143.27000427246094,
-      "l": 141.50999450683594,
-      "c": 141.72000122070312,
-      "v": 153986200
-    },
     {
       "t": "2025-06-09",
       "o": 143.19000244140625,
@@ -2037,6 +2021,14 @@
       "l": 204.33999633789062,
       "c": 205.10000610351562,
       "v": 219655531
+    },
+    {
+      "t": "2026-06-08",
+      "o": 210.17999267578125,
+      "h": 210.4600067138672,
+      "l": 206.0,
+      "c": 208.63999938964844,
+      "v": 137815036
     }
   ],
   "earnings": {
@@ -2044,68 +2036,68 @@
     "history": []
   },
   "implied_move": {
-    "expiry": "2026-06-08",
-    "move_pct": 2.5109701836872462,
-    "straddle": 5.1499999999999995
+    "expiry": "2026-06-10",
+    "move_pct": 2.482745406035983,
+    "straddle": 5.18
   },
   "options": {
-    "expiry": "2026-06-08",
-    "atm_strike": 205.0,
-    "call_iv": 0.454107021484375,
-    "put_iv": 0.43921459228515625,
-    "atm_iv": 0.4466608068847656,
-    "days_to_expiry": 1
+    "expiry": "2026-06-10",
+    "atm_strike": 207.5,
+    "call_iv": 0.3508365698242187,
+    "put_iv": 0.33618827880859375,
+    "atm_iv": 0.3435124243164062,
+    "days_to_expiry": 2
   },
   "consensus": null,
   "news": [
     {
-      "title": "Is Visa Stock a Smart Way to Invest in the Cashless Economy?",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/07/visa-stock-smart-way-invest-in-cashless-economy/",
-      "published": "2026-06-07T22:04:00+00:00"
+      "title": "Why Marvell Technology (MRVL) Stock Is Up Today",
+      "publisher": "StockStory",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/why-marvell-technology-mrvl-stock-222150062.html",
+      "published": "2026-06-08T22:21:50+00:00"
     },
     {
-      "title": "3 Reasons to Buy SpaceX Stock at Its IPO -- and 2 Reasons to Wait",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/07/reasons-to-buy-spacex-stock-ipo-reason-wait/",
-      "published": "2026-06-07T21:35:00+00:00"
+      "title": "Corning (GLW) Shares Skyrocket, What You Need To Know",
+      "publisher": "StockStory",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/corning-glw-shares-skyrocket-know-221350852.html",
+      "published": "2026-06-08T22:13:50+00:00"
     },
     {
-      "title": "Here's the 1 Crypto I'd Buy if I Could Only Pick 1",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/07/heres-the-1-crypto-id-buy-if-i-could-only-pick-1/",
-      "published": "2026-06-07T21:27:00+00:00"
+      "title": "Dow Jones Futures: Trump, Iran Comments Spark Tech Rebound; Apple, Micron, Nvidia, Sandisk, Tesla Are Big Movers",
+      "publisher": "Investor's Business Daily",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-trump-iran-comments-micron-nvidia-sandisk/?src=A00220&yptr=yahoo",
+      "published": "2026-06-08T22:09:54+00:00"
     },
     {
-      "title": "Micron's Stock Is Up Over 270% This Year. Here's How It Can Still Double in 2026.",
+      "title": "3 Unstoppable Quantum Computing Stocks to Buy Now",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/07/microns-stock-is-up-over-270-this-year/",
-      "published": "2026-06-07T20:31:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/08/3-unstoppable-quantum-computing-stocks-to-buy-now/",
+      "published": "2026-06-08T22:05:00+00:00"
     },
     {
-      "title": "Which Big 3 Cloud Computing Stock Is the Best Buy Now?",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/07/which-big-3-cloud-computing-stock-is-the-best-buy/",
-      "published": "2026-06-07T20:29:00+00:00"
+      "title": "3 Stocks to Watch as Trump Floats Giving Americans a Stake in AI",
+      "publisher": "BeInCrypto",
+      "url": "https://beincrypto.com/us-stocks-to-watch-trump-ai-stake/",
+      "published": "2026-06-08T22:00:00+00:00"
     },
     {
-      "title": "TSMC Nvidia AI Partnership Puts Factory Efficiency And Valuation In Focus",
-      "publisher": "Simply Wall St.",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/tsmc-nvidia-ai-partnership-puts-200726215.html",
-      "published": "2026-06-07T20:07:26+00:00"
+      "title": "Account Minimums Are Being Lowered to Participate in the SpaceX IPO. Is This a Win or a Trap for Retail Investors?",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/06/08/account-minimums-are-being-lowered-to-participate/",
+      "published": "2026-06-08T21:50:00+00:00"
     },
     {
-      "title": "Did Anthropic and Google Just Give Investors 2.2 Billion Reasons to Buy the SpaceX IPO?",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/07/did-anthropic-and-google-just-give-investors-22-billion-reasons-to-buy-the-spacex-ipo/",
-      "published": "2026-06-07T19:58:43+00:00"
+      "title": "OpenAI Just Filed for an IPO Because Everybody Else Already Did",
+      "publisher": "Moby",
+      "url": "https://app.moby.co/home/news/news-openai-just-filed-for-an-ipo-because-everybody-else-already-did?utm_source=yahoo_finance&utm_medium=rss",
+      "published": "2026-06-08T21:44:53+00:00"
     },
     {
-      "title": "Why Microsoft Distancing Itself From OpenAI Is a Good Thing for Investors",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/07/why-microsoft-distancing-from-openai-is-good/",
-      "published": "2026-06-07T19:31:00+00:00"
+      "title": "Amazon\u2013Corning AI deal, Marvell stock surges on S&P 500 inclusion",
+      "publisher": "Yahoo Finance Video",
+      "url": "https://finance.yahoo.com/video/amazoncorning-ai-deal-marvell-stock-surges-on-sp-500-inclusion-151008035.html",
+      "published": "2026-06-08T15:10:08+00:00"
     }
   ],
-  "generated_at": "2026-06-07T22:23:46.407351+00:00"
+  "generated_at": "2026-06-08T22:31:48.539195+00:00"
 }
