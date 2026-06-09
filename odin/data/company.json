@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-06-08",
+  "as_of": "2026-06-09",
   "price": {
-    "last": 208.63999938964844,
-    "prev_close": 205.10000610351562,
-    "change_pct": 1.7259839984335112,
-    "ytd_pct": 10.479212415426243,
+    "last": 208.19000244140625,
+    "prev_close": 208.63999938964844,
+    "change_pct": -0.21568105327770537,
+    "ytd_pct": 10.240929686435729,
     "high_52w": 236.5399932861328,
     "low_52w": 140.85000610351562,
     "currency": "USD"
@@ -14,12 +14,12 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 5053469425664.0,
-    "pe": 32.0,
-    "forward_pe": 16.45134,
-    "dividend_yield": 0.49,
+    "market_cap": 5042570002432.0,
+    "pe": 31.882082,
+    "forward_pe": 16.415857,
+    "dividend_yield": 0.48,
     "beta": 2.202,
-    "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company. The company operates through two segments, Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. The company sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants worldwide. It has a collaboration with Tech Mahindra Limited to develop artificial intelligence powered telco network operations reasoning agent. The company has a strategic partnership with Lumentum Holdings Inc. to develop optics technologies for AI and data centers. It also has a strategic partnership with Nebius Group N.V. to develop and deploy hyperscale cloud for the artificial intelligence market; and has a strategic partnership with IREN Limited to accelerate deployment of up to 5 gigawatts of infrastructure. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
+    "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company. The company operates through two segments, Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. The company sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants worldwide. The company has a strategic collaboration with Tech Mahindra Limited, Lumentum Holdings Inc., Nebius Group N.V., IREN Limited, and SK hynix Inc. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
     {
@@ -2029,6 +2029,14 @@
       "l": 206.0,
       "c": 208.63999938964844,
       "v": 137815036
+    },
+    {
+      "t": "2026-06-09",
+      "o": 210.61500549316406,
+      "h": 211.38999938964844,
+      "l": 199.33999633789062,
+      "c": 208.19000244140625,
+      "v": 179602708
     }
   ],
   "earnings": {
@@ -2037,67 +2045,67 @@
   },
   "implied_move": {
     "expiry": "2026-06-10",
-    "move_pct": 2.482745406035983,
-    "straddle": 5.18
+    "move_pct": 1.9453383700016271,
+    "straddle": 4.05
   },
   "options": {
     "expiry": "2026-06-10",
     "atm_strike": 207.5,
-    "call_iv": 0.3508365698242187,
-    "put_iv": 0.33618827880859375,
-    "atm_iv": 0.3435124243164062,
-    "days_to_expiry": 2
+    "call_iv": 0.33008482421874996,
+    "put_iv": 0.3286199951171874,
+    "atm_iv": 0.3293524096679687,
+    "days_to_expiry": 1
   },
   "consensus": null,
   "news": [
     {
-      "title": "Why Marvell Technology (MRVL) Stock Is Up Today",
-      "publisher": "StockStory",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/why-marvell-technology-mrvl-stock-222150062.html",
-      "published": "2026-06-08T22:21:50+00:00"
-    },
-    {
-      "title": "Corning (GLW) Shares Skyrocket, What You Need To Know",
-      "publisher": "StockStory",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/corning-glw-shares-skyrocket-know-221350852.html",
-      "published": "2026-06-08T22:13:50+00:00"
-    },
-    {
-      "title": "Dow Jones Futures: Trump, Iran Comments Spark Tech Rebound; Apple, Micron, Nvidia, Sandisk, Tesla Are Big Movers",
+      "title": "Dow Jones Futures Fall On Iran News After Market Whipsaws; CPI Inflation On Tap",
       "publisher": "Investor's Business Daily",
-      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-trump-iran-comments-micron-nvidia-sandisk/?src=A00220&yptr=yahoo",
-      "published": "2026-06-08T22:09:54+00:00"
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-whipsaws-ai-fears-trump-iran-comments-cpi-inflation/?src=A00220&yptr=yahoo",
+      "published": "2026-06-09T22:26:32+00:00"
     },
     {
-      "title": "3 Unstoppable Quantum Computing Stocks to Buy Now",
+      "title": "Will XRP Explode? The Rare RSI Signal That Preceded Every Major Rally Just Flashed Again",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/cryptocurrency/2026/06/09/will-xrp-explode-the-rare-rsi-signal-that-preceded-every-major-rally-just-flashed-again/",
+      "published": "2026-06-09T22:16:29+00:00"
+    },
+    {
+      "title": "The Capex Signal That Will Make or Break IGPT in the Next 12 Months",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/06/09/the-capex-signal-that-will-make-or-break-igpt-in-the-next-12-months/",
+      "published": "2026-06-09T22:11:20+00:00"
+    },
+    {
+      "title": "Why Signet Jewelers Stock Triumphed on Tuesday",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/08/3-unstoppable-quantum-computing-stocks-to-buy-now/",
-      "published": "2026-06-08T22:05:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/09/why-signet-jewelers-stock-triumphed-on-tuesday/",
+      "published": "2026-06-09T21:43:48+00:00"
     },
     {
-      "title": "3 Stocks to Watch as Trump Floats Giving Americans a Stake in AI",
-      "publisher": "BeInCrypto",
-      "url": "https://beincrypto.com/us-stocks-to-watch-trump-ai-stake/",
-      "published": "2026-06-08T22:00:00+00:00"
-    },
-    {
-      "title": "Account Minimums Are Being Lowered to Participate in the SpaceX IPO. Is This a Win or a Trap for Retail Investors?",
+      "title": "A Big Change Could Be Coming to the S&P 500. Here's What That Means for Investors",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/08/account-minimums-are-being-lowered-to-participate/",
-      "published": "2026-06-08T21:50:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/09/a-big-change-could-be-coming-to-the-sp-500-in-2026/",
+      "published": "2026-06-09T21:27:48+00:00"
     },
     {
-      "title": "OpenAI Just Filed for an IPO Because Everybody Else Already Did",
-      "publisher": "Moby",
-      "url": "https://app.moby.co/home/news/news-openai-just-filed-for-an-ipo-because-everybody-else-already-did?utm_source=yahoo_finance&utm_medium=rss",
-      "published": "2026-06-08T21:44:53+00:00"
+      "title": "Veteran Hedge Fund Manager: Anthropic Targets $500 Billion Market Opportunity as \u2018Just Coding Alone Has Completely Taken Off\u2019",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/06/09/veteran-hedge-fund-manager-anthropic-targets-500-billion-market-opportunity-as-just-coding-alone-has-completely-taken-off/",
+      "published": "2026-06-09T21:27:32+00:00"
     },
     {
-      "title": "Amazon\u2013Corning AI deal, Marvell stock surges on S&P 500 inclusion",
-      "publisher": "Yahoo Finance Video",
-      "url": "https://finance.yahoo.com/video/amazoncorning-ai-deal-marvell-stock-surges-on-sp-500-inclusion-151008035.html",
-      "published": "2026-06-08T15:10:08+00:00"
+      "title": "New Investors: 3 Rock-Solid Stocks to Build Your Portfolio Around",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/06/09/new-investors-3-rock-solid-stocks-to-build-your-po/",
+      "published": "2026-06-09T21:20:00+00:00"
+    },
+    {
+      "title": "What Could Go Wrong For Broadcom Stock?",
+      "publisher": "Trefis",
+      "url": "https://www.trefis.com/articles/602063/what-could-go-wrong-for-broadcom-stock/2026-06-09",
+      "published": "2026-06-09T21:15:55+00:00"
     }
   ],
-  "generated_at": "2026-06-08T22:31:48.539195+00:00"
+  "generated_at": "2026-06-09T22:31:50.334723+00:00"
 }
