@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-06-09",
+  "as_of": "2026-06-10",
   "price": {
-    "last": 208.19000244140625,
-    "prev_close": 208.63999938964844,
-    "change_pct": -0.21568105327770537,
-    "ytd_pct": 10.240929686435729,
+    "last": 200.4199981689453,
+    "prev_close": 208.19000244140625,
+    "change_pct": -3.7321697398258857,
+    "ytd_pct": 6.126551067775843,
     "high_52w": 236.5399932861328,
     "low_52w": 140.85000610351562,
     "currency": "USD"
@@ -14,22 +14,14 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 5042570002432.0,
-    "pe": 31.882082,
-    "forward_pe": 16.415857,
+    "market_cap": 4854372630528.0,
+    "pe": 30.64526,
+    "forward_pe": 15.7474375,
     "dividend_yield": 0.48,
     "beta": 2.202,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company. The company operates through two segments, Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. The company sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants worldwide. The company has a strategic collaboration with Tech Mahindra Limited, Lumentum Holdings Inc., Nebius Group N.V., IREN Limited, and SK hynix Inc. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-06-09",
-      "o": 143.19000244140625,
-      "h": 145.0,
-      "l": 141.94000244140625,
-      "c": 142.6300048828125,
-      "v": 185114500
-    },
     {
       "t": "2025-06-10",
       "o": 142.69000244140625,
@@ -2037,6 +2029,14 @@
       "l": 199.33999633789062,
       "c": 208.19000244140625,
       "v": 179602708
+    },
+    {
+      "t": "2026-06-10",
+      "o": 204.4250030517578,
+      "h": 207.22000122070312,
+      "l": 199.9199981689453,
+      "c": 200.4199981689453,
+      "v": 150398224
     }
   ],
   "earnings": {
@@ -2044,68 +2044,68 @@
     "history": []
   },
   "implied_move": {
-    "expiry": "2026-06-10",
-    "move_pct": 1.9453383700016271,
-    "straddle": 4.05
+    "expiry": "2026-06-12",
+    "move_pct": 3.125935563934533,
+    "straddle": 6.265000000000001
   },
   "options": {
-    "expiry": "2026-06-10",
-    "atm_strike": 207.5,
-    "call_iv": 0.33008482421874996,
-    "put_iv": 0.3286199951171874,
-    "atm_iv": 0.3293524096679687,
-    "days_to_expiry": 1
+    "expiry": "2026-06-12",
+    "atm_strike": 200.0,
+    "call_iv": 0.43994700683593746,
+    "put_iv": 0.4331111376953125,
+    "atm_iv": 0.436529072265625,
+    "days_to_expiry": 2
   },
   "consensus": null,
   "news": [
     {
-      "title": "Dow Jones Futures Fall On Iran News After Market Whipsaws; CPI Inflation On Tap",
+      "title": "Dow Jones Futures Fall As Trump Attacks Iran, Oracle Tumbles Late; SpaceX IPO On Launch Pad",
       "publisher": "Investor's Business Daily",
-      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-whipsaws-ai-fears-trump-iran-comments-cpi-inflation/?src=A00220&yptr=yahoo",
-      "published": "2026-06-09T22:26:32+00:00"
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-ai-fears-trump-oracle-earnings-spacex-ipo/?src=A00220&yptr=yahoo",
+      "published": "2026-06-10T22:15:31+00:00"
     },
     {
-      "title": "Will XRP Explode? The Rare RSI Signal That Preceded Every Major Rally Just Flashed Again",
+      "title": "Wall Street Strategist: SpaceX Will Force a Major Stock Market Repositioning. Buy These Stocks Instead.",
       "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/cryptocurrency/2026/06/09/will-xrp-explode-the-rare-rsi-signal-that-preceded-every-major-rally-just-flashed-again/",
-      "published": "2026-06-09T22:16:29+00:00"
+      "url": "https://247wallst.com/investing/2026/06/10/wall-street-strategist-spacex-will-force-a-major-stock-market-repositioning-buy-these-stocks-instead/",
+      "published": "2026-06-10T22:08:11+00:00"
     },
     {
-      "title": "The Capex Signal That Will Make or Break IGPT in the Next 12 Months",
-      "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/06/09/the-capex-signal-that-will-make-or-break-igpt-in-the-next-12-months/",
-      "published": "2026-06-09T22:11:20+00:00"
+      "title": "Morgan Stanley revamps Apple stock target after key event",
+      "publisher": "TheStreet",
+      "url": "https://www.thestreet.com/investing/stocks/morgan-stanley-raises-apple-stock-target",
+      "published": "2026-06-10T22:07:00+00:00"
     },
     {
-      "title": "Why Signet Jewelers Stock Triumphed on Tuesday",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/09/why-signet-jewelers-stock-triumphed-on-tuesday/",
-      "published": "2026-06-09T21:43:48+00:00"
-    },
-    {
-      "title": "A Big Change Could Be Coming to the S&P 500. Here's What That Means for Investors",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/09/a-big-change-could-be-coming-to-the-sp-500-in-2026/",
-      "published": "2026-06-09T21:27:48+00:00"
-    },
-    {
-      "title": "Veteran Hedge Fund Manager: Anthropic Targets $500 Billion Market Opportunity as \u2018Just Coding Alone Has Completely Taken Off\u2019",
-      "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/06/09/veteran-hedge-fund-manager-anthropic-targets-500-billion-market-opportunity-as-just-coding-alone-has-completely-taken-off/",
-      "published": "2026-06-09T21:27:32+00:00"
-    },
-    {
-      "title": "New Investors: 3 Rock-Solid Stocks to Build Your Portfolio Around",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/09/new-investors-3-rock-solid-stocks-to-build-your-po/",
-      "published": "2026-06-09T21:20:00+00:00"
-    },
-    {
-      "title": "What Could Go Wrong For Broadcom Stock?",
+      "title": "AMD Stock And The Five-Billion Dollar Whisper",
       "publisher": "Trefis",
-      "url": "https://www.trefis.com/articles/602063/what-could-go-wrong-for-broadcom-stock/2026-06-09",
-      "published": "2026-06-09T21:15:55+00:00"
+      "url": "https://www.trefis.com/articles/602297/amd-stock-and-the-five-billion-dollar-whisper/2026-06-10",
+      "published": "2026-06-10T22:06:08+00:00"
+    },
+    {
+      "title": "The Spill: Is Broadcom (AVGO) the Other AI Trade?",
+      "publisher": "IPO-Edge.com",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/spill-broadcom-avgo-other-ai-214117164.html",
+      "published": "2026-06-10T21:41:17+00:00"
+    },
+    {
+      "title": "Should You Buy the Dip on Broadcom Stock?",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/06/10/should-you-buy-the-dip-on-broadcom-stock/",
+      "published": "2026-06-10T21:29:00+00:00"
+    },
+    {
+      "title": "Why Newmont Stock Slumped on Wednesday",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/06/10/why-newmont-stock-slumped-on-wednesday/",
+      "published": "2026-06-10T21:28:32+00:00"
+    },
+    {
+      "title": "The Smartest Dividend ETF to Buy With $2,000 Right Now",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/06/10/smartest-dividend-etf-to-buy-with-2000-right-now/",
+      "published": "2026-06-10T21:25:00+00:00"
     }
   ],
-  "generated_at": "2026-06-09T22:31:50.334723+00:00"
+  "generated_at": "2026-06-10T22:36:45.465978+00:00"
 }
