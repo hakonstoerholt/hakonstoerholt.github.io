@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-06-10",
+  "as_of": "2026-06-11",
   "price": {
-    "last": 200.4199981689453,
-    "prev_close": 208.19000244140625,
-    "change_pct": -3.7321697398258857,
-    "ytd_pct": 6.126551067775843,
+    "last": 204.8699951171875,
+    "prev_close": 200.4199981689453,
+    "change_pct": 2.220335789291372,
+    "ytd_pct": 8.482916863074252,
     "high_52w": 236.5399932861328,
     "low_52w": 140.85000610351562,
     "currency": "USD"
@@ -14,22 +14,14 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 4854372630528.0,
-    "pe": 30.64526,
-    "forward_pe": 15.7474375,
-    "dividend_yield": 0.48,
+    "market_cap": 4962156281856.0,
+    "pe": 31.37366,
+    "forward_pe": 16.097084,
+    "dividend_yield": 0.5,
     "beta": 2.202,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company. The company operates through two segments, Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. The company sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants worldwide. The company has a strategic collaboration with Tech Mahindra Limited, Lumentum Holdings Inc., Nebius Group N.V., IREN Limited, and SK hynix Inc. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-06-10",
-      "o": 142.69000244140625,
-      "h": 144.2899932861328,
-      "l": 141.52999877929688,
-      "c": 143.9600067138672,
-      "v": 155881900
-    },
     {
       "t": "2025-06-11",
       "o": 144.61000061035156,
@@ -2037,6 +2029,14 @@
       "l": 199.9199981689453,
       "c": 200.4199981689453,
       "v": 150398224
+    },
+    {
+      "t": "2026-06-11",
+      "o": 201.39500427246094,
+      "h": 205.66000366210938,
+      "l": 199.5399932861328,
+      "c": 204.8699951171875,
+      "v": 154038075
     }
   ],
   "earnings": {
@@ -2045,67 +2045,67 @@
   },
   "implied_move": {
     "expiry": "2026-06-12",
-    "move_pct": 3.125935563934533,
-    "straddle": 6.265000000000001
+    "move_pct": 2.0134720058154256,
+    "straddle": 4.125
   },
   "options": {
     "expiry": "2026-06-12",
-    "atm_strike": 200.0,
-    "call_iv": 0.43994700683593746,
-    "put_iv": 0.4331111376953125,
-    "atm_iv": 0.436529072265625,
-    "days_to_expiry": 2
+    "atm_strike": 205.0,
+    "call_iv": 0.34278000976562495,
+    "put_iv": 0.35108070800781244,
+    "atm_iv": 0.3469303588867187,
+    "days_to_expiry": 1
   },
   "consensus": null,
   "news": [
     {
-      "title": "Dow Jones Futures Fall As Trump Attacks Iran, Oracle Tumbles Late; SpaceX IPO On Launch Pad",
-      "publisher": "Investor's Business Daily",
-      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-ai-fears-trump-oracle-earnings-spacex-ipo/?src=A00220&yptr=yahoo",
-      "published": "2026-06-10T22:15:31+00:00"
-    },
-    {
-      "title": "Wall Street Strategist: SpaceX Will Force a Major Stock Market Repositioning. Buy These Stocks Instead.",
-      "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/06/10/wall-street-strategist-spacex-will-force-a-major-stock-market-repositioning-buy-these-stocks-instead/",
-      "published": "2026-06-10T22:08:11+00:00"
-    },
-    {
-      "title": "Morgan Stanley revamps Apple stock target after key event",
-      "publisher": "TheStreet",
-      "url": "https://www.thestreet.com/investing/stocks/morgan-stanley-raises-apple-stock-target",
-      "published": "2026-06-10T22:07:00+00:00"
-    },
-    {
-      "title": "AMD Stock And The Five-Billion Dollar Whisper",
-      "publisher": "Trefis",
-      "url": "https://www.trefis.com/articles/602297/amd-stock-and-the-five-billion-dollar-whisper/2026-06-10",
-      "published": "2026-06-10T22:06:08+00:00"
-    },
-    {
-      "title": "The Spill: Is Broadcom (AVGO) the Other AI Trade?",
-      "publisher": "IPO-Edge.com",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/spill-broadcom-avgo-other-ai-214117164.html",
-      "published": "2026-06-10T21:41:17+00:00"
-    },
-    {
-      "title": "Should You Buy the Dip on Broadcom Stock?",
+      "title": "Should You Buy SpaceX on Its First Day of Trading?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/10/should-you-buy-the-dip-on-broadcom-stock/",
-      "published": "2026-06-10T21:29:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/11/should-you-buy-spacex-on-its-first-day-of-trading/",
+      "published": "2026-06-11T22:30:00+00:00"
     },
     {
-      "title": "Why Newmont Stock Slumped on Wednesday",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/10/why-newmont-stock-slumped-on-wednesday/",
-      "published": "2026-06-10T21:28:32+00:00"
+      "title": "Nvidia hires veteran lobbyist Bruce Andrews to head government affairs, sources say",
+      "publisher": "Reuters",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/nvidia-hires-veteran-lobbyist-bruce-222031958.html",
+      "published": "2026-06-11T22:20:31+00:00"
     },
     {
-      "title": "The Smartest Dividend ETF to Buy With $2,000 Right Now",
+      "title": "Why Oklo Stock Powered Higher Today",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/10/smartest-dividend-etf-to-buy-with-2000-right-now/",
-      "published": "2026-06-10T21:25:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/11/why-oklo-stock-powered-higher-today/",
+      "published": "2026-06-11T21:54:19+00:00"
+    },
+    {
+      "title": "Is Crocs Stock a Buy After a Recent Analyst Upgrade?",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/06/11/is-crocs-stock-a-buy-after-a-recent-analyst-upgrad/",
+      "published": "2026-06-11T21:45:00+00:00"
+    },
+    {
+      "title": "Why Stitch Fix Stock Surged Today",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/06/11/why-stitch-fix-stock-surged-today/",
+      "published": "2026-06-11T21:43:02+00:00"
+    },
+    {
+      "title": "Here's How Much a $1,000 Investment Could Get You When SpaceX Goes Public June 12",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/06/11/heres-how-much-a-1000-investment-could-get-you-whe/",
+      "published": "2026-06-11T21:20:00+00:00"
+    },
+    {
+      "title": "Stock Market Today, June 11: Micron, Intel, and Nvidia Lead Rebound and SpaceX IPO Approaches",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/coverage/stock-market-today/2026/06/11/stock-market-today-june-11-micron-intel-and-nvidia-lead-rebound-and-spacex-ipo-approaches/",
+      "published": "2026-06-11T21:18:29+00:00"
+    },
+    {
+      "title": "Expect 'robust capability' from this KKR-backed AI venture: CEO",
+      "publisher": "Yahoo Finance Video",
+      "url": "https://finance.yahoo.com/video/expect-robust-capability-from-this-kkr-backed-ai-venture-ceo-211742674.html",
+      "published": "2026-06-11T21:17:42+00:00"
     }
   ],
-  "generated_at": "2026-06-10T22:36:45.465978+00:00"
+  "generated_at": "2026-06-11T22:35:51.266009+00:00"
 }
