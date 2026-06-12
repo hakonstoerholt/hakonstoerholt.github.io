@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-06-11",
+  "as_of": "2026-06-12",
   "price": {
-    "last": 204.8699951171875,
-    "prev_close": 200.4199981689453,
-    "change_pct": 2.220335789291372,
-    "ytd_pct": 8.482916863074252,
+    "last": 205.19000244140625,
+    "prev_close": 204.8699951171875,
+    "change_pct": 0.15620019126554308,
+    "ytd_pct": 8.652367386704807,
     "high_52w": 236.5399932861328,
     "low_52w": 140.85000610351562,
     "currency": "USD"
@@ -14,22 +14,14 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 4962156281856.0,
-    "pe": 31.37366,
-    "forward_pe": 16.097084,
-    "dividend_yield": 0.5,
+    "market_cap": 4969906831360.0,
+    "pe": 31.374619,
+    "forward_pe": 16.122227,
+    "dividend_yield": 0.49,
     "beta": 2.202,
-    "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company. The company operates through two segments, Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. The company sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants worldwide. The company has a strategic collaboration with Tech Mahindra Limited, Lumentum Holdings Inc., Nebius Group N.V., IREN Limited, and SK hynix Inc. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
+    "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company. The company operates through two segments, Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. The company sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants worldwide. The company has a strategic collaboration with Tech Mahindra Limited, Lumentum Holdings Inc., Nebius Group N.V., IREN Limited, VinFast Auto Ltd., Autobrains Technologies Ltd, and SK hynix Inc. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-06-11",
-      "o": 144.61000061035156,
-      "h": 144.99000549316406,
-      "l": 141.8699951171875,
-      "c": 142.8300018310547,
-      "v": 167694000
-    },
     {
       "t": "2025-06-12",
       "o": 141.97000122070312,
@@ -2037,6 +2029,14 @@
       "l": 199.5399932861328,
       "c": 204.8699951171875,
       "v": 154038075
+    },
+    {
+      "t": "2026-06-12",
+      "o": 204.72999572753906,
+      "h": 207.07000732421875,
+      "l": 203.43850708007812,
+      "c": 205.19000244140625,
+      "v": 105436612
     }
   ],
   "earnings": {
@@ -2044,68 +2044,68 @@
     "history": []
   },
   "implied_move": {
-    "expiry": "2026-06-12",
-    "move_pct": 2.0134720058154256,
-    "straddle": 4.125
+    "expiry": "2026-06-15",
+    "move_pct": 1.9152979936838028,
+    "straddle": 3.93
   },
   "options": {
-    "expiry": "2026-06-12",
+    "expiry": "2026-06-15",
     "atm_strike": 205.0,
-    "call_iv": 0.34278000976562495,
-    "put_iv": 0.35108070800781244,
-    "atm_iv": 0.3469303588867187,
-    "days_to_expiry": 1
+    "call_iv": 0.23633576171874998,
+    "put_iv": 0.23389437988281248,
+    "atm_iv": 0.23511507080078123,
+    "days_to_expiry": 3
   },
   "consensus": null,
   "news": [
     {
-      "title": "Should You Buy SpaceX on Its First Day of Trading?",
+      "title": "NVIDIA\u2019s China Vera CPU Launch Tests AI Growth And Valuation Story",
+      "publisher": "Simply Wall St.",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-china-vera-cpu-launch-221417853.html",
+      "published": "2026-06-12T22:14:17+00:00"
+    },
+    {
+      "title": "Why Qualcomm (QCOM) Stock Is Trading Up Today",
+      "publisher": "StockStory",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/why-qualcomm-qcom-stock-trading-220520438.html",
+      "published": "2026-06-12T22:05:20+00:00"
+    },
+    {
+      "title": "SpaceX Just Went Public at $2.1 Trillion. Here's Where History Says the Stock Will Be in 1 Year.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/11/should-you-buy-spacex-on-its-first-day-of-trading/",
-      "published": "2026-06-11T22:30:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/12/spacex-just-went-public-at-21-trillion-heres-where/",
+      "published": "2026-06-12T22:02:13+00:00"
     },
     {
-      "title": "Nvidia hires veteran lobbyist Bruce Andrews to head government affairs, sources say",
-      "publisher": "Reuters",
-      "url": "https://finance.yahoo.com/sectors/technology/articles/nvidia-hires-veteran-lobbyist-bruce-222031958.html",
-      "published": "2026-06-11T22:20:31+00:00"
-    },
-    {
-      "title": "Why Oklo Stock Powered Higher Today",
+      "title": "Why Navitas Semiconductor Stock Soared Today",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/11/why-oklo-stock-powered-higher-today/",
-      "published": "2026-06-11T21:54:19+00:00"
+      "url": "https://www.fool.com/investing/2026/06/12/why-navitas-semiconductor-stock-soared-today/",
+      "published": "2026-06-12T21:58:13+00:00"
     },
     {
-      "title": "Is Crocs Stock a Buy After a Recent Analyst Upgrade?",
+      "title": "3 Core Artificial Intelligence (AI) Stocks to Buy With $1,000 Right Now and Hold for the Next Decade",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/11/is-crocs-stock-a-buy-after-a-recent-analyst-upgrad/",
-      "published": "2026-06-11T21:45:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/12/3-core-artificial-intelligence-ai-stocks-to-buy-wi/",
+      "published": "2026-06-12T21:58:00+00:00"
     },
     {
-      "title": "Why Stitch Fix Stock Surged Today",
+      "title": "Why AMD (AMD) Stock Is Up Today",
+      "publisher": "StockStory",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/why-amd-amd-stock-today-215720676.html",
+      "published": "2026-06-12T21:57:20+00:00"
+    },
+    {
+      "title": "Why Arista Networks Stock Flew More Than 4% Higher on Friday",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/11/why-stitch-fix-stock-surged-today/",
-      "published": "2026-06-11T21:43:02+00:00"
+      "url": "https://www.fool.com/investing/2026/06/12/why-arista-networks-stock-flew-more-than-4-higher/",
+      "published": "2026-06-12T21:51:57+00:00"
     },
     {
-      "title": "Here's How Much a $1,000 Investment Could Get You When SpaceX Goes Public June 12",
+      "title": "eVTOL Stock Face-Off: Is Joby Aviation or Archer Aviation the Better Buy Right Now?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/11/heres-how-much-a-1000-investment-could-get-you-whe/",
-      "published": "2026-06-11T21:20:00+00:00"
-    },
-    {
-      "title": "Stock Market Today, June 11: Micron, Intel, and Nvidia Lead Rebound and SpaceX IPO Approaches",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/coverage/stock-market-today/2026/06/11/stock-market-today-june-11-micron-intel-and-nvidia-lead-rebound-and-spacex-ipo-approaches/",
-      "published": "2026-06-11T21:18:29+00:00"
-    },
-    {
-      "title": "Expect 'robust capability' from this KKR-backed AI venture: CEO",
-      "publisher": "Yahoo Finance Video",
-      "url": "https://finance.yahoo.com/video/expect-robust-capability-from-this-kkr-backed-ai-venture-ceo-211742674.html",
-      "published": "2026-06-11T21:17:42+00:00"
+      "url": "https://www.fool.com/investing/2026/06/12/stock-stock-face-off-is-stock-a-or-stock-b-the-bet/",
+      "published": "2026-06-12T21:20:00+00:00"
     }
   ],
-  "generated_at": "2026-06-11T22:35:51.266009+00:00"
+  "generated_at": "2026-06-12T22:31:49.228553+00:00"
 }
