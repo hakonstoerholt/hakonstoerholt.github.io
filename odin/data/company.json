@@ -15,7 +15,7 @@
     "sector": "Technology",
     "industry": "Semiconductors",
     "market_cap": 4969906831360.0,
-    "pe": 31.374619,
+    "pe": 31.422665,
     "forward_pe": 16.122227,
     "dividend_yield": 0.49,
     "beta": 2.202,
@@ -2051,61 +2051,61 @@
   "options": {
     "expiry": "2026-06-15",
     "atm_strike": 205.0,
-    "call_iv": 0.23633576171874998,
-    "put_iv": 0.23389437988281248,
-    "atm_iv": 0.23511507080078123,
-    "days_to_expiry": 3
+    "call_iv": 0.2727123510742187,
+    "put_iv": 0.2700268310546875,
+    "atm_iv": 0.27136959106445313,
+    "days_to_expiry": 2
   },
   "consensus": null,
   "news": [
     {
-      "title": "NVIDIA\u2019s China Vera CPU Launch Tests AI Growth And Valuation Story",
-      "publisher": "Simply Wall St.",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-china-vera-cpu-launch-221417853.html",
-      "published": "2026-06-12T22:14:17+00:00"
-    },
-    {
-      "title": "Why Qualcomm (QCOM) Stock Is Trading Up Today",
-      "publisher": "StockStory",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/why-qualcomm-qcom-stock-trading-220520438.html",
-      "published": "2026-06-12T22:05:20+00:00"
-    },
-    {
-      "title": "SpaceX Just Went Public at $2.1 Trillion. Here's Where History Says the Stock Will Be in 1 Year.",
+      "title": "Micron Reports Earnings June 24. Here's the One Number That May Make or Break the Stock.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/12/spacex-just-went-public-at-21-trillion-heres-where/",
-      "published": "2026-06-12T22:02:13+00:00"
+      "url": "https://www.fool.com/investing/2026/06/13/micron-reports-earnings-june-24-heres-the-one-numb/",
+      "published": "2026-06-13T21:56:00+00:00"
     },
     {
-      "title": "Why Navitas Semiconductor Stock Soared Today",
+      "title": "These Are the Only 2 Cryptocurrencies I'm Comfortable Buying Right Now",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/12/why-navitas-semiconductor-stock-soared-today/",
-      "published": "2026-06-12T21:58:13+00:00"
+      "url": "https://www.fool.com/investing/2026/06/13/the-only-2-cryptocurrencies-i-recommend-right-now/",
+      "published": "2026-06-13T21:47:00+00:00"
     },
     {
-      "title": "3 Core Artificial Intelligence (AI) Stocks to Buy With $1,000 Right Now and Hold for the Next Decade",
+      "title": "U.S. Interest Expense Just Hit $1.6 Trillion Annually. Peter Schiff Warns a Dollar Crisis Arrives When It Hits $2 Trillion.",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/06/13/u-s-interest-expense-just-hit-1-6-trillion-annually-peter-schiff-warns-a-dollar-crisis-arrives-when-it-hits-2-trillion/",
+      "published": "2026-06-13T21:32:46+00:00"
+    },
+    {
+      "title": "Fintech Stock Block Is Trying to Prove That the Ultimate Cryptocurrency Has a Real Use Case, But Will It Work?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/12/3-core-artificial-intelligence-ai-stocks-to-buy-wi/",
-      "published": "2026-06-12T21:58:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/13/fintech-stock-ultimate-cryptocurrency-use-case/",
+      "published": "2026-06-13T20:24:00+00:00"
     },
     {
-      "title": "Why AMD (AMD) Stock Is Up Today",
-      "publisher": "StockStory",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/why-amd-amd-stock-today-215720676.html",
-      "published": "2026-06-12T21:57:20+00:00"
-    },
-    {
-      "title": "Why Arista Networks Stock Flew More Than 4% Higher on Friday",
+      "title": "3 Things to Watch This Week That Could Heavily Impact How the S&P 500 Does From Here on Out",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/12/why-arista-networks-stock-flew-more-than-4-higher/",
-      "published": "2026-06-12T21:51:57+00:00"
+      "url": "https://www.fool.com/investing/2026/06/13/3-things-to-watch-this-week-that-could-heavily-imp/",
+      "published": "2026-06-13T20:10:31+00:00"
     },
     {
-      "title": "eVTOL Stock Face-Off: Is Joby Aviation or Archer Aviation the Better Buy Right Now?",
+      "title": "Down 50% Over the Past Year, Is There Anything Adobe Can Do to Rebound?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/12/stock-stock-face-off-is-stock-a-or-stock-b-the-bet/",
-      "published": "2026-06-12T21:20:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/13/down-50-in-a-year-is-there-anything-adobe-can-do/",
+      "published": "2026-06-13T19:41:00+00:00"
+    },
+    {
+      "title": "NVIDIA Corporation (NVDA) Partners with Nebius to Support AI Robotics Startup in Europe",
+      "publisher": "Insider Monkey",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/nvidia-corporation-nvda-partners-nebius-192521134.html",
+      "published": "2026-06-13T19:25:21+00:00"
+    },
+    {
+      "title": "Wall Street Can't Decide What the Fed Will Do Next. CME Group Gets Paid Either Way.",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/06/13/wall-street-cant-decide-what-the-fed-will-do-next/",
+      "published": "2026-06-13T19:25:00+00:00"
     }
   ],
-  "generated_at": "2026-06-12T22:31:49.228553+00:00"
+  "generated_at": "2026-06-13T22:23:54.608142+00:00"
 }
