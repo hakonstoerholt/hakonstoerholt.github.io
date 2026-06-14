@@ -2036,7 +2036,7 @@
       "h": 207.07000732421875,
       "l": 203.43850708007812,
       "c": 205.19000244140625,
-      "v": 105436612
+      "v": 112345314
     }
   ],
   "earnings": {
@@ -2051,61 +2051,61 @@
   "options": {
     "expiry": "2026-06-15",
     "atm_strike": 205.0,
-    "call_iv": 0.2727123510742187,
-    "put_iv": 0.2700268310546875,
-    "atm_iv": 0.27136959106445313,
-    "days_to_expiry": 2
+    "call_iv": 0.33399103515625,
+    "put_iv": 0.33081723876953123,
+    "atm_iv": 0.3324041369628906,
+    "days_to_expiry": 1
   },
   "consensus": null,
   "news": [
     {
-      "title": "Micron Reports Earnings June 24. Here's the One Number That May Make or Break the Stock.",
+      "title": "Are You Missing the Boat on This AI Stock That's Up 104% This Year?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/13/micron-reports-earnings-june-24-heres-the-one-numb/",
-      "published": "2026-06-13T21:56:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/14/are-you-missing-the-boat-on-this-ai-stock-thats-up/",
+      "published": "2026-06-14T21:20:00+00:00"
     },
     {
-      "title": "These Are the Only 2 Cryptocurrencies I'm Comfortable Buying Right Now",
+      "title": "Tech Shakeup on the S&P 500",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/13/the-only-2-cryptocurrencies-i-recommend-right-now/",
-      "published": "2026-06-13T21:47:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/14/tech-shakeup-on-the-s-and-p-500/",
+      "published": "2026-06-14T20:53:57+00:00"
     },
     {
-      "title": "U.S. Interest Expense Just Hit $1.6 Trillion Annually. Peter Schiff Warns a Dollar Crisis Arrives When It Hits $2 Trillion.",
-      "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/06/13/u-s-interest-expense-just-hit-1-6-trillion-annually-peter-schiff-warns-a-dollar-crisis-arrives-when-it-hits-2-trillion/",
-      "published": "2026-06-13T21:32:46+00:00"
-    },
-    {
-      "title": "Fintech Stock Block Is Trying to Prove That the Ultimate Cryptocurrency Has a Real Use Case, But Will It Work?",
+      "title": "Should You Buy VOO While the Market Is Near All-Time Highs?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/13/fintech-stock-ultimate-cryptocurrency-use-case/",
-      "published": "2026-06-13T20:24:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/14/should-buy-voo-etf-while-market-near-high/",
+      "published": "2026-06-14T20:52:00+00:00"
     },
     {
-      "title": "3 Things to Watch This Week That Could Heavily Impact How the S&P 500 Does From Here on Out",
+      "title": "Here's How to Snag a 20% Dividend Yield",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/13/3-things-to-watch-this-week-that-could-heavily-imp/",
-      "published": "2026-06-13T20:10:31+00:00"
+      "url": "https://www.fool.com/investing/2026/06/14/heres-how-to-snag-a-20-dividend-yield/",
+      "published": "2026-06-14T20:33:00+00:00"
     },
     {
-      "title": "Down 50% Over the Past Year, Is There Anything Adobe Can Do to Rebound?",
+      "title": "The Invisible Layer Protecting the World's Biggest Companies",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/13/down-50-in-a-year-is-there-anything-adobe-can-do/",
-      "published": "2026-06-13T19:41:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/14/the-invisible-layer-protecting-the-worlds-biggest-companies/",
+      "published": "2026-06-14T20:25:25+00:00"
     },
     {
-      "title": "NVIDIA Corporation (NVDA) Partners with Nebius to Support AI Robotics Startup in Europe",
-      "publisher": "Insider Monkey",
-      "url": "https://finance.yahoo.com/sectors/technology/articles/nvidia-corporation-nvda-partners-nebius-192521134.html",
-      "published": "2026-06-13T19:25:21+00:00"
-    },
-    {
-      "title": "Wall Street Can't Decide What the Fed Will Do Next. CME Group Gets Paid Either Way.",
+      "title": "Oracle Stock Dips Despite Continued Strong Backlog Growth. Should Investors Buy the Stock on the Dip?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/13/wall-street-cant-decide-what-the-fed-will-do-next/",
-      "published": "2026-06-13T19:25:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/14/oracle-stock-dips-despite-continued-strong-backlog/",
+      "published": "2026-06-14T20:20:00+00:00"
+    },
+    {
+      "title": "Millions of Americans Are Retiring Earlier Than They'd Planned To -- Here's Why",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/retirement/2026/06/14/millions-of-americans-retiring-earlier-than-plan/",
+      "published": "2026-06-14T20:07:00+00:00"
+    },
+    {
+      "title": "SMH vs. SOXX vs. SOXQ: Which Semiconductor ETF Is the Best Buy Right Now?",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/06/14/smh-vs-soxx-vs-soxq-which-semiconductor-etf-best/",
+      "published": "2026-06-14T19:50:00+00:00"
     }
   ],
-  "generated_at": "2026-06-13T22:23:54.608142+00:00"
+  "generated_at": "2026-06-14T22:26:26.784775+00:00"
 }
