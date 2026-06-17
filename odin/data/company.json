@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-06-16",
+  "as_of": "2026-06-17",
   "price": {
-    "last": 207.41000366210938,
-    "prev_close": 212.4499969482422,
-    "change_pct": -2.3723197733726886,
-    "ytd_pct": 9.82790413489334,
+    "last": 204.64999389648438,
+    "prev_close": 207.41000366210938,
+    "change_pct": -1.3307023368657411,
+    "ytd_pct": 8.366421648039669,
     "high_52w": 236.5399932861328,
     "low_52w": 142.02999877929688,
     "currency": "USD"
@@ -14,22 +14,14 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 5023677808640.0,
-    "pe": 31.81135,
-    "forward_pe": 16.296658,
-    "dividend_yield": 0.47,
+    "market_cap": 4956827418624.0,
+    "pe": 31.339968,
+    "forward_pe": 16.079798,
+    "dividend_yield": null,
     "beta": 2.202,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-06-16",
-      "o": 143.35000610351562,
-      "h": 146.17999267578125,
-      "l": 143.1999969482422,
-      "c": 144.69000244140625,
-      "v": 183133700
-    },
     {
       "t": "2025-06-17",
       "o": 144.49000549316406,
@@ -2037,6 +2029,14 @@
       "l": 207.2899932861328,
       "c": 207.41000366210938,
       "v": 125087034
+    },
+    {
+      "t": "2026-06-17",
+      "o": 208.52999877929688,
+      "h": 209.2100067138672,
+      "l": 203.4499969482422,
+      "c": 204.64999389648438,
+      "v": 118585112
     }
   ],
   "earnings": {
@@ -2044,68 +2044,68 @@
     "history": []
   },
   "implied_move": {
-    "expiry": "2026-06-17",
-    "move_pct": 1.6175690375405491,
-    "straddle": 3.355
+    "expiry": "2026-06-18",
+    "move_pct": 1.7713169353103377,
+    "straddle": 3.625
   },
   "options": {
-    "expiry": "2026-06-17",
-    "atm_strike": 207.5,
-    "call_iv": 0.2766185620117187,
-    "put_iv": 0.278327529296875,
-    "atm_iv": 0.27747304565429687,
+    "expiry": "2026-06-18",
+    "atm_strike": 205.0,
+    "call_iv": 0.31250687499999996,
+    "put_iv": 0.295905478515625,
+    "atm_iv": 0.3042061767578125,
     "days_to_expiry": 1
   },
   "consensus": null,
   "news": [
     {
-      "title": "Tesla's AI5 Chip Recently Completed Tape-Out. Here's Why This Could Be the Most Important Development in the Company's Transition From Automaker to AI Giant.",
+      "title": "Why Microsoft Stock Slumped Today",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/16/teslas-ai5-chip-just-completed-tape-out-heres-why/",
-      "published": "2026-06-16T22:28:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/17/why-microsoft-stock-slumped-today/",
+      "published": "2026-06-17T22:02:10+00:00"
     },
     {
-      "title": "Where Will Beyond Meat Stock Be in 3 Years?",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/16/where-will-bynd-be-in-x-years/",
-      "published": "2026-06-16T22:00:00+00:00"
+      "title": "Rumble rebrands to RUM Group after Northern Data buyout",
+      "publisher": "Reuters",
+      "url": "https://finance.yahoo.com/technology/ai/articles/rumble-rebrands-rum-group-northern-213744220.html",
+      "published": "2026-06-17T21:37:44+00:00"
     },
     {
-      "title": "In 6 Words, Fed Governor Lisa Cook Issued a Stark Warning to Wall Street",
+      "title": "The SpaceX IPO Is Finally Here: This Is When It Might Be Coming to Your S&P 500 ETF",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/16/in-6-words-fed-governor-lisa-cook-issued-a-stark-w/",
-      "published": "2026-06-16T21:50:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/17/spacex-ipo-is-here-when-it-comes-to-sp-500/",
+      "published": "2026-06-17T21:28:00+00:00"
     },
     {
-      "title": "Why JPMorgan Chase Topped the Market on Tuesday",
+      "title": "Want $1,000 in Annual Passive Income? Invest $14,000 in This High-Yielding Energy Stock Right Now.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/16/why-jpmorgan-chase-topped-the-market-on-tuesday/",
-      "published": "2026-06-16T21:48:38+00:00"
+      "url": "https://www.fool.com/investing/2026/06/17/want-1000-in-annual-passive-income-invest-14000-in/",
+      "published": "2026-06-17T21:25:00+00:00"
     },
     {
-      "title": "Stock Market Today, June 16: Nvidia, Broadcom, and Micron Technology Lead Drop in Nasdaq",
+      "title": "Iran Peace Deal: What Does It Mean for Defense Stocks Like Lockheed Martin?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/coverage/stock-market-today/2026/06/16/stock-market-today-june-16-nvidia-broadcom-and-micron-technology-lead-drop-in-nasdaq/",
-      "published": "2026-06-16T21:44:34+00:00"
+      "url": "https://www.fool.com/investing/2026/06/17/iran-peace-deal-what-does-it-mean-for-defense-stoc/",
+      "published": "2026-06-17T21:18:00+00:00"
     },
     {
-      "title": "Forget P&G: This Defensive Cash-Flow Powerhouse Just Beat Earnings and Is a Best Buy Today",
-      "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/06/16/forget-pg-this-defensive-cash-flow-powerhouse-just-beat-earnings-and-is-a-best-buy-today/",
-      "published": "2026-06-16T21:36:29+00:00"
+      "title": "New Fed Chair Kevin Warsh Just Broke 14 Years of Precedent With A Controversial Move That Signals the Beginning of A New Regime",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/06/17/new-fed-chair-kevin-warsh-just-broke-14-years-of-precedent-with-a-controversial-move-that-signals-the-beginning-of-a-new-regime/",
+      "published": "2026-06-17T21:14:01+00:00"
     },
     {
-      "title": "How High Could Robinhood Stock Go in the Next Bull Market?",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/16/how-high-could-robinhood-stock-go-in-the-next-bul/",
-      "published": "2026-06-16T21:35:00+00:00"
+      "title": "Top Analyst Reports for NVIDIA, Oracle & Home Depot",
+      "publisher": "Zacks",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/top-analyst-reports-nvidia-oracle-210200457.html",
+      "published": "2026-06-17T21:02:00+00:00"
     },
     {
-      "title": "Nvidia vs. Alphabet: Which Is the Better AI Chip Stock to Own for the Next 5 Years?",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/16/nvidia-vs-alphabet-better-ai-chip-stock-goog/",
-      "published": "2026-06-16T21:29:00+00:00"
+      "title": "How SpaceX and 'MANGOS' are fueling the latest ETF trends",
+      "publisher": "Yahoo Finance Video",
+      "url": "https://finance.yahoo.com/video/how-spacex-and-mangos-are-fueling-the-latest-etf-trends-161839932.html",
+      "published": "2026-06-17T16:18:39+00:00"
     }
   ],
-  "generated_at": "2026-06-16T22:39:29.371669+00:00"
+  "generated_at": "2026-06-17T22:35:40.623729+00:00"
 }
