@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-06-17",
+  "as_of": "2026-06-18",
   "price": {
-    "last": 204.64999389648438,
-    "prev_close": 207.41000366210938,
-    "change_pct": -1.3307023368657411,
-    "ytd_pct": 8.366421648039669,
+    "last": 210.69000244140625,
+    "prev_close": 204.64999389648438,
+    "change_pct": 2.9513846689763534,
+    "ytd_pct": 11.564731602878165,
     "high_52w": 236.5399932861328,
     "low_52w": 142.02999877929688,
     "currency": "USD"
@@ -14,22 +14,14 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 4956827418624.0,
-    "pe": 31.339968,
-    "forward_pe": 16.079798,
+    "market_cap": 5103122644992.0,
+    "pe": 32.26493,
+    "forward_pe": 16.554375,
     "dividend_yield": null,
     "beta": 2.202,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-06-17",
-      "o": 144.49000549316406,
-      "h": 145.22000122070312,
-      "l": 143.77999877929688,
-      "c": 144.1199951171875,
-      "v": 139108000
-    },
     {
       "t": "2025-06-18",
       "o": 144.00999450683594,
@@ -2037,6 +2029,14 @@
       "l": 203.4499969482422,
       "c": 204.64999389648438,
       "v": 118585112
+    },
+    {
+      "t": "2026-06-18",
+      "o": 207.27499389648438,
+      "h": 211.38999938964844,
+      "l": 206.5,
+      "c": 210.69000244140625,
+      "v": 238264530
     }
   ],
   "earnings": {
@@ -2044,68 +2044,68 @@
     "history": []
   },
   "implied_move": {
-    "expiry": "2026-06-18",
-    "move_pct": 1.7713169353103377,
-    "straddle": 3.625
+    "expiry": "2026-06-22",
+    "move_pct": 2.083629953547927,
+    "straddle": 4.39
   },
   "options": {
-    "expiry": "2026-06-18",
-    "atm_strike": 205.0,
-    "call_iv": 0.31250687499999996,
-    "put_iv": 0.295905478515625,
-    "atm_iv": 0.3042061767578125,
-    "days_to_expiry": 1
+    "expiry": "2026-06-22",
+    "atm_strike": 210.0,
+    "call_iv": 0.2186357434082031,
+    "put_iv": 0.242195078125,
+    "atm_iv": 0.23041541076660155,
+    "days_to_expiry": 4
   },
   "consensus": null,
   "news": [
     {
-      "title": "Why Microsoft Stock Slumped Today",
+      "title": "Dow Jones Futures: Nvidia Leads 5 Chips Near Buy Points; SpaceX Stock Needs This",
+      "publisher": "Investor's Business Daily",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-nvidia-5-chips-buy-points-spacex-stock/?src=A00220&yptr=yahoo",
+      "published": "2026-06-18T22:13:28+00:00"
+    },
+    {
+      "title": "Why I'm Watching the Crypto Fear and Greed Index for My Next Buy Signal",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/17/why-microsoft-stock-slumped-today/",
-      "published": "2026-06-17T22:02:10+00:00"
+      "url": "https://www.fool.com/investing/2026/06/18/why-watch-crypto-fear-greed-index-for-buy-signals/",
+      "published": "2026-06-18T22:03:00+00:00"
     },
     {
-      "title": "Rumble rebrands to RUM Group after Northern Data buyout",
-      "publisher": "Reuters",
-      "url": "https://finance.yahoo.com/technology/ai/articles/rumble-rebrands-rum-group-northern-213744220.html",
-      "published": "2026-06-17T21:37:44+00:00"
-    },
-    {
-      "title": "The SpaceX IPO Is Finally Here: This Is When It Might Be Coming to Your S&P 500 ETF",
+      "title": "VOO vs. SCHD: Which Is the Smarter Buy When Inflation Is Running Hot?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/17/spacex-ipo-is-here-when-it-comes-to-sp-500/",
-      "published": "2026-06-17T21:28:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/18/voo-vs-schd-which-is-smarter-buy-inflation-hot/",
+      "published": "2026-06-18T21:51:00+00:00"
     },
     {
-      "title": "Want $1,000 in Annual Passive Income? Invest $14,000 in This High-Yielding Energy Stock Right Now.",
+      "title": "Prediction: These Will Be Micron's and Sandisk's Stock Prices by the End of 2027",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/17/want-1000-in-annual-passive-income-invest-14000-in/",
-      "published": "2026-06-17T21:25:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/18/prediction-these-will-be-microns-and-sandisks-stoc/",
+      "published": "2026-06-18T21:42:00+00:00"
     },
     {
-      "title": "Iran Peace Deal: What Does It Mean for Defense Stocks Like Lockheed Martin?",
+      "title": "Nebius Is Up 210% This Year. Here's Why There's Still Room for More Upside in 2026.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/17/iran-peace-deal-what-does-it-mean-for-defense-stoc/",
-      "published": "2026-06-17T21:18:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/18/nebius-is-up-210-this-year-heres-why-theres-still/",
+      "published": "2026-06-18T21:27:00+00:00"
     },
     {
-      "title": "New Fed Chair Kevin Warsh Just Broke 14 Years of Precedent With A Controversial Move That Signals the Beginning of A New Regime",
+      "title": "JPMorgan's Latest Forecasts Are Bullish for Gold: Buy the Dip",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/17/new-fed-chair-kevin-warsh-just-broke-14-years-of-precedent-with-a-controversial-move-that-signals-the-beginning-of-a-new-regime/",
-      "published": "2026-06-17T21:14:01+00:00"
+      "url": "https://www.fool.com/investing/2026/06/18/jpmorgan-forecast-bullish-for-gold-buy-dip/",
+      "published": "2026-06-18T21:26:00+00:00"
     },
     {
-      "title": "Top Analyst Reports for NVIDIA, Oracle & Home Depot",
-      "publisher": "Zacks",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/top-analyst-reports-nvidia-oracle-210200457.html",
-      "published": "2026-06-17T21:02:00+00:00"
+      "title": "Wolfe Research Reaffirms Bullish View on Arista Networks (ANET) With $175 Price Target",
+      "publisher": "Insider Monkey",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/wolfe-research-reaffirms-bullish-view-212158801.html",
+      "published": "2026-06-18T21:21:58+00:00"
     },
     {
-      "title": "How SpaceX and 'MANGOS' are fueling the latest ETF trends",
-      "publisher": "Yahoo Finance Video",
-      "url": "https://finance.yahoo.com/video/how-spacex-and-mangos-are-fueling-the-latest-etf-trends-161839932.html",
-      "published": "2026-06-17T16:18:39+00:00"
+      "title": "Index Investors: Here's How Much SpaceX Stock You're About to Own",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/06/18/index-investors-how-much-spacex-youre-about-to-own/",
+      "published": "2026-06-18T21:20:00+00:00"
     }
   ],
-  "generated_at": "2026-06-17T22:35:40.623729+00:00"
+  "generated_at": "2026-06-18T22:38:55.759490+00:00"
 }
