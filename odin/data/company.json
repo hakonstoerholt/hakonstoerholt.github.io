@@ -2051,61 +2051,61 @@
   "options": {
     "expiry": "2026-06-22",
     "atm_strike": 210.0,
-    "call_iv": 0.2186357434082031,
-    "put_iv": 0.242195078125,
-    "atm_iv": 0.23041541076660155,
-    "days_to_expiry": 4
+    "call_iv": 0.24439232177734377,
+    "put_iv": 0.27075924560546877,
+    "atm_iv": 0.25757578369140627,
+    "days_to_expiry": 3
   },
   "consensus": null,
   "news": [
     {
-      "title": "Dow Jones Futures: Nvidia Leads 5 Chips Near Buy Points; SpaceX Stock Needs This",
-      "publisher": "Investor's Business Daily",
-      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-nvidia-5-chips-buy-points-spacex-stock/?src=A00220&yptr=yahoo",
-      "published": "2026-06-18T22:13:28+00:00"
+      "title": "The Simplest Way to Own Bitcoin Inside Your Regular Brokerage Account",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/06/19/the-simplest-way-to-own-bitcoin-inside-your-regular-brokerage-account/",
+      "published": "2026-06-19T22:01:35+00:00"
     },
     {
-      "title": "Why I'm Watching the Crypto Fear and Greed Index for My Next Buy Signal",
+      "title": "Why Saia Stock Swooned This Week",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/18/why-watch-crypto-fear-greed-index-for-buy-signals/",
-      "published": "2026-06-18T22:03:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/19/why-saia-stock-swooned-this-week/",
+      "published": "2026-06-19T21:58:35+00:00"
     },
     {
-      "title": "VOO vs. SCHD: Which Is the Smarter Buy When Inflation Is Running Hot?",
+      "title": "If You\u2019re 45 and Want Real Estate Income, Skip the Landlord Duties and Buy VNQ",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/06/19/if-youre-45-and-want-real-estate-income-skip-the-landlord-duties-and-buy-vnq/",
+      "published": "2026-06-19T21:57:24+00:00"
+    },
+    {
+      "title": "3 Things to Watch in the Stock Market Next Week",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/18/voo-vs-schd-which-is-smarter-buy-inflation-hot/",
-      "published": "2026-06-18T21:51:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/19/3-things-to-watch-in-the-stock-market-next-week/",
+      "published": "2026-06-19T21:51:00+00:00"
     },
     {
-      "title": "Prediction: These Will Be Micron's and Sandisk's Stock Prices by the End of 2027",
+      "title": "Broadcom Builds Custom Chips for Google, Meta, Anthropic, and OpenAI. At 25 Times Forward Earnings, It's the Cheapest Mega-Cap AI Stock Nobody Talks About.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/18/prediction-these-will-be-microns-and-sandisks-stoc/",
-      "published": "2026-06-18T21:42:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/19/broadcom-builds-custom-chips-for-google-meta-anthr/",
+      "published": "2026-06-19T21:50:00+00:00"
     },
     {
-      "title": "Nebius Is Up 210% This Year. Here's Why There's Still Room for More Upside in 2026.",
+      "title": "Beyond the Trillion-Dollar Club: 3 High-Growth Tech Stocks to Buy Right Now",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/18/nebius-is-up-210-this-year-heres-why-theres-still/",
-      "published": "2026-06-18T21:27:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/19/beyond-the-trillion-dollar-club-3-high-growth-tech/",
+      "published": "2026-06-19T21:41:00+00:00"
     },
     {
-      "title": "JPMorgan's Latest Forecasts Are Bullish for Gold: Buy the Dip",
+      "title": "The Memory Boom Has Been a Gift to Micron. For Apple, It's Becoming a Problem. Or Is It?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/18/jpmorgan-forecast-bullish-for-gold-buy-dip/",
-      "published": "2026-06-18T21:26:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/19/the-memory-boom-has-been-a-gift-to-micron-for-appl/",
+      "published": "2026-06-19T21:37:53+00:00"
     },
     {
-      "title": "Wolfe Research Reaffirms Bullish View on Arista Networks (ANET) With $175 Price Target",
-      "publisher": "Insider Monkey",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/wolfe-research-reaffirms-bullish-view-212158801.html",
-      "published": "2026-06-18T21:21:58+00:00"
-    },
-    {
-      "title": "Index Investors: Here's How Much SpaceX Stock You're About to Own",
+      "title": "Why Gildan Activewear Stock Tumbled by 11% This Week",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/18/index-investors-how-much-spacex-youre-about-to-own/",
-      "published": "2026-06-18T21:20:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/19/why-gildan-activewear-stock-tumbled-by-11-this-wee/",
+      "published": "2026-06-19T21:33:15+00:00"
     }
   ],
-  "generated_at": "2026-06-18T22:38:55.759490+00:00"
+  "generated_at": "2026-06-19T22:20:49.742964+00:00"
 }
