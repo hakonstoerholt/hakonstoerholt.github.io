@@ -2036,7 +2036,7 @@
       "h": 211.38999938964844,
       "l": 206.5,
       "c": 210.69000244140625,
-      "v": 238264530
+      "v": 241272013
     }
   ],
   "earnings": {
@@ -2051,61 +2051,61 @@
   "options": {
     "expiry": "2026-06-22",
     "atm_strike": 210.0,
-    "call_iv": 0.282233740234375,
-    "put_iv": 0.3127510131835937,
-    "atm_iv": 0.2974923767089843,
-    "days_to_expiry": 2
+    "call_iv": 0.34570966796874997,
+    "put_iv": 0.3830628100585937,
+    "atm_iv": 0.36438623901367184,
+    "days_to_expiry": 1
   },
   "consensus": null,
   "news": [
     {
-      "title": "Is Netflix Stock Cheap or Overvalued? Here's What Investors Need to Know.",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/20/netflix-stock-cheap-overvalued-investors-need-know/",
-      "published": "2026-06-20T21:49:00+00:00"
-    },
-    {
-      "title": "Pfizer's Dividend Yield is 10X Bigger Than Eli Lilly's. Does That Make It the Better Stock for Income Investors?",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/20/pfizers-dividend-yield-is-10x-bigger-than-eli-lill/",
-      "published": "2026-06-20T21:35:00+00:00"
-    },
-    {
-      "title": "Ford Could Make $500 Million From AI. Is Now the Time to Buy?",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/20/ford-could-make-500-million-from-ai-is-now-the-tim/",
-      "published": "2026-06-20T21:25:00+00:00"
-    },
-    {
-      "title": "This Company Could Become the Nvidia of AI Inference",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/20/this-company-could-become-the-nvidia-of-ai-inferen/",
-      "published": "2026-06-20T21:20:00+00:00"
-    },
-    {
-      "title": "Forget Your 401(k) Balance. Here's the Number That Really Matters.",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/retirement/2026/06/20/forget-your-401k-balance-heres-the-number-that-rea/",
-      "published": "2026-06-20T20:56:00+00:00"
-    },
-    {
-      "title": "You\u2019re Watching AI Headlines Daily. Here\u2019s How to Own the Whole Trend at Once",
+      "title": "Oil Falls to 3-Month Low After Trump\u2019s Iran Deal. What It Means for Inflation",
       "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/06/20/youre-watching-ai-headlines-daily-heres-how-to-own-the-whole-trend-at-once/",
-      "published": "2026-06-20T20:55:03+00:00"
+      "url": "https://247wallst.com/investing/2026/06/21/oil-falls-to-3-month-low-after-trumps-iran-deal-what-it-means-for-inflation/",
+      "published": "2026-06-21T20:31:34+00:00"
     },
     {
-      "title": "Here's How Many Shares of Home Depot You'd Need to Generate $10,000 in Yearly Dividends",
+      "title": "With the Fed Holding Interest Rates Steady, Here's the Smartest Dividend Stock to Buy With $1,000 Right Now",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/20/how-many-shares-home-depot-10000-yearly-dividends/",
-      "published": "2026-06-20T19:59:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/21/with-the-fed-holding-interest-rates-steady-heres-t/",
+      "published": "2026-06-21T20:25:00+00:00"
     },
     {
-      "title": "Why Cheap International Stocks Are Sending Bigger Checks in June",
+      "title": "1 Relatively Unknown Energy Stock You Won't Want to Miss",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/06/21/1-relatively-unknown-energy-stock-you-wont-want-to/",
+      "published": "2026-06-21T20:25:00+00:00"
+    },
+    {
+      "title": "The Entire Micron Investment Thesis Comes Down to This One Number",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/06/21/the-entire-micron-investment-thesis-comes-down-to/",
+      "published": "2026-06-21T20:20:00+00:00"
+    },
+    {
+      "title": "The 2 Factors That Will Decide Whether XLV Finally Catches the S&P 500 in 2026",
       "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/06/20/why-cheap-international-stocks-are-sending-bigger-checks-in-june/",
-      "published": "2026-06-20T19:53:32+00:00"
+      "url": "https://247wallst.com/investing/2026/06/21/the-2-factors-that-will-decide-whether-xlv-finally-catches-the-sp-500-in-2026/",
+      "published": "2026-06-21T20:17:27+00:00"
+    },
+    {
+      "title": "Top Value Investor Says Adobe Stock Is \u2018Very Compelling\u2019 Despite AI Threat",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/06/21/top-value-investor-says-adobe-stock-is-very-compelling-despite-ai-threat/",
+      "published": "2026-06-21T20:07:07+00:00"
+    },
+    {
+      "title": "Bloom Energy Soared After a New AI Power Report. Is the Fuel Cell Stock a Buy?",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/06/21/bloom-energy-soared-after-a-new-ai-power-report-is/",
+      "published": "2026-06-21T20:06:00+00:00"
+    },
+    {
+      "title": "2 Reasons to Wait Before Buying SpaceX Shares, and 1 Reason to Buy Right Now",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/06/21/2-reasons-to-wait-before-buying-spacex-shares-and/",
+      "published": "2026-06-21T19:59:00+00:00"
     }
   ],
-  "generated_at": "2026-06-20T22:26:21.550948+00:00"
+  "generated_at": "2026-06-21T22:26:31.880777+00:00"
 }
