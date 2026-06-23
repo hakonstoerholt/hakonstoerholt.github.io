@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-06-22",
+  "as_of": "2026-06-23",
   "price": {
-    "last": 208.64999389648438,
-    "prev_close": 210.69000244140625,
-    "change_pct": -0.968251232276296,
-    "ytd_pct": 10.484504714347565,
+    "last": 200.0399932861328,
+    "prev_close": 208.64999389648438,
+    "change_pct": -4.126528091164561,
+    "ytd_pct": 5.92533059092597,
     "high_52w": 236.5399932861328,
     "low_52w": 142.02999877929688,
     "currency": "USD"
@@ -14,10 +14,10 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 5053711646720.0,
-    "pe": 31.952524,
-    "forward_pe": 16.391691,
-    "dividend_yield": 0.47,
+    "market_cap": 4845168754688.0,
+    "pe": 30.633995,
+    "forward_pe": 15.715283,
+    "dividend_yield": 0.48,
     "beta": 2.202,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
@@ -2029,6 +2029,14 @@
       "l": 207.72000122070312,
       "c": 208.64999389648438,
       "v": 115057966
+    },
+    {
+      "t": "2026-06-23",
+      "o": 202.16000366210938,
+      "h": 203.77000427246094,
+      "l": 200.0,
+      "c": 200.0399932861328,
+      "v": 152123958
     }
   ],
   "earnings": {
@@ -2037,67 +2045,67 @@
   },
   "implied_move": {
     "expiry": "2026-06-24",
-    "move_pct": 2.2741433687048627,
-    "straddle": 4.745
+    "move_pct": 1.8621276369829916,
+    "straddle": 3.725
   },
   "options": {
     "expiry": "2026-06-24",
-    "atm_strike": 207.5,
-    "call_iv": 0.3298406860351562,
-    "put_iv": 0.3083565258789062,
-    "atm_iv": 0.3190986059570312,
-    "days_to_expiry": 2
+    "atm_strike": 200.0,
+    "call_iv": 0.3217841259765625,
+    "put_iv": 0.3166572241210937,
+    "atm_iv": 0.3192206750488281,
+    "days_to_expiry": 1
   },
   "consensus": null,
   "news": [
     {
-      "title": "Why Super Micro (SMCI) Stock Is Up Today",
-      "publisher": "StockStory",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/why-super-micro-smci-stock-222719057.html",
-      "published": "2026-06-22T22:27:19+00:00"
-    },
-    {
-      "title": "10 Words From Apple CEO Tim Cook That Are Music to the Ears of Micron Technology Investors",
+      "title": "This Underrated Artificial Intelligence (AI) Stock Has Jumped 231% in 2026. Buy It Hand Over Fist Before It Becomes a Trillion-Dollar Company",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/22/10-words-from-apple-ceo-tim-cook-that-are-music-to/",
-      "published": "2026-06-22T22:20:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/23/this-underrated-artificial-intelligence-ai-stock-h/",
+      "published": "2026-06-23T22:07:00+00:00"
     },
     {
-      "title": "Buying SpaceX Stock Isn't the Same as Buying Tesla's IPO Back in 2010. There's One Massive Difference",
+      "title": "3 Stocks Nvidia Owns That You Should Consider Too",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/22/buying-the-spacex-ipo-isnt-the-same-as-buying-tesl/",
-      "published": "2026-06-22T21:32:21+00:00"
+      "url": "https://www.fool.com/investing/2026/06/23/3-stocks-nvidia-owns-that-you-should-too/",
+      "published": "2026-06-23T21:53:00+00:00"
     },
     {
-      "title": "Stock Market Today, June 22: Super Micro Computer Jumps After Introducing New Platform Accelerating AI Server Backlog Growth",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/coverage/stock-market-today/2026/06/22/stock-market-today-june-22-super-micro-computer-jumps-after-introducing-new-platform-accelerating-ai-server-backlog-growth/",
-      "published": "2026-06-22T21:30:59+00:00"
-    },
-    {
-      "title": "SpaceX Stock Is All Over the Place. 3 Dividend Stocks to Buy Instead That Will Let You Sleep Well at Night",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/22/spacex-stock-is-all-over-the-place-3-dividend-stoc/",
-      "published": "2026-06-22T21:25:00+00:00"
-    },
-    {
-      "title": "Broadcom's AI Revenue Is on Pace to Triple to $16 Billion in a Single Quarter, but the Stock Just Dipped 17%. Is This an Opportunity to Buy the Dip?",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/22/broadcoms-ai-revenue-is-on-pace-to-triple-to-16-bi/",
-      "published": "2026-06-22T21:20:00+00:00"
-    },
-    {
-      "title": "Gambling Creator Bluffin Bob Rejected a $30M+ Casino Deal and Never Looked Back",
-      "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/06/22/gambling-creator-bluffin-bob-rejected-a-30m-casino-deal-and-never-looked-back/",
-      "published": "2026-06-22T21:16:14+00:00"
-    },
-    {
-      "title": "Dow Jones Futures: Tech Stocks Tumble As SpaceX Plunges; Amazon, Alphabet, Nvidia Sell Off",
+      "title": "Google-Parent Alphabet To Join Dow Jones Industrial Average, Replacing Verizon",
       "publisher": "Investor's Business Daily",
-      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-spacex-amazon-alphabet-nvidia/?src=A00220&yptr=yahoo",
-      "published": "2026-06-22T21:13:48+00:00"
+      "url": "https://www.investors.com/news/google-parent-alphabet-join-dow-jones-industrial-average-replacing-verizon/?src=A00220&yptr=yahoo",
+      "published": "2026-06-23T21:50:33+00:00"
+    },
+    {
+      "title": "Is SpaceX a Better Buy Than the 2 \"Magnificent Seven\" Stocks It Has Surpassed in Market Cap?",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/06/23/spacex-better-buy-meta-platforms-tesla/",
+      "published": "2026-06-23T21:50:00+00:00"
+    },
+    {
+      "title": "Cerebras Stock Sinks After First Earnings Report. AI Demand Is Forcing Tough Choices.",
+      "publisher": "Barrons.com",
+      "url": "https://www.barrons.com/articles/cerebras-earnings-stock-price-f7896418?siteid=yhoof2&yptr=yahoo",
+      "published": "2026-06-23T21:44:00+00:00"
+    },
+    {
+      "title": "Why tech stocks are getting hammered",
+      "publisher": "LA Times",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/why-tech-stocks-getting-hammered-214226305.html",
+      "published": "2026-06-23T21:42:26+00:00"
+    },
+    {
+      "title": "Billionaire Hedge Fund Manager: AI Could Produce the First $10 Trillion Company as We Enter the \u201cIntelligence Age\u201d",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/06/23/billionaire-hedge-fund-manager-ai-could-produce-the-first-10-trillion-company-as-we-enter-the-intelligence-age/",
+      "published": "2026-06-23T21:39:18+00:00"
+    },
+    {
+      "title": "Tech stocks tumble for a second day. Here's what's behind the selloff.",
+      "publisher": "CBS News",
+      "url": "https://www.cbsnews.com/news/tech-stock-selloff-ai-profits-nasdaq-nvidia-alphabet-spacex/",
+      "published": "2026-06-23T21:35:09+00:00"
     }
   ],
-  "generated_at": "2026-06-22T22:34:14.523292+00:00"
+  "generated_at": "2026-06-23T22:26:54.638097+00:00"
 }
