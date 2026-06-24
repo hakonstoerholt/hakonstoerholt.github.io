@@ -1,35 +1,27 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-06-23",
+  "as_of": "2026-06-24",
   "price": {
-    "last": 200.0399932861328,
-    "prev_close": 208.64999389648438,
-    "change_pct": -4.126528091164561,
-    "ytd_pct": 5.92533059092597,
+    "last": 199.0,
+    "prev_close": 200.0399932861328,
+    "change_pct": -0.519892681982459,
+    "ytd_pct": 5.374632548818026,
     "high_52w": 236.5399932861328,
-    "low_52w": 142.02999877929688,
+    "low_52w": 145.5,
     "currency": "USD"
   },
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 4845168754688.0,
-    "pe": 30.633995,
-    "forward_pe": 15.715283,
-    "dividend_yield": 0.48,
+    "market_cap": 4819978813440.0,
+    "pe": 30.521473,
+    "forward_pe": 15.633581,
+    "dividend_yield": 0.5,
     "beta": 2.202,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-06-23",
-      "o": 142.5,
-      "h": 144.77999877929688,
-      "l": 142.02999877929688,
-      "c": 144.1699981689453,
-      "v": 154308900
-    },
     {
       "t": "2025-06-24",
       "o": 145.55999755859375,
@@ -2037,6 +2029,14 @@
       "l": 200.0,
       "c": 200.0399932861328,
       "v": 152123958
+    },
+    {
+      "t": "2026-06-24",
+      "o": 200.07000732421875,
+      "h": 201.64999389648438,
+      "l": 196.5800018310547,
+      "c": 199.0,
+      "v": 149005898
     }
   ],
   "earnings": {
@@ -2044,68 +2044,68 @@
     "history": []
   },
   "implied_move": {
-    "expiry": "2026-06-24",
-    "move_pct": 1.8621276369829916,
-    "straddle": 3.725
+    "expiry": "2026-06-26",
+    "move_pct": 2.728643216080402,
+    "straddle": 5.43
   },
   "options": {
-    "expiry": "2026-06-24",
+    "expiry": "2026-06-26",
     "atm_strike": 200.0,
-    "call_iv": 0.3217841259765625,
-    "put_iv": 0.3166572241210937,
-    "atm_iv": 0.3192206750488281,
-    "days_to_expiry": 1
+    "call_iv": 0.39258419921875,
+    "put_iv": 0.370123486328125,
+    "atm_iv": 0.3813538427734375,
+    "days_to_expiry": 2
   },
   "consensus": null,
   "news": [
     {
-      "title": "This Underrated Artificial Intelligence (AI) Stock Has Jumped 231% in 2026. Buy It Hand Over Fist Before It Becomes a Trillion-Dollar Company",
+      "title": "3 Popular Stocks to Steer Clear Of",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/23/this-underrated-artificial-intelligence-ai-stock-h/",
-      "published": "2026-06-23T22:07:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/24/3-popular-stocks-to-steer-clear-of/",
+      "published": "2026-06-24T22:22:00+00:00"
     },
     {
-      "title": "3 Stocks Nvidia Owns That You Should Consider Too",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/23/3-stocks-nvidia-owns-that-you-should-too/",
-      "published": "2026-06-23T21:53:00+00:00"
-    },
-    {
-      "title": "Google-Parent Alphabet To Join Dow Jones Industrial Average, Replacing Verizon",
+      "title": "Cerebras Stock Falls Despite Improving Outlook For AI Chip Sales",
       "publisher": "Investor's Business Daily",
-      "url": "https://www.investors.com/news/google-parent-alphabet-join-dow-jones-industrial-average-replacing-verizon/?src=A00220&yptr=yahoo",
-      "published": "2026-06-23T21:50:33+00:00"
+      "url": "https://www.investors.com/news/technology/cerebras-stock-improving-ai-chip-sales-outlook/?src=A00220&yptr=yahoo",
+      "published": "2026-06-24T22:15:56+00:00"
     },
     {
-      "title": "Is SpaceX a Better Buy Than the 2 \"Magnificent Seven\" Stocks It Has Surpassed in Market Cap?",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/23/spacex-better-buy-meta-platforms-tesla/",
-      "published": "2026-06-23T21:50:00+00:00"
-    },
-    {
-      "title": "Cerebras Stock Sinks After First Earnings Report. AI Demand Is Forcing Tough Choices.",
-      "publisher": "Barrons.com",
-      "url": "https://www.barrons.com/articles/cerebras-earnings-stock-price-f7896418?siteid=yhoof2&yptr=yahoo",
-      "published": "2026-06-23T21:44:00+00:00"
-    },
-    {
-      "title": "Why tech stocks are getting hammered",
-      "publisher": "LA Times",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/why-tech-stocks-getting-hammered-214226305.html",
-      "published": "2026-06-23T21:42:26+00:00"
-    },
-    {
-      "title": "Billionaire Hedge Fund Manager: AI Could Produce the First $10 Trillion Company as We Enter the \u201cIntelligence Age\u201d",
+      "title": "Humanoid Robotics CEO: The First Pure-Play Robot Company Is About to Go Public",
       "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/06/23/billionaire-hedge-fund-manager-ai-could-produce-the-first-10-trillion-company-as-we-enter-the-intelligence-age/",
-      "published": "2026-06-23T21:39:18+00:00"
+      "url": "https://247wallst.com/investing/2026/06/24/humanoid-robotics-ceo-the-first-pure-play-robot-company-is-about-to-go-public/",
+      "published": "2026-06-24T22:07:21+00:00"
     },
     {
-      "title": "Tech stocks tumble for a second day. Here's what's behind the selloff.",
-      "publisher": "CBS News",
-      "url": "https://www.cbsnews.com/news/tech-stock-selloff-ai-profits-nasdaq-nvidia-alphabet-spacex/",
-      "published": "2026-06-23T21:35:09+00:00"
+      "title": "Redwire Stock Has Fallen Over 40% -- Here Is What Investors Need to Know",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/06/24/redwire-stock-has-fallen-over-40-here-is-what-inve/",
+      "published": "2026-06-24T21:58:00+00:00"
+    },
+    {
+      "title": "Chip stocks surge after-hours on Micron\u2019s record quarter",
+      "publisher": "Investing.com",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/chip-stocks-surge-hours-micron-215200610.html",
+      "published": "2026-06-24T21:52:00+00:00"
+    },
+    {
+      "title": "The Real Price of Broadcom Stock Is Hidden Two Years Out",
+      "publisher": "Trefis",
+      "url": "https://www.trefis.com/articles/604084/the-real-price-of-broadcom-stock-is-hidden-two-years-out/2026-06-24",
+      "published": "2026-06-24T21:31:30+00:00"
+    },
+    {
+      "title": "Alphabet makes the Dow look more like the Nasdaq",
+      "publisher": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/article/alphabet-makes-the-dow-look-more-like-the-nasdaq-155236659.html",
+      "published": "2026-06-24T15:52:36+00:00"
+    },
+    {
+      "title": "OpenAI, Broadcom form new partnership to make an AI inference chip",
+      "publisher": "Yahoo Finance Video",
+      "url": "https://finance.yahoo.com/video/openai-broadcom-form-partnership-ai-135808993.html",
+      "published": "2026-06-24T13:58:08+00:00"
     }
   ],
-  "generated_at": "2026-06-23T22:26:54.638097+00:00"
+  "generated_at": "2026-06-24T22:29:24.011393+00:00"
 }
