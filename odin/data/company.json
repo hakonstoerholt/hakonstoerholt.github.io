@@ -1,35 +1,27 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-06-24",
+  "as_of": "2026-06-25",
   "price": {
-    "last": 199.0,
-    "prev_close": 200.0399932861328,
-    "change_pct": -0.519892681982459,
-    "ytd_pct": 5.374632548818026,
+    "last": 195.74000549316406,
+    "prev_close": 199.0,
+    "change_pct": -1.6381881943899224,
+    "ytd_pct": 3.6483977585215266,
     "high_52w": 236.5399932861328,
-    "low_52w": 145.5,
+    "low_52w": 149.25999450683594,
     "currency": "USD"
   },
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 4819978813440.0,
-    "pe": 30.521473,
-    "forward_pe": 15.633581,
+    "market_cap": 4741018419200.0,
+    "pe": 29.975498,
+    "forward_pe": 15.377473,
     "dividend_yield": 0.5,
     "beta": 2.202,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-06-24",
-      "o": 145.55999755859375,
-      "h": 147.9600067138672,
-      "l": 145.5,
-      "c": 147.89999389648438,
-      "v": 187566100
-    },
     {
       "t": "2025-06-25",
       "o": 149.27000427246094,
@@ -2037,6 +2029,14 @@
       "l": 196.5800018310547,
       "c": 199.0,
       "v": 149005898
+    },
+    {
+      "t": "2026-06-25",
+      "o": 200.0800018310547,
+      "h": 200.7899932861328,
+      "l": 192.1300048828125,
+      "c": 195.74000549316406,
+      "v": 138840761
     }
   ],
   "earnings": {
@@ -2045,67 +2045,67 @@
   },
   "implied_move": {
     "expiry": "2026-06-26",
-    "move_pct": 2.728643216080402,
-    "straddle": 5.43
+    "move_pct": 1.8110758662075361,
+    "straddle": 3.545
   },
   "options": {
     "expiry": "2026-06-26",
-    "atm_strike": 200.0,
-    "call_iv": 0.39258419921875,
-    "put_iv": 0.370123486328125,
-    "atm_iv": 0.3813538427734375,
-    "days_to_expiry": 2
+    "atm_strike": 195.0,
+    "call_iv": 0.3288641333007812,
+    "put_iv": 0.29004616210937495,
+    "atm_iv": 0.3094551477050781,
+    "days_to_expiry": 1
   },
   "consensus": null,
   "news": [
     {
-      "title": "3 Popular Stocks to Steer Clear Of",
+      "title": "Why Qualcomm Stock Popped Today",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/24/3-popular-stocks-to-steer-clear-of/",
-      "published": "2026-06-24T22:22:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/25/why-qualcomm-stock-is-up-today/",
+      "published": "2026-06-25T22:20:14+00:00"
     },
     {
-      "title": "Cerebras Stock Falls Despite Improving Outlook For AI Chip Sales",
-      "publisher": "Investor's Business Daily",
-      "url": "https://www.investors.com/news/technology/cerebras-stock-improving-ai-chip-sales-outlook/?src=A00220&yptr=yahoo",
-      "published": "2026-06-24T22:15:56+00:00"
-    },
-    {
-      "title": "Humanoid Robotics CEO: The First Pure-Play Robot Company Is About to Go Public",
-      "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/06/24/humanoid-robotics-ceo-the-first-pure-play-robot-company-is-about-to-go-public/",
-      "published": "2026-06-24T22:07:21+00:00"
-    },
-    {
-      "title": "Redwire Stock Has Fallen Over 40% -- Here Is What Investors Need to Know",
+      "title": "Qualcomm Says AI Data Centers Will Become Its Next Big Growth Engine",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/24/redwire-stock-has-fallen-over-40-here-is-what-inve/",
-      "published": "2026-06-24T21:58:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/25/qualcomm-says-ai-data-centers-will-become-its-next/",
+      "published": "2026-06-25T22:13:27+00:00"
     },
     {
-      "title": "Chip stocks surge after-hours on Micron\u2019s record quarter",
-      "publisher": "Investing.com",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/chip-stocks-surge-hours-micron-215200610.html",
-      "published": "2026-06-24T21:52:00+00:00"
+      "title": "Investors Are Getting Another Great Opportunity to Buy This Incredible Artificial Intelligence (AI) Stock Right Now",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/06/25/investors-are-getting-another-great-opportunity-to/",
+      "published": "2026-06-25T21:50:00+00:00"
     },
     {
-      "title": "The Real Price of Broadcom Stock Is Hidden Two Years Out",
-      "publisher": "Trefis",
-      "url": "https://www.trefis.com/articles/604084/the-real-price-of-broadcom-stock-is-hidden-two-years-out/2026-06-24",
-      "published": "2026-06-24T21:31:30+00:00"
+      "title": "OpenAI just built a chip to cut Nvidia out of one job",
+      "publisher": "TheStreet",
+      "url": "https://www.thestreet.com/technology/openai-built-chip-challenge-nvidia-inference-dominance",
+      "published": "2026-06-25T21:47:00+00:00"
     },
     {
-      "title": "Alphabet makes the Dow look more like the Nasdaq",
-      "publisher": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/markets/article/alphabet-makes-the-dow-look-more-like-the-nasdaq-155236659.html",
-      "published": "2026-06-24T15:52:36+00:00"
+      "title": "Where Will Plug Power Stock Be in 10 Years?",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/06/25/where-will-plug-be-in-10-years/",
+      "published": "2026-06-25T21:40:27+00:00"
     },
     {
-      "title": "OpenAI, Broadcom form new partnership to make an AI inference chip",
+      "title": "Why Delek Holdings Rallied Today",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/06/25/why-delek-holdings-rallied-today/",
+      "published": "2026-06-25T21:23:01+00:00"
+    },
+    {
+      "title": "Why CoreWeave Stock Sank 12.4% This Week",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/06/25/why-coreweave-stock-sank-124-this-week/",
+      "published": "2026-06-25T21:15:54+00:00"
+    },
+    {
+      "title": "Qualcomm CFO talks Modular acquisition's significance for AI data centers",
       "publisher": "Yahoo Finance Video",
-      "url": "https://finance.yahoo.com/video/openai-broadcom-form-partnership-ai-135808993.html",
-      "published": "2026-06-24T13:58:08+00:00"
+      "url": "https://finance.yahoo.com/video/qualcomm-cfo-talks-modular-acquisitions-160500980.html",
+      "published": "2026-06-25T16:05:00+00:00"
     }
   ],
-  "generated_at": "2026-06-24T22:29:24.011393+00:00"
+  "generated_at": "2026-06-25T22:31:10.281165+00:00"
 }
