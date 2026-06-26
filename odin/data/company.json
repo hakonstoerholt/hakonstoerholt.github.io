@@ -1,35 +1,27 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-06-25",
+  "as_of": "2026-06-26",
   "price": {
-    "last": 195.74000549316406,
-    "prev_close": 199.0,
-    "change_pct": -1.6381881943899224,
-    "ytd_pct": 3.6483977585215266,
+    "last": 192.52999877929688,
+    "prev_close": 195.74000549316406,
+    "change_pct": -1.6399339040476746,
+    "ytd_pct": 1.948632542677342,
     "high_52w": 236.5399932861328,
-    "low_52w": 149.25999450683594,
+    "low_52w": 151.49000549316406,
     "currency": "USD"
   },
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 4741018419200.0,
-    "pe": 29.975498,
-    "forward_pe": 15.377473,
-    "dividend_yield": 0.5,
+    "market_cap": 4663269130240.0,
+    "pe": 29.438837,
+    "forward_pe": 15.125293,
+    "dividend_yield": 0.51,
     "beta": 2.202,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-06-25",
-      "o": 149.27000427246094,
-      "h": 154.4499969482422,
-      "l": 149.25999450683594,
-      "c": 154.30999755859375,
-      "v": 269146500
-    },
     {
       "t": "2025-06-26",
       "o": 155.97999572753906,
@@ -2037,6 +2029,14 @@
       "l": 192.1300048828125,
       "c": 195.74000549316406,
       "v": 138840761
+    },
+    {
+      "t": "2026-06-26",
+      "o": 193.10499572753906,
+      "h": 195.5500030517578,
+      "l": 191.22000122070312,
+      "c": 192.52999877929688,
+      "v": 177757849
     }
   ],
   "earnings": {
@@ -2044,68 +2044,68 @@
     "history": []
   },
   "implied_move": {
-    "expiry": "2026-06-26",
-    "move_pct": 1.8110758662075361,
-    "straddle": 3.545
+    "expiry": "2026-06-29",
+    "move_pct": 2.0620163222204844,
+    "straddle": 3.97
   },
   "options": {
-    "expiry": "2026-06-26",
-    "atm_strike": 195.0,
-    "call_iv": 0.3288641333007812,
-    "put_iv": 0.29004616210937495,
-    "atm_iv": 0.3094551477050781,
-    "days_to_expiry": 1
+    "expiry": "2026-06-29",
+    "atm_strike": 192.5,
+    "call_iv": 0.21460746337890624,
+    "put_iv": 0.3090889404296875,
+    "atm_iv": 0.26184820190429686,
+    "days_to_expiry": 3
   },
   "consensus": null,
   "news": [
     {
-      "title": "Why Qualcomm Stock Popped Today",
+      "title": "Why ServiceNow Stock Gained 9.9%on Friday",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/25/why-qualcomm-stock-is-up-today/",
-      "published": "2026-06-25T22:20:14+00:00"
+      "url": "https://www.fool.com/investing/2026/06/26/why-servicenow-stock-gained-99on-friday/",
+      "published": "2026-06-26T22:01:18+00:00"
     },
     {
-      "title": "Qualcomm Says AI Data Centers Will Become Its Next Big Growth Engine",
+      "title": "Here's Why SpaceX's Latest Decision Is a Huge Red Flag for Investors",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/25/qualcomm-says-ai-data-centers-will-become-its-next/",
-      "published": "2026-06-25T22:13:27+00:00"
+      "url": "https://www.fool.com/investing/2026/06/26/heres-why-spacexs-latest-decision-is-a-huge-red-fl/",
+      "published": "2026-06-26T21:50:00+00:00"
     },
     {
-      "title": "Investors Are Getting Another Great Opportunity to Buy This Incredible Artificial Intelligence (AI) Stock Right Now",
+      "title": "Why Braze Stock Jumped Today",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/25/investors-are-getting-another-great-opportunity-to/",
-      "published": "2026-06-25T21:50:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/26/why-braze-stock-jumped-today/",
+      "published": "2026-06-26T21:49:14+00:00"
     },
     {
-      "title": "OpenAI just built a chip to cut Nvidia out of one job",
+      "title": "Why Palantir Stock Soared Today",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/06/26/why-palantir-stock-soared-today/",
+      "published": "2026-06-26T21:10:52+00:00"
+    },
+    {
+      "title": "Is Hyperliquid Actually Worth the Hype?",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/06/26/is-hyperliquid-actually-worth-the-hype/",
+      "published": "2026-06-26T20:57:00+00:00"
+    },
+    {
+      "title": "SpaceX Got $90 Billion in Orders for a $25 Billion Bond Sale Less Than 2 Weeks After Its IPO. Is That a Good Sign or a Warning?",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/06/26/spacex-got-90-billion-in-orders-for-a-25-billion-b/",
+      "published": "2026-06-26T20:50:00+00:00"
+    },
+    {
+      "title": "Nvidia isn\u2019t enough \u2014 here\u2019s how to build a diversified AI portfolio",
       "publisher": "TheStreet",
-      "url": "https://www.thestreet.com/technology/openai-built-chip-challenge-nvidia-inference-dominance",
-      "published": "2026-06-25T21:47:00+00:00"
+      "url": "https://www.thestreet.com/video/nvidia-isnt-enough-heres-how-to-build-a-diversified-ai-portfolio",
+      "published": "2026-06-26T20:47:00+00:00"
     },
     {
-      "title": "Where Will Plug Power Stock Be in 10 Years?",
+      "title": "Why Tower Semiconductor Took a Dive Today",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/25/where-will-plug-be-in-10-years/",
-      "published": "2026-06-25T21:40:27+00:00"
-    },
-    {
-      "title": "Why Delek Holdings Rallied Today",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/25/why-delek-holdings-rallied-today/",
-      "published": "2026-06-25T21:23:01+00:00"
-    },
-    {
-      "title": "Why CoreWeave Stock Sank 12.4% This Week",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/25/why-coreweave-stock-sank-124-this-week/",
-      "published": "2026-06-25T21:15:54+00:00"
-    },
-    {
-      "title": "Qualcomm CFO talks Modular acquisition's significance for AI data centers",
-      "publisher": "Yahoo Finance Video",
-      "url": "https://finance.yahoo.com/video/qualcomm-cfo-talks-modular-acquisitions-160500980.html",
-      "published": "2026-06-25T16:05:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/26/why-tower-semiconductor-took-a-dive-today/",
+      "published": "2026-06-26T20:46:40+00:00"
     }
   ],
-  "generated_at": "2026-06-25T22:31:10.281165+00:00"
+  "generated_at": "2026-06-26T22:26:49.541343+00:00"
 }
