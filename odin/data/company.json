@@ -15,9 +15,9 @@
     "sector": "Technology",
     "industry": "Semiconductors",
     "market_cap": 4663269130240.0,
-    "pe": 29.438837,
+    "pe": 29.48392,
     "forward_pe": 15.125293,
-    "dividend_yield": 0.51,
+    "dividend_yield": 0.52,
     "beta": 2.202,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
@@ -2051,61 +2051,61 @@
   "options": {
     "expiry": "2026-06-29",
     "atm_strike": 192.5,
-    "call_iv": 0.21460746337890624,
-    "put_iv": 0.3090889404296875,
-    "atm_iv": 0.26184820190429686,
-    "days_to_expiry": 3
+    "call_iv": 0.24781025634765624,
+    "put_iv": 0.3569400244140625,
+    "atm_iv": 0.30237514038085933,
+    "days_to_expiry": 2
   },
   "consensus": null,
   "news": [
     {
-      "title": "Why ServiceNow Stock Gained 9.9%on Friday",
+      "title": "Got $1,000 to Invest? This Stock Could Turn It Into $100,000 in 10 Years.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/26/why-servicenow-stock-gained-99on-friday/",
-      "published": "2026-06-26T22:01:18+00:00"
+      "url": "https://www.fool.com/investing/2026/06/27/got-1000-to-invest-this-stock-could-turn-it/",
+      "published": "2026-06-27T22:05:00+00:00"
     },
     {
-      "title": "Here's Why SpaceX's Latest Decision Is a Huge Red Flag for Investors",
+      "title": "SpaceX Looks to Reshuffle the Deck in the Enterprise Coding Market With Its $60 Billion Deal for Cursor",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/26/heres-why-spacexs-latest-decision-is-a-huge-red-fl/",
-      "published": "2026-06-26T21:50:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/27/spacex-looks-to-reshuffle-the-deck-in-the-enterpri/",
+      "published": "2026-06-27T21:20:00+00:00"
     },
     {
-      "title": "Why Braze Stock Jumped Today",
+      "title": "Looking for Reliable Retirement Income? This Vanguard ETF Could Be Worth a Closer Look.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/26/why-braze-stock-jumped-today/",
-      "published": "2026-06-26T21:49:14+00:00"
+      "url": "https://www.fool.com/investing/2026/06/27/looking-for-reliable-retirement-income-this-vangua/",
+      "published": "2026-06-27T20:56:00+00:00"
     },
     {
-      "title": "Why Palantir Stock Soared Today",
+      "title": "Here's Why Buying Brookfield Renewable Today Could Be the Best Financial Decision You Ever Make",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/26/why-palantir-stock-soared-today/",
-      "published": "2026-06-26T21:10:52+00:00"
+      "url": "https://www.fool.com/investing/2026/06/27/heres-why-buying-brookfield-renewable-today-could/",
+      "published": "2026-06-27T20:50:00+00:00"
     },
     {
-      "title": "Is Hyperliquid Actually Worth the Hype?",
+      "title": "Should Investors Buy Infleqtion to Ride the Quantum Computing Rally?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/26/is-hyperliquid-actually-worth-the-hype/",
-      "published": "2026-06-26T20:57:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/27/should-investors-buy-infleqtion-to-ride-the-quantu/",
+      "published": "2026-06-27T20:33:00+00:00"
     },
     {
-      "title": "SpaceX Got $90 Billion in Orders for a $25 Billion Bond Sale Less Than 2 Weeks After Its IPO. Is That a Good Sign or a Warning?",
+      "title": "3 Reasons to Buy Silicon Motion Technology Stock Like There's No Tomorrow",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/26/spacex-got-90-billion-in-orders-for-a-25-billion-b/",
-      "published": "2026-06-26T20:50:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/27/3-reasons-to-buy-silicon-motion-technology-stock-l/",
+      "published": "2026-06-27T20:20:00+00:00"
     },
     {
-      "title": "Nvidia isn\u2019t enough \u2014 here\u2019s how to build a diversified AI portfolio",
-      "publisher": "TheStreet",
-      "url": "https://www.thestreet.com/video/nvidia-isnt-enough-heres-how-to-build-a-diversified-ai-portfolio",
-      "published": "2026-06-26T20:47:00+00:00"
+      "title": "1 Reason Why Passively Managed Index Funds Could Save You More Money Than Mutual Funds",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/06/27/1-reason-passive-managed-index-funds-could-save/",
+      "published": "2026-06-27T20:05:00+00:00"
     },
     {
-      "title": "Why Tower Semiconductor Took a Dive Today",
+      "title": "Opinion: Pfizer Is a Fantastic Dividend Stock for Income Investors to Buy Right Now",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/26/why-tower-semiconductor-took-a-dive-today/",
-      "published": "2026-06-26T20:46:40+00:00"
+      "url": "https://www.fool.com/investing/2026/06/27/opinion-pfizer-is-a-fantastic-dividend-stock-for-i/",
+      "published": "2026-06-27T19:35:00+00:00"
     }
   ],
-  "generated_at": "2026-06-26T22:26:49.541343+00:00"
+  "generated_at": "2026-06-27T22:22:58.848385+00:00"
 }
