@@ -2036,7 +2036,7 @@
       "h": 195.5500030517578,
       "l": 191.22000122070312,
       "c": 192.52999877929688,
-      "v": 177757849
+      "v": 179304147
     }
   ],
   "earnings": {
@@ -2051,61 +2051,61 @@
   "options": {
     "expiry": "2026-06-29",
     "atm_strike": 192.5,
-    "call_iv": 0.24781025634765624,
-    "put_iv": 0.3569400244140625,
-    "atm_iv": 0.30237514038085933,
-    "days_to_expiry": 2
+    "call_iv": 0.3034737622070312,
+    "put_iv": 0.4370173486328125,
+    "atm_iv": 0.3702455554199219,
+    "days_to_expiry": 1
   },
   "consensus": null,
   "news": [
     {
-      "title": "Got $1,000 to Invest? This Stock Could Turn It Into $100,000 in 10 Years.",
+      "title": "Worried You'll Run Out of Money in Retirement? Don't Do This.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/27/got-1000-to-invest-this-stock-could-turn-it/",
-      "published": "2026-06-27T22:05:00+00:00"
+      "url": "https://www.fool.com/retirement/2026/06/28/worried-youll-run-out-of-money-in-retirement-dont/",
+      "published": "2026-06-28T21:56:00+00:00"
     },
     {
-      "title": "SpaceX Looks to Reshuffle the Deck in the Enterprise Coding Market With Its $60 Billion Deal for Cursor",
+      "title": "Buy AST SpaceMobile Before Aug. 1 Due to This Opportunity",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/27/spacex-looks-to-reshuffle-the-deck-in-the-enterpri/",
-      "published": "2026-06-27T21:20:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/28/buy-ast-spacemobile-before-aug-1-due-to-this-oppor/",
+      "published": "2026-06-28T21:50:00+00:00"
     },
     {
-      "title": "Looking for Reliable Retirement Income? This Vanguard ETF Could Be Worth a Closer Look.",
+      "title": "Wall Street Sees SpaceX Surpassing Nvidia in Long-Term Valuation",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/27/looking-for-reliable-retirement-income-this-vangua/",
-      "published": "2026-06-27T20:56:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/28/wall-street-sees-spacex-passing-nvidia-valuation/",
+      "published": "2026-06-28T21:27:00+00:00"
     },
     {
-      "title": "Here's Why Buying Brookfield Renewable Today Could Be the Best Financial Decision You Ever Make",
+      "title": "The Smartest Dividend Stocks to Buy With $3,000 Right Now",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/27/heres-why-buying-brookfield-renewable-today-could/",
-      "published": "2026-06-27T20:50:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/28/smartest-dividend-stocks-buy-with-3000-right-now/",
+      "published": "2026-06-28T21:20:00+00:00"
     },
     {
-      "title": "Should Investors Buy Infleqtion to Ride the Quantum Computing Rally?",
+      "title": "Alphabet Pulled Back Hard. Here Are My Top 3 Megacaps to Buy on the Dip.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/27/should-investors-buy-infleqtion-to-ride-the-quantu/",
-      "published": "2026-06-27T20:33:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/28/alphabet-pull-back-hard-top-megacap-buy-dip/",
+      "published": "2026-06-28T20:50:00+00:00"
     },
     {
-      "title": "3 Reasons to Buy Silicon Motion Technology Stock Like There's No Tomorrow",
+      "title": "This Nvidia-Backed Artificial Intelligence (AI) Infrastructure Stock Has Multibagger Potential. It Is Trading at an Incredibly Attractive Valuation Right Now",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/27/3-reasons-to-buy-silicon-motion-technology-stock-l/",
-      "published": "2026-06-27T20:20:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/28/this-nvidia-backed-artificial-intelligence-ai-infr/",
+      "published": "2026-06-28T20:49:00+00:00"
     },
     {
-      "title": "1 Reason Why Passively Managed Index Funds Could Save You More Money Than Mutual Funds",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/27/1-reason-passive-managed-index-funds-could-save/",
-      "published": "2026-06-27T20:05:00+00:00"
+      "title": "Intel CEO's Other AI Bet Just Jumped To A $10 Billion Valuation",
+      "publisher": "Benzinga",
+      "url": "https://finance.yahoo.com/technology/ai/articles/intel-ceos-other-ai-bet-203048298.html",
+      "published": "2026-06-28T20:30:48+00:00"
     },
     {
-      "title": "Opinion: Pfizer Is a Fantastic Dividend Stock for Income Investors to Buy Right Now",
+      "title": "SpaceX's Starfall Could Open a Brand-New Revenue Stream Beyond Rockets and Starlink. Is That Enough to Change the Bull Case?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/27/opinion-pfizer-is-a-fantastic-dividend-stock-for-i/",
-      "published": "2026-06-27T19:35:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/28/spacex-starfall-open-new-revenue-stream-starlink/",
+      "published": "2026-06-28T20:25:00+00:00"
     }
   ],
-  "generated_at": "2026-06-27T22:22:58.848385+00:00"
+  "generated_at": "2026-06-28T22:22:29.451881+00:00"
 }
