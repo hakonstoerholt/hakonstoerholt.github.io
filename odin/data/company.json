@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-06-26",
+  "as_of": "2026-06-29",
   "price": {
-    "last": 192.52999877929688,
-    "prev_close": 195.74000549316406,
-    "change_pct": -1.6399339040476746,
-    "ytd_pct": 1.948632542677342,
+    "last": 194.97000122070312,
+    "prev_close": 192.52999877929688,
+    "change_pct": 1.2673362368860186,
+    "ytd_pct": 3.240664505900459,
     "high_52w": 236.5399932861328,
     "low_52w": 151.49000549316406,
     "currency": "USD"
@@ -14,30 +14,14 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 4663269130240.0,
-    "pe": 29.48392,
-    "forward_pe": 15.125293,
+    "market_cap": 4722368446464.0,
+    "pe": 29.85758,
+    "forward_pe": 15.274478,
     "dividend_yield": 0.52,
     "beta": 2.202,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-06-26",
-      "o": 155.97999572753906,
-      "h": 156.72000122070312,
-      "l": 154.0,
-      "c": 155.02000427246094,
-      "v": 198145700
-    },
-    {
-      "t": "2025-06-27",
-      "o": 156.0399932861328,
-      "h": 158.7100067138672,
-      "l": 155.25999450683594,
-      "c": 157.75,
-      "v": 263234500
-    },
     {
       "t": "2025-06-30",
       "o": 158.39999389648438,
@@ -2037,6 +2021,14 @@
       "l": 191.22000122070312,
       "c": 192.52999877929688,
       "v": 179304147
+    },
+    {
+      "t": "2026-06-29",
+      "o": 193.78500366210938,
+      "h": 196.1699981689453,
+      "l": 189.8000030517578,
+      "c": 194.97000122070312,
+      "v": 146600013
     }
   ],
   "earnings": {
@@ -2044,68 +2036,68 @@
     "history": []
   },
   "implied_move": {
-    "expiry": "2026-06-29",
-    "move_pct": 2.0620163222204844,
-    "straddle": 3.97
+    "expiry": "2026-07-01",
+    "move_pct": 2.305482880369748,
+    "straddle": 4.494999999999999
   },
   "options": {
-    "expiry": "2026-06-29",
-    "atm_strike": 192.5,
-    "call_iv": 0.3034737622070312,
-    "put_iv": 0.4370173486328125,
-    "atm_iv": 0.3702455554199219,
-    "days_to_expiry": 1
+    "expiry": "2026-07-01",
+    "atm_strike": 195.0,
+    "call_iv": 0.3254461987304687,
+    "put_iv": 0.32129584960937496,
+    "atm_iv": 0.3233710241699218,
+    "days_to_expiry": 2
   },
   "consensus": null,
   "news": [
     {
-      "title": "Worried You'll Run Out of Money in Retirement? Don't Do This.",
+      "title": "AST SpaceMobile's Stock Is Down After Another Successful Launch: Time to Buy The Dip?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/retirement/2026/06/28/worried-youll-run-out-of-money-in-retirement-dont/",
-      "published": "2026-06-28T21:56:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/29/ast-spacemobiles-stock-is-down-after-another-succe/",
+      "published": "2026-06-29T22:06:29+00:00"
     },
     {
-      "title": "Buy AST SpaceMobile Before Aug. 1 Due to This Opportunity",
+      "title": "The Companies That Sound Most Confident May Be the Ones to Worry About",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/28/buy-ast-spacemobile-before-aug-1-due-to-this-oppor/",
-      "published": "2026-06-28T21:50:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/29/the-companies-that-sound-most-confident-may-be-the-ones-to-worry-about/",
+      "published": "2026-06-29T21:50:01+00:00"
     },
     {
-      "title": "Wall Street Sees SpaceX Surpassing Nvidia in Long-Term Valuation",
+      "title": "Uber Stock Climbed on Robotaxi Hopes. But It Doesn't Own the Autonomous Cars Driving Its Expansion.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/28/wall-street-sees-spacex-passing-nvidia-valuation/",
-      "published": "2026-06-28T21:27:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/29/uber-stock-climbed-on-robotaxi-hopes-but-it-doesnt/",
+      "published": "2026-06-29T21:46:00+00:00"
     },
     {
-      "title": "The Smartest Dividend Stocks to Buy With $3,000 Right Now",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/28/smartest-dividend-stocks-buy-with-3000-right-now/",
-      "published": "2026-06-28T21:20:00+00:00"
+      "title": "Applied Digital CEO: AI Industry Will See \u201cPretty Significant Delays Through 2026 and 2027\u201d",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/06/29/applied-digital-ceo-ai-industry-will-see-pretty-significant-delays-through-2026-and-2027/",
+      "published": "2026-06-29T21:45:28+00:00"
     },
     {
-      "title": "Alphabet Pulled Back Hard. Here Are My Top 3 Megacaps to Buy on the Dip.",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/28/alphabet-pull-back-hard-top-megacap-buy-dip/",
-      "published": "2026-06-28T20:50:00+00:00"
+      "title": "Here Are Tuesday\u2019s Best Wall Street Analyst Research Calls:",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/06/29/here-are-tuesdays-best-wall-street-analyst-research-calls/",
+      "published": "2026-06-29T21:42:49+00:00"
     },
     {
-      "title": "This Nvidia-Backed Artificial Intelligence (AI) Infrastructure Stock Has Multibagger Potential. It Is Trading at an Incredibly Attractive Valuation Right Now",
+      "title": "Why Tenable Stock Raced Higher Today",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/28/this-nvidia-backed-artificial-intelligence-ai-infr/",
-      "published": "2026-06-28T20:49:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/29/why-tenable-stock-raced-higher-today/",
+      "published": "2026-06-29T21:36:15+00:00"
     },
     {
-      "title": "Intel CEO's Other AI Bet Just Jumped To A $10 Billion Valuation",
-      "publisher": "Benzinga",
-      "url": "https://finance.yahoo.com/technology/ai/articles/intel-ceos-other-ai-bet-203048298.html",
-      "published": "2026-06-28T20:30:48+00:00"
+      "title": "Why Samsung & SK Hynix are investing so much in South Korea's AI build-out",
+      "publisher": "Yahoo Finance Video",
+      "url": "https://finance.yahoo.com/video/why-samsung-sk-hynix-investing-150605340.html",
+      "published": "2026-06-29T15:06:05+00:00"
     },
     {
-      "title": "SpaceX's Starfall Could Open a Brand-New Revenue Stream Beyond Rockets and Starlink. Is That Enough to Change the Bull Case?",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/28/spacex-starfall-open-new-revenue-stream-starlink/",
-      "published": "2026-06-28T20:25:00+00:00"
+      "title": "'Magnificent 7' stocks are having a dreadful year",
+      "publisher": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/article/magnificent-7-stocks-are-having-a-dreadful-year-134333813.html",
+      "published": "2026-06-29T13:43:33+00:00"
     }
   ],
-  "generated_at": "2026-06-28T22:22:29.451881+00:00"
+  "generated_at": "2026-06-29T22:25:07.562093+00:00"
 }
