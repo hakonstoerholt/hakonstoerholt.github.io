@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-06-29",
+  "as_of": "2026-06-30",
   "price": {
-    "last": 194.97000122070312,
-    "prev_close": 192.52999877929688,
-    "change_pct": 1.2673362368860186,
-    "ytd_pct": 3.240664505900459,
+    "last": 200.08999633789062,
+    "prev_close": 194.97000122070312,
+    "change_pct": 2.6260425117358155,
+    "ytd_pct": 5.951808245223966,
     "high_52w": 236.5399932861328,
     "low_52w": 151.49000549316406,
     "currency": "USD"
@@ -14,12 +14,12 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 4722368446464.0,
-    "pe": 29.85758,
-    "forward_pe": 15.274478,
-    "dividend_yield": 0.52,
+    "market_cap": 4846379859968.0,
+    "pe": 30.641653,
+    "forward_pe": 15.675591,
+    "dividend_yield": 0.51,
     "beta": 2.202,
-    "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
+    "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation has a strategic collaboration with Palantir Technologies Inc. to deliver an intelligent engine for running NVIDIA AI and Nemotron open models in sovereign environments. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
     {
@@ -2029,6 +2029,14 @@
       "l": 189.8000030517578,
       "c": 194.97000122070312,
       "v": 146600013
+    },
+    {
+      "t": "2026-06-30",
+      "o": 197.19500732421875,
+      "h": 200.6300048828125,
+      "l": 195.11000061035156,
+      "c": 200.08999633789062,
+      "v": 163092701
     }
   ],
   "earnings": {
@@ -2037,67 +2045,67 @@
   },
   "implied_move": {
     "expiry": "2026-07-01",
-    "move_pct": 2.305482880369748,
-    "straddle": 4.494999999999999
+    "move_pct": 1.6442601130564265,
+    "straddle": 3.29
   },
   "options": {
     "expiry": "2026-07-01",
-    "atm_strike": 195.0,
-    "call_iv": 0.3254461987304687,
-    "put_iv": 0.32129584960937496,
-    "atm_iv": 0.3233710241699218,
-    "days_to_expiry": 2
+    "atm_strike": 200.0,
+    "call_iv": 0.26489992919921873,
+    "put_iv": 0.30371790039062496,
+    "atm_iv": 0.2843089147949218,
+    "days_to_expiry": 1
   },
   "consensus": null,
   "news": [
     {
-      "title": "AST SpaceMobile's Stock Is Down After Another Successful Launch: Time to Buy The Dip?",
+      "title": "Why Rezolve AI Stock Soared 21% Higher Today",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/29/ast-spacemobiles-stock-is-down-after-another-succe/",
-      "published": "2026-06-29T22:06:29+00:00"
+      "url": "https://www.fool.com/investing/2026/06/30/why-rezolve-ai-stock-soared-21-higher-today/",
+      "published": "2026-06-30T21:45:39+00:00"
     },
     {
-      "title": "The Companies That Sound Most Confident May Be the Ones to Worry About",
+      "title": "Time to Sound the Alarm on Archer Aviation?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/29/the-companies-that-sound-most-confident-may-be-the-ones-to-worry-about/",
-      "published": "2026-06-29T21:50:01+00:00"
+      "url": "https://www.fool.com/investing/2026/06/30/time-to-sound-the-alarm-on-hot-ticker/",
+      "published": "2026-06-30T21:40:00+00:00"
     },
     {
-      "title": "Uber Stock Climbed on Robotaxi Hopes. But It Doesn't Own the Autonomous Cars Driving Its Expansion.",
+      "title": "Why Beyond Meat Stock Is Up Today",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/29/uber-stock-climbed-on-robotaxi-hopes-but-it-doesnt/",
-      "published": "2026-06-29T21:46:00+00:00"
+      "url": "https://www.fool.com/investing/2026/06/30/why-beyond-meat-is-up-today/",
+      "published": "2026-06-30T21:39:24+00:00"
     },
     {
-      "title": "Applied Digital CEO: AI Industry Will See \u201cPretty Significant Delays Through 2026 and 2027\u201d",
-      "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/06/29/applied-digital-ceo-ai-industry-will-see-pretty-significant-delays-through-2026-and-2027/",
-      "published": "2026-06-29T21:45:28+00:00"
-    },
-    {
-      "title": "Here Are Tuesday\u2019s Best Wall Street Analyst Research Calls:",
-      "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/06/29/here-are-tuesdays-best-wall-street-analyst-research-calls/",
-      "published": "2026-06-29T21:42:49+00:00"
-    },
-    {
-      "title": "Why Tenable Stock Raced Higher Today",
+      "title": "3 Reasons Why I'm Loading Up on Penn Entertainment in the Second Half of 2026",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/29/why-tenable-stock-raced-higher-today/",
-      "published": "2026-06-29T21:36:15+00:00"
+      "url": "https://www.fool.com/investing/2026/06/30/3-reasons-why-im-loading-up-on-penn-in-the-seco/",
+      "published": "2026-06-30T21:30:00+00:00"
     },
     {
-      "title": "Why Samsung & SK Hynix are investing so much in South Korea's AI build-out",
-      "publisher": "Yahoo Finance Video",
-      "url": "https://finance.yahoo.com/video/why-samsung-sk-hynix-investing-150605340.html",
-      "published": "2026-06-29T15:06:05+00:00"
+      "title": "SpaceX Won't Be Free-Cash-Flow Positive Until 2029 and It's Already Taking on $25 Billion in Debt. Here's What That Means for Your Investment.",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/06/30/spacex-profitable-2029-billion-debt-stock/",
+      "published": "2026-06-30T21:27:00+00:00"
     },
     {
-      "title": "'Magnificent 7' stocks are having a dreadful year",
-      "publisher": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/markets/article/magnificent-7-stocks-are-having-a-dreadful-year-134333813.html",
-      "published": "2026-06-29T13:43:33+00:00"
+      "title": "Micron, Intel and AMD add $2 trillion in value in Q2 rally",
+      "publisher": "Investing.com",
+      "url": "https://finance.yahoo.com/technology/articles/micron-intel-amd-add-2-212134122.html",
+      "published": "2026-06-30T21:21:34+00:00"
+    },
+    {
+      "title": "Why The Trade Desk Stock Tumbled on Tuesday",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/06/30/why-the-trade-desk-stock-tumbled-on-tuesday/",
+      "published": "2026-06-30T21:18:02+00:00"
+    },
+    {
+      "title": "Strategy Just Announced a Major Revamp to Its Bitcoin Strategy. Here's What Investors Should Know",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/06/30/strategy-just-announced-a-major-revamp-to-its-bitcoin-strategy-heres-what-investors-should-know/",
+      "published": "2026-06-30T21:17:01+00:00"
     }
   ],
-  "generated_at": "2026-06-29T22:25:07.562093+00:00"
+  "generated_at": "2026-06-30T22:27:38.945503+00:00"
 }
