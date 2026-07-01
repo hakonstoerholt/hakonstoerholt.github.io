@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-06-30",
+  "as_of": "2026-07-01",
   "price": {
-    "last": 200.08999633789062,
-    "prev_close": 194.97000122070312,
-    "change_pct": 2.6260425117358155,
-    "ytd_pct": 5.951808245223966,
+    "last": 197.5800018310547,
+    "prev_close": 200.08999633789062,
+    "change_pct": -1.2544327816355838,
+    "ytd_pct": 4.622714029860209,
     "high_52w": 236.5399932861328,
     "low_52w": 151.49000549316406,
     "currency": "USD"
@@ -14,22 +14,14 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 4846379859968.0,
-    "pe": 30.641653,
-    "forward_pe": 15.675591,
-    "dividend_yield": 0.51,
+    "market_cap": 4785584996352.0,
+    "pe": 30.30368,
+    "forward_pe": 15.478952,
+    "dividend_yield": 0.5,
     "beta": 2.202,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation has a strategic collaboration with Palantir Technologies Inc. to deliver an intelligent engine for running NVIDIA AI and Nemotron open models in sovereign environments. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-06-30",
-      "o": 158.39999389648438,
-      "h": 158.66000366210938,
-      "l": 155.9600067138672,
-      "c": 157.99000549316406,
-      "v": 194580300
-    },
     {
       "t": "2025-07-01",
       "o": 156.2899932861328,
@@ -2037,6 +2029,14 @@
       "l": 195.11000061035156,
       "c": 200.08999633789062,
       "v": 163092701
+    },
+    {
+      "t": "2026-07-01",
+      "o": 196.1699981689453,
+      "h": 199.85000610351562,
+      "l": 193.4499969482422,
+      "c": 197.5800018310547,
+      "v": 134672012
     }
   ],
   "earnings": {
@@ -2044,68 +2044,68 @@
     "history": []
   },
   "implied_move": {
-    "expiry": "2026-07-01",
-    "move_pct": 1.6442601130564265,
-    "straddle": 3.29
+    "expiry": "2026-07-02",
+    "move_pct": 1.7284137910475748,
+    "straddle": 3.415
   },
   "options": {
-    "expiry": "2026-07-01",
-    "atm_strike": 200.0,
-    "call_iv": 0.26489992919921873,
-    "put_iv": 0.30371790039062496,
-    "atm_iv": 0.2843089147949218,
+    "expiry": "2026-07-02",
+    "atm_strike": 197.5,
+    "call_iv": 0.30664755859375,
+    "put_iv": 0.2880930566406249,
+    "atm_iv": 0.2973703076171874,
     "days_to_expiry": 1
   },
   "consensus": null,
   "news": [
     {
-      "title": "Why Rezolve AI Stock Soared 21% Higher Today",
+      "title": "Should You Forget Fiverr International Stock Near a 52-Week Low?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/30/why-rezolve-ai-stock-soared-21-higher-today/",
-      "published": "2026-06-30T21:45:39+00:00"
+      "url": "https://www.fool.com/investing/2026/07/01/should-you-forget-fiverr-stock-near-52-week-low/",
+      "published": "2026-07-01T22:01:00+00:00"
     },
     {
-      "title": "Time to Sound the Alarm on Archer Aviation?",
+      "title": "Why S&P Global Stock Zoomed Almost 8% Higher Today",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/30/time-to-sound-the-alarm-on-hot-ticker/",
-      "published": "2026-06-30T21:40:00+00:00"
+      "url": "https://www.fool.com/investing/2026/07/01/why-sp-global-stock-zoomed-almost-8-higher-today/",
+      "published": "2026-07-01T21:54:21+00:00"
     },
     {
-      "title": "Why Beyond Meat Stock Is Up Today",
+      "title": "Stock Market Today, July 1: Meta Shakes Up Cloud Sector and Tech Stocks Weigh on Markets",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/30/why-beyond-meat-is-up-today/",
-      "published": "2026-06-30T21:39:24+00:00"
+      "url": "https://www.fool.com/coverage/stock-market-today/2026/07/01/stock-market-today-july-1-meta-shakes-up-cloud-sector-and-tech-stocks-weigh-on-markets/",
+      "published": "2026-07-01T21:32:52+00:00"
     },
     {
-      "title": "3 Reasons Why I'm Loading Up on Penn Entertainment in the Second Half of 2026",
+      "title": "Is Ford Stock a Buy Right Now While It's Down From Its Peak?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/30/3-reasons-why-im-loading-up-on-penn-in-the-seco/",
-      "published": "2026-06-30T21:30:00+00:00"
+      "url": "https://www.fool.com/investing/2026/07/01/is-ford-stock-a-buy-right-now-while-its-down/",
+      "published": "2026-07-01T21:27:00+00:00"
     },
     {
-      "title": "SpaceX Won't Be Free-Cash-Flow Positive Until 2029 and It's Already Taking on $25 Billion in Debt. Here's What That Means for Your Investment.",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/30/spacex-profitable-2029-billion-debt-stock/",
-      "published": "2026-06-30T21:27:00+00:00"
+      "title": "Hewlett Packard (HPE) Ranks Among Hot Stocks with the Highest Upside Potential",
+      "publisher": "Insider Monkey",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/hewlett-packard-hpe-ranks-among-212249816.html",
+      "published": "2026-07-01T21:22:49+00:00"
     },
     {
-      "title": "Micron, Intel and AMD add $2 trillion in value in Q2 rally",
-      "publisher": "Investing.com",
-      "url": "https://finance.yahoo.com/technology/articles/micron-intel-amd-add-2-212134122.html",
-      "published": "2026-06-30T21:21:34+00:00"
+      "title": "What Palantir Technologies (PLTR)'s NVIDIA Sovereign AI and Surf Air Deals Mean For Shareholders",
+      "publisher": "Simply Wall St.",
+      "url": "https://finance.yahoo.com/technology/ai/articles/palantir-technologies-pltr-nvidia-sovereign-211703928.html",
+      "published": "2026-07-01T21:17:03+00:00"
     },
     {
-      "title": "Why The Trade Desk Stock Tumbled on Tuesday",
+      "title": "Is Rivian Stock Primed To Deliver Gains After The Launch of The R2?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/30/why-the-trade-desk-stock-tumbled-on-tuesday/",
-      "published": "2026-06-30T21:18:02+00:00"
+      "url": "https://www.fool.com/investing/2026/07/01/is-rivian-stock-primed-to-deliver-gains-after-the/",
+      "published": "2026-07-01T21:04:07+00:00"
     },
     {
-      "title": "Strategy Just Announced a Major Revamp to Its Bitcoin Strategy. Here's What Investors Should Know",
+      "title": "This Hidden Aerospace Stock Is Up 470% in the Last 5 Years and Just Hit a New All-Time High",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/06/30/strategy-just-announced-a-major-revamp-to-its-bitcoin-strategy-heres-what-investors-should-know/",
-      "published": "2026-06-30T21:17:01+00:00"
+      "url": "https://www.fool.com/investing/2026/07/01/this-hidden-aerospace-stock-is-up-450-in-the-last/",
+      "published": "2026-07-01T21:01:00+00:00"
     }
   ],
-  "generated_at": "2026-06-30T22:27:38.945503+00:00"
+  "generated_at": "2026-07-01T22:28:39.808682+00:00"
 }
