@@ -1,35 +1,27 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-07-01",
+  "as_of": "2026-07-02",
   "price": {
-    "last": 197.5800018310547,
-    "prev_close": 200.08999633789062,
-    "change_pct": -1.2544327816355838,
-    "ytd_pct": 4.622714029860209,
+    "last": 194.8300018310547,
+    "prev_close": 197.5800018310547,
+    "change_pct": -1.3918412665829716,
+    "ytd_pct": 3.166531921773519,
     "high_52w": 236.5399932861328,
-    "low_52w": 151.49000549316406,
+    "low_52w": 152.97000122070312,
     "currency": "USD"
   },
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 4785584996352.0,
-    "pe": 30.30368,
-    "forward_pe": 15.478952,
-    "dividend_yield": 0.5,
+    "market_cap": 4718977351680.0,
+    "pe": 29.881903,
+    "forward_pe": 15.26351,
+    "dividend_yield": 0.51,
     "beta": 2.202,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation has a strategic collaboration with Palantir Technologies Inc. to deliver an intelligent engine for running NVIDIA AI and Nemotron open models in sovereign environments. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-07-01",
-      "o": 156.2899932861328,
-      "h": 157.1999969482422,
-      "l": 151.49000549316406,
-      "c": 153.3000030517578,
-      "v": 213143600
-    },
     {
       "t": "2025-07-02",
       "o": 152.97999572753906,
@@ -2037,6 +2029,14 @@
       "l": 193.4499969482422,
       "c": 197.5800018310547,
       "v": 134672012
+    },
+    {
+      "t": "2026-07-02",
+      "o": 197.14999389648438,
+      "h": 200.05499267578125,
+      "l": 192.35000610351562,
+      "c": 194.8300018310547,
+      "v": 129935067
     }
   ],
   "earnings": {
@@ -2044,68 +2044,68 @@
     "history": []
   },
   "implied_move": {
-    "expiry": "2026-07-02",
-    "move_pct": 1.7284137910475748,
-    "straddle": 3.415
+    "expiry": "2026-07-06",
+    "move_pct": 2.060770909134198,
+    "straddle": 4.015000000000001
   },
   "options": {
-    "expiry": "2026-07-02",
-    "atm_strike": 197.5,
-    "call_iv": 0.30664755859375,
-    "put_iv": 0.2880930566406249,
-    "atm_iv": 0.2973703076171874,
-    "days_to_expiry": 1
+    "expiry": "2026-07-06",
+    "atm_strike": 195.0,
+    "call_iv": 0.21021297607421874,
+    "put_iv": 0.24329369995117187,
+    "atm_iv": 0.22675333801269532,
+    "days_to_expiry": 4
   },
   "consensus": null,
   "news": [
     {
-      "title": "Should You Forget Fiverr International Stock Near a 52-Week Low?",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/01/should-you-forget-fiverr-stock-near-52-week-low/",
-      "published": "2026-07-01T22:01:00+00:00"
-    },
-    {
-      "title": "Why S&P Global Stock Zoomed Almost 8% Higher Today",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/01/why-sp-global-stock-zoomed-almost-8-higher-today/",
-      "published": "2026-07-01T21:54:21+00:00"
-    },
-    {
-      "title": "Stock Market Today, July 1: Meta Shakes Up Cloud Sector and Tech Stocks Weigh on Markets",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/coverage/stock-market-today/2026/07/01/stock-market-today-july-1-meta-shakes-up-cloud-sector-and-tech-stocks-weigh-on-markets/",
-      "published": "2026-07-01T21:32:52+00:00"
-    },
-    {
-      "title": "Is Ford Stock a Buy Right Now While It's Down From Its Peak?",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/01/is-ford-stock-a-buy-right-now-while-its-down/",
-      "published": "2026-07-01T21:27:00+00:00"
-    },
-    {
-      "title": "Hewlett Packard (HPE) Ranks Among Hot Stocks with the Highest Upside Potential",
+      "title": "Amdocs, (DOX), 1Finity, Supermicro (SMCI) Validate AI-RAN Blueprint with NVIDIA (NVDA) Infrastructure",
       "publisher": "Insider Monkey",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/hewlett-packard-hpe-ranks-among-212249816.html",
-      "published": "2026-07-01T21:22:49+00:00"
+      "url": "https://finance.yahoo.com/technology/ai/articles/amdocs-dox-1finity-supermicro-smci-221252522.html",
+      "published": "2026-07-02T22:12:52+00:00"
     },
     {
-      "title": "What Palantir Technologies (PLTR)'s NVIDIA Sovereign AI and Surf Air Deals Mean For Shareholders",
-      "publisher": "Simply Wall St.",
-      "url": "https://finance.yahoo.com/technology/ai/articles/palantir-technologies-pltr-nvidia-sovereign-211703928.html",
-      "published": "2026-07-01T21:17:03+00:00"
+      "title": "Thiel Capital\u2019s Jack Selby nabs stakes in hot startups like Etched through Arizona connections",
+      "publisher": "TechCrunch",
+      "url": "https://finance.yahoo.com/technology/articles/thiel-capital-jack-selby-nabs-215710518.html",
+      "published": "2026-07-02T21:57:10+00:00"
     },
     {
-      "title": "Is Rivian Stock Primed To Deliver Gains After The Launch of The R2?",
+      "title": "Why Rivian Stock Popped Today",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/01/is-rivian-stock-primed-to-deliver-gains-after-the/",
-      "published": "2026-07-01T21:04:07+00:00"
+      "url": "https://www.fool.com/investing/2026/07/02/why-rivian-stock-is-up-today/",
+      "published": "2026-07-02T21:02:34+00:00"
     },
     {
-      "title": "This Hidden Aerospace Stock Is Up 470% in the Last 5 Years and Just Hit a New All-Time High",
+      "title": "Update: Dow Rises to Record as Wall Street Logs Weekly Gains",
+      "publisher": "MT Newswires",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/dow-rises-record-wall-street-205758332.html",
+      "published": "2026-07-02T20:57:58+00:00"
+    },
+    {
+      "title": "Got $1,000 to Invest? Buy These 2 Stocks Right Now and Hold Them for Decades.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/01/this-hidden-aerospace-stock-is-up-450-in-the-last/",
-      "published": "2026-07-01T21:01:00+00:00"
+      "url": "https://www.fool.com/investing/2026/07/02/got-1000-to-invest-buy-these-x-stocks-right-now-an/",
+      "published": "2026-07-02T20:57:32+00:00"
+    },
+    {
+      "title": "Why Franklin Covey Stock Plummeted Today",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/07/02/why-franklin-covey-stock-plummeted-today/",
+      "published": "2026-07-02T20:52:32+00:00"
+    },
+    {
+      "title": "Where Will SpaceX Stock Be in 1 Year?",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/07/02/where-will-spacex-stock-be-in-1-year/",
+      "published": "2026-07-02T20:50:00+00:00"
+    },
+    {
+      "title": "Veteran manager sends blunt take on buying the June swoon in July",
+      "publisher": "TheStreet",
+      "url": "https://www.thestreet.com/investing/veteran-manager-sends-blunt-take-on-buying-the-june-swoon-in-july",
+      "published": "2026-07-02T20:42:19+00:00"
     }
   ],
-  "generated_at": "2026-07-01T22:28:39.808682+00:00"
+  "generated_at": "2026-07-02T22:23:47.987780+00:00"
 }
