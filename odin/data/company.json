@@ -2036,7 +2036,7 @@
       "h": 200.05499267578125,
       "l": 192.35000610351562,
       "c": 194.8300018310547,
-      "v": 129935067
+      "v": 142385548
     }
   ],
   "earnings": {
@@ -2051,61 +2051,61 @@
   "options": {
     "expiry": "2026-07-06",
     "atm_strike": 195.0,
-    "call_iv": 0.27149166015625,
-    "put_iv": 0.3139717041015625,
-    "atm_iv": 0.2927316821289062,
-    "days_to_expiry": 2
+    "call_iv": 0.3325262060546875,
+    "put_iv": 0.38477177734374995,
+    "atm_iv": 0.3586489916992187,
+    "days_to_expiry": 1
   },
   "consensus": null,
   "news": [
     {
-      "title": "ChatGPT-Maker OpenAI Is Headed for a $1 Trillion IPO. The Biggest Winner Could Be Microsoft Stock.",
+      "title": "AMD Stock and Intel Crushed Nvidia in the First Half. Here's My Prediction for the Second Half.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/04/chatgpt-maker-openai-is-headed-for-a-1-trillion-ip/",
-      "published": "2026-07-04T22:10:00+00:00"
+      "url": "https://www.fool.com/investing/2026/07/05/amd-stock-and-intel-crushed-nvidia-in-the-first-ha/",
+      "published": "2026-07-05T22:30:00+00:00"
     },
     {
-      "title": "Could Canopy Growth Stock Deliver a 4X Gain? 1 Analyst Thinks So.",
+      "title": "3 Reasons to Load Up on Netflix Stock Before July 16",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/04/could-canopy-growth-stock-deliver-4x-gain-1-analys/",
-      "published": "2026-07-04T22:02:00+00:00"
+      "url": "https://www.fool.com/investing/2026/07/05/3-reasons-load-up-on-netflix-stock-before-july-16/",
+      "published": "2026-07-05T22:20:00+00:00"
     },
     {
-      "title": "The Smartest Dividend Stock to Buy With $1,000 Right Now",
+      "title": "If You'd Invested $10,000 in the SpaceX IPO, Here's How Much You Would Have Now",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/04/the-smartest-dividend-stock-to-buy-with-1000-right/",
-      "published": "2026-07-04T21:55:00+00:00"
+      "url": "https://www.fool.com/investing/2026/07/05/if-youd-invested-10000-in-the-spacex-ipo-heres-how/",
+      "published": "2026-07-05T22:15:00+00:00"
     },
     {
-      "title": "1 Reason to Buy This Wide-Moat Stock Right Now",
+      "title": "3 Dividend ETF Picks That Could Build Serious Long-Term Wealth",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/04/1-reason-to-buy-this-wide-moat-stock-right-now/",
-      "published": "2026-07-04T21:20:00+00:00"
+      "url": "https://www.fool.com/investing/2026/07/05/3-dividend-etf-picks-that-could-build-serious-long/",
+      "published": "2026-07-05T21:40:00+00:00"
     },
     {
-      "title": "If You'd Put $10,000 Into Intel Stock at the Start of 2026, Here's How Much You'd Have Today",
+      "title": "The First Half of 2026 Is Over. These 2 Spectacular Artificial Intelligence (AI) Stocks Can Soar in the Second Half.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/04/if-youd-put-10000-into-intel-stock-at-the-start-of/",
-      "published": "2026-07-04T21:10:00+00:00"
+      "url": "https://www.fool.com/investing/2026/07/05/the-first-half-of-2026-is-over-2-spectacular-artif/",
+      "published": "2026-07-05T21:26:00+00:00"
     },
     {
-      "title": "Nvidia (NVDA) Backs Verkada And Brings In A Microsoft Veteran To Lead Sales",
-      "publisher": "Simply Wall St.",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-nvda-backs-verkada-brings-210955795.html",
-      "published": "2026-07-04T21:09:55+00:00"
+      "title": "Bitcoin Is Down 53%. Is It Finally Time to Buy?",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/07/05/bitcoin-is-down-53-is-it-finally-time-to-buy/",
+      "published": "2026-07-05T20:50:00+00:00"
     },
     {
-      "title": "Nvidia Stock Is Nearly Flat for 2026. Time to Cash Out, or Load Up on Shares?",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/04/nvidia-stock-is-flat-for-2026-time-to-cash-out-or/",
-      "published": "2026-07-04T20:50:00+00:00"
+      "title": "Top Analyst strongly resets AMD stock price target",
+      "publisher": "TheStreet",
+      "url": "https://www.thestreet.com/investing/stocks/amd-stock-price-target-reset-cantor-fitzgerald",
+      "published": "2026-07-05T20:33:00+00:00"
     },
     {
-      "title": "Is SpaceX Stock a Buy Before Its First Earnings Report as a Public Company?",
+      "title": "Is Micron Technology Stock Going to $1,500? The Bull Case Is Stronger Than You Think.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/04/is-spacex-stock-a-buy-before-its-first-earnings-re/",
-      "published": "2026-07-04T20:25:00+00:00"
+      "url": "https://www.fool.com/investing/2026/07/05/is-micron-technology-stock-going-to-1500-the-bull/",
+      "published": "2026-07-05T20:25:00+00:00"
     }
   ],
-  "generated_at": "2026-07-04T22:48:24.203030+00:00"
+  "generated_at": "2026-07-05T22:50:54.330398+00:00"
 }
