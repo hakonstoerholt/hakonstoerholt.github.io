@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-07-05T22:50:54.333039+00:00",
+  "generated_at": "2026-07-06T22:57:58.236113+00:00",
   "regime": {
     "regime": "Watch",
     "alarm": false,
     "headline": "Calm for now, but stress is building \u2014 the volatility model has flipped to turbulent, with the macro / yield-curve picture leads at +0.2\u03c3. No alarm yet (topology trigger 2.2\u03c3 off); full exposure (1\u00d7).",
-    "as_of": "2026-07-02",
+    "as_of": "2026-07-06",
     "degraded": false
   },
   "company": {
     "ticker": "NVDA",
-    "last": 194.8300018310547,
-    "change_pct": -1.3918412665829716,
-    "as_of": "2026-07-02"
+    "last": 195.5500030517578,
+    "change_pct": 0.36955356666652506,
+    "as_of": "2026-07-06"
   }
 }

@@ -1,43 +1,27 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-07-02",
+  "as_of": "2026-07-06",
   "price": {
-    "last": 194.8300018310547,
-    "prev_close": 197.5800018310547,
-    "change_pct": -1.3918412665829716,
-    "ytd_pct": 3.166531921773519,
+    "last": 195.5500030517578,
+    "prev_close": 194.8300018310547,
+    "change_pct": 0.36955356666652506,
+    "ytd_pct": 3.5477875200965903,
     "high_52w": 236.5399932861328,
-    "low_52w": 152.97000122070312,
+    "low_52w": 157.33999633789062,
     "currency": "USD"
   },
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 4718977351680.0,
-    "pe": 29.83614,
-    "forward_pe": 15.26351,
+    "market_cap": 4736416743424.0,
+    "pe": 29.946402,
+    "forward_pe": 15.319917,
     "dividend_yield": 0.51,
     "beta": 2.211,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-07-02",
-      "o": 152.97999572753906,
-      "h": 157.60000610351562,
-      "l": 152.97000122070312,
-      "c": 157.25,
-      "v": 171224100
-    },
-    {
-      "t": "2025-07-03",
-      "o": 158.3699951171875,
-      "h": 160.97999572753906,
-      "l": 157.77000427246094,
-      "c": 159.33999633789062,
-      "v": 143716100
-    },
     {
       "t": "2025-07-07",
       "o": 158.1999969482422,
@@ -2037,6 +2021,14 @@
       "l": 192.35000610351562,
       "c": 194.8300018310547,
       "v": 142385548
+    },
+    {
+      "t": "2026-07-06",
+      "o": 194.38999938964844,
+      "h": 197.5500030517578,
+      "l": 194.0,
+      "c": 195.5500030517578,
+      "v": 96954806
     }
   ],
   "earnings": {
@@ -2044,68 +2036,68 @@
     "history": []
   },
   "implied_move": {
-    "expiry": "2026-07-06",
-    "move_pct": 2.060770909134198,
-    "straddle": 4.015000000000001
+    "expiry": "2026-07-08",
+    "move_pct": 2.2935310304305743,
+    "straddle": 4.485
   },
   "options": {
-    "expiry": "2026-07-06",
+    "expiry": "2026-07-08",
     "atm_strike": 195.0,
-    "call_iv": 0.3325262060546875,
-    "put_iv": 0.38477177734374995,
-    "atm_iv": 0.3586489916992187,
-    "days_to_expiry": 1
+    "call_iv": 0.3305731005859375,
+    "put_iv": 0.313483427734375,
+    "atm_iv": 0.32202826416015623,
+    "days_to_expiry": 2
   },
   "consensus": null,
   "news": [
     {
-      "title": "AMD Stock and Intel Crushed Nvidia in the First Half. Here's My Prediction for the Second Half.",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/05/amd-stock-and-intel-crushed-nvidia-in-the-first-ha/",
-      "published": "2026-07-05T22:30:00+00:00"
+      "title": "This Semiconductor ETF Is Up 54% This Year and Refuses to Own Intel",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/etf/2026/07/06/this-semiconductor-etf-is-up-54-this-year-and-refuses-to-own-intel/",
+      "published": "2026-07-06T22:49:21+00:00"
     },
     {
-      "title": "3 Reasons to Load Up on Netflix Stock Before July 16",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/05/3-reasons-load-up-on-netflix-stock-before-july-16/",
-      "published": "2026-07-05T22:20:00+00:00"
+      "title": "Dow Jones Futures: AI Stocks Astera, Bloom, Tesla Rebound; SpaceX Slides Ahead Of Nasdaq-100 Inclusion",
+      "publisher": "Investor's Business Daily",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-ai-stocks-astera-bloom-nvidia-tesla/?src=A00220&yptr=yahoo",
+      "published": "2026-07-06T22:38:10+00:00"
     },
     {
-      "title": "If You'd Invested $10,000 in the SpaceX IPO, Here's How Much You Would Have Now",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/05/if-youd-invested-10000-in-the-spacex-ipo-heres-how/",
-      "published": "2026-07-05T22:15:00+00:00"
+      "title": "Jim Cramer Says Buy Nvidia as Chipmaker Rejects 2028 AI Delay Claims",
+      "publisher": "BeInCrypto",
+      "url": "https://beincrypto.com/jim-cramer-buy-nvidia-delay-claims/",
+      "published": "2026-07-06T22:30:00+00:00"
     },
     {
-      "title": "3 Dividend ETF Picks That Could Build Serious Long-Term Wealth",
+      "title": "Why Charles Schwab Stock Bumped Almost 4% Higher on Monday",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/05/3-dividend-etf-picks-that-could-build-serious-long/",
-      "published": "2026-07-05T21:40:00+00:00"
+      "url": "https://www.fool.com/investing/2026/07/06/why-charles-schwab-stock-bumped-almost-4-higher-on/",
+      "published": "2026-07-06T22:18:33+00:00"
     },
     {
-      "title": "The First Half of 2026 Is Over. These 2 Spectacular Artificial Intelligence (AI) Stocks Can Soar in the Second Half.",
+      "title": "Why Lemonade Stock Leaped Today",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/05/the-first-half-of-2026-is-over-2-spectacular-artif/",
-      "published": "2026-07-05T21:26:00+00:00"
+      "url": "https://www.fool.com/investing/2026/07/06/why-lemonade-stock-is-up-today/",
+      "published": "2026-07-06T22:17:40+00:00"
     },
     {
-      "title": "Bitcoin Is Down 53%. Is It Finally Time to Buy?",
+      "title": "Is Meta Platforms a Bargain or a Value Trap?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/05/bitcoin-is-down-53-is-it-finally-time-to-buy/",
-      "published": "2026-07-05T20:50:00+00:00"
+      "url": "https://www.fool.com/investing/2026/07/06/is-meta-platforms-a-bargain-or-a-value-trap/",
+      "published": "2026-07-06T22:05:00+00:00"
     },
     {
-      "title": "Top Analyst strongly resets AMD stock price target",
-      "publisher": "TheStreet",
-      "url": "https://www.thestreet.com/investing/stocks/amd-stock-price-target-reset-cantor-fitzgerald",
-      "published": "2026-07-05T20:33:00+00:00"
+      "title": "Meta Platforms Is Entering the Neocloud Business. Here's Why CoreWeave Investors Should Not Worry.",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/07/06/meta-platforms-is-entering-the-neocloud-business-h/",
+      "published": "2026-07-06T21:50:00+00:00"
     },
     {
-      "title": "Is Micron Technology Stock Going to $1,500? The Bull Case Is Stronger Than You Think.",
+      "title": "Why Abacus Global Management Stock Inched Higher Today",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/05/is-micron-technology-stock-going-to-1500-the-bull/",
-      "published": "2026-07-05T20:25:00+00:00"
+      "url": "https://www.fool.com/investing/2026/07/06/why-abacus-global-management-stock-inched-higher-t/",
+      "published": "2026-07-06T21:42:45+00:00"
     }
   ],
-  "generated_at": "2026-07-05T22:50:54.330398+00:00"
+  "generated_at": "2026-07-06T22:57:58.233392+00:00"
 }
