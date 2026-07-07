@@ -1,33 +1,33 @@
 {
-  "as_of": "2026-07-06",
+  "as_of": "2026-07-07",
   "model_version": "heimdall-3.2",
   "regime": "Watch",
   "alarm": false,
   "frag_tier": "Low",
   "degraded": false,
-  "headline": "Calm for now, but stress is building \u2014 the volatility model has flipped to turbulent, with the macro / yield-curve picture leads at +0.2\u03c3. No alarm yet (topology trigger 2.2\u03c3 off); full exposure (1\u00d7).",
+  "headline": "Calm for now, but stress is building \u2014 the volatility model has flipped to turbulent, with return-path topology leads at +0.7\u03c3. No alarm yet (topology trigger 1.4\u03c3 off); full exposure (1\u00d7).",
   "scores": {
-    "heimdall_max": 0.19620969825610204,
-    "heimdall_mean": -0.5021432883405224,
-    "p_turbulent": 0.9934620329703955,
-    "h0": 0.2037423560395836,
-    "h1": 0.00381167139858,
-    "h1_z": -0.22819543602430575,
-    "sub_topology_sticky": -0.1291165895443776
+    "heimdall_max": 0.7418410906710374,
+    "heimdall_mean": -0.2843977064808553,
+    "p_turbulent": 0.9939102157736776,
+    "h0": 0.1954299006611108,
+    "h1": 0.008726704865694,
+    "h1_z": 0.7418410906710374,
+    "sub_topology_sticky": 0.7418410906710374
   },
   "sub_z": {
-    "vol": -0.3681491939647831,
-    "credit": -1.5517520148523343,
-    "macro": 0.19620969825610204,
-    "trend": -0.558829495117291,
-    "topology": -0.22819543602430575
+    "vol": -0.2969491238129698,
+    "credit": -1.5669611094028764,
+    "macro": 0.19054368430309446,
+    "trend": -0.49046307416256213,
+    "topology": 0.7418410906710374
   },
   "thresholds": {
     "alarm_sticky_topo": 2.1
   },
   "signal_quality": {
     "hit_rate": 0.6923076923076923,
-    "false_fire_rate": 0.1644270024751907,
+    "false_fire_rate": 0.16440323447830213,
     "event_count": 13,
     "years_observed": 28
   },
@@ -39,43 +39,37 @@
     "assets": {
       "equities": {
         "label": "Equities",
-        "topo_z": -0.22819543602430575,
+        "topo_z": 0.7418410906710374,
         "stressed": false,
         "available": true
       },
       "treasuries": {
         "label": "Treasuries",
-        "topo_z": -0.41150470430775654,
+        "topo_z": -0.01696196382933974,
         "stressed": false,
         "available": true
       },
       "credit": {
         "label": "Credit",
-        "topo_z": -0.7070474890212516,
+        "topo_z": -0.6700099747086306,
         "stressed": false,
         "available": true
       },
       "commodities": {
         "label": "Commodities",
-        "topo_z": 0.8761537589707797,
+        "topo_z": 0.8760108729678764,
         "stressed": false,
         "available": true
       },
       "dollar": {
         "label": "Dollar",
-        "topo_z": -0.2637916012536222,
+        "topo_z": -0.2637624998847264,
         "stressed": false,
         "available": true
       }
     }
   },
   "history": [
-    {
-      "date": "2023-07-07",
-      "alarm": false,
-      "sticky": 1.6000681523254814,
-      "spx": 4398.9501953125
-    },
     {
       "date": "2023-07-10",
       "alarm": false,
@@ -4575,73 +4569,79 @@
       "alarm": false,
       "sticky": 0.19620969825610204,
       "spx": 7537.43017578125
+    },
+    {
+      "date": "2026-07-07",
+      "alarm": false,
+      "sticky": 0.7418410906710374,
+      "spx": 7503.85009765625
     }
   ],
   "freshness": {
-    "as_of": "2026-07-06",
+    "as_of": "2026-07-07",
     "per_input": {
       "spx": {
-        "last": "2026-07-06",
+        "last": "2026-07-07",
         "age_days": 0,
         "stale": false,
         "missing": false
       },
       "vix": {
-        "last": "2026-07-06",
+        "last": "2026-07-07",
         "age_days": 0,
         "stale": false,
         "missing": false
       },
       "vix3m": {
-        "last": "2026-07-06",
+        "last": "2026-07-07",
         "age_days": 0,
         "stale": false,
         "missing": false
       },
       "hyg": {
-        "last": "2026-07-06",
+        "last": "2026-07-07",
         "age_days": 0,
         "stale": false,
         "missing": false
       },
       "lqd": {
-        "last": "2026-07-06",
+        "last": "2026-07-07",
         "age_days": 0,
         "stale": false,
         "missing": false
       },
       "baa10y": {
-        "last": "2026-07-01",
+        "last": "2026-07-02",
         "age_days": 5,
         "stale": false,
         "missing": false
       },
       "aaa10y": {
-        "last": "2026-07-01",
+        "last": "2026-07-02",
         "age_days": 5,
         "stale": false,
         "missing": false
       },
       "t10y2y": {
-        "last": "2026-07-06",
+        "last": "2026-07-07",
         "age_days": 0,
         "stale": false,
         "missing": false
       },
       "nfci": {
         "last": "2026-06-26",
-        "age_days": 10,
+        "age_days": 11,
         "stale": false,
         "missing": false
       },
       "sub_topology": {
-        "last": "2026-07-06",
+        "last": "2026-07-07",
         "age_days": 0,
         "stale": false,
         "missing": false
       },
       "p_turbulent": {
-        "last": "2026-07-06",
+        "last": "2026-07-07",
         "age_days": 0,
         "stale": false,
         "missing": false
@@ -4649,5 +4649,5 @@
     },
     "degraded": false
   },
-  "generated_at": "2026-07-06T22:57:57.906558+00:00"
+  "generated_at": "2026-07-07T22:52:41.759694+00:00"
 }

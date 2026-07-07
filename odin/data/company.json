@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-07-06",
+  "as_of": "2026-07-07",
   "price": {
-    "last": 195.5500030517578,
-    "prev_close": 194.8300018310547,
-    "change_pct": 0.36955356666652506,
-    "ytd_pct": 3.5477875200965903,
+    "last": 196.92999267578125,
+    "prev_close": 195.5500030517578,
+    "change_pct": 0.7056965494693257,
+    "ytd_pct": 4.278520683677756,
     "high_52w": 236.5399932861328,
     "low_52w": 157.33999633789062,
     "currency": "USD"
@@ -14,9 +14,9 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 4736416743424.0,
-    "pe": 29.946402,
-    "forward_pe": 15.319917,
+    "market_cap": 4769841152000.0,
+    "pe": 30.157732,
+    "forward_pe": 15.428029,
     "dividend_yield": 0.51,
     "beta": 2.211,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
@@ -2029,6 +2029,14 @@
       "l": 194.0,
       "c": 195.5500030517578,
       "v": 96954806
+    },
+    {
+      "t": "2026-07-07",
+      "o": 192.3699951171875,
+      "h": 198.41000366210938,
+      "l": 191.14999389648438,
+      "c": 196.92999267578125,
+      "v": 122966441
     }
   ],
   "earnings": {
@@ -2037,67 +2045,67 @@
   },
   "implied_move": {
     "expiry": "2026-07-08",
-    "move_pct": 2.2935310304305743,
-    "straddle": 4.485
+    "move_pct": 1.6300208802042833,
+    "straddle": 3.21
   },
   "options": {
     "expiry": "2026-07-08",
-    "atm_strike": 195.0,
-    "call_iv": 0.3305731005859375,
-    "put_iv": 0.313483427734375,
-    "atm_iv": 0.32202826416015623,
-    "days_to_expiry": 2
+    "atm_strike": 197.5,
+    "call_iv": 0.2778392529296875,
+    "put_iv": 0.27295648925781246,
+    "atm_iv": 0.27539787109374997,
+    "days_to_expiry": 1
   },
   "consensus": null,
   "news": [
     {
-      "title": "This Semiconductor ETF Is Up 54% This Year and Refuses to Own Intel",
+      "title": "2 Beaten-Down Artificial Intelligence (AI) Stocks That Will Surge at Least 40% Over the Next Year, According to Wall Street",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/07/07/beaten-down-artificial-intelligence-ai-stocks/",
+      "published": "2026-07-07T22:20:00+00:00"
+    },
+    {
+      "title": "SpaceX Has Joined the Nasdaq-100. Here's What That Means for Index Investors",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/07/07/spacex-has-joined-the-nasdaq-100-heres-what-that-means-for-index-investors/",
+      "published": "2026-07-07T22:16:06+00:00"
+    },
+    {
+      "title": "Why Fiserv Stock Topped the Market Today",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/07/07/why-fiserv-stock-topped-the-market-today/",
+      "published": "2026-07-07T22:15:26+00:00"
+    },
+    {
+      "title": "Why Sandisk Stock Jumped 34% in June",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/07/07/why-sandisk-stock-jumped-34-in-june/",
+      "published": "2026-07-07T22:05:00+00:00"
+    },
+    {
+      "title": "Microsoft Looks to Make a Major Reset as It Says This Area of Its Business \"Is Not Healthy\"",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/07/07/microsoft-looks-to-make-a-major-reset-as-it-says-t/",
+      "published": "2026-07-07T21:51:02+00:00"
+    },
+    {
+      "title": "Nervous About the Stock Market? These 7 Words From Warren Buffett Might Change Your Mind.",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/07/07/nervous-about-stock-market-7-words-warren-buffett/",
+      "published": "2026-07-07T21:35:00+00:00"
+    },
+    {
+      "title": "Hormuz Tolls Are Just the Beginning: The World\u2019s Busiest Shipping Route Could Be Next",
       "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/etf/2026/07/06/this-semiconductor-etf-is-up-54-this-year-and-refuses-to-own-intel/",
-      "published": "2026-07-06T22:49:21+00:00"
+      "url": "https://247wallst.com/investing/2026/07/07/hormuz-tolls-are-just-the-beginning-the-worlds-busiest-shipping-route-could-be-next/",
+      "published": "2026-07-07T21:32:19+00:00"
     },
     {
-      "title": "Dow Jones Futures: AI Stocks Astera, Bloom, Tesla Rebound; SpaceX Slides Ahead Of Nasdaq-100 Inclusion",
+      "title": "Amazon Stocks Climbs As AI Push Drives $25 Billion Bond Sale",
       "publisher": "Investor's Business Daily",
-      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-ai-stocks-astera-bloom-nvidia-tesla/?src=A00220&yptr=yahoo",
-      "published": "2026-07-06T22:38:10+00:00"
-    },
-    {
-      "title": "Jim Cramer Says Buy Nvidia as Chipmaker Rejects 2028 AI Delay Claims",
-      "publisher": "BeInCrypto",
-      "url": "https://beincrypto.com/jim-cramer-buy-nvidia-delay-claims/",
-      "published": "2026-07-06T22:30:00+00:00"
-    },
-    {
-      "title": "Why Charles Schwab Stock Bumped Almost 4% Higher on Monday",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/06/why-charles-schwab-stock-bumped-almost-4-higher-on/",
-      "published": "2026-07-06T22:18:33+00:00"
-    },
-    {
-      "title": "Why Lemonade Stock Leaped Today",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/06/why-lemonade-stock-is-up-today/",
-      "published": "2026-07-06T22:17:40+00:00"
-    },
-    {
-      "title": "Is Meta Platforms a Bargain or a Value Trap?",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/06/is-meta-platforms-a-bargain-or-a-value-trap/",
-      "published": "2026-07-06T22:05:00+00:00"
-    },
-    {
-      "title": "Meta Platforms Is Entering the Neocloud Business. Here's Why CoreWeave Investors Should Not Worry.",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/06/meta-platforms-is-entering-the-neocloud-business-h/",
-      "published": "2026-07-06T21:50:00+00:00"
-    },
-    {
-      "title": "Why Abacus Global Management Stock Inched Higher Today",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/06/why-abacus-global-management-stock-inched-higher-t/",
-      "published": "2026-07-06T21:42:45+00:00"
+      "url": "https://www.investors.com/news/technology/amazon-stock-25-billion-bond-ai-costs-rising/?src=A00220&yptr=yahoo",
+      "published": "2026-07-07T21:29:52+00:00"
     }
   ],
-  "generated_at": "2026-07-06T22:57:58.233392+00:00"
+  "generated_at": "2026-07-07T22:52:42.119320+00:00"
 }
