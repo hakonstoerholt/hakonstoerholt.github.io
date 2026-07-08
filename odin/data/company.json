@@ -1,35 +1,27 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-07-07",
+  "as_of": "2026-07-08",
   "price": {
-    "last": 196.92999267578125,
-    "prev_close": 195.5500030517578,
-    "change_pct": 0.7056965494693257,
-    "ytd_pct": 4.278520683677756,
+    "last": 204.1199951171875,
+    "prev_close": 196.92999267578125,
+    "change_pct": 3.651044893523969,
+    "ytd_pct": 8.08577628814151,
     "high_52w": 236.5399932861328,
-    "low_52w": 157.33999633789062,
+    "low_52w": 158.38999938964844,
     "currency": "USD"
   },
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 4769841152000.0,
-    "pe": 30.157732,
-    "forward_pe": 15.428029,
+    "market_cap": 4943990226944.0,
+    "pe": 31.211008,
+    "forward_pe": 15.991313,
     "dividend_yield": 0.51,
     "beta": 2.211,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-07-07",
-      "o": 158.1999969482422,
-      "h": 159.30999755859375,
-      "l": 157.33999633789062,
-      "c": 158.24000549316406,
-      "v": 140139000
-    },
     {
       "t": "2025-07-08",
       "o": 159.3300018310547,
@@ -2037,6 +2029,14 @@
       "l": 191.14999389648438,
       "c": 196.92999267578125,
       "v": 122966441
+    },
+    {
+      "t": "2026-07-08",
+      "o": 195.1300048828125,
+      "h": 205.14999389648438,
+      "l": 195.10499572753906,
+      "c": 204.1199951171875,
+      "v": 145806099
     }
   ],
   "earnings": {
@@ -2044,68 +2044,68 @@
     "history": []
   },
   "implied_move": {
-    "expiry": "2026-07-08",
-    "move_pct": 1.6300208802042833,
-    "straddle": 3.21
+    "expiry": "2026-07-10",
+    "move_pct": 2.704291657870611,
+    "straddle": 5.5200000000000005
   },
   "options": {
-    "expiry": "2026-07-08",
-    "atm_strike": 197.5,
-    "call_iv": 0.2778392529296875,
-    "put_iv": 0.27295648925781246,
-    "atm_iv": 0.27539787109374997,
-    "days_to_expiry": 1
+    "expiry": "2026-07-10",
+    "atm_strike": 205.0,
+    "call_iv": 0.37964487548828124,
+    "put_iv": 0.370123486328125,
+    "atm_iv": 0.3748841809082031,
+    "days_to_expiry": 2
   },
   "consensus": null,
   "news": [
     {
-      "title": "2 Beaten-Down Artificial Intelligence (AI) Stocks That Will Surge at Least 40% Over the Next Year, According to Wall Street",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/07/beaten-down-artificial-intelligence-ai-stocks/",
-      "published": "2026-07-07T22:20:00+00:00"
-    },
-    {
-      "title": "SpaceX Has Joined the Nasdaq-100. Here's What That Means for Index Investors",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/07/spacex-has-joined-the-nasdaq-100-heres-what-that-means-for-index-investors/",
-      "published": "2026-07-07T22:16:06+00:00"
-    },
-    {
-      "title": "Why Fiserv Stock Topped the Market Today",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/07/why-fiserv-stock-topped-the-market-today/",
-      "published": "2026-07-07T22:15:26+00:00"
-    },
-    {
-      "title": "Why Sandisk Stock Jumped 34% in June",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/07/why-sandisk-stock-jumped-34-in-june/",
-      "published": "2026-07-07T22:05:00+00:00"
-    },
-    {
-      "title": "Microsoft Looks to Make a Major Reset as It Says This Area of Its Business \"Is Not Healthy\"",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/07/microsoft-looks-to-make-a-major-reset-as-it-says-t/",
-      "published": "2026-07-07T21:51:02+00:00"
-    },
-    {
-      "title": "Nervous About the Stock Market? These 7 Words From Warren Buffett Might Change Your Mind.",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/07/nervous-about-stock-market-7-words-warren-buffett/",
-      "published": "2026-07-07T21:35:00+00:00"
-    },
-    {
-      "title": "Hormuz Tolls Are Just the Beginning: The World\u2019s Busiest Shipping Route Could Be Next",
-      "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/07/07/hormuz-tolls-are-just-the-beginning-the-worlds-busiest-shipping-route-could-be-next/",
-      "published": "2026-07-07T21:32:19+00:00"
-    },
-    {
-      "title": "Amazon Stocks Climbs As AI Push Drives $25 Billion Bond Sale",
+      "title": "Dow Jones Futures: Oil Spikes On Iran News, But Nvidia, Valero, Dell Rise; SpaceX Hits New Low",
       "publisher": "Investor's Business Daily",
-      "url": "https://www.investors.com/news/technology/amazon-stock-25-billion-bond-ai-costs-rising/?src=A00220&yptr=yahoo",
-      "published": "2026-07-07T21:29:52+00:00"
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-oil-spikes-iran-news-nvidia-valero-dell-spacex-low/?src=A00220&yptr=yahoo",
+      "published": "2026-07-08T22:45:12+00:00"
+    },
+    {
+      "title": "Memory Stock Sell-Off: Is This the Time to Buy Micron Technology and Sandisk Like There's No Tomorrow?",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/07/08/memory-stock-sell-off-is-this-the-time-to-buy-micr/",
+      "published": "2026-07-08T22:43:00+00:00"
+    },
+    {
+      "title": "Why Occidental Petroleum Stock Crushed it on Wednesday",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/07/08/why-occidental-petroleum-stock-crushed-it-on-wedne/",
+      "published": "2026-07-08T22:27:32+00:00"
+    },
+    {
+      "title": "The Stock Market Just Flashed a Warning Sign Only Seen Once Before in 155 Years -- and History is Very Clear About What Happens Next.",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/07/08/the-stock-market-just-flashed-a-warning-sign-only/",
+      "published": "2026-07-08T22:25:00+00:00"
+    },
+    {
+      "title": "Why Did Palo Alto Networks Stock Drop Today?",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/07/08/why-did-palo-alto-networks-stock-drop-today/",
+      "published": "2026-07-08T22:24:07+00:00"
+    },
+    {
+      "title": "Why Penguin Stock Popped Today",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/07/08/why-penguin-stock-is-up-today/",
+      "published": "2026-07-08T22:21:35+00:00"
+    },
+    {
+      "title": "The Latest Selloff Is the Perfect Buying Opportunity for Nvidia and Broadcom",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/07/08/selloff-perfect-buy-opportunity-nvidia-broadcom/",
+      "published": "2026-07-08T22:19:00+00:00"
+    },
+    {
+      "title": "China warned that Anthropic's Claude Code puts your data at risk. Is that true?",
+      "publisher": "Yahoo Finance Video",
+      "url": "https://finance.yahoo.com/video/china-warned-that-anthropics-claude-code-puts-your-data-at-risk-is-that-true-203951387.html",
+      "published": "2026-07-08T20:39:51+00:00"
     }
   ],
-  "generated_at": "2026-07-07T22:52:42.119320+00:00"
+  "generated_at": "2026-07-08T22:58:11.678406+00:00"
 }
