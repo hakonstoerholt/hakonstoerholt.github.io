@@ -1,35 +1,27 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-07-09",
+  "as_of": "2026-07-10",
   "price": {
-    "last": 202.77999877929688,
-    "prev_close": 204.1199951171875,
-    "change_pct": -0.6564748040099211,
-    "ytd_pct": 7.376220400091338,
+    "last": 210.9600067138672,
+    "prev_close": 202.77999877929688,
+    "change_pct": 4.033932332484791,
+    "ytd_pct": 11.707704472210745,
     "high_52w": 236.5399932861328,
-    "low_52w": 161.16000366210938,
+    "low_52w": 161.61000061035156,
     "currency": "USD"
   },
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 4911534178304.0,
-    "pe": 31.053598,
-    "forward_pe": 15.88708,
+    "market_cap": 5109662089216.0,
+    "pe": 32.30628,
+    "forward_pe": 16.494099,
     "dividend_yield": 0.49,
     "beta": 2.211,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-07-09",
-      "o": 161.22000122070312,
-      "h": 164.4199981689453,
-      "l": 161.16000366210938,
-      "c": 162.8800048828125,
-      "v": 183656400
-    },
     {
       "t": "2025-07-10",
       "o": 164.32000732421875,
@@ -2037,6 +2029,14 @@
       "l": 198.97000122070312,
       "c": 202.77999877929688,
       "v": 130728739
+    },
+    {
+      "t": "2026-07-10",
+      "o": 201.9199981689453,
+      "h": 211.0,
+      "l": 201.9199981689453,
+      "c": 210.9600067138672,
+      "v": 147203662
     }
   ],
   "earnings": {
@@ -2044,68 +2044,68 @@
     "history": []
   },
   "implied_move": {
-    "expiry": "2026-07-10",
-    "move_pct": 1.6964197754750217,
-    "straddle": 3.44
+    "expiry": "2026-07-13",
+    "move_pct": 1.8178801090016798,
+    "straddle": 3.835
   },
   "options": {
-    "expiry": "2026-07-10",
-    "atm_strike": 202.5,
-    "call_iv": 0.2934640966796874,
-    "put_iv": 0.2885813330078124,
-    "atm_iv": 0.2910227148437499,
-    "days_to_expiry": 1
+    "expiry": "2026-07-13",
+    "atm_strike": 210.0,
+    "call_iv": 0.2186357434082031,
+    "put_iv": 0.21509573974609375,
+    "atm_iv": 0.21686574157714844,
+    "days_to_expiry": 3
   },
   "consensus": null,
   "news": [
     {
-      "title": "SK Hynix's US listing, Delta earnings, housing bill: What to Watch",
-      "publisher": "Yahoo Finance Video",
-      "url": "https://finance.yahoo.com/video/sk-hynixs-us-listing-delta-230000258.html",
-      "published": "2026-07-09T23:00:00+00:00"
-    },
-    {
-      "title": "Everyone Is Watching Greg Abel. But Another Berkshire Hathaway Stock Picker Is Quietly Winning in 2026.",
+      "title": "3 Reasons I Think Meta Platforms is a Screaming Buy Right Now",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/09/everyone-is-watching-greg-abel-but-another-berkshi/",
-      "published": "2026-07-09T22:50:00+00:00"
+      "url": "https://www.fool.com/investing/2026/07/10/3-reasons-i-think-meta-platforms-is-a-screaming-bu/",
+      "published": "2026-07-10T22:22:00+00:00"
     },
     {
-      "title": "Pepsi Reported Higher Revenue and Earnings. So Why Is the High-Yield Dividend Stock Hovering Around a 52-Week Low?",
+      "title": "I\u2019d Put $25,000 in These 2 ETFs Before the Next Earnings Season",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/etf/2026/07/10/id-put-25000-in-these-2-etfs-before-the-next-earnings-season/",
+      "published": "2026-07-10T22:12:42+00:00"
+    },
+    {
+      "title": "Why Criteo Stock Was on Fire This Week",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/09/pepsi-reported-higher-revenue-and-earnings-so-why-is-the-high-yield-dividend-stock-hovering-around-a-52-week-low/",
-      "published": "2026-07-09T22:44:42+00:00"
+      "url": "https://www.fool.com/investing/2026/07/10/why-criteo-stock-was-on-fire-this-week/",
+      "published": "2026-07-10T21:48:18+00:00"
     },
     {
-      "title": "Dow Jones Futures: Micron, Sandisk Jump As Nasdaq Tops Key Level; Delta, Taiwan Semi, SK Hynix Due",
-      "publisher": "Investor's Business Daily",
-      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-nasdaq-micron-sandisk-jump-delta-taiwan-semi-sk-hynix/?src=A00220&yptr=yahoo",
-      "published": "2026-07-09T22:32:30+00:00"
-    },
-    {
-      "title": "Alphabet vs. Meta: Which AI Stock Is the Better Buy Right Now?",
+      "title": "Why Figma Stock Lost 52% in the First Half of 2026",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/09/alphabet-vs-meta-which-ai-stock-is-the-better-buy/",
-      "published": "2026-07-09T22:32:00+00:00"
+      "url": "https://www.fool.com/investing/2026/07/10/why-figma-stock-lost-52-in-the-first-half-of-2026/",
+      "published": "2026-07-10T21:33:20+00:00"
     },
     {
-      "title": "Micron Technology Is Quietly Setting Up for a Strong Earnings Catalyst",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/09/micron-technology-is-quietly-setting-up-for-a-stro/",
-      "published": "2026-07-09T22:25:00+00:00"
+      "title": "Apple vs. Broadcom: Is Either Stock a Buy After Their $30 Billion Chip Partnership?",
+      "publisher": "Zacks",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/apple-vs-broadcom-either-stock-213200451.html",
+      "published": "2026-07-10T21:32:00+00:00"
     },
     {
-      "title": "Chip titan SK hynix readies for mega US listing",
-      "publisher": "AFP",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/chip-titan-sk-hynix-set-025602686.html",
-      "published": "2026-07-09T22:01:04+00:00"
+      "title": "Why Is Meta (META) Stock Soaring Today",
+      "publisher": "StockStory",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/why-meta-meta-stock-soaring-210320840.html",
+      "published": "2026-07-10T21:03:20+00:00"
     },
     {
-      "title": "Why Micron Stock Surged Today",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/09/why-micron-stock-surged-today/",
-      "published": "2026-07-09T21:50:33+00:00"
+      "title": "SK Hynix: How It Measures Up After Day One",
+      "publisher": "The Wall Street Journal",
+      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-07-10-2026/card/sk-hynix-how-it-measures-up-after-day-one-Dplh4KN3NJvoYESgVtII?siteid=yhoof2&yptr=yahoo",
+      "published": "2026-07-10T20:54:14+00:00"
+    },
+    {
+      "title": "Why the Pure Bitcoin-Miner Fund Crushed the Blockchain Basket, Up 184%",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/07/10/why-the-pure-bitcoin-miner-fund-crushed-the-blockchain-basket-up-184/",
+      "published": "2026-07-10T20:48:57+00:00"
     }
   ],
-  "generated_at": "2026-07-09T23:04:05.896537+00:00"
+  "generated_at": "2026-07-10T22:51:36.463479+00:00"
 }
