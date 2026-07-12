@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-11T22:38:51.307488+00:00",
+  "generated_at": "2026-07-12T22:38:39.264346+00:00",
   "regime": {
-    "regime": "Unknown",
-    "alarm": null,
-    "headline": "A data input is stale (vix3m). The regime signal is suppressed; hold current positioning until it refreshes.",
+    "regime": "Watch",
+    "alarm": false,
+    "headline": "Calm for now, but stress is building \u2014 the volatility model has flipped to turbulent, with the macro / yield-curve picture leads at +0.2\u03c3. No alarm yet (topology trigger 1.4\u03c3 off); full exposure (1\u00d7).",
     "as_of": "2026-07-10",
-    "degraded": true
+    "degraded": false
   },
   "company": {
     "ticker": "NVDA",
