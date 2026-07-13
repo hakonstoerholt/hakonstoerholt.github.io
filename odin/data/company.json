@@ -1,43 +1,27 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-07-10",
+  "as_of": "2026-07-13",
   "price": {
-    "last": 210.9600067138672,
-    "prev_close": 202.77999877929688,
-    "change_pct": 4.033932332484791,
-    "ytd_pct": 11.707704472210745,
+    "last": 203.52999877929688,
+    "prev_close": 210.9600067138672,
+    "change_pct": -3.521998340020871,
+    "ytd_pct": 7.773360975024057,
     "high_52w": 236.5399932861328,
-    "low_52w": 161.61000061035156,
+    "low_52w": 162.02000427246094,
     "currency": "USD"
   },
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 5109662089216.0,
-    "pe": 32.25688,
-    "forward_pe": 16.494099,
+    "market_cap": 4929700233216.0,
+    "pe": 31.120794,
+    "forward_pe": 15.912429,
     "dividend_yield": 0.47,
     "beta": 2.211,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation has a strategic collaboration with Palantir Technologies Inc. to deliver an intelligent engine for running NVIDIA AI and Nemotron open models in sovereign environments. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-07-10",
-      "o": 164.32000732421875,
-      "h": 164.5,
-      "l": 161.61000061035156,
-      "c": 164.10000610351562,
-      "v": 167704100
-    },
-    {
-      "t": "2025-07-11",
-      "o": 163.72000122070312,
-      "h": 167.88999938964844,
-      "l": 163.47000122070312,
-      "c": 164.9199981689453,
-      "v": 193633300
-    },
     {
       "t": "2025-07-14",
       "o": 165.3699951171875,
@@ -2037,6 +2021,14 @@
       "l": 201.9199981689453,
       "c": 210.9600067138672,
       "v": 148421001
+    },
+    {
+      "t": "2026-07-13",
+      "o": 208.5399932861328,
+      "h": 210.57000732421875,
+      "l": 203.35000610351562,
+      "c": 203.52999877929688,
+      "v": 113202886
     }
   ],
   "earnings": {
@@ -2044,68 +2036,68 @@
     "history": []
   },
   "implied_move": {
-    "expiry": "2026-07-13",
-    "move_pct": 1.8178801090016798,
-    "straddle": 3.835
+    "expiry": "2026-07-15",
+    "move_pct": 2.5352528034923156,
+    "straddle": 5.16
   },
   "options": {
-    "expiry": "2026-07-13",
-    "atm_strike": 210.0,
-    "call_iv": 0.3090889404296875,
-    "put_iv": 0.3042061767578125,
-    "atm_iv": 0.30664755859375,
-    "days_to_expiry": 1
+    "expiry": "2026-07-15",
+    "atm_strike": 202.5,
+    "call_iv": 0.3544986425781249,
+    "put_iv": 0.3518131225585937,
+    "atm_iv": 0.3531558825683593,
+    "days_to_expiry": 2
   },
   "consensus": null,
   "news": [
     {
-      "title": "Dow Jones Futures Fall, Oil Prices Rise Amid New U.S.-Iran Attacks; Nvidia, Micron, Sandisk Near Buy Points",
-      "publisher": "Investor's Business Daily",
-      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-us-iran-attacks-nvidia-micron-sandisk-taiwan-semiconductor/?src=A00220&yptr=yahoo",
-      "published": "2026-07-12T22:34:53+00:00"
+      "title": "Why Fortune 500 companies are flocking to open source AI",
+      "publisher": "Yahoo Finance Video",
+      "url": "https://finance.yahoo.com/video/why-fortune-500-companies-are-flocking-to-open-source-ai-223952992.html",
+      "published": "2026-07-13T22:39:52+00:00"
     },
     {
-      "title": "Best Artificial Intelligence (AI) Stock: AMD, Nvidia, or Broadcom",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/12/best-artificial-intelligence-ai-stock-amd-nvidia-o/",
-      "published": "2026-07-12T22:25:00+00:00"
+      "title": "Analyst Dan Ives Calls Memory Chips the \u201cGolden Child\u201d of the AI Revolution with \u201c15-to-1\u201d Demand-to-Supply Imbalance",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/07/13/analyst-dan-ives-calls-memory-chips-the-golden-child-of-the-ai-revolution-with-15-to-1-demand-to-supply-imbalance/",
+      "published": "2026-07-13T22:34:25+00:00"
     },
     {
-      "title": "Meet the Vanguard ETF That Has Crushed the S&P 500 Over the Last 10 Years",
+      "title": "Oracle vs. IBM: Which Cloud Computing Stock Is the Better Buy?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/12/meet-vanguard-etf-crushed-sp-500-10-years-vgt/",
-      "published": "2026-07-12T21:43:00+00:00"
+      "url": "https://www.fool.com/investing/2026/07/13/oracle-vs-ibm-which-cloud-computing-stock-is-the-b/",
+      "published": "2026-07-13T22:26:00+00:00"
     },
     {
-      "title": "Billionaire Ken Griffin Boosted His Stake in This Dividend King by 146%. Here's Why It's a Dream Stock for Risk-Averse Investors.",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/12/billionaire-ken-griffin-boosted-his-stake-in-this/",
-      "published": "2026-07-12T21:30:00+00:00"
+      "title": "Alphabet (GOOGL) Is Turning Its TPU Chips Into An AI Compute Business",
+      "publisher": "Simply Wall St.",
+      "url": "https://finance.yahoo.com/technology/ai/articles/alphabet-googl-turning-tpu-chips-221631957.html",
+      "published": "2026-07-13T22:16:31+00:00"
     },
     {
-      "title": "Is PayPal Stock a Bargain or a Value Trap?",
+      "title": "Think You've Mastered Retirement Plan Withdrawals? Here's the Big Mistake You Could Be Making",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/12/is-paypal-stock-a-bargain-or-a-value-trap/",
-      "published": "2026-07-12T21:20:00+00:00"
+      "url": "https://www.fool.com/retirement/2026/07/13/think-youve-mastered-retirement-plan-withdrawals-h/",
+      "published": "2026-07-13T22:12:00+00:00"
     },
     {
-      "title": "Retiring with $1.2 Million? Here's How to Avoid Running Out of Savings",
+      "title": "Why FuboTV Stock Rallied Today",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/retirement/2026/07/12/retiring-with-12-million-heres-how-to-avoid-runnin/",
-      "published": "2026-07-12T21:09:00+00:00"
+      "url": "https://www.fool.com/investing/2026/07/13/why-fubotv-stock-is-up-today/",
+      "published": "2026-07-13T21:55:14+00:00"
     },
     {
-      "title": "Prediction: SpaceX Shares Can Reach $220 by End of 2026",
+      "title": "Here's Why USA Rare Earth Stock Rocketed 81% Higher in the First Half of 2026",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/12/predict-spacex-shares-can-reach-220-2026/",
-      "published": "2026-07-12T20:40:00+00:00"
+      "url": "https://www.fool.com/investing/2026/07/13/heres-why-usa-rare-earth-stock-rocketed-81-higher/",
+      "published": "2026-07-13T21:53:06+00:00"
     },
     {
-      "title": "Amazon Just Announced Shocking $25 Billion News. Should Investors Worry?",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/12/amazon-just-announced-shocking-25-billion-news-sho/",
-      "published": "2026-07-12T20:24:00+00:00"
+      "title": "TSMC Sales Jump 36% as Memory Stocks Plunge. What It Means for NVIDIA and AMD",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/07/13/tsmc-sales-jump-36-as-memory-stocks-plunge-what-it-means-for-nvidia-and-amd/",
+      "published": "2026-07-13T21:45:00+00:00"
     }
   ],
-  "generated_at": "2026-07-12T22:38:39.261513+00:00"
+  "generated_at": "2026-07-13T22:51:00.804030+00:00"
 }
