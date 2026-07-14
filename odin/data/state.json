@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-07-13T22:51:00.806163+00:00",
+  "generated_at": "2026-07-14T22:47:38.158390+00:00",
   "regime": {
-    "regime": "Watch",
+    "regime": "Calm",
     "alarm": false,
-    "headline": "Calm for now, but stress is building \u2014 the volatility model has flipped to turbulent, with return-path topology leads at +0.3\u03c3. No alarm yet (topology trigger 1.4\u03c3 off); full exposure (1\u00d7).",
-    "as_of": "2026-07-13",
+    "headline": "Calm \u2014 no stress alarm. Return-path topology leads at +0.3\u03c3, and the topology trigger sits 1.4\u03c3 away. Fragility Low; full exposure (1\u00d7).",
+    "as_of": "2026-07-14",
     "degraded": false
   },
   "company": {
     "ticker": "NVDA",
-    "last": 203.52999877929688,
-    "change_pct": -3.521998340020871,
-    "as_of": "2026-07-13"
+    "last": 211.8000030517578,
+    "change_pct": 4.063285177645359,
+    "as_of": "2026-07-14"
   }
 }
