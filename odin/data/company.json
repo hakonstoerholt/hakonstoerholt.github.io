@@ -1,35 +1,27 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-07-14",
+  "as_of": "2026-07-15",
   "price": {
-    "last": 211.8000030517578,
-    "prev_close": 203.52999877929688,
-    "change_pct": 4.063285177645359,
-    "ytd_pct": 12.15249997697243,
+    "last": 212.5,
+    "prev_close": 211.8000030517578,
+    "change_pct": 0.33049902651376417,
+    "ytd_pct": 12.523162897607175,
     "high_52w": 236.5399932861328,
-    "low_52w": 162.02000427246094,
+    "low_52w": 164.07000732421875,
     "currency": "USD"
   },
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 5130007609344.0,
-    "pe": 32.434914,
-    "forward_pe": 16.558996,
-    "dividend_yield": 0.49,
+    "market_cap": 5146962558976.0,
+    "pe": 32.592026,
+    "forward_pe": 16.595171,
+    "dividend_yield": 0.47,
     "beta": 2.211,
-    "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation has a strategic collaboration with Palantir Technologies Inc. to deliver an intelligent engine for running NVIDIA AI and Nemotron open models in sovereign environments. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
+    "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-07-14",
-      "o": 165.3699951171875,
-      "h": 165.49000549316406,
-      "l": 162.02000427246094,
-      "c": 164.07000732421875,
-      "v": 136975800
-    },
     {
       "t": "2025-07-15",
       "o": 171.19000244140625,
@@ -2037,6 +2029,14 @@
       "l": 203.8000030517578,
       "c": 211.8000030517578,
       "v": 118014431
+    },
+    {
+      "t": "2026-07-15",
+      "o": 212.00999450683594,
+      "h": 213.80999755859375,
+      "l": 206.0399932861328,
+      "c": 212.5,
+      "v": 118979465
     }
   ],
   "earnings": {
@@ -2044,68 +2044,68 @@
     "history": []
   },
   "implied_move": {
-    "expiry": "2026-07-15",
-    "move_pct": 1.7634560652424889,
-    "straddle": 3.735
+    "expiry": "2026-07-17",
+    "move_pct": 2.4941176470588236,
+    "straddle": 5.300000000000001
   },
   "options": {
-    "expiry": "2026-07-15",
+    "expiry": "2026-07-17",
     "atm_strike": 212.5,
-    "call_iv": 0.29834686035156244,
-    "put_iv": 0.29688203124999996,
-    "atm_iv": 0.2976144458007812,
-    "days_to_expiry": 1
+    "call_iv": 0.3513248461914062,
+    "put_iv": 0.34229173339843744,
+    "atm_iv": 0.34680828979492184,
+    "days_to_expiry": 2
   },
   "consensus": null,
   "news": [
     {
-      "title": "Dow Jones Futures: Goldman, CrowdStrike Jump, But AI Stocks Need To Do This",
+      "title": "Dow Jones Futures: Apple, Google Mask Dell, Sandisk, Micron Sell-Off; J.B. Hunt Jumps Late",
       "publisher": "Investor's Business Daily",
-      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-goldman-crowdstrike-ai-stocks-asml-morgan-stanley/?src=A00220&yptr=yahoo",
-      "published": "2026-07-14T22:36:42+00:00"
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-apple-google-dell-sandisk-micron-sell-off-spacex-ipo-price-taiwan-semiconductor-ge-aero/?src=A00220&yptr=yahoo",
+      "published": "2026-07-15T22:36:49+00:00"
     },
     {
-      "title": "Warren Buffett Has Recommended This Surprising Investment for All Investors During Any Market Environment. Here's How It's Turned Out, According to History.",
+      "title": "Here's What IBM's Profit Warning Tells Us About the AI Market Right Now -- and What It Means for Investors",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/14/warren-buffett-has-recommended-this-surprising-inv/",
-      "published": "2026-07-14T22:30:00+00:00"
+      "url": "https://www.fool.com/investing/2026/07/15/heres-what-ibms-profit-warning-tells-us-about-the/",
+      "published": "2026-07-15T22:30:00+00:00"
     },
     {
-      "title": "SoundHound AI Stock Is Down 37% in 2026. Is This the Ultimate Buying Opportunity, or Is More Downside Ahead?",
+      "title": "Predicting Where SpaceX Is Headed by the End of 2026",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/14/soundhound-ai-stock-down-37-in-2026-buying-downsid/",
-      "published": "2026-07-14T22:25:00+00:00"
+      "url": "https://www.fool.com/investing/2026/07/15/predicting-where-spacex-is-headed-by-end-of-2026/",
+      "published": "2026-07-15T21:41:00+00:00"
     },
     {
-      "title": "Oil Climbs to a 1-Month High as the U.S. and Iran Trade Attacks in the Strait of Hormuz. Here's What it Means for Energy Investors.",
+      "title": "Stripe and Advent Reportedly Bid $60.50 a Share for PayPal. Here's the Real Prize: Venmo.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/14/oil-climbs-to-a-1-month-high-as-the-u-s-and-iran-trade-attacks-in-the-strait-of-hormuz-here-s-what-it-means-for-energy-investors/",
-      "published": "2026-07-14T22:19:01+00:00"
+      "url": "https://www.fool.com/investing/2026/07/15/stripe-and-advent-reportedly-bid-6050-a-share-for-paypal-heres-the-real-prize-venmo/",
+      "published": "2026-07-15T21:35:01+00:00"
     },
     {
-      "title": "Why FormFactor (FORM) Stock Is Trading Up Today",
-      "publisher": "StockStory",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/why-formfactor-form-stock-trading-215911328.html",
-      "published": "2026-07-14T21:59:11+00:00"
-    },
-    {
-      "title": "Elon Musk's Tesla Posts Best Quarter in Two Years",
+      "title": "If You Invest $5,000 in the Vanguard Information Technology ETF Today, Here's What You Might Have in 20 Years",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/14/elon-musks-tesla-posts-best-quarter-in-two-years/",
-      "published": "2026-07-14T21:53:00+00:00"
+      "url": "https://www.fool.com/investing/2026/07/15/if-you-invest-in-vgt-how-much-in-20-years/",
+      "published": "2026-07-15T21:20:00+00:00"
     },
     {
-      "title": "China plans to let top AI firms buy limited NVIDIA Corporation (NVDA) H200 chips, the Information reports",
-      "publisher": "Insider Monkey",
-      "url": "https://finance.yahoo.com/technology/ai/articles/china-plans-let-top-ai-214422507.html",
-      "published": "2026-07-14T21:44:22+00:00"
+      "title": "Coherent (COHR) Stock May Be 11% Undervalued Despite Fresh AI Infrastructure News",
+      "publisher": "Simply Wall St.",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/coherent-cohr-stock-may-11-211015008.html",
+      "published": "2026-07-15T21:10:15+00:00"
     },
     {
-      "title": "Nvidia (NVDA) Stock Trades Up, Here Is Why",
-      "publisher": "StockStory",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-nvda-stock-trades-why-214311909.html",
-      "published": "2026-07-14T21:43:11+00:00"
+      "title": "Nvidia Stock Nears Buy Point On These Positive Signs",
+      "publisher": "Investor's Business Daily",
+      "url": "https://www.investors.com/news/technology/nvidia-stock-nears-buy-point-on-these-positive-signs/?src=A00220&yptr=yahoo",
+      "published": "2026-07-15T20:44:16+00:00"
+    },
+    {
+      "title": "YieldMax launches a new SpaceX options ETF: What investors should know",
+      "publisher": "Yahoo Finance Video",
+      "url": "https://finance.yahoo.com/video/yieldmax-launches-spacex-options-etf-201500551.html",
+      "published": "2026-07-15T20:15:00+00:00"
     }
   ],
-  "generated_at": "2026-07-14T22:47:38.155701+00:00"
+  "generated_at": "2026-07-15T22:48:47.292989+00:00"
 }
