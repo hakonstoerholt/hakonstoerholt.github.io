@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-07-15",
+  "as_of": "2026-07-17",
   "price": {
-    "last": 212.5,
-    "prev_close": 211.8000030517578,
-    "change_pct": 0.33049902651376417,
-    "ytd_pct": 12.523162897607175,
+    "last": 202.80999755859375,
+    "prev_close": 207.39999389648438,
+    "change_pct": -2.2131130535045007,
+    "ytd_pct": 7.392105376700986,
     "high_52w": 236.5399932861328,
     "low_52w": 164.07000732421875,
     "currency": "USD"
@@ -14,30 +14,14 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 5146962558976.0,
-    "pe": 32.592026,
-    "forward_pe": 16.595171,
-    "dividend_yield": 0.47,
+    "market_cap": 4912260841472.0,
+    "pe": 31.058191,
+    "forward_pe": 15.80593,
+    "dividend_yield": 0.48,
     "beta": 2.211,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-07-15",
-      "o": 171.19000244140625,
-      "h": 172.39999389648438,
-      "l": 169.1999969482422,
-      "c": 170.6999969482422,
-      "v": 230627400
-    },
-    {
-      "t": "2025-07-16",
-      "o": 171.05999755859375,
-      "h": 171.75,
-      "l": 168.89999389648438,
-      "c": 171.3699951171875,
-      "v": 158831500
-    },
     {
       "t": "2025-07-17",
       "o": 172.02000427246094,
@@ -2037,6 +2021,22 @@
       "l": 206.0399932861328,
       "c": 212.5,
       "v": 118979465
+    },
+    {
+      "t": "2026-07-16",
+      "o": 210.1699981689453,
+      "h": 211.0800018310547,
+      "l": 205.85000610351562,
+      "c": 207.39999389648438,
+      "v": 122986100
+    },
+    {
+      "t": "2026-07-17",
+      "o": 202.39999389648438,
+      "h": 206.64500427246094,
+      "l": 197.97000122070312,
+      "c": 202.80999755859375,
+      "v": 138213660
     }
   ],
   "earnings": {
@@ -2044,68 +2044,68 @@
     "history": []
   },
   "implied_move": {
-    "expiry": "2026-07-17",
-    "move_pct": 2.4941176470588236,
-    "straddle": 5.300000000000001
+    "expiry": "2026-07-20",
+    "move_pct": 2.327301443133417,
+    "straddle": 4.72
   },
   "options": {
-    "expiry": "2026-07-17",
-    "atm_strike": 212.5,
-    "call_iv": 0.3513248461914062,
-    "put_iv": 0.34229173339843744,
-    "atm_iv": 0.34680828979492184,
-    "days_to_expiry": 2
+    "expiry": "2026-07-20",
+    "atm_strike": 202.5,
+    "call_iv": 0.2778392529296875,
+    "put_iv": 0.2873606420898437,
+    "atm_iv": 0.2825999475097656,
+    "days_to_expiry": 3
   },
   "consensus": null,
   "news": [
     {
-      "title": "Dow Jones Futures: Apple, Google Mask Dell, Sandisk, Micron Sell-Off; J.B. Hunt Jumps Late",
-      "publisher": "Investor's Business Daily",
-      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-apple-google-dell-sandisk-micron-sell-off-spacex-ipo-price-taiwan-semiconductor-ge-aero/?src=A00220&yptr=yahoo",
-      "published": "2026-07-15T22:36:49+00:00"
-    },
-    {
-      "title": "Here's What IBM's Profit Warning Tells Us About the AI Market Right Now -- and What It Means for Investors",
+      "title": "CrowdStrike vs. NVIDIA: Which Growth Tech Stock Is a Better Buy in 2026, the Cybersecurity Giant or AI Leader?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/15/heres-what-ibms-profit-warning-tells-us-about-the/",
-      "published": "2026-07-15T22:30:00+00:00"
+      "url": "https://www.fool.com/coverage/better-buy/2026/07/17/crowdstrike-vs-nvidia-which-growth-tech-stock-is-a-better-buy-in-2026-the-cybersecurity-giant-or-ai-leader/",
+      "published": "2026-07-17T21:59:01+00:00"
     },
     {
-      "title": "Predicting Where SpaceX Is Headed by the End of 2026",
+      "title": "UiPath Vs. ServiceNow: Which Agentic AI Stock Is the Better Buy?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/15/predicting-where-spacex-is-headed-by-end-of-2026/",
-      "published": "2026-07-15T21:41:00+00:00"
+      "url": "https://www.fool.com/investing/2026/07/17/uipath-vs-servicenow-which-agentic-ai-stock-is-the/",
+      "published": "2026-07-17T21:44:00+00:00"
     },
     {
-      "title": "Stripe and Advent Reportedly Bid $60.50 a Share for PayPal. Here's the Real Prize: Venmo.",
+      "title": "Stock Market Today, July 17: Stocks Slide as Semiconductor Rout Deepens",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/15/stripe-and-advent-reportedly-bid-6050-a-share-for-paypal-heres-the-real-prize-venmo/",
-      "published": "2026-07-15T21:35:01+00:00"
+      "url": "https://www.fool.com/coverage/stock-market-today/2026/07/17/stock-market-today-july-17-stocks-slide-as-semiconductor-rout-deepens/",
+      "published": "2026-07-17T21:33:59+00:00"
     },
     {
-      "title": "If You Invest $5,000 in the Vanguard Information Technology ETF Today, Here's What You Might Have in 20 Years",
+      "title": "Dell Technologies vs. NVIDIA: Which Artificial Intelligence Stock Is a Better Buy in 2026?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/15/if-you-invest-in-vgt-how-much-in-20-years/",
-      "published": "2026-07-15T21:20:00+00:00"
+      "url": "https://www.fool.com/coverage/better-buy/2026/07/17/dell-technologies-vs-nvidia-which-artificial-intelligence-stock-is-a-better-buy-in-2026/",
+      "published": "2026-07-17T21:24:01+00:00"
     },
     {
-      "title": "Coherent (COHR) Stock May Be 11% Undervalued Despite Fresh AI Infrastructure News",
-      "publisher": "Simply Wall St.",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/coherent-cohr-stock-may-11-211015008.html",
-      "published": "2026-07-15T21:10:15+00:00"
+      "title": "Jim Cramer Says Semiconductor Stocks Are \u201cGoing Down.\u201d Buy These 2 Dividend Stocks Instead",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/07/17/jim-cramer-says-semiconductor-stocks-are-going-down-buy-these-2-dividend-stocks-instead/",
+      "published": "2026-07-17T21:17:32+00:00"
     },
     {
-      "title": "Nvidia Stock Nears Buy Point On These Positive Signs",
-      "publisher": "Investor's Business Daily",
-      "url": "https://www.investors.com/news/technology/nvidia-stock-nears-buy-point-on-these-positive-signs/?src=A00220&yptr=yahoo",
-      "published": "2026-07-15T20:44:16+00:00"
+      "title": "Why AST SpaceMobile Stock Raced Higher Today",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/07/17/why-ast-spacemobile-stock-is-racing-higher-today/",
+      "published": "2026-07-17T21:17:08+00:00"
     },
     {
-      "title": "YieldMax launches a new SpaceX options ETF: What investors should know",
-      "publisher": "Yahoo Finance Video",
-      "url": "https://finance.yahoo.com/video/yieldmax-launches-spacex-options-etf-201500551.html",
-      "published": "2026-07-15T20:15:00+00:00"
+      "title": "Jim Cramer Says the Market Is \u201cDead Wrong\u201d About These 5 Oversold Stocks",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/07/17/jim-cramer-says-the-market-is-dead-wrong-about-these-5-oversold-stocks/",
+      "published": "2026-07-17T21:14:24+00:00"
+    },
+    {
+      "title": "Jim Cramer Says Oracle Is \u201cGoing Down\u201d and Avoid Every Liquor Stock. Here\u2019s What He\u2019d Buy Instead",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/07/17/jim-cramer-says-oracle-is-going-down-and-avoid-every-liquor-stock-heres-what-hed-buy-instead/",
+      "published": "2026-07-17T21:13:20+00:00"
     }
   ],
-  "generated_at": "2026-07-15T22:48:47.292989+00:00"
+  "generated_at": "2026-07-17T22:40:02.543291+00:00"
 }
