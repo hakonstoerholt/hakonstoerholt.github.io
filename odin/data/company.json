@@ -17,7 +17,7 @@
     "market_cap": 4912260841472.0,
     "pe": 31.058191,
     "forward_pe": 15.80593,
-    "dividend_yield": 0.48,
+    "dividend_yield": 0.49,
     "beta": 2.211,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
@@ -2051,61 +2051,61 @@
   "options": {
     "expiry": "2026-07-20",
     "atm_strike": 202.5,
-    "call_iv": 0.2778392529296875,
-    "put_iv": 0.2873606420898437,
-    "atm_iv": 0.2825999475097656,
-    "days_to_expiry": 3
+    "call_iv": 0.32080757324218745,
+    "put_iv": 0.33179379150390625,
+    "atm_iv": 0.3263006823730469,
+    "days_to_expiry": 2
   },
   "consensus": null,
   "news": [
     {
-      "title": "CrowdStrike vs. NVIDIA: Which Growth Tech Stock Is a Better Buy in 2026, the Cybersecurity Giant or AI Leader?",
+      "title": "Billionaire Investor Jeremy Grantham Calls Bitcoin a Useless, Speculative Asset. Here's Why He's Wrong.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/coverage/better-buy/2026/07/17/crowdstrike-vs-nvidia-which-growth-tech-stock-is-a-better-buy-in-2026-the-cybersecurity-giant-or-ai-leader/",
-      "published": "2026-07-17T21:59:01+00:00"
+      "url": "https://www.fool.com/investing/2026/07/18/billionaire-investor-jeremy-grantham-calls-bitcoin/",
+      "published": "2026-07-18T22:20:00+00:00"
     },
     {
-      "title": "UiPath Vs. ServiceNow: Which Agentic AI Stock Is the Better Buy?",
+      "title": "3 AI Stocks That Can Outperform Nvidia Next Year",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/17/uipath-vs-servicenow-which-agentic-ai-stock-is-the/",
-      "published": "2026-07-17T21:44:00+00:00"
+      "url": "https://www.fool.com/investing/2026/07/18/3-ai-stocks-that-can-outperform-nvidia-next-year/",
+      "published": "2026-07-18T21:56:00+00:00"
     },
     {
-      "title": "Stock Market Today, July 17: Stocks Slide as Semiconductor Rout Deepens",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/coverage/stock-market-today/2026/07/17/stock-market-today-july-17-stocks-slide-as-semiconductor-rout-deepens/",
-      "published": "2026-07-17T21:33:59+00:00"
-    },
-    {
-      "title": "Dell Technologies vs. NVIDIA: Which Artificial Intelligence Stock Is a Better Buy in 2026?",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/coverage/better-buy/2026/07/17/dell-technologies-vs-nvidia-which-artificial-intelligence-stock-is-a-better-buy-in-2026/",
-      "published": "2026-07-17T21:24:01+00:00"
-    },
-    {
-      "title": "Jim Cramer Says Semiconductor Stocks Are \u201cGoing Down.\u201d Buy These 2 Dividend Stocks Instead",
+      "title": "Pok\u00e9mon Cards Beat the S&P 500 by 2.5x, But the Math Is a Lie",
       "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/07/17/jim-cramer-says-semiconductor-stocks-are-going-down-buy-these-2-dividend-stocks-instead/",
-      "published": "2026-07-17T21:17:32+00:00"
+      "url": "https://247wallst.com/investing/2026/07/18/pokemon-cards-beat-the-sp-500-by-2-5x-but-the-math-is-a-lie/",
+      "published": "2026-07-18T21:45:00+00:00"
     },
     {
-      "title": "Why AST SpaceMobile Stock Raced Higher Today",
+      "title": "Netflix Stock's Last Decade Was Spectacular. But What Will the Next Decade Look Like?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/17/why-ast-spacemobile-stock-is-racing-higher-today/",
-      "published": "2026-07-17T21:17:08+00:00"
+      "url": "https://www.fool.com/investing/2026/07/18/netflix-stocks-last-decade-was-spectacular-but-wha/",
+      "published": "2026-07-18T21:43:00+00:00"
     },
     {
-      "title": "Jim Cramer Says the Market Is \u201cDead Wrong\u201d About These 5 Oversold Stocks",
-      "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/07/17/jim-cramer-says-the-market-is-dead-wrong-about-these-5-oversold-stocks/",
-      "published": "2026-07-17T21:14:24+00:00"
+      "title": "Why Intuitive Surgical Stock Dropped This Week",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/07/18/why-intuitive-surgical-stock-dropped-this-week/",
+      "published": "2026-07-18T21:41:17+00:00"
     },
     {
-      "title": "Jim Cramer Says Oracle Is \u201cGoing Down\u201d and Avoid Every Liquor Stock. Here\u2019s What He\u2019d Buy Instead",
-      "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/07/17/jim-cramer-says-oracle-is-going-down-and-avoid-every-liquor-stock-heres-what-hed-buy-instead/",
-      "published": "2026-07-17T21:13:20+00:00"
+      "title": "What Do SpaceX, AMD, and Palantir Have in Common?",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/07/18/what-do-spacex-amd-and-palantir-have-in-common/",
+      "published": "2026-07-18T20:33:00+00:00"
+    },
+    {
+      "title": "Watch Out, Eli Lilly and Novo Nordisk: Viking Therapeutics Just Started Testing a Weight Loss Drug That Goes Beyond GLP-1",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/07/18/watch-out-eli-lilly-and-novo-nordisk-viking-just/",
+      "published": "2026-07-18T20:05:00+00:00"
+    },
+    {
+      "title": "Meta Platforms Is Up 21% This Month, and Here Is What's Driving the Surge",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/07/18/meta-platforms-stock-up-21-july-driving-surge/",
+      "published": "2026-07-18T19:50:00+00:00"
     }
   ],
-  "generated_at": "2026-07-17T22:40:02.543291+00:00"
+  "generated_at": "2026-07-18T22:39:31.542826+00:00"
 }

@@ -1,14 +1,14 @@
 {
   "as_of": "2026-07-17",
   "model_version": "heimdall-3.2",
-  "regime": "Calm",
-  "alarm": false,
+  "regime": "Unknown",
+  "alarm": null,
   "frag_tier": "Low",
-  "degraded": false,
-  "headline": "Calm \u2014 no stress alarm. The macro / yield-curve picture leads at +0.2\u03c3, and the topology trigger sits 1.4\u03c3 away. Fragility Low; full exposure (1\u00d7).",
+  "degraded": true,
+  "headline": "A data input is stale (vix3m). The regime signal is suppressed; hold current positioning until it refreshes.",
   "scores": {
     "heimdall_max": 0.15085823584762117,
-    "heimdall_mean": -0.5745348493304234,
+    "heimdall_mean": -0.5961109215349965,
     "p_turbulent": 0.0018796333441360904,
     "h0": 0.1305825123563408,
     "h1": 0.0004654452204704,
@@ -16,8 +16,8 @@
     "sub_topology_sticky": 0.7418410906710374
   },
   "sub_z": {
-    "vol": -0.25303130036652444,
-    "credit": -1.5504414615647348,
+    "vol": -0.3609116383036856,
+    "credit": -1.5504414846504389,
     "macro": 0.15085823584762117,
     "trend": -0.3310794752431657,
     "topology": -0.888980245325313
@@ -4590,76 +4590,76 @@
     }
   ],
   "freshness": {
-    "as_of": "2026-07-17",
+    "as_of": "2026-07-18",
     "per_input": {
       "spx": {
         "last": "2026-07-17",
-        "age_days": 0,
+        "age_days": 1,
         "stale": false,
         "missing": false
       },
       "vix": {
         "last": "2026-07-17",
-        "age_days": 0,
+        "age_days": 1,
         "stale": false,
         "missing": false
       },
       "vix3m": {
-        "last": "2026-07-17",
-        "age_days": 0,
-        "stale": false,
+        "last": "2026-07-10",
+        "age_days": 8,
+        "stale": true,
         "missing": false
       },
       "hyg": {
         "last": "2026-07-17",
-        "age_days": 0,
+        "age_days": 1,
         "stale": false,
         "missing": false
       },
       "lqd": {
         "last": "2026-07-17",
-        "age_days": 0,
+        "age_days": 1,
         "stale": false,
         "missing": false
       },
       "baa10y": {
         "last": "2026-07-16",
-        "age_days": 1,
+        "age_days": 2,
         "stale": false,
         "missing": false
       },
       "aaa10y": {
         "last": "2026-07-16",
-        "age_days": 1,
+        "age_days": 2,
         "stale": false,
         "missing": false
       },
       "t10y2y": {
         "last": "2026-07-17",
-        "age_days": 0,
+        "age_days": 1,
         "stale": false,
         "missing": false
       },
       "nfci": {
         "last": "2026-07-10",
-        "age_days": 7,
+        "age_days": 8,
         "stale": false,
         "missing": false
       },
       "sub_topology": {
         "last": "2026-07-17",
-        "age_days": 0,
+        "age_days": 1,
         "stale": false,
         "missing": false
       },
       "p_turbulent": {
         "last": "2026-07-17",
-        "age_days": 0,
+        "age_days": 1,
         "stale": false,
         "missing": false
       }
     },
-    "degraded": false
+    "degraded": true
   },
-  "generated_at": "2026-07-17T22:40:02.268661+00:00"
+  "generated_at": "2026-07-18T22:39:31.243359+00:00"
 }
