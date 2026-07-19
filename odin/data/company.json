@@ -2036,7 +2036,7 @@
       "h": 206.64500427246094,
       "l": 197.97000122070312,
       "c": 202.80999755859375,
-      "v": 138213660
+      "v": 144281910
     }
   ],
   "earnings": {
@@ -2051,61 +2051,61 @@
   "options": {
     "expiry": "2026-07-20",
     "atm_strike": 202.5,
-    "call_iv": 0.32080757324218745,
-    "put_iv": 0.33179379150390625,
-    "atm_iv": 0.3263006823730469,
-    "days_to_expiry": 2
+    "call_iv": 0.3930724755859375,
+    "put_iv": 0.4062559375,
+    "atm_iv": 0.39966420654296875,
+    "days_to_expiry": 1
   },
   "consensus": null,
   "news": [
     {
-      "title": "Billionaire Investor Jeremy Grantham Calls Bitcoin a Useless, Speculative Asset. Here's Why He's Wrong.",
+      "title": "Cathie Wood Is Loading Up on This GLP-1 Stock That Has Soared 1,600% Over the Past 10 Years",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/18/billionaire-investor-jeremy-grantham-calls-bitcoin/",
-      "published": "2026-07-18T22:20:00+00:00"
+      "url": "https://www.fool.com/investing/2026/07/19/cathie-wood-is-loading-up-on-this-glp-1-stock-that/",
+      "published": "2026-07-19T22:20:00+00:00"
     },
     {
-      "title": "3 AI Stocks That Can Outperform Nvidia Next Year",
+      "title": "SpaceX's IPO Lockup Starts Expiring in August. Here's Why the Next Wave of Sellers Could Be the Real Test.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/18/3-ai-stocks-that-can-outperform-nvidia-next-year/",
-      "published": "2026-07-18T21:56:00+00:00"
+      "url": "https://www.fool.com/investing/2026/07/19/spacexs-ipo-lockup-starts-expiring-in-august-heres/",
+      "published": "2026-07-19T21:51:00+00:00"
     },
     {
-      "title": "Pok\u00e9mon Cards Beat the S&P 500 by 2.5x, But the Math Is a Lie",
-      "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/07/18/pokemon-cards-beat-the-sp-500-by-2-5x-but-the-math-is-a-lie/",
-      "published": "2026-07-18T21:45:00+00:00"
+      "title": "Netflix: Down Nearly 50% Over the Past Year, Is the Stock a Buy on This Latest Dip? Here's the Real Issue Behind the Stock's Decline.",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/07/19/netflix-down-nearly-50-over-the-past-year-is-the-s/",
+      "published": "2026-07-19T21:50:00+00:00"
     },
     {
-      "title": "Netflix Stock's Last Decade Was Spectacular. But What Will the Next Decade Look Like?",
+      "title": "Prediction: Investors Will Be Happy if They Buy AMD Stock Before the Company's Big AI Event on July 22",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/18/netflix-stocks-last-decade-was-spectacular-but-wha/",
-      "published": "2026-07-18T21:43:00+00:00"
+      "url": "https://www.fool.com/investing/2026/07/19/prediction-investors-will-be-happy-if-they-buy-amd/",
+      "published": "2026-07-19T21:37:00+00:00"
     },
     {
-      "title": "Why Intuitive Surgical Stock Dropped This Week",
+      "title": "Prediction: These Will Be the 2 Best Nuclear Energy Stocks to Buy for the Next 5 Years",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/18/why-intuitive-surgical-stock-dropped-this-week/",
-      "published": "2026-07-18T21:41:17+00:00"
+      "url": "https://www.fool.com/investing/2026/07/19/prediction-these-will-be-the-2-best-nuclear-energy/",
+      "published": "2026-07-19T21:27:00+00:00"
     },
     {
-      "title": "What Do SpaceX, AMD, and Palantir Have in Common?",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/18/what-do-spacex-amd-and-palantir-have-in-common/",
-      "published": "2026-07-18T20:33:00+00:00"
+      "title": "What to watch for after Jensen Huang\u2019s Japan visit",
+      "publisher": "TechCrunch",
+      "url": "https://finance.yahoo.com/technology/ai/articles/watch-jensen-huang-japan-visit-211607546.html",
+      "published": "2026-07-19T21:16:07+00:00"
     },
     {
-      "title": "Watch Out, Eli Lilly and Novo Nordisk: Viking Therapeutics Just Started Testing a Weight Loss Drug That Goes Beyond GLP-1",
+      "title": "Silicon Photonics Investment Is Ramping Fast as AI Clusters Outgrow Copper Wiring. 2 AI Stocks Stand to Win.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/18/watch-out-eli-lilly-and-novo-nordisk-viking-just/",
-      "published": "2026-07-18T20:05:00+00:00"
+      "url": "https://www.fool.com/investing/2026/07/19/silicon-photonics-investment-is-ramping-fast-as-ai/",
+      "published": "2026-07-19T20:57:00+00:00"
     },
     {
-      "title": "Meta Platforms Is Up 21% This Month, and Here Is What's Driving the Surge",
+      "title": "Alphabet's Gemini 3.5 Pro Is Late and the Stock Is Slipping. Is the AI Leader Falling Behind?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/18/meta-platforms-stock-up-21-july-driving-surge/",
-      "published": "2026-07-18T19:50:00+00:00"
+      "url": "https://www.fool.com/investing/2026/07/19/alphabets-gemini-35-pro-is-late-and-the-stock-is-s/",
+      "published": "2026-07-19T20:43:00+00:00"
     }
   ],
-  "generated_at": "2026-07-18T22:39:31.542826+00:00"
+  "generated_at": "2026-07-19T22:42:40.654528+00:00"
 }
