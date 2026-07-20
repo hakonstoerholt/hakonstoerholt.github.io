@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-07-17",
+  "as_of": "2026-07-20",
   "price": {
-    "last": 202.80999755859375,
-    "prev_close": 207.39999389648438,
-    "change_pct": -2.2131130535045007,
-    "ytd_pct": 7.392105376700986,
+    "last": 203.27999877929688,
+    "prev_close": 202.80999755859375,
+    "change_pct": 0.23174460152899368,
+    "ytd_pct": 7.640980783379825,
     "high_52w": 236.5399932861328,
     "low_52w": 164.07000732421875,
     "currency": "USD"
@@ -14,30 +14,14 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 4912260841472.0,
-    "pe": 31.058191,
-    "forward_pe": 15.80593,
+    "market_cap": 4923644706816.0,
+    "pe": 31.130167,
+    "forward_pe": 15.827301,
     "dividend_yield": 0.49,
     "beta": 2.211,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-07-17",
-      "o": 172.02000427246094,
-      "h": 174.16000366210938,
-      "l": 170.8300018310547,
-      "c": 173.0,
-      "v": 160841100
-    },
-    {
-      "t": "2025-07-18",
-      "o": 173.63999938964844,
-      "h": 174.25,
-      "l": 171.25999450683594,
-      "c": 172.41000366210938,
-      "v": 146456400
-    },
     {
       "t": "2025-07-21",
       "o": 172.75,
@@ -2037,6 +2021,14 @@
       "l": 197.97000122070312,
       "c": 202.80999755859375,
       "v": 144281910
+    },
+    {
+      "t": "2026-07-20",
+      "o": 206.03799438476562,
+      "h": 207.74000549316406,
+      "l": 202.27999877929688,
+      "c": 203.27999877929688,
+      "v": 88271631
     }
   ],
   "earnings": {
@@ -2044,68 +2036,68 @@
     "history": []
   },
   "implied_move": {
-    "expiry": "2026-07-20",
-    "move_pct": 2.327301443133417,
-    "straddle": 4.72
+    "expiry": "2026-07-22",
+    "move_pct": 2.373573410554056,
+    "straddle": 4.825
   },
   "options": {
-    "expiry": "2026-07-20",
+    "expiry": "2026-07-22",
     "atm_strike": 202.5,
-    "call_iv": 0.3930724755859375,
-    "put_iv": 0.4062559375,
-    "atm_iv": 0.39966420654296875,
-    "days_to_expiry": 1
+    "call_iv": 0.33789724609375,
+    "put_iv": 0.32300481689453114,
+    "atm_iv": 0.33045103149414057,
+    "days_to_expiry": 2
   },
   "consensus": null,
   "news": [
     {
-      "title": "Cathie Wood Is Loading Up on This GLP-1 Stock That Has Soared 1,600% Over the Past 10 Years",
+      "title": "Moderna Is Up 109% in 2026. Jim Cramer Just Called It 'Finally Investable Again.' Is the Stock a No-Brainer Buy on Its Recent Pullback?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/19/cathie-wood-is-loading-up-on-this-glp-1-stock-that/",
-      "published": "2026-07-19T22:20:00+00:00"
+      "url": "https://www.fool.com/investing/2026/07/20/moderna-is-up-109-in-2026-jim-cramer-just-called-i/",
+      "published": "2026-07-20T22:30:00+00:00"
     },
     {
-      "title": "SpaceX's IPO Lockup Starts Expiring in August. Here's Why the Next Wave of Sellers Could Be the Real Test.",
+      "title": "Is Domino's Pizza a Buy After Its Latest Earnings Report?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/19/spacexs-ipo-lockup-starts-expiring-in-august-heres/",
-      "published": "2026-07-19T21:51:00+00:00"
+      "url": "https://www.fool.com/investing/2026/07/20/is-dominos-pizza-a-buy-after-its-latest-earnings-r/",
+      "published": "2026-07-20T22:17:22+00:00"
     },
     {
-      "title": "Netflix: Down Nearly 50% Over the Past Year, Is the Stock a Buy on This Latest Dip? Here's the Real Issue Behind the Stock's Decline.",
+      "title": "Why IMAX Stock Got Mashed on Monday",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/19/netflix-down-nearly-50-over-the-past-year-is-the-s/",
-      "published": "2026-07-19T21:50:00+00:00"
+      "url": "https://www.fool.com/investing/2026/07/20/why-gold-resource-corp-stock-skyrocketed-today/",
+      "published": "2026-07-20T22:12:34+00:00"
     },
     {
-      "title": "Prediction: Investors Will Be Happy if They Buy AMD Stock Before the Company's Big AI Event on July 22",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/19/prediction-investors-will-be-happy-if-they-buy-amd/",
-      "published": "2026-07-19T21:37:00+00:00"
+      "title": "Dow Jones Futures: Trump Comments Spark Stock Market Losses; Elon Musk-Led SpaceX, Tesla Tumble",
+      "publisher": "Investor's Business Daily",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-trump-spacex-spcx-tesla-tsla/?src=A00220&yptr=yahoo",
+      "published": "2026-07-20T22:07:12+00:00"
     },
     {
-      "title": "Prediction: These Will Be the 2 Best Nuclear Energy Stocks to Buy for the Next 5 Years",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/19/prediction-these-will-be-the-2-best-nuclear-energy/",
-      "published": "2026-07-19T21:27:00+00:00"
+      "title": "Trump Media pitches $100K-a-month Truth Social feed",
+      "publisher": "Yahoo Finance Video",
+      "url": "https://finance.yahoo.com/video/trump-media-pitches-100k-month-220000188.html",
+      "published": "2026-07-20T22:00:00+00:00"
     },
     {
-      "title": "What to watch for after Jensen Huang\u2019s Japan visit",
-      "publisher": "TechCrunch",
-      "url": "https://finance.yahoo.com/technology/ai/articles/watch-jensen-huang-japan-visit-211607546.html",
-      "published": "2026-07-19T21:16:07+00:00"
+      "title": "Ryanair CFO: Rival Airlines Could Fail This Winter; Industry Shakeout Could Lead to Pricing Power",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/07/20/ryanair-cfo-rival-airlines-could-fail-this-winter-industry-shakeout-could-lead-to-pricing-power/",
+      "published": "2026-07-20T21:47:18+00:00"
     },
     {
-      "title": "Silicon Photonics Investment Is Ramping Fast as AI Clusters Outgrow Copper Wiring. 2 AI Stocks Stand to Win.",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/19/silicon-photonics-investment-is-ramping-fast-as-ai/",
-      "published": "2026-07-19T20:57:00+00:00"
+      "title": "Bank of America doubles down on Microsoft stock ahead of earnings",
+      "publisher": "TheStreet",
+      "url": "https://www.thestreet.com/investing/stocks/bank-of-america-doubles-down-on-microsoft-stock-ahead-of-earnings",
+      "published": "2026-07-20T21:33:00+00:00"
     },
     {
-      "title": "Alphabet's Gemini 3.5 Pro Is Late and the Stock Is Slipping. Is the AI Leader Falling Behind?",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/19/alphabets-gemini-35-pro-is-late-and-the-stock-is-s/",
-      "published": "2026-07-19T20:43:00+00:00"
+      "title": "3 Reasons I\u2019m Buying Amazon Over and Over Until Late 2026",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/07/20/3-reasons-im-buying-amazon-over-and-over-until-late-2026/",
+      "published": "2026-07-20T21:27:00+00:00"
     }
   ],
-  "generated_at": "2026-07-19T22:42:40.654528+00:00"
+  "generated_at": "2026-07-20T22:47:36.225902+00:00"
 }
