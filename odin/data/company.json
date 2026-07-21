@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-07-20",
+  "as_of": "2026-07-21",
   "price": {
-    "last": 203.27999877929688,
-    "prev_close": 202.80999755859375,
-    "change_pct": 0.23174460152899368,
-    "ytd_pct": 7.640980783379825,
+    "last": 207.2899932861328,
+    "prev_close": 203.27999877929688,
+    "change_pct": 1.9726458731385677,
+    "ytd_pct": 9.764356148609043,
     "high_52w": 236.5399932861328,
     "low_52w": 164.07000732421875,
     "currency": "USD"
@@ -14,9 +14,9 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 4923644706816.0,
-    "pe": 31.130167,
-    "forward_pe": 15.827301,
+    "market_cap": 5020770631680.0,
+    "pe": 31.744255,
+    "forward_pe": 16.139519,
     "dividend_yield": 0.49,
     "beta": 2.211,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
@@ -2029,6 +2029,14 @@
       "l": 202.27999877929688,
       "c": 203.27999877929688,
       "v": 88271631
+    },
+    {
+      "t": "2026-07-21",
+      "o": 207.5399932861328,
+      "h": 208.64999389648438,
+      "l": 204.01010131835938,
+      "c": 207.2899932861328,
+      "v": 108223095
     }
   ],
   "earnings": {
@@ -2037,67 +2045,67 @@
   },
   "implied_move": {
     "expiry": "2026-07-22",
-    "move_pct": 2.373573410554056,
-    "straddle": 4.825
+    "move_pct": 1.5606156132846059,
+    "straddle": 3.235
   },
   "options": {
     "expiry": "2026-07-22",
-    "atm_strike": 202.5,
-    "call_iv": 0.33789724609375,
-    "put_iv": 0.32300481689453114,
-    "atm_iv": 0.33045103149414057,
-    "days_to_expiry": 2
+    "atm_strike": 207.5,
+    "call_iv": 0.25830819824218754,
+    "put_iv": 0.2749095947265625,
+    "atm_iv": 0.266608896484375,
+    "days_to_expiry": 1
   },
   "consensus": null,
   "news": [
     {
-      "title": "Moderna Is Up 109% in 2026. Jim Cramer Just Called It 'Finally Investable Again.' Is the Stock a No-Brainer Buy on Its Recent Pullback?",
+      "title": "Jamie Dimon's Latest Warning Sends Shockwaves Through Wall Street. History Is Very Clear About What Happens Next.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/20/moderna-is-up-109-in-2026-jim-cramer-just-called-i/",
-      "published": "2026-07-20T22:30:00+00:00"
+      "url": "https://www.fool.com/investing/2026/07/21/jamie-dimons-latest-warning-sends-shockwaves-throu/",
+      "published": "2026-07-21T22:35:00+00:00"
     },
     {
-      "title": "Is Domino's Pizza a Buy After Its Latest Earnings Report?",
+      "title": "Prediction: MercadoLibre Stock Could Soar in the Next 5 Years if This Happens",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/20/is-dominos-pizza-a-buy-after-its-latest-earnings-r/",
-      "published": "2026-07-20T22:17:22+00:00"
+      "url": "https://www.fool.com/investing/2026/07/21/prediction-mercadolibre-stock-could-soar-in-the-ne/",
+      "published": "2026-07-21T22:30:00+00:00"
     },
     {
-      "title": "Why IMAX Stock Got Mashed on Monday",
+      "title": "Nvidia Vera Rubin shown to provide 10x more throughput per megawatt than Blackwell",
+      "publisher": "Investing.com",
+      "url": "https://tech.yahoo.com/ai/articles/nvidia-vera-rubin-shown-10x-222148022.html",
+      "published": "2026-07-21T22:21:48+00:00"
+    },
+    {
+      "title": "Why Tutor Perini Stock Trounced the Market on Tuesday",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/20/why-gold-resource-corp-stock-skyrocketed-today/",
-      "published": "2026-07-20T22:12:34+00:00"
+      "url": "https://www.fool.com/investing/2026/07/21/why-tutor-perini-stock-trounced-the-market-on-tues/",
+      "published": "2026-07-21T22:20:44+00:00"
     },
     {
-      "title": "Dow Jones Futures: Trump Comments Spark Stock Market Losses; Elon Musk-Led SpaceX, Tesla Tumble",
-      "publisher": "Investor's Business Daily",
-      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-trump-spacex-spcx-tesla-tsla/?src=A00220&yptr=yahoo",
-      "published": "2026-07-20T22:07:12+00:00"
-    },
-    {
-      "title": "Trump Media pitches $100K-a-month Truth Social feed",
-      "publisher": "Yahoo Finance Video",
-      "url": "https://finance.yahoo.com/video/trump-media-pitches-100k-month-220000188.html",
-      "published": "2026-07-20T22:00:00+00:00"
-    },
-    {
-      "title": "Ryanair CFO: Rival Airlines Could Fail This Winter; Industry Shakeout Could Lead to Pricing Power",
+      "title": "1 Ultra-High-Yield ETF Millions Are Buying That Could Wreck Your Retirement",
       "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/07/20/ryanair-cfo-rival-airlines-could-fail-this-winter-industry-shakeout-could-lead-to-pricing-power/",
-      "published": "2026-07-20T21:47:18+00:00"
+      "url": "https://247wallst.com/investing/etf/2026/07/21/1-ultra-high-yield-etf-millions-are-buying-that-could-wreck-your-retirement/",
+      "published": "2026-07-21T22:06:10+00:00"
     },
     {
-      "title": "Bank of America doubles down on Microsoft stock ahead of earnings",
-      "publisher": "TheStreet",
-      "url": "https://www.thestreet.com/investing/stocks/bank-of-america-doubles-down-on-microsoft-stock-ahead-of-earnings",
-      "published": "2026-07-20T21:33:00+00:00"
-    },
-    {
-      "title": "3 Reasons I\u2019m Buying Amazon Over and Over Until Late 2026",
+      "title": "Jim Cramer Says Stop Betting on Volatile Tech Stocks and Buy These \u201cBoring\u201d Sectors Instead",
       "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/07/20/3-reasons-im-buying-amazon-over-and-over-until-late-2026/",
-      "published": "2026-07-20T21:27:00+00:00"
+      "url": "https://247wallst.com/investing/2026/07/21/jim-cramer-says-stop-betting-on-volatile-tech-stocks-and-buy-these-boring-sectors-instead/",
+      "published": "2026-07-21T22:04:33+00:00"
+    },
+    {
+      "title": "\"Deceptive Advertising!\" Claims Novo Nordisk in Explosive New GLP-1 Lawsuit Against Eli Lilly. Here's What That Means for Both Stocks.",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/07/21/novo-nordisk-vs-eli-lilly-just-moved-from-the-pharmacy-counter-to-federal-court-heres-what-that-means-for-both-stocks/",
+      "published": "2026-07-21T21:54:01+00:00"
+    },
+    {
+      "title": "Why Sabra Health Care REIT Stock Soared Today",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/07/21/why-sabra-health-care-reit-stock-soared-today/",
+      "published": "2026-07-21T21:53:28+00:00"
     }
   ],
-  "generated_at": "2026-07-20T22:47:36.225902+00:00"
+  "generated_at": "2026-07-21T22:46:21.132343+00:00"
 }
