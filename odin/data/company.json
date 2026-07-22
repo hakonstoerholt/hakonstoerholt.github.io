@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-07-21",
+  "as_of": "2026-07-22",
   "price": {
-    "last": 207.2899932861328,
-    "prev_close": 203.27999877929688,
-    "change_pct": 1.9726458731385677,
-    "ytd_pct": 9.764356148609043,
+    "last": 212.05999755859375,
+    "prev_close": 207.2899932861328,
+    "change_pct": 2.301126164771805,
+    "ytd_pct": 12.290172467538007,
     "high_52w": 236.5399932861328,
     "low_52w": 164.07000732421875,
     "currency": "USD"
@@ -14,22 +14,14 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 5020770631680.0,
-    "pe": 31.744255,
-    "forward_pe": 16.139519,
-    "dividend_yield": 0.49,
+    "market_cap": 5136305356800.0,
+    "pe": 32.47473,
+    "forward_pe": 16.478321,
+    "dividend_yield": 0.48,
     "beta": 2.211,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-07-21",
-      "o": 172.75,
-      "h": 173.3800048828125,
-      "l": 171.0,
-      "c": 171.3800048828125,
-      "v": 123126100
-    },
     {
       "t": "2025-07-22",
       "o": 171.33999633789062,
@@ -2037,6 +2029,14 @@
       "l": 204.01010131835938,
       "c": 207.2899932861328,
       "v": 108223095
+    },
+    {
+      "t": "2026-07-22",
+      "o": 205.80499267578125,
+      "h": 214.38999938964844,
+      "l": 204.9499969482422,
+      "c": 212.05999755859375,
+      "v": 128176151
     }
   ],
   "earnings": {
@@ -2044,68 +2044,68 @@
     "history": []
   },
   "implied_move": {
-    "expiry": "2026-07-22",
-    "move_pct": 1.5606156132846059,
-    "straddle": 3.235
+    "expiry": "2026-07-24",
+    "move_pct": 2.619541669317011,
+    "straddle": 5.555
   },
   "options": {
-    "expiry": "2026-07-22",
-    "atm_strike": 207.5,
-    "call_iv": 0.25830819824218754,
-    "put_iv": 0.2749095947265625,
-    "atm_iv": 0.266608896484375,
-    "days_to_expiry": 1
+    "expiry": "2026-07-24",
+    "atm_strike": 212.5,
+    "call_iv": 0.3706117626953125,
+    "put_iv": 0.36133451171875,
+    "atm_iv": 0.36597313720703123,
+    "days_to_expiry": 2
   },
   "consensus": null,
   "news": [
     {
-      "title": "Jamie Dimon's Latest Warning Sends Shockwaves Through Wall Street. History Is Very Clear About What Happens Next.",
+      "title": "Why Constellation Energy Stock Blasted Higher on Wednesday",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/21/jamie-dimons-latest-warning-sends-shockwaves-throu/",
-      "published": "2026-07-21T22:35:00+00:00"
+      "url": "https://www.fool.com/investing/2026/07/22/why-constellation-energy-stock-blasted-higher-on-w/",
+      "published": "2026-07-22T22:34:17+00:00"
     },
     {
-      "title": "Prediction: MercadoLibre Stock Could Soar in the Next 5 Years if This Happens",
+      "title": "Why AT&T Stock Rallied Today",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/21/prediction-mercadolibre-stock-could-soar-in-the-ne/",
-      "published": "2026-07-21T22:30:00+00:00"
+      "url": "https://www.fool.com/investing/2026/07/22/why-att-stock-is-up-today/",
+      "published": "2026-07-22T22:17:19+00:00"
     },
     {
-      "title": "Nvidia Vera Rubin shown to provide 10x more throughput per megawatt than Blackwell",
-      "publisher": "Investing.com",
-      "url": "https://tech.yahoo.com/ai/articles/nvidia-vera-rubin-shown-10x-222148022.html",
-      "published": "2026-07-21T22:21:48+00:00"
-    },
-    {
-      "title": "Why Tutor Perini Stock Trounced the Market on Tuesday",
+      "title": "Intel's Foundry Just Landed Its First Named Outside Customer Under Lip-Bu Tan. The Stock Jumped More Than 8% -- 2 Days Before Earnings.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/21/why-tutor-perini-stock-trounced-the-market-on-tues/",
-      "published": "2026-07-21T22:20:44+00:00"
+      "url": "https://www.fool.com/investing/2026/07/22/intels-foundry-just-landed-its-first-named-outside/",
+      "published": "2026-07-22T22:12:00+00:00"
     },
     {
-      "title": "1 Ultra-High-Yield ETF Millions Are Buying That Could Wreck Your Retirement",
+      "title": "Forget QQQ. This Semiconductor Fund Nearly Quintupled Its 2026 Gain",
       "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/etf/2026/07/21/1-ultra-high-yield-etf-millions-are-buying-that-could-wreck-your-retirement/",
-      "published": "2026-07-21T22:06:10+00:00"
+      "url": "https://247wallst.com/investing/2026/07/22/forget-qqq-this-semiconductor-fund-nearly-quintupled-its-2026-gain/",
+      "published": "2026-07-22T22:00:15+00:00"
     },
     {
-      "title": "Jim Cramer Says Stop Betting on Volatile Tech Stocks and Buy These \u201cBoring\u201d Sectors Instead",
+      "title": "Why Sandisk Stock Was a Winner on Wednesday",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/07/22/why-sandisk-stock-was-a-winner-on-wednesday/",
+      "published": "2026-07-22T21:59:30+00:00"
+    },
+    {
+      "title": "The Ultimate Bull Run for NVIDIA, Micron, and SanDisk May Be Closer Than Investors Think",
       "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/07/21/jim-cramer-says-stop-betting-on-volatile-tech-stocks-and-buy-these-boring-sectors-instead/",
-      "published": "2026-07-21T22:04:33+00:00"
+      "url": "https://247wallst.com/investing/2026/07/22/the-ultimate-bull-run-for-nvidia-micron-and-sandisk-could-begin-soon/",
+      "published": "2026-07-22T21:53:48+00:00"
     },
     {
-      "title": "\"Deceptive Advertising!\" Claims Novo Nordisk in Explosive New GLP-1 Lawsuit Against Eli Lilly. Here's What That Means for Both Stocks.",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/21/novo-nordisk-vs-eli-lilly-just-moved-from-the-pharmacy-counter-to-federal-court-heres-what-that-means-for-both-stocks/",
-      "published": "2026-07-21T21:54:01+00:00"
+      "title": "Anthropic and AMD are signing a major AI chip deal. What could this mean for Nvidia?",
+      "publisher": "Yahoo Finance Video",
+      "url": "https://finance.yahoo.com/video/anthropic-amd-signing-major-ai-180000308.html",
+      "published": "2026-07-22T18:00:00+00:00"
     },
     {
-      "title": "Why Sabra Health Care REIT Stock Soared Today",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/21/why-sabra-health-care-reit-stock-soared-today/",
-      "published": "2026-07-21T21:53:28+00:00"
+      "title": "OpenAI hack: For 'every dollar' spent on AI, another should be spent on cybersecurity",
+      "publisher": "Yahoo Finance Video",
+      "url": "https://finance.yahoo.com/video/openai-hack-for-every-dollar-spent-on-ai-another-should-be-spent-on-cybersecurity-144811862.html",
+      "published": "2026-07-22T14:48:11+00:00"
     }
   ],
-  "generated_at": "2026-07-21T22:46:21.132343+00:00"
+  "generated_at": "2026-07-22T22:55:22.356636+00:00"
 }
