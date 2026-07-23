@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-07-22",
+  "as_of": "2026-07-23",
   "price": {
-    "last": 212.05999755859375,
-    "prev_close": 207.2899932861328,
-    "change_pct": 2.301126164771805,
-    "ytd_pct": 12.290172467538007,
+    "last": 208.75999450683594,
+    "prev_close": 212.05999755859375,
+    "change_pct": -1.556164807012217,
+    "ytd_pct": 10.542752321864857,
     "high_52w": 236.5399932861328,
     "low_52w": 164.07000732421875,
     "currency": "USD"
@@ -14,22 +14,14 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 5136305356800.0,
-    "pe": 32.47473,
-    "forward_pe": 16.478321,
-    "dividend_yield": 0.48,
+    "market_cap": 5056375554048.0,
+    "pe": 31.96937,
+    "forward_pe": 16.22189,
+    "dividend_yield": 0.47,
     "beta": 2.211,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-07-22",
-      "o": 171.33999633789062,
-      "h": 171.38999938964844,
-      "l": 164.5800018310547,
-      "c": 167.02999877929688,
-      "v": 193114300
-    },
     {
       "t": "2025-07-23",
       "o": 169.52999877929688,
@@ -2037,6 +2029,14 @@
       "l": 204.9499969482422,
       "c": 212.05999755859375,
       "v": 128176151
+    },
+    {
+      "t": "2026-07-23",
+      "o": 209.39500427246094,
+      "h": 210.8686981201172,
+      "l": 205.9600067138672,
+      "c": 208.75999450683594,
+      "v": 110032215
     }
   ],
   "earnings": {
@@ -2045,67 +2045,67 @@
   },
   "implied_move": {
     "expiry": "2026-07-24",
-    "move_pct": 2.619541669317011,
-    "straddle": 5.555
+    "move_pct": 1.6909370055977886,
+    "straddle": 3.53
   },
   "options": {
     "expiry": "2026-07-24",
-    "atm_strike": 212.5,
-    "call_iv": 0.3706117626953125,
-    "put_iv": 0.36133451171875,
-    "atm_iv": 0.36597313720703123,
-    "days_to_expiry": 2
+    "atm_strike": 210.0,
+    "call_iv": 0.27808339111328123,
+    "put_iv": 0.27808339111328123,
+    "atm_iv": 0.27808339111328123,
+    "days_to_expiry": 1
   },
   "consensus": null,
   "news": [
     {
-      "title": "Why Constellation Energy Stock Blasted Higher on Wednesday",
+      "title": "If You'd Invested $10,000 in Ford Stock 10 Years Ago, Here's How Much You'd Have Today",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/22/why-constellation-energy-stock-blasted-higher-on-w/",
-      "published": "2026-07-22T22:34:17+00:00"
+      "url": "https://www.fool.com/investing/2026/07/23/you-invest-10000-ford-stock-10-years-ago-how-much/",
+      "published": "2026-07-23T22:25:00+00:00"
     },
     {
-      "title": "Why AT&T Stock Rallied Today",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/22/why-att-stock-is-up-today/",
-      "published": "2026-07-22T22:17:19+00:00"
-    },
-    {
-      "title": "Intel's Foundry Just Landed Its First Named Outside Customer Under Lip-Bu Tan. The Stock Jumped More Than 8% -- 2 Days Before Earnings.",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/22/intels-foundry-just-landed-its-first-named-outside/",
-      "published": "2026-07-22T22:12:00+00:00"
-    },
-    {
-      "title": "Forget QQQ. This Semiconductor Fund Nearly Quintupled Its 2026 Gain",
+      "title": "AI Chip Stocks Just Got Crushed. 3 Semiconductor ETFs to Buy the Dip On",
       "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/07/22/forget-qqq-this-semiconductor-fund-nearly-quintupled-its-2026-gain/",
-      "published": "2026-07-22T22:00:15+00:00"
+      "url": "https://247wallst.com/investing/etf/2026/07/23/ai-chip-stocks-just-got-crushed-3-semiconductor-etfs-to-buy-the-dip-on/",
+      "published": "2026-07-23T22:14:04+00:00"
     },
     {
-      "title": "Why Sandisk Stock Was a Winner on Wednesday",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/22/why-sandisk-stock-was-a-winner-on-wednesday/",
-      "published": "2026-07-22T21:59:30+00:00"
-    },
-    {
-      "title": "The Ultimate Bull Run for NVIDIA, Micron, and SanDisk May Be Closer Than Investors Think",
+      "title": "Ripple Just Solved RLUSD\u2019s Two Biggest Problems With Ripple Mint and Notabene Deal",
       "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/07/22/the-ultimate-bull-run-for-nvidia-micron-and-sandisk-could-begin-soon/",
-      "published": "2026-07-22T21:53:48+00:00"
+      "url": "https://247wallst.com/investing/cryptocurrency/2026/07/23/ripple-just-solved-rlusds-two-biggest-problems-with-ripple-mint-and-notabene-deal/",
+      "published": "2026-07-23T21:58:41+00:00"
     },
     {
-      "title": "Anthropic and AMD are signing a major AI chip deal. What could this mean for Nvidia?",
-      "publisher": "Yahoo Finance Video",
-      "url": "https://finance.yahoo.com/video/anthropic-amd-signing-major-ai-180000308.html",
-      "published": "2026-07-22T18:00:00+00:00"
+      "title": "Amkor Technology surges 16% on $1.5B Nvidia deal",
+      "publisher": "Investing.com",
+      "url": "https://finance.yahoo.com/technology/ai/articles/amkor-technology-surges-16-1-215534452.html",
+      "published": "2026-07-23T21:55:34+00:00"
     },
     {
-      "title": "OpenAI hack: For 'every dollar' spent on AI, another should be spent on cybersecurity",
-      "publisher": "Yahoo Finance Video",
-      "url": "https://finance.yahoo.com/video/openai-hack-for-every-dollar-spent-on-ai-another-should-be-spent-on-cybersecurity-144811862.html",
-      "published": "2026-07-22T14:48:11+00:00"
+      "title": "First Trust Launches DGJL, a New Buffer ETF With a Fixed 9.37% Return",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/etf/2026/07/23/first-trust-launches-dgjl-a-new-buffer-etf-with-a-fixed-9-37-return/",
+      "published": "2026-07-23T21:46:51+00:00"
+    },
+    {
+      "title": "Nvidia, Amkor strike $1.5 billion chip packaging deal",
+      "publisher": "Reuters",
+      "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-amkor-strike-1-5-214417511.html",
+      "published": "2026-07-23T21:44:17+00:00"
+    },
+    {
+      "title": "These 3 Total Market ETFs Look Interchangeable but Picking the Wrong One Costs You Real Money Over a Lifetime",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/07/23/these-3-total-market-etfs-look-interchangeable-but-picking-the-wrong-one-costs-you-real-money-over-a-lifetime/",
+      "published": "2026-07-23T21:42:06+00:00"
+    },
+    {
+      "title": "Nvidia's Stock Hasn't Been This Cheap Since 2019. Here's Why It's the Best Buy in the Market Now.",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/07/23/nvidias-stock-hasnt-been-this-cheap-since-2019-her/",
+      "published": "2026-07-23T21:41:00+00:00"
     }
   ],
-  "generated_at": "2026-07-22T22:55:22.356636+00:00"
+  "generated_at": "2026-07-23T22:53:08.483873+00:00"
 }
