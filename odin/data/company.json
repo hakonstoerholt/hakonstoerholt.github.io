@@ -15,7 +15,7 @@
     "sector": "Technology",
     "industry": "Semiconductors",
     "market_cap": 5009871732736.0,
-    "pe": 31.675343,
+    "pe": 31.626911,
     "forward_pe": 16.072695,
     "dividend_yield": 0.48,
     "beta": 2.211,
@@ -2051,61 +2051,61 @@
   "options": {
     "expiry": "2026-07-27",
     "atm_strike": 207.5,
-    "call_iv": 0.24781025634765624,
-    "put_iv": 0.23499300170898438,
-    "atm_iv": 0.2414016290283203,
-    "days_to_expiry": 3
+    "call_iv": 0.28613995117187496,
+    "put_iv": 0.2712475219726562,
+    "atm_iv": 0.2786937365722656,
+    "days_to_expiry": 2
   },
   "consensus": null,
   "news": [
     {
-      "title": "Elon Musk Wouldn't Rule Out a Tesla-SpaceX Merger on the July 22 Earnings Call. Here's What It Would Mean for the Shares You Own Today.",
+      "title": "CoreWeave Stock Fell 11.4% on Friday. The Sell-Off Is About What It's Spending, Not What It's Selling.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/24/elon-musk-wouldnt-rule-out-a-tesla-spacex-merger-o/",
-      "published": "2026-07-24T22:34:00+00:00"
+      "url": "https://www.fool.com/investing/2026/07/25/coreweave-stock-fell-114-on-friday-the-sell-off-is/",
+      "published": "2026-07-25T21:27:00+00:00"
     },
     {
-      "title": "Why Shattuck Labs Stock Flew Nearly 5% Higher on Friday",
+      "title": "NuScale Power Is Down 38% This Year: Here's What the Next 5 Years Could Look Like",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/24/why-shattuck-labs-stock-flew-nearly-5-higher-on-fr/",
-      "published": "2026-07-24T22:27:47+00:00"
+      "url": "https://www.fool.com/investing/2026/07/25/nuscale-power-is-down-x-this-year-heres-what-the-n/",
+      "published": "2026-07-25T21:25:00+00:00"
     },
     {
-      "title": "Here\u2019s Why Nebius Group N.V. (NBIS) Is a Speculative Growth Play Backed by Nvidia\u2019s $2 Billion Investment",
-      "publisher": "Insider Monkey",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/why-nebius-group-n-v-222719675.html",
-      "published": "2026-07-24T22:27:19+00:00"
+      "title": "The Simplest Way to Invest in the AI Revolution Is Hiding in Plain Sight",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/07/25/simplest-way-invest-ai-revolution-plain-sight/",
+      "published": "2026-07-25T20:03:00+00:00"
     },
     {
-      "title": "When One Spouse Dies, One Social Security Check Disappears. These 3 ETFs Protect the Survivor",
+      "title": "Ranking the Best \"Magnificent Seven\" Stocks to Buy Right Now",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/07/25/ranking-the-best-magnificent-seven-stocks-to-buy-r/",
+      "published": "2026-07-25T19:50:00+00:00"
+    },
+    {
+      "title": "UCOP: A 2X Bet on the Metal the World Can\u2019t Electrify Without",
       "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/etf/2026/07/24/when-one-spouse-dies-one-social-security-check-disappears-these-3-etfs-protect-the-survivor/",
-      "published": "2026-07-24T22:27:03+00:00"
+      "url": "https://247wallst.com/investing/etf/2026/07/25/ucop-a-2x-bet-on-the-metal-the-world-cant-electrify-without/",
+      "published": "2026-07-25T19:48:04+00:00"
     },
     {
-      "title": "Missed Out on Nvidia's Historic Run? These 2 Tech Winners Are Just Getting Started.",
+      "title": "PayPal's Board Reportedly Called $60.50 a Share Inadequate. The Stock Trades at $56.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/24/missed-out-on-nvidias-historic-run-these-2-tech-wi/",
-      "published": "2026-07-24T21:50:00+00:00"
+      "url": "https://www.fool.com/investing/2026/07/25/paypals-board-reportedly-called-6050-a-share-inade/",
+      "published": "2026-07-25T19:43:00+00:00"
     },
     {
-      "title": "How Many Stocks Should You Own?",
-      "publisher": "Zacks",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/many-stocks-own-214700040.html",
-      "published": "2026-07-24T21:47:00+00:00"
-    },
-    {
-      "title": "Interactive Brokers Has Posted a Pre-Tax Margin Above 70% for 7 Straight Quarters. Why Rivals Struggle to Copy It",
+      "title": "Should You Buy Chipotle Stock Before July 29?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/24/interactive-brokers-has-posted-a-pre-tax-margin-ab/",
-      "published": "2026-07-24T21:25:00+00:00"
+      "url": "https://www.fool.com/investing/2026/07/25/should-you-buy-chipotle-stock-before-july-29/",
+      "published": "2026-07-25T19:42:00+00:00"
     },
     {
-      "title": "OpenAI president Greg Brockman: 'We will remain in this compute shortage no matter what'",
-      "publisher": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/technology/article/openai-president-greg-brockman-we-will-remain-in-this-compute-shortage-no-matter-what-155249677.html",
-      "published": "2026-07-24T15:52:49+00:00"
+      "title": "After Comparing Every Covered Call Nasdaq-100 ETF These 3 Pay Up to 14 Percent Without Capping Your AI Upside",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/07/25/after-comparing-every-covered-call-nasdaq-100-etf-these-3-pay-up-to-14-percent-without-capping-your-ai-upside/",
+      "published": "2026-07-25T19:34:14+00:00"
     }
   ],
-  "generated_at": "2026-07-24T22:53:29.263677+00:00"
+  "generated_at": "2026-07-25T22:45:17.067057+00:00"
 }
