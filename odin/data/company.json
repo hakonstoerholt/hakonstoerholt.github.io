@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-07-24",
+  "as_of": "2026-07-27",
   "price": {
-    "last": 206.83999633789062,
-    "prev_close": 208.75999450683594,
-    "change_pct": -0.9197155678610791,
-    "ytd_pct": 9.526073419618552,
+    "last": 196.50999450683594,
+    "prev_close": 206.83999633789062,
+    "change_pct": -4.994199387907427,
+    "ytd_pct": 4.056122931296913,
     "high_52w": 236.5399932861328,
     "low_52w": 164.07000732421875,
     "currency": "USD"
@@ -14,30 +14,14 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 5009871732736.0,
-    "pe": 31.626911,
-    "forward_pe": 16.072695,
+    "market_cap": 4759668391936.0,
+    "pe": 30.0474,
+    "forward_pe": 15.269993,
     "dividend_yield": 0.48,
     "beta": 2.211,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-07-24",
-      "o": 172.44000244140625,
-      "h": 173.8300018310547,
-      "l": 171.3000030517578,
-      "c": 173.74000549316406,
-      "v": 128984600
-    },
-    {
-      "t": "2025-07-25",
-      "o": 173.61000061035156,
-      "h": 174.72000122070312,
-      "l": 172.9600067138672,
-      "c": 173.5,
-      "v": 122316800
-    },
     {
       "t": "2025-07-28",
       "o": 174.02000427246094,
@@ -2037,6 +2021,14 @@
       "l": 204.80999755859375,
       "c": 206.83999633789062,
       "v": 114728583
+    },
+    {
+      "t": "2026-07-27",
+      "o": 208.11000061035156,
+      "h": 208.75,
+      "l": 195.44000244140625,
+      "c": 196.50999450683594,
+      "v": 153410785
     }
   ],
   "earnings": {
@@ -2044,68 +2036,68 @@
     "history": []
   },
   "implied_move": {
-    "expiry": "2026-07-27",
-    "move_pct": 2.0063817798665133,
-    "straddle": 4.15
+    "expiry": "2026-07-29",
+    "move_pct": 2.9871254206339124,
+    "straddle": 5.870000000000001
   },
   "options": {
-    "expiry": "2026-07-27",
-    "atm_strike": 207.5,
-    "call_iv": 0.35034829345703117,
-    "put_iv": 0.33228206787109377,
-    "atm_iv": 0.34131518066406247,
-    "days_to_expiry": 1
+    "expiry": "2026-07-29",
+    "atm_strike": 197.5,
+    "call_iv": 0.41528905029296875,
+    "put_iv": 0.411138701171875,
+    "atm_iv": 0.41321387573242185,
+    "days_to_expiry": 2
   },
   "consensus": null,
   "news": [
     {
-      "title": "AT&T Beat on Earnings, Announced a $10 Billion Buyback, and Still Trades at 8 Times Earnings With a 4.6% Yield.",
+      "title": "Dow Jones Futures: U.S.-Iran Peace Hopes Send Oil Prices Plunging; Nvidia, Micron, Sandisk, SpaceX, Tesla Sell Off",
+      "publisher": "Investor's Business Daily",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-us-iran-oil-prices-nvidia-micron-sandisk-spacex-tesla/?src=A00220&yptr=yahoo",
+      "published": "2026-07-27T22:13:34+00:00"
+    },
+    {
+      "title": "Why Core Scientific Stock Stumbled Today",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/26/att-beat-on-earnings-announced-a-10-billion-buybac/",
-      "published": "2026-07-26T22:25:00+00:00"
+      "url": "https://www.fool.com/investing/2026/07/27/why-core-scientific-stock-stumbled-today/",
+      "published": "2026-07-27T22:03:03+00:00"
     },
     {
-      "title": "Texas Instruments Can Ride AI Demand to New Highs",
+      "title": "Amkor Technology Q2 Earnings Call Highlights",
+      "publisher": "MarketBeat",
+      "url": "https://www.marketbeat.com/instant-alerts/amkor-technology-q2-earnings-call-highlights-2026-07-27/?utm_source=yahoofinance&utm_medium=yahoofinance",
+      "published": "2026-07-27T22:02:43+00:00"
+    },
+    {
+      "title": "Meet the Dividend Growth Stock That Warren Buffett Held for Decades, and Greg Abel Pegged as One of Berkshire Hathaway's Multidecade Compounders",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/26/texas-instruments-can-ride-ai-demand-to-new-highs/",
-      "published": "2026-07-26T22:20:00+00:00"
+      "url": "https://www.fool.com/investing/2026/07/27/meet-the-dividend-growth-stock-that-warren-buffett/",
+      "published": "2026-07-27T21:50:00+00:00"
     },
     {
-      "title": "Microsoft's Next Earnings Report on July 29 Could Send the Stock Soaring. Here's Why.",
+      "title": "Why Bitmine Stock Popped Today",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/26/microsofts-next-earnings-report-on-july-29-could-send-the-stock-soaring-heres-why/",
-      "published": "2026-07-26T22:10:01+00:00"
+      "url": "https://www.fool.com/investing/2026/07/27/why-bitmine-stock-bmnr-is-up-today/",
+      "published": "2026-07-27T21:29:08+00:00"
     },
     {
-      "title": "Forget IonQ, Rigetti Computing, and D-Wave Quantum. This Trillion-Dollar Artificial Intelligence (AI) Stock Is the Best Quantum Computing Opportunity, and It's Currently Trading at a 7-Year Valuation Low.",
+      "title": "Nvidia Invests in Ilya Sutskever's AI Startup",
+      "publisher": "GuruFocus.com",
+      "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-invests-ilya-sutskevers-ai-212720721.html",
+      "published": "2026-07-27T21:27:20+00:00"
+    },
+    {
+      "title": "NVIDIA vs. Snowflake: Which AI-Driven Stock Is a Better Buy in 2026?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/26/forget-ionq-rigetti-computing-and-d-wave-quantum-t/",
-      "published": "2026-07-26T21:43:00+00:00"
+      "url": "https://www.fool.com/coverage/better-buy/2026/07/27/nvidia-vs-snowflake-which-ai-driven-stock-is-a-better-buy-in-2026/",
+      "published": "2026-07-27T21:26:01+00:00"
     },
     {
-      "title": "American Airlines Cut Its Full-Year Guidance. The Stock Rose 6.8% the Next Day.",
+      "title": "Stock Market Today, July 27: Dow Rises on Oil Retreat, and Sandisk Plunges 11% on Memory Weakness",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/26/american-airlines-cut-its-full-year-guidance-the-s/",
-      "published": "2026-07-26T21:32:00+00:00"
-    },
-    {
-      "title": "Mark Cuban Predicts Humanoid Robots Will Flop on 'Latency, Processing Power, Dexterity,' and Specialized Robots Will Win Instead: 'Logistics Have Already....'",
-      "publisher": "Benzinga",
-      "url": "https://tech.yahoo.com/science/articles/mark-cuban-predicts-humanoid-robots-213020485.html",
-      "published": "2026-07-26T21:30:20+00:00"
-    },
-    {
-      "title": "Prediction: Alphabet Will Beat Apple to a $5 Trillion Market Cap",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/26/prediction-alphabet-will-beat-apple-to-a-5-trillio/",
-      "published": "2026-07-26T21:20:00+00:00"
-    },
-    {
-      "title": "Nvidia just locked down deal that changes AI race",
-      "publisher": "TheStreet",
-      "url": "https://www.thestreet.com/technology/nvidia-just-locked-down-a-deal-that-changes-the-ai-race-sk-hynix",
-      "published": "2026-07-26T21:07:00+00:00"
+      "url": "https://www.fool.com/coverage/stock-market-today/2026/07/27/stock-market-today-july-27-dow-rises-on-oil-retreat-and-sandisk-plunges-11-on-memory-weakness/",
+      "published": "2026-07-27T21:24:56+00:00"
     }
   ],
-  "generated_at": "2026-07-26T22:50:18.415061+00:00"
+  "generated_at": "2026-07-27T22:51:32.578257+00:00"
 }
