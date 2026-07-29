@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-07-28",
+  "as_of": "2026-07-29",
   "price": {
-    "last": 197.00999450683594,
-    "prev_close": 196.50999450683594,
-    "change_pct": 0.2544399847217882,
-    "ytd_pct": 4.3208833145854,
+    "last": 190.00999450683594,
+    "prev_close": 197.00999450683594,
+    "change_pct": -3.553119230079016,
+    "ytd_pct": 0.614237948546581,
     "high_52w": 236.5399932861328,
     "low_52w": 164.07000732421875,
     "currency": "USD"
@@ -14,22 +14,14 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 4771778920448.0,
-    "pe": 30.216257,
-    "forward_pe": 15.3088455,
+    "market_cap": 4602232045568.0,
+    "pe": 29.142637,
+    "forward_pe": 14.764904,
     "dividend_yield": 0.51,
     "beta": 2.211,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-07-28",
-      "o": 174.02000427246094,
-      "h": 177.0,
-      "l": 173.97000122070312,
-      "c": 176.75,
-      "v": 140023500
-    },
     {
       "t": "2025-07-29",
       "o": 177.9600067138672,
@@ -2037,6 +2029,14 @@
       "l": 192.74000549316406,
       "c": 197.00999450683594,
       "v": 125138253
+    },
+    {
+      "t": "2026-07-29",
+      "o": 195.84500122070312,
+      "h": 197.07400512695312,
+      "l": 190.00999450683594,
+      "c": 190.00999450683594,
+      "v": 136609393
     }
   ],
   "earnings": {
@@ -2044,68 +2044,68 @@
     "history": []
   },
   "implied_move": {
-    "expiry": "2026-07-29",
-    "move_pct": 2.0303538457594374,
-    "straddle": 4.0
+    "expiry": "2026-07-31",
+    "move_pct": 3.512973102980567,
+    "straddle": 6.675
   },
   "options": {
-    "expiry": "2026-07-29",
-    "atm_strike": 197.5,
-    "call_iv": 0.36157864990234373,
-    "put_iv": 0.35108070800781244,
-    "atm_iv": 0.35632967895507806,
-    "days_to_expiry": 1
+    "expiry": "2026-07-31",
+    "atm_strike": 190.0,
+    "call_iv": 0.5014698291015626,
+    "put_iv": 0.4809622216796875,
+    "atm_iv": 0.49121602539062503,
+    "days_to_expiry": 2
   },
   "consensus": null,
   "news": [
     {
-      "title": "Down 25%, Is It Finally Time to Buy Netflix (NFLX) Stock?",
+      "title": "Why Garmin Stock Soared Today",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/28/down-25-is-it-finally-time-to-buy-netflix-nflx-sto/",
-      "published": "2026-07-28T22:35:00+00:00"
+      "url": "https://www.fool.com/investing/2026/07/29/why-garmin-stock-grmn-soared-today/",
+      "published": "2026-07-29T22:38:47+00:00"
     },
     {
-      "title": "Where Will Tesla Stock Be in 5 Years?",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/28/where-will-tesla-stock-be-in-5-years/",
-      "published": "2026-07-28T22:20:00+00:00"
+      "title": "SoFi Technologies, Inc. Q2 2026 Earnings Call Summary",
+      "publisher": "Moby",
+      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-sofi-technologies-inc-q2-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
+      "published": "2026-07-29T22:34:21+00:00"
     },
     {
-      "title": "Apple Overtakes Nvidia\u2014Which Will Be Bigger by End of July?",
-      "publisher": "decrypt",
-      "url": "https://decrypt.co/374604/apple-overtakes-nvidia-which-bigger-july",
-      "published": "2026-07-28T22:08:04+00:00"
+      "title": "Equinix shares fall on soft third-quarter forecast",
+      "publisher": "Reuters",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/equinix-shares-fall-soft-third-223306482.html",
+      "published": "2026-07-29T22:33:06+00:00"
     },
     {
-      "title": "Why Opko Health Stock Surged by 33% on Tuesday",
+      "title": "Prediction: Bitcoin Will Be Worth $2.5 Trillion in 3 Years",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/28/why-opko-health-stock-surged-by-33-on-tuesday/",
-      "published": "2026-07-28T22:06:52+00:00"
+      "url": "https://www.fool.com/investing/2026/07/29/prediction-bitcoin-worth-25-trillion-in-3-years/",
+      "published": "2026-07-29T22:33:00+00:00"
     },
     {
-      "title": "SpaceX Reports Its First Quarterly Results as a Public Company on Aug. 4. Here's What Has to Show Up in the Update.",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/28/spacex-reports-its-first-quarterly-results-as-a-pu/",
-      "published": "2026-07-28T22:01:00+00:00"
+      "title": "Mechanics Bank Q2 2026 Earnings Call Summary",
+      "publisher": "Moby",
+      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-mechanics-bank-q2-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
+      "published": "2026-07-29T22:29:29+00:00"
     },
     {
-      "title": "Nvidia Stock Is Trading at a Shocking Valuation. Now Is the Perfect Time to Buy",
+      "title": "Why Peabody Energy Stock Wilted on Wednesday",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/28/nvidia-stock-is-trading-at-a-shocking-valuation-no/",
-      "published": "2026-07-28T21:50:00+00:00"
+      "url": "https://www.fool.com/investing/2026/07/29/why-peabody-energy-stock-wilted-on-wednesday/",
+      "published": "2026-07-29T22:29:29+00:00"
     },
     {
-      "title": "Why Navitas Semiconductor Stock Plummeted by 12% Today",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/28/why-navitas-semiconductor-stock-plummeted-by-12-to/",
-      "published": "2026-07-28T21:41:48+00:00"
+      "title": "Prosperity Bancshares, Inc. Q2 2026 Earnings Call Summary",
+      "publisher": "Moby",
+      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-prosperity-bancshares-inc-q2-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
+      "published": "2026-07-29T22:28:43+00:00"
     },
     {
-      "title": "Exxon Mobil's Next Earnings Report on July 31 Could Send the Stock Soaring. Here's Why.",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/28/exxon-mobils-next-earnings-report-on-july-31-could-send-the-stock-soaring-heres-why/",
-      "published": "2026-07-28T21:35:01+00:00"
+      "title": "Sun Communities, Inc. Q2 2026 Earnings Call Summary",
+      "publisher": "Moby",
+      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-sun-communities-inc-q2-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
+      "published": "2026-07-29T22:23:52+00:00"
     }
   ],
-  "generated_at": "2026-07-28T23:00:01.493133+00:00"
+  "generated_at": "2026-07-29T22:48:35.849396+00:00"
 }
