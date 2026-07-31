@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-07-30",
+  "as_of": "2026-07-31",
   "price": {
-    "last": 195.0399932861328,
-    "prev_close": 190.00999450683594,
-    "change_pct": 2.6472285272951313,
-    "ytd_pct": 3.2777267580410996,
+    "last": 200.75,
+    "prev_close": 195.0399932861328,
+    "change_pct": 2.9276081370092744,
+    "ytd_pct": 6.301293890327719,
     "high_52w": 236.5399932861328,
     "low_52w": 164.07000732421875,
     "currency": "USD"
@@ -14,22 +14,14 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 4724063469568.0,
-    "pe": 29.82263,
-    "forward_pe": 15.155765,
-    "dividend_yield": 0.53,
+    "market_cap": 4862365925376.0,
+    "pe": 30.742725,
+    "forward_pe": 15.599466,
+    "dividend_yield": 0.51,
     "beta": 2.211,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-07-30",
-      "o": 176.50999450683594,
-      "h": 179.88999938964844,
-      "l": 176.0399932861328,
-      "c": 179.27000427246094,
-      "v": 174312200
-    },
     {
       "t": "2025-07-31",
       "o": 182.89999389648438,
@@ -2037,6 +2029,14 @@
       "l": 191.52000427246094,
       "c": 195.0399932861328,
       "v": 123110210
+    },
+    {
+      "t": "2026-07-31",
+      "o": 198.4405059814453,
+      "h": 201.97000122070312,
+      "l": 194.9499969482422,
+      "c": 200.75,
+      "v": 139261166
     }
   ],
   "earnings": {
@@ -2044,68 +2044,68 @@
     "history": []
   },
   "implied_move": {
-    "expiry": "2026-07-31",
-    "move_pct": 1.9585726679122069,
-    "straddle": 3.8200000000000003
+    "expiry": "2026-08-03",
+    "move_pct": 2.146948941469489,
+    "straddle": 4.31
   },
   "options": {
-    "expiry": "2026-07-31",
-    "atm_strike": 195.0,
-    "call_iv": 0.3454655297851562,
-    "put_iv": 0.32642275146484373,
-    "atm_iv": 0.335944140625,
-    "days_to_expiry": 1
+    "expiry": "2026-08-03",
+    "atm_strike": 200.0,
+    "call_iv": 0.264655791015625,
+    "put_iv": 0.2573316455078125,
+    "atm_iv": 0.26099371826171874,
+    "days_to_expiry": 3
   },
   "consensus": null,
   "news": [
     {
-      "title": "Huntington Ingalls Industries, Inc. Q2 2026 Earnings Call Summary",
-      "publisher": "Moby",
-      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-huntington-ingalls-industries-inc-q2-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
-      "published": "2026-07-30T22:35:33+00:00"
-    },
-    {
-      "title": "Group 1 Automotive, Inc. Q2 2026 Earnings Call Summary",
-      "publisher": "Moby",
-      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-group-1-automotive-inc-q2-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
-      "published": "2026-07-30T22:35:28+00:00"
-    },
-    {
-      "title": "Oklo vs. NuScale: Which One Actually Has Paying Customers Lined Up?",
+      "title": "Why SPS Commerce Stock Crushed it on Friday",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/30/oklo-vs-nuscale-which-one-actually-has-paying-cust/",
-      "published": "2026-07-30T22:25:00+00:00"
+      "url": "https://www.fool.com/investing/2026/07/31/why-sps-commerce-stock-crushed-it-on-friday/",
+      "published": "2026-07-31T22:14:22+00:00"
     },
     {
-      "title": "Sonic Automotive, Inc. Q2 2026 Earnings Call Summary",
-      "publisher": "Moby",
-      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-sonic-automotive-inc-q2-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
-      "published": "2026-07-30T22:17:09+00:00"
+      "title": "Why CareDx Stock Jumped Today",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/07/31/why-caredx-stock-cdna-is-up-today/",
+      "published": "2026-07-31T21:44:23+00:00"
     },
     {
-      "title": "Federal Signal Corporation Q2 2026 Earnings Call Summary",
-      "publisher": "Moby",
-      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-federal-signal-corporation-q2-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
-      "published": "2026-07-30T22:10:51+00:00"
+      "title": "Fed Chair Kevin Warsh Plays the Hawk But May Have a Dove Up His Sleeve",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/07/31/fed-chair-kevin-warsh-plays-the-hawk/",
+      "published": "2026-07-31T21:41:00+00:00"
     },
     {
-      "title": "Exelon Corporation Q2 2026 Earnings Call Summary",
-      "publisher": "Moby",
-      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-exelon-corporation-q2-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
-      "published": "2026-07-30T22:10:47+00:00"
+      "title": "Nvidia Is Back on Top as Most Valuable Company After Apple Stumbles",
+      "publisher": "Barrons.com",
+      "url": "https://www.barrons.com/articles/nvidia-stock-price-amazon-2354d905?siteid=yhoof2&yptr=yahoo",
+      "published": "2026-07-31T21:30:00+00:00"
     },
     {
-      "title": "Enterprise Products Partners L.P. Q2 2026 Earnings Call Summary",
-      "publisher": "Moby",
-      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-enterprise-products-partners-lp-q2-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
-      "published": "2026-07-30T22:10:41+00:00"
+      "title": "AI trade is a combination of 'perception and reality': Bradley Tusk",
+      "publisher": "Yahoo Finance Video",
+      "url": "https://finance.yahoo.com/video/ai-trade-combination-perception-reality-212136645.html",
+      "published": "2026-07-31T21:21:36+00:00"
     },
     {
-      "title": "NextDecade Corporation Q2 2026 Earnings Call Summary",
-      "publisher": "Moby",
-      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-nextdecade-corporation-q2-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
-      "published": "2026-07-30T22:10:37+00:00"
+      "title": "The world\u2019s most valuable companies are taking opposite paths in the AI race",
+      "publisher": "CNN Business",
+      "url": "https://www.cnn.com/2026/07/31/tech/apple-nvidia-ai-race",
+      "published": "2026-07-31T21:18:08+00:00"
+    },
+    {
+      "title": "Novo Nordisk Shares Plunge After a Key Trial Fails. Should Investors Buy the Dip?",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/07/31/novo-nordisk-shares-plunge-after-a-key-trial-fails-should-investors-buy-the-dip/",
+      "published": "2026-07-31T21:15:01+00:00"
+    },
+    {
+      "title": "Coinbase Just Took a Record 10.3% of Global Crypto Trading. It Still Posted Its Third Straight Quarterly Loss.",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/07/31/coinbase-just-took-a-record-103-of-global-crypto-t/",
+      "published": "2026-07-31T21:13:00+00:00"
     }
   ],
-  "generated_at": "2026-07-30T23:01:41.532728+00:00"
+  "generated_at": "2026-07-31T22:51:45.527782+00:00"
 }
