@@ -15,9 +15,9 @@
     "sector": "Technology",
     "industry": "Semiconductors",
     "market_cap": 4862365925376.0,
-    "pe": 30.742725,
-    "forward_pe": 15.599466,
-    "dividend_yield": 0.51,
+    "pe": 30.789877,
+    "forward_pe": 15.573568,
+    "dividend_yield": 0.5,
     "beta": 2.211,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
@@ -2051,61 +2051,61 @@
   "options": {
     "expiry": "2026-08-03",
     "atm_strike": 200.0,
-    "call_iv": 0.264655791015625,
-    "put_iv": 0.2573316455078125,
-    "atm_iv": 0.26099371826171874,
-    "days_to_expiry": 3
+    "call_iv": 0.305671005859375,
+    "put_iv": 0.2973703076171874,
+    "atm_iv": 0.3015206567382812,
+    "days_to_expiry": 2
   },
   "consensus": null,
   "news": [
     {
-      "title": "Why SPS Commerce Stock Crushed it on Friday",
+      "title": "Warren Buffett's Berkshire Could Buy Almost Any S&P 500 Company With Its $397 Billion Cash Pile, but Keeps Waiting for a Better Price",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/31/why-sps-commerce-stock-crushed-it-on-friday/",
-      "published": "2026-07-31T22:14:22+00:00"
+      "url": "https://www.fool.com/investing/2026/08/01/warren-buffetts-berkshire-could-buy-almost-any-sp/",
+      "published": "2026-08-01T22:05:00+00:00"
     },
     {
-      "title": "Why CareDx Stock Jumped Today",
+      "title": "McDonald's Sits 21% Below Its High and 4% Above Its 52-Week Low. The Dividend Yields 2.7%.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/31/why-caredx-stock-cdna-is-up-today/",
-      "published": "2026-07-31T21:44:23+00:00"
+      "url": "https://www.fool.com/investing/2026/08/01/mcdonalds-sits-21-below-its-high-and-4-above-its-5/",
+      "published": "2026-08-01T20:58:00+00:00"
     },
     {
-      "title": "Fed Chair Kevin Warsh Plays the Hawk But May Have a Dove Up His Sleeve",
+      "title": "Prediction: Eli Lilly Will Be Worth $2 Trillion by 2031",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/31/fed-chair-kevin-warsh-plays-the-hawk/",
-      "published": "2026-07-31T21:41:00+00:00"
+      "url": "https://www.fool.com/investing/2026/08/01/prediction-eli-lilly-will-be-worth-2-trillion-by-2/",
+      "published": "2026-08-01T20:37:00+00:00"
     },
     {
-      "title": "Nvidia Is Back on Top as Most Valuable Company After Apple Stumbles",
-      "publisher": "Barrons.com",
-      "url": "https://www.barrons.com/articles/nvidia-stock-price-amazon-2354d905?siteid=yhoof2&yptr=yahoo",
-      "published": "2026-07-31T21:30:00+00:00"
+      "title": "Nvidia's CEO just pointed at the part of AI that worries him most",
+      "publisher": "TheStreet",
+      "url": "https://www.thestreet.com/investing/stocks/nvidia-ceo-huang-ai-worries-data-centers-artificial-intelligence-ai-power",
+      "published": "2026-08-01T20:33:00+00:00"
     },
     {
-      "title": "AI trade is a combination of 'perception and reality': Bradley Tusk",
-      "publisher": "Yahoo Finance Video",
-      "url": "https://finance.yahoo.com/video/ai-trade-combination-perception-reality-212136645.html",
-      "published": "2026-07-31T21:21:36+00:00"
-    },
-    {
-      "title": "The world\u2019s most valuable companies are taking opposite paths in the AI race",
-      "publisher": "CNN Business",
-      "url": "https://www.cnn.com/2026/07/31/tech/apple-nvidia-ai-race",
-      "published": "2026-07-31T21:18:08+00:00"
-    },
-    {
-      "title": "Novo Nordisk Shares Plunge After a Key Trial Fails. Should Investors Buy the Dip?",
+      "title": "Could Buying This Financial Stock Today Set You Up for Life?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/31/novo-nordisk-shares-plunge-after-a-key-trial-fails-should-investors-buy-the-dip/",
-      "published": "2026-07-31T21:15:01+00:00"
+      "url": "https://www.fool.com/investing/2026/08/01/could-buying-this-financial-stock-today-set-you-up/",
+      "published": "2026-08-01T20:25:00+00:00"
     },
     {
-      "title": "Coinbase Just Took a Record 10.3% of Global Crypto Trading. It Still Posted Its Third Straight Quarterly Loss.",
+      "title": "Amazon Just Left Investors Speechless",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/31/coinbase-just-took-a-record-103-of-global-crypto-t/",
-      "published": "2026-07-31T21:13:00+00:00"
+      "url": "https://www.fool.com/investing/2026/08/01/amazon-just-left-investors-speechless/",
+      "published": "2026-08-01T20:17:00+00:00"
+    },
+    {
+      "title": "3 Dividend Stocks to Buy and Hold Forever",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/08/01/3-dividend-stocks-to-buy-and-hold-forever/",
+      "published": "2026-08-01T20:15:00+00:00"
+    },
+    {
+      "title": "Silicon Motion Crushed Earnings and Surprised Memory Chip Bears",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/08/01/silicon-motion-technology-crushed-earnings/",
+      "published": "2026-08-01T19:59:00+00:00"
     }
   ],
-  "generated_at": "2026-07-31T22:51:45.527782+00:00"
+  "generated_at": "2026-08-01T22:45:48.392501+00:00"
 }
