@@ -2036,7 +2036,7 @@
       "h": 201.97000122070312,
       "l": 194.9499969482422,
       "c": 200.75,
-      "v": 139261166
+      "v": 139961152
     }
   ],
   "earnings": {
@@ -2051,61 +2051,61 @@
   "options": {
     "expiry": "2026-08-03",
     "atm_strike": 200.0,
-    "call_iv": 0.305671005859375,
-    "put_iv": 0.2973703076171874,
-    "atm_iv": 0.3015206567382812,
-    "days_to_expiry": 2
+    "call_iv": 0.3742738354492187,
+    "put_iv": 0.3640200317382813,
+    "atm_iv": 0.36914693359375,
+    "days_to_expiry": 1
   },
   "consensus": null,
   "news": [
     {
-      "title": "Warren Buffett's Berkshire Could Buy Almost Any S&P 500 Company With Its $397 Billion Cash Pile, but Keeps Waiting for a Better Price",
+      "title": "I Won't Let RMDs Ruin My Retirement. Here's My Plan to Manage Them.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/01/warren-buffetts-berkshire-could-buy-almost-any-sp/",
-      "published": "2026-08-01T22:05:00+00:00"
+      "url": "https://www.fool.com/retirement/2026/08/02/i-wont-let-rmds-ruin-my-retirement-heres-my-plan-t/",
+      "published": "2026-08-02T21:47:00+00:00"
     },
     {
-      "title": "McDonald's Sits 21% Below Its High and 4% Above Its 52-Week Low. The Dividend Yields 2.7%.",
+      "title": "SoundHound AI's Next Earnings Report on Aug. 5 Could Send the Stock Soaring. Here's Why.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/01/mcdonalds-sits-21-below-its-high-and-4-above-its-5/",
-      "published": "2026-08-01T20:58:00+00:00"
+      "url": "https://www.fool.com/investing/2026/08/02/soundhound-ais-next-earnings-report-on-aug-5-could-send-the-stock-soaring-heres-why/",
+      "published": "2026-08-02T21:45:01+00:00"
     },
     {
-      "title": "Prediction: Eli Lilly Will Be Worth $2 Trillion by 2031",
+      "title": "SpaceX vs. the \"Magnificent Seven\": How the New Nasdaq-100 Member Stacks Up",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/01/prediction-eli-lilly-will-be-worth-2-trillion-by-2/",
-      "published": "2026-08-01T20:37:00+00:00"
+      "url": "https://www.fool.com/investing/2026/08/02/spacex-vs-the-magnificent-seven-how-the-new-nasdaq/",
+      "published": "2026-08-02T21:39:00+00:00"
     },
     {
-      "title": "Nvidia's CEO just pointed at the part of AI that worries him most",
-      "publisher": "TheStreet",
-      "url": "https://www.thestreet.com/investing/stocks/nvidia-ceo-huang-ai-worries-data-centers-artificial-intelligence-ai-power",
-      "published": "2026-08-01T20:33:00+00:00"
+      "title": "Is Meta Platforms Stock a Buy on the Dip as Revenue Surges?",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/08/02/is-meta-platforms-stock-a-buy-on-dip-as-revenue/",
+      "published": "2026-08-02T21:20:00+00:00"
     },
     {
-      "title": "Could Buying This Financial Stock Today Set You Up for Life?",
+      "title": "NuScale Power's Next Earnings Report on Aug. 5 Could Send the Stock Soaring. Here's Why.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/01/could-buying-this-financial-stock-today-set-you-up/",
-      "published": "2026-08-01T20:25:00+00:00"
+      "url": "https://www.fool.com/investing/2026/08/02/nuscale-powers-next-earnings-report-on-aug-5-could-send-the-stock-soaring-heres-why/",
+      "published": "2026-08-02T21:09:01+00:00"
     },
     {
-      "title": "Amazon Just Left Investors Speechless",
+      "title": "Could You Retire With Less Than $1 Million? Millions of People Do.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/01/amazon-just-left-investors-speechless/",
-      "published": "2026-08-01T20:17:00+00:00"
+      "url": "https://www.fool.com/retirement/2026/08/02/could-you-retire-with-less-than-1-million-millions/",
+      "published": "2026-08-02T21:05:00+00:00"
     },
     {
-      "title": "3 Dividend Stocks to Buy and Hold Forever",
+      "title": "If I Could Tell Every Investor 1 Thing About Building Lasting Wealth in the Stock Market, It's This",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/01/3-dividend-stocks-to-buy-and-hold-forever/",
-      "published": "2026-08-01T20:15:00+00:00"
+      "url": "https://www.fool.com/investing/2026/08/02/if-i-could-tell-every-investor-1-thing-about-build/",
+      "published": "2026-08-02T20:50:00+00:00"
     },
     {
-      "title": "Silicon Motion Crushed Earnings and Surprised Memory Chip Bears",
+      "title": "Where Will Mastercard Stock Be in 5 Years?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/01/silicon-motion-technology-crushed-earnings/",
-      "published": "2026-08-01T19:59:00+00:00"
+      "url": "https://www.fool.com/investing/2026/08/02/where-will-mastercard-stock-be-in-5-years/",
+      "published": "2026-08-02T20:42:00+00:00"
     }
   ],
-  "generated_at": "2026-08-01T22:45:48.392501+00:00"
+  "generated_at": "2026-08-02T22:46:22.591549+00:00"
 }
