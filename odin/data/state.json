@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-08-02T22:46:22.594339+00:00",
+  "generated_at": "2026-08-03T22:52:28.066132+00:00",
   "regime": {
-    "regime": "Unknown",
-    "alarm": null,
-    "headline": "A data input is stale (vix3m). The regime signal is suppressed; hold current positioning until it refreshes.",
-    "as_of": "2026-07-31",
-    "degraded": true
+    "regime": "Calm",
+    "alarm": false,
+    "headline": "Calm \u2014 no stress alarm. The macro / yield-curve picture leads at +0.1\u03c3, and the topology trigger sits 1.4\u03c3 away. Fragility Low; full exposure (1\u00d7).",
+    "as_of": "2026-08-03",
+    "degraded": false
   },
   "company": {
     "ticker": "NVDA",
-    "last": 200.75,
-    "change_pct": 2.9276081370092744,
-    "as_of": "2026-07-31"
+    "last": 206.63999938964844,
+    "change_pct": 2.9339972053043173,
+    "as_of": "2026-08-03"
   }
 }

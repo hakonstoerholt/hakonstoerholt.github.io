@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-07-31",
+  "as_of": "2026-08-03",
   "price": {
-    "last": 200.75,
-    "prev_close": 195.0399932861328,
-    "change_pct": 2.9276081370092744,
-    "ytd_pct": 6.301293890327719,
+    "last": 206.63999938964844,
+    "prev_close": 200.75,
+    "change_pct": 2.9339972053043173,
+    "ytd_pct": 9.420170882272295,
     "high_52w": 236.5399932861328,
     "low_52w": 164.07000732421875,
     "currency": "USD"
@@ -14,30 +14,14 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 4862365925376.0,
-    "pe": 30.789877,
-    "forward_pe": 15.573568,
+    "market_cap": 5005027311616.0,
+    "pe": 31.69325,
+    "forward_pe": 16.030497,
     "dividend_yield": 0.5,
-    "beta": 2.211,
+    "beta": 2.215,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-07-31",
-      "o": 182.89999389648438,
-      "h": 183.3000030517578,
-      "l": 175.92999267578125,
-      "c": 177.8699951171875,
-      "v": 221685400
-    },
-    {
-      "t": "2025-08-01",
-      "o": 174.08999633789062,
-      "h": 176.5399932861328,
-      "l": 170.88999938964844,
-      "c": 173.72000122070312,
-      "v": 204529000
-    },
     {
       "t": "2025-08-04",
       "o": 175.16000366210938,
@@ -2037,6 +2021,14 @@
       "l": 194.9499969482422,
       "c": 200.75,
       "v": 139961152
+    },
+    {
+      "t": "2026-08-03",
+      "o": 197.72999572753906,
+      "h": 208.74000549316406,
+      "l": 196.85000610351562,
+      "c": 206.63999938964844,
+      "v": 127547828
     }
   ],
   "earnings": {
@@ -2044,68 +2036,68 @@
     "history": []
   },
   "implied_move": {
-    "expiry": "2026-08-03",
-    "move_pct": 2.146948941469489,
-    "straddle": 4.31
+    "expiry": "2026-08-05",
+    "move_pct": 2.5890437552275785,
+    "straddle": 5.35
   },
   "options": {
-    "expiry": "2026-08-03",
-    "atm_strike": 200.0,
-    "call_iv": 0.3742738354492187,
-    "put_iv": 0.3640200317382813,
-    "atm_iv": 0.36914693359375,
-    "days_to_expiry": 1
+    "expiry": "2026-08-05",
+    "atm_strike": 207.5,
+    "call_iv": 0.3657289990234375,
+    "put_iv": 0.35352208984374994,
+    "atm_iv": 0.35962554443359374,
+    "days_to_expiry": 2
   },
   "consensus": null,
   "news": [
     {
-      "title": "I Won't Let RMDs Ruin My Retirement. Here's My Plan to Manage Them.",
+      "title": "Why Sally Beauty Stock Popped Today",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/retirement/2026/08/02/i-wont-let-rmds-ruin-my-retirement-heres-my-plan-t/",
-      "published": "2026-08-02T21:47:00+00:00"
+      "url": "https://www.fool.com/investing/2026/08/03/why-sally-beauty-stock-popped-today/",
+      "published": "2026-08-03T22:40:27+00:00"
     },
     {
-      "title": "SoundHound AI's Next Earnings Report on Aug. 5 Could Send the Stock Soaring. Here's Why.",
+      "title": "Investing in the \"Magnificent Seven?\" Pick Your Poison: Negative Free Cash Flow or an Unjustifiable Valuation.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/02/soundhound-ais-next-earnings-report-on-aug-5-could-send-the-stock-soaring-heres-why/",
-      "published": "2026-08-02T21:45:01+00:00"
+      "url": "https://www.fool.com/investing/2026/08/03/magnificent-7-pick-poison-negative-fcf-or-valuatio/",
+      "published": "2026-08-03T22:26:00+00:00"
     },
     {
-      "title": "SpaceX vs. the \"Magnificent Seven\": How the New Nasdaq-100 Member Stacks Up",
+      "title": "Why Supernus Pharmaceuticals Stock Topped the Market Today",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/02/spacex-vs-the-magnificent-seven-how-the-new-nasdaq/",
-      "published": "2026-08-02T21:39:00+00:00"
+      "url": "https://www.fool.com/investing/2026/08/03/why-supernus-pharmaceuticals-stock-topped-the-mark/",
+      "published": "2026-08-03T22:25:15+00:00"
     },
     {
-      "title": "Is Meta Platforms Stock a Buy on the Dip as Revenue Surges?",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/02/is-meta-platforms-stock-a-buy-on-dip-as-revenue/",
-      "published": "2026-08-02T21:20:00+00:00"
+      "title": "Own The AI Boom? NVIDIA's Story vs. Micron's Contracts",
+      "publisher": "Trefis",
+      "url": "https://www.trefis.com/articles/609824/own-the-ai-boom-nvidias-story-vs-microns-contracts/2026-08-03",
+      "published": "2026-08-03T22:06:11+00:00"
     },
     {
-      "title": "NuScale Power's Next Earnings Report on Aug. 5 Could Send the Stock Soaring. Here's Why.",
+      "title": "The Most Important Number in Palantir's Earnings Report Was 134%",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/02/nuscale-powers-next-earnings-report-on-aug-5-could-send-the-stock-soaring-heres-why/",
-      "published": "2026-08-02T21:09:01+00:00"
+      "url": "https://www.fool.com/investing/2026/08/03/the-most-important-number-in-palantirs-earnings-report-was-134/",
+      "published": "2026-08-03T22:02:07+00:00"
     },
     {
-      "title": "Could You Retire With Less Than $1 Million? Millions of People Do.",
+      "title": "Why IMAX Stock Soared on Monday",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/retirement/2026/08/02/could-you-retire-with-less-than-1-million-millions/",
-      "published": "2026-08-02T21:05:00+00:00"
+      "url": "https://www.fool.com/investing/2026/08/03/why-imax-stock-soared-on-monday/",
+      "published": "2026-08-03T21:53:33+00:00"
     },
     {
-      "title": "If I Could Tell Every Investor 1 Thing About Building Lasting Wealth in the Stock Market, It's This",
+      "title": "Sweetgreen's Next Earnings Report on Aug. 6 Could Send the Stock Soaring. 3 Reasons Why.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/02/if-i-could-tell-every-investor-1-thing-about-build/",
-      "published": "2026-08-02T20:50:00+00:00"
+      "url": "https://www.fool.com/investing/2026/08/03/sweetgreens-next-earnings-report-on-aug-6-could-send-the-stock-soaring-heres-why/",
+      "published": "2026-08-03T21:50:04+00:00"
     },
     {
-      "title": "Where Will Mastercard Stock Be in 5 Years?",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/02/where-will-mastercard-stock-be-in-5-years/",
-      "published": "2026-08-02T20:42:00+00:00"
+      "title": "Tech stocks rally to kick off August. Can chipmakers keep up with demand?",
+      "publisher": "Yahoo Finance Video",
+      "url": "https://finance.yahoo.com/video/tech-stocks-rally-kick-off-213000641.html",
+      "published": "2026-08-03T21:30:00+00:00"
     }
   ],
-  "generated_at": "2026-08-02T22:46:22.591549+00:00"
+  "generated_at": "2026-08-03T22:52:28.063266+00:00"
 }
