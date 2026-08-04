@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-08-03",
+  "as_of": "2026-08-04",
   "price": {
-    "last": 206.63999938964844,
-    "prev_close": 200.75,
-    "change_pct": 2.9339972053043173,
-    "ytd_pct": 9.420170882272295,
+    "last": 211.94000244140625,
+    "prev_close": 206.63999938964844,
+    "change_pct": 2.564848561465549,
+    "ytd_pct": 12.226632561099393,
     "high_52w": 236.5399932861328,
     "low_52w": 164.07000732421875,
     "currency": "USD"
@@ -14,9 +14,9 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 5005027311616.0,
-    "pe": 31.69325,
-    "forward_pe": 16.030497,
+    "market_cap": 5133398704128.0,
+    "pe": 32.506134,
+    "forward_pe": 16.441654,
     "dividend_yield": 0.5,
     "beta": 2.215,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
@@ -2029,6 +2029,14 @@
       "l": 196.85000610351562,
       "c": 206.63999938964844,
       "v": 127547828
+    },
+    {
+      "t": "2026-08-04",
+      "o": 211.49000549316406,
+      "h": 213.05999755859375,
+      "l": 209.0500030517578,
+      "c": 211.94000244140625,
+      "v": 130429698
     }
   ],
   "earnings": {
@@ -2037,67 +2045,67 @@
   },
   "implied_move": {
     "expiry": "2026-08-05",
-    "move_pct": 2.5890437552275785,
-    "straddle": 5.35
+    "move_pct": 1.9014815294786787,
+    "straddle": 4.03
   },
   "options": {
     "expiry": "2026-08-05",
-    "atm_strike": 207.5,
-    "call_iv": 0.3657289990234375,
-    "put_iv": 0.35352208984374994,
-    "atm_iv": 0.35962554443359374,
-    "days_to_expiry": 2
+    "atm_strike": 212.5,
+    "call_iv": 0.3188544677734374,
+    "put_iv": 0.3283758569335937,
+    "atm_iv": 0.32361516235351556,
+    "days_to_expiry": 1
   },
   "consensus": null,
   "news": [
     {
-      "title": "Why Sally Beauty Stock Popped Today",
+      "title": "Merck & Co., Inc. Q2 2026 Earnings Call Summary",
+      "publisher": "Moby",
+      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-merck-co-inc-q2-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
+      "published": "2026-08-04T22:41:36+00:00"
+    },
+    {
+      "title": "LGI Homes, Inc. Q2 2026 Earnings Call Summary",
+      "publisher": "Moby",
+      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-lgi-homes-inc-q2-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
+      "published": "2026-08-04T22:40:13+00:00"
+    },
+    {
+      "title": "Zebra Technologies Corporation Q2 2026 Earnings Call Summary",
+      "publisher": "Moby",
+      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-zebra-technologies-corporation-q2-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
+      "published": "2026-08-04T22:34:14+00:00"
+    },
+    {
+      "title": "MPLX Lp Q2 2026 Earnings Call Summary",
+      "publisher": "Moby",
+      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-mplx-lp-q2-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
+      "published": "2026-08-04T22:29:37+00:00"
+    },
+    {
+      "title": "Kimco Realty Corporation Q2 2026 Earnings Call Summary",
+      "publisher": "Moby",
+      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-kimco-realty-corporation-q2-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
+      "published": "2026-08-04T22:26:49+00:00"
+    },
+    {
+      "title": "Arista Networks Stock Investors Just Got Fantastic News From CEO Jayshree Ullal",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/03/why-sally-beauty-stock-popped-today/",
-      "published": "2026-08-03T22:40:27+00:00"
+      "url": "https://www.fool.com/investing/2026/08/04/arista-networks-stock-investors-just-got-fantastic-news-from-ceo-jayshree-ullal/",
+      "published": "2026-08-04T22:26:43+00:00"
     },
     {
-      "title": "Investing in the \"Magnificent Seven?\" Pick Your Poison: Negative Free Cash Flow or an Unjustifiable Valuation.",
+      "title": "Leopold Aschenbrenner's AI Hedge Fund Just Blew Up, and It Highlights an Endemic Problem for Wall Street",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/03/magnificent-7-pick-poison-negative-fcf-or-valuatio/",
-      "published": "2026-08-03T22:26:00+00:00"
+      "url": "https://www.fool.com/investing/2026/08/04/aschenbrenner-ai-fund-endemic-problem-wall-street/",
+      "published": "2026-08-04T22:26:00+00:00"
     },
     {
-      "title": "Why Supernus Pharmaceuticals Stock Topped the Market Today",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/03/why-supernus-pharmaceuticals-stock-topped-the-mark/",
-      "published": "2026-08-03T22:25:15+00:00"
-    },
-    {
-      "title": "Own The AI Boom? NVIDIA's Story vs. Micron's Contracts",
-      "publisher": "Trefis",
-      "url": "https://www.trefis.com/articles/609824/own-the-ai-boom-nvidias-story-vs-microns-contracts/2026-08-03",
-      "published": "2026-08-03T22:06:11+00:00"
-    },
-    {
-      "title": "The Most Important Number in Palantir's Earnings Report Was 134%",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/03/the-most-important-number-in-palantirs-earnings-report-was-134/",
-      "published": "2026-08-03T22:02:07+00:00"
-    },
-    {
-      "title": "Why IMAX Stock Soared on Monday",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/03/why-imax-stock-soared-on-monday/",
-      "published": "2026-08-03T21:53:33+00:00"
-    },
-    {
-      "title": "Sweetgreen's Next Earnings Report on Aug. 6 Could Send the Stock Soaring. 3 Reasons Why.",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/03/sweetgreens-next-earnings-report-on-aug-6-could-send-the-stock-soaring-heres-why/",
-      "published": "2026-08-03T21:50:04+00:00"
-    },
-    {
-      "title": "Tech stocks rally to kick off August. Can chipmakers keep up with demand?",
-      "publisher": "Yahoo Finance Video",
-      "url": "https://finance.yahoo.com/video/tech-stocks-rally-kick-off-213000641.html",
-      "published": "2026-08-03T21:30:00+00:00"
+      "title": "Gartner, Inc. Q2 2026 Earnings Call Summary",
+      "publisher": "Moby",
+      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-gartner-inc-q2-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
+      "published": "2026-08-04T22:24:33+00:00"
     }
   ],
-  "generated_at": "2026-08-03T22:52:28.063266+00:00"
+  "generated_at": "2026-08-04T22:54:09.820536+00:00"
 }
