@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-08-04",
+  "as_of": "2026-08-05",
   "price": {
-    "last": 211.94000244140625,
-    "prev_close": 206.63999938964844,
-    "change_pct": 2.564848561465549,
-    "ytd_pct": 12.226632561099393,
+    "last": 219.22000122070312,
+    "prev_close": 211.94000244140625,
+    "change_pct": 3.43493379986608,
+    "ytd_pct": 16.081543095392114,
     "high_52w": 236.5399932861328,
     "low_52w": 164.07000732421875,
     "currency": "USD"
@@ -14,22 +14,14 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 5133398704128.0,
-    "pe": 32.506134,
-    "forward_pe": 16.441654,
-    "dividend_yield": 0.5,
+    "market_cap": 5309727768576.0,
+    "pe": 33.57121,
+    "forward_pe": 17.006414,
+    "dividend_yield": 0.48,
     "beta": 2.215,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-08-04",
-      "o": 175.16000366210938,
-      "h": 180.1999969482422,
-      "l": 174.52000427246094,
-      "c": 180.0,
-      "v": 148174600
-    },
     {
       "t": "2025-08-05",
       "o": 179.6199951171875,
@@ -2037,6 +2029,14 @@
       "l": 209.0500030517578,
       "c": 211.94000244140625,
       "v": 130429698
+    },
+    {
+      "t": "2026-08-05",
+      "o": 216.86000061035156,
+      "h": 222.22000122070312,
+      "l": 216.39999389648438,
+      "c": 219.22000122070312,
+      "v": 156378175
     }
   ],
   "earnings": {
@@ -2044,68 +2044,68 @@
     "history": []
   },
   "implied_move": {
-    "expiry": "2026-08-05",
-    "move_pct": 1.9014815294786787,
-    "straddle": 4.03
+    "expiry": "2026-08-07",
+    "move_pct": 2.568196318150693,
+    "straddle": 5.630000000000001
   },
   "options": {
-    "expiry": "2026-08-05",
-    "atm_strike": 212.5,
-    "call_iv": 0.3188544677734374,
-    "put_iv": 0.3283758569335937,
-    "atm_iv": 0.32361516235351556,
-    "days_to_expiry": 1
+    "expiry": "2026-08-07",
+    "atm_strike": 220.0,
+    "call_iv": 0.3618227880859375,
+    "put_iv": 0.35156898437499995,
+    "atm_iv": 0.3566958862304687,
+    "days_to_expiry": 2
   },
   "consensus": null,
   "news": [
     {
-      "title": "Merck & Co., Inc. Q2 2026 Earnings Call Summary",
-      "publisher": "Moby",
-      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-merck-co-inc-q2-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
-      "published": "2026-08-04T22:41:36+00:00"
-    },
-    {
-      "title": "LGI Homes, Inc. Q2 2026 Earnings Call Summary",
-      "publisher": "Moby",
-      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-lgi-homes-inc-q2-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
-      "published": "2026-08-04T22:40:13+00:00"
-    },
-    {
-      "title": "Zebra Technologies Corporation Q2 2026 Earnings Call Summary",
-      "publisher": "Moby",
-      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-zebra-technologies-corporation-q2-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
-      "published": "2026-08-04T22:34:14+00:00"
-    },
-    {
-      "title": "MPLX Lp Q2 2026 Earnings Call Summary",
-      "publisher": "Moby",
-      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-mplx-lp-q2-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
-      "published": "2026-08-04T22:29:37+00:00"
-    },
-    {
-      "title": "Kimco Realty Corporation Q2 2026 Earnings Call Summary",
-      "publisher": "Moby",
-      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-kimco-realty-corporation-q2-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
-      "published": "2026-08-04T22:26:49+00:00"
-    },
-    {
-      "title": "Arista Networks Stock Investors Just Got Fantastic News From CEO Jayshree Ullal",
+      "title": "Should You Forget Tesla Stock Near a 52-Week Low?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/04/arista-networks-stock-investors-just-got-fantastic-news-from-ceo-jayshree-ullal/",
-      "published": "2026-08-04T22:26:43+00:00"
+      "url": "https://www.fool.com/investing/2026/08/05/should-you-forget-tesla-stock-near-a-52-week-low/",
+      "published": "2026-08-05T22:35:00+00:00"
     },
     {
-      "title": "Leopold Aschenbrenner's AI Hedge Fund Just Blew Up, and It Highlights an Endemic Problem for Wall Street",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/04/aschenbrenner-ai-fund-endemic-problem-wall-street/",
-      "published": "2026-08-04T22:26:00+00:00"
-    },
-    {
-      "title": "Gartner, Inc. Q2 2026 Earnings Call Summary",
+      "title": "Owens Corning Q2 2026 Earnings Call Summary",
       "publisher": "Moby",
-      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-gartner-inc-q2-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
-      "published": "2026-08-04T22:24:33+00:00"
+      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-owens-corning-q2-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
+      "published": "2026-08-05T22:32:07+00:00"
+    },
+    {
+      "title": "NNN REIT, Inc. Q2 2026 Earnings Call Summary",
+      "publisher": "Moby",
+      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-nnn-reit-inc-q2-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
+      "published": "2026-08-05T22:26:54+00:00"
+    },
+    {
+      "title": "Recursion Pharmaceuticals, Inc. Q2 2026 Earnings Call Summary",
+      "publisher": "Moby",
+      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-recursion-pharmaceuticals-inc-q2-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
+      "published": "2026-08-05T22:26:51+00:00"
+    },
+    {
+      "title": "AI Trailblazers Nvidia, Palantir, Alphabet, and Meta Are Shaking Wall Street to Its Core With This $3.4 Billion Warning",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/08/05/nvda-pltr-googl-meta-shake-wall-street-34-billion/",
+      "published": "2026-08-05T22:26:00+00:00"
+    },
+    {
+      "title": "2 Energy Dividend Stocks to Buy in August for Steady Income",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/08/05/2-energy-dividend-stocks-to-buy-in-august-for-stea/",
+      "published": "2026-08-05T22:25:00+00:00"
+    },
+    {
+      "title": "Dow Jones Futures: Nvidia Lifts Dow, But Google, SpaceX Skid; Sandisk, Western Digital Lead Earnings Losers Late",
+      "publisher": "Investor's Business Daily",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-nvidia-google-spacex-skid-sandisk-western-digital-earnings/?src=A00220&yptr=yahoo",
+      "published": "2026-08-05T22:24:43+00:00"
+    },
+    {
+      "title": "Natural Resource Partners L.P. Q2 2026 Earnings Call Summary",
+      "publisher": "Moby",
+      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-natural-resource-partners-lp-q2-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
+      "published": "2026-08-05T22:23:27+00:00"
     }
   ],
-  "generated_at": "2026-08-04T22:54:09.820536+00:00"
+  "generated_at": "2026-08-05T22:50:01.888500+00:00"
 }
