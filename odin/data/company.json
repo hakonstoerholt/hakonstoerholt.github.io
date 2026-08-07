@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-08-06",
+  "as_of": "2026-08-07",
   "price": {
-    "last": 218.99000549316406,
-    "prev_close": 219.22000122070312,
-    "change_pct": -0.10491548501886383,
-    "ytd_pct": 15.959755581436209,
+    "last": 223.9600067138672,
+    "prev_close": 218.99000549316406,
+    "change_pct": 2.2695105237842794,
+    "ytd_pct": 18.59147443771141,
     "high_52w": 236.5399932861328,
     "low_52w": 164.07000732421875,
     "currency": "USD"
@@ -14,22 +14,14 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 5304156684288.0,
-    "pe": 33.535988,
-    "forward_pe": 16.988571,
+    "market_cap": 5424535306240.0,
+    "pe": 34.29709,
+    "forward_pe": 17.37413,
     "dividend_yield": 0.46,
     "beta": 2.215,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-08-06",
-      "o": 176.3300018310547,
-      "h": 179.89999389648438,
-      "l": 176.25,
-      "c": 179.4199981689453,
-      "v": 137192300
-    },
     {
       "t": "2025-08-07",
       "o": 181.57000732421875,
@@ -2037,6 +2029,14 @@
       "l": 217.27000427246094,
       "c": 218.99000549316406,
       "v": 113051990
+    },
+    {
+      "t": "2026-08-07",
+      "o": 221.5850067138672,
+      "h": 224.75999450683594,
+      "l": 220.66000366210938,
+      "c": 223.9600067138672,
+      "v": 104730601
     }
   ],
   "earnings": {
@@ -2045,67 +2045,67 @@
   },
   "implied_move": {
     "expiry": "2026-08-10",
-    "move_pct": 2.5663271651798882,
-    "straddle": 5.619999999999999
+    "move_pct": 1.7793355423012032,
+    "straddle": 3.985
   },
   "options": {
     "expiry": "2026-08-10",
-    "atm_strike": 220.0,
-    "call_iv": 0.30713583496093744,
-    "put_iv": 0.3127510131835937,
-    "atm_iv": 0.3099434240722656,
+    "atm_strike": 225.0,
+    "call_iv": 0.2087481469726562,
+    "put_iv": 0.21094539062499998,
+    "atm_iv": 0.20984676879882808,
     "days_to_expiry": 3
   },
   "consensus": null,
   "news": [
     {
-      "title": "3 Stocks to Buy Following SpaceX's First Earnings Call",
+      "title": "More Than Half of Cloudflare's Network Traffic Is No Longer Human. The Stock Broke to a Record on It.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/06/3-stocks-to-buy-following-spacexs-first-earnings-c/",
-      "published": "2026-08-07T01:20:00+00:00"
+      "url": "https://www.fool.com/investing/2026/08/07/more-than-half-of-cloudflares-network-traffic-is-n/",
+      "published": "2026-08-07T22:08:00+00:00"
     },
     {
-      "title": "Jamie Dimon makes huge call on AI and U.S. economy",
-      "publisher": "TheStreet",
-      "url": "https://www.thestreet.com/economy/jamie-dimon-ai-us-economy-growth",
-      "published": "2026-08-07T00:37:00+00:00"
-    },
-    {
-      "title": "2 Energy Stocks With More Hype Than Fundamentals Right Now",
+      "title": "Why Calumet Stock Flopped on Friday",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/06/2-energy-stocks-with-more-hype-than-fundamentals-r/",
-      "published": "2026-08-07T00:25:00+00:00"
+      "url": "https://www.fool.com/investing/2026/08/07/why-calumet-stock-flopped-on-friday/",
+      "published": "2026-08-07T22:04:56+00:00"
     },
     {
-      "title": "Card Network or Card Lender: Which Business Model Is the Better Long-Term Buy?",
+      "title": "PPL Corporation Q2 2026 Earnings Call Summary",
+      "publisher": "Moby",
+      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-ppl-corporation-q2-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
+      "published": "2026-08-07T21:56:39+00:00"
+    },
+    {
+      "title": "Construction Partners, Inc. Q3 2026 Earnings Call Summary",
+      "publisher": "Moby",
+      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-construction-partners-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
+      "published": "2026-08-07T21:48:08+00:00"
+    },
+    {
+      "title": "Why Redwire Stock Keeps Gaining",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/06/card-network-or-card-lender-which-business-model-i/",
-      "published": "2026-08-07T00:20:00+00:00"
+      "url": "https://www.fool.com/investing/2026/08/07/why-redwire-stock-keeps-gaining/",
+      "published": "2026-08-07T21:36:21+00:00"
     },
     {
-      "title": "Four of Google's Top AI Researchers Just Left to Start One Company. Alphabet Is Investing in It.",
+      "title": "Essent Group Ltd. Q2 2026 Earnings Call Summary",
+      "publisher": "Moby",
+      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-essent-group-ltd-q2-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
+      "published": "2026-08-07T21:36:08+00:00"
+    },
+    {
+      "title": "Oracle Surges: What's Driving the Sudden Rally",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/06/four-of-googles-top-ai-researchers-just-left-to-st/",
-      "published": "2026-08-07T00:02:00+00:00"
+      "url": "https://www.fool.com/investing/2026/08/07/oracle-surges-whats-driving-the-sudden-rally/",
+      "published": "2026-08-07T21:30:00+00:00"
     },
     {
-      "title": "Why Occidental Stock Is Up Today",
+      "title": "We Just Had the Busiest Day for Commercial Air Travel Ever. Here's What It Means for Airline Stocks.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/06/why-occidental-stock-is-up-today/",
-      "published": "2026-08-06T23:48:37+00:00"
-    },
-    {
-      "title": "AMD Buys Toronto AI Chip Startup Taalas \u2014 Retail Says It\u2019s A Move To \u2018Compete More Directly With Nvidia\u2019",
-      "publisher": "Stocktwits",
-      "url": "https://stocktwits.com/news-articles/markets/equity/amd-buys-toronto-ai-chip-startup-taalas-retail-says-its-a-move-to-compete-more-directly-with-nvidia/cZoBg5yRJJM",
-      "published": "2026-08-06T23:25:52+00:00"
-    },
-    {
-      "title": "Nuclear Wipeout: These 5 Nuclear Stocks Are Now Down 44.3% to 82.2%. Time to Buy?",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/06/nuclear-wipeout-these-5-nuclear-stocks-are-now-dow/",
-      "published": "2026-08-06T23:20:00+00:00"
+      "url": "https://www.fool.com/investing/2026/08/07/we-just-had-the-busiest-day-for-commercial-air-tra/",
+      "published": "2026-08-07T21:25:00+00:00"
     }
   ],
-  "generated_at": "2026-08-07T01:30:31.277801+00:00"
+  "generated_at": "2026-08-07T22:26:19.993447+00:00"
 }
