@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-08-05",
+  "as_of": "2026-08-06",
   "price": {
-    "last": 219.22000122070312,
-    "prev_close": 211.94000244140625,
-    "change_pct": 3.43493379986608,
-    "ytd_pct": 16.081543095392114,
+    "last": 218.99000549316406,
+    "prev_close": 219.22000122070312,
+    "change_pct": -0.10491548501886383,
+    "ytd_pct": 15.959755581436209,
     "high_52w": 236.5399932861328,
     "low_52w": 164.07000732421875,
     "currency": "USD"
@@ -14,22 +14,14 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 5309727768576.0,
-    "pe": 33.57121,
-    "forward_pe": 17.006414,
-    "dividend_yield": 0.48,
+    "market_cap": 5304156684288.0,
+    "pe": 33.535988,
+    "forward_pe": 16.988571,
+    "dividend_yield": 0.46,
     "beta": 2.215,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-08-05",
-      "o": 179.6199951171875,
-      "h": 180.25999450683594,
-      "l": 175.89999389648438,
-      "c": 178.25999450683594,
-      "v": 156407600
-    },
     {
       "t": "2025-08-06",
       "o": 176.3300018310547,
@@ -2037,6 +2029,14 @@
       "l": 216.39999389648438,
       "c": 219.22000122070312,
       "v": 156378175
+    },
+    {
+      "t": "2026-08-06",
+      "o": 221.52999877929688,
+      "h": 223.62750244140625,
+      "l": 217.27000427246094,
+      "c": 218.99000549316406,
+      "v": 113051990
     }
   ],
   "earnings": {
@@ -2044,68 +2044,68 @@
     "history": []
   },
   "implied_move": {
-    "expiry": "2026-08-07",
-    "move_pct": 2.568196318150693,
-    "straddle": 5.630000000000001
+    "expiry": "2026-08-10",
+    "move_pct": 2.5663271651798882,
+    "straddle": 5.619999999999999
   },
   "options": {
-    "expiry": "2026-08-07",
+    "expiry": "2026-08-10",
     "atm_strike": 220.0,
-    "call_iv": 0.3618227880859375,
-    "put_iv": 0.35156898437499995,
-    "atm_iv": 0.3566958862304687,
-    "days_to_expiry": 2
+    "call_iv": 0.30713583496093744,
+    "put_iv": 0.3127510131835937,
+    "atm_iv": 0.3099434240722656,
+    "days_to_expiry": 3
   },
   "consensus": null,
   "news": [
     {
-      "title": "Should You Forget Tesla Stock Near a 52-Week Low?",
+      "title": "3 Stocks to Buy Following SpaceX's First Earnings Call",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/05/should-you-forget-tesla-stock-near-a-52-week-low/",
-      "published": "2026-08-05T22:35:00+00:00"
+      "url": "https://www.fool.com/investing/2026/08/06/3-stocks-to-buy-following-spacexs-first-earnings-c/",
+      "published": "2026-08-07T01:20:00+00:00"
     },
     {
-      "title": "Owens Corning Q2 2026 Earnings Call Summary",
-      "publisher": "Moby",
-      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-owens-corning-q2-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
-      "published": "2026-08-05T22:32:07+00:00"
+      "title": "Jamie Dimon makes huge call on AI and U.S. economy",
+      "publisher": "TheStreet",
+      "url": "https://www.thestreet.com/economy/jamie-dimon-ai-us-economy-growth",
+      "published": "2026-08-07T00:37:00+00:00"
     },
     {
-      "title": "NNN REIT, Inc. Q2 2026 Earnings Call Summary",
-      "publisher": "Moby",
-      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-nnn-reit-inc-q2-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
-      "published": "2026-08-05T22:26:54+00:00"
-    },
-    {
-      "title": "Recursion Pharmaceuticals, Inc. Q2 2026 Earnings Call Summary",
-      "publisher": "Moby",
-      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-recursion-pharmaceuticals-inc-q2-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
-      "published": "2026-08-05T22:26:51+00:00"
-    },
-    {
-      "title": "AI Trailblazers Nvidia, Palantir, Alphabet, and Meta Are Shaking Wall Street to Its Core With This $3.4 Billion Warning",
+      "title": "2 Energy Stocks With More Hype Than Fundamentals Right Now",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/05/nvda-pltr-googl-meta-shake-wall-street-34-billion/",
-      "published": "2026-08-05T22:26:00+00:00"
+      "url": "https://www.fool.com/investing/2026/08/06/2-energy-stocks-with-more-hype-than-fundamentals-r/",
+      "published": "2026-08-07T00:25:00+00:00"
     },
     {
-      "title": "2 Energy Dividend Stocks to Buy in August for Steady Income",
+      "title": "Card Network or Card Lender: Which Business Model Is the Better Long-Term Buy?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/05/2-energy-dividend-stocks-to-buy-in-august-for-stea/",
-      "published": "2026-08-05T22:25:00+00:00"
+      "url": "https://www.fool.com/investing/2026/08/06/card-network-or-card-lender-which-business-model-i/",
+      "published": "2026-08-07T00:20:00+00:00"
     },
     {
-      "title": "Dow Jones Futures: Nvidia Lifts Dow, But Google, SpaceX Skid; Sandisk, Western Digital Lead Earnings Losers Late",
-      "publisher": "Investor's Business Daily",
-      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-nvidia-google-spacex-skid-sandisk-western-digital-earnings/?src=A00220&yptr=yahoo",
-      "published": "2026-08-05T22:24:43+00:00"
+      "title": "Four of Google's Top AI Researchers Just Left to Start One Company. Alphabet Is Investing in It.",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/08/06/four-of-googles-top-ai-researchers-just-left-to-st/",
+      "published": "2026-08-07T00:02:00+00:00"
     },
     {
-      "title": "Natural Resource Partners L.P. Q2 2026 Earnings Call Summary",
-      "publisher": "Moby",
-      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-natural-resource-partners-lp-q2-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
-      "published": "2026-08-05T22:23:27+00:00"
+      "title": "Why Occidental Stock Is Up Today",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/08/06/why-occidental-stock-is-up-today/",
+      "published": "2026-08-06T23:48:37+00:00"
+    },
+    {
+      "title": "AMD Buys Toronto AI Chip Startup Taalas \u2014 Retail Says It\u2019s A Move To \u2018Compete More Directly With Nvidia\u2019",
+      "publisher": "Stocktwits",
+      "url": "https://stocktwits.com/news-articles/markets/equity/amd-buys-toronto-ai-chip-startup-taalas-retail-says-its-a-move-to-compete-more-directly-with-nvidia/cZoBg5yRJJM",
+      "published": "2026-08-06T23:25:52+00:00"
+    },
+    {
+      "title": "Nuclear Wipeout: These 5 Nuclear Stocks Are Now Down 44.3% to 82.2%. Time to Buy?",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/08/06/nuclear-wipeout-these-5-nuclear-stocks-are-now-dow/",
+      "published": "2026-08-06T23:20:00+00:00"
     }
   ],
-  "generated_at": "2026-08-05T22:50:01.888500+00:00"
+  "generated_at": "2026-08-07T01:30:31.277801+00:00"
 }
