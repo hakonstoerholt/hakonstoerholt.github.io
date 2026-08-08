@@ -15,9 +15,9 @@
     "sector": "Technology",
     "industry": "Semiconductors",
     "market_cap": 5424535306240.0,
-    "pe": 34.29709,
+    "pe": 34.244648,
     "forward_pe": 17.37413,
-    "dividend_yield": 0.46,
+    "dividend_yield": 0.45,
     "beta": 2.215,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
@@ -2051,61 +2051,61 @@
   "options": {
     "expiry": "2026-08-10",
     "atm_strike": 225.0,
-    "call_iv": 0.2087481469726562,
-    "put_iv": 0.21094539062499998,
-    "atm_iv": 0.20984676879882808,
-    "days_to_expiry": 3
+    "call_iv": 0.24097438720703124,
+    "put_iv": 0.24341576904296874,
+    "atm_iv": 0.242195078125,
+    "days_to_expiry": 2
   },
   "consensus": null,
   "news": [
     {
-      "title": "More Than Half of Cloudflare's Network Traffic Is No Longer Human. The Stock Broke to a Record on It.",
+      "title": "Only 2 of These 5 Nuclear Stocks Sell Fuel Today. Here's What the Market Pays for the Other 3.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/07/more-than-half-of-cloudflares-network-traffic-is-n/",
-      "published": "2026-08-07T22:08:00+00:00"
+      "url": "https://www.fool.com/investing/2026/08/08/only-2-of-these-5-nuclear-stocks-sell-fuel-today-h/",
+      "published": "2026-08-08T22:07:00+00:00"
     },
     {
-      "title": "Why Calumet Stock Flopped on Friday",
+      "title": "When Leverage Goes Wrong on Wall Street",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/07/why-calumet-stock-flopped-on-friday/",
-      "published": "2026-08-07T22:04:56+00:00"
+      "url": "https://www.fool.com/investing/2026/08/08/when-leverage-goes-wrong-on-wall-street/",
+      "published": "2026-08-08T21:45:37+00:00"
     },
     {
-      "title": "PPL Corporation Q2 2026 Earnings Call Summary",
-      "publisher": "Moby",
-      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-ppl-corporation-q2-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
-      "published": "2026-08-07T21:56:39+00:00"
-    },
-    {
-      "title": "Construction Partners, Inc. Q3 2026 Earnings Call Summary",
-      "publisher": "Moby",
-      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-construction-partners-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
-      "published": "2026-08-07T21:48:08+00:00"
-    },
-    {
-      "title": "Why Redwire Stock Keeps Gaining",
+      "title": "Home Depot Has Raised Its Dividend for 17 Consecutive Years and Reports Earnings Aug. 18. Is It the Smarter Dow Stock to Buy Over Walmart?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/07/why-redwire-stock-keeps-gaining/",
-      "published": "2026-08-07T21:36:21+00:00"
+      "url": "https://www.fool.com/investing/2026/08/08/home-depot-dividend-17-years-walmart/",
+      "published": "2026-08-08T21:40:00+00:00"
     },
     {
-      "title": "Essent Group Ltd. Q2 2026 Earnings Call Summary",
-      "publisher": "Moby",
-      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-essent-group-ltd-q2-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
-      "published": "2026-08-07T21:36:08+00:00"
-    },
-    {
-      "title": "Oracle Surges: What's Driving the Sudden Rally",
+      "title": "Medtronic vs. Intuitive Surgical: Which MedTech Stock Is the Better Buy Right Now?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/07/oracle-surges-whats-driving-the-sudden-rally/",
-      "published": "2026-08-07T21:30:00+00:00"
+      "url": "https://www.fool.com/investing/2026/08/08/medtronic-vs-intuitive-surgical-which-medtech-stoc/",
+      "published": "2026-08-08T21:20:00+00:00"
     },
     {
-      "title": "We Just Had the Busiest Day for Commercial Air Travel Ever. Here's What It Means for Airline Stocks.",
+      "title": "Doximity (DOCS) Is Up 31.0% After Raising Revenue Outlook On Clinical AI Adoption - Has The Bull Case Changed?",
+      "publisher": "Simply Wall St.",
+      "url": "https://finance.yahoo.com/healthcare/articles/doximity-docs-31-0-raising-211518315.html",
+      "published": "2026-08-08T21:15:18+00:00"
+    },
+    {
+      "title": "Nvidia\u2019s $3 Billion Bet on Lancium Signals the Compute Landlord Thesis Has Reached the Power Layer",
+      "publisher": "Forkast News",
+      "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-3-billion-bet-lancium-211209280.html",
+      "published": "2026-08-08T21:12:09+00:00"
+    },
+    {
+      "title": "Microsoft Shows the \"Magnificent Seven\" What AI Investment Looks Like",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/07/we-just-had-the-busiest-day-for-commercial-air-tra/",
-      "published": "2026-08-07T21:25:00+00:00"
+      "url": "https://www.fool.com/investing/2026/08/08/microsoft-shows-the-magnificent-seven-what-ai-investment-looks-like/",
+      "published": "2026-08-08T21:01:02+00:00"
+    },
+    {
+      "title": "Where Will Dell Technologies Stock Be in 3 Years?",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/08/08/where-will-dell-technologies-stock-be-in-3-years/",
+      "published": "2026-08-08T20:20:00+00:00"
     }
   ],
-  "generated_at": "2026-08-07T22:26:19.993447+00:00"
+  "generated_at": "2026-08-08T22:18:40.261548+00:00"
 }
