@@ -2036,7 +2036,7 @@
       "h": 224.75999450683594,
       "l": 220.66000366210938,
       "c": 223.9600067138672,
-      "v": 104730601
+      "v": 105669440
     }
   ],
   "earnings": {
@@ -2051,61 +2051,61 @@
   "options": {
     "expiry": "2026-08-10",
     "atm_strike": 225.0,
-    "call_iv": 0.24097438720703124,
-    "put_iv": 0.24341576904296874,
-    "atm_iv": 0.242195078125,
-    "days_to_expiry": 2
+    "call_iv": 0.2951730639648437,
+    "put_iv": 0.2981027221679687,
+    "atm_iv": 0.2966378930664062,
+    "days_to_expiry": 1
   },
   "consensus": null,
   "news": [
     {
-      "title": "Only 2 of These 5 Nuclear Stocks Sell Fuel Today. Here's What the Market Pays for the Other 3.",
+      "title": "Dow Jones Futures Fall As Market Bulls Rule; Cisco, Lumentum Earnings Ahead",
+      "publisher": "Investor's Business Daily",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-warren-buffett-cisco-lumentum-earnings/?src=A00220&yptr=yahoo",
+      "published": "2026-08-09T22:06:28+00:00"
+    },
+    {
+      "title": "Berkshire's Operating Earnings Rose $1.8 Billion Last Quarter. A Currency Swing Was $1.2 Billion of It.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/08/only-2-of-these-5-nuclear-stocks-sell-fuel-today-h/",
-      "published": "2026-08-08T22:07:00+00:00"
+      "url": "https://www.fool.com/investing/2026/08/09/berkshires-operating-earnings-rose-18-billion-last/",
+      "published": "2026-08-09T21:49:00+00:00"
     },
     {
-      "title": "When Leverage Goes Wrong on Wall Street",
+      "title": "Why Shopify Stock Soared This Week",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/08/when-leverage-goes-wrong-on-wall-street/",
-      "published": "2026-08-08T21:45:37+00:00"
+      "url": "https://www.fool.com/investing/2026/08/09/why-shopify-stock-soared-this-week/",
+      "published": "2026-08-09T21:41:19+00:00"
     },
     {
-      "title": "Home Depot Has Raised Its Dividend for 17 Consecutive Years and Reports Earnings Aug. 18. Is It the Smarter Dow Stock to Buy Over Walmart?",
+      "title": "3 Big Mistakes IRA Savers Make -- and How to Fix Them",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/08/home-depot-dividend-17-years-walmart/",
-      "published": "2026-08-08T21:40:00+00:00"
+      "url": "https://www.fool.com/retirement/2026/08/09/3-big-mistakes-ira-savers-make-and-how-to-fix-them/",
+      "published": "2026-08-09T21:38:00+00:00"
     },
     {
-      "title": "Medtronic vs. Intuitive Surgical: Which MedTech Stock Is the Better Buy Right Now?",
+      "title": "Why Upstart Stock Plunged 23% in July",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/08/medtronic-vs-intuitive-surgical-which-medtech-stoc/",
-      "published": "2026-08-08T21:20:00+00:00"
+      "url": "https://www.fool.com/investing/2026/08/09/why-upstart-stock-plunged-23-in-july/",
+      "published": "2026-08-09T21:31:30+00:00"
     },
     {
-      "title": "Doximity (DOCS) Is Up 31.0% After Raising Revenue Outlook On Clinical AI Adoption - Has The Bull Case Changed?",
-      "publisher": "Simply Wall St.",
-      "url": "https://finance.yahoo.com/healthcare/articles/doximity-docs-31-0-raising-211518315.html",
-      "published": "2026-08-08T21:15:18+00:00"
-    },
-    {
-      "title": "Nvidia\u2019s $3 Billion Bet on Lancium Signals the Compute Landlord Thesis Has Reached the Power Layer",
-      "publisher": "Forkast News",
-      "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-3-billion-bet-lancium-211209280.html",
-      "published": "2026-08-08T21:12:09+00:00"
-    },
-    {
-      "title": "Microsoft Shows the \"Magnificent Seven\" What AI Investment Looks Like",
+      "title": "Alphabet's Cloud Computing Business Just Posted 82% Revenue Growth. Next Quarter Could Be Even Better.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/08/microsoft-shows-the-magnificent-seven-what-ai-investment-looks-like/",
-      "published": "2026-08-08T21:01:02+00:00"
+      "url": "https://www.fool.com/investing/2026/08/09/alphabets-cloud-computing-business-just-posted-82/",
+      "published": "2026-08-09T21:05:00+00:00"
     },
     {
-      "title": "Where Will Dell Technologies Stock Be in 3 Years?",
+      "title": "Rocket Lab Reports Monday Night. Wall Street Wants $232 Million and 60% Growth.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/08/where-will-dell-technologies-stock-be-in-3-years/",
-      "published": "2026-08-08T20:20:00+00:00"
+      "url": "https://www.fool.com/investing/2026/08/09/rocket-lab-reports-monday-night-wall-street-wants/",
+      "published": "2026-08-09T20:38:00+00:00"
+    },
+    {
+      "title": "Unpacking the Latest Pullback in Micron Stock",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/08/09/unpacking-the-latest-pullback-in-micron-stock/",
+      "published": "2026-08-09T20:20:00+00:00"
     }
   ],
-  "generated_at": "2026-08-08T22:18:40.261548+00:00"
+  "generated_at": "2026-08-09T22:20:25.014431+00:00"
 }
