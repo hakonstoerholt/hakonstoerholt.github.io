@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-08-07",
+  "as_of": "2026-08-10",
   "price": {
-    "last": 223.9600067138672,
-    "prev_close": 218.99000549316406,
-    "change_pct": 2.2695105237842794,
-    "ytd_pct": 18.59147443771141,
+    "last": 217.5500030517578,
+    "prev_close": 223.9600067138672,
+    "change_pct": -2.862119784760875,
+    "ytd_pct": 15.197244384790043,
     "high_52w": 236.5399932861328,
     "low_52w": 164.07000732421875,
     "currency": "USD"
@@ -14,30 +14,14 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 5424535306240.0,
-    "pe": 34.244648,
-    "forward_pe": 17.37413,
+    "market_cap": 5269278425088.0,
+    "pe": 33.264526,
+    "forward_pe": 16.876862,
     "dividend_yield": 0.45,
     "beta": 2.215,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-08-07",
-      "o": 181.57000732421875,
-      "h": 183.8800048828125,
-      "l": 178.8000030517578,
-      "c": 180.77000427246094,
-      "v": 151878400
-    },
-    {
-      "t": "2025-08-08",
-      "o": 181.5500030517578,
-      "h": 183.3000030517578,
-      "l": 180.39999389648438,
-      "c": 182.6999969482422,
-      "v": 123396700
-    },
     {
       "t": "2025-08-11",
       "o": 182.0500030517578,
@@ -2037,6 +2021,14 @@
       "l": 220.66000366210938,
       "c": 223.9600067138672,
       "v": 105669440
+    },
+    {
+      "t": "2026-08-10",
+      "o": 223.4499969482422,
+      "h": 224.1378936767578,
+      "l": 216.77000427246094,
+      "c": 217.5500030517578,
+      "v": 108135773
     }
   ],
   "earnings": {
@@ -2044,68 +2036,68 @@
     "history": []
   },
   "implied_move": {
-    "expiry": "2026-08-10",
-    "move_pct": 1.7793355423012032,
-    "straddle": 3.985
+    "expiry": "2026-08-12",
+    "move_pct": 2.1627211831758157,
+    "straddle": 4.705
   },
   "options": {
-    "expiry": "2026-08-10",
-    "atm_strike": 225.0,
-    "call_iv": 0.2951730639648437,
-    "put_iv": 0.2981027221679687,
-    "atm_iv": 0.2966378930664062,
-    "days_to_expiry": 1
+    "expiry": "2026-08-12",
+    "atm_strike": 217.5,
+    "call_iv": 0.309577216796875,
+    "put_iv": 0.29688203124999996,
+    "atm_iv": 0.30322962402343745,
+    "days_to_expiry": 2
   },
   "consensus": null,
   "news": [
     {
-      "title": "Dow Jones Futures Fall As Market Bulls Rule; Cisco, Lumentum Earnings Ahead",
+      "title": "Why Eli Lilly Topped the Market Today",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/08/10/why-eli-lilly-topped-the-market-today/",
+      "published": "2026-08-10T22:13:52+00:00"
+    },
+    {
+      "title": "Airbnb Is Starting To Think Like Amazon's Jeff Bezos, And It's Paying Off",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/08/10/airbnb-is-starting-to-think-like-amazons-jeff-bezo/",
+      "published": "2026-08-10T21:50:00+00:00"
+    },
+    {
+      "title": "Why Kevin Warsh Might Raise Interest Rates at the Next FOMC Meeting, Despite a Weak Jobs Report",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/08/10/why-kevin-warsh-might-raise-interest-rates-at-the/",
+      "published": "2026-08-10T21:41:48+00:00"
+    },
+    {
+      "title": "Why Keel Infrastructure Stock Dived by Over 12% Today",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/08/10/why-keel-infrastructure-stock-dived-by-over-12-tod/",
+      "published": "2026-08-10T21:41:36+00:00"
+    },
+    {
+      "title": "CoreWeave Investors Face a Growing Problem",
+      "publisher": "GuruFocus.com",
+      "url": "https://finance.yahoo.com/technology/ai/articles/coreweave-investors-face-growing-problem-213847404.html",
+      "published": "2026-08-10T21:38:47+00:00"
+    },
+    {
+      "title": "Amazon, SpaceX Eye Major Decart Acquisition",
+      "publisher": "GuruFocus.com",
+      "url": "https://finance.yahoo.com/technology/ai/articles/amazon-spacex-eye-major-decart-213728411.html",
+      "published": "2026-08-10T21:37:28+00:00"
+    },
+    {
+      "title": "The Robot ETF Actually Exists Now: Tesla, Hyundai, and the Companies Building the Joints",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/08/10/the-robot-etf-actually-exists-now-tesla-hyundai-and-the-companies-building-the-joints/",
+      "published": "2026-08-10T21:36:56+00:00"
+    },
+    {
+      "title": "Dow Jones Futures: Surging Oil Prices Spark Stock Market Losses; SpaceX Rival Rocket Lab Dives On Earnings",
       "publisher": "Investor's Business Daily",
-      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-warren-buffett-cisco-lumentum-earnings/?src=A00220&yptr=yahoo",
-      "published": "2026-08-09T22:06:28+00:00"
-    },
-    {
-      "title": "Berkshire's Operating Earnings Rose $1.8 Billion Last Quarter. A Currency Swing Was $1.2 Billion of It.",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/09/berkshires-operating-earnings-rose-18-billion-last/",
-      "published": "2026-08-09T21:49:00+00:00"
-    },
-    {
-      "title": "Why Shopify Stock Soared This Week",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/09/why-shopify-stock-soared-this-week/",
-      "published": "2026-08-09T21:41:19+00:00"
-    },
-    {
-      "title": "3 Big Mistakes IRA Savers Make -- and How to Fix Them",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/retirement/2026/08/09/3-big-mistakes-ira-savers-make-and-how-to-fix-them/",
-      "published": "2026-08-09T21:38:00+00:00"
-    },
-    {
-      "title": "Why Upstart Stock Plunged 23% in July",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/09/why-upstart-stock-plunged-23-in-july/",
-      "published": "2026-08-09T21:31:30+00:00"
-    },
-    {
-      "title": "Alphabet's Cloud Computing Business Just Posted 82% Revenue Growth. Next Quarter Could Be Even Better.",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/09/alphabets-cloud-computing-business-just-posted-82/",
-      "published": "2026-08-09T21:05:00+00:00"
-    },
-    {
-      "title": "Rocket Lab Reports Monday Night. Wall Street Wants $232 Million and 60% Growth.",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/09/rocket-lab-reports-monday-night-wall-street-wants/",
-      "published": "2026-08-09T20:38:00+00:00"
-    },
-    {
-      "title": "Unpacking the Latest Pullback in Micron Stock",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/09/unpacking-the-latest-pullback-in-micron-stock/",
-      "published": "2026-08-09T20:20:00+00:00"
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-sp500-nasdaq-oil-prices-spacex-rival-rocket-lab/?src=A00220&yptr=yahoo",
+      "published": "2026-08-10T21:35:59+00:00"
     }
   ],
-  "generated_at": "2026-08-09T22:20:25.014431+00:00"
+  "generated_at": "2026-08-10T22:31:19.349726+00:00"
 }
