@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-08-10T22:31:19.352399+00:00",
+  "generated_at": "2026-08-11T22:32:58.115869+00:00",
   "regime": {
     "regime": "Calm",
     "alarm": false,
     "headline": "Calm \u2014 no stress alarm. The macro / yield-curve picture leads at +0.1\u03c3, and the topology trigger sits 1.8\u03c3 away. Fragility Low; full exposure (1\u00d7).",
-    "as_of": "2026-08-10",
+    "as_of": "2026-08-11",
     "degraded": false
   },
   "company": {
     "ticker": "NVDA",
-    "last": 217.5500030517578,
-    "change_pct": -2.862119784760875,
-    "as_of": "2026-08-10"
+    "last": 217.5,
+    "change_pct": -0.022984624709898593,
+    "as_of": "2026-08-11"
   }
 }

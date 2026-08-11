@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-08-10",
+  "as_of": "2026-08-11",
   "price": {
-    "last": 217.5500030517578,
-    "prev_close": 223.9600067138672,
-    "change_pct": -2.862119784760875,
-    "ytd_pct": 15.197244384790043,
+    "last": 217.5,
+    "prev_close": 217.5500030517578,
+    "change_pct": -0.022984624709898593,
+    "ytd_pct": 15.170766730492069,
     "high_52w": 236.5399932861328,
     "low_52w": 164.07000732421875,
     "currency": "USD"
@@ -14,10 +14,10 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 5269278425088.0,
-    "pe": 33.264526,
-    "forward_pe": 16.876862,
-    "dividend_yield": 0.45,
+    "market_cap": 5268067319808.0,
+    "pe": 33.307808,
+    "forward_pe": 16.872982,
+    "dividend_yield": 0.46,
     "beta": 2.215,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
@@ -2029,6 +2029,14 @@
       "l": 216.77000427246094,
       "c": 217.5500030517578,
       "v": 108135773
+    },
+    {
+      "t": "2026-08-11",
+      "o": 222.14999389648438,
+      "h": 222.1999969482422,
+      "l": 216.3000030517578,
+      "c": 217.5,
+      "v": 95707655
     }
   ],
   "earnings": {
@@ -2037,67 +2045,67 @@
   },
   "implied_move": {
     "expiry": "2026-08-12",
-    "move_pct": 2.1627211831758157,
-    "straddle": 4.705
+    "move_pct": 1.671264367816092,
+    "straddle": 3.6350000000000002
   },
   "options": {
     "expiry": "2026-08-12",
     "atm_strike": 217.5,
-    "call_iv": 0.309577216796875,
-    "put_iv": 0.29688203124999996,
-    "atm_iv": 0.30322962402343745,
-    "days_to_expiry": 2
+    "call_iv": 0.2849192602539062,
+    "put_iv": 0.2866282275390625,
+    "atm_iv": 0.28577374389648436,
+    "days_to_expiry": 1
   },
   "consensus": null,
   "news": [
     {
-      "title": "Why Eli Lilly Topped the Market Today",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/10/why-eli-lilly-topped-the-market-today/",
-      "published": "2026-08-10T22:13:52+00:00"
-    },
-    {
-      "title": "Airbnb Is Starting To Think Like Amazon's Jeff Bezos, And It's Paying Off",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/10/airbnb-is-starting-to-think-like-amazons-jeff-bezo/",
-      "published": "2026-08-10T21:50:00+00:00"
-    },
-    {
-      "title": "Why Kevin Warsh Might Raise Interest Rates at the Next FOMC Meeting, Despite a Weak Jobs Report",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/10/why-kevin-warsh-might-raise-interest-rates-at-the/",
-      "published": "2026-08-10T21:41:48+00:00"
-    },
-    {
-      "title": "Why Keel Infrastructure Stock Dived by Over 12% Today",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/10/why-keel-infrastructure-stock-dived-by-over-12-tod/",
-      "published": "2026-08-10T21:41:36+00:00"
-    },
-    {
-      "title": "CoreWeave Investors Face a Growing Problem",
-      "publisher": "GuruFocus.com",
-      "url": "https://finance.yahoo.com/technology/ai/articles/coreweave-investors-face-growing-problem-213847404.html",
-      "published": "2026-08-10T21:38:47+00:00"
-    },
-    {
-      "title": "Amazon, SpaceX Eye Major Decart Acquisition",
-      "publisher": "GuruFocus.com",
-      "url": "https://finance.yahoo.com/technology/ai/articles/amazon-spacex-eye-major-decart-213728411.html",
-      "published": "2026-08-10T21:37:28+00:00"
-    },
-    {
-      "title": "The Robot ETF Actually Exists Now: Tesla, Hyundai, and the Companies Building the Joints",
-      "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/08/10/the-robot-etf-actually-exists-now-tesla-hyundai-and-the-companies-building-the-joints/",
-      "published": "2026-08-10T21:36:56+00:00"
-    },
-    {
-      "title": "Dow Jones Futures: Surging Oil Prices Spark Stock Market Losses; SpaceX Rival Rocket Lab Dives On Earnings",
+      "title": "CoreWeave Earnings Beat Amid Operating Margin Upside",
       "publisher": "Investor's Business Daily",
-      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-sp500-nasdaq-oil-prices-spacex-rival-rocket-lab/?src=A00220&yptr=yahoo",
-      "published": "2026-08-10T21:35:59+00:00"
+      "url": "https://www.investors.com/news/technology/coreweave-stock-crwv-coreweave-earnings-q22026/?src=A00220&yptr=yahoo",
+      "published": "2026-08-11T22:17:29+00:00"
+    },
+    {
+      "title": "Dow Jones Futures: Stocks Pause Before CPI Inflation; 3 Nvidia Partners Lead Earnings Movers Late",
+      "publisher": "Investor's Business Daily",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-cpi-inflation-nvidia-partners-super-micro-earnings/?src=A00220&yptr=yahoo",
+      "published": "2026-08-11T22:15:38+00:00"
+    },
+    {
+      "title": "Why Fermi Stock Soared Today",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/08/11/why-fermi-stock-soared-today/",
+      "published": "2026-08-11T22:15:15+00:00"
+    },
+    {
+      "title": "Why ACV Auctions Stock Flat-Lined on Tuesday",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/08/11/why-acv-auctions-stock-flat-lined-on-tuesday/",
+      "published": "2026-08-11T22:12:25+00:00"
+    },
+    {
+      "title": "SpaceX Stock Could Reach $600, According to Morgan Stanley. Here\u2019s How.",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/08/11/spacex-stock-could-reach-600-according-to-morgan-stanley-heres-how/",
+      "published": "2026-08-11T22:05:01+00:00"
+    },
+    {
+      "title": "The U.S. Labor Market Is Weakening. These 2 Dividend Stocks Look Built to Weather a Recession",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/08/11/the-us-labor-market-is-weakening-these-2-dividend/",
+      "published": "2026-08-11T21:50:00+00:00"
+    },
+    {
+      "title": "Hedge Funds Favor Microsoft Corporation (MSFT) Over Meta Platforms Inc. (META)",
+      "publisher": "Insider Monkey",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/hedge-funds-favor-microsoft-corporation-214046892.html",
+      "published": "2026-08-11T21:40:46+00:00"
+    },
+    {
+      "title": "2 Core Reasons Tesla Investors Should Be Getting Nervous",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/08/11/2-core-reasons-tesla-investors-should-be-getting-n/",
+      "published": "2026-08-11T21:35:00+00:00"
     }
   ],
-  "generated_at": "2026-08-10T22:31:19.349726+00:00"
+  "generated_at": "2026-08-11T22:32:58.113125+00:00"
 }
