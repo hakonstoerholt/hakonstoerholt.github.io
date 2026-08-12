@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-08-11",
+  "as_of": "2026-08-12",
   "price": {
-    "last": 217.5,
-    "prev_close": 217.5500030517578,
-    "change_pct": -0.022984624709898593,
-    "ytd_pct": 15.170766730492069,
+    "last": 224.08999633789062,
+    "prev_close": 217.5,
+    "change_pct": 3.0298833737428144,
+    "ytd_pct": 18.660306643071365,
     "high_52w": 236.5399932861328,
     "low_52w": 164.07000732421875,
     "currency": "USD"
@@ -14,22 +14,14 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 5268067319808.0,
-    "pe": 33.307808,
-    "forward_pe": 16.872982,
+    "market_cap": 5427683655680.0,
+    "pe": 34.369633,
+    "forward_pe": 17.484507,
     "dividend_yield": 0.46,
     "beta": 2.215,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-08-11",
-      "o": 182.0500030517578,
-      "h": 183.83999633789062,
-      "l": 180.25,
-      "c": 182.05999755859375,
-      "v": 138323200
-    },
     {
       "t": "2025-08-12",
       "o": 182.9600067138672,
@@ -2037,6 +2029,14 @@
       "l": 216.3000030517578,
       "c": 217.5,
       "v": 95707655
+    },
+    {
+      "t": "2026-08-12",
+      "o": 221.0399932861328,
+      "h": 225.10000610351562,
+      "l": 220.1999969482422,
+      "c": 224.08999633789062,
+      "v": 106431963
     }
   ],
   "earnings": {
@@ -2044,68 +2044,68 @@
     "history": []
   },
   "implied_move": {
-    "expiry": "2026-08-12",
-    "move_pct": 1.671264367816092,
-    "straddle": 3.6350000000000002
+    "expiry": "2026-08-14",
+    "move_pct": 2.162077771956648,
+    "straddle": 4.845
   },
   "options": {
-    "expiry": "2026-08-12",
-    "atm_strike": 217.5,
-    "call_iv": 0.2849192602539062,
-    "put_iv": 0.2866282275390625,
-    "atm_iv": 0.28577374389648436,
-    "days_to_expiry": 1
+    "expiry": "2026-08-14",
+    "atm_strike": 225.0,
+    "call_iv": 0.3051827294921875,
+    "put_iv": 0.2902903002929687,
+    "atm_iv": 0.29773651489257813,
+    "days_to_expiry": 2
   },
   "consensus": null,
   "news": [
     {
-      "title": "CoreWeave Earnings Beat Amid Operating Margin Upside",
-      "publisher": "Investor's Business Daily",
-      "url": "https://www.investors.com/news/technology/coreweave-stock-crwv-coreweave-earnings-q22026/?src=A00220&yptr=yahoo",
-      "published": "2026-08-11T22:17:29+00:00"
+      "title": "AMD, Intel, and NVIDIA All Rally Wednesday After Series of Blockbuster AI Earnings Reports",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/08/12/amd-intel-and-nvidia-all-rally-wednesday-after-series-of-blockbuster-ai-earnings-reports/",
+      "published": "2026-08-12T22:21:27+00:00"
     },
     {
-      "title": "Dow Jones Futures: Stocks Pause Before CPI Inflation; 3 Nvidia Partners Lead Earnings Movers Late",
-      "publisher": "Investor's Business Daily",
-      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-cpi-inflation-nvidia-partners-super-micro-earnings/?src=A00220&yptr=yahoo",
-      "published": "2026-08-11T22:15:38+00:00"
+      "title": "CBRS Stock Tanks 15% After-Hours \u2014 Touted As Nvidia Rival, Cerebras\u2019 Wafer Tech Finds Fewer Buyers",
+      "publisher": "Stocktwits",
+      "url": "https://stocktwits.com/news-articles/markets/equity/touted-as-nvidia-rival-cerebras-wafer-tech-finds-fewer-buyers/cZo8SPsRJWu",
+      "published": "2026-08-12T22:14:32+00:00"
     },
     {
-      "title": "Why Fermi Stock Soared Today",
+      "title": "Why Borr Drilling Stock Withered on Wednesday",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/11/why-fermi-stock-soared-today/",
-      "published": "2026-08-11T22:15:15+00:00"
+      "url": "https://www.fool.com/investing/2026/08/12/why-borr-drilling-stock-withered-on-wednesday/",
+      "published": "2026-08-12T22:12:56+00:00"
     },
     {
-      "title": "Why ACV Auctions Stock Flat-Lined on Tuesday",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/11/why-acv-auctions-stock-flat-lined-on-tuesday/",
-      "published": "2026-08-11T22:12:25+00:00"
+      "title": "Memory Stocks Rally Wednesday: SK Hynix, SanDisk, Micron All Jump. Here\u2019s Why",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/08/12/memory-stocks-rally-wednesday-sk-hynix-sandisk-micron-all-jump-heres-why/",
+      "published": "2026-08-12T22:06:38+00:00"
     },
     {
-      "title": "SpaceX Stock Could Reach $600, According to Morgan Stanley. Here\u2019s How.",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/11/spacex-stock-could-reach-600-according-to-morgan-stanley-heres-how/",
-      "published": "2026-08-11T22:05:01+00:00"
+      "title": "Your Newborn\u2019s Trump Account Auto-Buys This S&P 500 ETF: The Hidden Costs Parents Never See",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/etf/2026/08/12/your-newborns-trump-account-auto-buys-this-sp-500-etf-the-hidden-costs-parents-never-see/",
+      "published": "2026-08-12T22:05:25+00:00"
     },
     {
-      "title": "The U.S. Labor Market Is Weakening. These 2 Dividend Stocks Look Built to Weather a Recession",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/11/the-us-labor-market-is-weakening-these-2-dividend/",
-      "published": "2026-08-11T21:50:00+00:00"
+      "title": "AMDL Doubles Your AMD Bet. It Also Doubles the Nvidia Problem",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/etf/2026/08/12/amdl-doubles-your-amd-bet-it-also-doubles-the-nvidia-problem/",
+      "published": "2026-08-12T22:01:37+00:00"
     },
     {
-      "title": "Hedge Funds Favor Microsoft Corporation (MSFT) Over Meta Platforms Inc. (META)",
-      "publisher": "Insider Monkey",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/hedge-funds-favor-microsoft-corporation-214046892.html",
-      "published": "2026-08-11T21:40:46+00:00"
+      "title": "Elon Musk Tells SpaceX Employees \u2018AI Will be 99% The Value of SpaceX\u2019 Within 5 Years",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/08/12/elon-musk-tells-spacex-employees-ai-will-be-99-the-value-of-spacex-within-5-years/",
+      "published": "2026-08-12T21:59:50+00:00"
     },
     {
-      "title": "2 Core Reasons Tesla Investors Should Be Getting Nervous",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/11/2-core-reasons-tesla-investors-should-be-getting-n/",
-      "published": "2026-08-11T21:35:00+00:00"
+      "title": "Nokia, Celestica, and Applied Optoelectronics Rally After Lumentum Sparks Broad Optics Rally",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/08/12/nokia-celestica-and-applied-optoelectronics-rally-after-lumentum-sparks-broad-optics-rally/",
+      "published": "2026-08-12T21:49:12+00:00"
     }
   ],
-  "generated_at": "2026-08-11T22:32:58.113125+00:00"
+  "generated_at": "2026-08-12T22:31:46.735608+00:00"
 }
