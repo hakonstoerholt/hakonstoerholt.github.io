@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-08-12",
+  "as_of": "2026-08-13",
   "price": {
-    "last": 224.08999633789062,
-    "prev_close": 217.5,
-    "change_pct": 3.0298833737428144,
-    "ytd_pct": 18.660306643071365,
+    "last": 225.3000030517578,
+    "prev_close": 224.08999633789062,
+    "change_pct": 0.5399646274448999,
+    "ytd_pct": 19.3010303257616,
     "high_52w": 236.5399932861328,
     "low_52w": 164.07000732421875,
     "currency": "USD"
@@ -14,22 +14,14 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 5427683655680.0,
-    "pe": 34.369633,
-    "forward_pe": 17.484507,
+    "market_cap": 5456991354880.0,
+    "pe": 34.555214,
+    "forward_pe": 17.578917,
     "dividend_yield": 0.46,
     "beta": 2.215,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-08-12",
-      "o": 182.9600067138672,
-      "h": 184.47999572753906,
-      "l": 179.4600067138672,
-      "c": 183.16000366210938,
-      "v": 145485700
-    },
     {
       "t": "2025-08-13",
       "o": 182.6199951171875,
@@ -2037,6 +2029,14 @@
       "l": 220.1999969482422,
       "c": 224.08999633789062,
       "v": 106431963
+    },
+    {
+      "t": "2026-08-13",
+      "o": 225.05499267578125,
+      "h": 227.22999572753906,
+      "l": 223.7100067138672,
+      "c": 225.3000030517578,
+      "v": 93629467
     }
   ],
   "earnings": {
@@ -2045,67 +2045,67 @@
   },
   "implied_move": {
     "expiry": "2026-08-14",
-    "move_pct": 2.162077771956648,
-    "straddle": 4.845
+    "move_pct": 1.451398116159274,
+    "straddle": 3.2699999999999996
   },
   "options": {
     "expiry": "2026-08-14",
     "atm_strike": 225.0,
-    "call_iv": 0.3051827294921875,
-    "put_iv": 0.2902903002929687,
-    "atm_iv": 0.29773651489257813,
-    "days_to_expiry": 2
+    "call_iv": 0.25952888916015626,
+    "put_iv": 0.2368240380859375,
+    "atm_iv": 0.24817646362304688,
+    "days_to_expiry": 1
   },
   "consensus": null,
   "news": [
     {
-      "title": "AMD, Intel, and NVIDIA All Rally Wednesday After Series of Blockbuster AI Earnings Reports",
-      "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/08/12/amd-intel-and-nvidia-all-rally-wednesday-after-series-of-blockbuster-ai-earnings-reports/",
-      "published": "2026-08-12T22:21:27+00:00"
-    },
-    {
-      "title": "CBRS Stock Tanks 15% After-Hours \u2014 Touted As Nvidia Rival, Cerebras\u2019 Wafer Tech Finds Fewer Buyers",
-      "publisher": "Stocktwits",
-      "url": "https://stocktwits.com/news-articles/markets/equity/touted-as-nvidia-rival-cerebras-wafer-tech-finds-fewer-buyers/cZo8SPsRJWu",
-      "published": "2026-08-12T22:14:32+00:00"
-    },
-    {
-      "title": "Why Borr Drilling Stock Withered on Wednesday",
+      "title": "Why Dillard's Stock Dipped Today",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/12/why-borr-drilling-stock-withered-on-wednesday/",
-      "published": "2026-08-12T22:12:56+00:00"
+      "url": "https://www.fool.com/investing/2026/08/13/why-dillards-stock-dipped-today/",
+      "published": "2026-08-13T22:13:39+00:00"
     },
     {
-      "title": "Memory Stocks Rally Wednesday: SK Hynix, SanDisk, Micron All Jump. Here\u2019s Why",
+      "title": "The Investment Company of America, AIVSX, Has Outlasted Nearly Every Fund Launched Beside It",
       "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/08/12/memory-stocks-rally-wednesday-sk-hynix-sandisk-micron-all-jump-heres-why/",
-      "published": "2026-08-12T22:06:38+00:00"
+      "url": "https://247wallst.com/investing/2026/08/13/the-investment-company-of-america-aivsx-has-outlasted-nearly-every-fund-launched-beside-it/",
+      "published": "2026-08-13T22:10:46+00:00"
     },
     {
-      "title": "Your Newborn\u2019s Trump Account Auto-Buys This S&P 500 ETF: The Hidden Costs Parents Never See",
+      "title": "Fidelity\u2019s Contrafund, FCNTX, Bet Against the Crowd and Got Enormous Doing It",
       "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/etf/2026/08/12/your-newborns-trump-account-auto-buys-this-sp-500-etf-the-hidden-costs-parents-never-see/",
-      "published": "2026-08-12T22:05:25+00:00"
+      "url": "https://247wallst.com/investing/2026/08/13/fidelitys-contrafund-fcntx-bet-against-the-crowd-and-got-enormous-doing-it/",
+      "published": "2026-08-13T21:50:44+00:00"
     },
     {
-      "title": "AMDL Doubles Your AMD Bet. It Also Doubles the Nvidia Problem",
-      "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/etf/2026/08/12/amdl-doubles-your-amd-bet-it-also-doubles-the-nvidia-problem/",
-      "published": "2026-08-12T22:01:37+00:00"
+      "title": "The Stock Market Just Flashed a Warning Seen Only 5 Times Before. History Is Crystal Clear About What Happens Next (Hint: It's Not Good).",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/08/13/the-stock-market-just-flashed-a-warning-seen-only/",
+      "published": "2026-08-13T21:50:00+00:00"
     },
     {
-      "title": "Elon Musk Tells SpaceX Employees \u2018AI Will be 99% The Value of SpaceX\u2019 Within 5 Years",
-      "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/08/12/elon-musk-tells-spacex-employees-ai-will-be-99-the-value-of-spacex-within-5-years/",
-      "published": "2026-08-12T21:59:50+00:00"
+      "title": "Why StubHub Stock Tanked by 10% Today",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/08/13/why-stubhub-stock-tanked-by-10-today/",
+      "published": "2026-08-13T21:44:42+00:00"
     },
     {
-      "title": "Nokia, Celestica, and Applied Optoelectronics Rally After Lumentum Sparks Broad Optics Rally",
+      "title": "Washington Mutual Investors Fund, AWSHX, Refuses to Buy Certain Stocks. That\u2019s the Point",
       "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/08/12/nokia-celestica-and-applied-optoelectronics-rally-after-lumentum-sparks-broad-optics-rally/",
-      "published": "2026-08-12T21:49:12+00:00"
+      "url": "https://247wallst.com/investing/2026/08/13/washington-mutual-investors-fund-awshx-refuses-to-buy-certain-stocks-thats-the-point/",
+      "published": "2026-08-13T21:30:43+00:00"
+    },
+    {
+      "title": "Creative Realities, Inc. Q2 2026 Earnings Call Summary",
+      "publisher": "Moby",
+      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-creative-realities-inc-q2-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
+      "published": "2026-08-13T21:25:28+00:00"
+    },
+    {
+      "title": "Eagle Point Income Company Inc. Q2 2026 Earnings Call Summary",
+      "publisher": "Moby",
+      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-eagle-point-income-company-inc-q2-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
+      "published": "2026-08-13T21:24:25+00:00"
     }
   ],
-  "generated_at": "2026-08-12T22:31:46.735608+00:00"
+  "generated_at": "2026-08-13T22:31:59.135956+00:00"
 }
