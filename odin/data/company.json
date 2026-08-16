@@ -2036,7 +2036,7 @@
       "h": 227.49000549316406,
       "l": 224.5,
       "c": 225.16000366210938,
-      "v": 75161211
+      "v": 75680870
     }
   ],
   "earnings": {
@@ -2051,61 +2051,61 @@
   "options": {
     "expiry": "2026-08-17",
     "atm_strike": 225.0,
-    "call_iv": 0.2124102197265625,
-    "put_iv": 0.20386538330078124,
-    "atm_iv": 0.20813780151367187,
-    "days_to_expiry": 2
+    "call_iv": 0.2600171655273438,
+    "put_iv": 0.24951922363281248,
+    "atm_iv": 0.25476819458007816,
+    "days_to_expiry": 1
   },
   "consensus": null,
   "news": [
     {
-      "title": "Palantir Makes Its Case Against Frontier AI",
+      "title": "Micron Is Worth $1.1 Trillion and Sits 23% Below Its 52-Week High. Is the Stock a Buy?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/15/palantir-makes-its-case-against-frontier-ai/",
-      "published": "2026-08-15T21:50:19+00:00"
+      "url": "https://www.fool.com/investing/2026/08/16/micron-is-worth-11-trillion-and-sits-23-below-its/",
+      "published": "2026-08-16T21:49:00+00:00"
     },
     {
-      "title": "SpaceX Is Poised to Hit $220 by June 2027 (Hint: It's Not Too Late to Buy In)",
+      "title": "1 Jaw-Dropping Metric That Makes Alphabet Stock a No-Brainer Buy.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/15/spacex-is-poised-to-hit-220-by-june-2027-hint-its/",
-      "published": "2026-08-15T21:35:00+00:00"
+      "url": "https://www.fool.com/investing/2026/08/16/1-jaw-dropping-metric-that-makes-alphabet-stock-a/",
+      "published": "2026-08-16T21:26:00+00:00"
     },
     {
-      "title": "3 of Bill Ackman's New Stock Picks Are Interesting: S&P Global Trades 28% Below Its High While Visa and Mastercard Sit Near Theirs",
+      "title": "Shopify Shines and Uber Declines",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/15/bill-ackmans-new-stock-picks-are-interesting-sp-gl/",
-      "published": "2026-08-15T20:07:00+00:00"
+      "url": "https://www.fool.com/investing/2026/08/16/shopify-shines-and-uber-declines/",
+      "published": "2026-08-16T21:18:59+00:00"
     },
     {
-      "title": "Nvidia eyes investing $3 billion in SB Energy under OpenAI data center deal, Information says",
-      "publisher": "Reuters",
-      "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-talks-invest-3-billion-193826586.html",
-      "published": "2026-08-15T19:38:26+00:00"
+      "title": "NVIDIA\u2019s $3 Billion Bet on the Power Behind AI",
+      "publisher": "Insider Monkey",
+      "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-3-billion-bet-power-202314612.html",
+      "published": "2026-08-16T20:23:14+00:00"
     },
     {
-      "title": "The AI Problem at Law Firms Isn't Hallucination. It's Honesty.",
+      "title": "2 GLP-1 Stocks That Could Double Your Money by 2031",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/15/the-ai-problem-at-law-firms-isnt-hallucination-its/",
-      "published": "2026-08-15T19:17:00+00:00"
+      "url": "https://www.fool.com/investing/2026/08/16/2-glp-1-stocks-that-could-double-your-money-by-203/",
+      "published": "2026-08-16T20:20:00+00:00"
     },
     {
-      "title": "Are Mega-Mergers Back?",
+      "title": "1 Major Red Flag AMD Investors Can't Afford to Ignore",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/15/are-mega-mergers-back/",
-      "published": "2026-08-15T19:14:28+00:00"
+      "url": "https://www.fool.com/investing/2026/08/16/1-major-red-flag-amd-investors-cant-afford-to-igno/",
+      "published": "2026-08-16T20:18:00+00:00"
     },
     {
-      "title": "Bond Traders Are Agonizing Over $70 Billion of Shadow Credit Backstops For AI Companies",
-      "publisher": "Bloomberg",
-      "url": "https://finance.yahoo.com/technology/ai/articles/bond-traders-agonizing-over-70-190000845.html",
-      "published": "2026-08-15T19:00:00+00:00"
-    },
-    {
-      "title": "XRP Is Trading Near a 52-Week Low of $1. Here's What to Do if XRP Drops Below a Buck.",
+      "title": "Adobe Trades at 10 Times Next Year's Earnings. Is It Finally Time to Buy the Stock?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/15/xrp-is-trading-near-a-52-week-low-of-1-heres-what/",
-      "published": "2026-08-15T18:57:16+00:00"
+      "url": "https://www.fool.com/investing/2026/08/16/adobe-trades-at-10-times-next-years-earnings-is-it/",
+      "published": "2026-08-16T19:28:00+00:00"
+    },
+    {
+      "title": "Elon Musk Can't Sell SpaceX Stock Until June 2027 -- But 6 Billion More Shares Could Flood the Market Before Then",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/08/16/elon-musk-cant-sell-spacex-stock-until-june-2027-b/",
+      "published": "2026-08-16T19:20:00+00:00"
     }
   ],
-  "generated_at": "2026-08-15T22:11:38.606134+00:00"
+  "generated_at": "2026-08-16T22:12:52.997780+00:00"
 }
