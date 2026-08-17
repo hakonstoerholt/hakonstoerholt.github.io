@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-08-14",
+  "as_of": "2026-08-17",
   "price": {
-    "last": 225.16000366210938,
-    "prev_close": 225.3000030517578,
-    "change_pct": -0.062139097981406266,
-    "ytd_pct": 19.226897741634662,
+    "last": 225.00999450683594,
+    "prev_close": 225.16000366210938,
+    "change_pct": -0.06662335798259811,
+    "ytd_pct": 19.147464778740698,
     "high_52w": 236.5399932861328,
     "low_52w": 164.07000732421875,
     "currency": "USD"
@@ -14,30 +14,14 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 5453600260096.0,
-    "pe": 34.480858,
-    "forward_pe": 17.59288,
+    "market_cap": 5449966944256.0,
+    "pe": 34.457886,
+    "forward_pe": 17.581158,
     "dividend_yield": 0.44,
     "beta": 2.215,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-08-14",
-      "o": 179.75,
-      "h": 183.02000427246094,
-      "l": 179.4600067138672,
-      "c": 182.02000427246094,
-      "v": 129554000
-    },
-    {
-      "t": "2025-08-15",
-      "o": 181.8800048828125,
-      "h": 181.89999389648438,
-      "l": 178.0399932861328,
-      "c": 180.4499969482422,
-      "v": 156602200
-    },
     {
       "t": "2025-08-18",
       "o": 180.60000610351562,
@@ -2037,6 +2021,14 @@
       "l": 224.5,
       "c": 225.16000366210938,
       "v": 75680870
+    },
+    {
+      "t": "2026-08-17",
+      "o": 226.02000427246094,
+      "h": 227.9199981689453,
+      "l": 224.86000061035156,
+      "c": 225.00999450683594,
+      "v": 81442206
     }
   ],
   "earnings": {
@@ -2044,68 +2036,68 @@
     "history": []
   },
   "implied_move": {
-    "expiry": "2026-08-17",
-    "move_pct": 1.490051494684973,
-    "straddle": 3.3550000000000004
+    "expiry": "2026-08-19",
+    "move_pct": 1.857695258897937,
+    "straddle": 4.18
   },
   "options": {
-    "expiry": "2026-08-17",
+    "expiry": "2026-08-19",
     "atm_strike": 225.0,
-    "call_iv": 0.2600171655273438,
-    "put_iv": 0.24951922363281248,
-    "atm_iv": 0.25476819458007816,
-    "days_to_expiry": 1
+    "call_iv": 0.26856200195312496,
+    "put_iv": 0.2512281909179687,
+    "atm_iv": 0.25989509643554687,
+    "days_to_expiry": 2
   },
   "consensus": null,
   "news": [
     {
-      "title": "Micron Is Worth $1.1 Trillion and Sits 23% Below Its 52-Week High. Is the Stock a Buy?",
+      "title": "Nvidia Lines Up $105 Billion For OpenAI. Here's What it Means For Investors.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/16/micron-is-worth-11-trillion-and-sits-23-below-its/",
-      "published": "2026-08-16T21:49:00+00:00"
+      "url": "https://www.fool.com/investing/2026/08/17/nvidia-lines-up-105-billion-for-openai-heres-what-it-means-for-investors/",
+      "published": "2026-08-17T21:50:01+00:00"
     },
     {
-      "title": "1 Jaw-Dropping Metric That Makes Alphabet Stock a No-Brainer Buy.",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/16/1-jaw-dropping-metric-that-makes-alphabet-stock-a/",
-      "published": "2026-08-16T21:26:00+00:00"
-    },
-    {
-      "title": "Shopify Shines and Uber Declines",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/16/shopify-shines-and-uber-declines/",
-      "published": "2026-08-16T21:18:59+00:00"
-    },
-    {
-      "title": "NVIDIA\u2019s $3 Billion Bet on the Power Behind AI",
+      "title": "BlackRock (BLK) & NVIDIA Corporation (NVDA): BlackRock\u2019s Larry Fink Says the US Alone Needs 70 Gigawatts of Power for AI",
       "publisher": "Insider Monkey",
-      "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-3-billion-bet-power-202314612.html",
-      "published": "2026-08-16T20:23:14+00:00"
+      "url": "https://finance.yahoo.com/technology/ai/articles/blackrock-blk-nvidia-corporation-nvda-213145577.html",
+      "published": "2026-08-17T21:31:45+00:00"
     },
     {
-      "title": "2 GLP-1 Stocks That Could Double Your Money by 2031",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/16/2-glp-1-stocks-that-could-double-your-money-by-203/",
-      "published": "2026-08-16T20:20:00+00:00"
+      "title": "Dow Jones Futures: Trump Comments Spark Stock Market Losses; Elon Musk-Led SpaceX Rallies",
+      "publisher": "Investor's Business Daily",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-trump-stock-market-losses-elon-musk-spacex-spcx-stock/?src=A00220&yptr=yahoo",
+      "published": "2026-08-17T21:02:17+00:00"
     },
     {
-      "title": "1 Major Red Flag AMD Investors Can't Afford to Ignore",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/16/1-major-red-flag-amd-investors-cant-afford-to-igno/",
-      "published": "2026-08-16T20:18:00+00:00"
+      "title": "Penguin Solutions Highlights AI Factory Platform, MemoryAI for Inference Growth",
+      "publisher": "MarketBeat",
+      "url": "https://www.marketbeat.com/instant-alerts/penguin-solutions-highlights-ai-factory-platform-memoryai-for-inference-growth-2026-08-17/?utm_source=yahoofinance&utm_medium=yahoofinance",
+      "published": "2026-08-17T21:02:00+00:00"
     },
     {
-      "title": "Adobe Trades at 10 Times Next Year's Earnings. Is It Finally Time to Buy the Stock?",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/16/adobe-trades-at-10-times-next-years-earnings-is-it/",
-      "published": "2026-08-16T19:28:00+00:00"
+      "title": "OpenAI to lease massive new AI data center in US, backed by Nvidia",
+      "publisher": "AFP",
+      "url": "https://finance.yahoo.com/technology/ai/articles/openai-lease-massive-ai-data-205913179.html",
+      "published": "2026-08-17T20:59:13+00:00"
     },
     {
-      "title": "Elon Musk Can't Sell SpaceX Stock Until June 2027 -- But 6 Billion More Shares Could Flood the Market Before Then",
+      "title": "Will Bitcoin Drop Below $60K as BTC ETFs See Biggest Outflow in 6 Weeks?",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/cryptocurrency/2026/08/17/will-bitcoin-drop-below-60k-as-btc-etfs-see-biggest-outflow-in-6-weeks/",
+      "published": "2026-08-17T20:55:55+00:00"
+    },
+    {
+      "title": "Sandisk, Micron, Coherent, Boeing, Apple, Amazon, and More Stocks That Explain Today\u2019s Market",
+      "publisher": "Barrons.com",
+      "url": "https://www.barrons.com/articles/stock-movers-a39cdac2?siteid=yhoof2&yptr=yahoo",
+      "published": "2026-08-17T20:52:00+00:00"
+    },
+    {
+      "title": "Gold and Silver Prices Are Rising. Here's Which Precious Metal May Have More Upside",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/16/elon-musk-cant-sell-spacex-stock-until-june-2027-b/",
-      "published": "2026-08-16T19:20:00+00:00"
+      "url": "https://www.fool.com/investing/2026/08/17/gold-and-silver-prices-are-rising-heres-which-prec/",
+      "published": "2026-08-17T20:48:22+00:00"
     }
   ],
-  "generated_at": "2026-08-16T22:12:52.997780+00:00"
+  "generated_at": "2026-08-17T22:15:54.639870+00:00"
 }
