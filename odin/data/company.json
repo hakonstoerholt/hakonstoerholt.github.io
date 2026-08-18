@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-08-17",
+  "as_of": "2026-08-18",
   "price": {
-    "last": 225.00999450683594,
-    "prev_close": 225.16000366210938,
-    "change_pct": -0.06662335798259811,
-    "ytd_pct": 19.147464778740698,
+    "last": 219.74000549316406,
+    "prev_close": 225.00999450683594,
+    "change_pct": -2.3421133026656604,
+    "ytd_pct": 16.356896156368926,
     "high_52w": 236.5399932861328,
     "low_52w": 164.07000732421875,
     "currency": "USD"
@@ -14,10 +14,10 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 5449966944256.0,
-    "pe": 34.457886,
-    "forward_pe": 17.581158,
-    "dividend_yield": 0.44,
+    "market_cap": 5322322739200.0,
+    "pe": 33.65084,
+    "forward_pe": 17.121721,
+    "dividend_yield": null,
     "beta": 2.215,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
@@ -2029,6 +2029,14 @@
       "l": 224.86000061035156,
       "c": 225.00999450683594,
       "v": 81442206
+    },
+    {
+      "t": "2026-08-18",
+      "o": 220.4499969482422,
+      "h": 221.63999938964844,
+      "l": 218.69020080566406,
+      "c": 219.74000549316406,
+      "v": 102376166
     }
   ],
   "earnings": {
@@ -2037,67 +2045,67 @@
   },
   "implied_move": {
     "expiry": "2026-08-19",
-    "move_pct": 1.857695258897937,
-    "straddle": 4.18
+    "move_pct": 1.440338545954237,
+    "straddle": 3.165
   },
   "options": {
     "expiry": "2026-08-19",
-    "atm_strike": 225.0,
-    "call_iv": 0.26856200195312496,
-    "put_iv": 0.2512281909179687,
-    "atm_iv": 0.25989509643554687,
-    "days_to_expiry": 2
+    "atm_strike": 220.0,
+    "call_iv": 0.25049577636718745,
+    "put_iv": 0.24268335449218748,
+    "atm_iv": 0.24658956542968746,
+    "days_to_expiry": 1
   },
   "consensus": null,
   "news": [
     {
-      "title": "Nvidia Lines Up $105 Billion For OpenAI. Here's What it Means For Investors.",
+      "title": "Rocket Lab Wins One of Its Biggest Contracts Ever",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/17/nvidia-lines-up-105-billion-for-openai-heres-what-it-means-for-investors/",
-      "published": "2026-08-17T21:50:01+00:00"
+      "url": "https://www.fool.com/investing/2026/08/18/rocket-lab-wins-one-of-its-biggest-contracts-ever/",
+      "published": "2026-08-18T21:50:00+00:00"
     },
     {
-      "title": "BlackRock (BLK) & NVIDIA Corporation (NVDA): BlackRock\u2019s Larry Fink Says the US Alone Needs 70 Gigawatts of Power for AI",
-      "publisher": "Insider Monkey",
-      "url": "https://finance.yahoo.com/technology/ai/articles/blackrock-blk-nvidia-corporation-nvda-213145577.html",
-      "published": "2026-08-17T21:31:45+00:00"
+      "title": "Is Palantir the Next Trillion-Dollar Stock?",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/08/18/is-palantir-the-next-trillion-dollar-stock/",
+      "published": "2026-08-18T21:41:00+00:00"
     },
     {
-      "title": "Dow Jones Futures: Trump Comments Spark Stock Market Losses; Elon Musk-Led SpaceX Rallies",
-      "publisher": "Investor's Business Daily",
-      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-trump-stock-market-losses-elon-musk-spacex-spcx-stock/?src=A00220&yptr=yahoo",
-      "published": "2026-08-17T21:02:17+00:00"
+      "title": "Prediction: Microsoft Will Be Worth $5 Trillion by 2029. Here's the Math.",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/08/18/prediction-microsoft-will-be-worth-usd5-trillion-by-2029-here-s-the-math/",
+      "published": "2026-08-18T21:32:01+00:00"
     },
     {
-      "title": "Penguin Solutions Highlights AI Factory Platform, MemoryAI for Inference Growth",
-      "publisher": "MarketBeat",
-      "url": "https://www.marketbeat.com/instant-alerts/penguin-solutions-highlights-ai-factory-platform-memoryai-for-inference-growth-2026-08-17/?utm_source=yahoofinance&utm_medium=yahoofinance",
-      "published": "2026-08-17T21:02:00+00:00"
-    },
-    {
-      "title": "OpenAI to lease massive new AI data center in US, backed by Nvidia",
-      "publisher": "AFP",
-      "url": "https://finance.yahoo.com/technology/ai/articles/openai-lease-massive-ai-data-205913179.html",
-      "published": "2026-08-17T20:59:13+00:00"
-    },
-    {
-      "title": "Will Bitcoin Drop Below $60K as BTC ETFs See Biggest Outflow in 6 Weeks?",
+      "title": "Robotics Stocks Punished Tuesday in AI Sell-Off: Ouster Down 10%, Aeva Technologies Down 12%, Symbotic Down 4%",
       "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/cryptocurrency/2026/08/17/will-bitcoin-drop-below-60k-as-btc-etfs-see-biggest-outflow-in-6-weeks/",
-      "published": "2026-08-17T20:55:55+00:00"
+      "url": "https://247wallst.com/investing/2026/08/18/robotics-stocks-punished-tuesday-in-ai-sell-off-ouster-down-10-aeva-technologies-down-12-symbotic-down-4/",
+      "published": "2026-08-18T21:22:37+00:00"
     },
     {
-      "title": "Sandisk, Micron, Coherent, Boeing, Apple, Amazon, and More Stocks That Explain Today\u2019s Market",
-      "publisher": "Barrons.com",
-      "url": "https://www.barrons.com/articles/stock-movers-a39cdac2?siteid=yhoof2&yptr=yahoo",
-      "published": "2026-08-17T20:52:00+00:00"
+      "title": "Micron, Other Chip Stocks Drop During Dog Days Of Summer",
+      "publisher": "Investor's Business Daily",
+      "url": "https://www.investors.com/news/technology/chip-stocks-micron-nvidia-drop-dog-days-summer/?src=A00220&yptr=yahoo",
+      "published": "2026-08-18T21:11:07+00:00"
     },
     {
-      "title": "Gold and Silver Prices Are Rising. Here's Which Precious Metal May Have More Upside",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/17/gold-and-silver-prices-are-rising-heres-which-prec/",
-      "published": "2026-08-17T20:48:22+00:00"
+      "title": "AMD\u2019s $1.3 Billion Portfolio Reveals Its Biggest Investments and Where AI Demand Lands Next",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/08/18/amds-1-3-billion-portfolio-reveals-its-biggest-investments-and-where-ai-demand-lands-next/",
+      "published": "2026-08-18T21:07:59+00:00"
+    },
+    {
+      "title": "China\u2019s Favorite Budget Meal? Burgers",
+      "publisher": "Moby",
+      "url": "https://app.moby.co/home/news/news-chinas-favorite-balanced-budget-meals-are-burgers?utm_source=yahoo_finance&utm_medium=rss",
+      "published": "2026-08-18T21:04:31+00:00"
+    },
+    {
+      "title": "Elauwit Connection, Inc. Common Stock Q2 2026 Earnings Call Summary",
+      "publisher": "Moby",
+      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-elauwit-connection-inc-common-stock-q2-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
+      "published": "2026-08-18T21:03:39+00:00"
     }
   ],
-  "generated_at": "2026-08-17T22:15:54.639870+00:00"
+  "generated_at": "2026-08-18T22:16:45.709979+00:00"
 }
