@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-08-18",
+  "as_of": "2026-08-19",
   "price": {
-    "last": 219.74000549316406,
-    "prev_close": 225.00999450683594,
-    "change_pct": -2.3421133026656604,
-    "ytd_pct": 16.356896156368926,
+    "last": 217.55999755859375,
+    "prev_close": 219.74000549316406,
+    "change_pct": -0.9920851370134876,
+    "ytd_pct": 15.202536683711365,
     "high_52w": 236.5399932861328,
     "low_52w": 164.07000732421875,
     "currency": "USD"
@@ -14,22 +14,14 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 5322322739200.0,
-    "pe": 33.65084,
-    "forward_pe": 17.121721,
+    "market_cap": 5269520646144.0,
+    "pe": 33.316998,
+    "forward_pe": 16.945772,
     "dividend_yield": null,
     "beta": 2.215,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-08-18",
-      "o": 180.60000610351562,
-      "h": 182.94000244140625,
-      "l": 180.58999633789062,
-      "c": 182.00999450683594,
-      "v": 132008000
-    },
     {
       "t": "2025-08-19",
       "o": 182.42999267578125,
@@ -2037,6 +2029,14 @@
       "l": 218.69020080566406,
       "c": 219.74000549316406,
       "v": 102376166
+    },
+    {
+      "t": "2026-08-19",
+      "o": 221.6699981689453,
+      "h": 222.8699951171875,
+      "l": 216.75999450683594,
+      "c": 217.55999755859375,
+      "v": 96854269
     }
   ],
   "earnings": {
@@ -2044,68 +2044,68 @@
     "history": []
   },
   "implied_move": {
-    "expiry": "2026-08-19",
-    "move_pct": 1.440338545954237,
-    "straddle": 3.165
+    "expiry": "2026-08-21",
+    "move_pct": 2.1970950788931867,
+    "straddle": 4.78
   },
   "options": {
-    "expiry": "2026-08-19",
-    "atm_strike": 220.0,
-    "call_iv": 0.25049577636718745,
-    "put_iv": 0.24268335449218748,
-    "atm_iv": 0.24658956542968746,
-    "days_to_expiry": 1
+    "expiry": "2026-08-21",
+    "atm_strike": 217.5,
+    "call_iv": 0.3215399877929687,
+    "put_iv": 0.2937082348632812,
+    "atm_iv": 0.30762411132812495,
+    "days_to_expiry": 2
   },
   "consensus": null,
   "news": [
     {
-      "title": "Rocket Lab Wins One of Its Biggest Contracts Ever",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/18/rocket-lab-wins-one-of-its-biggest-contracts-ever/",
-      "published": "2026-08-18T21:50:00+00:00"
+      "title": "Broadcom Gets Fresh Google Warning",
+      "publisher": "GuruFocus.com",
+      "url": "https://finance.yahoo.com/technology/ai/articles/broadcom-gets-fresh-google-warning-220417060.html",
+      "published": "2026-08-19T22:04:17+00:00"
     },
     {
-      "title": "Is Palantir the Next Trillion-Dollar Stock?",
+      "title": "Billionaire Stanley Druckenmiller Just Dumped Micron and Intel While Adding These 2 AI Stocks. Should Investors Follow Suit?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/18/is-palantir-the-next-trillion-dollar-stock/",
-      "published": "2026-08-18T21:41:00+00:00"
+      "url": "https://www.fool.com/investing/2026/08/19/billionaire-stanley-druckenmiller-just-dumped-micr/",
+      "published": "2026-08-19T21:52:00+00:00"
     },
     {
-      "title": "Prediction: Microsoft Will Be Worth $5 Trillion by 2029. Here's the Math.",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/18/prediction-microsoft-will-be-worth-usd5-trillion-by-2029-here-s-the-math/",
-      "published": "2026-08-18T21:32:01+00:00"
+      "title": "Stifel Has Message For Nvidia Investors Before Earnings",
+      "publisher": "GuruFocus.com",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/stifel-message-nvidia-investors-earnings-215114118.html",
+      "published": "2026-08-19T21:51:14+00:00"
     },
     {
-      "title": "Robotics Stocks Punished Tuesday in AI Sell-Off: Ouster Down 10%, Aeva Technologies Down 12%, Symbotic Down 4%",
+      "title": "The Fed's July Meeting Minutes Show a Growing Urgency to Raise Interest Rates. Here's Why I Still Think a 2026 Rate Hike Is Very Unlikely",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/08/19/the-fed-s-july-meeting-minutes-show-a-growing-urgency-to-raise-interest-rates-here-s-why-i-still-think-a-2026-rate-hike-is-very-unlikely/",
+      "published": "2026-08-19T21:27:01+00:00"
+    },
+    {
+      "title": "VUG\u2019s 0.03% Fee Hides the Real Cost: 63% of Your Money Sits in Just Ten Stocks",
       "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/08/18/robotics-stocks-punished-tuesday-in-ai-sell-off-ouster-down-10-aeva-technologies-down-12-symbotic-down-4/",
-      "published": "2026-08-18T21:22:37+00:00"
+      "url": "https://247wallst.com/investing/etf/2026/08/19/vugs-0-03-fee-hides-the-real-cost-63-of-your-money-sits-in-just-ten-stocks/",
+      "published": "2026-08-19T21:15:28+00:00"
     },
     {
-      "title": "Micron, Other Chip Stocks Drop During Dog Days Of Summer",
-      "publisher": "Investor's Business Daily",
-      "url": "https://www.investors.com/news/technology/chip-stocks-micron-nvidia-drop-dog-days-summer/?src=A00220&yptr=yahoo",
-      "published": "2026-08-18T21:11:07+00:00"
+      "title": "Could Eli Lilly Be Worth More Than SpaceX by the End of 2026?",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/08/19/could-eli-lilly-be-worth-more-than-spacex-by-the-e/",
+      "published": "2026-08-19T21:13:30+00:00"
     },
     {
-      "title": "AMD\u2019s $1.3 Billion Portfolio Reveals Its Biggest Investments and Where AI Demand Lands Next",
-      "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/08/18/amds-1-3-billion-portfolio-reveals-its-biggest-investments-and-where-ai-demand-lands-next/",
-      "published": "2026-08-18T21:07:59+00:00"
-    },
-    {
-      "title": "China\u2019s Favorite Budget Meal? Burgers",
+      "title": "Lowe's Companies, Inc. Q2 2027 Earnings Call Summary",
       "publisher": "Moby",
-      "url": "https://app.moby.co/home/news/news-chinas-favorite-balanced-budget-meals-are-burgers?utm_source=yahoo_finance&utm_medium=rss",
-      "published": "2026-08-18T21:04:31+00:00"
+      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-lowes-companies-inc-q2-2027-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
+      "published": "2026-08-19T21:03:25+00:00"
     },
     {
-      "title": "Elauwit Connection, Inc. Common Stock Q2 2026 Earnings Call Summary",
-      "publisher": "Moby",
-      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-elauwit-connection-inc-common-stock-q2-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
-      "published": "2026-08-18T21:03:39+00:00"
+      "title": "NVIDIA (NVDA): What Foxconn and Super Micro Are Telling Us about the AI Boom",
+      "publisher": "Insider Monkey",
+      "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-nvda-foxconn-super-micro-210152728.html",
+      "published": "2026-08-19T21:01:52+00:00"
     }
   ],
-  "generated_at": "2026-08-18T22:16:45.709979+00:00"
+  "generated_at": "2026-08-19T22:15:29.579499+00:00"
 }
