@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-08-19",
+  "as_of": "2026-08-20",
   "price": {
-    "last": 217.55999755859375,
-    "prev_close": 219.74000549316406,
-    "change_pct": -0.9920851370134876,
-    "ytd_pct": 15.202536683711365,
+    "last": 216.85000610351562,
+    "prev_close": 217.55999755859375,
+    "change_pct": -0.3263428309640881,
+    "ytd_pct": 14.826581464155296,
     "high_52w": 236.5399932861328,
     "low_52w": 164.07000732421875,
     "currency": "USD"
@@ -14,22 +14,14 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 5269520646144.0,
-    "pe": 33.316998,
-    "forward_pe": 16.945772,
-    "dividend_yield": null,
+    "market_cap": 5252323999744.0,
+    "pe": 33.20827,
+    "forward_pe": 16.68177,
+    "dividend_yield": 0.46,
     "beta": 2.215,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-08-19",
-      "o": 182.42999267578125,
-      "h": 182.5,
-      "l": 175.49000549316406,
-      "c": 175.63999938964844,
-      "v": 185229200
-    },
     {
       "t": "2025-08-20",
       "o": 175.1699981689453,
@@ -2037,6 +2029,14 @@
       "l": 216.75999450683594,
       "c": 217.55999755859375,
       "v": 96854269
+    },
+    {
+      "t": "2026-08-20",
+      "o": 218.36000061035156,
+      "h": 219.86000061035156,
+      "l": 215.66000366210938,
+      "c": 216.85000610351562,
+      "v": 92250395
     }
   ],
   "earnings": {
@@ -2045,67 +2045,67 @@
   },
   "implied_move": {
     "expiry": "2026-08-21",
-    "move_pct": 2.1970950788931867,
-    "straddle": 4.78
+    "move_pct": 1.415725115790176,
+    "straddle": 3.0700000000000003
   },
   "options": {
     "expiry": "2026-08-21",
     "atm_strike": 217.5,
-    "call_iv": 0.3215399877929687,
-    "put_iv": 0.2937082348632812,
-    "atm_iv": 0.30762411132812495,
-    "days_to_expiry": 2
+    "call_iv": 0.2563550927734375,
+    "put_iv": 0.22168747070312497,
+    "atm_iv": 0.23902128173828124,
+    "days_to_expiry": 1
   },
   "consensus": null,
   "news": [
     {
-      "title": "Broadcom Gets Fresh Google Warning",
-      "publisher": "GuruFocus.com",
-      "url": "https://finance.yahoo.com/technology/ai/articles/broadcom-gets-fresh-google-warning-220417060.html",
-      "published": "2026-08-19T22:04:17+00:00"
-    },
-    {
-      "title": "Billionaire Stanley Druckenmiller Just Dumped Micron and Intel While Adding These 2 AI Stocks. Should Investors Follow Suit?",
+      "title": "Moderna's Comeback Is Finally Taking Shape -- and There May Be More Upside Ahead",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/19/billionaire-stanley-druckenmiller-just-dumped-micr/",
-      "published": "2026-08-19T21:52:00+00:00"
+      "url": "https://www.fool.com/investing/2026/08/20/modernas-comeback-is-finally-taking-shape-and-ther/",
+      "published": "2026-08-20T22:05:00+00:00"
     },
     {
-      "title": "Stifel Has Message For Nvidia Investors Before Earnings",
-      "publisher": "GuruFocus.com",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/stifel-message-nvidia-investors-earnings-215114118.html",
-      "published": "2026-08-19T21:51:14+00:00"
+      "title": "History of TSMC & its stock: Company timeline, facts & milestones",
+      "publisher": "TheStreet",
+      "url": "https://www.thestreet.com/investing/stocks/history-of-taiwant-semiconductor-manufacturing-company-timeline-facts",
+      "published": "2026-08-20T22:04:41+00:00"
     },
     {
-      "title": "The Fed's July Meeting Minutes Show a Growing Urgency to Raise Interest Rates. Here's Why I Still Think a 2026 Rate Hike Is Very Unlikely",
+      "title": "Is Palantir Still a Buy After Its 33% Rally Over the Past Month?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/19/the-fed-s-july-meeting-minutes-show-a-growing-urgency-to-raise-interest-rates-here-s-why-i-still-think-a-2026-rate-hike-is-very-unlikely/",
-      "published": "2026-08-19T21:27:01+00:00"
+      "url": "https://www.fool.com/investing/2026/08/20/palantir-stock-buy-after-rally-month-pltr/",
+      "published": "2026-08-20T21:50:00+00:00"
     },
     {
-      "title": "VUG\u2019s 0.03% Fee Hides the Real Cost: 63% of Your Money Sits in Just Ten Stocks",
-      "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/etf/2026/08/19/vugs-0-03-fee-hides-the-real-cost-63-of-your-money-sits-in-just-ten-stocks/",
-      "published": "2026-08-19T21:15:28+00:00"
-    },
-    {
-      "title": "Could Eli Lilly Be Worth More Than SpaceX by the End of 2026?",
+      "title": "Why Hecla Mining Stock Is Soaring This Week",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/19/could-eli-lilly-be-worth-more-than-spacex-by-the-e/",
-      "published": "2026-08-19T21:13:30+00:00"
+      "url": "https://www.fool.com/investing/2026/08/20/why-hecla-mining-stock-is-soaring-this-week/",
+      "published": "2026-08-20T21:47:03+00:00"
     },
     {
-      "title": "Lowe's Companies, Inc. Q2 2027 Earnings Call Summary",
-      "publisher": "Moby",
-      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-lowes-companies-inc-q2-2027-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
-      "published": "2026-08-19T21:03:25+00:00"
+      "title": "Michael Burry says Nvidia rival is quietly getting serious",
+      "publisher": "TheStreet",
+      "url": "https://www.thestreet.com/investing/stocks/michael-burry-nvidia-rival-etched",
+      "published": "2026-08-20T21:47:00+00:00"
     },
     {
-      "title": "NVIDIA (NVDA): What Foxconn and Super Micro Are Telling Us about the AI Boom",
-      "publisher": "Insider Monkey",
-      "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-nvda-foxconn-super-micro-210152728.html",
-      "published": "2026-08-19T21:01:52+00:00"
+      "title": "Earn 17% On AMD Stock Now, For Capping Your Upside At 24%",
+      "publisher": "Trefis",
+      "url": "https://www.trefis.com/articles/612208/earn-17-on-amd-stock-now-for-capping-your-upside-at-24/2026-08-20",
+      "published": "2026-08-20T21:41:21+00:00"
+    },
+    {
+      "title": "Forget Micron for a Minute: This Memory Competitor Just Crossed a Major Profitability Milestone",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/08/20/forget-micron-for-a-minute-this-memory-competitor/",
+      "published": "2026-08-20T21:38:00+00:00"
+    },
+    {
+      "title": "The Engine Behind INTC Stock Has Real Parts",
+      "publisher": "Trefis",
+      "url": "https://www.trefis.com/articles/612199/the-engine-behind-intc-stock-has-real-parts/2026-08-20",
+      "published": "2026-08-20T21:29:00+00:00"
     }
   ],
-  "generated_at": "2026-08-19T22:15:29.579499+00:00"
+  "generated_at": "2026-08-20T22:17:09.370318+00:00"
 }
