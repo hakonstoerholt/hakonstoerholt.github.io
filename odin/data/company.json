@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-08-20",
+  "as_of": "2026-08-21",
   "price": {
-    "last": 216.85000610351562,
-    "prev_close": 217.55999755859375,
-    "change_pct": -0.3263428309640881,
-    "ytd_pct": 14.826581464155296,
+    "last": 214.72000122070312,
+    "prev_close": 216.85000610351562,
+    "change_pct": -0.982248016076015,
+    "ytd_pct": 13.698699645795731,
     "high_52w": 236.5399932861328,
     "low_52w": 164.07000732421875,
     "currency": "USD"
@@ -14,22 +14,14 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 5252323999744.0,
-    "pe": 33.20827,
-    "forward_pe": 16.68177,
+    "market_cap": 5200733011968.0,
+    "pe": 32.88208,
+    "forward_pe": 16.482347,
     "dividend_yield": 0.46,
     "beta": 2.215,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-08-20",
-      "o": 175.1699981689453,
-      "h": 176.0,
-      "l": 168.8000030517578,
-      "c": 175.39999389648438,
-      "v": 215142700
-    },
     {
       "t": "2025-08-21",
       "o": 174.85000610351562,
@@ -2037,6 +2029,14 @@
       "l": 215.66000366210938,
       "c": 216.85000610351562,
       "v": 92250395
+    },
+    {
+      "t": "2026-08-21",
+      "o": 218.4199981689453,
+      "h": 218.74000549316406,
+      "l": 214.5,
+      "c": 214.72000122070312,
+      "v": 91591112
     }
   ],
   "earnings": {
@@ -2044,68 +2044,68 @@
     "history": []
   },
   "implied_move": {
-    "expiry": "2026-08-21",
-    "move_pct": 1.415725115790176,
-    "straddle": 3.0700000000000003
+    "expiry": "2026-08-24",
+    "move_pct": 1.6137294990225193,
+    "straddle": 3.465
   },
   "options": {
-    "expiry": "2026-08-21",
-    "atm_strike": 217.5,
-    "call_iv": 0.2563550927734375,
-    "put_iv": 0.22168747070312497,
-    "atm_iv": 0.23902128173828124,
-    "days_to_expiry": 1
+    "expiry": "2026-08-24",
+    "atm_strike": 215.0,
+    "call_iv": 0.19800606689453126,
+    "put_iv": 0.19361157958984376,
+    "atm_iv": 0.1958088232421875,
+    "days_to_expiry": 3
   },
   "consensus": null,
   "news": [
     {
-      "title": "Moderna's Comeback Is Finally Taking Shape -- and There May Be More Upside Ahead",
+      "title": "Why Ross Stores Stock Is Up Today",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/20/modernas-comeback-is-finally-taking-shape-and-ther/",
-      "published": "2026-08-20T22:05:00+00:00"
+      "url": "https://www.fool.com/investing/2026/08/21/why-ross-stores-stock-is-up-today/",
+      "published": "2026-08-21T21:57:52+00:00"
     },
     {
-      "title": "History of TSMC & its stock: Company timeline, facts & milestones",
-      "publisher": "TheStreet",
-      "url": "https://www.thestreet.com/investing/stocks/history-of-taiwant-semiconductor-manufacturing-company-timeline-facts",
-      "published": "2026-08-20T22:04:41+00:00"
-    },
-    {
-      "title": "Is Palantir Still a Buy After Its 33% Rally Over the Past Month?",
+      "title": "Warren Buffett Successor Greg Abel Cut Berkshire's Bank of America Stake by $1.7 Billion. He Added $1.6 Billion of Delta Air Lines.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/20/palantir-stock-buy-after-rally-month-pltr/",
-      "published": "2026-08-20T21:50:00+00:00"
+      "url": "https://www.fool.com/investing/2026/08/21/warren-buffett-successor-greg-abel-cut-berkshire-s-bank-of-america-stake-by-usd1-7-billion-he-added-usd1-6-billion-of-delta-air-lines/",
+      "published": "2026-08-21T21:53:01+00:00"
     },
     {
-      "title": "Why Hecla Mining Stock Is Soaring This Week",
+      "title": "The Wild Swings of Earnings Season Continue",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/20/why-hecla-mining-stock-is-soaring-this-week/",
-      "published": "2026-08-20T21:47:03+00:00"
+      "url": "https://www.fool.com/investing/2026/08/21/the-wild-swings-of-earnings-season-continue/",
+      "published": "2026-08-21T21:50:34+00:00"
     },
     {
-      "title": "Michael Burry says Nvidia rival is quietly getting serious",
-      "publisher": "TheStreet",
-      "url": "https://www.thestreet.com/investing/stocks/michael-burry-nvidia-rival-etched",
-      "published": "2026-08-20T21:47:00+00:00"
+      "title": "US Stock Indices End Week Lower On Pressure From Elevated Long-Duration Treasury Yields \u2014 PSKY, MSTR, WMT, TSLA, NVDA In Focus",
+      "publisher": "Stocktwits",
+      "url": "https://stocktwits.com/news-articles/markets/equity/us-stock-indices-end-week-lower-on-pressure-from-elevated-long-duration-treasury-yields-psky/cZY97YMRJVO",
+      "published": "2026-08-21T21:48:44+00:00"
     },
     {
-      "title": "Earn 17% On AMD Stock Now, For Capping Your Upside At 24%",
-      "publisher": "Trefis",
-      "url": "https://www.trefis.com/articles/612208/earn-17-on-amd-stock-now-for-capping-your-upside-at-24/2026-08-20",
-      "published": "2026-08-20T21:41:21+00:00"
-    },
-    {
-      "title": "Forget Micron for a Minute: This Memory Competitor Just Crossed a Major Profitability Milestone",
+      "title": "Why Is Tesla Stock Up Today?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/20/forget-micron-for-a-minute-this-memory-competitor/",
-      "published": "2026-08-20T21:38:00+00:00"
+      "url": "https://www.fool.com/investing/2026/08/21/why-is-tesla-stock-up-today/",
+      "published": "2026-08-21T21:46:33+00:00"
     },
     {
-      "title": "The Engine Behind INTC Stock Has Real Parts",
-      "publisher": "Trefis",
-      "url": "https://www.trefis.com/articles/612199/the-engine-behind-intc-stock-has-real-parts/2026-08-20",
-      "published": "2026-08-20T21:29:00+00:00"
+      "title": "Two Years of Friday Paydays: The 44% Fund Has Kept Its NAV and Beaten Half of Wall Street",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/08/21/two-years-of-friday-paydays-the-44-fund-has-kept-its-nav-and-beaten-half-of-wall-street/",
+      "published": "2026-08-21T21:35:03+00:00"
+    },
+    {
+      "title": "Lululemon Is Down 49% From Its All-Time High. Should You Buy Before Sept. 3?",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/08/21/lululemon-is-down-45-from-its-all-time-high-should/",
+      "published": "2026-08-21T21:27:00+00:00"
+    },
+    {
+      "title": "Here's what Nvidia needs to do to unlock an even better stock valuation",
+      "publisher": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/article/heres-what-nvidia-needs-to-do-to-unlock-an-even-better-stock-valuation-120651570.html",
+      "published": "2026-08-21T12:06:51+00:00"
     }
   ],
-  "generated_at": "2026-08-20T22:17:09.370318+00:00"
+  "generated_at": "2026-08-21T22:14:27.238771+00:00"
 }
