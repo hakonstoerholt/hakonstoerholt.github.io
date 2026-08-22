@@ -17,7 +17,7 @@
     "market_cap": 5200733011968.0,
     "pe": 32.88208,
     "forward_pe": 16.482347,
-    "dividend_yield": 0.46,
+    "dividend_yield": 0.47,
     "beta": 2.215,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
@@ -2051,61 +2051,61 @@
   "options": {
     "expiry": "2026-08-24",
     "atm_strike": 215.0,
-    "call_iv": 0.19800606689453126,
-    "put_iv": 0.19361157958984376,
-    "atm_iv": 0.1958088232421875,
-    "days_to_expiry": 3
+    "call_iv": 0.22852333984375,
+    "put_iv": 0.22339643798828124,
+    "atm_iv": 0.22595988891601562,
+    "days_to_expiry": 2
   },
   "consensus": null,
   "news": [
     {
-      "title": "Why Ross Stores Stock Is Up Today",
+      "title": "Institutional Investors Are Buying Hyperliquid Strategies. Should You?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/21/why-ross-stores-stock-is-up-today/",
-      "published": "2026-08-21T21:57:52+00:00"
+      "url": "https://www.fool.com/investing/2026/08/22/institutional-investors-are-buying-hyperliquid-str/",
+      "published": "2026-08-22T21:50:00+00:00"
     },
     {
-      "title": "Warren Buffett Successor Greg Abel Cut Berkshire's Bank of America Stake by $1.7 Billion. He Added $1.6 Billion of Delta Air Lines.",
+      "title": "Nvidia customers face over 15% server price hikes as memory costs soar - report",
+      "publisher": "Investing.com",
+      "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-customers-face-over-15-211744754.html",
+      "published": "2026-08-22T21:17:44+00:00"
+    },
+    {
+      "title": "Active ETFs Now Take 42% of Every Dollar Flowing Into ETFs, Up From 26% in 2024",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/21/warren-buffett-successor-greg-abel-cut-berkshire-s-bank-of-america-stake-by-usd1-7-billion-he-added-usd1-6-billion-of-delta-air-lines/",
-      "published": "2026-08-21T21:53:01+00:00"
+      "url": "https://www.fool.com/investing/2026/08/22/active-etfs-now-take-42-of-every-dollar-flowing-in/",
+      "published": "2026-08-22T20:50:00+00:00"
     },
     {
-      "title": "The Wild Swings of Earnings Season Continue",
+      "title": "Ross Stores Grew Comparable Sales 10%. TJX Grew 4%. Only One Stock Went Up.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/21/the-wild-swings-of-earnings-season-continue/",
-      "published": "2026-08-21T21:50:34+00:00"
+      "url": "https://www.fool.com/investing/2026/08/22/ross-stores-grew-comparable-sales-10-tjx-grew-4-only-one-stock-went-up/",
+      "published": "2026-08-22T20:43:01+00:00"
     },
     {
-      "title": "US Stock Indices End Week Lower On Pressure From Elevated Long-Duration Treasury Yields \u2014 PSKY, MSTR, WMT, TSLA, NVDA In Focus",
-      "publisher": "Stocktwits",
-      "url": "https://stocktwits.com/news-articles/markets/equity/us-stock-indices-end-week-lower-on-pressure-from-elevated-long-duration-treasury-yields-psky/cZY97YMRJVO",
-      "published": "2026-08-21T21:48:44+00:00"
-    },
-    {
-      "title": "Why Is Tesla Stock Up Today?",
+      "title": "Billionaire Stanley Druckenmiller Just Sold Some Sandisk Stock and Bought These 3 Unstoppable Artificial Intelligence (AI) Stocks",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/21/why-is-tesla-stock-up-today/",
-      "published": "2026-08-21T21:46:33+00:00"
+      "url": "https://www.fool.com/investing/2026/08/22/billionaire-stanley-druckenmiller-just-sold-sandis/",
+      "published": "2026-08-22T20:04:00+00:00"
     },
     {
-      "title": "Two Years of Friday Paydays: The 44% Fund Has Kept Its NAV and Beaten Half of Wall Street",
-      "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/08/21/two-years-of-friday-paydays-the-44-fund-has-kept-its-nav-and-beaten-half-of-wall-street/",
-      "published": "2026-08-21T21:35:03+00:00"
-    },
-    {
-      "title": "Lululemon Is Down 49% From Its All-Time High. Should You Buy Before Sept. 3?",
+      "title": "Apple vs. Meta Platforms: Which \"Magnificent Seven\" Giant Has the Stronger Artificial Intelligence (AI) Growth Engine?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/21/lululemon-is-down-45-from-its-all-time-high-should/",
-      "published": "2026-08-21T21:27:00+00:00"
+      "url": "https://www.fool.com/investing/2026/08/22/apple-vs-meta-platforms-better-ai-growth-engine/",
+      "published": "2026-08-22T19:59:00+00:00"
     },
     {
-      "title": "Here's what Nvidia needs to do to unlock an even better stock valuation",
-      "publisher": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/markets/stocks/article/heres-what-nvidia-needs-to-do-to-unlock-an-even-better-stock-valuation-120651570.html",
-      "published": "2026-08-21T12:06:51+00:00"
+      "title": "Does Greg Abel Know Something Wall Street Doesn't? New Berkshire Hathaway CEO Doubles Down On a Legacy Department Store Stock With a 3.3% Dividend Yield",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/08/22/greg-abel-berkshire-ceo-macy-s-stock-dividend/",
+      "published": "2026-08-22T19:53:00+00:00"
+    },
+    {
+      "title": "Can This 6.3% Yield Survive if Oil Crashes Again?",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/08/22/can-this-6-3-yield-survive-if-oil-crashes-again/",
+      "published": "2026-08-22T19:35:01+00:00"
     }
   ],
-  "generated_at": "2026-08-21T22:14:27.238771+00:00"
+  "generated_at": "2026-08-22T22:12:12.751336+00:00"
 }
