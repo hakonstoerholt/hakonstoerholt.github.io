@@ -2036,7 +2036,7 @@
       "h": 218.74000549316406,
       "l": 214.5,
       "c": 214.72000122070312,
-      "v": 91591112
+      "v": 98869300
     }
   ],
   "earnings": {
@@ -2051,61 +2051,61 @@
   "options": {
     "expiry": "2026-08-24",
     "atm_strike": 215.0,
-    "call_iv": 0.22852333984375,
-    "put_iv": 0.22339643798828124,
-    "atm_iv": 0.22595988891601562,
-    "days_to_expiry": 2
+    "call_iv": 0.28003649658203117,
+    "put_iv": 0.27368890380859373,
+    "atm_iv": 0.27686270019531245,
+    "days_to_expiry": 1
   },
   "consensus": null,
   "news": [
     {
-      "title": "Institutional Investors Are Buying Hyperliquid Strategies. Should You?",
+      "title": "Does Billionaire Bill Ackman Know Something Wall Street Doesn\u2019t? He Invested in These 2 Stocks That Have Dropped 33% and 18% Over the Past Year",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/22/institutional-investors-are-buying-hyperliquid-str/",
-      "published": "2026-08-22T21:50:00+00:00"
+      "url": "https://www.fool.com/investing/2026/08/23/does-billionaire-bill-ackman-know-something-wall-street-doesn-t-he-invested-in-these-2-stocks-that-have-dropped-33-and-18-over-the-past-year/",
+      "published": "2026-08-23T21:35:01+00:00"
     },
     {
-      "title": "Nvidia customers face over 15% server price hikes as memory costs soar - report",
-      "publisher": "Investing.com",
-      "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-customers-face-over-15-211744754.html",
-      "published": "2026-08-22T21:17:44+00:00"
+      "title": "Dow Jones Futures Due With Market At Key Point; Nvidia, Tariffs, Warsh In Focus",
+      "publisher": "Investor's Business Daily",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-market-rally-nvidia-crowdstrike-warsh/?src=A00220&yptr=yahoo",
+      "published": "2026-08-23T21:23:43+00:00"
     },
     {
-      "title": "Active ETFs Now Take 42% of Every Dollar Flowing Into ETFs, Up From 26% in 2024",
+      "title": "Axsome Therapeutics Stock Is Up 16% Year to Date. Why Wall Street Thinks It Has Even More Room to Run",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/22/active-etfs-now-take-42-of-every-dollar-flowing-in/",
-      "published": "2026-08-22T20:50:00+00:00"
+      "url": "https://www.fool.com/investing/2026/08/23/axsome-therapeutics-stock-is-up-16-year-to-date-wh/",
+      "published": "2026-08-23T21:20:00+00:00"
     },
     {
-      "title": "Ross Stores Grew Comparable Sales 10%. TJX Grew 4%. Only One Stock Went Up.",
+      "title": "The Metals Company Is Riding the Critical Metals Boom. Here's Why I Still Wouldn't Touch It.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/22/ross-stores-grew-comparable-sales-10-tjx-grew-4-only-one-stock-went-up/",
-      "published": "2026-08-22T20:43:01+00:00"
+      "url": "https://www.fool.com/investing/2026/08/23/the-metals-company-is-riding-the-critical-metals-b/",
+      "published": "2026-08-23T21:02:00+00:00"
     },
     {
-      "title": "Billionaire Stanley Druckenmiller Just Sold Some Sandisk Stock and Bought These 3 Unstoppable Artificial Intelligence (AI) Stocks",
+      "title": "Tilray Posted Record Fiscal 2026 Revenue -- Why Isn't the Stock Rallying?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/22/billionaire-stanley-druckenmiller-just-sold-sandis/",
-      "published": "2026-08-22T20:04:00+00:00"
+      "url": "https://www.fool.com/investing/2026/08/23/tilray-posted-record-fiscal-2026-revenue-why-isnt/",
+      "published": "2026-08-23T20:59:00+00:00"
     },
     {
-      "title": "Apple vs. Meta Platforms: Which \"Magnificent Seven\" Giant Has the Stronger Artificial Intelligence (AI) Growth Engine?",
+      "title": "SK Hynix Is Buying Back 3.3% of Its Shares and Canceling Every One",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/22/apple-vs-meta-platforms-better-ai-growth-engine/",
-      "published": "2026-08-22T19:59:00+00:00"
+      "url": "https://www.fool.com/investing/2026/08/23/sk-hynix-is-buying-back-3-3-of-its-shares-and-canceling-every-one/",
+      "published": "2026-08-23T20:57:01+00:00"
     },
     {
-      "title": "Does Greg Abel Know Something Wall Street Doesn't? New Berkshire Hathaway CEO Doubles Down On a Legacy Department Store Stock With a 3.3% Dividend Yield",
+      "title": "Better Dividend King to Buy Right Now: Abbott Labs or Johnson & Johnson?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/22/greg-abel-berkshire-ceo-macy-s-stock-dividend/",
-      "published": "2026-08-22T19:53:00+00:00"
+      "url": "https://www.fool.com/investing/2026/08/23/better-dividend-king-to-buy-right-now-abbott-labs/",
+      "published": "2026-08-23T20:20:00+00:00"
     },
     {
-      "title": "Can This 6.3% Yield Survive if Oil Crashes Again?",
+      "title": "Oracle vs. Amazon: Which Is the Better AI Cloud Stock to Own for the Next 5 Years?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/22/can-this-6-3-yield-survive-if-oil-crashes-again/",
-      "published": "2026-08-22T19:35:01+00:00"
+      "url": "https://www.fool.com/investing/2026/08/23/oracle-vs-amazon-which-is-the-better-ai-cloud-stoc/",
+      "published": "2026-08-23T20:13:00+00:00"
     }
   ],
-  "generated_at": "2026-08-22T22:12:12.751336+00:00"
+  "generated_at": "2026-08-23T22:12:34.102315+00:00"
 }
