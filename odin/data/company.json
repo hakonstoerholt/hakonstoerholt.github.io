@@ -14,9 +14,9 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 5200733011968.0,
-    "pe": 32.88208,
-    "forward_pe": 16.482347,
+    "market_cap": 5049593888768.0,
+    "pe": 31.92649,
+    "forward_pe": 15.986504,
     "dividend_yield": 0.47,
     "beta": 2.215,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
@@ -2044,68 +2044,68 @@
     "history": []
   },
   "implied_move": {
-    "expiry": "2026-08-24",
-    "move_pct": 1.6137294990225193,
-    "straddle": 3.465
+    "expiry": "2026-08-28",
+    "move_pct": 6.531762257948294,
+    "straddle": 14.025000000000002
   },
   "options": {
-    "expiry": "2026-08-24",
+    "expiry": "2026-08-28",
     "atm_strike": 215.0,
-    "call_iv": 0.28003649658203117,
-    "put_iv": 0.27368890380859373,
-    "atm_iv": 0.27686270019531245,
-    "days_to_expiry": 1
+    "call_iv": 0.6628451684570313,
+    "put_iv": 0.6523472265625001,
+    "atm_iv": 0.6575961975097657,
+    "days_to_expiry": 4
   },
   "consensus": null,
   "news": [
     {
-      "title": "Does Billionaire Bill Ackman Know Something Wall Street Doesn\u2019t? He Invested in These 2 Stocks That Have Dropped 33% and 18% Over the Past Year",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/23/does-billionaire-bill-ackman-know-something-wall-street-doesn-t-he-invested-in-these-2-stocks-that-have-dropped-33-and-18-over-the-past-year/",
-      "published": "2026-08-23T21:35:01+00:00"
+      "title": "Nvidia customers face 15% AI price shock",
+      "publisher": "TheStreet",
+      "url": "https://www.thestreet.com/investing/nvidia-customers-face-15-ai-price-shock",
+      "published": "2026-08-24T22:03:00+00:00"
     },
     {
-      "title": "Dow Jones Futures Due With Market At Key Point; Nvidia, Tariffs, Warsh In Focus",
-      "publisher": "Investor's Business Daily",
-      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-market-rally-nvidia-crowdstrike-warsh/?src=A00220&yptr=yahoo",
-      "published": "2026-08-23T21:23:43+00:00"
+      "title": "Prediction: Not Micron. This Artificial Intelligence (AI) Stock Could Be the Biggest Winner of the Next Infrastructure Bottleneck",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/08/24/prediction-not-micron-this-artificial-intelligence-ai-stock-could-be-the-biggest-winner-of-the-next-infrastructure-bottleneck/",
+      "published": "2026-08-24T22:01:01+00:00"
     },
     {
-      "title": "Axsome Therapeutics Stock Is Up 16% Year to Date. Why Wall Street Thinks It Has Even More Room to Run",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/23/axsome-therapeutics-stock-is-up-16-year-to-date-wh/",
-      "published": "2026-08-23T21:20:00+00:00"
+      "title": "Is Nvidia (NVDA) Stock a Buy Ahead of Q2 Earnings?",
+      "publisher": "Zacks",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-nvda-stock-buy-ahead-215800263.html",
+      "published": "2026-08-24T21:58:00+00:00"
     },
     {
-      "title": "The Metals Company Is Riding the Critical Metals Boom. Here's Why I Still Wouldn't Touch It.",
+      "title": "Tesla and Other Electric Vehicle Companies Begin Massive China Recall",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/23/the-metals-company-is-riding-the-critical-metals-b/",
-      "published": "2026-08-23T21:02:00+00:00"
+      "url": "https://www.fool.com/investing/2026/08/24/tesla-and-other-electric-vehicle-companies-begin-massive-china-recall/",
+      "published": "2026-08-24T21:54:01+00:00"
     },
     {
-      "title": "Tilray Posted Record Fiscal 2026 Revenue -- Why Isn't the Stock Rallying?",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/23/tilray-posted-record-fiscal-2026-revenue-why-isnt/",
-      "published": "2026-08-23T20:59:00+00:00"
+      "title": "S&P 500, Nasdaq end down on tech stocks, investors weigh Iran moves",
+      "publisher": "Reuters Videos",
+      "url": "https://finance.yahoo.com/video/p-500-nasdaq-end-down-215152032.html",
+      "published": "2026-08-24T21:51:52+00:00"
     },
     {
-      "title": "SK Hynix Is Buying Back 3.3% of Its Shares and Canceling Every One",
+      "title": "Samsung Just Authorized Its Largest Shareholder Return Ever. Every Major Memory Stock Fell Monday.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/23/sk-hynix-is-buying-back-3-3-of-its-shares-and-canceling-every-one/",
-      "published": "2026-08-23T20:57:01+00:00"
+      "url": "https://www.fool.com/investing/2026/08/24/samsung-just-authorized-its-largest-shareholder-return-ever-every-major-memory-stock-fell-monday/",
+      "published": "2026-08-24T21:46:01+00:00"
     },
     {
-      "title": "Better Dividend King to Buy Right Now: Abbott Labs or Johnson & Johnson?",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/23/better-dividend-king-to-buy-right-now-abbott-labs/",
-      "published": "2026-08-23T20:20:00+00:00"
+      "title": "What's at stake for Paramount, the Ellisons in Warner Bros. takeover bid",
+      "publisher": "Yahoo Finance Video",
+      "url": "https://finance.yahoo.com/video/whats-stake-paramount-ellisons-warner-213000825.html",
+      "published": "2026-08-24T21:30:00+00:00"
     },
     {
-      "title": "Oracle vs. Amazon: Which Is the Better AI Cloud Stock to Own for the Next 5 Years?",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/23/oracle-vs-amazon-which-is-the-better-ai-cloud-stoc/",
-      "published": "2026-08-23T20:13:00+00:00"
+      "title": "Nvidia's valuation looks surprisingly cheap heading into earnings. Could it be an issue for the stock?",
+      "publisher": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/article/nvidias-valuation-looks-surprisingly-cheap-heading-into-earnings-could-it-be-an-issue-for-the-stock-191738544.html",
+      "published": "2026-08-24T19:17:38+00:00"
     }
   ],
-  "generated_at": "2026-08-23T22:12:34.102315+00:00"
+  "generated_at": "2026-08-24T22:19:30.634721+00:00"
 }

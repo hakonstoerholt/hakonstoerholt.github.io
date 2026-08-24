@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-23T22:12:34.105062+00:00",
+  "generated_at": "2026-08-24T22:19:30.637530+00:00",
   "regime": {
     "regime": "Calm",
     "alarm": false,
-    "headline": "Calm \u2014 no stress alarm. The macro / yield-curve picture leads at +0.1\u03c3, and the topology trigger sits 2.0\u03c3 away. Fragility Low; full exposure (1\u00d7).",
-    "as_of": "2026-08-21",
+    "headline": "Calm \u2014 no stress alarm. Return-path topology leads at +0.4\u03c3, and the topology trigger sits 1.7\u03c3 away. Fragility Low; full exposure (1\u00d7).",
+    "as_of": "2026-08-24",
     "degraded": false
   },
   "company": {
