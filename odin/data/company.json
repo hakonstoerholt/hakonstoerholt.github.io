@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-08-25",
+  "as_of": "2026-08-26",
   "price": {
-    "last": 213.0500030517578,
-    "prev_close": 208.47999572753906,
-    "change_pct": 2.192060350092895,
-    "ytd_pct": 12.81440093519366,
+    "last": 209.66000366210938,
+    "prev_close": 213.0500030517578,
+    "change_pct": -1.5911754710582593,
+    "ytd_pct": 11.019325859691541,
     "high_52w": 236.5399932861328,
     "low_52w": 164.07000732421875,
     "currency": "USD"
@@ -14,22 +14,14 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 5160284192768.0,
-    "pe": 32.62634,
-    "forward_pe": 16.336937,
-    "dividend_yield": 0.48,
+    "market_cap": 5078174924800.0,
+    "pe": 32.5559,
+    "forward_pe": 15.970859,
+    "dividend_yield": 0.47,
     "beta": 2.215,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-08-25",
-      "o": 178.35000610351562,
-      "h": 181.91000366210938,
-      "l": 176.57000732421875,
-      "c": 179.80999755859375,
-      "v": 163012800
-    },
     {
       "t": "2025-08-26",
       "o": 180.05999755859375,
@@ -2037,6 +2029,14 @@
       "l": 210.11000061035156,
       "c": 213.0500030517578,
       "v": 120441439
+    },
+    {
+      "t": "2026-08-26",
+      "o": 212.4199981689453,
+      "h": 213.60000610351562,
+      "l": 209.22999572753906,
+      "c": 209.66000366210938,
+      "v": 145070184
     }
   ],
   "earnings": {
@@ -2045,67 +2045,67 @@
   },
   "implied_move": {
     "expiry": "2026-08-28",
-    "move_pct": 5.9141045855507395,
-    "straddle": 12.6
+    "move_pct": 5.938185530161761,
+    "straddle": 12.45
   },
   "options": {
     "expiry": "2026-08-28",
-    "atm_strike": 212.5,
-    "call_iv": 0.7114286669921875,
-    "put_iv": 0.7058134887695313,
-    "atm_iv": 0.7086210778808595,
-    "days_to_expiry": 3
+    "atm_strike": 210.0,
+    "call_iv": 1.031987261962891,
+    "put_iv": 0.9770510107421876,
+    "atm_iv": 1.0045191363525392,
+    "days_to_expiry": 1
   },
   "consensus": null,
   "news": [
     {
-      "title": "Dow Jones Futures: Stocks Rise Cautiously Into Fed Inflation Data, Nvidia Earnings; Robinhood In Buy Area",
+      "title": "Nvidia Brushes Off \u2018Circular Financing\u2019 Fears After Massive Sales Beat: \u2018We See It Differently\u2019",
+      "publisher": "Stocktwits",
+      "url": "https://stocktwits.com/news-articles/markets/equity/nvidia-brushes-off-circular-financing-fears-after-massive-sales-beat-we-see-it-differently/cZY8N3lRJpQ",
+      "published": "2026-08-27T02:10:04+00:00"
+    },
+    {
+      "title": "Nvidia's Record Results Aren't \u2018Impressive Enough' Because It's Sold Out, Analyst Says",
+      "publisher": "BeInCrypto",
+      "url": "https://beincrypto.com/nvidia-earnings-sold-out-analyst-reaction/",
+      "published": "2026-08-27T02:00:00+00:00"
+    },
+    {
+      "title": "Dow Jones Futures Rise; Nvidia, CrowdStrike, Okta, Salesforce Lead Earnings Movers",
       "publisher": "Investor's Business Daily",
-      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-fed-inflation-data-nvidia-earning-srobinhood-oil-prices-yields/?src=A00220&yptr=yahoo",
-      "published": "2026-08-25T22:01:13+00:00"
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-nvidia-crowdstrike-okta-salesforce-earnings-movers/?src=A00220&yptr=yahoo",
+      "published": "2026-08-27T01:53:20+00:00"
     },
     {
-      "title": "A 65-Year-Old Couple Can Make $146,000 This Year and Pay 0% on Their Gains. Here\u2019s the Math",
-      "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/08/25/a-65-year-old-couple-can-make-146000-this-year-and-pay-0-on-their-gains-heres-the-math/",
-      "published": "2026-08-25T21:55:52+00:00"
-    },
-    {
-      "title": "Louis Navellier has blunt message on Nvidia\u2019s reign before earnings",
+      "title": "Nvidia makes bold $108B promise in blockbuster earnings, but issues a warning",
       "publisher": "TheStreet",
-      "url": "https://www.thestreet.com/investing/louis-navellier-has-blunt-message-on-nvidias-reign-before-earnings",
-      "published": "2026-08-25T21:47:00+00:00"
+      "url": "https://www.thestreet.com/technology/nvidia-makes-bold-108b-promise-in-blockbuster-earnings-but-issues-a-warning",
+      "published": "2026-08-27T01:26:04+00:00"
     },
     {
-      "title": "The Most Famous Fund Manager\u2019s Fund Charges You 0.74%. The 401(k) Version Charges 0.45%",
-      "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/08/25/the-most-famous-fund-managers-fund-charges-you-0-74-the-401k-version-charges-0-45/",
-      "published": "2026-08-25T21:45:45+00:00"
-    },
-    {
-      "title": "If I Could Tell Everyone 1 Thing About the Stock Market, It's This: It Will Crash",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/25/if-i-could-1-thing-about-the-stock-market-crash/",
-      "published": "2026-08-25T21:35:00+00:00"
-    },
-    {
-      "title": "Nvidia earnings in focus: Why its networking segment is growing faster than compute",
+      "title": "Why Nvidia says its AI partnerships aren't 'circular financing'",
       "publisher": "Yahoo Finance Video",
-      "url": "https://finance.yahoo.com/video/nvidia-earnings-focus-why-networking-192016863.html",
-      "published": "2026-08-25T19:20:16+00:00"
+      "url": "https://finance.yahoo.com/video/why-nvidia-says-its-ai-partnerships-arent-circular-financing-222400222.html",
+      "published": "2026-08-26T22:24:00+00:00"
     },
     {
-      "title": "Elon Musk says SpaceX's Nvidia-powered orbital data center could be ready next year",
+      "title": "Nvidia reports impressive Q2 earnings as AI boom rolls on",
       "publisher": "Yahoo Finance Video",
-      "url": "https://finance.yahoo.com/video/elon-musk-says-spacexs-nvidia-135333519.html",
-      "published": "2026-08-25T13:53:33+00:00"
+      "url": "https://finance.yahoo.com/video/nvidia-reports-impressive-q2-earnings-as-ai-boom-rolls-on-203300281.html",
+      "published": "2026-08-26T20:33:00+00:00"
     },
     {
-      "title": "Earnings live updates: Intuit stock drops on soft guidance, Dick's Sporting Goods stock plummets 30%",
+      "title": "Nvidia earnings countdown: 2 things investors need to see for the stock to climb higher",
+      "publisher": "Yahoo Finance Video",
+      "url": "https://finance.yahoo.com/video/nvidia-earnings-countdown-2-things-150246651.html",
+      "published": "2026-08-26T15:02:46+00:00"
+    },
+    {
+      "title": "Stocks in holding pattern ahead of Nvidia earnings: AlphaCheck",
       "publisher": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/markets/live/earnings-live-updates-q2-nvidia-115314802.html",
-      "published": "2026-08-25T11:53:14+00:00"
+      "url": "https://finance.yahoo.com/markets/article/stocks-in-holding-pattern-ahead-of-nvidia-earnings-alphacheck-141558586.html",
+      "published": "2026-08-26T14:15:58+00:00"
     }
   ],
-  "generated_at": "2026-08-25T22:16:23.998325+00:00"
+  "generated_at": "2026-08-27T02:30:51.240503+00:00"
 }
