@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-08-27T02:30:51.243208+00:00",
+  "generated_at": "2026-08-28T05:55:12.785485+00:00",
   "regime": {
-    "regime": "Calm",
-    "alarm": false,
-    "headline": "Calm \u2014 no stress alarm. Return-path topology leads at +0.2\u03c3, and the topology trigger sits 1.5\u03c3 away. Fragility Low; full exposure (1\u00d7).",
-    "as_of": "2026-08-26",
-    "degraded": false
+    "regime": "Unknown",
+    "alarm": null,
+    "headline": "A data input is stale (vix3m). The regime signal is suppressed; hold current positioning until it refreshes.",
+    "as_of": "2026-08-27",
+    "degraded": true
   },
   "company": {
     "ticker": "NVDA",
-    "last": 209.66000366210938,
-    "change_pct": -1.5911754710582593,
-    "as_of": "2026-08-26"
+    "last": 227.97999572753906,
+    "change_pct": 8.73795275466771,
+    "as_of": "2026-08-27"
   }
 }
