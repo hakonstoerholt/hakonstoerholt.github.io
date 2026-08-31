@@ -15,9 +15,9 @@
     "sector": "Technology",
     "industry": "Semiconductors",
     "market_cap": 5253179637760.0,
-    "pe": 28.81457,
+    "pe": 27.468435,
     "forward_pe": 14.213399,
-    "dividend_yield": 0.44,
+    "dividend_yield": 0.46,
     "beta": 2.215,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
@@ -2036,7 +2036,7 @@
       "h": 229.25999450683594,
       "l": 216.80999755859375,
       "c": 217.5500030517578,
-      "v": 194036188
+      "v": 194792961
     }
   ],
   "earnings": {
@@ -2044,68 +2044,68 @@
     "history": []
   },
   "implied_move": {
-    "expiry": "2026-08-31",
-    "move_pct": 1.8202711764880406,
-    "straddle": 3.96
+    "expiry": "2026-09-02",
+    "move_pct": 2.9763272393333486,
+    "straddle": 6.475
   },
   "options": {
-    "expiry": "2026-08-31",
+    "expiry": "2026-09-02",
     "atm_strike": 217.5,
-    "call_iv": 0.2561109545898438,
-    "put_iv": 0.2561109545898438,
-    "atm_iv": 0.2561109545898438,
+    "call_iv": 0.4226131958007812,
+    "put_iv": 0.4162656030273437,
+    "atm_iv": 0.4194393994140625,
     "days_to_expiry": 2
   },
   "consensus": null,
   "news": [
     {
-      "title": "Billionaire Mark Cuban Is Not Impressed by Bitcoin's Recent Summer Rally. Here's What He's Not Telling You About Bitcoin.",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/29/billionaire-mark-cuban-is-not-impressed-by-bitcoin/",
-      "published": "2026-08-29T23:22:00+00:00"
+      "title": "Dow Jones Futures Fall, Oil Prices Pop As U.S. Strikes Iran",
+      "publisher": "Investor's Business Daily",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-microsoft-titans-mask-market-weakness/?src=A00220&yptr=yahoo",
+      "published": "2026-08-30T23:55:57+00:00"
     },
     {
-      "title": "SpaceX Is Trading Near Its $135 Offering Price. Wall Street Analysts Say This Is What Happens Next.",
+      "title": "IREN Stock Plunged Last Week. Now Could Be a Good Time to Buy.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/29/spacex-is-trading-near-its-135-offering-price-wall/",
-      "published": "2026-08-29T23:05:00+00:00"
+      "url": "https://www.fool.com/investing/2026/08/30/iren-stock-plunged-now-good-buy/",
+      "published": "2026-08-30T23:35:40+00:00"
     },
     {
-      "title": "NIO's Next Earnings Report on September 1 Could Send the Stock Soaring. Here's Why.",
+      "title": "2 Dow Jones Stocks Down Over 20% I'd Buy on the Dip",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/29/nios-next-earnings-report-on-september-1-could-send-the-stock-soaring-heres-why/",
-      "published": "2026-08-29T22:50:01+00:00"
+      "url": "https://www.fool.com/investing/2026/08/30/2-dow-jones-stocks-down-20-id-buy-on-the-dip/",
+      "published": "2026-08-30T23:25:00+00:00"
     },
     {
-      "title": "Chevron vs. Occidental: Which Oil Major's Dividend Is Actually Safer?",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/29/chevron-vs-occidental-which-oil-majors-dividend-is/",
-      "published": "2026-08-29T22:35:00+00:00"
+      "title": "Jim Cramer reveals his 20% rule for winning stocks",
+      "publisher": "TheStreet",
+      "url": "https://www.thestreet.com/investing/stocks/jim-cramer-reveals-20-percent-rule-for-winning-stocks",
+      "published": "2026-08-30T23:17:00+00:00"
     },
     {
-      "title": "Sandisk and Kioxia Plan to Invest More Than $31 Billion in Japanese Memory Plants \u2014 About 60% of What They Have Spent There in 25 Years.",
+      "title": "Why Archer Aviation's Management of Hawthorne Airport Matters Just as Much as Developing Its Own Aircraft",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/29/sandisk-and-kioxia-plan-to-invest-more-than-usd31-billion-in-japanese-memory-plants-about-60-of-what-they-have-spent-there-in-25-years/",
-      "published": "2026-08-29T21:58:01+00:00"
+      "url": "https://www.fool.com/investing/2026/08/30/why-archer-aviations-management-of-hawthorne-airpo/",
+      "published": "2026-08-30T22:35:00+00:00"
     },
     {
-      "title": "Billionaire Stanley Druckenmiller Sold Broadcom and Bought These Artificial Intelligence (AI) Giants Instead",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/29/billionaire-stanley-druckenmiller-sold-broadcom-an/",
-      "published": "2026-08-29T20:20:00+00:00"
+      "title": "Musk, Altman, Huang All Set to Speak at US-Hosted G20 Tech Meeting",
+      "publisher": "Benzinga",
+      "url": "https://finance.yahoo.com/technology/articles/musk-altman-huang-set-speak-223126177.html",
+      "published": "2026-08-30T22:31:26+00:00"
     },
     {
-      "title": "Should Stronger Analyst Focus On Earnings Power In Astera Labs\u2019 AI Story (ALAB) Require Action From Investors?",
-      "publisher": "Simply Wall St.",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/stronger-analyst-focus-earnings-power-201323308.html",
-      "published": "2026-08-29T20:13:23+00:00"
+      "title": "Target Is Still an Attractive Value Stock",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/08/30/target-is-still-an-attractive-value-stock/",
+      "published": "2026-08-30T22:25:00+00:00"
     },
     {
-      "title": "Struggling to Cover Your Costs in Retirement? 3 Questions to Ask Yourself.",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/retirement/2026/08/29/struggling-to-cover-your-costs-in-retirement-3-que/",
-      "published": "2026-08-29T20:03:00+00:00"
+      "title": "Stock Futures Drift Lower, Oil Rises Ahead of Jobs Data, Tech Earnings",
+      "publisher": "Barrons.com",
+      "url": "https://www.barrons.com/articles/futures-stock-sunday-trading-52f040e8?siteid=yhoof2&yptr=yahoo",
+      "published": "2026-08-30T22:13:00+00:00"
     }
   ],
-  "generated_at": "2026-08-29T23:43:07.454363+00:00"
+  "generated_at": "2026-08-31T00:10:05.591249+00:00"
 }
