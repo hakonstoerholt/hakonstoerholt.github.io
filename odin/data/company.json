@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-08-28",
+  "as_of": "2026-08-31",
   "price": {
-    "last": 217.5500030517578,
-    "prev_close": 227.97999572753906,
-    "change_pct": -4.5749595891063315,
-    "ytd_pct": 15.197244384790043,
+    "last": 220.77999877929688,
+    "prev_close": 217.5500030517578,
+    "change_pct": 1.4847141724795065,
+    "ytd_pct": 16.907594198476893,
     "high_52w": 236.5399932861328,
     "low_52w": 164.07000732421875,
     "currency": "USD"
@@ -14,30 +14,14 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 5253179637760.0,
-    "pe": 27.468435,
-    "forward_pe": 14.213399,
+    "market_cap": 5331174293504.0,
+    "pe": 27.4602,
+    "forward_pe": 14.332408,
     "dividend_yield": 0.46,
     "beta": 2.215,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-08-28",
-      "o": 180.82000732421875,
-      "h": 184.47000122070312,
-      "l": 176.41000366210938,
-      "c": 180.1699981689453,
-      "v": 281787800
-    },
-    {
-      "t": "2025-08-29",
-      "o": 178.11000061035156,
-      "h": 178.14999389648438,
-      "l": 173.14999389648438,
-      "c": 174.17999267578125,
-      "v": 243257900
-    },
     {
       "t": "2025-09-02",
       "o": 170.0,
@@ -2037,6 +2021,14 @@
       "l": 216.80999755859375,
       "c": 217.5500030517578,
       "v": 194792961
+    },
+    {
+      "t": "2026-08-31",
+      "o": 218.86199951171875,
+      "h": 221.2899932861328,
+      "l": 216.2100067138672,
+      "c": 220.77999877929688,
+      "v": 124033835
     }
   ],
   "earnings": {
@@ -2045,67 +2037,67 @@
   },
   "implied_move": {
     "expiry": "2026-09-02",
-    "move_pct": 2.9763272393333486,
-    "straddle": 6.475
+    "move_pct": 1.9000815396296562,
+    "straddle": 4.195
   },
   "options": {
     "expiry": "2026-09-02",
-    "atm_strike": 217.5,
-    "call_iv": 0.4226131958007812,
-    "put_iv": 0.4162656030273437,
-    "atm_iv": 0.4194393994140625,
-    "days_to_expiry": 2
+    "atm_strike": 220.0,
+    "call_iv": 0.3393620751953125,
+    "put_iv": 0.348639326171875,
+    "atm_iv": 0.34400070068359373,
+    "days_to_expiry": 1
   },
   "consensus": null,
   "news": [
     {
-      "title": "Dow Jones Futures Fall, Oil Prices Pop As U.S. Strikes Iran",
+      "title": "NVDA Stock: Where Compounding Could Take The Price",
+      "publisher": "Trefis",
+      "url": "https://www.trefis.com/articles/613689/nvda-stock-where-compounding-could-take-the-price-2/2026-08-31",
+      "published": "2026-09-01T00:25:38+00:00"
+    },
+    {
+      "title": "Dow Jones Futures: Trump's Iran Warning Sparks Stock Market Losses; Elon Musk-Led SpaceX, Tesla Rally",
       "publisher": "Investor's Business Daily",
-      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-microsoft-titans-mask-market-weakness/?src=A00220&yptr=yahoo",
-      "published": "2026-08-30T23:55:57+00:00"
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-sp500-nasdaq-trump-iran-warning-elon-musk-spacex-tesla/?src=A00220&yptr=yahoo",
+      "published": "2026-09-01T00:12:52+00:00"
     },
     {
-      "title": "IREN Stock Plunged Last Week. Now Could Be a Good Time to Buy.",
+      "title": "We Asked AI What a September Rate Hike Would Do to XRP",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/cryptocurrency/2026/08/31/we-asked-ai-what-a-september-rate-hike-would-do-to-xrp/",
+      "published": "2026-09-01T00:07:12+00:00"
+    },
+    {
+      "title": "Here's What September Has Done to AMD Stock Over the Past 10 Years",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/30/iren-stock-plunged-now-good-buy/",
-      "published": "2026-08-30T23:35:40+00:00"
+      "url": "https://www.fool.com/investing/2026/08/31/here-s-what-september-has-done-to-amd-stock-over-the-past-10-years/",
+      "published": "2026-08-31T23:58:01+00:00"
     },
     {
-      "title": "2 Dow Jones Stocks Down Over 20% I'd Buy on the Dip",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/30/2-dow-jones-stocks-down-20-id-buy-on-the-dip/",
-      "published": "2026-08-30T23:25:00+00:00"
-    },
-    {
-      "title": "Jim Cramer reveals his 20% rule for winning stocks",
-      "publisher": "TheStreet",
-      "url": "https://www.thestreet.com/investing/stocks/jim-cramer-reveals-20-percent-rule-for-winning-stocks",
-      "published": "2026-08-30T23:17:00+00:00"
-    },
-    {
-      "title": "Why Archer Aviation's Management of Hawthorne Airport Matters Just as Much as Developing Its Own Aircraft",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/30/why-archer-aviations-management-of-hawthorne-airpo/",
-      "published": "2026-08-30T22:35:00+00:00"
-    },
-    {
-      "title": "Musk, Altman, Huang All Set to Speak at US-Hosted G20 Tech Meeting",
-      "publisher": "Benzinga",
-      "url": "https://finance.yahoo.com/technology/articles/musk-altman-huang-set-speak-223126177.html",
-      "published": "2026-08-30T22:31:26+00:00"
-    },
-    {
-      "title": "Target Is Still an Attractive Value Stock",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/30/target-is-still-an-attractive-value-stock/",
-      "published": "2026-08-30T22:25:00+00:00"
-    },
-    {
-      "title": "Stock Futures Drift Lower, Oil Rises Ahead of Jobs Data, Tech Earnings",
+      "title": "Review & Preview: See You in September",
       "publisher": "Barrons.com",
-      "url": "https://www.barrons.com/articles/futures-stock-sunday-trading-52f040e8?siteid=yhoof2&yptr=yahoo",
-      "published": "2026-08-30T22:13:00+00:00"
+      "url": "https://www.barrons.com/articles/stocks-today-indexes-make-august-gains-nasdaqs-and-p-set-records-639b66a9?siteid=yhoof2&yptr=yahoo",
+      "published": "2026-08-31T23:55:00+00:00"
+    },
+    {
+      "title": "Anthropic Seals $35 Billion Cloud Deal With Nvidia-Backed Lambda",
+      "publisher": "Bloomberg",
+      "url": "https://finance.yahoo.com/technology/ai/articles/anthropic-seals-35-billion-cloud-235404995.html",
+      "published": "2026-08-31T23:54:04+00:00"
+    },
+    {
+      "title": "Marvell's Hyperscaler Deal Lands In A Fiscal Year Management Will Not Size Yet",
+      "publisher": "Trefis",
+      "url": "https://www.trefis.com/articles/613731/marvells-hyperscaler-deal-lands-in-a-fiscal-year-management-will-not-size-yet/2026-08-31",
+      "published": "2026-08-31T23:53:57+00:00"
+    },
+    {
+      "title": "Why Deere Stock Rallied Today",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/08/31/why-deere-stock-is-up-today/",
+      "published": "2026-08-31T23:46:46+00:00"
     }
   ],
-  "generated_at": "2026-08-31T00:10:05.591249+00:00"
+  "generated_at": "2026-09-01T00:56:15.176268+00:00"
 }
