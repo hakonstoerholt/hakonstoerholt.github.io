@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-08-31",
+  "as_of": "2026-09-01",
   "price": {
-    "last": 220.77999877929688,
-    "prev_close": 217.5500030517578,
-    "change_pct": 1.4847141724795065,
-    "ytd_pct": 16.907594198476893,
+    "last": 217.44000244140625,
+    "prev_close": 220.77999877929688,
+    "change_pct": -1.5128165397036097,
+    "ytd_pct": 15.138996777272752,
     "high_52w": 236.5399932861328,
     "low_52w": 164.07000732421875,
     "currency": "USD"
@@ -14,10 +14,10 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 5331174293504.0,
-    "pe": 27.4602,
-    "forward_pe": 14.332408,
-    "dividend_yield": 0.46,
+    "market_cap": 5250523594752.0,
+    "pe": 27.454546,
+    "forward_pe": 14.206213,
+    "dividend_yield": 0.45,
     "beta": 2.215,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
@@ -2029,6 +2029,14 @@
       "l": 216.2100067138672,
       "c": 220.77999877929688,
       "v": 124033835
+    },
+    {
+      "t": "2026-09-01",
+      "o": 216.61000061035156,
+      "h": 220.41000366210938,
+      "l": 215.10000610351562,
+      "c": 217.44000244140625,
+      "v": 106942626
     }
   ],
   "earnings": {
@@ -2037,67 +2045,67 @@
   },
   "implied_move": {
     "expiry": "2026-09-02",
-    "move_pct": 1.9000815396296562,
-    "straddle": 4.195
+    "move_pct": 1.4210816617483553,
+    "straddle": 3.0900000000000003
   },
   "options": {
     "expiry": "2026-09-02",
-    "atm_strike": 220.0,
-    "call_iv": 0.3393620751953125,
-    "put_iv": 0.348639326171875,
-    "atm_iv": 0.34400070068359373,
+    "atm_strike": 217.5,
+    "call_iv": 0.25220474365234374,
+    "put_iv": 0.233406103515625,
+    "atm_iv": 0.24280542358398438,
     "days_to_expiry": 1
   },
   "consensus": null,
   "news": [
     {
-      "title": "NVDA Stock: Where Compounding Could Take The Price",
-      "publisher": "Trefis",
-      "url": "https://www.trefis.com/articles/613689/nvda-stock-where-compounding-could-take-the-price-2/2026-08-31",
-      "published": "2026-09-01T00:25:38+00:00"
-    },
-    {
-      "title": "Dow Jones Futures: Trump's Iran Warning Sparks Stock Market Losses; Elon Musk-Led SpaceX, Tesla Rally",
-      "publisher": "Investor's Business Daily",
-      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-sp500-nasdaq-trump-iran-warning-elon-musk-spacex-tesla/?src=A00220&yptr=yahoo",
-      "published": "2026-09-01T00:12:52+00:00"
-    },
-    {
-      "title": "We Asked AI What a September Rate Hike Would Do to XRP",
-      "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/cryptocurrency/2026/08/31/we-asked-ai-what-a-september-rate-hike-would-do-to-xrp/",
-      "published": "2026-09-01T00:07:12+00:00"
-    },
-    {
-      "title": "Here's What September Has Done to AMD Stock Over the Past 10 Years",
+      "title": "Not Nvidia. Not OpenAI. This Artificial Intelligence (AI) Stock Will Be the Ultimate Winner.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/31/here-s-what-september-has-done-to-amd-stock-over-the-past-10-years/",
-      "published": "2026-08-31T23:58:01+00:00"
+      "url": "https://www.fool.com/investing/2026/09/01/not-nvidia-not-openai-this-artificial-intelligence/",
+      "published": "2026-09-01T23:14:00+00:00"
     },
     {
-      "title": "Review & Preview: See You in September",
-      "publisher": "Barrons.com",
-      "url": "https://www.barrons.com/articles/stocks-today-indexes-make-august-gains-nasdaqs-and-p-set-records-639b66a9?siteid=yhoof2&yptr=yahoo",
-      "published": "2026-08-31T23:55:00+00:00"
+      "title": "Why Is CrowdStrike (CRWD) Building An AI Cyber Lab And New Defense Tools?",
+      "publisher": "Simply Wall St.",
+      "url": "https://finance.yahoo.com/technology/ai/articles/why-crowdstrike-crwd-building-ai-230823447.html",
+      "published": "2026-09-01T23:08:23+00:00"
     },
     {
-      "title": "Anthropic Seals $35 Billion Cloud Deal With Nvidia-Backed Lambda",
-      "publisher": "Bloomberg",
-      "url": "https://finance.yahoo.com/technology/ai/articles/anthropic-seals-35-billion-cloud-235404995.html",
-      "published": "2026-08-31T23:54:04+00:00"
+      "title": "Nvidia was just the beginning \u2014 Here are AI\u2019s next big winners",
+      "publisher": " TheStreet",
+      "url": "https://www.thestreet.com/video/nvidia-was-just-the-beginning-here-are-the-ai-next-big-winners",
+      "published": "2026-09-01T22:36:30+00:00"
     },
     {
-      "title": "Marvell's Hyperscaler Deal Lands In A Fiscal Year Management Will Not Size Yet",
-      "publisher": "Trefis",
-      "url": "https://www.trefis.com/articles/613731/marvells-hyperscaler-deal-lands-in-a-fiscal-year-management-will-not-size-yet/2026-08-31",
-      "published": "2026-08-31T23:53:57+00:00"
-    },
-    {
-      "title": "Why Deere Stock Rallied Today",
+      "title": "Target Is Up 70% This Year but Still Down 33% From Its Peak. Here's Whether the Recovery Has Further to Run.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/08/31/why-deere-stock-is-up-today/",
-      "published": "2026-08-31T23:46:46+00:00"
+      "url": "https://www.fool.com/investing/2026/09/01/target-is-up-70-this-year-but-still-down-33-from/",
+      "published": "2026-09-01T22:35:00+00:00"
+    },
+    {
+      "title": "Nvidia Shareholders Should Brace Themselves for 1 Particular Thing in the Months to Come. Here\u2019s What It Means for the Long-term Picture.",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/09/01/nvidia-shareholders-should-brace-themselves-for-1-particular-thing-in-the-months-to-come-here-s-what-it-means-for-the-long-term-picture/",
+      "published": "2026-09-01T22:30:01+00:00"
+    },
+    {
+      "title": "CEO Michael Dell Just Delivered Fantastic News for Dell Shareholders",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/09/01/ceo-michael-dell-just-delivered-fantastic-news-for-dell-shareholders/",
+      "published": "2026-09-01T22:24:22+00:00"
+    },
+    {
+      "title": "28 Analysts Share Their Broadcom Stock Forecast Before Q3 Earnings",
+      "publisher": "BeInCrypto",
+      "url": "https://beincrypto.com/broadcom-stock-forecast-q3-earnings-analysis/",
+      "published": "2026-09-01T22:16:45+00:00"
+    },
+    {
+      "title": "Two deals, one Nvidia strategy: What's behind the chip giant's recent partnerships",
+      "publisher": "Yahoo Finance Video",
+      "url": "https://finance.yahoo.com/video/two-deals-one-nvidia-strategy-193213308.html",
+      "published": "2026-09-01T19:32:13+00:00"
     }
   ],
-  "generated_at": "2026-09-01T00:56:15.176268+00:00"
+  "generated_at": "2026-09-01T23:41:20.658646+00:00"
 }
