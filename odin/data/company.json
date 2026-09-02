@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-09-01",
+  "as_of": "2026-09-02",
   "price": {
-    "last": 217.44000244140625,
-    "prev_close": 220.77999877929688,
-    "change_pct": -1.5128165397036097,
-    "ytd_pct": 15.138996777272752,
+    "last": 224.41000366210938,
+    "prev_close": 217.44000244140625,
+    "change_pct": 3.2054824974449447,
+    "ytd_pct": 18.82975716670192,
     "high_52w": 236.5399932861328,
     "low_52w": 164.07000732421875,
     "currency": "USD"
@@ -14,10 +14,10 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 5250523594752.0,
-    "pe": 27.454546,
-    "forward_pe": 14.206213,
-    "dividend_yield": 0.45,
+    "market_cap": 5418828431360.0,
+    "pe": 28.370419,
+    "forward_pe": 14.568058,
+    "dividend_yield": 0.46,
     "beta": 2.215,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
@@ -2037,6 +2037,14 @@
       "l": 215.10000610351562,
       "c": 217.44000244140625,
       "v": 106942626
+    },
+    {
+      "t": "2026-09-02",
+      "o": 218.78500366210938,
+      "h": 227.9499969482422,
+      "l": 218.47999572753906,
+      "c": 224.41000366210938,
+      "v": 155979384
     }
   ],
   "earnings": {
@@ -2044,68 +2052,68 @@
     "history": []
   },
   "implied_move": {
-    "expiry": "2026-09-02",
-    "move_pct": 1.4210816617483553,
-    "straddle": 3.0900000000000003
+    "expiry": "2026-09-04",
+    "move_pct": 2.1523104679738143,
+    "straddle": 4.83
   },
   "options": {
-    "expiry": "2026-09-02",
-    "atm_strike": 217.5,
-    "call_iv": 0.25220474365234374,
-    "put_iv": 0.233406103515625,
-    "atm_iv": 0.24280542358398438,
-    "days_to_expiry": 1
+    "expiry": "2026-09-04",
+    "atm_strike": 225.0,
+    "call_iv": 0.3020089331054688,
+    "put_iv": 0.29688203124999996,
+    "atm_iv": 0.29944548217773437,
+    "days_to_expiry": 2
   },
   "consensus": null,
   "news": [
     {
-      "title": "Not Nvidia. Not OpenAI. This Artificial Intelligence (AI) Stock Will Be the Ultimate Winner.",
+      "title": "Why Edison International Stock Withered on Wednesday",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/01/not-nvidia-not-openai-this-artificial-intelligence/",
-      "published": "2026-09-01T23:14:00+00:00"
+      "url": "https://www.fool.com/investing/2026/09/02/why-edison-international-stock-withered-on-wednesd/",
+      "published": "2026-09-02T23:30:06+00:00"
     },
     {
-      "title": "Why Is CrowdStrike (CRWD) Building An AI Cyber Lab And New Defense Tools?",
-      "publisher": "Simply Wall St.",
-      "url": "https://finance.yahoo.com/technology/ai/articles/why-crowdstrike-crwd-building-ai-230823447.html",
-      "published": "2026-09-01T23:08:23+00:00"
-    },
-    {
-      "title": "Nvidia was just the beginning \u2014 Here are AI\u2019s next big winners",
-      "publisher": " TheStreet",
-      "url": "https://www.thestreet.com/video/nvidia-was-just-the-beginning-here-are-the-ai-next-big-winners",
-      "published": "2026-09-01T22:36:30+00:00"
-    },
-    {
-      "title": "Target Is Up 70% This Year but Still Down 33% From Its Peak. Here's Whether the Recovery Has Further to Run.",
+      "title": "Broadcom Earnings: AI Chip Sales Tripled. Here\u2019s the $34.8 Billion Number Investors Need to Watch.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/01/target-is-up-70-this-year-but-still-down-33-from/",
-      "published": "2026-09-01T22:35:00+00:00"
+      "url": "https://www.fool.com/investing/2026/09/02/broadcom-earnings-ai-chip-sales-tripled-here-s-the-usd34-8-billion-number-investors-need-to-watch/",
+      "published": "2026-09-02T23:21:01+00:00"
     },
     {
-      "title": "Nvidia Shareholders Should Brace Themselves for 1 Particular Thing in the Months to Come. Here\u2019s What It Means for the Long-term Picture.",
+      "title": "Dow Jones Futures: Snowflake, Broadcom, HPE Are Big Earnings Movers; Tesla Cybercab Event Due",
+      "publisher": "Investor's Business Daily",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-snowflake-broadcom-hpe-earnings-tesla-cybercab-event/?src=A00220&yptr=yahoo",
+      "published": "2026-09-02T23:17:54+00:00"
+    },
+    {
+      "title": "Why Hycroft Mining Stock Zoomed More Than 7% Higher Today",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/01/nvidia-shareholders-should-brace-themselves-for-1-particular-thing-in-the-months-to-come-here-s-what-it-means-for-the-long-term-picture/",
-      "published": "2026-09-01T22:30:01+00:00"
+      "url": "https://www.fool.com/investing/2026/09/02/why-hycroft-mining-stock-zoomed-more-than-7-higher/",
+      "published": "2026-09-02T23:05:02+00:00"
     },
     {
-      "title": "CEO Michael Dell Just Delivered Fantastic News for Dell Shareholders",
+      "title": "Broadcom Q3 Earnings Call Highlights",
+      "publisher": "MarketBeat",
+      "url": "https://www.marketbeat.com/instant-alerts/transcript-broadcom-q3-earnings-call-highlights-2026-09-02/?utm_source=yahoofinance&utm_medium=yahoofinance",
+      "published": "2026-09-02T23:03:18+00:00"
+    },
+    {
+      "title": "Data Centers Now Deliver a Third of Sandisk's Revenue -- $2.98 Billion in a Single Quarter",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/01/ceo-michael-dell-just-delivered-fantastic-news-for-dell-shareholders/",
-      "published": "2026-09-01T22:24:22+00:00"
+      "url": "https://www.fool.com/investing/2026/09/02/data-centers-now-deliver-a-third-of-sandisk-s-revenue-usd2-98-billion-in-a-single-quarter/",
+      "published": "2026-09-02T22:58:01+00:00"
     },
     {
-      "title": "28 Analysts Share Their Broadcom Stock Forecast Before Q3 Earnings",
-      "publisher": "BeInCrypto",
-      "url": "https://beincrypto.com/broadcom-stock-forecast-q3-earnings-analysis/",
-      "published": "2026-09-01T22:16:45+00:00"
+      "title": "Nscale doubles contracted revenue to $103 billion after Anthropic win - report",
+      "publisher": "Investing.com",
+      "url": "https://finance.yahoo.com/technology/ai/articles/nscale-doubles-contracted-revenue-103-222526129.html",
+      "published": "2026-09-02T22:25:26+00:00"
     },
     {
-      "title": "Two deals, one Nvidia strategy: What's behind the chip giant's recent partnerships",
-      "publisher": "Yahoo Finance Video",
-      "url": "https://finance.yahoo.com/video/two-deals-one-nvidia-strategy-193213308.html",
-      "published": "2026-09-01T19:32:13+00:00"
+      "title": "Wall Street Just Put a $280 Target on SpaceX's AI Bet",
+      "publisher": "GuruFocus.com",
+      "url": "https://finance.yahoo.com/technology/ai/articles/wall-street-just-put-280-220746044.html",
+      "published": "2026-09-02T22:07:46+00:00"
     }
   ],
-  "generated_at": "2026-09-01T23:41:20.658646+00:00"
+  "generated_at": "2026-09-02T23:43:04.746970+00:00"
 }
