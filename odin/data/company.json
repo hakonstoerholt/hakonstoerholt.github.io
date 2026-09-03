@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-09-02",
+  "as_of": "2026-09-03",
   "price": {
-    "last": 224.41000366210938,
-    "prev_close": 217.44000244140625,
-    "change_pct": 3.2054824974449447,
-    "ytd_pct": 18.82975716670192,
+    "last": 228.4499969482422,
+    "prev_close": 224.41000366210938,
+    "change_pct": 1.80027325885872,
+    "ytd_pct": 20.96901750854081,
     "high_52w": 236.5399932861328,
     "low_52w": 164.07000732421875,
     "currency": "USD"
@@ -14,22 +14,14 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 5418828431360.0,
-    "pe": 28.370419,
-    "forward_pe": 14.568058,
-    "dividend_yield": 0.46,
+    "market_cap": 5516382175232.0,
+    "pe": 28.91772,
+    "forward_pe": 14.830322,
+    "dividend_yield": 0.45,
     "beta": 2.215,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-09-02",
-      "o": 170.0,
-      "h": 172.3800048828125,
-      "l": 167.22000122070312,
-      "c": 170.77999877929688,
-      "v": 231164900
-    },
     {
       "t": "2025-09-03",
       "o": 171.05999755859375,
@@ -2045,6 +2037,14 @@
       "l": 218.47999572753906,
       "c": 224.41000366210938,
       "v": 155979384
+    },
+    {
+      "t": "2026-09-03",
+      "o": 226.02000427246094,
+      "h": 230.39999389648438,
+      "l": 224.75,
+      "c": 228.4499969482422,
+      "v": 133890362
     }
   ],
   "earnings": {
@@ -2053,67 +2053,67 @@
   },
   "implied_move": {
     "expiry": "2026-09-04",
-    "move_pct": 2.1523104679738143,
-    "straddle": 4.83
+    "move_pct": 1.5276866039051413,
+    "straddle": 3.49
   },
   "options": {
     "expiry": "2026-09-04",
-    "atm_strike": 225.0,
-    "call_iv": 0.3020089331054688,
-    "put_iv": 0.29688203124999996,
-    "atm_iv": 0.29944548217773437,
-    "days_to_expiry": 2
+    "atm_strike": 227.5,
+    "call_iv": 0.26367923828125,
+    "put_iv": 0.2485426708984375,
+    "atm_iv": 0.2561109545898438,
+    "days_to_expiry": 1
   },
   "consensus": null,
   "news": [
     {
-      "title": "Why Edison International Stock Withered on Wednesday",
+      "title": "Why Microsoft Stock Is Up Today",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/02/why-edison-international-stock-withered-on-wednesd/",
-      "published": "2026-09-02T23:30:06+00:00"
+      "url": "https://www.fool.com/investing/2026/09/03/why-microsoft-stock-is-up-today/",
+      "published": "2026-09-03T23:20:08+00:00"
     },
     {
-      "title": "Broadcom Earnings: AI Chip Sales Tripled. Here\u2019s the $34.8 Billion Number Investors Need to Watch.",
+      "title": "Why Copart Stock Ticked 4% Higher on Thursday",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/02/broadcom-earnings-ai-chip-sales-tripled-here-s-the-usd34-8-billion-number-investors-need-to-watch/",
-      "published": "2026-09-02T23:21:01+00:00"
+      "url": "https://www.fool.com/investing/2026/09/03/why-copart-stock-ticked-4-higher-on-thursday/",
+      "published": "2026-09-03T23:16:10+00:00"
     },
     {
-      "title": "Dow Jones Futures: Snowflake, Broadcom, HPE Are Big Earnings Movers; Tesla Cybercab Event Due",
+      "title": "Hock Tan Just Put a $230 Billion Number on Broadcom's 2028 AI Revenue. That Is 4 Times This Year's.",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/09/03/hock-tan-just-put-a-usd230-billion-number-on-broadcom-s-2028-ai-revenue-that-is-4-times-this-year-s/",
+      "published": "2026-09-03T23:12:01+00:00"
+    },
+    {
+      "title": "Nvidia Is Now Paying to Train Plumbers, and the Stock That Should Benefit Most Just Hit a 52-Week Low",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/09/03/nvidia-is-now-paying-to-train-plumbers-and-the-stock-that-should-benefit-most-just-hit-a-52-week-low/",
+      "published": "2026-09-03T23:09:19+00:00"
+    },
+    {
+      "title": "Dow Jones Futures: Stocks Jump On Fed's Waller; Tesla Cybercab Event Private, Jobs Report Looms",
       "publisher": "Investor's Business Daily",
-      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-snowflake-broadcom-hpe-earnings-tesla-cybercab-event/?src=A00220&yptr=yahoo",
-      "published": "2026-09-02T23:17:54+00:00"
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-fed-waller-tesla-cybercab-jobs-report/?src=A00220&yptr=yahoo",
+      "published": "2026-09-03T22:46:54+00:00"
     },
     {
-      "title": "Why Hycroft Mining Stock Zoomed More Than 7% Higher Today",
+      "title": "Why Credo Technology Sank This Week",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/02/why-hycroft-mining-stock-zoomed-more-than-7-higher/",
-      "published": "2026-09-02T23:05:02+00:00"
+      "url": "https://www.fool.com/investing/2026/09/03/why-credo-technology-sank-this-week/",
+      "published": "2026-09-03T22:37:30+00:00"
     },
     {
-      "title": "Broadcom Q3 Earnings Call Highlights",
-      "publisher": "MarketBeat",
-      "url": "https://www.marketbeat.com/instant-alerts/transcript-broadcom-q3-earnings-call-highlights-2026-09-02/?utm_source=yahoofinance&utm_medium=yahoofinance",
-      "published": "2026-09-02T23:03:18+00:00"
+      "title": "AI demand is 'exceptional,' but the supply chain is not: HPE CEO",
+      "publisher": "Yahoo Finance Video",
+      "url": "https://finance.yahoo.com/video/ai-demand-exceptional-supply-chain-201052714.html",
+      "published": "2026-09-03T20:10:52+00:00"
     },
     {
-      "title": "Data Centers Now Deliver a Third of Sandisk's Revenue -- $2.98 Billion in a Single Quarter",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/02/data-centers-now-deliver-a-third-of-sandisk-s-revenue-usd2-98-billion-in-a-single-quarter/",
-      "published": "2026-09-02T22:58:01+00:00"
-    },
-    {
-      "title": "Nscale doubles contracted revenue to $103 billion after Anthropic win - report",
-      "publisher": "Investing.com",
-      "url": "https://finance.yahoo.com/technology/ai/articles/nscale-doubles-contracted-revenue-103-222526129.html",
-      "published": "2026-09-02T22:25:26+00:00"
-    },
-    {
-      "title": "Wall Street Just Put a $280 Target on SpaceX's AI Bet",
-      "publisher": "GuruFocus.com",
-      "url": "https://finance.yahoo.com/technology/ai/articles/wall-street-just-put-280-220746044.html",
-      "published": "2026-09-02T22:07:46+00:00"
+      "title": "How Nvidia's latest deal continues to target all points of the AI trade",
+      "publisher": "Yahoo Finance Video",
+      "url": "https://finance.yahoo.com/video/nvidias-latest-deal-continues-target-143717372.html",
+      "published": "2026-09-03T14:37:17+00:00"
     }
   ],
-  "generated_at": "2026-09-02T23:43:04.746970+00:00"
+  "generated_at": "2026-09-03T23:40:58.573782+00:00"
 }
