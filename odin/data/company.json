@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-09-03",
+  "as_of": "2026-09-04",
   "price": {
-    "last": 228.4499969482422,
-    "prev_close": 224.41000366210938,
-    "change_pct": 1.80027325885872,
-    "ytd_pct": 20.96901750854081,
+    "last": 230.36000061035156,
+    "prev_close": 228.4499969482422,
+    "change_pct": 0.836070775935327,
+    "ytd_pct": 21.98040411186579,
     "high_52w": 236.5399932861328,
     "low_52w": 164.07000732421875,
     "currency": "USD"
@@ -14,22 +14,14 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 5516382175232.0,
-    "pe": 28.91772,
-    "forward_pe": 14.830322,
-    "dividend_yield": 0.45,
-    "beta": 2.215,
+    "market_cap": 5562502742016.0,
+    "pe": 29.159492,
+    "forward_pe": 14.902219,
+    "dividend_yield": 0.44,
+    "beta": 2.217,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-09-03",
-      "o": 171.05999755859375,
-      "h": 172.41000366210938,
-      "l": 168.8800048828125,
-      "c": 170.6199951171875,
-      "v": 164424900
-    },
     {
       "t": "2025-09-04",
       "o": 170.57000732421875,
@@ -2045,6 +2037,14 @@
       "l": 224.75,
       "c": 228.4499969482422,
       "v": 133890362
+    },
+    {
+      "t": "2026-09-04",
+      "o": 231.14199829101562,
+      "h": 234.75999450683594,
+      "l": 229.6300048828125,
+      "c": 230.36000061035156,
+      "v": 132204717
     }
   ],
   "earnings": {
@@ -2052,68 +2052,68 @@
     "history": []
   },
   "implied_move": {
-    "expiry": "2026-09-04",
-    "move_pct": 1.5276866039051413,
-    "straddle": 3.49
+    "expiry": "2026-09-09",
+    "move_pct": 2.4049314053314217,
+    "straddle": 5.539999999999999
   },
   "options": {
-    "expiry": "2026-09-04",
-    "atm_strike": 227.5,
-    "call_iv": 0.26367923828125,
-    "put_iv": 0.2485426708984375,
-    "atm_iv": 0.2561109545898438,
-    "days_to_expiry": 1
+    "expiry": "2026-09-09",
+    "atm_strike": 230.0,
+    "call_iv": 0.24341576904296874,
+    "put_iv": 0.2401199035644531,
+    "atm_iv": 0.2417678363037109,
+    "days_to_expiry": 5
   },
   "consensus": null,
   "news": [
     {
-      "title": "Why Microsoft Stock Is Up Today",
+      "title": "ChronoScale Says It Plans a 50 MW Microsoft AI Deployment. Can CHRN Fund the Build Without Diluting Shareholders?",
+      "publisher": "Insider Monkey",
+      "url": "https://finance.yahoo.com/technology/ai/articles/chronoscale-says-plans-50-mw-231034421.html",
+      "published": "2026-09-04T23:10:34+00:00"
+    },
+    {
+      "title": "AWS Plans 2 Million More NVIDIA GPUs. Is This Better News for AMZN\u2019s Cloud Growth or NVDA\u2019s Backlog?",
+      "publisher": "Insider Monkey",
+      "url": "https://finance.yahoo.com/technology/ai/articles/aws-plans-2-million-more-230419284.html",
+      "published": "2026-09-04T23:04:19+00:00"
+    },
+    {
+      "title": "U.S. Used Promise of Nvidia Chips to Broker Armenia-Azerbaijan Peace Deal",
+      "publisher": "The Wall Street Journal",
+      "url": "https://www.wsj.com/world/u-s-used-promise-of-nvidia-chips-to-broker-armenia-azerbaijan-peace-deal-b6c7cb6e?siteid=yhoof2&yptr=yahoo",
+      "published": "2026-09-04T23:00:00+00:00"
+    },
+    {
+      "title": "Coatue Opened Positions in Intel and Cerebras. Is the AI Chip Trade Broadening Beyond NVIDIA?",
+      "publisher": "Insider Monkey",
+      "url": "https://finance.yahoo.com/technology/ai/articles/coatue-opened-positions-intel-cerebras-225513318.html",
+      "published": "2026-09-04T22:55:13+00:00"
+    },
+    {
+      "title": "Why ASML Holding Stock Bumped 4% Higher Today",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/03/why-microsoft-stock-is-up-today/",
-      "published": "2026-09-03T23:20:08+00:00"
+      "url": "https://www.fool.com/investing/2026/09/04/why-asml-holding-stock-bumped-4-higher-today/",
+      "published": "2026-09-04T22:51:22+00:00"
     },
     {
-      "title": "Why Copart Stock Ticked 4% Higher on Thursday",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/03/why-copart-stock-ticked-4-higher-on-thursday/",
-      "published": "2026-09-03T23:16:10+00:00"
+      "title": "Jim Cramer Believes Nvidia Corp. (NASDAQ:NVDA) Buying Back Half A Trillion Worth In Stock Would Be Great",
+      "publisher": "Insider Monkey",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-believes-nvidia-corp-224659401.html",
+      "published": "2026-09-04T22:46:59+00:00"
     },
     {
-      "title": "Hock Tan Just Put a $230 Billion Number on Broadcom's 2028 AI Revenue. That Is 4 Times This Year's.",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/03/hock-tan-just-put-a-usd230-billion-number-on-broadcom-s-2028-ai-revenue-that-is-4-times-this-year-s/",
-      "published": "2026-09-03T23:12:01+00:00"
-    },
-    {
-      "title": "Nvidia Is Now Paying to Train Plumbers, and the Stock That Should Benefit Most Just Hit a 52-Week Low",
-      "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/09/03/nvidia-is-now-paying-to-train-plumbers-and-the-stock-that-should-benefit-most-just-hit-a-52-week-low/",
-      "published": "2026-09-03T23:09:19+00:00"
-    },
-    {
-      "title": "Dow Jones Futures: Stocks Jump On Fed's Waller; Tesla Cybercab Event Private, Jobs Report Looms",
+      "title": "Dow Jones Futures: Nvidia, Micron, Sandisk Flash Buy Signals; Apple, Inflation Reports Ahead",
       "publisher": "Investor's Business Daily",
-      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-fed-waller-tesla-cybercab-jobs-report/?src=A00220&yptr=yahoo",
-      "published": "2026-09-03T22:46:54+00:00"
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-nvidia-micron-sandisk-buy-signals-apple-inflation-reports/?src=A00220&yptr=yahoo",
+      "published": "2026-09-04T22:41:04+00:00"
     },
     {
-      "title": "Why Credo Technology Sank This Week",
+      "title": "Tesla Launched the Cybercab Thursday, 6 Weeks After Removing Volume Production of It From This Year's Plan",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/03/why-credo-technology-sank-this-week/",
-      "published": "2026-09-03T22:37:30+00:00"
-    },
-    {
-      "title": "AI demand is 'exceptional,' but the supply chain is not: HPE CEO",
-      "publisher": "Yahoo Finance Video",
-      "url": "https://finance.yahoo.com/video/ai-demand-exceptional-supply-chain-201052714.html",
-      "published": "2026-09-03T20:10:52+00:00"
-    },
-    {
-      "title": "How Nvidia's latest deal continues to target all points of the AI trade",
-      "publisher": "Yahoo Finance Video",
-      "url": "https://finance.yahoo.com/video/nvidias-latest-deal-continues-target-143717372.html",
-      "published": "2026-09-03T14:37:17+00:00"
+      "url": "https://www.fool.com/investing/2026/09/04/tesla-launched-the-cybercab-thursday-6-weeks-after-removing-volume-production-of-it-from-this-year-s-plan/",
+      "published": "2026-09-04T22:41:01+00:00"
     }
   ],
-  "generated_at": "2026-09-03T23:40:58.573782+00:00"
+  "generated_at": "2026-09-04T23:38:28.525862+00:00"
 }
