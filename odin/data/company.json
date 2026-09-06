@@ -2044,7 +2044,7 @@
       "h": 234.75999450683594,
       "l": 229.6300048828125,
       "c": 230.36000061035156,
-      "v": 132204717
+      "v": 135352420
     }
   ],
   "earnings": {
@@ -2059,61 +2059,61 @@
   "options": {
     "expiry": "2026-09-09",
     "atm_strike": 230.0,
-    "call_iv": 0.266608896484375,
-    "put_iv": 0.2629468237304688,
-    "atm_iv": 0.2647778601074219,
-    "days_to_expiry": 4
+    "call_iv": 0.2981027221679687,
+    "put_iv": 0.29395237304687494,
+    "atm_iv": 0.2960275476074218,
+    "days_to_expiry": 3
   },
   "consensus": null,
   "news": [
     {
-      "title": "IonQ vs. Rigetti Computing: Which Pure-Play Quantum Pioneer Has the Stronger Technology Advantage?",
+      "title": "Prediction: Taiwan Semiconductor's Market Value Passes $3 Trillion Before 2029",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/05/ionq-vs-rigetti-computing-which-pure-play-quantum/",
-      "published": "2026-09-05T23:20:00+00:00"
+      "url": "https://www.fool.com/investing/2026/09/06/prediction-taiwan-semiconductor-s-market-value-passes-usd3-trillion-before-2029/",
+      "published": "2026-09-06T22:51:01+00:00"
     },
     {
-      "title": "Nvidia-backed AI company reveals staggering $103 billion number",
-      "publisher": "TheStreet",
-      "url": "https://www.thestreet.com/investing/nvidia-backed-ai-startup-nscale-reveals-103-billion-contracted-revenue",
-      "published": "2026-09-05T23:17:00+00:00"
+      "title": "Nvidia (NVDA)\u2019s First-Ever Year-Ahead Forecast Puts It on a Path to Pass Apple and Alphabet",
+      "publisher": "Insider Monkey",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-nvda-first-ever-ahead-223147950.html",
+      "published": "2026-09-06T22:31:47+00:00"
     },
     {
-      "title": "This eVTOL Stock Could Set Early Investors Up for Life",
+      "title": "Did Nvidia Just Say Checkmate to AMD and Intel?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/05/this-evtol-stock-could-set-early-investors-up-for/",
-      "published": "2026-09-05T22:49:00+00:00"
+      "url": "https://www.fool.com/investing/2026/09/06/did-nvidia-just-say-checkmate-to-amd-and-intel/",
+      "published": "2026-09-06T22:30:01+00:00"
     },
     {
-      "title": "Why Intel Stock Climbed This Week",
+      "title": "I Predicted That Lululemon Stock Was In Trouble Ahead of Earnings. What's Next After Its 17% Drop?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/05/why-intel-stock-climbed-this-week/",
-      "published": "2026-09-05T22:40:17+00:00"
+      "url": "https://www.fool.com/investing/2026/09/06/i-predicted-that-lululemon-stock-was-in-trouble-ah/",
+      "published": "2026-09-06T22:20:00+00:00"
     },
     {
-      "title": "Prediction: Here's What a $10,000 Investment in Rocket Lab Will Be Worth in 5 Years",
+      "title": "Anthropic Has Committed More Than $100 Billion to AWS, and Its Prospectus Could Reveal More Details About This Contract",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/05/prediction-10000-in-rocket-lab-worth-in-5-years/",
-      "published": "2026-09-05T22:20:00+00:00"
+      "url": "https://www.fool.com/investing/2026/09/06/anthropic-has-committed-more-than-usd100-billion-to-aws-and-its-prospectus-could-reveal-more-details-about-this-contract/",
+      "published": "2026-09-06T21:43:01+00:00"
     },
     {
-      "title": "AMD Committed Up to $5 Billion to Anthropic, and Anthropic's IPO Prospectus Is Reportedly Days Away",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/05/amd-committed-up-to-usd5-billion-to-anthropic-and-anthropic-s-ipo-prospectus-is-reportedly-days-away/",
-      "published": "2026-09-05T22:03:01+00:00"
+      "title": "Nvidia CEO Jensen Huang Says AGI Has Arrived With OpenAI's GPT-6 Astra",
+      "publisher": "BeInCrypto",
+      "url": "https://beincrypto.com/jensen-huang-agi-nvidia-astra-chips/",
+      "published": "2026-09-06T21:39:37+00:00"
     },
     {
-      "title": "QuantumScape Stock Is Worth a Closer Look Right Now",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/05/quantumscape-stock-is-worth-a-closer-look-right-no/",
-      "published": "2026-09-05T21:50:00+00:00"
+      "title": "Musk Moves Up SpaceX (SPCX)\u2019s Orbital Data Center Timeline, Again",
+      "publisher": "Insider Monkey",
+      "url": "https://finance.yahoo.com/technology/ai/articles/musk-moves-spacex-spcx-orbital-204103387.html",
+      "published": "2026-09-06T20:41:03+00:00"
     },
     {
-      "title": "Coca-Cola Stock at $88: Here's Why Investors Should Pause",
+      "title": "Meet the Dirt Cheap 6.4%-Yielding Dividend Stock That's Beating the Market in 2026",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/05/coca-cola-stock-at-88-and-investors-should-pause/",
-      "published": "2026-09-05T21:26:17+00:00"
+      "url": "https://www.fool.com/investing/2026/09/06/meet-the-dirt-cheap-6-yielding-dividend-stock-that/",
+      "published": "2026-09-06T20:25:00+00:00"
     }
   ],
-  "generated_at": "2026-09-05T23:28:50.367870+00:00"
+  "generated_at": "2026-09-06T23:21:56.237020+00:00"
 }

@@ -8,7 +8,7 @@
   "headline": "A data input is stale (vix3m). The regime signal is suppressed; hold current positioning until it refreshes.",
   "scores": {
     "heimdall_max": 0.10740941038509716,
-    "heimdall_mean": -0.6256536219997011,
+    "heimdall_mean": -0.625653584468736,
     "p_turbulent": 0.0011330742575910806,
     "h0": 0.0905502461828291,
     "h1": 0.0031844982877373,
@@ -17,7 +17,7 @@
   },
   "sub_z": {
     "vol": -0.5357176127971929,
-    "credit": -1.6113275309697557,
+    "credit": -1.6113273433149298,
     "macro": 0.10740941038509716,
     "trend": -0.7371427030226417,
     "topology": -0.35148967359401245
@@ -4596,76 +4596,76 @@
     }
   ],
   "freshness": {
-    "as_of": "2026-09-05",
+    "as_of": "2026-09-06",
     "per_input": {
       "spx": {
         "last": "2026-09-04",
-        "age_days": 1,
+        "age_days": 2,
         "stale": false,
         "missing": false
       },
       "vix": {
         "last": "2026-09-04",
-        "age_days": 1,
+        "age_days": 2,
         "stale": false,
         "missing": false
       },
       "vix3m": {
         "last": "2026-07-17",
-        "age_days": 50,
+        "age_days": 51,
         "stale": true,
         "missing": false
       },
       "hyg": {
         "last": "2026-09-04",
-        "age_days": 1,
+        "age_days": 2,
         "stale": false,
         "missing": false
       },
       "lqd": {
         "last": "2026-09-04",
-        "age_days": 1,
+        "age_days": 2,
         "stale": false,
         "missing": false
       },
       "baa10y": {
         "last": "2026-09-03",
-        "age_days": 2,
+        "age_days": 3,
         "stale": false,
         "missing": false
       },
       "aaa10y": {
         "last": "2026-09-03",
-        "age_days": 2,
+        "age_days": 3,
         "stale": false,
         "missing": false
       },
       "t10y2y": {
         "last": "2026-09-04",
-        "age_days": 1,
+        "age_days": 2,
         "stale": false,
         "missing": false
       },
       "nfci": {
         "last": "2026-08-28",
-        "age_days": 8,
+        "age_days": 9,
         "stale": false,
         "missing": false
       },
       "sub_topology": {
         "last": "2026-09-04",
-        "age_days": 1,
+        "age_days": 2,
         "stale": false,
         "missing": false
       },
       "p_turbulent": {
         "last": "2026-09-04",
-        "age_days": 1,
+        "age_days": 2,
         "stale": false,
         "missing": false
       }
     },
     "degraded": true
   },
-  "generated_at": "2026-09-05T23:28:49.989643+00:00"
+  "generated_at": "2026-09-06T23:21:55.867728+00:00"
 }
