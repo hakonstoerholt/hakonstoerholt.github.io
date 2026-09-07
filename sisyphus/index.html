@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sisyphus | Håkon J. Størholt</title>
+    <meta name="description" content="Passive investing and active alpha: the master's thesis result, then the same tests re-run every month on public SEC filings.">
+    <meta name="author" content="Håkon Julius Størholt">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hassium.no/sisyphus/">
+    <meta property="og:title" content="Sisyphus | Håkon J. Størholt">
+    <meta property="og:description" content="Passive investing and active alpha, re-tested monthly on public SEC data.">
+
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/styles.css">
+    <style>
+        .sis-chart { width: 100%; height: 220px; display: block; }
+        .sis-chart.short { height: 170px; }
+        .sis-legend {
+            display: flex; flex-wrap: wrap; gap: 1.25rem; margin: 0.25rem 0 0.75rem;
+            font-size: 0.75rem; color: var(--text-muted);
+        }
+        .sis-legend .sw {
+            display: inline-block; width: 14px; height: 2px;
+            vertical-align: middle; margin-right: 6px;
+        }
+        .sis-legend .sw.bar { height: 9px; width: 9px; }
+        .sis-card { margin-bottom: 1.5rem; }
+        .sis-card h3 .tag-live {
+            font-family: 'Fira Code', monospace; font-size: 0.625rem; color: var(--accent);
+            letter-spacing: 0.18em; margin-left: 0.5rem; vertical-align: middle;
+        }
+        .sis-note { font-size: 0.8125rem; color: var(--text-secondary); line-height: 1.6; margin-top: 0.75rem; }
+        .sis-note strong { color: var(--text-primary, inherit); font-weight: 600; }
+        .sis-table { width: 100%; border-collapse: collapse; font-size: 0.8125rem; margin-top: 0.5rem; }
+        .sis-table th, .sis-table td { padding: 0.45rem 0.6rem; border-bottom: 1px solid var(--border); text-align: right; }
+        .sis-table th:first-child, .sis-table td:first-child { text-align: left; }
+        .sis-table th { font-size: 0.6875rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); font-weight: 500; }
+        .sis-table td { font-family: 'Fira Code', monospace; font-size: 0.75rem; }
+        .sis-table td.txt { font-family: inherit; font-size: 0.8125rem; }
+        .sis-table .muted { color: var(--text-muted); }
+        .sis-toggle { display: inline-flex; gap: 0.25rem; margin-left: auto; }
+        .sis-toggle button {
+            font-family: 'Fira Code', monospace; font-size: 0.6875rem; letter-spacing: 0.08em;
+            padding: 0.25rem 0.6rem; border: 1px solid var(--border); border-radius: 4px;
+            background: var(--white); color: var(--text-muted); cursor: pointer;
+        }
+        .sis-toggle button.on { color: var(--accent); border-color: var(--accent); }
+        .sis-toggle .sep { width: 1px; background: var(--border); margin: 0 0.4rem; }
+        .sis-head { display: flex; align-items: baseline; gap: 1rem; flex-wrap: wrap; }
+        .sis-head h3 { margin-bottom: 0.25rem; }
+        .sis-two { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+        @media (max-width: 720px) { .sis-two { grid-template-columns: 1fr; } }
+        .sis-grid-t { font-family: 'Fira Code', monospace; font-size: 0.75rem; border-collapse: collapse; margin-top: 0.5rem; }
+        .sis-grid-t td, .sis-grid-t th { padding: 0.3rem 0.55rem; text-align: right; border-bottom: 1px solid var(--border); }
+        .sis-grid-t th { color: var(--text-muted); font-weight: 500; }
+        .sis-bullets { font-size: 0.875rem; color: var(--text-secondary); line-height: 1.7; padding-left: 1.1rem; }
+        .sis-bullets li { margin-bottom: 0.4rem; }
+        .sis-bullets code { font-family: 'Fira Code', monospace; font-size: 0.75rem; }
+    </style>
+</head>
+<body>
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <header class="header">
+        <div class="nav-container">
+            <a href="/" class="logo"><img src="/images/hjs-symbol.svg" alt="" class="logo-icon"><span class="logo-text">Håkon J. Størholt</span></a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="/#education" class="nav-link">Education</a></li>
+                    <li><a href="/#projects" class="nav-link">Projects</a></li>
+                    <li><a href="/#skills" class="nav-link">Skills</a></li>
+                    <li><a href="/#experience" class="nav-link">Experience</a></li>
+                    <li><a href="/odin/" class="nav-link">Odin</a></li>
+                    <li><a href="/cassandra/" class="nav-link">Cassandra</a></li>
+                    <li><a href="/sisyphus/" class="nav-link active">Sisyphus</a></li>
+                    <li><a href="/f1/" class="nav-link">F1</a></li>
+                </ul>
+            </nav>
+            <div class="nav-controls">
+                <button class="nav-btn" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode"><i class="fas fa-moon"></i></button>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="f1-hero-mini">
+        <div class="hero-content">
+            <p class="f1-eyebrow">Sisyphus</p>
+            <h1>Passive Investing and Active Alpha</h1>
+            <p class="subtitle">What my master's thesis found, and whether it still holds: the same tests re-run every month on public SEC filings</p>
+        </div>
+    </section>
+
+    <section class="section" id="thesis">
+        <div class="container">
+            <h2 class="section-title">What the thesis found</h2>
+            <p class="section-subtitle" id="thesis-sub">Loading…</p>
+            <p class="summary-text animate-in" id="abstract" style="margin-bottom: 1.75rem;"></p>
+            <div id="thesis-cards"></div>
+        </div>
+    </section>
+
+    <section class="section" id="live" style="padding-top: 0;">
+        <div class="container">
+            <h2 class="section-title">How is it right now?</h2>
+            <p class="section-subtitle" id="live-sub">Loading…</p>
+            <div id="live-cards"></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="https://github.com/hakonstoerholt" class="footer-link" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/hakonstoerholt" class="footer-link" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:hakonstoerholt@gmail.com" class="footer-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>&copy; 2026 Håkon Julius Størholt</p>
+        </div>
+    </footer>
+
+    <script>
+        function applyTheme(theme) {
+            document.documentElement.setAttribute('data-theme', theme);
+            localStorage.setItem('hjs-theme', theme);
+            const btn = document.getElementById('theme-toggle');
+            if (btn) btn.innerHTML = theme === 'dark' ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedTheme = localStorage.getItem('hjs-theme') ||
+                (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            applyTheme(savedTheme);
+            document.getElementById('theme-toggle').addEventListener('click', function() {
+                applyTheme(document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+            });
+            const toggle = document.querySelector('.mobile-menu-toggle');
+            const menu = document.querySelector('.nav-menu');
+            if (toggle) toggle.addEventListener('click', () => menu.classList.toggle('active'));
+            const progress = document.getElementById('scroll-progress');
+            window.addEventListener('scroll', () => {
+                const h = document.documentElement;
+                progress.style.width = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100 + '%';
+            });
+            fetch('data.json', { cache: 'no-cache' }).then(r => r.json()).then(render);
+        });
+
+        // ---------- helpers ----------
+        const MODEL_LABEL = { capm: 'CAPM', ff3: 'FF3', ff5: 'FF5' };
+        const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+        const GOLD = '#c18433';
+        const FSET_LABEL = { dev: 'DEV', us: 'US' };
+        const FSET_TITLE = { dev: 'Ken French Developed-markets factors, as in the thesis', us: 'Ken French U.S. factors' };
+        let D, model = 'ff3', fset = 'dev';
+
+        const fmt = (v, dec) => v == null ? '–' : v.toLocaleString('en-US', { minimumFractionDigits: dec, maximumFractionDigits: dec });
+        const sgn = (v, dec) => v == null ? '–' : (v > 0 ? '+' : '') + fmt(v, dec);
+        const pct = (v, dec) => v == null ? '–' : fmt(v * 100, dec) + '%';
+        const mon = m => MONTHS[parseInt(m.slice(5), 10) - 1] + ' ' + m.slice(0, 4);
+        const stars = p => p == null ? '' : p < 0.01 ? '***' : p < 0.05 ? '**' : p < 0.1 ? '*' : '';
+
+        function ma(points, w) {
+            const out = [];
+            for (let i = w - 1; i < points.length; i++) {
+                let s = 0;
+                for (let j = i - w + 1; j <= i; j++) s += points[j].v;
+                out.push({ m: points[i].m, v: s / w });
+            }
+            return out;
+        }
+        const from = (points, m0) => points.filter(p => p.m >= m0);
+
+        function tile(label, value, sub) {
+            return `<div class="signal-tile"><div class="label">${label}</div><div class="value">${value}${sub ? ` <span style="color:var(--text-muted)">${sub}</span>` : ''}</div></div>`;
+        }
+        function legend(items) {
+            return `<div class="sis-legend">${items.map(i => `<span><span class="sw${i.bar ? ' bar' : ''}" style="background:${i.color}${i.dash ? ';height:0;border-top:2px dashed ' + i.color : ''}"></span>${i.label}</span>`).join('')}</div>`;
+        }
+
+        function niceTicks(lo, hi, n) {
+            const raw = (hi - lo) / n, mag = Math.pow(10, Math.floor(Math.log10(raw))), norm = raw / mag;
+            const step = (norm < 1.5 ? 1 : norm < 3 ? 2 : norm < 7 ? 5 : 10) * mag;
+            const out = [];
+            for (let v = Math.ceil(lo / step) * step; v <= hi + step * 1e-6; v += step) out.push(+v.toFixed(10));
+            return out;
+        }
+
+        // Multi-series line chart. series: [{pts:[{m,v}], color, width, dash, dots}]
+        function lineChart({ series, fmtY, zero, cls, marker, floor, yMax }) {
+            const W = 900, H = 220, L = 50, R = 14, T = 12, B = 22;
+            const months = [...new Set(series.flatMap(s => s.pts.map(p => p.m)))].sort();
+            const idx = Object.fromEntries(months.map((m, i) => [m, i]));
+            const vals = series.flatMap(s => s.pts.map(p => p.v));
+            let lo = Math.min(...vals), hi = Math.max(...vals);
+            if (zero) { lo = Math.min(lo, 0); hi = Math.max(hi, 0); }
+            if (floor != null) lo = Math.min(lo, floor);
+            if (yMax != null) hi = Math.max(hi, yMax);
+            const pad = (hi - lo) * 0.08 || 1;
+            lo = floor != null ? Math.max(floor, lo - pad) : lo - pad; hi += pad;
+            const n = Math.max(months.length, 2);
+            const x = i => L + (W - L - R) * i / (n - 1);
+            const y = v => T + (H - T - B) * (1 - (v - lo) / (hi - lo));
+            let g = '';
+            for (const v of niceTicks(lo, hi, 4)) {
+                g += `<line x1="${L}" x2="${W - R}" y1="${y(v).toFixed(1)}" y2="${y(v).toFixed(1)}" stroke="var(--border)" stroke-width="1"/>` +
+                     `<text x="${L - 7}" y="${(y(v) + 3).toFixed(1)}" text-anchor="end" fill="var(--text-muted)" font-size="9" font-family="Fira Code">${fmtY(v)}</text>`;
+            }
+            if (zero && lo < 0 && hi > 0) g += `<line x1="${L}" x2="${W - R}" y1="${y(0).toFixed(1)}" y2="${y(0).toFixed(1)}" stroke="var(--text-muted)" stroke-width="1" opacity="0.7"/>`;
+            const years = months.filter(m => m.endsWith('-01'));
+            const step = Math.max(1, Math.ceil(years.length / 10));
+            years.forEach((m, k) => {
+                if (k % step === 0) g += `<text x="${x(idx[m]).toFixed(1)}" y="${H - 6}" text-anchor="middle" fill="var(--text-muted)" font-size="9" font-family="Fira Code">${m.slice(0, 4)}</text>`;
+            });
+            if (marker && idx[marker] != null) {
+                const mx = x(idx[marker]).toFixed(1);
+                g += `<line x1="${mx}" x2="${mx}" y1="${T}" y2="${H - B}" stroke="var(--text-muted)" stroke-width="1" stroke-dasharray="2 3" opacity="0.8"/>`;
+            }
+            for (const s of series) {
+                const pts = s.pts.filter(p => p.v != null);
+                if (s.dots) {
+                    g += pts.map(p => `<circle cx="${x(idx[p.m]).toFixed(1)}" cy="${y(p.v).toFixed(1)}" r="3.4" fill="${s.color}"/>`).join('');
+                    continue;
+                }
+                let d = '', prev = null;
+                pts.forEach(p => {
+                    const gap = prev != null && idx[p.m] - prev > 1;
+                    d += (d && !gap ? 'L' : 'M') + x(idx[p.m]).toFixed(1) + ' ' + y(p.v).toFixed(1);
+                    prev = idx[p.m];
+                });
+                g += `<path d="${d}" fill="none" stroke="${s.color}" stroke-width="${s.width || 1.6}"${s.dash ? ` stroke-dasharray="${s.dash}"` : ''}${s.opacity ? ` opacity="${s.opacity}"` : ''}/>`;
+            }
+            return `<svg class="sis-chart${cls ? ' ' + cls : ''}" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none">${g}</svg>`;
+        }
+
+        // Grouped bars: groups = ['Q1',...], series = [{vals:[...], color}]
+        function barChart({ groups, series, fmtY }) {
+            const W = 900, H = 170, L = 50, R = 14, T = 12, B = 22;
+            const vals = series.flatMap(s => s.vals).filter(v => v != null);
+            let lo = Math.min(0, ...vals), hi = Math.max(0, ...vals);
+            const pad = (hi - lo) * 0.1 || 1; lo -= pad; hi += pad;
+            const y = v => T + (H - T - B) * (1 - (v - lo) / (hi - lo));
+            const gw = (W - L - R) / groups.length, bw = gw * 0.7 / series.length;
+            let g = '';
+            for (const v of niceTicks(lo, hi, 4)) {
+                g += `<line x1="${L}" x2="${W - R}" y1="${y(v).toFixed(1)}" y2="${y(v).toFixed(1)}" stroke="var(--border)"/>` +
+                     `<text x="${L - 7}" y="${(y(v) + 3).toFixed(1)}" text-anchor="end" fill="var(--text-muted)" font-size="9" font-family="Fira Code">${fmtY(v)}</text>`;
+            }
+            g += `<line x1="${L}" x2="${W - R}" y1="${y(0).toFixed(1)}" y2="${y(0).toFixed(1)}" stroke="var(--text-muted)" opacity="0.7"/>`;
+            groups.forEach((name, i) => {
+                const x0 = L + gw * i + gw * 0.15;
+                series.forEach((s, j) => {
+                    const v = s.vals[i];
+                    if (v == null) return;
+                    const top = Math.min(y(v), y(0)), h = Math.abs(y(v) - y(0));
+                    g += `<rect x="${(x0 + bw * j).toFixed(1)}" y="${top.toFixed(1)}" width="${(bw - 3).toFixed(1)}" height="${Math.max(h, 0.5).toFixed(1)}" fill="${s.color}" rx="1.5"/>`;
+                });
+                g += `<text x="${(L + gw * i + gw / 2).toFixed(1)}" y="${H - 6}" text-anchor="middle" fill="var(--text-muted)" font-size="9" font-family="Fira Code">${name}</text>`;
+            });
+            return `<svg class="sis-chart short" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none">${g}</svg>`;
+        }
+
+        function card(id, title, opts, body) {
+            const live = opts === true || (opts && opts.live), tog = opts && opts.toggle;
+            return `<div class="race-card animate-in sis-card" id="${id}"><div class="sis-head"><h3>${title}${live ? '<span class="tag-live">LIVE</span>' : ''}</h3>${tog ? toggleHtml() : ''}</div>${body}</div>`;
+        }
+        function toggleHtml() {
+            return `<div class="sis-toggle">${Object.keys(MODEL_LABEL).map(k => `<button data-m="${k}" class="${k === model ? 'on' : ''}">${MODEL_LABEL[k]}</button>`).join('')}<span class="sep"></span>${Object.keys(FSET_LABEL).map(k => `<button data-f="${k}" class="${k === fset ? 'on' : ''}" title="${FSET_TITLE[k]}">${FSET_LABEL[k]}</button>`).join('')}</div>`;
+        }
+
+        // ---------- thesis section ----------
+        function renderThesis() {
+            const T = D.thesis;
+            document.getElementById('thesis-sub').textContent =
+                `${T.school}, Master in Finance, ${T.year} · with ${T.authors[1]} · supervised by ${T.supervisor}`;
+            document.getElementById('abstract').textContent = T.abstract;
+            const host = document.getElementById('thesis-cards');
+            host.innerHTML = '';
+
+            const ff3 = T.regression.ff3.find(r => r.spec.startsWith('(2)'));
+            const bg = T.berk_green.ff3;
+            const q1 = bg.quintiles[0].flow, q5 = bg.quintiles[4].flow;
+            host.insertAdjacentHTML('beforeend', card('t-overview', `Passive share and aggregate alpha, ${T.sample.start.slice(0, 4)} to ${T.sample.end.slice(0, 4)}`, false, `
+                <div class="sub">Sample: ${mon(T.sample.start)} to ${mon(T.sample.end)} · Morningstar Direct, all U.S. equity mutual funds and ETFs</div>
+                <div class="signal-grid">
+                    ${tile('Passive share of equity fund AUM', `${pct(T.sample.ps_start, 1)} → ${pct(T.sample.ps_end, 1)}`)}
+                    ${tile('Mean gross alpha, FF3', sgn(T.alpha_mean.ff3.full, 3) + '% / mo', 'AUM-weighted')}
+                    ${tile('Passive share → alpha, FF3', sgn(ff3.coef, 2), `p = ${fmt(ff3.p, 2)}`)}
+                    ${tile('Next-month flow, Q5 − Q1 alpha', sgn(q5 - q1, 2) + '% of AUM', 'Berk-Green')}
+                </div>
+                ${legend([{ color: 'var(--accent)', label: 'passive share of U.S. equity fund AUM' }])}
+                ${lineChart({ series: [{ pts: T.passive_share, color: 'var(--accent)', width: 1.8 }], fmtY: v => fmt(v * 100, 0) + '%', cls: 'short' })}
+                ${legend([{ color: 'var(--accent)', label: 'CAPM' }, { color: GOLD, label: 'FF3' }, { color: 'var(--text-muted)', label: 'FF5' }, { color: 'transparent', label: 'aggregate gross alpha, % per month, 12-month average' }])}
+                ${lineChart({ series: [
+                    { pts: ma(T.alpha.capm, 12), color: 'var(--accent)', width: 1.4 },
+                    { pts: ma(T.alpha.ff3, 12), color: GOLD, width: 1.4 },
+                    { pts: ma(T.alpha.ff5, 12), color: 'var(--text-muted)', width: 1.4 }], fmtY: v => sgn(v, 2), zero: true })}
+                <p class="sis-note">Passive funds went from ${pct(T.sample.ps_start, 1)} to ${pct(T.sample.ps_end, 1)} of U.S. equity fund assets. Over the same years the AUM-weighted gross alpha of active funds averaged ${sgn(T.alpha_mean.ff3.full, 2)}% per month under FF3 (${sgn(T.alpha_mean.capm.full, 2)}% CAPM, ${sgn(T.alpha_mean.ff5.full, 2)}% FF5) and shows no trend. Gross alpha adds fees back, so this is what managers extract before charging for it; net of fees the average investor got roughly zero.</p>`));
+
+            const specs = T.regression.ff3.map(r => r.spec);
+            host.insertAdjacentHTML('beforeend', card('t-reg', 'Does the passive share predict alpha?', false, `
+                <div class="sub">Monthly regression of aggregate gross alpha on the passive share · Newey-West standard errors, 6 lags · controls: market return, VIX, credit spread, factor dispersion</div>
+                <table class="sis-table"><thead><tr><th>Specification</th><th>CAPM</th><th>FF3</th><th>FF5</th><th>N</th></tr></thead><tbody>
+                ${specs.map((s, i) => `<tr><td class="txt">${s.replace(/^\(\d\) /, '')}</td>${['capm', 'ff3', 'ff5'].map(m => { const r = T.regression[m][i]; return `<td>${sgn(r.coef, 2)}${stars(r.p)}<br><span class="muted">(${fmt(r.se, 2)})</span></td>`; }).join('')}<td class="muted">${T.regression.ff3[i].n}</td></tr>`).join('')}
+                </tbody></table>
+                <p class="sis-note">Coefficient on the passive share, in percent of monthly alpha per unit of passive share, standard error in parentheses; * p&lt;0.10, ** p&lt;0.05, *** p&lt;0.01. The primary specification excludes the dot-com years 1999 to 2002. The one significant positive (FF3, ex dot-com) is not corroborated by CAPM or FF5, and the full-sample CAPM negative flips sign once dot-com is dropped. Read together: no robust association, in either direction.</p>`));
+
+            host.insertAdjacentHTML('beforeend', card('t-bg', 'Money chases alpha, and that pins alpha to zero', false, `
+                <div class="sub">Berk-Green mechanism: funds sorted into quintiles by this month's gross alpha, mean net flow next month · FF3 · ${bg.n_months} months</div>
+                ${legend([{ color: 'var(--accent)', label: 'mean net flow next month, % of AUM', bar: true }])}
+                ${barChart({ groups: bg.quintiles.map(q => `Q${q.q} · α ${sgn(q.alpha, 1)}`), series: [{ vals: bg.quintiles.map(q => q.flow), color: 'var(--accent)' }], fmtY: v => sgn(v, 1) + '%' })}
+                <p class="sis-note">Investors move money toward last month's winners: the top alpha quintile receives ${sgn(q5, 2)}% of assets the next month, the bottom quintile loses ${sgn(q1, 2)}%. The Fama-MacBeth slope of next-month flow on alpha is ${fmt(bg.fm_slope, 3)} (t = ${fmt(bg.fm_t, 1)}). Berk and Green's point is that this is exactly what should make alpha hard to find in aggregate: flows chase skill until returns to scale erode it, regardless of how much of the market is indexed.</p>`));
+
+            const ach = T.achievable.filter(a => a.model === 'FF3' && a.returns === 'gross');
+            const trad = ach.find(a => a.spec === 'traditional'), roll = ach.find(a => a.spec === 'achievable_rollingmv');
+            const fee = T.sorts.find(s => s.model === 'ff3' && s.sort === 'expense_ratio');
+            const aum = T.sorts.find(s => s.model === 'ff3' && s.sort === 'aum');
+            const xs = T.xsec.find(x => x.model === 'FF3' && x.sample === 'ex_dotcom');
+            host.insertAdjacentHTML('beforeend', card('t-more', 'Also in the thesis', false, `
+                <ul class="sis-bullets">
+                    <li><strong>Active management has not shrunk.</strong> It lost market share, not size: ${T.shrinkage.start.n.toLocaleString()} active U.S. equity funds managing $${fmt(T.shrinkage.start.aum, 1)} trillion in ${mon(T.shrinkage.start.m)} became ${T.shrinkage.end.n.toLocaleString()} funds managing $${fmt(T.shrinkage.end.aum, 1)} trillion in ${mon(T.shrinkage.end.m)}, in today's dollars.</li>
+                    <li><strong>The aggregate hides a cross-section.</strong> Sorting funds by expense ratio, the highest-fee quintile earns ${sgn(fee.spread, 2)}% per month more gross alpha than the cheapest (t = ${fmt(fee.t, 1)}, FF3, ex dot-com); the largest funds earn ${sgn(aum.spread, 2)}% more than the smallest (t = ${fmt(aum.t, 1)}). Persistence exists but is driven by factor tilts, not skill.</li>
+                    <li><strong>Segment-level passive share does not predict segment alpha either.</strong> In a panel of 43 benchmark segments with two-way fixed effects, the FF3 coefficient is ${sgn(xs.beta, 2)} (SE ${fmt(xs.se, 2)}).</li>
+                    <li><strong>Achievable alpha.</strong> Following DeMiguel et al., re-estimating alpha against factor portfolios an investor could actually hold raises the FF3 gross figure from ${sgn(trad.full, 2)}% to ${sgn(roll.full, 2)}% per month. The passive-share result does not change.</li>
+                </ul>`));
+        }
+
+        // ---------- live section ----------
+        function renderLive() {
+            const T = D.thesis, Lv = D.live, dt = Lv.data_through, cov = Lv.coverage;
+            document.getElementById('live-sub').innerHTML =
+                `Updated ${D.updated} · SEC N-PORT complete through ${mon(dt.nport_full)}, partial through ${mon(dt.nport_partial)} · Yahoo NAVs through ${mon(dt.yahoo)} · Fama-French factors through ${mon(dt.factors)}${dt.ici ? ` · ICI through ${mon(dt.ici)}` : ''}`;
+            const host = document.getElementById('live-cards');
+            host.innerHTML = '';
+
+            // alpha
+            const la = Lv.alpha_latest[fset][model], tm = T.alpha_mean[model];
+            const thesisPts = from(ma(T.alpha[model], 12), '2015-01');
+            const livePts = ma(Lv.alpha[fset][model], 12), fullFrom = Lv.full_universe_from;
+            const liveBasket = livePts.filter(p => p.m <= fullFrom), liveFull = livePts.filter(p => p.m >= fullFrom);
+            const ov = Lv.overlap[fset][model];
+            host.insertAdjacentHTML('beforeend', card('l-alpha', 'Aggregate gross alpha of active funds', { live: true, toggle: true }, `
+                <div class="sub">Same method as the thesis: 36-month rolling betas, realized alpha each month, AUM-weighted · the thesis universe followed forward through Yahoo and SEC N-PORT · factors: ${FSET_TITLE[fset]}</div>
+                <div class="signal-grid">
+                    ${tile(`Latest month, ${mon(la.m)}`, sgn(la.v, 3) + '%', `${la.n.toLocaleString()} funds`)}
+                    ${tile('Trailing 12 months', sgn(la.mean_12m, 3) + '% / mo')}
+                    ${tile(`Since the thesis sample ended`, sgn(la.mean_post_thesis, 3) + '% / mo', `${la.n_post_thesis} months`)}
+                    ${tile('Thesis full-sample mean', sgn(tm.full, 3) + '% / mo', `ex dot-com ${sgn(tm.ex_dotcom, 3)} · Developed factors`)}
+                </div>
+                ${legend([{ color: 'var(--text-muted)', label: 'thesis (Morningstar, Developed factors)' }, { color: 'var(--accent)', label: `live (Yahoo + SEC N-PORT, ${fset === 'dev' ? 'Developed' : 'U.S.'} factors)` }].concat(liveBasket.length > 1 ? [{ color: 'var(--accent)', label: 'live, partial universe', dash: true }] : []).concat([{ color: 'transparent', label: '12-month average, % per month · vertical line: end of thesis sample' }]))}
+                ${lineChart({ series: [
+                    { pts: thesisPts, color: 'var(--text-muted)', width: 1.5 },
+                    { pts: liveBasket, color: 'var(--accent)', width: 1.4, dash: '4 3' },
+                    { pts: liveFull, color: 'var(--accent)', width: 1.8 }], fmtY: v => sgn(v, 2), zero: true, marker: T.sample.end })}
+                <p class="sis-note">The live line is the thesis test continued out of sample; everything right of the vertical line is data the thesis never saw. Where the lines overlap they measure the same funds from different sources (Morningstar versus Yahoo and SEC filings), so the gap is the cost of the shortcut, not a change in the world: over the ${ov.n} overlapping months the monthly series correlate at ${fmt(ov.corr, 2)} and the live one runs ${sgn(ov.mean_diff, 2)}% per month ${ov.mean_diff < 0 ? 'below' : 'above'} the thesis.${fset === 'us' ? ' Under U.S. factors the comparison is no longer like for like: the thesis used the Developed-markets set, since these funds are U.S.-domiciled but invest worldwide.' : ''} The universe is frozen at the funds alive when the thesis sample ended, so the history left of the line is survivor-biased on both sides; to the right, funds that close stay in.</p>`));
+
+            // passive share
+            const ps = Lv.passive_share, last = ps[ps.length - 1];
+            const ici = Lv.ici || [], iciLast = ici[ici.length - 1];
+            const psSeries = [
+                { pts: from(T.passive_share, '2015-01'), color: 'var(--text-muted)', width: 1.5 },
+                { pts: ps.map(p => ({ m: p.m, v: p.v })), color: 'var(--accent)', width: 1.8 }];
+            if (ici.length) psSeries.push({ pts: ici.map(p => ({ m: p.m, v: p.index_share / 100 })), color: GOLD, width: 1.5, dash: '4 3', dots: ici.length < 3 });
+            host.insertAdjacentHTML('beforeend', card('l-ps', 'Passive share', true, `
+                <div class="sub">Index funds and ETFs as a share of U.S. equity fund net assets</div>
+                <div class="signal-grid">
+                    ${tile(`Thesis universe, ${mon(last.m)}`, pct(last.v, 1), `${last.n_active.toLocaleString()} active · ${last.n_passive.toLocaleString()} passive funds reporting`)}
+                    ${tile(`Thesis sample end, ${mon(T.sample.end)}`, pct(T.sample.ps_end, 1))}
+                    ${iciLast ? tile(`ICI domestic equity, ${mon(iciLast.m)}`, fmt(iciLast.index_share, 1) + '%', 'all funds, index share of net assets') : ''}
+                    ${iciLast ? tile('ICI active domestic equity funds', iciLast.active_n.toLocaleString(), `$${fmt(iciLast.active_na_bn / 1000, 2)} tn`) : ''}
+                </div>
+                ${legend([{ color: 'var(--text-muted)', label: 'thesis (Morningstar)' }, { color: 'var(--accent)', label: 'live, thesis universe (SEC N-PORT net assets)' }].concat(ici.length ? [{ color: GOLD, label: 'ICI, all domestic equity funds', dash: true }] : []))}
+                ${lineChart({ series: psSeries, fmtY: v => fmt(v * 100, 0) + '%', marker: T.sample.end })}
+                <p class="sis-note">The live thesis-universe line follows the funds that existed in ${mon(T.sample.end)} and reads their net assets from N-PORT filings, so funds launched since then are missing from both sides of the ratio. ICI's figure covers every domestic equity fund and is the better level; the thesis-universe line is the better like-for-like continuation of the thesis series. Both are shown.</p>`));
+
+            // berk-green
+            const tb = T.berk_green[model], lb = Lv.berk_green[fset][model];
+            const tq1 = tb.quintiles[0].flow, tq5 = tb.quintiles[4].flow, lq1 = lb.quintiles[0].flow, lq5 = lb.quintiles[4].flow;
+            const grid = t => { const trails = [...new Set(t.map(g => g.trail))], fwds = [...new Set(t.map(g => g.fwd))];
+                return `<table class="sis-grid-t"><tr><th></th>${fwds.map(f => `<th>fwd ${f}m</th>`).join('')}</tr>${trails.map(tr => `<tr><th>trail ${tr}m</th>${fwds.map(f => { const c = t.find(g => g.trail === tr && g.fwd === f); return `<td>${c ? fmt(c.t, 1) : '–'}</td>`; }).join('')}</tr>`).join('')}</table>`; };
+            host.insertAdjacentHTML('beforeend', card('l-bg', 'Do flows still chase alpha?', { live: true, toggle: true }, `
+                <div class="sub">Quintiles by this month's gross alpha, mean net flow next month · flows from N-PORT sales, reinvestments and redemptions · live sample ${lb.n_months} months</div>
+                <div class="signal-grid">
+                    ${tile('Q5 − Q1 next-month flow, live', sgn(lq5 - lq1, 2) + '% of AUM', `thesis ${sgn(tq5 - tq1, 2)}%`)}
+                    ${tile('Fama-MacBeth slope, live', fmt(lb.fm_slope, 3), `t = ${fmt(lb.fm_t, 1)}`)}
+                    ${tile('Fama-MacBeth slope, thesis', fmt(tb.fm_slope, 3), `t = ${fmt(tb.fm_t, 1)}`)}
+                    ${tile('Positive minus negative alpha, live', sgn(lb.flow_spread, 2) + '%', `thesis ${sgn(tb.flow_spread, 2)}%`)}
+                </div>
+                ${legend([{ color: 'var(--text-muted)', label: 'thesis', bar: true }, { color: 'var(--accent)', label: 'live', bar: true }, { color: 'transparent', label: 'mean net flow next month, % of AUM' }])}
+                ${barChart({ groups: [1, 2, 3, 4, 5].map(q => `Q${q}`), series: [
+                    { vals: tb.quintiles.map(q => q.flow), color: 'var(--text-muted)' },
+                    { vals: lb.quintiles.map(q => q.flow), color: 'var(--accent)' }], fmtY: v => sgn(v, 1) + '%' })}
+                <div class="sis-two">
+                    <div><div class="sub" style="margin-bottom:0">Fama-MacBeth t-statistics, thesis</div>${grid(tb.grid)}</div>
+                    <div><div class="sub" style="margin-bottom:0">Fama-MacBeth t-statistics, live</div>${grid(lb.grid)}</div>
+                </div>
+                <p class="sis-note">Trailing alpha over 1 to 12 months against cumulative flow over the next 1 to 12 months. The thesis measured flows implicitly, as the change in assets not explained by returns; the live version uses the flows funds report to the SEC. Same shape either way: money keeps moving toward recent winners.</p>`));
+
+            // industry size
+            const shr = T.shrinkage.series;
+            host.insertAdjacentHTML('beforeend', card('l-size', 'Is active management shrinking?', true, `
+                <div class="sub">Real assets of active U.S. equity funds, trillions of today's dollars</div>
+                <div class="signal-grid">
+                    ${tile(`Thesis universe, ${mon(last.m)}`, '$' + fmt(last.real_active_tn, 2) + ' tn', `${last.n_active.toLocaleString()} funds still reporting`)}
+                    ${tile(`Thesis, ${mon(T.shrinkage.end.m)}`, '$' + fmt(T.shrinkage.end.aum, 2) + ' tn', `${T.shrinkage.end.n.toLocaleString()} funds`)}
+                    ${tile(`Thesis, ${mon(T.shrinkage.start.m)}`, '$' + fmt(T.shrinkage.start.aum, 2) + ' tn', `${T.shrinkage.start.n.toLocaleString()} funds`)}
+                    ${iciLast ? tile(`ICI active domestic equity, ${mon(iciLast.m)}`, '$' + fmt(iciLast.active_na_bn / 1000, 2) + ' tn', `${iciLast.active_n.toLocaleString()} funds`) : ''}
+                </div>
+                ${legend([{ color: 'var(--text-muted)', label: 'thesis (Morningstar, real $ tn)' }, { color: 'var(--accent)', label: 'live, thesis universe (N-PORT, real $ tn)' }])}
+                ${lineChart({ series: [
+                    { pts: from(shr.map(p => ({ m: p.m, v: p.aum })), '2010-01'), color: 'var(--text-muted)', width: 1.5 },
+                    { pts: ps.map(p => ({ m: p.m, v: p.real_active_tn })), color: 'var(--accent)', width: 1.8 }], fmtY: v => '$' + fmt(v, 1), marker: T.sample.end, floor: 0, cls: 'short' })}
+                <p class="sis-note">A frozen universe can only lose funds, so the live line understates the industry: it tracks the assets of the funds the thesis knew about, not the funds launched since. ICI's count of active domestic equity funds is the number to watch for whether the industry is actually contracting.</p>`));
+
+            // method
+            host.insertAdjacentHTML('beforeend', `<div class="methodology-box animate-in"><h3>How this is built</h3><ul class="sis-bullets">
+                <li><strong>Universe.</strong> The ${cov.active.n_thesis.toLocaleString()} active and ${cov.passive.n_thesis.toLocaleString()} passive funds alive at the end of the thesis sample, matched from their Morningstar ISINs to SEC series IDs via OpenFIGI and the SEC's ticker file: ${cov.active.n_mapped.toLocaleString()} active (${pct(cov.active.aum_share, 0)} of AUM) and ${cov.passive.n_mapped.toLocaleString()} passive (${pct(cov.passive.aum_share, 0)} of AUM) matched.</li>
+                <li><strong>Returns.</strong> Yahoo Finance month-end adjusted NAVs of each fund's largest share class (${cov.n_yahoo.toLocaleString()} funds found), which match the thesis's Morningstar returns almost exactly; N-PORT class returns where Yahoo has none. A few percent of N-PORT class returns are wrong, partly because some filers list the three months in reverse order, so they are checked against the market and the fund's other classes before use.</li>
+                <li><strong>Flows and assets.</strong> SEC Form N-PORT structured datasets: monthly sales, reinvestments and redemptions, and net assets. Filings become public two months after month end, but the SEC's bulk datasets this reads come out quarterly, so complete coverage lags four to six months.</li>
+                <li><strong>Factors.</strong> Ken French's data library. The thesis used the Developed-markets factor set, because the funds are U.S.-domiciled but invest worldwide; the live series is computed under that set as the continuation of the thesis, and under the U.S. set as a check. The DEV / US toggle switches between them. CAPM here uses the market factor; the thesis used each fund's prospectus benchmark.</li>
+                <li><strong>Fees.</strong> Gross alpha adds back each fund's fee, estimated as its gross-minus-net return gap over the last year of the thesis sample and held fixed since.</li>
+                <li><strong>What is not continued.</strong> The passive-share regression itself (one extra month on thirty years changes nothing), the cross-sectional panel, and the achievable-alpha extension.</li>
+                <li>The analysis runs on my own machine; the page receives a fresh <code>data.json</code> each month, like Cassandra.</li>
+            </ul></div>`);
+
+            document.querySelectorAll('.sis-toggle button').forEach(b => b.addEventListener('click', () => { if (b.dataset.m) model = b.dataset.m; if (b.dataset.f) fset = b.dataset.f; renderLive(); }));
+            observe();
+        }
+
+        function observe() {
+            const obs = new IntersectionObserver(es => {
+                es.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+            }, { threshold: 0.05 });
+            document.querySelectorAll('.animate-in').forEach(el => obs.observe(el));
+        }
+
+        function render(data) {
+            D = data;
+            renderThesis();
+            renderLive();
+        }
+    </script>
+</body>
+</html>
