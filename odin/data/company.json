@@ -16,7 +16,7 @@
     "industry": "Semiconductors",
     "market_cap": 5562502742016.0,
     "pe": 29.159492,
-    "forward_pe": 14.902219,
+    "forward_pe": 14.843682,
     "dividend_yield": 0.43,
     "beta": 2.217,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
@@ -2059,61 +2059,61 @@
   "options": {
     "expiry": "2026-09-09",
     "atm_strike": 230.0,
-    "call_iv": 0.2981027221679687,
-    "put_iv": 0.29395237304687494,
-    "atm_iv": 0.2960275476074218,
-    "days_to_expiry": 3
+    "call_iv": 0.3442448388671875,
+    "put_iv": 0.33960621337890623,
+    "atm_iv": 0.34192552612304683,
+    "days_to_expiry": 2
   },
   "consensus": null,
   "news": [
     {
-      "title": "Prediction: Taiwan Semiconductor's Market Value Passes $3 Trillion Before 2029",
+      "title": "Wall Street Investment Firm Bernstein Thinks Bitcoin Could Hit $300,000 by 2029. Is Bitcoin Now a Buy?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/06/prediction-taiwan-semiconductor-s-market-value-passes-usd3-trillion-before-2029/",
-      "published": "2026-09-06T22:51:01+00:00"
+      "url": "https://www.fool.com/investing/2026/09/07/investment-firm-bernstein-thinks-bitcoin-could-hit/",
+      "published": "2026-09-07T23:05:00+00:00"
     },
     {
-      "title": "Nvidia (NVDA)\u2019s First-Ever Year-Ahead Forecast Puts It on a Path to Pass Apple and Alphabet",
-      "publisher": "Insider Monkey",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-nvda-first-ever-ahead-223147950.html",
-      "published": "2026-09-06T22:31:47+00:00"
-    },
-    {
-      "title": "Did Nvidia Just Say Checkmate to AMD and Intel?",
+      "title": "Why UWM Holdings Stock Dived by 20% Last Month",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/06/did-nvidia-just-say-checkmate-to-amd-and-intel/",
-      "published": "2026-09-06T22:30:01+00:00"
+      "url": "https://www.fool.com/investing/2026/09/07/why-uwm-holdings-stock-dived-by-20-last-month/",
+      "published": "2026-09-07T22:51:26+00:00"
     },
     {
-      "title": "I Predicted That Lululemon Stock Was In Trouble Ahead of Earnings. What's Next After Its 17% Drop?",
+      "title": "The AI Memory Stock That Could Outshine the Obvious Picks",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/06/i-predicted-that-lululemon-stock-was-in-trouble-ah/",
-      "published": "2026-09-06T22:20:00+00:00"
+      "url": "https://www.fool.com/investing/2026/09/07/the-ai-memory-stock-that-could-outshine-the-obviou/",
+      "published": "2026-09-07T22:05:00+00:00"
     },
     {
-      "title": "Anthropic Has Committed More Than $100 Billion to AWS, and Its Prospectus Could Reveal More Details About This Contract",
+      "title": "Palantir Stock Leads August Rally -- Nvidia, Salesforce and Super Micro Jump",
+      "publisher": "GuruFocus.com",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/palantir-stock-leads-august-rally-215855985.html",
+      "published": "2026-09-07T21:58:55+00:00"
+    },
+    {
+      "title": "Nvidia Insider Makes Stunning $410 Million Stock Move",
+      "publisher": "GuruFocus.com",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-insider-makes-stunning-410-215800599.html",
+      "published": "2026-09-07T21:58:00+00:00"
+    },
+    {
+      "title": "Tencent Slips 1% While Its AI-Chip Bet Attacks Nvidia's China Moat",
+      "publisher": "GuruFocus.com",
+      "url": "https://finance.yahoo.com/technology/ai/articles/tencent-slips-1-while-ai-215226124.html",
+      "published": "2026-09-07T21:52:26+00:00"
+    },
+    {
+      "title": "Nvidia Gets a $1.47 Billion Supplier Cushion Without Spending a Dollar",
+      "publisher": "GuruFocus.com",
+      "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-gets-1-47-billion-215008444.html",
+      "published": "2026-09-07T21:50:08+00:00"
+    },
+    {
+      "title": "Applied Digital Won't Collect Most of Its Rent Until 2029. I'd Wait to Buy the Stock.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/06/anthropic-has-committed-more-than-usd100-billion-to-aws-and-its-prospectus-could-reveal-more-details-about-this-contract/",
-      "published": "2026-09-06T21:43:01+00:00"
-    },
-    {
-      "title": "Nvidia CEO Jensen Huang Says AGI Has Arrived With OpenAI's GPT-6 Astra",
-      "publisher": "BeInCrypto",
-      "url": "https://beincrypto.com/jensen-huang-agi-nvidia-astra-chips/",
-      "published": "2026-09-06T21:39:37+00:00"
-    },
-    {
-      "title": "Musk Moves Up SpaceX (SPCX)\u2019s Orbital Data Center Timeline, Again",
-      "publisher": "Insider Monkey",
-      "url": "https://finance.yahoo.com/technology/ai/articles/musk-moves-spacex-spcx-orbital-204103387.html",
-      "published": "2026-09-06T20:41:03+00:00"
-    },
-    {
-      "title": "Meet the Dirt Cheap 6.4%-Yielding Dividend Stock That's Beating the Market in 2026",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/06/meet-the-dirt-cheap-6-yielding-dividend-stock-that/",
-      "published": "2026-09-06T20:25:00+00:00"
+      "url": "https://www.fool.com/investing/2026/09/07/applied-digital-won-t-collect-most-of-its-rent-until-2029-i-d-wait-to-buy-the-stock/",
+      "published": "2026-09-07T21:49:01+00:00"
     }
   ],
-  "generated_at": "2026-09-06T23:21:56.237020+00:00"
+  "generated_at": "2026-09-07T23:54:35.661221+00:00"
 }
