@@ -1,43 +1,27 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-09-04",
+  "as_of": "2026-09-08",
   "price": {
-    "last": 230.36000061035156,
-    "prev_close": 228.4499969482422,
-    "change_pct": 0.836070775935327,
-    "ytd_pct": 21.98040411186579,
+    "last": 225.72999572753906,
+    "prev_close": 230.36000061035156,
+    "change_pct": -2.0098996659771884,
+    "ytd_pct": 19.52872037706377,
     "high_52w": 236.5399932861328,
-    "low_52w": 164.07000732421875,
+    "low_52w": 164.27000427246094,
     "currency": "USD"
   },
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 5562502742016.0,
-    "pe": 29.159492,
-    "forward_pe": 14.843682,
+    "market_cap": 5450701996032.0,
+    "pe": 28.573418,
+    "forward_pe": 14.54534,
     "dividend_yield": 0.43,
     "beta": 2.217,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-09-04",
-      "o": 170.57000732421875,
-      "h": 171.86000061035156,
-      "l": 169.41000366210938,
-      "c": 171.66000366210938,
-      "v": 141670100
-    },
-    {
-      "t": "2025-09-05",
-      "o": 168.02999877929688,
-      "h": 169.02999877929688,
-      "l": 164.07000732421875,
-      "c": 167.02000427246094,
-      "v": 224441400
-    },
     {
       "t": "2025-09-08",
       "o": 167.5500030517578,
@@ -2045,6 +2029,14 @@
       "l": 229.6300048828125,
       "c": 230.36000061035156,
       "v": 135352420
+    },
+    {
+      "t": "2026-09-08",
+      "o": 233.2100067138672,
+      "h": 233.7100067138672,
+      "l": 224.85000610351562,
+      "c": 225.72999572753906,
+      "v": 118984635
     }
   ],
   "earnings": {
@@ -2053,67 +2045,67 @@
   },
   "implied_move": {
     "expiry": "2026-09-09",
-    "move_pct": 2.4049314053314217,
-    "straddle": 5.539999999999999
+    "move_pct": 1.508439314423196,
+    "straddle": 3.4050000000000002
   },
   "options": {
     "expiry": "2026-09-09",
-    "atm_strike": 230.0,
-    "call_iv": 0.3442448388671875,
-    "put_iv": 0.33960621337890623,
-    "atm_iv": 0.34192552612304683,
-    "days_to_expiry": 2
+    "atm_strike": 225.0,
+    "call_iv": 0.26148199462890626,
+    "put_iv": 0.24781025634765624,
+    "atm_iv": 0.25464612548828125,
+    "days_to_expiry": 1
   },
   "consensus": null,
   "news": [
     {
-      "title": "Wall Street Investment Firm Bernstein Thinks Bitcoin Could Hit $300,000 by 2029. Is Bitcoin Now a Buy?",
+      "title": "Why Braze Stock Tumbled by Over 5% on Tuesday",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/07/investment-firm-bernstein-thinks-bitcoin-could-hit/",
-      "published": "2026-09-07T23:05:00+00:00"
+      "url": "https://www.fool.com/investing/2026/09/08/why-braze-stock-tumbled-by-over-5-on-tuesday/",
+      "published": "2026-09-08T23:35:24+00:00"
     },
     {
-      "title": "Why UWM Holdings Stock Dived by 20% Last Month",
+      "title": "Prediction: Sept. 10 Will Be a Big Day for Nvidia Shareholders. Here\u2019s What to Watch.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/07/why-uwm-holdings-stock-dived-by-20-last-month/",
-      "published": "2026-09-07T22:51:26+00:00"
+      "url": "https://www.fool.com/investing/2026/09/08/prediction-sept-10-will-be-a-big-day-for-nvidia-shareholders-here-s-what-to-watch/",
+      "published": "2026-09-08T23:35:01+00:00"
     },
     {
-      "title": "The AI Memory Stock That Could Outshine the Obvious Picks",
+      "title": "Dow Jones Futures: Dow Skids But AMD, HPE Are New Buys; Apple iPhone Event Due",
+      "publisher": "Investor's Business Daily",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-oil-prices-amd-hpe-new-buys-apple-iphone-event/?src=A00220&yptr=yahoo",
+      "published": "2026-09-08T23:27:54+00:00"
+    },
+    {
+      "title": "Here's How Many Shares of Chevron You'd Need for $5,000 in Annual Passive Income",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/07/the-ai-memory-stock-that-could-outshine-the-obviou/",
-      "published": "2026-09-07T22:05:00+00:00"
+      "url": "https://www.fool.com/investing/2026/09/08/heres-how-many-shares-of-chevron-youd-need-for-500/",
+      "published": "2026-09-08T23:25:00+00:00"
     },
     {
-      "title": "Palantir Stock Leads August Rally -- Nvidia, Salesforce and Super Micro Jump",
-      "publisher": "GuruFocus.com",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/palantir-stock-leads-august-rally-215855985.html",
-      "published": "2026-09-07T21:58:55+00:00"
-    },
-    {
-      "title": "Nvidia Insider Makes Stunning $410 Million Stock Move",
-      "publisher": "GuruFocus.com",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-insider-makes-stunning-410-215800599.html",
-      "published": "2026-09-07T21:58:00+00:00"
-    },
-    {
-      "title": "Tencent Slips 1% While Its AI-Chip Bet Attacks Nvidia's China Moat",
-      "publisher": "GuruFocus.com",
-      "url": "https://finance.yahoo.com/technology/ai/articles/tencent-slips-1-while-ai-215226124.html",
-      "published": "2026-09-07T21:52:26+00:00"
-    },
-    {
-      "title": "Nvidia Gets a $1.47 Billion Supplier Cushion Without Spending a Dollar",
-      "publisher": "GuruFocus.com",
-      "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-gets-1-47-billion-215008444.html",
-      "published": "2026-09-07T21:50:08+00:00"
-    },
-    {
-      "title": "Applied Digital Won't Collect Most of Its Rent Until 2029. I'd Wait to Buy the Stock.",
+      "title": "Why Okta Stock Soared 22% in August and Why There's More Upside Ahead",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/07/applied-digital-won-t-collect-most-of-its-rent-until-2029-i-d-wait-to-buy-the-stock/",
-      "published": "2026-09-07T21:49:01+00:00"
+      "url": "https://www.fool.com/investing/2026/09/08/why-okta-stock-soared-22-in-august-and-why-theres/",
+      "published": "2026-09-08T23:06:30+00:00"
+    },
+    {
+      "title": "NVIDIA and ASML Back Mistral\u2019s \u20ac3 Billion Round. Their Payoffs Could Look Very Different",
+      "publisher": "Insider Monkey",
+      "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-asml-back-mistral-3-230147307.html",
+      "published": "2026-09-08T23:01:47+00:00"
+    },
+    {
+      "title": "Microsoft\u2019s \u2018Useful Yield\u2019 Test Raises the Stakes for NVIDIA\u2019s AI Economics",
+      "publisher": "Insider Monkey",
+      "url": "https://finance.yahoo.com/technology/ai/articles/microsoft-useful-yield-test-raises-225832059.html",
+      "published": "2026-09-08T22:58:32+00:00"
+    },
+    {
+      "title": "Archer Aviation Has Lost Over Half Its Value. Is a Reverse Split Coming?",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/09/08/archer-aviation-has-lost-over-half-its-value-is-a/",
+      "published": "2026-09-08T22:50:00+00:00"
     }
   ],
-  "generated_at": "2026-09-07T23:54:35.661221+00:00"
+  "generated_at": "2026-09-08T23:48:48.751366+00:00"
 }
