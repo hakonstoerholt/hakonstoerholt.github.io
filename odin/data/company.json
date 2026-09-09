@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-09-08",
+  "as_of": "2026-09-09",
   "price": {
-    "last": 225.72999572753906,
-    "prev_close": 230.36000061035156,
-    "change_pct": -2.0098996659771884,
-    "ytd_pct": 19.52872037706377,
+    "last": 223.6699981689453,
+    "prev_close": 225.72999572753906,
+    "change_pct": -0.9125936284871128,
+    "ytd_pct": 18.437908890690522,
     "high_52w": 236.5399932861328,
     "low_52w": 164.27000427246094,
     "currency": "USD"
@@ -14,22 +14,14 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 5450701996032.0,
-    "pe": 28.573418,
-    "forward_pe": 14.54534,
-    "dividend_yield": 0.43,
+    "market_cap": 5400959123456.0,
+    "pe": 28.312658,
+    "forward_pe": 14.4126,
+    "dividend_yield": 0.44,
     "beta": 2.217,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-09-08",
-      "o": 167.5500030517578,
-      "h": 170.9600067138672,
-      "l": 167.35000610351562,
-      "c": 168.30999755859375,
-      "v": 163769100
-    },
     {
       "t": "2025-09-09",
       "o": 169.08999633789062,
@@ -2037,6 +2029,14 @@
       "l": 224.85000610351562,
       "c": 225.72999572753906,
       "v": 118984635
+    },
+    {
+      "t": "2026-09-09",
+      "o": 225.27000427246094,
+      "h": 226.17999267578125,
+      "l": 223.4600067138672,
+      "c": 223.6699981689453,
+      "v": 79204871
     }
   ],
   "earnings": {
@@ -2044,68 +2044,68 @@
     "history": []
   },
   "implied_move": {
-    "expiry": "2026-09-09",
-    "move_pct": 1.508439314423196,
-    "straddle": 3.4050000000000002
+    "expiry": "2026-09-11",
+    "move_pct": 2.2622613857125424,
+    "straddle": 5.0600000000000005
   },
   "options": {
-    "expiry": "2026-09-09",
-    "atm_strike": 225.0,
-    "call_iv": 0.26148199462890626,
-    "put_iv": 0.24781025634765624,
-    "atm_iv": 0.25464612548828125,
-    "days_to_expiry": 1
+    "expiry": "2026-09-11",
+    "atm_strike": 222.5,
+    "call_iv": 0.3061592822265625,
+    "put_iv": 0.31519239501953117,
+    "atm_iv": 0.3106758386230468,
+    "days_to_expiry": 2
   },
   "consensus": null,
   "news": [
     {
-      "title": "Why Braze Stock Tumbled by Over 5% on Tuesday",
+      "title": "As Anthropic's IPO Looms, This Small Financial Powerhouse Just Got Its First Underwriting Job",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/08/why-braze-stock-tumbled-by-over-5-on-tuesday/",
-      "published": "2026-09-08T23:35:24+00:00"
+      "url": "https://www.fool.com/investing/2026/09/09/as-anthropics-ipo-looms-this-small-financial-power/",
+      "published": "2026-09-09T23:25:00+00:00"
     },
     {
-      "title": "Prediction: Sept. 10 Will Be a Big Day for Nvidia Shareholders. Here\u2019s What to Watch.",
+      "title": "Why Sasol Stock Soared Nearly 10% Higher Today",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/08/prediction-sept-10-will-be-a-big-day-for-nvidia-shareholders-here-s-what-to-watch/",
-      "published": "2026-09-08T23:35:01+00:00"
+      "url": "https://www.fool.com/investing/2026/09/09/why-sasol-stock-soared-nearly-10-higher-today/",
+      "published": "2026-09-09T23:22:04+00:00"
     },
     {
-      "title": "Dow Jones Futures: Dow Skids But AMD, HPE Are New Buys; Apple iPhone Event Due",
-      "publisher": "Investor's Business Daily",
-      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-oil-prices-amd-hpe-new-buys-apple-iphone-event/?src=A00220&yptr=yahoo",
-      "published": "2026-09-08T23:27:54+00:00"
+      "title": "Marvell Or NVIDIA: Which One Costs Less Per Dollar Of Profit?",
+      "publisher": "Trefis",
+      "url": "https://www.trefis.com/articles/614719/marvell-or-nvidia-which-one-costs-less-per-dollar-of-profit/2026-09-09",
+      "published": "2026-09-09T23:02:12+00:00"
     },
     {
-      "title": "Here's How Many Shares of Chevron You'd Need for $5,000 in Annual Passive Income",
+      "title": "Why Independence Realty Trust Stock Sank Today",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/08/heres-how-many-shares-of-chevron-youd-need-for-500/",
-      "published": "2026-09-08T23:25:00+00:00"
+      "url": "https://www.fool.com/investing/2026/09/09/why-independence-realty-trust-stock-sank-today/",
+      "published": "2026-09-09T22:51:42+00:00"
     },
     {
-      "title": "Why Okta Stock Soared 22% in August and Why There's More Upside Ahead",
+      "title": "Broadcom Forecasts $230 Billion in AI Semiconductor Revenue in 2028. The Stock Could Reach $900 Per Share as a Result.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/08/why-okta-stock-soared-22-in-august-and-why-theres/",
-      "published": "2026-09-08T23:06:30+00:00"
+      "url": "https://www.fool.com/investing/2026/09/09/broadcom-forecasts-230-billion-in-ai-semiconductor/",
+      "published": "2026-09-09T22:41:00+00:00"
     },
     {
-      "title": "NVIDIA and ASML Back Mistral\u2019s \u20ac3 Billion Round. Their Payoffs Could Look Very Different",
-      "publisher": "Insider Monkey",
-      "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-asml-back-mistral-3-230147307.html",
-      "published": "2026-09-08T23:01:47+00:00"
-    },
-    {
-      "title": "Microsoft\u2019s \u2018Useful Yield\u2019 Test Raises the Stakes for NVIDIA\u2019s AI Economics",
-      "publisher": "Insider Monkey",
-      "url": "https://finance.yahoo.com/technology/ai/articles/microsoft-useful-yield-test-raises-225832059.html",
-      "published": "2026-09-08T22:58:32+00:00"
-    },
-    {
-      "title": "Archer Aviation Has Lost Over Half Its Value. Is a Reverse Split Coming?",
+      "title": "Why's Everyone Talking About Bloom Energy Now?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/08/archer-aviation-has-lost-over-half-its-value-is-a/",
-      "published": "2026-09-08T22:50:00+00:00"
+      "url": "https://www.fool.com/investing/2026/09/09/whys-everyone-talking-about-bloom-energy-now/",
+      "published": "2026-09-09T22:25:00+00:00"
+    },
+    {
+      "title": "Oracle Reports Thursday. Its Capital Budget Is More Than Twice the Cash Its Business Produces.",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/09/09/oracle-reports-thursday-its-capital-budget-is-more-than-twice-the-cash-its-business-produces/",
+      "published": "2026-09-09T22:24:01+00:00"
+    },
+    {
+      "title": "Forget VUG. Vanguard\u2019s Value Fund Is Beating Its Growth Twin by 11 Points This Year, With None of the Magnificent Seven",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/etf/2026/09/09/forget-vug-vanguards-value-fund-is-beating-its-growth-twin-by-11-points-this-year-with-none-of-the-magnificent-seven/",
+      "published": "2026-09-09T22:15:26+00:00"
     }
   ],
-  "generated_at": "2026-09-08T23:48:48.751366+00:00"
+  "generated_at": "2026-09-09T23:40:29.398082+00:00"
 }
