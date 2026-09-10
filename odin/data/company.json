@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-09-09",
+  "as_of": "2026-09-10",
   "price": {
-    "last": 223.6699981689453,
-    "prev_close": 225.72999572753906,
-    "change_pct": -0.9125936284871128,
-    "ytd_pct": 18.437908890690522,
+    "last": 218.36000061035156,
+    "prev_close": 223.6699981689453,
+    "change_pct": -2.3740321017854726,
+    "ytd_pct": 15.62615491294208,
     "high_52w": 236.5399932861328,
     "low_52w": 164.27000427246094,
     "currency": "USD"
@@ -14,22 +14,14 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 5400959123456.0,
-    "pe": 28.312658,
-    "forward_pe": 14.4126,
-    "dividend_yield": 0.44,
+    "market_cap": 5272738725888.0,
+    "pe": 27.570707,
+    "forward_pe": 14.026631,
+    "dividend_yield": 0.45,
     "beta": 2.217,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-09-09",
-      "o": 169.08999633789062,
-      "h": 170.97999572753906,
-      "l": 166.74000549316406,
-      "c": 170.75999450683594,
-      "v": 157548400
-    },
     {
       "t": "2025-09-10",
       "o": 176.63999938964844,
@@ -2037,6 +2029,14 @@
       "l": 223.4600067138672,
       "c": 223.6699981689453,
       "v": 79204871
+    },
+    {
+      "t": "2026-09-10",
+      "o": 220.48500061035156,
+      "h": 220.99000549316406,
+      "l": 217.1999969482422,
+      "c": 218.36000061035156,
+      "v": 100845811
     }
   ],
   "earnings": {
@@ -2045,67 +2045,67 @@
   },
   "implied_move": {
     "expiry": "2026-09-11",
-    "move_pct": 2.2622613857125424,
-    "straddle": 5.0600000000000005
+    "move_pct": 1.7539842412962674,
+    "straddle": 3.83
   },
   "options": {
     "expiry": "2026-09-11",
-    "atm_strike": 222.5,
-    "call_iv": 0.3061592822265625,
-    "put_iv": 0.31519239501953117,
-    "atm_iv": 0.3106758386230468,
-    "days_to_expiry": 2
+    "atm_strike": 217.5,
+    "call_iv": 0.3012765185546875,
+    "put_iv": 0.28565167480468745,
+    "atm_iv": 0.2934640966796875,
+    "days_to_expiry": 1
   },
   "consensus": null,
   "news": [
     {
-      "title": "As Anthropic's IPO Looms, This Small Financial Powerhouse Just Got Its First Underwriting Job",
+      "title": "Dow Jones Futures: S&P 500 Breaks Support As Oil Prices, Yields Surge; Oracle Jumps Late With CPI Inflation Due",
+      "publisher": "Investor's Business Daily",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-sp500-oil-prices-treasury-yields-cpi-inflation-oracle-earnings/?src=A00220&yptr=yahoo",
+      "published": "2026-09-10T23:23:56+00:00"
+    },
+    {
+      "title": "Palantir Technologies Showcases Sovereign AI Wins With NVIDIA, Cisco and FAA",
+      "publisher": "MarketBeat",
+      "url": "https://www.marketbeat.com/instant-alerts/event-palantir-technologies-showcases-sovereign-ai-wins-with-nvidia-cisco-and-faa-2026-09-10/?utm_source=yahoofinance&utm_medium=yahoofinance",
+      "published": "2026-09-10T23:03:11+00:00"
+    },
+    {
+      "title": "Micron Is Down 19% From Its High. History Suggests a $5,000 Investment Today Could Be Worth This Much by 2030.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/09/as-anthropics-ipo-looms-this-small-financial-power/",
-      "published": "2026-09-09T23:25:00+00:00"
+      "url": "https://www.fool.com/investing/2026/09/10/micron-is-down-16-from-its-high-history-suggests-a/",
+      "published": "2026-09-10T23:01:00+00:00"
     },
     {
-      "title": "Why Sasol Stock Soared Nearly 10% Higher Today",
+      "title": "Oil Just Topped $109. Is It Too Late to Buy Chevron (CVX)? History Has a Clear Answer.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/09/why-sasol-stock-soared-nearly-10-higher-today/",
-      "published": "2026-09-09T23:22:04+00:00"
+      "url": "https://www.fool.com/investing/2026/09/10/oil-just-topped-usd109-is-it-too-late-to-buy-chevron-cvx-history-has-a-clear-answer/",
+      "published": "2026-09-10T22:59:01+00:00"
     },
     {
-      "title": "Marvell Or NVIDIA: Which One Costs Less Per Dollar Of Profit?",
-      "publisher": "Trefis",
-      "url": "https://www.trefis.com/articles/614719/marvell-or-nvidia-which-one-costs-less-per-dollar-of-profit/2026-09-09",
-      "published": "2026-09-09T23:02:12+00:00"
-    },
-    {
-      "title": "Why Independence Realty Trust Stock Sank Today",
+      "title": "Nvidia Returned $26 Billion to Shareholders Last Quarter Alone. Here's What That Buys You as an Investor.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/09/why-independence-realty-trust-stock-sank-today/",
-      "published": "2026-09-09T22:51:42+00:00"
+      "url": "https://www.fool.com/investing/2026/09/10/nvidia-returned-26-billion-to-shareholders-last-qu/",
+      "published": "2026-09-10T22:50:00+00:00"
     },
     {
-      "title": "Broadcom Forecasts $230 Billion in AI Semiconductor Revenue in 2028. The Stock Could Reach $900 Per Share as a Result.",
+      "title": "S&P 500, Dow, Nasdaq End Lower As Surging Oil Raises Odds For A September Rate Hike \u2014 ORCL, ADBE, M, NVDA, UBER In Focus",
+      "publisher": "Stocktwits",
+      "url": "https://stocktwits.com/news-articles/markets/equity/s-and-p-500-dow-nasdaq-end-lower-as-surging-oil-raises-odds-for-a-september-rate-hike/cZtapeARJ68",
+      "published": "2026-09-10T22:46:44+00:00"
+    },
+    {
+      "title": "Bloom Energy vs. FuelCell Energy: Which Data Center Fuel Cell Maker Is the Better Buy Right Now?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/09/broadcom-forecasts-230-billion-in-ai-semiconductor/",
-      "published": "2026-09-09T22:41:00+00:00"
+      "url": "https://www.fool.com/investing/2026/09/10/bloom-energy-vs-fuelcell-energy-which-data-center/",
+      "published": "2026-09-10T22:25:00+00:00"
     },
     {
-      "title": "Why's Everyone Talking About Bloom Energy Now?",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/09/whys-everyone-talking-about-bloom-energy-now/",
-      "published": "2026-09-09T22:25:00+00:00"
-    },
-    {
-      "title": "Oracle Reports Thursday. Its Capital Budget Is More Than Twice the Cash Its Business Produces.",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/09/oracle-reports-thursday-its-capital-budget-is-more-than-twice-the-cash-its-business-produces/",
-      "published": "2026-09-09T22:24:01+00:00"
-    },
-    {
-      "title": "Forget VUG. Vanguard\u2019s Value Fund Is Beating Its Growth Twin by 11 Points This Year, With None of the Magnificent Seven",
+      "title": "Forget SMH: The Chip Fund That Charges 0.15% Is Beating It by 22 Points This Year",
       "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/etf/2026/09/09/forget-vug-vanguards-value-fund-is-beating-its-growth-twin-by-11-points-this-year-with-none-of-the-magnificent-seven/",
-      "published": "2026-09-09T22:15:26+00:00"
+      "url": "https://247wallst.com/investing/etf/2026/09/10/forget-smh-the-chip-fund-that-charges-0-15-is-beating-it-by-22-points-this-year/",
+      "published": "2026-09-10T22:15:18+00:00"
     }
   ],
-  "generated_at": "2026-09-09T23:40:29.398082+00:00"
+  "generated_at": "2026-09-10T23:33:30.281558+00:00"
 }
