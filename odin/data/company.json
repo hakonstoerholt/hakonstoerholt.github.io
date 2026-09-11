@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-09-10",
+  "as_of": "2026-09-11",
   "price": {
-    "last": 218.36000061035156,
-    "prev_close": 223.6699981689453,
-    "change_pct": -2.3740321017854726,
-    "ytd_pct": 15.62615491294208,
+    "last": 218.2899932861328,
+    "prev_close": 218.36000061035156,
+    "change_pct": -0.032060507429509943,
+    "ytd_pct": 15.589084580955781,
     "high_52w": 236.5399932861328,
     "low_52w": 164.27000427246094,
     "currency": "USD"
@@ -14,22 +14,14 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 5272738725888.0,
-    "pe": 27.570707,
-    "forward_pe": 14.026631,
-    "dividend_yield": 0.45,
+    "market_cap": 5271048421376.0,
+    "pe": 27.631645,
+    "forward_pe": 14.022135,
+    "dividend_yield": 0.46,
     "beta": 2.217,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-09-10",
-      "o": 176.63999938964844,
-      "h": 179.2899932861328,
-      "l": 175.47000122070312,
-      "c": 177.3300018310547,
-      "v": 226852000
-    },
     {
       "t": "2025-09-11",
       "o": 179.67999267578125,
@@ -2037,6 +2029,14 @@
       "l": 217.1999969482422,
       "c": 218.36000061035156,
       "v": 100845811
+    },
+    {
+      "t": "2026-09-11",
+      "o": 221.25,
+      "h": 222.0,
+      "l": 218.14999389648438,
+      "c": 218.2899932861328,
+      "v": 86818741
     }
   ],
   "earnings": {
@@ -2044,68 +2044,68 @@
     "history": []
   },
   "implied_move": {
-    "expiry": "2026-09-11",
-    "move_pct": 1.7539842412962674,
-    "straddle": 3.83
+    "expiry": "2026-09-14",
+    "move_pct": 1.5827569317257768,
+    "straddle": 3.455
   },
   "options": {
-    "expiry": "2026-09-11",
-    "atm_strike": 217.5,
-    "call_iv": 0.3012765185546875,
-    "put_iv": 0.28565167480468745,
-    "atm_iv": 0.2934640966796875,
-    "days_to_expiry": 1
+    "expiry": "2026-09-14",
+    "atm_strike": 220.0,
+    "call_iv": 0.17017431396484378,
+    "put_iv": 0.1821370849609375,
+    "atm_iv": 0.17615569946289064,
+    "days_to_expiry": 3
   },
   "consensus": null,
   "news": [
     {
-      "title": "Dow Jones Futures: S&P 500 Breaks Support As Oil Prices, Yields Surge; Oracle Jumps Late With CPI Inflation Due",
-      "publisher": "Investor's Business Daily",
-      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-sp500-oil-prices-treasury-yields-cpi-inflation-oracle-earnings/?src=A00220&yptr=yahoo",
-      "published": "2026-09-10T23:23:56+00:00"
-    },
-    {
-      "title": "Palantir Technologies Showcases Sovereign AI Wins With NVIDIA, Cisco and FAA",
-      "publisher": "MarketBeat",
-      "url": "https://www.marketbeat.com/instant-alerts/event-palantir-technologies-showcases-sovereign-ai-wins-with-nvidia-cisco-and-faa-2026-09-10/?utm_source=yahoofinance&utm_medium=yahoofinance",
-      "published": "2026-09-10T23:03:11+00:00"
-    },
-    {
-      "title": "Micron Is Down 19% From Its High. History Suggests a $5,000 Investment Today Could Be Worth This Much by 2030.",
+      "title": "Why Ibex Stock Crushed it on Friday",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/10/micron-is-down-16-from-its-high-history-suggests-a/",
-      "published": "2026-09-10T23:01:00+00:00"
+      "url": "https://www.fool.com/investing/2026/09/11/why-ibex-stock-crushed-it-on-friday/",
+      "published": "2026-09-11T23:31:32+00:00"
     },
     {
-      "title": "Oil Just Topped $109. Is It Too Late to Buy Chevron (CVX)? History Has a Clear Answer.",
+      "title": "Nvidia Is Letting Rival AI Chips Into Its Racks. Astera Labs Could Be the Quiet Winner",
+      "publisher": "Insider Monkey",
+      "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-letting-rival-ai-chips-232525930.html",
+      "published": "2026-09-11T23:25:25+00:00"
+    },
+    {
+      "title": "An Intel-Backed Startup Says It Can Beat HBM. Is Micron\u2019s AI Memory Boom Vulnerable?",
+      "publisher": "Insider Monkey",
+      "url": "https://finance.yahoo.com/technology/articles/intel-backed-startup-says-beat-232338040.html",
+      "published": "2026-09-11T23:23:38+00:00"
+    },
+    {
+      "title": "Apple, Microsoft, and Nvidia Top the List of Largest Companies by Market Cap. Here's the One I'm Buying Now.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/10/oil-just-topped-usd109-is-it-too-late-to-buy-chevron-cvx-history-has-a-clear-answer/",
-      "published": "2026-09-10T22:59:01+00:00"
+      "url": "https://www.fool.com/investing/2026/09/11/apple-microsoft-and-nvidia-top-the-list-of-largest/",
+      "published": "2026-09-11T23:20:00+00:00"
     },
     {
-      "title": "Nvidia Returned $26 Billion to Shareholders Last Quarter Alone. Here's What That Buys You as an Investor.",
+      "title": "Broadcom\u2019s Custom AI Chip Boom Has a Powerful Landlord: TSM",
+      "publisher": "Insider Monkey",
+      "url": "https://finance.yahoo.com/technology/ai/articles/broadcom-custom-ai-chip-boom-231614780.html",
+      "published": "2026-09-11T23:16:14+00:00"
+    },
+    {
+      "title": "Google\u2019s $15 Billion Finland AI Build Is Good News for Nvidia, With One Important Catch",
+      "publisher": "Insider Monkey",
+      "url": "https://finance.yahoo.com/technology/ai/articles/google-15-billion-finland-ai-231224831.html",
+      "published": "2026-09-11T23:12:24+00:00"
+    },
+    {
+      "title": "TSM\u2019s Record Month Confirms AMD\u2019s AI Ramp, but Its Pricing Power Could Take Some of the Upside Back",
+      "publisher": "Insider Monkey",
+      "url": "https://finance.yahoo.com/technology/ai/articles/tsm-record-month-confirms-amd-230905086.html",
+      "published": "2026-09-11T23:09:05+00:00"
+    },
+    {
+      "title": "Why Meta Platforms Stock Only Bumped Slightly Higher on Friday",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/10/nvidia-returned-26-billion-to-shareholders-last-qu/",
-      "published": "2026-09-10T22:50:00+00:00"
-    },
-    {
-      "title": "S&P 500, Dow, Nasdaq End Lower As Surging Oil Raises Odds For A September Rate Hike \u2014 ORCL, ADBE, M, NVDA, UBER In Focus",
-      "publisher": "Stocktwits",
-      "url": "https://stocktwits.com/news-articles/markets/equity/s-and-p-500-dow-nasdaq-end-lower-as-surging-oil-raises-odds-for-a-september-rate-hike/cZtapeARJ68",
-      "published": "2026-09-10T22:46:44+00:00"
-    },
-    {
-      "title": "Bloom Energy vs. FuelCell Energy: Which Data Center Fuel Cell Maker Is the Better Buy Right Now?",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/10/bloom-energy-vs-fuelcell-energy-which-data-center/",
-      "published": "2026-09-10T22:25:00+00:00"
-    },
-    {
-      "title": "Forget SMH: The Chip Fund That Charges 0.15% Is Beating It by 22 Points This Year",
-      "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/etf/2026/09/10/forget-smh-the-chip-fund-that-charges-0-15-is-beating-it-by-22-points-this-year/",
-      "published": "2026-09-10T22:15:18+00:00"
+      "url": "https://www.fool.com/investing/2026/09/11/why-meta-platforms-stock-only-bumped-slightly-high/",
+      "published": "2026-09-11T23:07:53+00:00"
     }
   ],
-  "generated_at": "2026-09-10T23:33:30.281558+00:00"
+  "generated_at": "2026-09-11T23:48:00.158698+00:00"
 }
