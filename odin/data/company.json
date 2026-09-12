@@ -2051,61 +2051,61 @@
   "options": {
     "expiry": "2026-09-14",
     "atm_strike": 220.0,
-    "call_iv": 0.17017431396484378,
-    "put_iv": 0.1821370849609375,
-    "atm_iv": 0.17615569946289064,
-    "days_to_expiry": 3
+    "call_iv": 0.19654123779296873,
+    "put_iv": 0.2104571142578125,
+    "atm_iv": 0.2034991760253906,
+    "days_to_expiry": 2
   },
   "consensus": null,
   "news": [
     {
-      "title": "Why Ibex Stock Crushed it on Friday",
+      "title": "$10,000 in Tesla When It Joined the S&P 500 Would Be About $15,700 Today. An Index Fund Would Have Done Better.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/11/why-ibex-stock-crushed-it-on-friday/",
-      "published": "2026-09-11T23:31:32+00:00"
+      "url": "https://www.fool.com/investing/2026/09/12/usd10-000-in-tesla-when-it-joined-the-s-and-p-500-would-be-about-usd15-700-today-an-index-fund-would-have-done-better/",
+      "published": "2026-09-12T22:38:01+00:00"
     },
     {
-      "title": "Nvidia Is Letting Rival AI Chips Into Its Racks. Astera Labs Could Be the Quiet Winner",
-      "publisher": "Insider Monkey",
-      "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-letting-rival-ai-chips-232525930.html",
-      "published": "2026-09-11T23:25:25+00:00"
-    },
-    {
-      "title": "An Intel-Backed Startup Says It Can Beat HBM. Is Micron\u2019s AI Memory Boom Vulnerable?",
-      "publisher": "Insider Monkey",
-      "url": "https://finance.yahoo.com/technology/articles/intel-backed-startup-says-beat-232338040.html",
-      "published": "2026-09-11T23:23:38+00:00"
-    },
-    {
-      "title": "Apple, Microsoft, and Nvidia Top the List of Largest Companies by Market Cap. Here's the One I'm Buying Now.",
+      "title": "Not Nvidia. Not Micron. This Dirt Cheap \u201cMagnificent Seven\u201d Stock Could Be the Biggest Winner of the Trillion-Dollar AI Race \u2013 Here\u2019s the Case.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/11/apple-microsoft-and-nvidia-top-the-list-of-largest/",
-      "published": "2026-09-11T23:20:00+00:00"
+      "url": "https://www.fool.com/investing/2026/09/12/not-nvidia-not-micron-this-dirt-cheap-magnificent-seven-stock-could-be-the-biggest-winner-of-the-trillion-dollar-ai-race-here-s-the-case/",
+      "published": "2026-09-12T22:35:01+00:00"
     },
     {
-      "title": "Broadcom\u2019s Custom AI Chip Boom Has a Powerful Landlord: TSM",
-      "publisher": "Insider Monkey",
-      "url": "https://finance.yahoo.com/technology/ai/articles/broadcom-custom-ai-chip-boom-231614780.html",
-      "published": "2026-09-11T23:16:14+00:00"
-    },
-    {
-      "title": "Google\u2019s $15 Billion Finland AI Build Is Good News for Nvidia, With One Important Catch",
-      "publisher": "Insider Monkey",
-      "url": "https://finance.yahoo.com/technology/ai/articles/google-15-billion-finland-ai-231224831.html",
-      "published": "2026-09-11T23:12:24+00:00"
-    },
-    {
-      "title": "TSM\u2019s Record Month Confirms AMD\u2019s AI Ramp, but Its Pricing Power Could Take Some of the Upside Back",
-      "publisher": "Insider Monkey",
-      "url": "https://finance.yahoo.com/technology/ai/articles/tsm-record-month-confirms-amd-230905086.html",
-      "published": "2026-09-11T23:09:05+00:00"
-    },
-    {
-      "title": "Why Meta Platforms Stock Only Bumped Slightly Higher on Friday",
+      "title": "Is NuScale Power a Millionaire Maker?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/11/why-meta-platforms-stock-only-bumped-slightly-high/",
-      "published": "2026-09-11T23:07:53+00:00"
+      "url": "https://www.fool.com/investing/2026/09/12/is-nuscale-power-a-millionaire-maker/",
+      "published": "2026-09-12T22:25:00+00:00"
+    },
+    {
+      "title": "Nvidia (NVDA)\u2019s 2 GW Australia AI Push Could Deepen Its Infrastructure Advantage",
+      "publisher": "Insider Monkey",
+      "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-nvda-2-gw-australia-220311518.html",
+      "published": "2026-09-12T22:03:11+00:00"
+    },
+    {
+      "title": "The AI Infrastructure Stock That Could Make Investors Millionaires Is Hiding in Plain Sight, and Wall Street Isn\u2019t Paying Attention",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/09/12/the-ai-infrastructure-stock-that-could-make-investors-millionaires-is-hiding-in-plain-sight-and-wall-street-isn-t-paying-attention/",
+      "published": "2026-09-12T21:50:01+00:00"
+    },
+    {
+      "title": "Down 30% This Year, Is It Finally Time to Buy SoFi Stock?",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/09/12/down-30-this-year-is-it-finally-time-to-buy-sofi-s/",
+      "published": "2026-09-12T21:50:00+00:00"
+    },
+    {
+      "title": "Adobe: After Lifting Guidance, Is the Beaten-Down Stock Ready to Break Out?",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/09/12/adobe-after-lifting-guidance-is-the-beaten-down-st/",
+      "published": "2026-09-12T21:35:00+00:00"
+    },
+    {
+      "title": "Nvidia vs. AMD: Elon Musk Picked a Side on the SpaceX Earnings Call",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/09/12/nvidia-vs-amd-elon-musk-picked-a-side-on-the-space/",
+      "published": "2026-09-12T21:20:00+00:00"
     }
   ],
-  "generated_at": "2026-09-11T23:48:00.158698+00:00"
+  "generated_at": "2026-09-12T23:34:33.621043+00:00"
 }
