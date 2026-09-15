@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-09-11",
+  "as_of": "2026-09-14",
   "price": {
-    "last": 218.2899932861328,
-    "prev_close": 218.36000061035156,
-    "change_pct": -0.032060507429509943,
-    "ytd_pct": 15.589084580955781,
+    "last": 210.9600067138672,
+    "prev_close": 218.2899932861328,
+    "change_pct": -3.357912317427003,
+    "ytd_pct": 11.707704472210745,
     "high_52w": 236.5399932861328,
     "low_52w": 164.27000427246094,
     "currency": "USD"
@@ -14,30 +14,14 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 5271048421376.0,
-    "pe": 27.631645,
-    "forward_pe": 14.022135,
+    "market_cap": 5094050889728.0,
+    "pe": 26.703798,
+    "forward_pe": 13.510182,
     "dividend_yield": 0.46,
     "beta": 2.217,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-09-11",
-      "o": 179.67999267578125,
-      "h": 180.27999877929688,
-      "l": 176.47999572753906,
-      "c": 177.1699981689453,
-      "v": 151159300
-    },
-    {
-      "t": "2025-09-12",
-      "o": 177.77000427246094,
-      "h": 178.60000610351562,
-      "l": 176.4499969482422,
-      "c": 177.82000732421875,
-      "v": 124911000
-    },
     {
       "t": "2025-09-15",
       "o": 175.6699981689453,
@@ -2037,6 +2021,14 @@
       "l": 218.14999389648438,
       "c": 218.2899932861328,
       "v": 89060140
+    },
+    {
+      "t": "2026-09-14",
+      "o": 211.0800018310547,
+      "h": 212.77000427246094,
+      "l": 208.92999267578125,
+      "c": 210.9600067138672,
+      "v": 131608711
     }
   ],
   "earnings": {
@@ -2044,68 +2036,68 @@
     "history": []
   },
   "implied_move": {
-    "expiry": "2026-09-14",
-    "move_pct": 1.5827569317257768,
-    "straddle": 3.455
+    "expiry": "2026-09-16",
+    "move_pct": 2.3084944278587174,
+    "straddle": 4.87
   },
   "options": {
-    "expiry": "2026-09-14",
-    "atm_strike": 220.0,
-    "call_iv": 0.24073024902343748,
-    "put_iv": 0.257819921875,
-    "atm_iv": 0.24927508544921875,
+    "expiry": "2026-09-16",
+    "atm_strike": 210.0,
+    "call_iv": 0.39258419921875,
+    "put_iv": 0.3891662646484375,
+    "atm_iv": 0.39087523193359375,
     "days_to_expiry": 1
   },
   "consensus": null,
   "news": [
     {
-      "title": "2 Monster Stocks to Buy and Hold for at Least the Next 5 Years",
+      "title": "Prediction: Interactive Brokers Ends 2026 With More Than 6 Million Customer Accounts",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/13/2-monster-stocks-to-buy-and-hold-for-at-least-the/",
-      "published": "2026-09-13T23:25:00+00:00"
+      "url": "https://www.fool.com/investing/2026/09/14/prediction-interactive-brokers-ends-2026-with-more-than-6-million-customer-accounts/",
+      "published": "2026-09-14T23:46:01+00:00"
     },
     {
-      "title": "SpaceX vs. Apple: Wall Street Sees Strong Upside for One of These Stocks and Remains Neutral On the Other",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/13/spacex-vs-apple-wall-street-sees-strong-upside-for/",
-      "published": "2026-09-13T22:50:00+00:00"
+      "title": "IREN Stock Slips, But A Top Wall Street Bank Is Bullish With Double-Upgrade And 50% Upside",
+      "publisher": "Stocktwits",
+      "url": "https://stocktwits.com/news-articles/markets/equity/iren-stock-slips-but-a-top-wall-street-bank-is-bullish/cZtmjA6RBTB",
+      "published": "2026-09-14T23:21:53+00:00"
     },
     {
-      "title": "Berkshire Hathaway Stock Is Trailing the S&P 500 by About 10 Points This Year. History Says That Usually Doesn't Last.",
+      "title": "Microsoft Just Made a Move That Could Put More Pressure on Its Azure Business. Here's Why It Could Turn Out Great for the Stock",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/13/berkshire-hathaway-stock-is-trailing-the-s-and-p-500-by-about-10-points-this-year-history-says-that-usually-doesn-t-last/",
-      "published": "2026-09-13T22:34:01+00:00"
+      "url": "https://www.fool.com/investing/2026/09/14/microsoft-just-made-a-move-that-could-put-more-pressure-on-its-azure-business-here-s-why-it-could-turn-out-great-for-the-stock/",
+      "published": "2026-09-14T23:01:37+00:00"
     },
     {
-      "title": "Down 50% Over the Past Year, Is It Time to Back Up the Truck and Buy Oracle Stock as Revenue Surges?",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/13/down-50-over-the-past-year-is-it-time-to-back-up-t/",
-      "published": "2026-09-13T22:20:00+00:00"
+      "title": "Tech stocks slump after AI execs call for industry slowdown",
+      "publisher": "CBS News",
+      "url": "https://www.cbsnews.com/news/tech-stock-selloff-ai-warning/",
+      "published": "2026-09-14T22:50:30+00:00"
     },
     {
-      "title": "Cybersecurity Is the Next Big Market for Artificial Intelligence (AI), According to Jensen Huang. This Super Stock-Split Stock Is the One to Own.",
+      "title": "Why Hewlett Packard Enterprise Stock Plummeted by Almost 11% Today",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/13/cybersecurity-is-the-next-big-market-for-artificia/",
-      "published": "2026-09-13T21:50:00+00:00"
+      "url": "https://www.fool.com/investing/2026/09/14/why-hewlett-packard-enterprise-stock-plummeted-by/",
+      "published": "2026-09-14T22:46:07+00:00"
     },
     {
-      "title": "A $100 Monthly Investment in VGT Could Grow Into This Over 20 Years",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/13/a-100-monthly-investment-in-vgt-could-grow-into-th/",
-      "published": "2026-09-13T21:20:00+00:00"
+      "title": "Dow Jones Futures: Nvidia, Micron, Sandisk Dive On AI Fears; Fed Rate Hike Looms",
+      "publisher": "Investor's Business Daily",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-nvidia-nvda-micron-sandisk-ai-warning-fed-rate-hike/?src=A00220&yptr=yahoo",
+      "published": "2026-09-14T22:29:28+00:00"
     },
     {
-      "title": "Nvidia Gets the AI Hype. Dell Gets the Billionaire Fortune",
-      "publisher": "BeInCrypto",
-      "url": "https://beincrypto.com/michael-dell-net-worth-passes-bezos/",
-      "published": "2026-09-13T21:00:00+00:00"
+      "title": "'We owe it to humanity to try': Anthropic's CEO Just Called For Global AI Slowdown. Elon Musk, Sam Altman, and Google\u2019s AI Chief Agree.",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/09/14/we-owe-it-to-humanity-to-try-anthropics-ceo-just-called-for-global-ai-slowdown-elon-musk-sam-altman-and-googles-ai-chief-agree/",
+      "published": "2026-09-14T22:16:01+00:00"
     },
     {
-      "title": "Forget Intel. Buy This Tech Stock in September Instead.",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/13/forget-intel-buy-this-tech-stock-in-september-inst/",
-      "published": "2026-09-13T20:50:00+00:00"
+      "title": "AI-linked stocks slide after tech bosses call for slowdown in \u2018reckless\u2019 development",
+      "publisher": "The Guardian",
+      "url": "https://finance.yahoo.com/technology/ai/articles/ai-linked-stocks-slide-tech-181747255.html",
+      "published": "2026-09-14T22:10:52+00:00"
     }
   ],
-  "generated_at": "2026-09-13T23:46:43.327080+00:00"
+  "generated_at": "2026-09-15T00:06:22.241341+00:00"
 }
