@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-09-14",
+  "as_of": "2026-09-15",
   "price": {
-    "last": 210.9600067138672,
-    "prev_close": 218.2899932861328,
-    "change_pct": -3.357912317427003,
-    "ytd_pct": 11.707704472210745,
+    "last": 212.1699981689453,
+    "prev_close": 210.9600067138672,
+    "change_pct": 0.5735643802473378,
+    "ytd_pct": 12.3484200750553,
     "high_52w": 236.5399932861328,
     "low_52w": 164.27000427246094,
     "currency": "USD"
@@ -14,10 +14,10 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 5094050889728.0,
-    "pe": 26.703798,
-    "forward_pe": 13.510182,
-    "dividend_yield": 0.46,
+    "market_cap": 5123268935680.0,
+    "pe": 26.82301,
+    "forward_pe": 13.587671,
+    "dividend_yield": 0.47,
     "beta": 2.217,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
@@ -2029,6 +2029,14 @@
       "l": 208.92999267578125,
       "c": 210.9600067138672,
       "v": 131608711
+    },
+    {
+      "t": "2026-09-15",
+      "o": 213.08999633789062,
+      "h": 213.94000244140625,
+      "l": 211.16000366210938,
+      "c": 212.1699981689453,
+      "v": 85131691
     }
   ],
   "earnings": {
@@ -2036,68 +2044,68 @@
     "history": []
   },
   "implied_move": {
-    "expiry": "2026-09-16",
-    "move_pct": 2.3084944278587174,
-    "straddle": 4.87
+    "expiry": "2026-09-18",
+    "move_pct": 2.8302776320044924,
+    "straddle": 6.005
   },
   "options": {
-    "expiry": "2026-09-16",
-    "atm_strike": 210.0,
-    "call_iv": 0.39258419921875,
-    "put_iv": 0.3891662646484375,
-    "atm_iv": 0.39087523193359375,
-    "days_to_expiry": 1
+    "expiry": "2026-09-18",
+    "atm_strike": 212.5,
+    "call_iv": 0.397466962890625,
+    "put_iv": 0.38843385009765624,
+    "atm_iv": 0.3929504064941406,
+    "days_to_expiry": 2
   },
   "consensus": null,
   "news": [
     {
-      "title": "Prediction: Interactive Brokers Ends 2026 With More Than 6 Million Customer Accounts",
+      "title": "Calls for Slower AI Development Have Created a Compelling Dip for AI Stocks",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/14/prediction-interactive-brokers-ends-2026-with-more-than-6-million-customer-accounts/",
-      "published": "2026-09-14T23:46:01+00:00"
+      "url": "https://www.fool.com/investing/2026/09/15/calls-for-slower-ai-development-created-a-dip/",
+      "published": "2026-09-15T22:59:00+00:00"
     },
     {
-      "title": "IREN Stock Slips, But A Top Wall Street Bank Is Bullish With Double-Upgrade And 50% Upside",
-      "publisher": "Stocktwits",
-      "url": "https://stocktwits.com/news-articles/markets/equity/iren-stock-slips-but-a-top-wall-street-bank-is-bullish/cZtmjA6RBTB",
-      "published": "2026-09-14T23:21:53+00:00"
-    },
-    {
-      "title": "Microsoft Just Made a Move That Could Put More Pressure on Its Azure Business. Here's Why It Could Turn Out Great for the Stock",
+      "title": "Berkshire Hathaway's Class A Shares Cost About $766,000. Here's Why the Class B Shares Exist.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/14/microsoft-just-made-a-move-that-could-put-more-pressure-on-its-azure-business-here-s-why-it-could-turn-out-great-for-the-stock/",
-      "published": "2026-09-14T23:01:37+00:00"
+      "url": "https://www.fool.com/investing/2026/09/15/berkshire-hathaways-class-a-shares-cost-about-7590/",
+      "published": "2026-09-15T22:50:00+00:00"
     },
     {
-      "title": "Tech stocks slump after AI execs call for industry slowdown",
-      "publisher": "CBS News",
-      "url": "https://www.cbsnews.com/news/tech-stock-selloff-ai-warning/",
-      "published": "2026-09-14T22:50:30+00:00"
-    },
-    {
-      "title": "Why Hewlett Packard Enterprise Stock Plummeted by Almost 11% Today",
+      "title": "Where Tesla's Robotaxi Rollout Stands Today and What Investors Should Know",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/14/why-hewlett-packard-enterprise-stock-plummeted-by/",
-      "published": "2026-09-14T22:46:07+00:00"
+      "url": "https://www.fool.com/investing/2026/09/15/where-teslas-robotaxi-rollout-stands-today-and-wha/",
+      "published": "2026-09-15T22:25:00+00:00"
     },
     {
-      "title": "Dow Jones Futures: Nvidia, Micron, Sandisk Dive On AI Fears; Fed Rate Hike Looms",
-      "publisher": "Investor's Business Daily",
-      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-nvidia-nvda-micron-sandisk-ai-warning-fed-rate-hike/?src=A00220&yptr=yahoo",
-      "published": "2026-09-14T22:29:28+00:00"
+      "title": "Pinterest, Nvidia Partner To Boost AI Shopping, Search Offerings",
+      "publisher": "MediaPost",
+      "url": "https://www.mediapost.com/publications/article/418024/pinterest-nvidia-partner-to-boost-ai-shopping-se.html",
+      "published": "2026-09-15T22:17:29+00:00"
     },
     {
-      "title": "'We owe it to humanity to try': Anthropic's CEO Just Called For Global AI Slowdown. Elon Musk, Sam Altman, and Google\u2019s AI Chief Agree.",
+      "title": "Should TD SYNNEX\u2019s New ORCA AI Power SKU Require Action From TD SYNNEX (SNX) Investors?",
+      "publisher": "Simply Wall St.",
+      "url": "https://finance.yahoo.com/technology/ai/articles/td-synnex-orca-ai-power-221324901.html",
+      "published": "2026-09-15T22:13:24+00:00"
+    },
+    {
+      "title": "Nvidia (NVDA) Is Discussing Up To $10 Billion For An AI IPO",
+      "publisher": "Simply Wall St.",
+      "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-nvda-discussing-10-billion-221322403.html",
+      "published": "2026-09-15T22:13:22+00:00"
+    },
+    {
+      "title": "Credo (CRDO) vs. Marvell (MRVL): Which AI Chip Stock Is the Better Buy?",
+      "publisher": "Zacks",
+      "url": "https://finance.yahoo.com/technology/ai/articles/credo-crdo-vs-marvell-mrvl-221100887.html",
+      "published": "2026-09-15T22:11:00+00:00"
+    },
+    {
+      "title": "Nvidia May Have Won the AI Training Race, but the Bigger Opportunity Is Likely Still Ahead",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/14/we-owe-it-to-humanity-to-try-anthropics-ceo-just-called-for-global-ai-slowdown-elon-musk-sam-altman-and-googles-ai-chief-agree/",
-      "published": "2026-09-14T22:16:01+00:00"
-    },
-    {
-      "title": "AI-linked stocks slide after tech bosses call for slowdown in \u2018reckless\u2019 development",
-      "publisher": "The Guardian",
-      "url": "https://finance.yahoo.com/technology/ai/articles/ai-linked-stocks-slide-tech-181747255.html",
-      "published": "2026-09-14T22:10:52+00:00"
+      "url": "https://www.fool.com/investing/2026/09/15/nvidia-may-have-won-the-ai-training-race-but-the-b/",
+      "published": "2026-09-15T21:59:00+00:00"
     }
   ],
-  "generated_at": "2026-09-15T00:06:22.241341+00:00"
+  "generated_at": "2026-09-16T00:04:48.867600+00:00"
 }
