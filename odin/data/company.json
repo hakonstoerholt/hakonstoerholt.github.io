@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-09-15",
+  "as_of": "2026-09-16",
   "price": {
-    "last": 212.1699981689453,
-    "prev_close": 210.9600067138672,
-    "change_pct": 0.5735643802473378,
-    "ytd_pct": 12.3484200750553,
+    "last": 213.89999389648438,
+    "prev_close": 212.1699981689453,
+    "change_pct": 0.8153818836165172,
+    "ytd_pct": 13.264488738876668,
     "high_52w": 236.5399932861328,
     "low_52w": 164.27000427246094,
     "currency": "USD"
@@ -14,22 +14,14 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 5123268935680.0,
-    "pe": 26.82301,
-    "forward_pe": 13.587671,
+    "market_cap": 5165043154944.0,
+    "pe": 26.80451,
+    "forward_pe": 13.698463,
     "dividend_yield": 0.47,
     "beta": 2.217,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-09-15",
-      "o": 175.6699981689453,
-      "h": 178.85000610351562,
-      "l": 174.50999450683594,
-      "c": 177.75,
-      "v": 147061600
-    },
     {
       "t": "2025-09-16",
       "o": 177.0,
@@ -2037,6 +2029,14 @@
       "l": 211.16000366210938,
       "c": 212.1699981689453,
       "v": 85131691
+    },
+    {
+      "t": "2026-09-16",
+      "o": 214.13999938964844,
+      "h": 216.75999450683594,
+      "l": 212.5,
+      "c": 213.89999389648438,
+      "v": 96113489
     }
   ],
   "earnings": {
@@ -2045,67 +2045,67 @@
   },
   "implied_move": {
     "expiry": "2026-09-18",
-    "move_pct": 2.8302776320044924,
-    "straddle": 6.005
+    "move_pct": 2.2884526132192904,
+    "straddle": 4.895
   },
   "options": {
     "expiry": "2026-09-18",
-    "atm_strike": 212.5,
-    "call_iv": 0.397466962890625,
-    "put_iv": 0.38843385009765624,
-    "atm_iv": 0.3929504064941406,
-    "days_to_expiry": 2
+    "atm_strike": 215.0,
+    "call_iv": 0.3869690209960937,
+    "put_iv": 0.38867798828125,
+    "atm_iv": 0.3878235046386719,
+    "days_to_expiry": 1
   },
   "consensus": null,
   "news": [
     {
-      "title": "Calls for Slower AI Development Have Created a Compelling Dip for AI Stocks",
+      "title": "Snap targets enterprises with Salesforce, Nvidia AI tools for augmented-reality glasses",
+      "publisher": "Reuters",
+      "url": "https://finance.yahoo.com/technology/ai/articles/snap-targets-enterprises-salesforce-nvidia-234512914.html",
+      "published": "2026-09-16T23:45:12+00:00"
+    },
+    {
+      "title": "Michael Burry of \"The Big Short\" Says an AI Slowdown Would Be \"Self-Serving\" for OpenAI and Anthropic",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/15/calls-for-slower-ai-development-created-a-dip/",
-      "published": "2026-09-15T22:59:00+00:00"
+      "url": "https://www.fool.com/investing/2026/09/16/michael-burry-of-the-big-short-shuns-ai-slowdown/",
+      "published": "2026-09-16T23:41:00+00:00"
     },
     {
-      "title": "Berkshire Hathaway's Class A Shares Cost About $766,000. Here's Why the Class B Shares Exist.",
+      "title": "The Overlooked Dividend Stock That Has Grown Its Payout for 12 Straight Years",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/15/berkshire-hathaways-class-a-shares-cost-about-7590/",
-      "published": "2026-09-15T22:50:00+00:00"
+      "url": "https://www.fool.com/investing/2026/09/16/the-overlooked-dividend-stock-that-has-grown-its-p/",
+      "published": "2026-09-16T23:25:00+00:00"
     },
     {
-      "title": "Where Tesla's Robotaxi Rollout Stands Today and What Investors Should Know",
+      "title": "Why Wendy's Stock Withered on Wednesday",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/15/where-teslas-robotaxi-rollout-stands-today-and-wha/",
-      "published": "2026-09-15T22:25:00+00:00"
+      "url": "https://www.fool.com/investing/2026/09/16/why-wendys-stock-withered-on-wednesday/",
+      "published": "2026-09-16T22:45:24+00:00"
     },
     {
-      "title": "Pinterest, Nvidia Partner To Boost AI Shopping, Search Offerings",
-      "publisher": "MediaPost",
-      "url": "https://www.mediapost.com/publications/article/418024/pinterest-nvidia-partner-to-boost-ai-shopping-se.html",
-      "published": "2026-09-15T22:17:29+00:00"
-    },
-    {
-      "title": "Should TD SYNNEX\u2019s New ORCA AI Power SKU Require Action From TD SYNNEX (SNX) Investors?",
-      "publisher": "Simply Wall St.",
-      "url": "https://finance.yahoo.com/technology/ai/articles/td-synnex-orca-ai-power-221324901.html",
-      "published": "2026-09-15T22:13:24+00:00"
-    },
-    {
-      "title": "Nvidia (NVDA) Is Discussing Up To $10 Billion For An AI IPO",
-      "publisher": "Simply Wall St.",
-      "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-nvda-discussing-10-billion-221322403.html",
-      "published": "2026-09-15T22:13:22+00:00"
-    },
-    {
-      "title": "Credo (CRDO) vs. Marvell (MRVL): Which AI Chip Stock Is the Better Buy?",
-      "publisher": "Zacks",
-      "url": "https://finance.yahoo.com/technology/ai/articles/credo-crdo-vs-marvell-mrvl-221100887.html",
-      "published": "2026-09-15T22:11:00+00:00"
-    },
-    {
-      "title": "Nvidia May Have Won the AI Training Race, but the Bigger Opportunity Is Likely Still Ahead",
+      "title": "Why J.B. Hunt Stock Dropped Today",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/15/nvidia-may-have-won-the-ai-training-race-but-the-b/",
-      "published": "2026-09-15T21:59:00+00:00"
+      "url": "https://www.fool.com/investing/2026/09/16/why-jb-hunt-stock-dropped-today/",
+      "published": "2026-09-16T22:33:44+00:00"
+    },
+    {
+      "title": "Toast Turned $1.91 Billion in Revenue Into $154 Million in Profit. The Payments Half Is Doing the Heavy Lifting.",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/09/16/toast-turned-191-billion-in-revenue-into-154-milli/",
+      "published": "2026-09-16T22:25:00+00:00"
+    },
+    {
+      "title": "Why Newmont Mining Stock Slipped Today",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/09/16/why-newmont-mining-stock-slipped-today/",
+      "published": "2026-09-16T22:18:07+00:00"
+    },
+    {
+      "title": "Michael Burry reveals his verdict on the ongoing AI bubble",
+      "publisher": "TheStreet",
+      "url": "https://www.thestreet.com/investing/stocks/michael-burry-has-a-strong-verdict-on-the-ongoing-ai-bubble-anthropic-openai-elon-musk-sam-altman-dario-amodei",
+      "published": "2026-09-16T22:17:00+00:00"
     }
   ],
-  "generated_at": "2026-09-16T00:04:48.867600+00:00"
+  "generated_at": "2026-09-17T00:00:54.501910+00:00"
 }
