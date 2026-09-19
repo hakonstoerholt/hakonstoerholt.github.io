@@ -15,9 +15,9 @@
     "sector": "Technology",
     "industry": "Semiconductors",
     "market_cap": 5367153557504.0,
-    "pe": 28.064394,
+    "pe": 28.099874,
     "forward_pe": 14.173006,
-    "dividend_yield": 0.46,
+    "dividend_yield": 0.45,
     "beta": 2.217,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
@@ -2032,7 +2032,7 @@
     },
     {
       "t": "2026-09-18",
-      "o": 219.35000610351562,
+      "o": 219.36000061035156,
       "h": 222.72999572753906,
       "l": 218.0399932861328,
       "c": 222.27000427246094,
@@ -2051,61 +2051,61 @@
   "options": {
     "expiry": "2026-09-21",
     "atm_strike": 222.5,
-    "call_iv": 0.18335777587890623,
-    "put_iv": 0.20386538330078124,
-    "atm_iv": 0.19361157958984374,
-    "days_to_expiry": 3
+    "call_iv": 0.21167780517578122,
+    "put_iv": 0.23535920898437498,
+    "atm_iv": 0.2235185070800781,
+    "days_to_expiry": 2
   },
   "consensus": null,
   "news": [
     {
-      "title": "Dow Drops To Record Worst Week In Six Months Amid Elevated Yields, Oil \u2014 NVDA, TSLA, SPCX, ONON In Focus",
-      "publisher": "Stocktwits",
-      "url": "https://stocktwits.com/news-articles/markets/equity/dow-drops-to-record-worst-week-in-six-months-amid-elevated-yields-oil-nvda-tsla-spcx-onon-in-focus/cZtHOYsRBEK",
-      "published": "2026-09-18T23:35:58+00:00"
-    },
-    {
-      "title": "Jim Cramer Said This AI Firm Has More Orders Than \u201cAlmost Anybody\u201d Other Than NVIDIA",
-      "publisher": "Insider Monkey",
-      "url": "https://finance.yahoo.com/technology/ai/articles/jim-cramer-said-ai-firm-232154601.html",
-      "published": "2026-09-18T23:21:54+00:00"
-    },
-    {
-      "title": "Why Fortinet Stock Zoomed Almost 9% Higher This Week",
+      "title": "Berkshire's Energy Holdings Are Worth More Than Most Stand-Alone Utilities. Here's the Math.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/18/why-fortinet-stock-zoomed-almost-9-higher-this-wee/",
-      "published": "2026-09-18T23:09:01+00:00"
+      "url": "https://www.fool.com/investing/2026/09/19/berkshires-energy-holdings-are-worth-more-than-mos/",
+      "published": "2026-09-19T23:20:00+00:00"
     },
     {
-      "title": "NVIDIA Vs Intel Corporation (NASDAQ:INTC): Here\u2019s The One Jim Cramer Likes",
-      "publisher": "Insider Monkey",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-vs-intel-corporation-nasdaq-230352152.html",
-      "published": "2026-09-18T23:03:52+00:00"
+      "title": "Nvidia (NVDA) Forms Alliance To Build A Power Flexible AI Data Center",
+      "publisher": "Simply Wall St.",
+      "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-nvda-forms-alliance-build-230932870.html",
+      "published": "2026-09-19T23:09:32+00:00"
     },
     {
-      "title": "Why Wendy's Stock Flopped on Friday",
+      "title": "DGRW Pays Dividends Every Month. Its Biggest Stocks Look Nothing Like a High-Yield ETF",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/etf/2026/09/19/dgrw-pays-dividends-every-month-its-biggest-stocks-look-nothing-like-a-high-yield-etf/",
+      "published": "2026-09-19T22:57:37+00:00"
+    },
+    {
+      "title": "RTX Beats Lockheed Martin on Risk -- Here's Why It's the Better Buy Long-Term",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/18/why-wendys-stock-flopped-on-friday/",
-      "published": "2026-09-18T22:41:54+00:00"
+      "url": "https://www.fool.com/investing/2026/09/19/rtx-beats-lockheed-martin-on-risk-heres-why-its-th/",
+      "published": "2026-09-19T22:50:00+00:00"
     },
     {
-      "title": "IONQ Stock Surges On Tech Wins, But The Heavy Burn Persists",
-      "publisher": "Trefis",
-      "url": "https://www.trefis.com/articles/615831/ionq-stock-surges-on-tech-wins-but-the-heavy-burn-persists/2026-09-18",
-      "published": "2026-09-18T22:37:35+00:00"
-    },
-    {
-      "title": "Q3 Earnings Season Preview: What Can Investors Expect?",
-      "publisher": "Zacks",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/q3-earnings-season-preview-investors-223700771.html",
-      "published": "2026-09-18T22:37:00+00:00"
-    },
-    {
-      "title": "3 Dividend Stocks to Buy and Hold for 10 Years",
+      "title": "Bloom Energy Is Riding the Data Center Boom to a $25 Billion Backlog. Plug Power Is Passing on It. Here's Why.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/18/3-dividend-stocks-to-buy-and-hold-for-10-years/",
-      "published": "2026-09-18T22:33:01+00:00"
+      "url": "https://www.fool.com/investing/2026/09/19/bloom-energy-is-riding-the-data-center-boom-to-a-2/",
+      "published": "2026-09-19T22:25:00+00:00"
+    },
+    {
+      "title": "Could Oracle's Debt Load Derail Its AI Cloud Ambitions?",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/09/19/will-oracle-debt-load-derail-its-ai-cloud-ambition/",
+      "published": "2026-09-19T22:09:00+00:00"
+    },
+    {
+      "title": "Intel Can Supply Only About Half of What Its Customers Want. That's a Better Problem Than It Sounds.",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/09/19/intel-can-supply-only-about-half-of-what-its-customers-want-that-s-a-better-problem-than-it-sounds/",
+      "published": "2026-09-19T22:01:01+00:00"
+    },
+    {
+      "title": "If a Stock Market Crash Is Coming, I'm Buying This 1 Vanguard ETF Without Hesitation",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/09/19/if-stock-market-crash-buying-vanguard-etf-vig/",
+      "published": "2026-09-19T21:50:00+00:00"
     }
   ],
-  "generated_at": "2026-09-18T23:46:48.608029+00:00"
+  "generated_at": "2026-09-19T23:47:37.103871+00:00"
 }

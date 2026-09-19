@@ -8,8 +8,8 @@
   "headline": "Calm \u2014 no stress alarm. The macro / yield-curve picture leads at +0.2\u03c3, and the topology trigger sits 1.5\u03c3 away. Fragility Low; full exposure (1\u00d7).",
   "scores": {
     "heimdall_max": 0.19557015815893547,
-    "heimdall_mean": -0.5669371920120481,
-    "p_turbulent": 0.0010105003028610796,
+    "heimdall_mean": -0.5669371870183657,
+    "p_turbulent": 0.0010105003028206825,
     "h0": 0.0995213055284693,
     "h1": 0.004610575735569,
     "h1_z": -0.06937052079890534,
@@ -17,7 +17,7 @@
   },
   "sub_z": {
     "vol": -0.6179678689102439,
-    "credit": -1.6474415992525209,
+    "credit": -1.6474415742841095,
     "macro": 0.19557015815893547,
     "trend": -0.6954761292575055,
     "topology": -0.06937052079890534
@@ -4590,76 +4590,76 @@
     }
   ],
   "freshness": {
-    "as_of": "2026-09-18",
+    "as_of": "2026-09-19",
     "per_input": {
       "spx": {
         "last": "2026-09-18",
-        "age_days": 0,
+        "age_days": 1,
         "stale": false,
         "missing": false
       },
       "vix": {
         "last": "2026-09-18",
-        "age_days": 0,
+        "age_days": 1,
         "stale": false,
         "missing": false
       },
       "vix3m": {
         "last": "2026-09-18",
-        "age_days": 0,
+        "age_days": 1,
         "stale": false,
         "missing": false
       },
       "hyg": {
         "last": "2026-09-18",
-        "age_days": 0,
+        "age_days": 1,
         "stale": false,
         "missing": false
       },
       "lqd": {
         "last": "2026-09-18",
-        "age_days": 0,
+        "age_days": 1,
         "stale": false,
         "missing": false
       },
       "baa10y": {
         "last": "2026-09-17",
-        "age_days": 1,
+        "age_days": 2,
         "stale": false,
         "missing": false
       },
       "aaa10y": {
         "last": "2026-09-17",
-        "age_days": 1,
+        "age_days": 2,
         "stale": false,
         "missing": false
       },
       "t10y2y": {
         "last": "2026-09-18",
-        "age_days": 0,
+        "age_days": 1,
         "stale": false,
         "missing": false
       },
       "nfci": {
         "last": "2026-09-11",
-        "age_days": 7,
+        "age_days": 8,
         "stale": false,
         "missing": false
       },
       "sub_topology": {
         "last": "2026-09-18",
-        "age_days": 0,
+        "age_days": 1,
         "stale": false,
         "missing": false
       },
       "p_turbulent": {
         "last": "2026-09-18",
-        "age_days": 0,
+        "age_days": 1,
         "stale": false,
         "missing": false
       }
     },
     "degraded": false
   },
-  "generated_at": "2026-09-18T23:46:48.034978+00:00"
+  "generated_at": "2026-09-19T23:47:36.733739+00:00"
 }
