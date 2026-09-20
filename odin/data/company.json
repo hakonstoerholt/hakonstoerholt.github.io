@@ -2036,7 +2036,7 @@
       "h": 222.72999572753906,
       "l": 218.0399932861328,
       "c": 222.27000427246094,
-      "v": 188794542
+      "v": 190287428
     }
   ],
   "earnings": {
@@ -2051,61 +2051,61 @@
   "options": {
     "expiry": "2026-09-21",
     "atm_strike": 222.5,
-    "call_iv": 0.21167780517578122,
-    "put_iv": 0.23535920898437498,
-    "atm_iv": 0.2235185070800781,
-    "days_to_expiry": 2
+    "call_iv": 0.25928475097656256,
+    "put_iv": 0.2880930566406249,
+    "atm_iv": 0.27368890380859373,
+    "days_to_expiry": 1
   },
   "consensus": null,
   "news": [
     {
-      "title": "Berkshire's Energy Holdings Are Worth More Than Most Stand-Alone Utilities. Here's the Math.",
+      "title": "Prediction: Nvidia's Revenue Growth Will Drive Shares to $400 Next Year",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/19/berkshires-energy-holdings-are-worth-more-than-mos/",
-      "published": "2026-09-19T23:20:00+00:00"
+      "url": "https://www.fool.com/investing/2026/09/20/prediction-nvidias-70-revenue-forecast-will-drive/",
+      "published": "2026-09-20T23:33:00+00:00"
     },
     {
-      "title": "Nvidia (NVDA) Forms Alliance To Build A Power Flexible AI Data Center",
-      "publisher": "Simply Wall St.",
-      "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-nvda-forms-alliance-build-230932870.html",
-      "published": "2026-09-19T23:09:32+00:00"
-    },
-    {
-      "title": "DGRW Pays Dividends Every Month. Its Biggest Stocks Look Nothing Like a High-Yield ETF",
-      "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/etf/2026/09/19/dgrw-pays-dividends-every-month-its-biggest-stocks-look-nothing-like-a-high-yield-etf/",
-      "published": "2026-09-19T22:57:37+00:00"
-    },
-    {
-      "title": "RTX Beats Lockheed Martin on Risk -- Here's Why It's the Better Buy Long-Term",
+      "title": "Palantir Nearly Doubled Its Revenue. Its Stock Stood Still. Is It Time to Buy the Stock?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/19/rtx-beats-lockheed-martin-on-risk-heres-why-its-th/",
-      "published": "2026-09-19T22:50:00+00:00"
+      "url": "https://www.fool.com/investing/2026/09/20/palantir-nearly-doubled-its-revenue-its-stock-stood-still-is-it-time-to-buy-the-stock/",
+      "published": "2026-09-20T23:12:01+00:00"
     },
     {
-      "title": "Bloom Energy Is Riding the Data Center Boom to a $25 Billion Backlog. Plug Power Is Passing on It. Here's Why.",
+      "title": "Meet the Vanguard ETF That Increased Its SpaceX Holding by 39% in 1 Month and Shows No Signs of Slowing Down",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/19/bloom-energy-is-riding-the-data-center-boom-to-a-2/",
-      "published": "2026-09-19T22:25:00+00:00"
+      "url": "https://www.fool.com/investing/2026/09/20/vanguard-communication-services-etf-buy-spacex/",
+      "published": "2026-09-20T23:05:00+00:00"
     },
     {
-      "title": "Could Oracle's Debt Load Derail Its AI Cloud Ambitions?",
+      "title": "Bill Ackman Built a $2.4 Billion Stake in Microsoft, Calling It a \"Core Holding\" Bought at a \"Highly Compelling Valuation.\" Here's Why He's Betting Big on Big Tech.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/19/will-oracle-debt-load-derail-its-ai-cloud-ambition/",
-      "published": "2026-09-19T22:09:00+00:00"
+      "url": "https://www.fool.com/investing/2026/09/20/bill-ackman-built-a-24-billion-stake-in-microsoft/",
+      "published": "2026-09-20T22:29:00+00:00"
     },
     {
-      "title": "Intel Can Supply Only About Half of What Its Customers Want. That's a Better Problem Than It Sounds.",
+      "title": "3 Things You Need to Know Before Buying IonQ Stock",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/19/intel-can-supply-only-about-half-of-what-its-customers-want-that-s-a-better-problem-than-it-sounds/",
-      "published": "2026-09-19T22:01:01+00:00"
+      "url": "https://www.fool.com/investing/2026/09/20/3-things-you-need-to-know-before-buying-ionq-stock/",
+      "published": "2026-09-20T22:11:00+00:00"
     },
     {
-      "title": "If a Stock Market Crash Is Coming, I'm Buying This 1 Vanguard ETF Without Hesitation",
+      "title": "The Stock Market's Best Quarter of the Year Is About to Start. The S&P 500 Has Risen in 34 of the Last 41.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/19/if-stock-market-crash-buying-vanguard-etf-vig/",
-      "published": "2026-09-19T21:50:00+00:00"
+      "url": "https://www.fool.com/investing/2026/09/20/the-stock-market-s-best-quarter-of-the-year-is-about-to-start-the-s-and-p-500-has-risen-in-34-of-the-last-41/",
+      "published": "2026-09-20T21:44:01+00:00"
+    },
+    {
+      "title": "ASML (ASML) and Chip Giants like TSMC Plot a Bigger Canvas for Building AI Chips",
+      "publisher": "Insider Monkey",
+      "url": "https://finance.yahoo.com/technology/ai/articles/asml-asml-chip-giants-tsmc-214129428.html",
+      "published": "2026-09-20T21:41:29+00:00"
+    },
+    {
+      "title": "The Ultimate Dividend Growth stock to Buy With $1,000 Right Now.",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/09/20/the-ultimate-dividend-growth-stock-to-buy-with-100/",
+      "published": "2026-09-20T21:35:00+00:00"
     }
   ],
-  "generated_at": "2026-09-19T23:47:37.103871+00:00"
+  "generated_at": "2026-09-20T23:42:55.646326+00:00"
 }
