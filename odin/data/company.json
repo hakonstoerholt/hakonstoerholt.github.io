@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-09-18",
+  "as_of": "2026-09-21",
   "price": {
-    "last": 222.27000427246094,
-    "prev_close": 219.33999633789062,
-    "change_pct": 1.3358292985729214,
-    "ytd_pct": 17.696583049421033,
+    "last": 227.3800048828125,
+    "prev_close": 222.27000427246094,
+    "change_pct": 2.2990059441793553,
+    "ytd_pct": 20.402434489823197,
     "high_52w": 236.5399932861328,
     "low_52w": 164.27000427246094,
     "currency": "USD"
@@ -14,30 +14,14 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 5367153557504.0,
-    "pe": 28.099874,
-    "forward_pe": 14.173006,
+    "market_cap": 5490544738304.0,
+    "pe": 28.745892,
+    "forward_pe": 14.498844,
     "dividend_yield": 0.45,
     "beta": 2.217,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-09-18",
-      "o": 173.97999572753906,
-      "h": 177.10000610351562,
-      "l": 172.9600067138672,
-      "c": 176.24000549316406,
-      "v": 191763300
-    },
-    {
-      "t": "2025-09-19",
-      "o": 175.77000427246094,
-      "h": 178.0800018310547,
-      "l": 175.17999267578125,
-      "c": 176.6699981689453,
-      "v": 237182100
-    },
     {
       "t": "2025-09-22",
       "o": 175.3000030517578,
@@ -2037,6 +2021,14 @@
       "l": 218.0399932861328,
       "c": 222.27000427246094,
       "v": 190287428
+    },
+    {
+      "t": "2026-09-21",
+      "o": 222.93499755859375,
+      "h": 228.5,
+      "l": 221.55999755859375,
+      "c": 227.3800048828125,
+      "v": 109274173
     }
   ],
   "earnings": {
@@ -2044,68 +2036,68 @@
     "history": []
   },
   "implied_move": {
-    "expiry": "2026-09-21",
-    "move_pct": 1.5521662544132377,
-    "straddle": 3.45
+    "expiry": "2026-09-23",
+    "move_pct": 1.941683483679847,
+    "straddle": 4.415
   },
   "options": {
-    "expiry": "2026-09-21",
-    "atm_strike": 222.5,
-    "call_iv": 0.25928475097656256,
-    "put_iv": 0.2880930566406249,
-    "atm_iv": 0.27368890380859373,
+    "expiry": "2026-09-23",
+    "atm_strike": 227.5,
+    "call_iv": 0.32739930419921875,
+    "put_iv": 0.3364324169921875,
+    "atm_iv": 0.3319158605957031,
     "days_to_expiry": 1
   },
   "consensus": null,
   "news": [
     {
-      "title": "Prediction: Nvidia's Revenue Growth Will Drive Shares to $400 Next Year",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/20/prediction-nvidias-70-revenue-forecast-will-drive/",
-      "published": "2026-09-20T23:33:00+00:00"
+      "title": "Dow Jones Futures: Falling Oil Prices, Yields Spark Market Rally; AMD, Intel, Micron, Nvidia, Sandisk Are Key Movers",
+      "publisher": "Investor's Business Daily",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-oil-prices-treasury-yields-amd-intel-micron-nvidia-sandisk/?src=A00220&yptr=yahoo",
+      "published": "2026-09-22T00:14:22+00:00"
     },
     {
-      "title": "Palantir Nearly Doubled Its Revenue. Its Stock Stood Still. Is It Time to Buy the Stock?",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/20/palantir-nearly-doubled-its-revenue-its-stock-stood-still-is-it-time-to-buy-the-stock/",
-      "published": "2026-09-20T23:12:01+00:00"
+      "title": "Should Investors Chase the AI-Fueled Rally in AMD or META Stock?",
+      "publisher": "Zacks",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/investors-chase-ai-fueled-rally-000500929.html",
+      "published": "2026-09-22T00:05:00+00:00"
     },
     {
-      "title": "Meet the Vanguard ETF That Increased Its SpaceX Holding by 39% in 1 Month and Shows No Signs of Slowing Down",
+      "title": "Why Lucid Group Stock Motored Over 5% Higher Today",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/20/vanguard-communication-services-etf-buy-spacex/",
-      "published": "2026-09-20T23:05:00+00:00"
+      "url": "https://www.fool.com/investing/2026/09/21/why-lucid-group-stock-motored-almost-6-higher-toda/",
+      "published": "2026-09-21T23:55:41+00:00"
     },
     {
-      "title": "Bill Ackman Built a $2.4 Billion Stake in Microsoft, Calling It a \"Core Holding\" Bought at a \"Highly Compelling Valuation.\" Here's Why He's Betting Big on Big Tech.",
+      "title": "Johnson & Johnson May Offload Its Orthopedics Unit for $20 Billion -- and Investors Shouldn't Miss What That Could Signal",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/20/bill-ackman-built-a-24-billion-stake-in-microsoft/",
-      "published": "2026-09-20T22:29:00+00:00"
+      "url": "https://www.fool.com/investing/2026/09/21/johnson-johnson-may-offload-its-orthopedics-unit-f/",
+      "published": "2026-09-21T23:35:00+00:00"
     },
     {
-      "title": "3 Things You Need to Know Before Buying IonQ Stock",
+      "title": "Why ServiceNow Stock Inched Higher on Monday",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/20/3-things-you-need-to-know-before-buying-ionq-stock/",
-      "published": "2026-09-20T22:11:00+00:00"
+      "url": "https://www.fool.com/investing/2026/09/21/why-servicenow-stock-inched-higher-on-monday/",
+      "published": "2026-09-21T23:31:40+00:00"
     },
     {
-      "title": "The Stock Market's Best Quarter of the Year Is About to Start. The S&P 500 Has Risen in 34 of the Last 41.",
+      "title": "Why Strategy Stock Surged Today",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/20/the-stock-market-s-best-quarter-of-the-year-is-about-to-start-the-s-and-p-500-has-risen-in-34-of-the-last-41/",
-      "published": "2026-09-20T21:44:01+00:00"
+      "url": "https://www.fool.com/investing/2026/09/21/why-strategy-stock-surged-today/",
+      "published": "2026-09-21T23:23:42+00:00"
     },
     {
-      "title": "ASML (ASML) and Chip Giants like TSMC Plot a Bigger Canvas for Building AI Chips",
-      "publisher": "Insider Monkey",
-      "url": "https://finance.yahoo.com/technology/ai/articles/asml-asml-chip-giants-tsmc-214129428.html",
-      "published": "2026-09-20T21:41:29+00:00"
+      "title": "Should You Buy Costco Stock Before Sept. 24? History Has a Clear Answer.",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/09/21/should-you-buy-costco-stock-before-sept-24-history/",
+      "published": "2026-09-21T23:17:59+00:00"
     },
     {
-      "title": "The Ultimate Dividend Growth stock to Buy With $1,000 Right Now.",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/20/the-ultimate-dividend-growth-stock-to-buy-with-100/",
-      "published": "2026-09-20T21:35:00+00:00"
+      "title": "Dell Joined the S&P 100 This Week. Its Largest Outside Holder Kept Selling.",
+      "publisher": "TIKR",
+      "url": "https://www.tikr.com/blog/dell-joined-the-sp-100-this-week-its-largest-outside-holder-kept-selling?ref=yahoofinance",
+      "published": "2026-09-21T23:17:46+00:00"
     }
   ],
-  "generated_at": "2026-09-20T23:42:55.646326+00:00"
+  "generated_at": "2026-09-22T00:26:27.802490+00:00"
 }
