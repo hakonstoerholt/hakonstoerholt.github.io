@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-09-21",
+  "as_of": "2026-09-22",
   "price": {
-    "last": 227.3800048828125,
-    "prev_close": 222.27000427246094,
-    "change_pct": 2.2990059441793553,
-    "ytd_pct": 20.402434489823197,
+    "last": 228.8699951171875,
+    "prev_close": 227.3800048828125,
+    "change_pct": 0.6552863938686704,
+    "ytd_pct": 21.19141526092165,
     "high_52w": 236.5399932861328,
     "low_52w": 164.27000427246094,
     "currency": "USD"
@@ -14,10 +14,10 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 5490544738304.0,
-    "pe": 28.745892,
-    "forward_pe": 14.498844,
-    "dividend_yield": 0.45,
+    "market_cap": 5526523478016.0,
+    "pe": 28.934261,
+    "forward_pe": 14.593853,
+    "dividend_yield": 0.44,
     "beta": 2.217,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
@@ -2029,6 +2029,14 @@
       "l": 221.55999755859375,
       "c": 227.3800048828125,
       "v": 109274173
+    },
+    {
+      "t": "2026-09-22",
+      "o": 226.91000366210938,
+      "h": 229.97999572753906,
+      "l": 226.5,
+      "c": 228.8699951171875,
+      "v": 93296546
     }
   ],
   "earnings": {
@@ -2037,67 +2045,67 @@
   },
   "implied_move": {
     "expiry": "2026-09-23",
-    "move_pct": 1.941683483679847,
-    "straddle": 4.415
+    "move_pct": 1.3719579092891736,
+    "straddle": 3.1399999999999997
   },
   "options": {
     "expiry": "2026-09-23",
-    "atm_strike": 227.5,
-    "call_iv": 0.32739930419921875,
-    "put_iv": 0.3364324169921875,
-    "atm_iv": 0.3319158605957031,
+    "atm_strike": 230.0,
+    "call_iv": 0.22412885253906245,
+    "put_iv": 0.225593681640625,
+    "atm_iv": 0.22486126708984372,
     "days_to_expiry": 1
   },
   "consensus": null,
   "news": [
     {
-      "title": "Dow Jones Futures: Falling Oil Prices, Yields Spark Market Rally; AMD, Intel, Micron, Nvidia, Sandisk Are Key Movers",
-      "publisher": "Investor's Business Daily",
-      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-oil-prices-treasury-yields-amd-intel-micron-nvidia-sandisk/?src=A00220&yptr=yahoo",
-      "published": "2026-09-22T00:14:22+00:00"
-    },
-    {
-      "title": "Should Investors Chase the AI-Fueled Rally in AMD or META Stock?",
-      "publisher": "Zacks",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/investors-chase-ai-fueled-rally-000500929.html",
-      "published": "2026-09-22T00:05:00+00:00"
-    },
-    {
-      "title": "Why Lucid Group Stock Motored Over 5% Higher Today",
+      "title": "Google Goes Nuclear With Power Upgrade Agreement in Georgia",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/21/why-lucid-group-stock-motored-almost-6-higher-toda/",
-      "published": "2026-09-21T23:55:41+00:00"
+      "url": "https://www.fool.com/investing/2026/09/22/google-goes-nuclear-with-power-upgrade-agreement-in-georgia/",
+      "published": "2026-09-22T23:35:01+00:00"
     },
     {
-      "title": "Johnson & Johnson May Offload Its Orthopedics Unit for $20 Billion -- and Investors Shouldn't Miss What That Could Signal",
+      "title": "What $3,000 Invested in SpaceX Stock Could Grow to by September 2027",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/21/johnson-johnson-may-offload-its-orthopedics-unit-f/",
-      "published": "2026-09-21T23:35:00+00:00"
+      "url": "https://www.fool.com/investing/2026/09/22/what-3000-invested-in-spacex-stock-could-grow-to-b/",
+      "published": "2026-09-22T23:35:00+00:00"
     },
     {
-      "title": "Why ServiceNow Stock Inched Higher on Monday",
+      "title": "2 Beaten-Down Stocks to Buy Before They Bounce Back",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/21/why-servicenow-stock-inched-higher-on-monday/",
-      "published": "2026-09-21T23:31:40+00:00"
+      "url": "https://www.fool.com/investing/2026/09/22/2-beaten-down-stocks-to-buy-before-they-bounce-back/",
+      "published": "2026-09-22T22:53:01+00:00"
     },
     {
-      "title": "Why Strategy Stock Surged Today",
+      "title": "Nvidia\u2019s Cooling Stock Valuations Are Being Looked At As A Warning Signal",
+      "publisher": "Stocktwits",
+      "url": "https://stocktwits.com/news-articles/markets/equity/nvda-stock-is-at-its-cheapest-in-more-than-a-decade-what-is-holding-nvidia-back/cZM5Ty5RB7K",
+      "published": "2026-09-22T22:45:19+00:00"
+    },
+    {
+      "title": "Detroit Automakers Turn Back the Clock on the Arsenal of Democracy -- Investors Should Cheer",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/21/why-strategy-stock-surged-today/",
-      "published": "2026-09-21T23:23:42+00:00"
+      "url": "https://www.fool.com/investing/2026/09/22/detroit-automakers-turn-back-the-clock-on-the-arse/",
+      "published": "2026-09-22T22:25:00+00:00"
     },
     {
-      "title": "Should You Buy Costco Stock Before Sept. 24? History Has a Clear Answer.",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/21/should-you-buy-costco-stock-before-sept-24-history/",
-      "published": "2026-09-21T23:17:59+00:00"
+      "title": "Nvidia Backed SB Energy\u2019s $50 Billion Valuation Push. Wall Street Just Hit the Brakes",
+      "publisher": "Insider Monkey",
+      "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-backed-sb-energy-50-221736610.html",
+      "published": "2026-09-22T22:17:36+00:00"
     },
     {
-      "title": "Dell Joined the S&P 100 This Week. Its Largest Outside Holder Kept Selling.",
-      "publisher": "TIKR",
-      "url": "https://www.tikr.com/blog/dell-joined-the-sp-100-this-week-its-largest-outside-holder-kept-selling?ref=yahoofinance",
-      "published": "2026-09-21T23:17:46+00:00"
+      "title": "VGT Holders Bought \u2018Tech\u2019 and Own No Google, Meta, or Amazon: The Sector Rule That Decides What\u2019s Inside",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/etf/2026/09/22/vgt-holders-bought-tech-and-own-no-google-meta-or-amazon-the-sector-rule-that-decides-whats-inside/",
+      "published": "2026-09-22T22:15:04+00:00"
+    },
+    {
+      "title": "Alibaba Just Unveiled an AI Chip 3x Faster Than Its Predecessor. Nvidia Has a China Problem to Watch",
+      "publisher": "Insider Monkey",
+      "url": "https://finance.yahoo.com/technology/ai/articles/alibaba-just-unveiled-ai-chip-221410155.html",
+      "published": "2026-09-22T22:14:10+00:00"
     }
   ],
-  "generated_at": "2026-09-22T00:26:27.802490+00:00"
+  "generated_at": "2026-09-22T23:57:56.922209+00:00"
 }
