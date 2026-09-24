@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-09-22",
+  "as_of": "2026-09-23",
   "price": {
-    "last": 228.8699951171875,
-    "prev_close": 227.3800048828125,
-    "change_pct": 0.6552863938686704,
-    "ytd_pct": 21.19141526092165,
+    "last": 225.50999450683594,
+    "prev_close": 228.8699951171875,
+    "change_pct": -1.4680826154739757,
+    "ytd_pct": 19.412225162029184,
     "high_52w": 236.5399932861328,
     "low_52w": 164.27000427246094,
     "currency": "USD"
@@ -14,22 +14,14 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 5526523478016.0,
-    "pe": 28.934261,
-    "forward_pe": 14.593853,
+    "market_cap": 5445389910016.0,
+    "pe": 28.473484,
+    "forward_pe": 14.379603,
     "dividend_yield": 0.44,
     "beta": 2.217,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-09-22",
-      "o": 175.3000030517578,
-      "h": 184.5500030517578,
-      "l": 174.7100067138672,
-      "c": 183.61000061035156,
-      "v": 269637000
-    },
     {
       "t": "2025-09-23",
       "o": 181.97000122070312,
@@ -2037,6 +2029,14 @@
       "l": 226.5,
       "c": 228.8699951171875,
       "v": 93296546
+    },
+    {
+      "t": "2026-09-23",
+      "o": 228.0800018310547,
+      "h": 228.9499969482422,
+      "l": 224.02000427246094,
+      "c": 225.50999450683594,
+      "v": 86851377
     }
   ],
   "earnings": {
@@ -2044,68 +2044,68 @@
     "history": []
   },
   "implied_move": {
-    "expiry": "2026-09-23",
-    "move_pct": 1.3719579092891736,
-    "straddle": 3.1399999999999997
+    "expiry": "2026-09-25",
+    "move_pct": 1.9600018215006498,
+    "straddle": 4.42
   },
   "options": {
-    "expiry": "2026-09-23",
-    "atm_strike": 230.0,
-    "call_iv": 0.22412885253906245,
-    "put_iv": 0.225593681640625,
-    "atm_iv": 0.22486126708984372,
+    "expiry": "2026-09-25",
+    "atm_strike": 225.0,
+    "call_iv": 0.34204759521484374,
+    "put_iv": 0.32398136962890617,
+    "atm_iv": 0.3330144824218749,
     "days_to_expiry": 1
   },
   "consensus": null,
   "news": [
     {
-      "title": "Google Goes Nuclear With Power Upgrade Agreement in Georgia",
+      "title": "Why IonQ (IONQ) Is Up 15.5% After NVIDIA Deal And Real-Time Error Correction Breakthrough",
+      "publisher": "Simply Wall St.",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/why-ionq-ionq-15-5-231619206.html",
+      "published": "2026-09-23T23:16:19+00:00"
+    },
+    {
+      "title": "Is Tesla (TSLA) Quietly Shifting From Automaker To Physical AI Platform With FSD Subscriptions?",
+      "publisher": "Simply Wall St.",
+      "url": "https://finance.yahoo.com/technology/ai/articles/tesla-tsla-quietly-shifting-automaker-231422962.html",
+      "published": "2026-09-23T23:14:22+00:00"
+    },
+    {
+      "title": "McDonald\u2019s Unveils 10-Year Growth Plan to Drive Market Share Gains and Efficiency. Should Investors Be Concerned About the $8.5 Billion Price Tag?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/22/google-goes-nuclear-with-power-upgrade-agreement-in-georgia/",
-      "published": "2026-09-22T23:35:01+00:00"
+      "url": "https://www.fool.com/investing/2026/09/23/mcdonalds-unveils-10-year-growth-plan-to-drive-market-share-gains-and-efficiency-should-investors-be-concerned-about-the-85-billion-price-tag/",
+      "published": "2026-09-23T22:54:05+00:00"
     },
     {
-      "title": "What $3,000 Invested in SpaceX Stock Could Grow to by September 2027",
+      "title": "General Mills Reaffirms Full-Year Guidance as International Profit Jumps 14%. Is the Turnaround Finally Working?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/22/what-3000-invested-in-spacex-stock-could-grow-to-b/",
-      "published": "2026-09-22T23:35:00+00:00"
+      "url": "https://www.fool.com/investing/2026/09/23/general-mills-reaffirms-full-year-guidance-as-international-profit-jumps-14-is-the-turnaround-finally-working/",
+      "published": "2026-09-23T22:33:21+00:00"
     },
     {
-      "title": "2 Beaten-Down Stocks to Buy Before They Bounce Back",
+      "title": "Finally, Some Good News for Lucid -- but There's a Catch",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/22/2-beaten-down-stocks-to-buy-before-they-bounce-back/",
-      "published": "2026-09-22T22:53:01+00:00"
+      "url": "https://www.fool.com/investing/2026/09/23/finally-some-good-news-for-lucid-but-theres-a-catc/",
+      "published": "2026-09-23T22:25:00+00:00"
     },
     {
-      "title": "Nvidia\u2019s Cooling Stock Valuations Are Being Looked At As A Warning Signal",
-      "publisher": "Stocktwits",
-      "url": "https://stocktwits.com/news-articles/markets/equity/nvda-stock-is-at-its-cheapest-in-more-than-a-decade-what-is-holding-nvidia-back/cZM5Ty5RB7K",
-      "published": "2026-09-22T22:45:19+00:00"
-    },
-    {
-      "title": "Detroit Automakers Turn Back the Clock on the Arsenal of Democracy -- Investors Should Cheer",
+      "title": "Viking Stock Has Gained 254% Since Its IPO. Here's Whether That Run Is Anywhere Near Over.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/22/detroit-automakers-turn-back-the-clock-on-the-arse/",
-      "published": "2026-09-22T22:25:00+00:00"
+      "url": "https://www.fool.com/investing/2026/09/23/viking-stock-has-gained-254-since-its-ipo-heres-wh/",
+      "published": "2026-09-23T22:21:00+00:00"
     },
     {
-      "title": "Nvidia Backed SB Energy\u2019s $50 Billion Valuation Push. Wall Street Just Hit the Brakes",
-      "publisher": "Insider Monkey",
-      "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-backed-sb-energy-50-221736610.html",
-      "published": "2026-09-22T22:17:36+00:00"
+      "title": "IonQ (IONQ) Stock Looks Reasonably Priced On Book Value Today",
+      "publisher": "Simply Wall St.",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/ionq-ionq-stock-looks-reasonably-221546950.html",
+      "published": "2026-09-23T22:15:46+00:00"
     },
     {
-      "title": "VGT Holders Bought \u2018Tech\u2019 and Own No Google, Meta, or Amazon: The Sector Rule That Decides What\u2019s Inside",
-      "publisher": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/etf/2026/09/22/vgt-holders-bought-tech-and-own-no-google-meta-or-amazon-the-sector-rule-that-decides-whats-inside/",
-      "published": "2026-09-22T22:15:04+00:00"
-    },
-    {
-      "title": "Alibaba Just Unveiled an AI Chip 3x Faster Than Its Predecessor. Nvidia Has a China Problem to Watch",
-      "publisher": "Insider Monkey",
-      "url": "https://finance.yahoo.com/technology/ai/articles/alibaba-just-unveiled-ai-chip-221410155.html",
-      "published": "2026-09-22T22:14:10+00:00"
+      "title": "How Qualcomm is targeting agentic AI with its 2 new smartphone chips",
+      "publisher": "Yahoo Finance Video",
+      "url": "https://finance.yahoo.com/video/qualcomm-targeting-agentic-ai-2-195058732.html",
+      "published": "2026-09-23T19:50:58+00:00"
     }
   ],
-  "generated_at": "2026-09-22T23:57:56.922209+00:00"
+  "generated_at": "2026-09-24T00:14:26.546361+00:00"
 }
