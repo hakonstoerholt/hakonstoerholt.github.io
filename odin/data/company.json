@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-09-23",
+  "as_of": "2026-09-24",
   "price": {
-    "last": 225.50999450683594,
-    "prev_close": 228.8699951171875,
-    "change_pct": -1.4680826154739757,
-    "ytd_pct": 19.412225162029184,
+    "last": 224.5800018310547,
+    "prev_close": 225.50999450683594,
+    "change_pct": -0.41239532545555013,
+    "ytd_pct": 18.919774727438533,
     "high_52w": 236.5399932861328,
     "low_52w": 164.27000427246094,
     "currency": "USD"
@@ -14,22 +14,14 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 5445389910016.0,
-    "pe": 28.473484,
-    "forward_pe": 14.379603,
+    "market_cap": 5422933082112.0,
+    "pe": 28.35606,
+    "forward_pe": 14.320303,
     "dividend_yield": 0.44,
     "beta": 2.217,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-09-23",
-      "o": 181.97000122070312,
-      "h": 182.4199981689453,
-      "l": 176.2100067138672,
-      "c": 178.42999267578125,
-      "v": 192559600
-    },
     {
       "t": "2025-09-24",
       "o": 179.77000427246094,
@@ -2037,6 +2029,14 @@
       "l": 224.02000427246094,
       "c": 225.50999450683594,
       "v": 86851377
+    },
+    {
+      "t": "2026-09-24",
+      "o": 222.11599731445312,
+      "h": 224.89999389648438,
+      "l": 221.09080505371094,
+      "c": 224.5800018310547,
+      "v": 76420503
     }
   ],
   "earnings": {
@@ -2044,68 +2044,68 @@
     "history": []
   },
   "implied_move": {
-    "expiry": "2026-09-25",
-    "move_pct": 1.9600018215006498,
-    "straddle": 4.42
+    "expiry": "2026-09-28",
+    "move_pct": 2.1017009357541663,
+    "straddle": 4.72
   },
   "options": {
-    "expiry": "2026-09-25",
+    "expiry": "2026-09-28",
     "atm_strike": 225.0,
-    "call_iv": 0.34204759521484374,
-    "put_iv": 0.32398136962890617,
-    "atm_iv": 0.3330144824218749,
-    "days_to_expiry": 1
+    "call_iv": 0.25501233276367197,
+    "put_iv": 0.2561109545898438,
+    "atm_iv": 0.2555616436767579,
+    "days_to_expiry": 3
   },
   "consensus": null,
   "news": [
     {
-      "title": "Why IonQ (IONQ) Is Up 15.5% After NVIDIA Deal And Real-Time Error Correction Breakthrough",
-      "publisher": "Simply Wall St.",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/why-ionq-ionq-15-5-231619206.html",
-      "published": "2026-09-23T23:16:19+00:00"
-    },
-    {
-      "title": "Is Tesla (TSLA) Quietly Shifting From Automaker To Physical AI Platform With FSD Subscriptions?",
-      "publisher": "Simply Wall St.",
-      "url": "https://finance.yahoo.com/technology/ai/articles/tesla-tsla-quietly-shifting-automaker-231422962.html",
-      "published": "2026-09-23T23:14:22+00:00"
-    },
-    {
-      "title": "McDonald\u2019s Unveils 10-Year Growth Plan to Drive Market Share Gains and Efficiency. Should Investors Be Concerned About the $8.5 Billion Price Tag?",
+      "title": "Why Welltower Stock Topped the Market on Thursday",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/23/mcdonalds-unveils-10-year-growth-plan-to-drive-market-share-gains-and-efficiency-should-investors-be-concerned-about-the-85-billion-price-tag/",
-      "published": "2026-09-23T22:54:05+00:00"
+      "url": "https://www.fool.com/investing/2026/09/24/why-welltower-stock-topped-the-market-on-thursday/",
+      "published": "2026-09-24T23:52:47+00:00"
     },
     {
-      "title": "General Mills Reaffirms Full-Year Guidance as International Profit Jumps 14%. Is the Turnaround Finally Working?",
+      "title": "Oracle Wants Protection If Its AI Data Center Is Delayed. Here's What That Changes for Investors.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/23/general-mills-reaffirms-full-year-guidance-as-international-profit-jumps-14-is-the-turnaround-finally-working/",
-      "published": "2026-09-23T22:33:21+00:00"
+      "url": "https://www.fool.com/investing/2026/09/24/oracle-wants-protection-if-its-ai-data-center-is-delayed-heres-what-that-changes-for-investors/",
+      "published": "2026-09-24T23:37:01+00:00"
     },
     {
-      "title": "Finally, Some Good News for Lucid -- but There's a Catch",
+      "title": "Why H.B. Fuller Stock Dipped on Thursday",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/23/finally-some-good-news-for-lucid-but-theres-a-catc/",
-      "published": "2026-09-23T22:25:00+00:00"
+      "url": "https://www.fool.com/investing/2026/09/24/why-hb-fuller-stock-dipped-on-thursday/",
+      "published": "2026-09-24T23:33:00+00:00"
     },
     {
-      "title": "Viking Stock Has Gained 254% Since Its IPO. Here's Whether That Run Is Anywhere Near Over.",
+      "title": "SpaceX Stock-Split Watch: Here's When It Should Happen",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/23/viking-stock-has-gained-254-since-its-ipo-heres-wh/",
-      "published": "2026-09-23T22:21:00+00:00"
+      "url": "https://www.fool.com/investing/2026/09/24/stock-split-watch-is-hot-stock-next/",
+      "published": "2026-09-24T23:25:00+00:00"
     },
     {
-      "title": "IonQ (IONQ) Stock Looks Reasonably Priced On Book Value Today",
-      "publisher": "Simply Wall St.",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/ionq-ionq-stock-looks-reasonably-221546950.html",
-      "published": "2026-09-23T22:15:46+00:00"
+      "title": "Netflix's Revenue Growth Has Slowed for 2 Straight Quarters. Should You Buy the Stock Anyway?",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/09/24/netflix-s-revenue-growth-has-slowed-for-2-straight-quarters-should-you-buy-the-stock-anyway/",
+      "published": "2026-09-24T22:41:01+00:00"
     },
     {
-      "title": "How Qualcomm is targeting agentic AI with its 2 new smartphone chips",
-      "publisher": "Yahoo Finance Video",
-      "url": "https://finance.yahoo.com/video/qualcomm-targeting-agentic-ai-2-195058732.html",
-      "published": "2026-09-23T19:50:58+00:00"
+      "title": "Should You Buy SoFi Stock Before Oct. 27?",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/09/24/should-you-buy-bank-stock-stock-before-earnings-da/",
+      "published": "2026-09-24T22:25:00+00:00"
+    },
+    {
+      "title": "I've Covered Stocks for 10 Years. This Is the Single Best Way a New Investor Should Start.",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/09/24/ive-covered-stocks-for-10-years-this-is-the-single/",
+      "published": "2026-09-24T21:50:00+00:00"
+    },
+    {
+      "title": "Why Everpure Stock Popped Today",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/09/24/why-everpure-stock-popped-today/",
+      "published": "2026-09-24T21:27:37+00:00"
     }
   ],
-  "generated_at": "2026-09-24T00:14:26.546361+00:00"
+  "generated_at": "2026-09-25T00:12:22.089130+00:00"
 }
