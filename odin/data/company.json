@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-09-24",
+  "as_of": "2026-09-25",
   "price": {
-    "last": 224.5800018310547,
-    "prev_close": 225.50999450683594,
-    "change_pct": -0.41239532545555013,
-    "ytd_pct": 18.919774727438533,
+    "last": 225.07000732421875,
+    "prev_close": 224.5800018310547,
+    "change_pct": 0.21818750074313886,
+    "ytd_pct": 19.179242811805697,
     "high_52w": 236.5399932861328,
     "low_52w": 164.27000427246094,
     "currency": "USD"
@@ -14,22 +14,14 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 5422933082112.0,
-    "pe": 28.35606,
-    "forward_pe": 14.320303,
-    "dividend_yield": 0.44,
+    "market_cap": 5434765213696.0,
+    "pe": 28.453857,
+    "forward_pe": 14.351548,
+    "dividend_yield": 0.45,
     "beta": 2.217,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-09-24",
-      "o": 179.77000427246094,
-      "h": 179.77999877929688,
-      "l": 175.39999389648438,
-      "c": 176.97000122070312,
-      "v": 143564100
-    },
     {
       "t": "2025-09-25",
       "o": 174.47999572753906,
@@ -2037,6 +2029,14 @@
       "l": 221.09080505371094,
       "c": 224.5800018310547,
       "v": 76420503
+    },
+    {
+      "t": "2026-09-25",
+      "o": 225.14999389648438,
+      "h": 226.94000244140625,
+      "l": 223.13290405273438,
+      "c": 225.07000732421875,
+      "v": 87931936
     }
   ],
   "earnings": {
@@ -2045,67 +2045,67 @@
   },
   "implied_move": {
     "expiry": "2026-09-28",
-    "move_pct": 2.1017009357541663,
-    "straddle": 4.72
+    "move_pct": 1.47731811960634,
+    "straddle": 3.325
   },
   "options": {
     "expiry": "2026-09-28",
     "atm_strike": 225.0,
-    "call_iv": 0.25501233276367197,
-    "put_iv": 0.2561109545898438,
-    "atm_iv": 0.2555616436767579,
-    "days_to_expiry": 3
+    "call_iv": 0.20703917968749996,
+    "put_iv": 0.20459779785156246,
+    "atm_iv": 0.2058184887695312,
+    "days_to_expiry": 2
   },
   "consensus": null,
   "news": [
     {
-      "title": "Why Welltower Stock Topped the Market on Thursday",
+      "title": "Nvidia Would Have to Add Almost a Whole Broadcom to Reach $7 Trillion",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/24/why-welltower-stock-topped-the-market-on-thursday/",
-      "published": "2026-09-24T23:52:47+00:00"
+      "url": "https://www.fool.com/investing/2026/09/25/nvidia-would-have-to-add-almost-a-whole-broadcom-to-reach-usd7-trillion/",
+      "published": "2026-09-25T23:44:01+00:00"
     },
     {
-      "title": "Oracle Wants Protection If Its AI Data Center Is Delayed. Here's What That Changes for Investors.",
+      "title": "Why Staar Surgical Stock Soared Today",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/24/oracle-wants-protection-if-its-ai-data-center-is-delayed-heres-what-that-changes-for-investors/",
-      "published": "2026-09-24T23:37:01+00:00"
+      "url": "https://www.fool.com/investing/2026/09/25/why-staar-surgical-stock-soared-today/",
+      "published": "2026-09-25T23:41:09+00:00"
     },
     {
-      "title": "Why H.B. Fuller Stock Dipped on Thursday",
+      "title": "Is Super Micro Computer a Buy?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/24/why-hb-fuller-stock-dipped-on-thursday/",
-      "published": "2026-09-24T23:33:00+00:00"
+      "url": "https://www.fool.com/investing/2026/09/25/is-super-micro-computer-a-buy/",
+      "published": "2026-09-25T23:20:00+00:00"
     },
     {
-      "title": "SpaceX Stock-Split Watch: Here's When It Should Happen",
+      "title": "Prediction: Here's What a $10,000 Investment in Dutch Bros (BROS) Stock Could Be Worth by 2029",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/24/stock-split-watch-is-hot-stock-next/",
-      "published": "2026-09-24T23:25:00+00:00"
+      "url": "https://www.fool.com/investing/2026/09/25/prediction-10000-investment-dutch-bros-2029/",
+      "published": "2026-09-25T22:50:00+00:00"
     },
     {
-      "title": "Netflix's Revenue Growth Has Slowed for 2 Straight Quarters. Should You Buy the Stock Anyway?",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/24/netflix-s-revenue-growth-has-slowed-for-2-straight-quarters-should-you-buy-the-stock-anyway/",
-      "published": "2026-09-24T22:41:01+00:00"
+      "title": "SK Hynix\u2019s Solidigm Weighs IPO That Could Raise $15 Billion, Report Says",
+      "publisher": "Barrons.com",
+      "url": "https://www.barrons.com/articles/sk-hynix-solidigm-ipo-stock-eaf639af?siteid=yhoof2&yptr=yahoo",
+      "published": "2026-09-25T22:44:00+00:00"
     },
     {
-      "title": "Should You Buy SoFi Stock Before Oct. 27?",
+      "title": "BP Walked Away From a Potential $4.5 Billion Bet on Devon Energy's Eagle Ford Shale. Here's What It Means for BP and DVN Stock.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/24/should-you-buy-bank-stock-stock-before-earnings-da/",
-      "published": "2026-09-24T22:25:00+00:00"
+      "url": "https://www.fool.com/investing/2026/09/25/bp-walked-away-from-a-potential-usd4-5-billion-bet-on-devon-energy-s-eagle-ford-shale-here-s-what-it-means-for-bp-and-dvn-stock/",
+      "published": "2026-09-25T22:38:01+00:00"
     },
     {
-      "title": "I've Covered Stocks for 10 Years. This Is the Single Best Way a New Investor Should Start.",
+      "title": "Is It Too Late to Buy IREN Stock After Its Monster Run?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/24/ive-covered-stocks-for-10-years-this-is-the-single/",
-      "published": "2026-09-24T21:50:00+00:00"
+      "url": "https://www.fool.com/investing/2026/09/25/is-it-too-late-to-buy-iren-stock-after-its-monster/",
+      "published": "2026-09-25T22:25:00+00:00"
     },
     {
-      "title": "Why Everpure Stock Popped Today",
+      "title": "Why Akamai Stock Is Up Today",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/24/why-everpure-stock-popped-today/",
-      "published": "2026-09-24T21:27:37+00:00"
+      "url": "https://www.fool.com/investing/2026/09/25/why-akamai-stock-is-up-today/",
+      "published": "2026-09-25T22:02:32+00:00"
     }
   ],
-  "generated_at": "2026-09-25T00:12:22.089130+00:00"
+  "generated_at": "2026-09-26T00:19:12.674312+00:00"
 }
