@@ -15,9 +15,9 @@
     "sector": "Technology",
     "industry": "Semiconductors",
     "market_cap": 5434765213696.0,
-    "pe": 28.453857,
+    "pe": 28.489874,
     "forward_pe": 14.351548,
-    "dividend_yield": 0.45,
+    "dividend_yield": 0.44,
     "beta": 2.217,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
@@ -2051,61 +2051,61 @@
   "options": {
     "expiry": "2026-09-28",
     "atm_strike": 225.0,
-    "call_iv": 0.20703917968749996,
-    "put_iv": 0.20459779785156246,
-    "atm_iv": 0.2058184887695312,
-    "days_to_expiry": 2
+    "call_iv": 0.2534254345703125,
+    "put_iv": 0.25049577636718745,
+    "atm_iv": 0.25196060546875,
+    "days_to_expiry": 1
   },
   "consensus": null,
   "news": [
     {
-      "title": "Nvidia Would Have to Add Almost a Whole Broadcom to Reach $7 Trillion",
+      "title": "This Little-Known Cryptocurrency Is Up 217% for the Year. But Is It a Buy?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/25/nvidia-would-have-to-add-almost-a-whole-broadcom-to-reach-usd7-trillion/",
-      "published": "2026-09-25T23:44:01+00:00"
+      "url": "https://www.fool.com/investing/2026/09/26/this-little-known-cryptocurrency-is-up-217/",
+      "published": "2026-09-26T23:39:00+00:00"
     },
     {
-      "title": "Why Staar Surgical Stock Soared Today",
+      "title": "I'd Put $10,000 Into These 3 Vanguard Funds and Not Touch It for 20 Years",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/25/why-staar-surgical-stock-soared-today/",
-      "published": "2026-09-25T23:41:09+00:00"
+      "url": "https://www.fool.com/investing/2026/09/26/i-d-put-usd10-000-into-these-3-vanguard-funds-and-not-touch-it-for-20-years/",
+      "published": "2026-09-26T22:43:01+00:00"
     },
     {
-      "title": "Is Super Micro Computer a Buy?",
+      "title": "This Nuclear Stock Could Make Patient Investors Rich",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/25/is-super-micro-computer-a-buy/",
-      "published": "2026-09-25T23:20:00+00:00"
+      "url": "https://www.fool.com/investing/2026/09/26/this-nuclear-stock-could-make-patient-investors-ri/",
+      "published": "2026-09-26T22:25:00+00:00"
     },
     {
-      "title": "Prediction: Here's What a $10,000 Investment in Dutch Bros (BROS) Stock Could Be Worth by 2029",
+      "title": "The Pentagon Is Buying eVTOLs. Here's Which Stock Wins the Defense Money.",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/25/prediction-10000-investment-dutch-bros-2029/",
-      "published": "2026-09-25T22:50:00+00:00"
+      "url": "https://www.fool.com/investing/2026/09/26/the-pentagon-is-buying-evtols-heres-which-stock-wi/",
+      "published": "2026-09-26T21:50:00+00:00"
     },
     {
-      "title": "SK Hynix\u2019s Solidigm Weighs IPO That Could Raise $15 Billion, Report Says",
-      "publisher": "Barrons.com",
-      "url": "https://www.barrons.com/articles/sk-hynix-solidigm-ipo-stock-eaf639af?siteid=yhoof2&yptr=yahoo",
-      "published": "2026-09-25T22:44:00+00:00"
+      "title": "Prediction: Here's What a $10,000 Investment in Costco (COST) Stock Could Be Worth in 5 Years",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/09/26/prediction-what-a-10000-investment-in-costco-stock/",
+      "published": "2026-09-26T21:25:00+00:00"
     },
     {
-      "title": "BP Walked Away From a Potential $4.5 Billion Bet on Devon Energy's Eagle Ford Shale. Here's What It Means for BP and DVN Stock.",
+      "title": "Energy Transfer vs. MPLX: Which Pipeline Giant's High-Yield Dividend Is Actually Safer?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/25/bp-walked-away-from-a-potential-usd4-5-billion-bet-on-devon-energy-s-eagle-ford-shale-here-s-what-it-means-for-bp-and-dvn-stock/",
-      "published": "2026-09-25T22:38:01+00:00"
+      "url": "https://www.fool.com/investing/2026/09/26/energy-transfer-vs-mplx-which-pipeline-giants-high/",
+      "published": "2026-09-26T20:25:00+00:00"
     },
     {
-      "title": "Is It Too Late to Buy IREN Stock After Its Monster Run?",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/25/is-it-too-late-to-buy-iren-stock-after-its-monster/",
-      "published": "2026-09-25T22:25:00+00:00"
+      "title": "UBS makes bold call as CoreWeave faces $35 billion problem",
+      "publisher": "TheStreet",
+      "url": "https://www.thestreet.com/investing/stocks/coreweave-buy-rating-120-price-target-ubs",
+      "published": "2026-09-26T20:23:00+00:00"
     },
     {
-      "title": "Why Akamai Stock Is Up Today",
+      "title": "2 Healthcare Stocks That Just Delivered Great News for Investors",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/25/why-akamai-stock-is-up-today/",
-      "published": "2026-09-25T22:02:32+00:00"
+      "url": "https://www.fool.com/investing/2026/09/26/2-healthcare-stocks-that-just-delivered-great-news-for-investors/",
+      "published": "2026-09-26T20:21:01+00:00"
     }
   ],
-  "generated_at": "2026-09-26T00:19:12.674312+00:00"
+  "generated_at": "2026-09-27T00:04:46.568599+00:00"
 }
