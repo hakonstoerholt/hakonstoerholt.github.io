@@ -2036,7 +2036,7 @@
       "h": 226.94000244140625,
       "l": 223.13290405273438,
       "c": 225.07000732421875,
-      "v": 87931936
+      "v": 89947712
     }
   ],
   "earnings": {
@@ -2044,68 +2044,68 @@
     "history": []
   },
   "implied_move": {
-    "expiry": "2026-09-28",
-    "move_pct": 1.47731811960634,
-    "straddle": 3.325
+    "expiry": "2026-09-30",
+    "move_pct": 2.501443913799607,
+    "straddle": 5.63
   },
   "options": {
-    "expiry": "2026-09-28",
+    "expiry": "2026-09-30",
     "atm_strike": 225.0,
-    "call_iv": 0.2534254345703125,
-    "put_iv": 0.25049577636718745,
-    "atm_iv": 0.25196060546875,
-    "days_to_expiry": 1
+    "call_iv": 0.35205726074218746,
+    "put_iv": 0.34229173339843744,
+    "atm_iv": 0.34717449707031245,
+    "days_to_expiry": 2
   },
   "consensus": null,
   "news": [
     {
-      "title": "This Little-Known Cryptocurrency Is Up 217% for the Year. But Is It a Buy?",
+      "title": "Here's How Many Shares of Coca-Cola You'd Need for $10,000 in Yearly Dividends",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/26/this-little-known-cryptocurrency-is-up-217/",
-      "published": "2026-09-26T23:39:00+00:00"
+      "url": "https://www.fool.com/investing/2026/09/27/how-many-coca-cola-shares-10000-yearly-dividends/",
+      "published": "2026-09-27T22:24:00+00:00"
     },
     {
-      "title": "I'd Put $10,000 Into These 3 Vanguard Funds and Not Touch It for 20 Years",
+      "title": "1 Top Warren Buffett Stock Trading 21% Below Its All-Time High That Can Double a $1,000 Investment in 5 Years",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/26/i-d-put-usd10-000-into-these-3-vanguard-funds-and-not-touch-it-for-20-years/",
-      "published": "2026-09-26T22:43:01+00:00"
+      "url": "https://www.fool.com/investing/2026/09/27/top-warren-buffett-stock-double-1000-5-years/",
+      "published": "2026-09-27T21:50:00+00:00"
     },
     {
-      "title": "This Nuclear Stock Could Make Patient Investors Rich",
+      "title": "I'd Buy Amazon Stock While It Sits 12% Below Its Record",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/26/this-nuclear-stock-could-make-patient-investors-ri/",
-      "published": "2026-09-26T22:25:00+00:00"
+      "url": "https://www.fool.com/investing/2026/09/27/i-d-buy-amazon-stock-while-it-sits-12-below-its-record/",
+      "published": "2026-09-27T21:34:01+00:00"
     },
     {
-      "title": "The Pentagon Is Buying eVTOLs. Here's Which Stock Wins the Defense Money.",
+      "title": "3 Simple Reasons I'd Rather Own Nvidia Than SpaceX",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/26/the-pentagon-is-buying-evtols-heres-which-stock-wi/",
-      "published": "2026-09-26T21:50:00+00:00"
+      "url": "https://www.fool.com/investing/2026/09/27/3-simple-reasons-i-d-rather-own-nvidia-than-spacex/",
+      "published": "2026-09-27T21:27:01+00:00"
     },
     {
-      "title": "Prediction: Here's What a $10,000 Investment in Costco (COST) Stock Could Be Worth in 5 Years",
+      "title": "SpaceX vs. Tesla: Which Will Be the Largest Company at the End of 2027?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/26/prediction-what-a-10000-investment-in-costco-stock/",
-      "published": "2026-09-26T21:25:00+00:00"
+      "url": "https://www.fool.com/investing/2026/09/27/spacex-vs-tesla-which-will-be-the-largest-company/",
+      "published": "2026-09-27T21:05:00+00:00"
     },
     {
-      "title": "Energy Transfer vs. MPLX: Which Pipeline Giant's High-Yield Dividend Is Actually Safer?",
+      "title": "GE Aerospace Is Spending $12 Billion on an Acquisition. Is It Still the Best Aerospace Stock to Own?",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/26/energy-transfer-vs-mplx-which-pipeline-giants-high/",
-      "published": "2026-09-26T20:25:00+00:00"
+      "url": "https://www.fool.com/investing/2026/09/27/ge-aerospace-is-spending-12-billion-on-an-acquisit/",
+      "published": "2026-09-27T20:50:00+00:00"
     },
     {
-      "title": "UBS makes bold call as CoreWeave faces $35 billion problem",
-      "publisher": "TheStreet",
-      "url": "https://www.thestreet.com/investing/stocks/coreweave-buy-rating-120-price-target-ubs",
-      "published": "2026-09-26T20:23:00+00:00"
+      "title": "Why Meta Platforms Stock Jumped 13% This Week",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/09/27/why-meta-platforms-stock-jumped-this-week/",
+      "published": "2026-09-27T20:45:55+00:00"
     },
     {
-      "title": "2 Healthcare Stocks That Just Delivered Great News for Investors",
+      "title": "Prediction: Here's What a $10,000 Investment in Dutch Bros Stock Could be Worth By 2029",
       "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/26/2-healthcare-stocks-that-just-delivered-great-news-for-investors/",
-      "published": "2026-09-26T20:21:01+00:00"
+      "url": "https://www.fool.com/investing/2026/09/27/predict-10k-investment-dutch-bros-stock-2029/",
+      "published": "2026-09-27T20:25:00+00:00"
     }
   ],
-  "generated_at": "2026-09-27T00:04:46.568599+00:00"
+  "generated_at": "2026-09-28T00:09:14.821692+00:00"
 }
