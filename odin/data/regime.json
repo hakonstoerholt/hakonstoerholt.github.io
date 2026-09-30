@@ -1,33 +1,33 @@
 {
-  "as_of": "2026-09-28",
+  "as_of": "2026-09-29",
   "model_version": "heimdall-3.2",
   "regime": "Calm",
   "alarm": false,
   "frag_tier": "Low",
   "degraded": false,
-  "headline": "Calm \u2014 no stress alarm. The macro / yield-curve picture leads at +0.2\u03c3, and the topology trigger sits 1.7\u03c3 away. Fragility Low; full exposure (1\u00d7).",
+  "headline": "Calm \u2014 no stress alarm. The macro / yield-curve picture leads at +0.1\u03c3, and the topology trigger sits 1.7\u03c3 away. Fragility Low; full exposure (1\u00d7).",
   "scores": {
-    "heimdall_max": 0.16065474696001186,
-    "heimdall_mean": -0.5731663623554728,
-    "p_turbulent": 0.0011052662495120479,
-    "h0": 0.1139005768345668,
+    "heimdall_max": 0.13234753119170478,
+    "heimdall_mean": -0.5770591932167739,
+    "p_turbulent": 0.0011040190832970244,
+    "h0": 0.1133365462301299,
     "h1": 0.0047955373302102,
-    "h1_z": -0.03263888615723175,
+    "h1_z": -0.032637116713662775,
     "sub_topology_sticky": 0.3687994286977094
   },
   "sub_z": {
-    "vol": -0.4066021839697574,
-    "credit": -1.6610688071011055,
-    "macro": 0.16065474696001186,
-    "trend": -0.9261766815092816,
-    "topology": -0.03263888615723175
+    "vol": -0.3917213788531246,
+    "credit": -1.669607081852903,
+    "macro": 0.13234753119170478,
+    "trend": -0.9236779198558838,
+    "topology": -0.032637116713662775
   },
   "thresholds": {
     "alarm_sticky_topo": 2.1
   },
   "signal_quality": {
     "hit_rate": 0.6923076923076923,
-    "false_fire_rate": 0.1630363497879722,
+    "false_fire_rate": 0.1630129821013178,
     "event_count": 13,
     "years_observed": 28
   },
@@ -70,12 +70,6 @@
     }
   },
   "history": [
-    {
-      "date": "2023-09-29",
-      "alarm": false,
-      "sticky": 0.855288731848485,
-      "spx": 4288.0498046875
-    },
     {
       "date": "2023-10-02",
       "alarm": false,
@@ -4575,73 +4569,79 @@
       "alarm": false,
       "sticky": 0.16065474696001186,
       "spx": 7683.68994140625
+    },
+    {
+      "date": "2026-09-29",
+      "alarm": false,
+      "sticky": 0.13234753119170478,
+      "spx": 7670.83984375
     }
   ],
   "freshness": {
-    "as_of": "2026-09-29",
+    "as_of": "2026-09-30",
     "per_input": {
       "spx": {
-        "last": "2026-09-28",
+        "last": "2026-09-29",
         "age_days": 1,
         "stale": false,
         "missing": false
       },
       "vix": {
-        "last": "2026-09-28",
+        "last": "2026-09-29",
         "age_days": 1,
         "stale": false,
         "missing": false
       },
       "vix3m": {
-        "last": "2026-09-28",
+        "last": "2026-09-29",
         "age_days": 1,
         "stale": false,
         "missing": false
       },
       "hyg": {
         "last": "2026-09-28",
-        "age_days": 1,
+        "age_days": 2,
         "stale": false,
         "missing": false
       },
       "lqd": {
         "last": "2026-09-28",
-        "age_days": 1,
+        "age_days": 2,
         "stale": false,
         "missing": false
       },
       "baa10y": {
-        "last": "2026-09-25",
-        "age_days": 4,
+        "last": "2026-09-28",
+        "age_days": 2,
         "stale": false,
         "missing": false
       },
       "aaa10y": {
-        "last": "2026-09-25",
-        "age_days": 4,
+        "last": "2026-09-28",
+        "age_days": 2,
         "stale": false,
         "missing": false
       },
       "t10y2y": {
-        "last": "2026-09-28",
+        "last": "2026-09-29",
         "age_days": 1,
         "stale": false,
         "missing": false
       },
       "nfci": {
         "last": "2026-09-18",
-        "age_days": 11,
+        "age_days": 12,
         "stale": false,
         "missing": false
       },
       "sub_topology": {
-        "last": "2026-09-28",
+        "last": "2026-09-29",
         "age_days": 1,
         "stale": false,
         "missing": false
       },
       "p_turbulent": {
-        "last": "2026-09-28",
+        "last": "2026-09-29",
         "age_days": 1,
         "stale": false,
         "missing": false
@@ -4649,5 +4649,5 @@
     },
     "degraded": false
   },
-  "generated_at": "2026-09-29T01:25:02.487174+00:00"
+  "generated_at": "2026-09-30T00:59:01.056672+00:00"
 }
