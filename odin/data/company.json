@@ -1,12 +1,12 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-09-29",
+  "as_of": "2026-09-30",
   "price": {
-    "last": 227.2100067138672,
-    "prev_close": 228.86000061035156,
-    "change_pct": -0.7209621131189281,
-    "ytd_pct": 20.312416929086584,
+    "last": 228.3800048828125,
+    "prev_close": 227.2100067138672,
+    "change_pct": 0.514941302923666,
+    "ytd_pct": 20.93195525640017,
     "high_52w": 236.5399932861328,
     "low_52w": 164.27000427246094,
     "currency": "USD"
@@ -14,22 +14,14 @@
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 5486440087552.0,
-    "pe": 28.688131,
-    "forward_pe": 14.488005,
+    "market_cap": 5514691870720.0,
+    "pe": 28.872314,
+    "forward_pe": 14.562609,
     "dividend_yield": 0.44,
     "beta": 2.217,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "candles": [
-    {
-      "t": "2025-09-29",
-      "o": 180.42999267578125,
-      "h": 184.0,
-      "l": 180.32000732421875,
-      "c": 181.85000610351562,
-      "v": 193063500
-    },
     {
       "t": "2025-09-30",
       "o": 182.0800018310547,
@@ -2037,6 +2029,14 @@
       "l": 227.02499389648438,
       "c": 227.2100067138672,
       "v": 98224511
+    },
+    {
+      "t": "2026-09-30",
+      "o": 229.0,
+      "h": 232.3699951171875,
+      "l": 228.1699981689453,
+      "c": 228.3800048828125,
+      "v": 118683065
     }
   ],
   "earnings": {
@@ -2045,67 +2045,67 @@
   },
   "implied_move": {
     "expiry": "2026-10-02",
-    "move_pct": 2.4778838227358704,
-    "straddle": 5.63
+    "move_pct": 2.1346001820524894,
+    "straddle": 4.875
   },
   "options": {
     "expiry": "2026-10-02",
     "atm_strike": 227.5,
-    "call_iv": 0.3566958862304687,
-    "put_iv": 0.3298406860351562,
-    "atm_iv": 0.34326828613281246,
-    "days_to_expiry": 2
+    "call_iv": 0.37525038818359374,
+    "put_iv": 0.36035795898437495,
+    "atm_iv": 0.3678041735839843,
+    "days_to_expiry": 1
   },
   "consensus": null,
   "news": [
     {
-      "title": "Samsung, affiliates to invest $1 billion in AI infrastructure firm Helix",
-      "publisher": "Investing.com",
-      "url": "https://finance.yahoo.com/technology/ai/articles/samsung-affiliates-invest-1-billion-005118034.html",
-      "published": "2026-09-29T00:51:18+00:00"
+      "title": "Forget Waiting Three Months for SPY\u2019s Dividend. Invesco\u2019s High-Dividend Fund Pays Every Month",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/etf/2026/09/30/forget-waiting-three-months-for-spys-dividend-invescos-high-dividend-fund-pays-every-month/",
+      "published": "2026-09-30T23:06:29+00:00"
     },
     {
-      "title": "Dow Jones Futures: Trump Sparks Stock Market Losses; Elon Musk-Led SpaceX, Tesla In Focus",
+      "title": "Tech CEOs Privately Questioned Amodei for Sounding AI Alarm Bells",
+      "publisher": "The Wall Street Journal",
+      "url": "https://www.wsj.com/tech/ai/tech-ceos-privately-questioned-amodei-for-sounding-ai-alarm-bells-aaa47df3?siteid=yhoof2&yptr=yahoo",
+      "published": "2026-09-30T22:38:00+00:00"
+    },
+    {
+      "title": "In AI Race, Software Is Now Winning Alongside Chips",
+      "publisher": "Barrons.com",
+      "url": "https://www.barrons.com/articles/ai-agents-meta-muse-stocks-chips-cb06386a?siteid=yhoof2&yptr=yahoo",
+      "published": "2026-09-30T22:05:00+00:00"
+    },
+    {
+      "title": "Stock Market Today: Dow Knocked Down, Nasdaq Pares Gain; Micron Holds Firm After Earnings Soar",
       "publisher": "Investor's Business Daily",
-      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-trump-stock-market-losses-elon-musk-spacex-tesla/?src=A00220&yptr=yahoo",
-      "published": "2026-09-29T00:50:55+00:00"
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-inflation-data-micron-earnings-mu-stock/?src=A00220&yptr=yahoo",
+      "published": "2026-09-30T20:54:22+00:00"
     },
     {
-      "title": "Palo Alto Networks (PANW) Stock Trades Up, Here Is Why",
-      "publisher": "StockStory",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/palo-alto-networks-panw-stock-004636834.html",
-      "published": "2026-09-29T00:46:36+00:00"
+      "title": "What Changed In Marvell's Story?",
+      "publisher": "Trefis",
+      "url": "https://www.trefis.com/articles/616923/what-changed-in-marvells-story/2026-09-30",
+      "published": "2026-09-30T20:52:26+00:00"
     },
     {
-      "title": "Prediction: Rocket Lab Stock Trades Above $100 Again Before 2029",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/28/prediction-rocket-lab-stock-trades-above-usd100-again-before-2029/",
-      "published": "2026-09-29T00:46:01+00:00"
+      "title": "Nvidia, AMD Collaborator Teases Breakout To Record High. These Clues Bode Well.",
+      "publisher": "Investor's Business Daily",
+      "url": "https://www.investors.com/research/breakout-stocks-technical-analysis/semtech-stock-teases-record-high-nvidia-amd-enter-buy-range/?src=A00220&yptr=yahoo",
+      "published": "2026-09-30T20:19:14+00:00"
     },
     {
-      "title": "Conagra Brands's Next Earnings Report on Sep. 30 2026 Could Send the Stock Soaring. Here's Why.",
-      "publisher": "Motley Fool",
-      "url": "https://www.fool.com/investing/2026/09/28/conagra-brands-s-next-earnings-report-on-sep-30-2026-could-send-the-stock-soaring-here-s-why/",
-      "published": "2026-09-29T00:33:25+00:00"
+      "title": "FTC Reportedly Probes OpenAI and Anthropic as Trump Backs AI Self-Regulation",
+      "publisher": "Barrons.com",
+      "url": "https://www.barrons.com/articles/ftc-openai-anthropic-ai-safety-investigation-8eb4be96?siteid=yhoof2&yptr=yahoo",
+      "published": "2026-09-30T19:47:00+00:00"
     },
     {
-      "title": "What Nvidia's $150 billion stock buyback means for shareholders and potential investors",
-      "publisher": "Yahoo Personal Finance",
-      "url": "https://finance.yahoo.com/personal-finance/investing/article/what-nvidias-150-billion-stock-buyback-means-for-shareholders-and-potential-investors-211828747.html",
-      "published": "2026-09-28T21:18:28+00:00"
-    },
-    {
-      "title": "The impact that AI will have on advertising, according to Sir Martin Sorrell",
-      "publisher": "Yahoo Finance Video",
-      "url": "https://finance.yahoo.com/video/impact-ai-advertising-according-sir-144000439.html",
-      "published": "2026-09-28T14:40:00+00:00"
-    },
-    {
-      "title": "'So much cash': Nvidia stock jumps after largest share buyback ever",
-      "publisher": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/markets/article/so-much-cash-nvidia-stock-jumps-after-largest-share-buyback-ever-134349202.html",
-      "published": "2026-09-28T13:43:49+00:00"
+      "title": "Is Cerebras' Next Big Thing Already Here?",
+      "publisher": "Trefis",
+      "url": "https://finance.yahoo.com/technology/ai/articles/cerebras-next-big-thing-already-191532128.html",
+      "published": "2026-09-30T19:15:32+00:00"
     }
   ],
-  "generated_at": "2026-09-30T00:59:01.484415+00:00"
+  "generated_at": "2026-10-01T01:02:40.280476+00:00"
 }
