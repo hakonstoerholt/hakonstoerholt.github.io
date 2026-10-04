@@ -15,7 +15,7 @@
     "sector": "Technology",
     "industry": "Semiconductors",
     "market_cap": 5649190617088.0,
-    "pe": 29.53914,
+    "pe": 29.576487,
     "forward_pe": 14.905945,
     "dividend_yield": 0.43,
     "beta": 2.217,
@@ -2051,10 +2051,10 @@
   "options": {
     "expiry": "2026-10-05",
     "atm_strike": 235.0,
-    "call_iv": 0.19117019775390626,
-    "put_iv": 0.19605296142578127,
-    "atm_iv": 0.19361157958984376,
-    "days_to_expiry": 2
+    "call_iv": 0.23413851806640623,
+    "put_iv": 0.24024197265624997,
+    "atm_iv": 0.2371902453613281,
+    "days_to_expiry": 1
   },
   "consensus": null,
   "news": [
@@ -2107,5 +2107,5 @@
       "published": "2026-09-30T19:15:32+00:00"
     }
   ],
-  "generated_at": "2026-10-03T00:58:48.303131+00:00"
+  "generated_at": "2026-10-04T00:18:18.954182+00:00"
 }
