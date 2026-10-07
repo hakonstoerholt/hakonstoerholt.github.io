@@ -27,6 +27,28 @@
             display: inline-block; width: 14px; height: 2px;
             vertical-align: middle; margin-right: 6px;
         }
+        .cass-review { width: 100%; border-collapse: collapse; }
+        .cass-review th, .cass-review td {
+            padding: 0.7rem 0.6rem; border-bottom: 1px solid var(--border);
+            text-align: right; vertical-align: top;
+        }
+        .cass-review th:first-child, .cass-review td:first-child { text-align: left; }
+        .cass-review tr:last-child td { border-bottom: none; }
+        .cass-review th {
+            font-size: 0.6875rem; text-transform: uppercase; letter-spacing: 0.05em;
+            color: var(--text-muted); font-weight: 500;
+        }
+        .cass-review td { font-family: 'Fira Code', monospace; font-size: 0.95rem; font-weight: 500; }
+        .cass-review td.txt { font-family: inherit; font-size: 0.875rem; }
+        .cass-review .muted { color: var(--text-muted); font-size: 0.75rem; font-weight: 400; margin-top: 2px; }
+        .cass-review .hit { color: var(--success); }
+        @media (max-width: 600px) {
+            #rv-card { padding: 1rem 0.75rem; }
+            .cass-review th, .cass-review td { padding: 0.6rem 0.4rem; }
+            .cass-review td { font-size: 0.875rem; white-space: nowrap; }
+            .cass-review td.txt { white-space: normal; }
+            .cass-review th:last-child span { display: none; }
+        }
     </style>
 </head>
 <body>
@@ -67,6 +89,10 @@
 
     <section class="section">
         <div class="container">
+            <div id="review" hidden>
+                <h2 class="section-title" id="rv-title"></h2>
+                <div class="race-card animate-in" style="margin-top:1.5rem;margin-bottom:4rem" id="rv-card"></div>
+            </div>
             <h2 class="section-title" id="fc-title">Loading…</h2>
             <p class="section-subtitle">Updated <span id="updated">…</span></p>
             <div id="cards"></div>
@@ -126,6 +152,7 @@
                 document.getElementById('updated').textContent = d.updated;
                 const fcMonth = d.targets.prisindex.forecast.m;
                 document.getElementById('fc-title').textContent = monthName(fcMonth) + ' forecast';
+                review(d);
                 const host = document.getElementById('cards');
                 for (const key of ['prisindex', 'liggetid', 'volum']) {
                     host.appendChild(card(d.targets[key]));
@@ -139,6 +166,34 @@
 
         function fmt(v, dec) {
             return v.toLocaleString('en-US', { minimumFractionDigits: dec, maximumFractionDigits: dec });
+        }
+
+        function pct(p) {
+            return (p > 0 ? '+' : '') + p.toFixed(1) + '%';
+        }
+
+        function review(d) {
+            const ts = ['prisindex', 'liggetid', 'volum'].map(k => d.targets[k]);
+            if (ts.some(t => !t.prev_forecast || t.history.length < 2)) return;
+            const h0 = ts[0].history;
+            document.getElementById('rv-title').textContent = monthName(h0[h0.length - 1].m) + ' outcome';
+            const rows = ts.map(t => {
+                const h = t.history, a = h[h.length - 1].v, p = t.prev_forecast;
+                const apct = 100 * (a / h[h.length - 2].v - 1);
+                const hit = Math.sign(p.pct) === Math.sign(apct);
+                return `<tr>
+                    <td class="txt">${t.label}</td>
+                    <td>${fmt(p.v, t.dec)}<div class="muted">${pct(p.pct)}</div></td>
+                    <td>${fmt(a, t.dec)}<div class="muted">${pct(apct)}</div></td>
+                    <td class="${hit ? 'hit' : ''}">${hit ? '✓' : '✗'}</td>
+                </tr>`;
+            });
+            document.getElementById('rv-card').innerHTML = `
+                <table class="cass-review">
+                    <thead><tr><th></th><th>Predicted</th><th>Actual</th><th><span>Direction</span></th></tr></thead>
+                    <tbody>${rows.join('')}</tbody>
+                </table>`;
+            document.getElementById('review').hidden = false;
         }
 
         function card(t) {
