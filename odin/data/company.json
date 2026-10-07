@@ -1,23 +1,23 @@
 {
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
-  "as_of": "2026-10-05",
+  "as_of": "2026-10-06",
   "price": {
-    "last": 238.89999389648438,
-    "prev_close": 233.9499969482422,
-    "change_pct": 2.115835440398528,
-    "ytd_pct": 26.502507903301044,
-    "high_52w": 240.10000610351562,
+    "last": 239.24000549316406,
+    "prev_close": 238.89999389648438,
+    "change_pct": 0.1423238197431731,
+    "ytd_pct": 26.682551104619947,
+    "high_52w": 243.3699951171875,
     "low_52w": 164.27000427246094,
     "currency": "USD"
   },
   "snapshot": {
     "sector": "Technology",
     "industry": "Semiconductors",
-    "market_cap": 5768717795328.0,
-    "pe": 30.202276,
-    "forward_pe": 15.12099,
-    "dividend_yield": 0.43,
+    "market_cap": 5776928145408.0,
+    "pe": 30.24526,
+    "forward_pe": 15.14251,
+    "dividend_yield": 0.42,
     "beta": 2.216,
     "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
@@ -2029,6 +2029,14 @@
       "l": 235.14999389648438,
       "c": 238.89999389648438,
       "v": 126639900
+    },
+    {
+      "t": "2026-10-06",
+      "o": 242.10000610351562,
+      "h": 243.3699951171875,
+      "l": 238.92999267578125,
+      "c": 239.24000549316406,
+      "v": 100868800
     }
   ],
   "earnings": {
@@ -2036,17 +2044,17 @@
     "history": []
   },
   "implied_move": {
-    "expiry": "2026-10-07",
-    "move_pct": 1.787358773165225,
-    "straddle": 4.2700000000000005
+    "expiry": "2026-10-09",
+    "move_pct": 2.027252921183611,
+    "straddle": 4.85
   },
   "options": {
-    "expiry": "2026-10-07",
+    "expiry": "2026-10-09",
     "atm_strike": 240.0,
-    "call_iv": 0.3149482568359374,
-    "put_iv": 0.28321029296874994,
-    "atm_iv": 0.29907927490234365,
-    "days_to_expiry": 1
+    "call_iv": 0.2863840893554687,
+    "put_iv": 0.27466545654296876,
+    "atm_iv": 0.28052477294921874,
+    "days_to_expiry": 2
   },
   "consensus": null,
   "news": [
@@ -2099,5 +2107,5 @@
       "published": "2026-09-30T19:15:32+00:00"
     }
   ],
-  "generated_at": "2026-10-06T02:03:36.826373+00:00"
+  "generated_at": "2026-10-07T01:08:47.040296+00:00"
 }
