@@ -367,6 +367,7 @@
     "remaining_races": 7,
     "remaining_sprints": 1,
     "last_updated": "2026-10-07",
+    "model": "10,000-sample Monte Carlo over the remaining rounds, season form blended with latest race-trim pace",
     "predictions": [
       {
         "driver": "Kimi Antonelli",
