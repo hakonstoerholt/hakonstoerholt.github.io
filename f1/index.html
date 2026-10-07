@@ -172,6 +172,10 @@
         // to "Grand Prix" vs "Sprint" and minor naming changes from the nightly
         // refresh. Circuits without a keyword (e.g. Madrid) get no map.
         const CIRCUIT_SLUGS = [
+            // Location keys first: in 2026 the Spanish GP moved to Madrid and the Bahrain GP
+            // ran at Sepang, so the race name alone would pick the wrong outline. A slug with
+            // no SVG (madrid, sepang) simply shows no map.
+            ['kuala lumpur', 'sepang'], ['madrid', 'madrid'], ['barcelona', 'catalunya'],
             ['australian', 'melbourne'], ['chinese', 'shanghai'], ['japanese', 'suzuka'],
             ['bahrain', 'bahrain'], ['saudi', 'jeddah'], ['miami', 'miami'],
             ['emilia', 'imola'], ['monaco', 'monaco'], ['canadian', 'montreal'],
@@ -183,8 +187,8 @@
             ['qatar', 'lusail'], ['abu dhabi', 'yasmarina'],
         ];
 
-        function circuitSlug(raceName) {
-            const n = (raceName || '').toLowerCase();
+        function circuitSlug(raceName, circuitLabel) {
+            const n = `${circuitLabel || ''} ${raceName || ''}`.toLowerCase();
             const hit = CIRCUIT_SLUGS.find(([kw]) => n.includes(kw));
             return hit ? hit[1] : null;
         }
@@ -196,7 +200,7 @@
             const caption = document.getElementById('circuit-map-caption');
             if (!mount) return;
             const clear = () => { mount.innerHTML = ''; if (caption) caption.textContent = ''; };
-            const slug = circuitSlug(raceName);
+            const slug = circuitSlug(raceName, circuitLabel);
             if (!slug) { clear(); return; }
             try {
                 const res = await fetch(`/f1/assets/circuits/${slug}.svg`);
