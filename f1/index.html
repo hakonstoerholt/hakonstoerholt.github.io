@@ -31,6 +31,8 @@
                     <li><a href="/#skills" class="nav-link">Skills</a></li>
                     <li><a href="/#experience" class="nav-link">Experience</a></li>
                     <li><a href="/odin/" class="nav-link">Odin</a></li>
+                    <li><a href="/cassandra/" class="nav-link">Cassandra</a></li>
+                    <li><a href="/sisyphus/" class="nav-link">Sisyphus</a></li>
                     <li><a href="/f1/" class="nav-link active">F1</a></li>
                 </ul>
             </nav>
@@ -173,8 +175,7 @@
         // refresh. Circuits without a keyword (e.g. Madrid) get no map.
         const CIRCUIT_SLUGS = [
             // Location keys first: in 2026 the Spanish GP moved to Madrid and the Bahrain GP
-            // ran at Sepang, so the race name alone would pick the wrong outline. A slug with
-            // no SVG (madrid, sepang) simply shows no map.
+            // ran at Sepang, so the race name alone would pick the wrong outline.
             ['kuala lumpur', 'sepang'], ['madrid', 'madrid'], ['barcelona', 'catalunya'],
             ['australian', 'melbourne'], ['chinese', 'shanghai'], ['japanese', 'suzuka'],
             ['bahrain', 'bahrain'], ['saudi', 'jeddah'], ['miami', 'miami'],
