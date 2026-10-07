@@ -3,279 +3,223 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odin · Terminal prototype</title>
-    <meta name="description" content="Odin — a Bloomberg-style quant terminal. Regime engine, factor research, news synthesis. Static prototype of the live tool.">
+    <title>Odin | Håkon J. Størholt</title>
+    <meta name="description" content="Odin — a keyboard-driven market terminal, built from scratch. A short film of the real app.">
     <meta name="author" content="Håkon Julius Størholt">
-
+    <meta name="theme-color" content="#0b0e13">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://hassium.no/odin/">
-    <meta property="og:title" content="Odin · Terminal prototype">
-    <meta property="og:description" content="A Bloomberg-style quant terminal. Regime engine, factor research, news synthesis.">
-
+    <meta property="og:title" content="Odin | Håkon J. Størholt">
+    <meta property="og:description" content="A keyboard-driven market terminal, built from scratch.">
+    <meta property="og:image" content="https://hassium.no/odin/media/film.jpg">
     <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Fira+Code:wght@400;500&family=Cormorant+Garamond:wght@500;600&family=Inter+Tight:wght@400;500&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/styles.css">
+    <style>
+        /* The page is the film's own backdrop: one flat navy (#0b0e13, the film's FILM_BG,
+           and the video is tagged sRGB so browsers show it as they show CSS), so the film has
+           no frame and simply sits in the room. Always dark, in both site themes; the site's
+           tokens are re-pointed here so the header and footer follow. */
+        body.odin-page {
+            --odin-bg: #0b0e13;
+            --odin-header: 61px;
+            --odin-chrome: 196px;
+            --white: #0d1117;
+            --off-white: #0d1117;
+            --light-grey: #131922;
+            --border: rgba(255, 255, 255, 0.07);
+            --border-hover: rgba(255, 255, 255, 0.14);
+            --text-primary: #ece6dd;
+            --text-secondary: #a9adb4;
+            --text-muted: #6f747c;
+            --accent: #e0915a;
+            background: var(--odin-bg);
+            color: var(--text-primary);
+        }
+        body.odin-page .header {
+            background: rgba(11, 14, 19, 0.82);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        }
+        body.odin-page #theme-toggle { display: none; }
+        body.odin-page .footer {
+            background: transparent;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        body.odin-page .footer p { color: #555b63; }
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=Cormorant+Garamond:wght@500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/odin/odin.css">
+        .odin-stage {
+            min-height: 100vh;
+            min-height: 100svh;
+            padding: calc(var(--odin-header) + 28px) 24px 32px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 26px;
+            text-align: center;
+        }
+        .odin-kicker {
+            font: 600 0.75rem/1 'JetBrains Mono', monospace;
+            letter-spacing: 0.24em;
+            text-transform: uppercase;
+            color: #e0915a;
+        }
+        .odin-title {
+            font: 600 clamp(2rem, 3.4vw, 2.9rem)/1.05 'Cormorant Garamond', serif;
+            color: #f2ece4;
+            margin: 0.7rem 0 0.55rem;
+            letter-spacing: -0.005em;
+        }
+        .odin-sub {
+            font: 400 1rem/1.5 'Inter Tight', sans-serif;
+            color: #a3a9b1;
+        }
+
+        /* The film: no border, no shadow; a light feather hides encoder noise at the edge. */
+        .odin-screen {
+            position: relative;
+            width: min(100%, 1760px, calc((100vh - var(--odin-header) - var(--odin-chrome)) * 16 / 9));
+            width: min(100%, 1760px, calc((100svh - var(--odin-header) - var(--odin-chrome)) * 16 / 9));
+            aspect-ratio: 16 / 9;
+            -webkit-mask-image:
+                linear-gradient(to right, transparent 0, #000 2.5%, #000 97.5%, transparent 100%),
+                linear-gradient(to bottom, transparent 0, #000 3%, #000 97%, transparent 100%);
+            -webkit-mask-composite: source-in;
+            mask-image:
+                linear-gradient(to right, transparent 0, #000 2.5%, #000 97.5%, transparent 100%),
+                linear-gradient(to bottom, transparent 0, #000 3%, #000 97%, transparent 100%);
+            mask-composite: intersect;
+        }
+        .odin-screen video { width: 100%; height: 100%; display: block; object-fit: cover; cursor: pointer; }
+
+        /* Minimal controls: appear on hover or focus, sit inside the unfeathered area. */
+        .odin-controls {
+            position: absolute;
+            right: 6%;
+            bottom: 8%;
+            display: flex;
+            gap: 6px;
+            opacity: 0;
+            transition: opacity 0.25s ease;
+        }
+        .odin-screen:hover .odin-controls, .odin-controls:focus-within { opacity: 1; }
+        .odin-controls button {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            background: rgba(8, 11, 15, 0.72);
+            color: #ece6dd;
+            cursor: pointer;
+            font-size: 0.8rem;
+            backdrop-filter: blur(6px);
+        }
+        .odin-controls button:hover { border-color: rgba(224, 145, 90, 0.7); color: #fff; }
+        @media (hover: none) { .odin-controls { opacity: 1; } }
+
+        @media (max-width: 700px) {
+            .odin-stage { padding: calc(var(--odin-header) + 28px) 12px 32px; gap: 22px; }
+            .odin-screen { width: 100%; }
+            .odin-controls { right: 7%; bottom: 10%; }
+            .odin-controls button { width: 32px; height: 32px; }
+        }
+    </style>
 </head>
 <body class="odin-page">
-    <div class="odin-app">
+    <div class="scroll-progress" id="scroll-progress"></div>
 
-        <!-- Top bar -->
-        <header class="odin-top">
-            <a class="brand" href="/odin/">
-                <span class="mark">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M12 2 L12 22 M5 9 L19 9 M5 15 L19 15"/>
-                    </svg>
-                </span>
-                <span class="brand-block">
-                    <span class="wordmark">ODIN<span class="dot">.</span></span>
-                    <span class="tag">terminal · prototype</span>
-                </span>
-            </a>
-
-            <div class="odin-cmd" aria-hidden="true">
-                <span class="rune">›</span>
-                <span class="ticker-chip">NVDA</span>
-                <span class="go">CO</span>
-                <input type="text" placeholder="ticker / panel / command  — read-only demo" disabled>
-                <span class="demo-note">demo · static</span>
-                <span class="kbd">⌘K</span>
+    <header class="header">
+        <div class="nav-container">
+            <a href="/" class="logo"><img src="/images/hjs-symbol.svg" alt="" class="logo-icon"><span class="logo-text">Håkon J. Størholt</span></a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="/#education" class="nav-link">Education</a></li>
+                    <li><a href="/#projects" class="nav-link">Projects</a></li>
+                    <li><a href="/#skills" class="nav-link">Skills</a></li>
+                    <li><a href="/#experience" class="nav-link">Experience</a></li>
+                    <li><a href="/odin/" class="nav-link active">Odin</a></li>
+                    <li><a href="/cassandra/" class="nav-link">Cassandra</a></li>
+                    <li><a href="/sisyphus/" class="nav-link">Sisyphus</a></li>
+                    <li><a href="/f1/" class="nav-link">F1</a></li>
+                </ul>
+            </nav>
+            <div class="nav-controls">
+                <button class="nav-btn" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode"><i class="fas fa-moon"></i></button>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
+        </div>
+    </header>
 
-            <div class="right">
-                <span class="chip"><span class="lbl">MKT</span><span id="market-state" class="v muted">—</span></span>
-                <span class="chip"><span class="lbl">UTC</span><span id="odin-clock">—</span></span>
-                <a class="back" href="/" title="Back to hassium.no">← hassium.no</a>
+    <main class="odin-stage">
+        <div>
+            <div class="odin-kicker">Odin</div>
+            <h1 class="odin-title">A market terminal, built from scratch</h1>
+            <p class="odin-sub">Keyboard-driven. Markets, regimes, research and an AI analyst on one screen.</p>
+        </div>
+        <div class="odin-screen">
+            <video id="film" src="media/film.mp4" poster="media/film.jpg" muted loop playsinline preload="metadata"
+                   aria-label="Odin — a short film of the terminal"></video>
+            <div class="odin-controls">
+                <button id="film-play" aria-label="Pause"><i class="fas fa-pause"></i></button>
+                <button id="film-full" aria-label="Full screen"><i class="fas fa-expand"></i></button>
             </div>
-        </header>
+        </div>
+    </main>
 
-        <!-- Nav strip -->
-        <nav class="odin-nav">
-            <a class="odin-nav-item active" href="/odin/">
-                <span class="rune">⌂</span>
-                <span>Home</span>
-                <span class="code">HOME</span>
-            </a>
-            <a class="odin-nav-item" href="/odin/regime/">
-                <span class="rune">∿</span>
-                <span>Regime</span>
-                <span class="code">REG</span>
-            </a>
-            <a class="odin-nav-item" href="/odin/company/">
-                <span class="rune">◊</span>
-                <span>Company</span>
-                <span class="code">CO</span>
-            </a>
-            <span class="odin-nav-item disabled">
-                <span class="rune">∑</span>
-                <span>Backtest</span>
-                <span class="code">BT</span>
-            </span>
-            <span class="odin-nav-item disabled">
-                <span class="rune">⌬</span>
-                <span>News</span>
-                <span class="code">MUN</span>
-            </span>
-            <span class="odin-nav-item disabled">
-                <span class="rune">◐</span>
-                <span>Portfolio</span>
-                <span class="code">MJD</span>
-            </span>
-            <span class="odin-nav-spacer"></span>
-            <span class="odin-nav-end">
-                <span>v3.2</span>
-                <span class="sep">·</span>
-                <span>5L stress engine</span>
-            </span>
-        </nav>
-
-        <!-- Main -->
-        <main class="odin-main">
-            <div class="panel-h">
-                <div class="title">
-                    <span class="display">Home</span>
-                    <span class="sub">HOME · synthesis layer</span>
-                </div>
-                <div class="actions">
-                    <a class="act" href="/odin/regime/">Open REG →</a>
-                    <a class="act" href="/odin/company/">Open CO →</a>
-                </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="https://github.com/hakonstoerholt" class="footer-link" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/hakonstoerholt" class="footer-link" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:hakonstoerholt@gmail.com" class="footer-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
             </div>
+            <p>&copy; 2026 Håkon Julius Størholt</p>
+        </div>
+    </footer>
 
-            <section class="home-hero">
-                <div class="home-orb-wrap" id="home-orb">
-                    <div class="orb orb--unknown"><div class="orb-core"></div></div>
-                    <div class="orb-regime" id="home-regime">—</div>
-                </div>
-
-                <div class="home-headline">
-                    <div class="lbl">Today's market regime</div>
-                    <div class="body" id="home-headline-body">Loading regime…</div>
-                </div>
-
-                <div class="home-subz" id="home-subz">
-                    <!-- filled by JS -->
-                </div>
-            </section>
-
-            <div class="branch">
-                <span class="rune">⌘</span>
-                <span class="label">Modules</span>
-                <span class="line"></span>
-                <span class="count">3 live · 3 pending</span>
-            </div>
-
-            <section class="home-spokes">
-                <a class="home-spoke" href="/odin/regime/">
-                    <span class="rune">∿</span>
-                    <span class="name">Heimdall · Regime</span>
-                    <span class="code">REG</span>
-                    <span class="blurb">5-layer stress engine — sticky topology alarm + cross-asset agreement. Daily SPX readout.</span>
-                </a>
-                <a class="home-spoke" href="/odin/company/">
-                    <span class="rune">◊</span>
-                    <span class="name">Company · NVDA</span>
-                    <span class="code">CO</span>
-                    <span class="blurb">Single-ticker deep dive: chart, fundamentals, options/IV, earnings, analyst consensus, news.</span>
-                </a>
-                <span class="home-spoke disabled">
-                    <span class="rune">∑</span>
-                    <span class="name">Mimir · Factors</span>
-                    <span class="code">BT</span>
-                    <span class="blurb">Quant kernel — factor → universe rank → backtest → risk decomposition. (Demo locked.)</span>
-                </span>
-                <span class="home-spoke disabled">
-                    <span class="rune">⌬</span>
-                    <span class="name">Muninn · News</span>
-                    <span class="code">MUN</span>
-                    <span class="blurb">Per-ticker news archive accreting daily. Synthesis layer for Huginn. (Demo locked.)</span>
-                </span>
-                <span class="home-spoke disabled">
-                    <span class="rune">◐</span>
-                    <span class="name">Mjǫðr · Portfolio</span>
-                    <span class="code">MJD</span>
-                    <span class="blurb">Live holdings, manual entry. P&amp;L vs cost basis. (Demo locked.)</span>
-                </span>
-                <span class="home-spoke disabled">
-                    <span class="rune">✦</span>
-                    <span class="name">Huginn · Agent</span>
-                    <span class="code">HGN</span>
-                    <span class="blurb">Anthropic-powered analyst that panels can call. "Explain this drawdown." (Demo locked.)</span>
-                </span>
-            </section>
-
-            <div class="branch">
-                <span class="rune">⌥</span>
-                <span class="label">Featured ticker · NVDA</span>
-                <span class="line"></span>
-                <a class="count" href="/odin/company/">CO →</a>
-            </div>
-
-            <section class="reg-strip" id="featured-strip">
-                <div class="cell"><span class="lbl">Last</span><span class="v" id="fz-last">—</span></div>
-                <div class="cell"><span class="lbl">Chg</span><span class="v" id="fz-chg">—</span></div>
-                <div class="cell"><span class="lbl">As of</span><span class="v" id="fz-asof">—</span></div>
-                <div class="cell"><span class="lbl">52W Hi</span><span class="v" id="fz-hi">—</span></div>
-                <div class="cell"><span class="lbl">52W Lo</span><span class="v" id="fz-lo">—</span></div>
-                <div class="cell"><span class="lbl">Sector</span><span class="v" id="fz-sec">—</span></div>
-            </section>
-
-            <div class="odin-foot">
-                Prototype — a small slice of the live <a href="/">Odin</a> terminal. Data refreshes nightly · <span id="footer-generated">—</span><br>
-                Source code is private; this site renders pre-computed JSON. <a href="/#projects">Back to projects →</a>
-            </div>
-        </main>
-
-        <!-- Status bar -->
-        <footer class="odin-status">
-            <div class="item"><span class="lbl">Engine</span><span class="v">heimdall-3.2</span></div>
-            <div class="item"><span class="lbl">Regime</span><span class="v muted" id="status-regime">—</span></div>
-            <div class="item"><span class="lbl">As of</span><span class="v" id="status-asof">—</span></div>
-            <div class="spacer"></div>
-            <div class="item"><span class="runes">ᚦ ᚱ ᛟ ᚹ ᛁ</span></div>
-            <div class="spacer"></div>
-            <div class="item"><span class="lbl">Mode</span><span class="v">static demo</span></div>
-        </footer>
-    </div>
-
-    <script src="/odin/odin.js"></script>
     <script>
-    (async function () {
-        try {
-            const data = await loadJSON("/odin/data/state.json");
-            const rgm = data.regime || {};
-            const co  = data.company || {};
+        document.addEventListener('DOMContentLoaded', function() {
+            // Keep the visitor's site theme for the other pages; this one is always dark.
+            const savedTheme = localStorage.getItem('hjs-theme') ||
+                (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', savedTheme);
 
-            // Orb + regime word
-            const orb = document.querySelector("#home-orb .orb");
-            const meta = regimeMeta(rgm.regime);
-            orb.className = "orb orb--" + meta.orb;
-            document.getElementById("home-regime").textContent = rgm.regime || "Unknown";
-            document.getElementById("home-headline-body").textContent =
-                rgm.headline || "Regime is initialising — check back after the next refresh.";
+            const toggle = document.querySelector('.mobile-menu-toggle');
+            const menu = document.querySelector('.nav-menu');
+            if (toggle) toggle.addEventListener('click', () => menu.classList.toggle('active'));
 
-            // Status bar
-            const sr = document.getElementById("status-regime");
-            sr.textContent = rgm.regime || "—";
-            sr.classList.remove("muted");
-            sr.classList.add(meta.tone);
-            document.getElementById("status-asof").textContent = rgm.as_of || "—";
+            const progress = document.getElementById('scroll-progress');
+            window.addEventListener('scroll', () => {
+                const h = document.documentElement;
+                const max = h.scrollHeight - h.clientHeight;
+                progress.style.width = (max > 0 ? h.scrollTop / max * 100 : 0) + '%';
+            });
 
-            // Featured ticker strip (NVDA)
-            document.getElementById("fz-last").textContent = co.last !== undefined && co.last !== null ? "$" + fmtNum(co.last, 2) : "—";
-            const chgEl = document.getElementById("fz-chg");
-            chgEl.textContent = fmtPct(co.change_pct);
-            chgEl.classList.add((co.change_pct ?? 0) >= 0 ? "calm" : "risk");
-            document.getElementById("fz-asof").textContent = co.as_of || "—";
+            const film = document.getElementById('film');
+            const playBtn = document.getElementById('film-play');
+            const setIcon = () => {
+                playBtn.innerHTML = film.paused ? '<i class="fas fa-play"></i>' : '<i class="fas fa-pause"></i>';
+                playBtn.setAttribute('aria-label', film.paused ? 'Play' : 'Pause');
+            };
+            const togglePlay = () => (film.paused ? film.play() : film.pause());
+            film.addEventListener('play', setIcon);
+            film.addEventListener('pause', setIcon);
+            film.addEventListener('click', togglePlay);
+            playBtn.addEventListener('click', togglePlay);
+            document.getElementById('film-full').addEventListener('click', () => {
+                if (film.requestFullscreen) film.requestFullscreen();
+                else if (film.webkitEnterFullscreen) film.webkitEnterFullscreen();
+            });
 
-            // Pull a couple more featured stats from the company bundle if available.
-            try {
-                const full = await loadJSON("/odin/data/company.json");
-                document.getElementById("fz-hi").textContent = full.price ? "$" + fmtNum(full.price.high_52w, 2) : "—";
-                document.getElementById("fz-lo").textContent = full.price ? "$" + fmtNum(full.price.low_52w, 2) : "—";
-                document.getElementById("fz-sec").textContent = full.snapshot ? (full.snapshot.sector || "—") : "—";
-            } catch (e) { /* optional */ }
-
-            // Footer timestamp
-            document.getElementById("footer-generated").textContent = "Last refresh: " + (data.generated_at ? new Date(data.generated_at).toUTCString() : "n/a");
-
-            // Sub-z cells: try to read from regime.json for the home page.
-            try {
-                const reg = await loadJSON("/odin/data/regime.json");
-                const sub = reg.sub_z || {};
-                const labels = [
-                    { key: "vol",      label: "Vol" },
-                    { key: "credit",   label: "Credit" },
-                    { key: "macro",    label: "Macro" },
-                    { key: "trend",    label: "Trend" },
-                    { key: "topology", label: "Topology" },
-                ];
-                const host = document.getElementById("home-subz");
-                host.innerHTML = labels.map(({key, label}) => {
-                    const v = sub[key];
-                    let cls = "na";
-                    let txt = "—";
-                    if (v !== null && v !== undefined && !Number.isNaN(v)) {
-                        txt = fmtNum(v, 2);
-                        if (v >= 2)        cls = "hot";
-                        else if (v >= 1)   cls = "warm";
-                        else if (v <= -1)  cls = "cool";
-                        else               cls = "";
-                    }
-                    return `<div class="home-subz-cell">
-                        <span class="lbl">${label}</span>
-                        <span class="v ${cls}">${txt}</span>
-                    </div>`;
-                }).join("");
-            } catch (e) { /* optional */ }
-
-        } catch (err) {
-            console.error(err);
-            document.getElementById("home-headline-body").textContent =
-                "Could not load state.json — exporter has not been run yet.";
-        }
-    })();
+            // The film plays muted on its own, unless the visitor asks for less motion.
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                film.play().catch(() => {});
+            }
+            setIcon();
+        });
     </script>
 </body>
 </html>
