@@ -1,32 +1,32 @@
 {
   "current_race": {
-    "race_name": "Bahrain Grand Prix",
-    "round": 16,
+    "race_name": "Singapore Grand Prix",
+    "round": 17,
     "season": 2026,
-    "circuit": "Kuala Lumpur",
-    "race_date_utc": "2026-10-04T07:00:00Z",
-    "weekend_format": "conventional",
+    "circuit": "Marina Bay",
+    "race_date_utc": "2026-10-11T12:00:00Z",
+    "weekend_format": "sprint_qualifying",
     "weather": {
-      "air_temp_c": 32.6,
-      "track_temp_c": 54.4,
-      "humidity_pct": 50,
-      "wind_ms": 0.9,
+      "air_temp_c": 29.8,
+      "track_temp_c": 38.1,
+      "humidity_pct": 75,
+      "wind_ms": 1.6,
       "rain": false
     },
     "data_sources": [
-      "FastF1 Practice / Qualifying",
+      "FastF1 Sprint Qualifying / Sprint / Qualifying",
       "30,000-sample Monte Carlo over race-trim pace + grid penalty"
     ],
     "winner_probabilities": [
       {
-        "driver": "Charles Leclerc",
+        "driver": "Lewis Hamilton",
         "team": "Ferrari",
         "team_color": "#E80020",
-        "grid": 5,
-        "quali_gap_s": 0.536,
-        "race_pace_s": 99.517,
-        "win_prob": 23.5,
-        "podium_prob": 42.6
+        "grid": 3,
+        "quali_gap_s": 0.123,
+        "race_pace_s": 106.225,
+        "win_prob": 47.2,
+        "podium_prob": 79.7
       },
       {
         "driver": "Max Verstappen",
@@ -34,149 +34,79 @@
         "team_color": "#3671C6",
         "grid": 1,
         "quali_gap_s": 0.0,
-        "race_pace_s": 100.844,
-        "win_prob": 20.3,
-        "podium_prob": 34.7
+        "race_pace_s": 106.346,
+        "win_prob": 40.6,
+        "podium_prob": 91.2
+      },
+      {
+        "driver": "Liam Lawson",
+        "team": "Racing Bulls",
+        "team_color": "#6692FF",
+        "grid": 9,
+        "quali_gap_s": 0.996,
+        "race_pace_s": 107.235,
+        "win_prob": 6.2,
+        "podium_prob": 25.1
+      },
+      {
+        "driver": "Charles Leclerc",
+        "team": "Ferrari",
+        "team_color": "#E80020",
+        "grid": 2,
+        "quali_gap_s": 0.054,
+        "race_pace_s": 107.047,
+        "win_prob": 2.5,
+        "podium_prob": 39.1
+      },
+      {
+        "driver": "Oliver Bearman",
+        "team": "Haas F1 Team",
+        "team_color": "#B6BABD",
+        "grid": 12,
+        "quali_gap_s": 1.535,
+        "race_pace_s": 107.484,
+        "win_prob": 1.2,
+        "podium_prob": 9.6
+      },
+      {
+        "driver": "Lando Norris",
+        "team": "McLaren",
+        "team_color": "#FF8000",
+        "grid": 5,
+        "quali_gap_s": 0.339,
+        "race_pace_s": 107.215,
+        "win_prob": 1.2,
+        "podium_prob": 20.5
       },
       {
         "driver": "Kimi Antonelli",
         "team": "Mercedes",
         "team_color": "#27F4D2",
         "grid": 4,
-        "quali_gap_s": 0.501,
-        "race_pace_s": 101.518,
-        "win_prob": 15.8,
-        "podium_prob": 29.2
-      },
-      {
-        "driver": "George Russell",
-        "team": "Mercedes",
-        "team_color": "#27F4D2",
-        "grid": 8,
-        "quali_gap_s": 0.741,
-        "race_pace_s": 98.663,
-        "win_prob": 12.3,
-        "podium_prob": 57.2
-      },
-      {
-        "driver": "Isack Hadjar",
-        "team": "Red Bull Racing",
-        "team_color": "#3671C6",
-        "grid": 3,
-        "quali_gap_s": 0.428,
-        "race_pace_s": 99.247,
-        "win_prob": 9.4,
-        "podium_prob": 43.4
-      },
-      {
-        "driver": "Lando Norris",
-        "team": "McLaren",
-        "team_color": "#FF8000",
-        "grid": 6,
-        "quali_gap_s": 0.627,
-        "race_pace_s": 101.04,
-        "win_prob": 6.4,
-        "podium_prob": 20.7
-      },
-      {
-        "driver": "Pierre Gasly",
-        "team": "Alpine",
-        "team_color": "#FF87BC",
-        "grid": 9,
-        "quali_gap_s": 2.08,
-        "race_pace_s": 99.989,
-        "win_prob": 5.7,
-        "podium_prob": 25.6
-      },
-      {
-        "driver": "Gabriel Bortoleto",
-        "team": "Audi",
-        "team_color": "#52E252",
-        "grid": 10,
-        "quali_gap_s": 2.543,
-        "race_pace_s": 101.094,
-        "win_prob": 3.3,
-        "podium_prob": 13.7
+        "quali_gap_s": 0.189,
+        "race_pace_s": 107.142,
+        "win_prob": 0.9,
+        "podium_prob": 24.5
       },
       {
         "driver": "Oscar Piastri",
         "team": "McLaren",
         "team_color": "#FF8000",
         "grid": 7,
-        "quali_gap_s": 0.632,
-        "race_pace_s": 100.272,
-        "win_prob": 1.2,
-        "podium_prob": 13.2
-      },
-      {
-        "driver": "Oliver Bearman",
-        "team": "Haas F1 Team",
-        "team_color": "#B6BABD",
-        "grid": 18,
-        "quali_gap_s": 2.85,
-        "race_pace_s": 101.739,
-        "win_prob": 0.9,
-        "podium_prob": 5.4
-      },
-      {
-        "driver": "Carlos Sainz",
-        "team": "Williams",
-        "team_color": "#64C4FF",
-        "grid": 13,
-        "quali_gap_s": 2.397,
-        "race_pace_s": 101.804,
-        "win_prob": 0.5,
-        "podium_prob": 3.8
-      },
-      {
-        "driver": "Fernando Alonso",
-        "team": "Aston Martin",
-        "team_color": "#229971",
-        "grid": 12,
-        "quali_gap_s": 2.09,
-        "race_pace_s": 100.599,
-        "win_prob": 0.4,
-        "podium_prob": 5.7
-      },
-      {
-        "driver": "Lance Stroll",
-        "team": "Aston Martin",
-        "team_color": "#229971",
-        "grid": 14,
-        "quali_gap_s": 2.436,
-        "race_pace_s": 101.507,
-        "win_prob": 0.1,
-        "podium_prob": 1.8
-      },
-      {
-        "driver": "Sergio Perez",
-        "team": "Cadillac",
-        "team_color": "#000000",
-        "grid": 22,
-        "quali_gap_s": 3.803,
-        "race_pace_s": 101.882,
-        "win_prob": 0.1,
-        "podium_prob": 1.2
-      },
-      {
-        "driver": "Esteban Ocon",
-        "team": "Haas F1 Team",
-        "team_color": "#B6BABD",
-        "grid": 19,
-        "quali_gap_s": 3.103,
-        "race_pace_s": 100.767,
-        "win_prob": 0.1,
-        "podium_prob": 1.7
+        "quali_gap_s": 0.487,
+        "race_pace_s": 107.282,
+        "win_prob": 0.2,
+        "podium_prob": 8.9
       }
     ],
     "key_signals": [
       {
         "label": "Model favourite",
-        "value": "Charles Leclerc (24%)"
+        "value": "Lewis Hamilton (47%)"
       },
       {
         "label": "Fastest race-trim",
-        "value": "George Russell (-0.58s vs HAD)"
+        "value": "Lewis Hamilton (-0.12s vs VER)"
       },
       {
         "label": "Pole",
@@ -184,7 +114,7 @@
       },
       {
         "label": "Track temp",
-        "value": "54°C"
+        "value": "38°C"
       }
     ]
   },
@@ -363,10 +293,10 @@
   "season": {
     "season": 2026,
     "races_completed": 16,
-    "sprints_completed": 5,
+    "sprints_completed": 6,
     "remaining_races": 7,
-    "remaining_sprints": 1,
-    "last_updated": "2026-10-07",
+    "remaining_sprints": 0,
+    "last_updated": "2026-10-11",
     "model": "10,000-sample Monte Carlo over the remaining rounds, season form blended with latest race-trim pace",
     "predictions": [
       {
@@ -374,11 +304,22 @@
         "abbr": "ANT",
         "team": "Mercedes",
         "team_color": "#27F4D2",
-        "points_now": 320,
-        "mean_final": 366,
-        "p10_final": 343,
-        "p90_final": 390,
-        "champ_prob_pct": 91.2
+        "points_now": 325,
+        "mean_final": 406,
+        "p10_final": 379,
+        "p90_final": 433,
+        "champ_prob_pct": 99.86
+      },
+      {
+        "driver": "Lewis Hamilton",
+        "abbr": "HAM",
+        "team": "Ferrari",
+        "team_color": "#E80020",
+        "points_now": 221,
+        "mean_final": 309,
+        "p10_final": 282,
+        "p90_final": 336,
+        "champ_prob_pct": 0.09
       },
       {
         "driver": "George Russell",
@@ -386,32 +327,10 @@
         "team": "Mercedes",
         "team_color": "#27F4D2",
         "points_now": 236,
-        "mean_final": 322,
-        "p10_final": 290,
-        "p90_final": 355,
-        "champ_prob_pct": 8.62
-      },
-      {
-        "driver": "Lewis Hamilton",
-        "abbr": "HAM",
-        "team": "Ferrari",
-        "team_color": "#E80020",
-        "points_now": 214,
-        "mean_final": 287,
-        "p10_final": 260,
-        "p90_final": 314,
-        "champ_prob_pct": 0.17
-      },
-      {
-        "driver": "Charles Leclerc",
-        "abbr": "LEC",
-        "team": "Ferrari",
-        "team_color": "#E80020",
-        "points_now": 191,
-        "mean_final": 267,
-        "p10_final": 237,
-        "p90_final": 297,
-        "champ_prob_pct": 0.01
+        "mean_final": 294,
+        "p10_final": 265,
+        "p90_final": 324,
+        "champ_prob_pct": 0.05
       },
       {
         "driver": "Gabriel Bortoleto",
@@ -419,9 +338,9 @@
         "team": "Audi",
         "team_color": "#52E252",
         "points_now": 10,
-        "mean_final": 29,
-        "p10_final": 14,
-        "p90_final": 45,
+        "mean_final": 22,
+        "p10_final": 11,
+        "p90_final": 36,
         "champ_prob_pct": 0.0
       },
       {
@@ -430,9 +349,9 @@
         "team": "Cadillac",
         "team_color": "#000000",
         "points_now": 0,
-        "mean_final": 3,
+        "mean_final": 2,
         "p10_final": 0,
-        "p90_final": 10,
+        "p90_final": 7,
         "champ_prob_pct": 0.0
       },
       {
@@ -443,7 +362,7 @@
         "points_now": 0,
         "mean_final": 1,
         "p10_final": 0,
-        "p90_final": 2,
+        "p90_final": 3,
         "champ_prob_pct": 0.0
       },
       {
@@ -454,7 +373,7 @@
         "points_now": 1,
         "mean_final": 17,
         "p10_final": 3,
-        "p90_final": 33,
+        "p90_final": 32,
         "champ_prob_pct": 0.0
       },
       {
@@ -463,9 +382,9 @@
         "team": "Williams",
         "team_color": "#64C4FF",
         "points_now": 5,
-        "mean_final": 7,
+        "mean_final": 8,
         "p10_final": 5,
-        "p90_final": 13,
+        "p90_final": 15,
         "champ_prob_pct": 0.0
       },
       {
@@ -474,9 +393,9 @@
         "team": "Williams",
         "team_color": "#64C4FF",
         "points_now": 7,
-        "mean_final": 13,
+        "mean_final": 15,
         "p10_final": 7,
-        "p90_final": 23,
+        "p90_final": 25,
         "champ_prob_pct": 0.0
       },
       {
@@ -485,9 +404,9 @@
         "team": "Haas F1 Team",
         "team_color": "#B6BABD",
         "points_now": 7,
-        "mean_final": 32,
-        "p10_final": 15,
-        "p90_final": 51,
+        "mean_final": 20,
+        "p10_final": 8,
+        "p90_final": 34,
         "champ_prob_pct": 0.0
       },
       {
@@ -496,9 +415,9 @@
         "team": "Aston Martin",
         "team_color": "#229971",
         "points_now": 7,
-        "mean_final": 26,
-        "p10_final": 11,
-        "p90_final": 42,
+        "mean_final": 14,
+        "p10_final": 7,
+        "p90_final": 23,
         "champ_prob_pct": 0.0
       },
       {
@@ -506,10 +425,10 @@
         "abbr": "HUL",
         "team": "Audi",
         "team_color": "#52E252",
-        "points_now": 7,
-        "mean_final": 16,
-        "p10_final": 7,
-        "p90_final": 27,
+        "points_now": 9,
+        "mean_final": 26,
+        "p10_final": 13,
+        "p90_final": 42,
         "champ_prob_pct": 0.0
       },
       {
@@ -520,7 +439,7 @@
         "points_now": 27,
         "mean_final": 43,
         "p10_final": 29,
-        "p90_final": 59,
+        "p90_final": 58,
         "champ_prob_pct": 0.0
       },
       {
@@ -528,10 +447,10 @@
         "abbr": "BEA",
         "team": "Haas F1 Team",
         "team_color": "#B6BABD",
-        "points_now": 20,
-        "mean_final": 30,
-        "p10_final": 20,
-        "p90_final": 42,
+        "points_now": 23,
+        "mean_final": 43,
+        "p10_final": 27,
+        "p90_final": 60,
         "champ_prob_pct": 0.0
       },
       {
@@ -540,9 +459,9 @@
         "team": "Racing Bulls",
         "team_color": "#6692FF",
         "points_now": 38,
-        "mean_final": 61,
-        "p10_final": 45,
-        "p90_final": 80,
+        "mean_final": 51,
+        "p10_final": 39,
+        "p90_final": 65,
         "champ_prob_pct": 0.0
       },
       {
@@ -551,9 +470,9 @@
         "team": "Alpine",
         "team_color": "#FF87BC",
         "points_now": 41,
-        "mean_final": 89,
-        "p10_final": 66,
-        "p90_final": 114,
+        "mean_final": 63,
+        "p10_final": 47,
+        "p90_final": 81,
         "champ_prob_pct": 0.0
       },
       {
@@ -561,10 +480,10 @@
         "abbr": "LAW",
         "team": "Racing Bulls",
         "team_color": "#6692FF",
-        "points_now": 65,
-        "mean_final": 96,
-        "p10_final": 77,
-        "p90_final": 117,
+        "points_now": 69,
+        "mean_final": 112,
+        "p10_final": 91,
+        "p90_final": 135,
         "champ_prob_pct": 0.0
       },
       {
@@ -573,9 +492,9 @@
         "team": "Red Bull Racing",
         "team_color": "#3671C6",
         "points_now": 96,
-        "mean_final": 170,
-        "p10_final": 140,
-        "p90_final": 200,
+        "mean_final": 139,
+        "p10_final": 115,
+        "p90_final": 165,
         "champ_prob_pct": 0.0
       },
       {
@@ -584,9 +503,9 @@
         "team": "McLaren",
         "team_color": "#FF8000",
         "points_now": 128,
-        "mean_final": 185,
-        "p10_final": 158,
-        "p90_final": 214,
+        "mean_final": 173,
+        "p10_final": 149,
+        "p90_final": 200,
         "champ_prob_pct": 0.0
       },
       {
@@ -594,10 +513,10 @@
         "abbr": "NOR",
         "team": "McLaren",
         "team_color": "#FF8000",
-        "points_now": 188,
-        "mean_final": 235,
-        "p10_final": 208,
-        "p90_final": 264,
+        "points_now": 189,
+        "mean_final": 248,
+        "p10_final": 219,
+        "p90_final": 277,
         "champ_prob_pct": 0.0
       },
       {
@@ -605,10 +524,21 @@
         "abbr": "VER",
         "team": "Red Bull Racing",
         "team_color": "#3671C6",
-        "points_now": 188,
-        "mean_final": 243,
-        "p10_final": 214,
-        "p90_final": 273,
+        "points_now": 196,
+        "mean_final": 269,
+        "p10_final": 237,
+        "p90_final": 301,
+        "champ_prob_pct": 0.0
+      },
+      {
+        "driver": "Charles Leclerc",
+        "abbr": "LEC",
+        "team": "Ferrari",
+        "team_color": "#E80020",
+        "points_now": 197,
+        "mean_final": 268,
+        "p10_final": 239,
+        "p90_final": 297,
         "champ_prob_pct": 0.0
       },
       {
@@ -617,9 +547,9 @@
         "team": "Aston Martin",
         "team_color": "#229971",
         "points_now": 0,
-        "mean_final": 5,
+        "mean_final": 1,
         "p10_final": 0,
-        "p90_final": 15,
+        "p90_final": 4,
         "champ_prob_pct": 0.0
       }
     ]
